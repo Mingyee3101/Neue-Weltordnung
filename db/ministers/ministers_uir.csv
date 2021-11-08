@@ -1,0 +1,39 @@
+UIR;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+65701;Head of State;Sheikh Mujibur Rahman;1936;1976;1976;LWR;Stern Imperialist;High;UIR1;X
+65702;Head of Government;Tajuddin Ahmad;1936;1976;1976;LWR;Flamboyant Tough Guy;High;UIR2;X
+65703;Foreign Minister;Abdus Samad Azad;1936;2006;2006;LWR;Biased Intellectual;High;UIR3;X
+65704;Minister of Armament;M.A.G. Osmani;1936;1984;1984;SD;Military Entrepreneur;High;UIR3;X
+65705;Minister of Security;Khaled Mosharraf;1936;1976;1976;SD;Man of the People;High;UIR4;X
+65706;Head of Military Intelligence;Khaled Mosharraf;1936;1976;1976;SD;Dismal Enigma;High;UIR4;X
+65707;Chief of Staff;M.A.G. Osmani;1936;1984;1984;SD;School of Psychology;High;UIR3;X
+65708;Chief of Army;M.A. Rab;1936;1975;1975;LWR;Guns and Butter Doctrine;Very High;UIR5;X
+65709;Chief of Navy;Nurul Huq;1936;1973;1973;SD;Indirect Approach Doctrine;Very High;Unknown;X
+65710;Chief of Air Force;A.K. Khandker;1936;1975;1975;SD;Army Aviation Doctrine;Very High;Unknown;X
+65711;Head of State;Abu Sayeed Chowdhury;1970;1987;1987;SD;Benevolent Gentleman;High;UIR6;X
+65712;Head of Government;Sheikh Mujibur Rahman;1970;1976;1976;LWR;Backroom Backstabber;High;UIR1;X
+65713;Head of State;Mohammad Mohammadullah;1964;1999;1999;SD;Weary Stiffneck;High;UIR7;X
+65714;Head of Government;Muhammad Mansur Ali;1964;1976;1976;LWR;Political Protege;High;UIR8;X
+65715;Head of State;Khondaker Mostaq Ahmad;1965;1996;1996;LWR;Barking Buffoon;High;UIR9;X
+65716;Head of State;Abu Sadat Mohammad Sayem;1975;1978;1978;ML;Insignificant Layman;High;UIR10;X
+65717;Head of Government;Abu Sadat Mohammad Sayem;1975;1978;1978;ML;Naive Optimist;High;UIR10;X
+65718;Head of State;Ziaur Rahman;1977;1982;1982;SC;Die-hard Reformer;High;UIR11;X
+65719;Head of Government;Ziaur Rahman;1977;1982;1982;SC;Old General;High;UIR11;X
+65720;Head of State;Abdus Sattar;1970;1986;1986;ML;Pig-headed Isolationist;High;UIR12;X
+65721;Head of Government;Abdus Sattar;1970;1986;1986;ML;Happy Amateur;High;UIR12;X
+65722;Head of State;Hussain Muhammad Ershad;1982;2020;2020;PA;Resigned Generalissimo;High;UIR13;X
+65723;Head of Government;Hussain Muhammad Ershad;1982;2020;2020;PA;Old General;High;UIR13;X
+65724;Head of State;A. F. M. Ahsanuddin Chowdhury;1982;2001;2001;PA;Insignificant Layman;High;UIR14;X
+65725;Head of Government;Ataur Rahman Khan;1984;1991;1991;PA;Ambitious Union Boss;High;Unknown;X
+65726;Head of Government;Mizanur Rahman Chowdhury;1986;2006;2006;PA;Happy Amateur;High;UIR15;X
+65727;Head of Government;Moudud Ahmed;1988;2020;2020;PA;Backroom Backstabber;High;UIR16;X
+65728;Head of Government;Kazi Zafar Ahmed;1988;2016;2016;PA;Happy Amateur;High;UIR17;X
+65729;Foreign Minister;Abdus Samad Azad;1970;2005;2005;SD;General Staffer;High;UIR18;X
+65730;Foreign Minister;Kamal Hossain;1971;2020;2020;LWR;Ideological Crusader;High;UIR19;X
+65731;Foreign Minister;Abu Sayeed Chowdhury;1973;1987;1987;SD;Apologetic Clerk;High;UIR6;X
+65732;Foreign Minister;Muhammad Shamsul Haque;1974;1999;1999;SC;Biased Intellectual;High;UIR20;X
+65733;Foreign Minister;A.R. Shamsud Doha;1982;2012;2012;PA;Iron Fisted Brute;Very High;UIR21;X
+65734;Foreign Minister;Humayun Rashid Choudhury;1984;2001;2001;PA;General Staffer;High;UIR22;X
+65735;Foreign Minister;Anisul Islam Mahmud;1986;2020;2020;PA;Great Compromiser;High;UIR23;X
+65736;Head of State;Abdur Rahman Biswas;1991;2020;2020;SC;Benevolent Gentleman;High;UIR24;X
+65737;Head of Government;Abdur Rahman Biswas;1991;2020;2020;SC;Silent Workhorse;High;UIR24;X
+65738;Head of Government;Khaleda Zia;1991;2020;2020;SC;Flamboyant Tough Guy;High;UIR25;X

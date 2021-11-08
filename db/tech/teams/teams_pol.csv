@@ -1,0 +1,88 @@
+POL;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+60001;Centralny Okreg Przemyslowy;T2700;4;1900;2000;mechanics;artillery;technical_efficiency;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60002;Stefan Banach;T2701;8;1930;1945;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60003;Stanislaw Ulam;T2702;7;1930;1938;nuclear_physics;nuclear_engineering;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60004;Panstwowa Wytwórnia Uzbrojenia;T2703;5;1927;2000;general_equipment;artillery;munitions;rt_user_3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60005;Zaklady Starachowickie;T2704;5;1900;2000;artillery;general_equipment;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60006;PWS;T2705;4;1920;2000;aeronautics;fighter_design;aircraft_testing;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60007;PZInz;T2706;6;1920;2000;mechanics;artillery;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60008;PZL;T2707;5;1920;2000;aeronautics;avionics;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60009;Stocznia Gdynia;T2708;4;1900;2000;naval_engineering;naval_artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60010;Tadeusz Kutrzeba;T2709;4;1930;1944;centralized_execution;large_unit_tactics;training;infantry_focus;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60011;Marian Rejewski;T2710;7;1930;1939;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60012;Ludomil Rayski;T2711;4;1930;1944;fighter_tactics;bomber_tactics;piloting;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60013;Jerzy Swirski;T2712;4;1930;1944;naval_training;small_taskforce_tactics;submarine_tactics;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60014;Ministry of National Defence;T2713;4;1945;2000;large_unit_tactics;centralized_execution;small_taskforce_tactics;fighter_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60015;Józef Pilsudski;100399;4;1904;1935;management;small_unit_tactics;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60016;Tadeusz Tanski;100400;2;1919;1940;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60017;Gerlach & Pulst;100401;2;1919;1940;artillery;general_equipment;rt_user_3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60018;CWS;100402;3;1918;1940;mechanics;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60019;Karkoz and Dziecielewski;100403;2;1919;1940;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+60100;Biuro Szyfrow Oddzialu II;TPL2700;7;1918;2000;mathematics;electronics;mechanics;training;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60101;Polska Szkola Matematyczna;TPL2701;7;1918;1939;mathematics;electronics;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60102;Panstwowe Zaklady Tele- i Radiotechniczne;TPL2702;4;1931;1939;electronics;mechanics;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60103;Panstwowy Instytut Telekomunikacyjny;TPL2703;4;1934;1939;electronics;general_equipment;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60104;Zaklady Wytwórcze Urzadzen Telefonicznych;TPL2704;5;1945;2000;electronics;general_equipment;management;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60105;Towarzystwo Instytutu Radowego;TPL2706;2;1921;1931;nuclear_physics;nuclear_engineering;chemistry;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60106;Instytut Radowy w Warszawie;TPL2707;6;1932;2000;nuclear_physics;nuclear_engineering;chemistry;medicine;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60107;Leopold Infeld;TPL2775;7;1921;1936;nuclear_physics;nuclear_engineering;mechanics;chemistry;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60108;Andrzej Soltan;TPL2776;6;1932;1939;nuclear_physics;nuclear_engineering;mechanics;mathematics;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60109;Zbrojownie WP;TPL2708;3;1918;1926;general_equipment;mechanics;artillery;munitions;chemistry;training;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60110;Panstwowa Fabryka Karabinów (FK);TPL2709;4;1922;1939;general_equipment;mechanics;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60111;Zaklady Zbrojeniowe w Starachowicach;TPL2710;6;1924;2000;mechanics;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60112;Pan. Wytw. Broni Radom (FK Radom);TPL2711;5;1927;2000;general_equipment;mechanics;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60113;Panstwowe Wytwórnie Uzbrojenia (PWU);TPL2712;6;1937;1945;general_equipment;mechanics;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60114;Zaklady Poludniowe;TPL2713;5;1938;1940;artillery;electronics;mechanics;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60115;Huta Stalowa Wola;TPL2714;7;1940;2000;artillery;electronics;mechanics;munitions;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60116;Fabryk Maszyn i Urzadzen Rolniczych H. Cegielski w Poznaniu;TPL2772;3;1900;1923;general_equipment;mechanics;industrial_engineering;vehicle_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60117;H. Cegielski Spólka Akcyjna w Poznaniu;TPL2773;4;1923;1937;general_equipment;mechanics;industrial_engineering;vehicle_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60118;H. Cegielski Spólka Akcyjna w Poznaniu;TPL2774;5;1937;1945;general_equipment;mechanics;industrial_engineering;vehicle_engineering;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60119;ZM Lilpop, Rau i Loewenstein (LRL);TPL2715;4;1900;1938;general_equipment;mechanics;industrial_engineering;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60120;Zaklady Mechaniczne Ursus (ZM Ursus);TPL2716;4;1900;1930;general_equipment;mechanics;technical_efficiency;electronics;vehicle_engineering;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60121;Staropolski Okreg Przemyslowy (SOP);TPL2717;3;1900;1936;mechanics;technical_efficiency;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60122;Centralne Warsztaty Samochodowe (CWS);TPL2718;5;1918;1928;general_equipment;electronics;mechanics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60123;Panstwowa Fabryka Zwiazków Azotowych;TPL2720;4;1929;1933;chemistry;management;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60124;Zjednoczone Fabryki Zwiazków Azotowych;TPL2721;5;1933;2000;technical_efficiency;chemistry;electronics;management;mechanics;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60125;Biura Badan Technicznych Broni Pancernych;TPL2771;4;1934;1939;mechanics;general_equipment;technical_efficiency;vehicle_engineering;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60126;ZM Lilpop, Rau i Loewenstein (ZM LRL - LZM);TPL2723;6;1939;1945;general_equipment;mechanics;industrial_engineering;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60127;Zaklady Mechaniczne Ursus;TPL2725;6;1945;2000;general_equipment;electronics;mechanics;technical_efficiency;vehicle_engineering;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60128;Jan Oderfeld i Janusz Groszkowski;TPL2726;5;1920;2000;rocketry;electronics;mechanics;avionics;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60129;Tymczasowy Komitet Doradczo-Naukowy;TPL2727;4;1933;1939;rocketry;chemistry;electronics;mechanics;avionics;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60130;Centralne Warsztaty Lotnicze (CWL);TPL2728;3;1918;1928;aeronautics;avionics;bomber_design;aircraft_testing;mechanics;fighter_design;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60131;ZM E. Plage i T. Laskiewicz;TPL2729;4;1921;1935;avionics;fighter_design;aeronautics;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60132;Doswiadczalne Warsztaty Lotnicze (DWL);TPL2731;4;1925;1933;mechanics;electronics;aeronautics;fighter_design;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60133;DWL - RWD;TPL2733;6;1933;1939;mechanics;avionics;aeronautics;fighter_design;bomber_design;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60134;Lubelska Wytwórnia Samolotów (LWS);TPL2734;5;1935;1939;avionics;fighter_design;aeronautics;bomber_design;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60135;Centralne Warsztaty MW Modlin;TPL2736;2;1918;1928;naval_engineering;naval_artillery;technical_efficiency;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60136;Warsztaty Portowe MW Puck;TPL2737;2;1922;1926;naval_engineering;naval_artillery;technical_efficiency;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60137;Warsztaty Portowe MW Gdynia;TPL2738;5;1927;1945;naval_engineering;naval_artillery;technical_efficiency;mechanics;submarine_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60138;Warsztaty Portowe MW Pinsk;TPL2739;3;1934;1939;naval_engineering;naval_artillery;technical_efficiency;carrier_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60139;Stocznia Gdynia;TPL2740;5;1933;2000;naval_engineering;chemistry;technical_efficiency;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60140;Stocznie MW ;TPL2741;6;1945;2000;naval_engineering;naval_artillery;technical_efficiency;mechanics;submarine_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60141;Ministerstwo Spraw Wojskowych;TPL2742;5;1918;1942;large_unit_tactics;centralized_execution;infantry_focus;static_defense_tactics;individual_courage;cavalry_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60142;Ministerstwo Obrony Narodowej;TPL2743;6;1942;2000;combined_arms_focus;centralized_execution;small_unit_tactics;maneuver_tactics;infantry_focus;blitzkrieg_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60143;Tadeusz Rozwadowski;TPL2745;5;1918;1926;static_defense_tactics;blitzkrieg_tactics;small_unit_tactics;cavalry_tactics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60144;Wlodzimierz Bochenek and Wladyslaw Sikorski;TPL2746;5;1920;1926;small_unit_tactics;maneuver_tactics;blitzkrieg_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60145;Tadeusz Kutrzeba;TPL2747;5;1930;1954;centralized_execution;large_unit_tactics;training;infantry_focus;maneuver_tactics;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60146;Wladyslaw Sikorski;TPL2748;6;1936;1943;small_unit_tactics;maneuver_tactics;infantry_focus;training;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60147;Wladyslaw Anders;TPL2749;5;1942;2000;small_unit_tactics;maneuver_tactics;mountain_training;infantry_focus;combined_arms_focus;training;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60148;Centrum Wyszkolenia Broni Pancernych;TPL2750;3;1930;1939;small_unit_tactics;maneuver_tactics;combined_arms_focus;training;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60149;Centrum Wyszkolenia Piechoty;TPL2751;5;1931;1939;training;combined_arms_focus;mountain_training;general_equipment;small_unit_tactics;large_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60150;Wojskowy Osrodek Spadochronowy;TPL2752;3;1939;1939;general_equipment;small_unit_tactics;training;airborne_training;training;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60151;Centrum Wyszkolenia Sanitarnego;TPL2753;4;1922;1939;centralized_execution;small_unit_tactics;aeronautics;medicine;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60152;Oficerska Szkola Marynarki Wojennej;TPL2754;4;1921;1928;centralized_execution;seamanship;submarine_tactics;naval_training;large_taskforce_tactics;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60153;Szkola Podchorazych Marynarki Wojennej;TPL2755;5;1928;1946;centralized_execution;seamanship;submarine_tactics;naval_training;small_taskforce_tactics;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60154;Szkola Marynarki Wojennej;TPL2756;6;1946;2000;centralized_execution;seamanship;submarine_tactics;naval_training;marine_training;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60155;Kazimierz Porebski;TPL2763;5;1919;1925;decentralized_execution;seamanship;naval_training;large_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60156;Józef Unrug;TPL2765;5;1925;1939;centralized_execution;seamanship;submarine_tactics;naval_training;small_taskforce_tactics;marine_training;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60157;Witold Zajaczkowski;TPL2766;3;1934;1939;carrier_tactics;small_taskforce_tactics;naval_training;centralized_execution;seamanship;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60158;Boleslaw Romanowski;TPL2767;5;1942;2000;centralized_execution;seamanship;submarine_tactics;naval_training;small_taskforce_tactics;large_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60159;Józef Bartosik;TPL2768;5;1945;2000;centralized_execution;seamanship;naval_training;large_taskforce_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60160;François-Leon Leveque;TPL2757;3;1922;1924;fighter_tactics;piloting;training;bomber_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60161;Wlodzimierz Zagórski;TPL2758;3;1924;1926;fighter_tactics;piloting;training;bomber_tactics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60162;Szkola Orlat;TPL2759;6;1925;2000;piloting;aeronautics;training;fighter_tactics;bomber_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60163;Józef Zajac;TPL2761;5;1939;1963;combined_arms_focus;piloting;fighter_tactics;bomber_tactics;training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60164;Witold Urbanowicz;TPL2769;7;1940;1943;piloting;fighter_tactics;individual_courage;aeronautics;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60165;Stanislaw Skalski;TPL2770;8;1940;2000;aeronautics;fighter_tactics;individual_courage;training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+60166;Stanislaw Sosabowski;TPL2762;6;1941;1967;aeronautics;combined_arms_focus;small_unit_tactics;airborne_training;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+600190;Oddzial II Sztabu Generalnego Wojska Polskiego;T600190;5;1918;1945;small_unit_tactics;rt_user_2;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

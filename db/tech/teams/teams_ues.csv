@@ -1,0 +1,62 @@
+UES;Name;Pic Name;Skill;Start Year;End Year;Speciality1;Speciality2;Speciality3;Speciality4;Speciality5;Speciality6;Speciality7;Speciality8;Speciality9;Speciality10;Speciality11;Speciality12;Speciality13;Speciality14;Speciality15;Speciality16;Speciality17;Speciality18;Speciality19;Speciality20;Speciality21;Speciality22;Speciality23;Speciality24;Speciality25;Speciality26;Speciality27;Speciality28;Speciality29;Speciality30;Speciality31;Speciality32;x
+399;Alan Turing;T300;9;1930;1970;mathematics;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+398;de Havilland;T304;7;1930;1970;aeronautics;electronics;technical_efficiency;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+397;Enfield Arsenal;T305;7;1930;1970;mechanics;artillery;general_equipment;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+396;John Brown & Co.;T310;6;1930;1970;naval_engineering;naval_artillery;technical_efficiency;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+395;Leyland;T311;8;1930;1970;mechanics;technical_efficiency;artillery;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+394;Robert Watson-Watt;T312;7;1930;1970;electronics;management;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+393;Royal Small Arms Factory;T313;6;1930;1970;mechanics;general_equipment;training;artillery;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+392;Vauxhall;T315;7;1930;1970;mechanics;chemistry;artillery;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+391;Vickers-Armstrong;T316;5;1930;1970;mechanics;aeronautics;technical_efficiency;artillery;naval_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+390;Alan Brooke;T317;6;1930;1970;centralized_execution;large_unit_tactics;combined_arms_focus;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+389;Andrew Cunningham;T318;8;1930;1970;naval_training;large_taskforce_tactics;centralized_execution;seamanship;carrier_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+388;Charles Portal;T321;6;1930;1970;bomber_tactics;aircraft_testing;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+387;Dudley Pound;T323;6;1930;1970;large_taskforce_tactics;seamanship;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+386;Frank Whittle;T329;7;1930;1970;rocketry;aeronautics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+385;George Paget Thomson;T330;5;1930;1970;nuclear_physics;nuclear_engineering;chemistry;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+386;Bertrand Goldschmidt;T1427;7;1946;2000;nuclear_physics;nuclear_engineering;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+387;Dassault Aviation;T1426;8;1947;2000;rocketry;aeronautics;electronics;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+388;CEMAA;T1430;4;1950;2000;fighter_tactics;bomber_tactics;piloting;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+389;Raoul Salan;T1428;4;1948;1960;centralized_execution;combined_arms_focus;individual_courage;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+390;Commissariat l'Énergie Atomique;T5100;7;1945;2000;nuclear_physics;nuclear_engineering;mathematics;chemistry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+391;Sud Aviation;T51002;6;1957;1971;rt_user_1;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+392;Aérospatiale;T51003;7;1957;2000;rt_user_1;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+393;DGSE;T510002;8;1982;2013;rt_user_2;training;mathematics;individual_courage;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+394;Jules Joseph Pire;100603;4;1942;1951;centralized_execution;large_unit_tactics;training;infantry_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+395;Studiecentrum voor Kernenergie;T70100;3;1945;2000;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+396;Instituut voor Ruimte-aeronomie;T70101;4;1945;2000;rocketry;aeronautics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+397;Para-Commando;T70102;3;1942;2000;small_unit_tactics;airborne_training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+398;Blohm & Voss;T1;7;1900;2000;naval_engineering;naval_artillery;technical_efficiency;submarine_design;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+399;Konrad Zuse;T5;7;1900;2000;mathematics;electronics;mechanics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+400;Krupp;100089;9;1900;2000;industrial_engineering;mechanics;technical_efficiency;artillery;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+401;MAN;T8;8;1900;2000;mechanics;vehicle_engineering;artillery;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+402;Mauser Werke;100090;8;1900;2000;general_equipment;mechanics;training;munitions;rt_user_3;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+403;Messerschmitt;T10;9;1900;2000;fighter_design;aeronautics;rocketry;mechanics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+404;Opel;T11;7;1900;2000;mechanics;management;technical_efficiency;vehicle_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+405;Porsche;T12;9;1900;2000;mechanics;vehicle_engineering;technical_efficiency;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+406;Rheinmetall;100004;7;1900;2000;artillery;mechanics;training;munitions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+407;Siemens;100091;8;1900;2000;electronics;industrial_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+408;Volkswagen;T15;6;1900;2000;mechanics;vehicle_engineering;technical_efficiency;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+409;Werner Heisenberg;T16;7;1927;1976;nuclear_physics;nuclear_engineering;mathematics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+410;Erich von Manstein;T20;8;1930;2000;combined_arms_focus;small_unit_tactics;decentralized_execution;training;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+411;Heinz Guderian;T22;9;1930;2000;combined_arms_focus;small_unit_tactics;decentralized_execution;training;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+412;Naval Academy Mürwik;T7014;6;1900;2000;seamanship;small_taskforce_tactics;naval_training;centralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+413;Alfred Bülowius;T7015;6;1930;2000;piloting;training;bomber_tactics;combined_arms_focus;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+414;Josef Kammhuber;T7016;6;1930;2000;centralized_execution;fighter_tactics;bomber_tactics;piloting;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+415;Smilo von Lüttwitz;100604;6;1945;1960;training;small_unit_tactics;combined_arms_focus;decentralized_execution;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+416;Adolf Heusinger;100605;7;1954;2000;training;small_unit_tactics;combined_arms_focus;centralized_execution;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+417;Jäger Kampfschule;100130;7;1900;1999;Airborne_Training;Mountain_Training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+418;Deutsche Werft;T630101;6;1914;1999;naval_engineering;technical_efficiency;naval_artillery;electronics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+419;Bayer;T630102;8;1945;1999;chemistry;medicine;industrial_engineering;management;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+420;BASF;T630103;7;1945;1999;chemistry;industrial_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+421;Focke-Wulf;T26;8;1923;1999;fighter_design;aeronautics;rocketry;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+422;Dornier;T630105;7;1943;1999;bomber_design;aeronautics;rocketry;avionics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+423;Bundesnachrichtendienst;T6300000;7;1945;2013;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+424;Bölkow Entwicklungen KG.;T6300001;5;1948;1968;rt_user_1;aeronautics;aircraft_testing;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+425;Messerschmitt-Bölkow-Blohm;T6300002;7;1968;2000;rt_user_1;aeronautics;aircraft_testing;avionics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+426;Korps Mariniers;T15100;5;1945;2000;marine_training;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+427;Koninklijke Landmacht;T15101;6;1945;2000;training;combined_arms_focus;infantry_focus;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+428;Reactorcentrum Nederland;T15102;4;1945;2000;nuclear_physics;nuclear_engineering;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+429;Bureau Nationale Veiligheid;T150220;5;1945;1946;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+430;Centrale Veiligheidsdienst;T150220;5;1946;1949;rt_user_2;training;individual_courage;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+431;Binnenlandse Veiligheidsdienst;T150220;7;1949;2002;rt_user_2;training;individual_courage;small_unit_tactics;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

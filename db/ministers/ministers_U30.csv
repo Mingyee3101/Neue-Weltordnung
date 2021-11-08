@@ -1,0 +1,67 @@
+U30;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+965001;Head of State;Mihai I;1939;1964;1999;ST;Insignificant Layman;High;M22011;X
+965002;Head of State;Constantin I. Parhon;1933;1964;1999;ST;Powerhungry Demagogue;High;M22038;X
+965003;Head of Government;Petru Groza;1945;1964;1999;ST;Backroom Backstabber;High;M22022;X
+965004;Head of Government;Gheorghe Gheorghiu-Dej;1952;1964;1999;ST;Political Protege;High;M22052;X
+965005;Head of Government;Iuliu Maniu;1933;1964;1999;SD;Naive Optimist;High;M22055;X
+965006;Foreign Minister;Gheorghe Tatarescu;1945;1964;1999;LE;Iron Fisted Brute;Medium;M22002;X
+965007;Foreign Minister;Ana Pauker;1947;1964;1999;ST;Ideological Crusader;Very High;M22023;X
+965008;Foreign Minister;Constantin I. Parhon;1933;1964;1999;ST;Great Compromiser;Low;M22038;X
+965009;Minister of Armament;Vasile Luca;1933;1964;1999;ST;Administrative Genius;High;M22024;X
+965010;Minister of Security;Teohari Georgescu;1933;1964;1999;ST;Back Stabber;High;M22025;X
+965011;Head of Military Intelligence;Demetre Jancovici;1933;1964;1999;ST;Political Specialist;Medium;M22026;X
+965012;Head of Military Intelligence;Serghei Nicolau;1946;1964;1999;ST;Technical Specialist;High;M22122;X
+965013;Chief of Staff;Mihail Lascar;1933;1964;1999;ST;School of Mass Combat;Very High;M22027;X
+965014;Chief of Army;Damian Rascu;1933;1964;1999;ST;Armoured Spearhead Doctrine;Medium;M22028;X
+965015;Chief of Navy;Gheorghe Iliesca;1933;1964;1999;ST;Power Projection Doctrine;Medium;M22029;X
+965016;Chief of Air Force;Emanoil Ionescu;1933;1964;1999;ST;Army Aviation Doctrine;High;M22030;X
+965017;Head of State;Petru Groza;1933;1964;1999;ST;Powerhungry Demagogue;High;M22022;X
+965018;Foreign Minister;Simion Bughici;1952;1964;1999;ST;Apologetic Clerk;Very High;M22163;X
+965100;Head of State;Gheorghe Gheorghiu-Dej;1947;1966;1966;ST;Benevolent Gentleman;High;M22052;X
+965101;Head of State;Gheorghe Apostol;1954;2011;2011;ST;Benevolent Gentleman;High;M965101;X
+965102;Head of Government;Chivu Stoica;1955;1976;1976;ST;Ambitious Union Boss;High;M965102;X
+965103;Head of Government;Ion Gheorghe Maurer;1961;2001;2001;LE;Old Admiral;High;M965103;X
+965104;Head of State;Chivu Stoica;1965;1976;1976;LE;Benevolent Gentleman;High;M965102;X
+965105;Head of State;Nicolae Ceausescu;1967;1998;1999;LE;Local Tyrant2;High;M965105;X
+965106;Head of Government;Manea Manescu;1974;2010;2010;LE;Flamboyant Tough Guy;High;M965106;X
+965107;Head of Government;Ilie Verdet;1979;2001;2001;LE;Old Airmarshal;High;M965107;X
+965108;Head of Government;Constantin Dascalescu;1982;2004;2004;LE;Ambitious Union Boss;High;M965108;X
+965109;Foreign Minister;Corneliu Manescu;1961;2000;2001;LE;General Staffer;High;M965109;X
+965110;Foreign Minister;George Macovescu;1972;2002;2003;LE;Biased Intellectual;High;M965110;X
+965111;Foreign Minister;Stefan Andrei;1978;2014;2015;ST;Iron Fisted Brute;Very High;M965111;X
+965112;Foreign Minister;Ilie Vaduva;1982;1998;1999;ST;The Cloak N Dagger Schemer;High;M965112;X
+965113;Minister of Armament;Leontin Salajan;1945;1970;1999;ST;Military Entrepreneur;High;M965113;X
+965114;Minister of Armament;Ioan Ionita;1966;1987;1988;ST;Infantry Proponent;High;M965114;X
+965115;Minister of Armament;Constantin Olteanu;1975;2020;2020;ST;Military Entrepreneur;High;M965115;X
+965116;Minister of Security;Gheorghe Pintilie;1948;1985;1986;ST;Back Stabber;High;M965116;X
+965117;Head of Military Intelligence;Gheorghe Pintilie;1948;1985;1986;ST;Dismal Enigma;High;M965116;X
+965118;Minister of Security;Alexandru Nicolschi;1950;1992;1993;ST;Efficient Sociopath;Medium;M965118;X
+965119;Head of Military Intelligence;Alexandru Nicolschi;1950;1992;1993;ST;Dismal Enigma;Medium;M965118;X
+965120;Minister of Security;Nicolae Doicaru;1959;1991;1992;ST;Crooked Kleptocrat;Very High;M965120;X
+965121;Head of Military Intelligence;Nicolae Doicaru;1959;1991;1992;ST;Logistics Specialist;Very High;M965120;X
+965122;Minister of Security;Nicolae Plesita;1979;2009;2010;ST;Efficient Sociopath;Very High;M965122;X
+965123;Head of Military Intelligence;Nicolae Plesita;1979;2009;2010;ST;Political Specialist;Very High;M965122;X
+965124;Chief of Staff;Leontin Salajan;1945;1970;1999;ST;School of Mass Combat;High;M965113;X
+965125;Chief of Army;Leontin Salajan;1945;1970;1999;ST;Decisive Battle Doctrine;High;M965113;X
+965126;Chief of Navy;Leontin Salajan;1945;1970;1999;ST;Indirect Approach Doctrine;High;M965113;X
+965127;Chief of Air Force;Leontin Salajan;1945;1970;1999;ST;Air Superiority Doctrine;High;M965113;X
+965128;Chief of Staff;Ion Tutoveanu;1954;2006;2007;LE;School of Psychology;High;M965128;X
+965129;Chief of Army;Ion Tutoveanu;1954;2006;2007;LE;Elastic Defence Doctrine;High;M965128;X
+965130;Chief of Navy;Ion Tutoveanu;1954;2006;2007;LE;Base Control Doctrine;High;M965128;X
+965131;Chief of Air Force;Ion Tutoveanu;1954;2006;2007;LE;Army Aviation Doctrine;High;M965128;X
+965132;Chief of Staff;Gheorghe Ion;1965;2009;2010;ST;School of Mass Combat;High;M965132;X
+965133;Chief of Army;Gheorghe Ion;1965;2009;2010;ST;Static Defence Doctrine;High;M965132;X
+965134;Chief of Navy;Gheorghe Ion;1965;2009;2010;ST;Open Seas Doctrine;High;M965132;X
+965135;Chief of Air Force;Gheorghe Ion;1965;2009;2010;ST;Vertical Envelopment Doctrine;High;M965132;X
+965136;Chief of Staff;Ion Hortopan;1976;2000;2001;LE;School of Psychology;Very High;M965136;X
+965137;Chief of Army;Ion Hortopan;1976;2000;2001;LE;Elastic Defence Doctrine;Very High;M965136;X
+965138;Chief of Navy;Ion Hortopan;1976;2000;2001;LE;Indirect Approach Doctrine;Very High;M965136;X
+965139;Chief of Air Force;Ion Hortopan;1976;2000;2001;LE;Naval Aviation Doctrine;Very High;M965136;X
+965140;Chief of Staff;Vasile Milea;1978;2000;2000;ST;School of Manoeuvre;High;M965140;X
+965141;Chief of Army;Vasile Milea;1978;2000;2000;ST;Armoured Spearhead Doctrine;High;M965140;X
+965142;Chief of Navy;Vasile Milea;1978;2000;2000;ST;Indirect Approach Doctrine;High;M965140;X
+965143;Chief of Air Force;Vasile Milea;1978;2000;2000;ST;Army Aviation Doctrine;High;M965140;X
+965144;Chief of Staff;Stefan Gusa;1985;1994;1995;LE;School of Mass Combat;High;M965144;X
+965145;Chief of Army;Stefan Gusa;1985;1994;1995;LE;Guns and Butter Doctrine;High;M965144;X
+965146;Chief of Navy;Stefan Gusa;1985;1994;1995;LE;Indirect Approach Doctrine;High;M965144;X
+965147;Chief of Air Force;Stefan Gusa;1985;1994;1995;LE;Army Aviation Doctrine;High;M965144;X

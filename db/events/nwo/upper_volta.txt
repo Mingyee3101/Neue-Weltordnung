@@ -1,0 +1,329 @@
+event = {
+	id = 8028101
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800123 } # Gaston Mourgues
+		command = { type = headofgovernment which = 800124 } # Gaston Mourgues
+	}
+}
+
+event = {
+	id = 8028102
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800125 } # Albert Mouragues
+		command = { type = headofgovernment which = 800126 } # Albert Mouragues
+	}
+}
+
+event = {
+	id = 8028103
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800127 } # Salvador Jean ?tcheber
+		command = { type = headofgovernment which = 800128 } # Salvador Jean ?tcheber
+	}
+}
+
+event = {
+	id = 8028104
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800129 } # Yvon Bourges
+		command = { type = headofgovernment which = 800104 } # Daniel Ouezzin Coulibaly
+	}
+}
+
+event = {
+	id = 8028105
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800130 } # Max Berthet
+		command = { type = headofstate which = 800131 } # Paul Masson
+	}
+}
+
+event = {
+	id = 8028106
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 800100 } # Maurice Yaméogo
+		command = { type = headofgovernment which = 800103 } # Maurice Yaméogo
+	}
+}
+
+event = {
+	id = 8028107
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1966 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800132 } # Sangoulé Lamizana
+		command = { type = headofgovernment which = 800133 } # Sangoulé Lamizana
+	}
+}
+
+event = {
+	id = 8028108
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1971 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1973 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 800134 } # Gérard Kango Ouédraogo
+	}
+}
+
+event = {
+	id = 8028109
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1974 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1977 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 800133 } # Sangoulé Lamizana
+	}
+}
+
+event = {
+	id = 8028110
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1978 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1979 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 800135 } # Joseph Conombo
+	}
+}
+
+event = {
+	id = 8028111
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1980 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1981 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800136 } # Saye Zerbo
+		command = { type = headofgovernment which = 800137 } # Saye Zerbo
+	}
+}
+
+event = {
+	id = 8028112
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1982 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1982 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 800138 } # Jean-Baptiste Ouédraogo
+		command = { type = headofgovernment which = 800139 } # Jean-Baptiste Ouédraogo
+	}
+}
+
+event = {
+	id = 8028113
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1983 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1986 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 800140 } # Thomas Sankara
+		command = { type = headofgovernment which = 800141 } # Thomas Sankara
+	}
+}
+
+event = {
+	id = 8028114
+	country = U81
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	date = { day = 0 month = january year = 1987 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 800142 } # Blaise Compaoré
+		command = { type = headofgovernment which = 800143 } # Blaise Compaoré
+	}
+}
+
+
+event = {
+	id = 8028115
+	country = U81
+
+	name = EVT_8028115_NAME
+	desc = EVT_8028115_DESC
+	picture = nwo\burkina_faso
+	style = 1
+
+	date = { day = 0 month = january year = 1984 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	trigger = {
+		headofstate = 800140
+	}
+
+	action = {
+		name = EVT_8028115_A
+		ai_chance = 100
+		command = { type = name where = U81 which = U8184 }
+		command = { type = flag_ext where = U81 which = _1984 }
+		command = { type = domestic which = freedom value = -1 }
+	}
+
+	action = {
+		name = EVT_8028115_B
+		ai_chance = 0
+		command = { type = domestic which = freedom value = -1 }
+	}
+}

@@ -1,0 +1,193 @@
+event = {
+	id = 8018201
+	country = YEM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 445100 } # Ahmad al Hamid
+		command = { type = headofgovernment which = 445101 } # Ahmad al Hamid
+	}
+}
+
+event = {
+	id = 8018202
+	country = YEM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 445102 } # Muhammad al-Badr
+		command = { type = headofgovernment which = 445103 } # Muhammad al-Badr
+	}
+}
+
+event = {
+	id = 8018203
+	country = YEM
+
+	name = EVT_8018203_NAME
+	desc = EVT_8018203_DESC
+	picture = "nwo\abdullah_al_sallal"
+	style = 1
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1966 }
+
+	action = {
+		name = EVT_8018203_A
+		ai_chance = 100
+		command = { type = flag_ext where = YEM which = _1962 } 
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 445104 } # Abdullah al-Sallal
+		command = { type = headofgovernment which = 445105 } # Abdullah al-Sallal
+	}
+}
+
+event = {
+	id = 8018204
+	country = YEM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1967 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1973 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 445106 } # Abdul Rahman al-Iryani
+		command = { type = headofgovernment which = 445107 } # Abdul Rahman al-Iryani
+	}
+}
+
+event = {
+	id = 8018205
+	country = YEM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1974 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1976 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 445108 } # Ibrahim al-Hamdi
+		command = { type = headofgovernment which = 445109 } # Ibrahim al-Hamdi
+	}
+}
+
+event = {
+	id = 8018206
+	country = YEM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1977 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1977 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 445110 } # Ahmad al-Ghashmi
+		command = { type = headofgovernment which = 445111 } # Ahmad al-Ghashmi
+	}
+}
+
+event = {
+	id = 8018207
+	country = YEM
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1978 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 445112 } # Ali Abdullah Saleh
+		command = { type = headofgovernment which = 445113 } # Ali Abdullah Saleh
+	}
+}

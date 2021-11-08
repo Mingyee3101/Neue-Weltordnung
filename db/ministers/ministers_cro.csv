@@ -1,0 +1,73 @@
+CRO;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+;Replacements;;;;;;;;;X
+275001;Head of State;Tomislav II;1933;1964;1999;FA;Powerhungry Demagogue;High;M30001;X
+275002;Head of Government;Ante Pavelic;1933;1964;1999;FA;Ambitious Union Boss;High;M30002;X
+275003;Foreign Minister;Milan Budak;1933;1964;1999;NS;Iron Fisted Brute;Very High;M30003;X
+275004;Minister of Armament;Vilko Begic;1933;1964;1999;FA;Tank Proponent;Medium;M30004;X
+275005;Minister of Security;Mladen Lorkovic;1933;1964;1999;FA;Crooked Kleptocrat;High;M30005;X
+275006;Head of Military Intelligence;Adalbert Rogulja;1933;1964;1999;NS;Dismal Enigma;Medium;M30006;X
+275007;Chief of Staff;Slavko Kvaternik;1933;1964;1999;NS;School of Manoeuvre;Medium;M30007;X
+275008;Chief of Army;Vilko Begic;1933;1964;1999;NS;Armoured Spearhead Doctrine;High;M30004;X
+275009;Chief of Navy;Djuro Jakcin;1933;1964;1999;NS;Base Control Doctrine;Medium;M30009;X
+275010;Chief of Air Force;Vladimir Kren;1933;1964;1999;NS;Air Superiority Doctrine;Medium;M30010;X
+275011;Head of State;Tomislav II;1938;1964;1999;NS;Powerhungry Demagogue;High;M30001;X
+275012;Head of State;Alojzije Stepinac;1945;1964;1999;PA;Weary Stiffneck;High;M30022;X
+275013;Head of State;Vladko Macek;1938;1964;1999;SC;Insignificant Layman;High;M30011;X
+275014;Head of Government;Ante Pavelic;1938;1964;1999;NS;Ambitious Union Boss;High;M30002;X
+275015;Head of Government;Vladimir Laxa;1945;1964;1999;PA;Old General;High;M30017;X
+275016;Head of Government;Ivan Subasic;1938;1964;1999;SD;Backroom Backstabber;High;M30012;X
+275017;Foreign Minister;Mladen Lorkovic;1944;1964;1999;NS;General Staffer;High;M30005;X
+275018;Foreign Minister;Alojzije Stepinac;1945;1964;1999;PA;Biased Intellectual;Medium;M30022;X
+275019;Foreign Minister;Ivan Saric;1946;1964;1999;PA;The Cloak N Dagger Schemer;High;M30030;X
+275020;Foreign Minister;Vladko Macek;1938;1964;1999;SD;Biased Intellectual;Medium;M30011;X
+275021;Minister of Armament;Dido Kvaternik;1938;1964;1999;NS;Infantry Proponent;Medium;M30033;X
+275022;Minister of Armament;Ivan Subasic;1938;1964;1999;SD;Theoretical Scientist;Medium;M30012;X
+275023;Minister of Security;Viktor Vida;1938;1964;1999;NS;Man of the People;High;M30015;X
+275024;Minister of Security;Eugen Kvaternik;1940;1964;1999;NS;Prince of Terror;High;M30037;X
+275025;Minister of Security;Andrija Artukovic;1941;1964;1999;NS;Efficient Sociopath;High;M30038;X
+275026;Minister of Security;Krunoslav Draganovic;1943;1964;1999;NS;Back Stabber;High;M30039;X
+275027;Minister of Security;Vilko Pecnikar;1945;1964;1999;PA;Crooked Kleptocrat;Medium;M30040;X
+275028;Minister of Security;Vilko Begic;1938;1964;1999;SD;Silent Lawyer;Medium;M30004;X
+275029;Head of Military Intelligence;Mladen Lorkovic;1945;1964;1999;PA;Logistics Specialist;High;M30005;X
+275030;Head of Military Intelligence;Vilko Pecnikar;1938;1964;1999;SC;Dismal Enigma;Medium;M30040;X
+275031;Chief of Staff;Vladimir Laxa;1941;1964;1999;NS;School of Defence;Medium;M30017;X
+275032;Chief of Staff;Fedor Dragojlov;1943;1964;1999;NS;School of Mass Combat;High;M30048;X
+275033;Chief of Staff;Ante Pavelic;1944;1964;1999;NS;School of Psychology;Very High;M30002;X
+275034;Chief of Army;Slavko Kvaternik;1941;1964;1999;NS;Guns and Butter Doctrine;Medium;M30007;X
+275035;Chief of Army;Slavko Stancer;1942;1964;1999;NS;Static Defence Doctrine;Medium;9711;X
+275036;Chief of Army;Friedrich Navratil;1943;1964;1999;NS;Decisive Battle Doctrine;High;M30020;X
+275037;Chief of Army;Vladimir Laxa;1944;1964;1999;NS;Elastic Defence Doctrine;Medium;M30017;X
+275038;Chief of Navy;Edgar Angeli;1943;1964;1999;NS;Open Seas Doctrine;Medium;M30019;X
+275039;Chief of Navy;Nikola Steinfl;1944;1964;1999;NS;Decisive Naval Battle Doctrine;Low;M30062;X
+275040;Chief of Air Force;Adalbert Rogulja;1943;1964;1999;NS;Army Aviation Doctrine;Medium;M30006;X
+275041;Chief of Air Force;Friedrich Navratil;1945;1964;1999;PA;Vertical Envelopment Doctrine;High;M30020;X
+275042;Head of State;Ante Pavelic;1933;1964;1999;FA;Powerhungry Demagogue;High;M30002;X
+275043;Chief of Army;Matija Canic;1944;1945;1965;FA;decisive battle doctrine;Medium;9765;X
+275044;Chief of Staff;Tomislav Sertic;1942;1943;1974;PA;school of psychology;Medium;9766;X
+275045;Chief of Staff;Ivan Prpic;1942;1944;1945;FA;school of fire support;Very High;unknownminister;X
+275046;Chief of Staff;Fedor Dragojlov;1943;1945;1962;PA;school of fire support;Very High;9767;X
+275047;Chief of Staff;Duro Gruic;1944;1945;1963;FA;school of defence;Very High;unknownminister;X
+275048;Head of State;Otto von Habsburg;1980;2011;2012;PA;Popular Figurehead;High;M115219;X
+275049;Head of Government;Franjo Tudman;1980;1999;2000;PA;Old General;High;CRO1;X
+275050;Foreign Minister;Rahim Ademi;1980;2020;2020;PA;General Staffer;Very High;CRO2;X
+275051;Minister of Armament;Ivan Cermak;1980;2020;2020;PA;Military Entrepreneur;Very High;CRO3;X
+275052;Minister of Security;Davor Domazet-Loso;1980;2020;2020;PA;Prince of Terror;Very High;CRO4;X
+275053;Head of Military Intelligence;Davor Domazet-Loso;1980;2020;2020;PA;Technical Specialist;Very High;CRO4;X
+275054;Chief of Staff;Ante Gotovina;1980;2020;2020;PA;School of Defence;Very High;CRO5;X
+275055;Chief of Army;Ante Gotovina;1980;2020;2020;PA;Decisive Battle Doctrine;Very High;CRO5;X
+275056;Chief of Navy;Ante Gotovina;1980;2020;2020;PA;Indirect Approach Doctrine;Very High;CRO5;X
+275057;Chief of Air Force;Ante Gotovina;1980;2020;2020;PA;Army Aviation Doctrine;Very High;CRO5;X
+275058;Head of State;Franjo Tudman;1980;1999;2000;SC;Resigned Generalissimo;High;CRO1;X
+275059;Head of Government;Franjo Greguric;1989;2020;2020;SC;Silent Workhorse;High;CRO6;X
+275060;Foreign Minister;Zvonimir Separovic;1989;2020;2020;ML;Apologetic Clerk;Very High;CRO7;X
+275061;Minister of Armament;Gojko Susak;1989;1998;1999;SC;Administrative Genius;Very High;CRO8;X
+275062;Minister of Security;Ivan Vekic;1989;2014;2015;SC;Prince of Terror;Very High;CRO9;X
+275063;Head of Military Intelligence;Ivan Vekic;1989;2014;2015;SC;Political Specialist;Very High;CRO9;X
+275064;Chief of Staff;Anton Tus;1989;2020;2020;ML;School of Psychology;Very High;CRO10;X
+275065;Chief of Army;Anton Tus;1989;2020;2020;ML;Static Defence Doctrine;Very High;CRO10;X
+275066;Chief of Navy;Anton Tus;1989;2020;2020;ML;Indirect Approach Doctrine;Very High;CRO10;X
+275067;Chief of Air Force;Anton Tus;1989;2020;2020;ML;Air Superiority Doctrine;Very High;CRO10;X
+275068;Chief of Staff;Janko Bobetko;1991;2003;2004;ML;School of Fire Support;Very High;CRO11;X
+275069;Chief of Army;Janko Bobetko;1991;2003;2004;ML;Decisive Battle Doctrine;Very High;CRO11;X
+275070;Chief of Navy;Janko Bobetko;1991;2003;2004;ML;Base Control Doctrine;Very High;CRO11;X
+275071;Chief of Air Force;Janko Bobetko;1991;2003;2004;ML;Army Aviation Doctrine;Very High;CRO11;X

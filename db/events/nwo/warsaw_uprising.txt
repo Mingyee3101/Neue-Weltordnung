@@ -1,0 +1,410 @@
+### Warsaw rises!
+
+event = {
+	id = 8222000
+	country = GER
+
+	name = EVT_8222000_NAME
+	desc = EVT_8222000_DESC
+	picture = nwo\warsaw_uprising
+	style = 1
+
+	trigger = {
+		war = { country = SOV country = GER }
+		# We've lost the eastern bank of Vistula
+		NOT = {
+			control = { province = 228 data = -1 } # Siedlce
+			exists = POL
+		}
+		control = { province = 232 data = -1  } # Warsaw
+		random = 50
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8222000_A # Sink them in blood
+		ai_chance = 95
+		command = { type = dissent value = 1 }
+		command = { type = setflag which = warsawuprising_GER_hard }
+
+	}
+
+	action = {
+		name = EVT_8222000_B # Withdraw from the city
+		command = { type = dissent value = 5 }
+		command = { type = setflag which = warsawuprising_GER_light }
+	}
+}
+
+event = { # Soviets consider supporting Warsaw Uprising
+	id = 8222001
+	country = SOV
+
+	name = EVT_8222001_NAME
+	desc = EVT_8222001_DESC
+	picture = nwo\warsaw_uprising
+	style = 1
+
+	trigger = {
+		event = 8222000
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8222001_A # Let us regroup and wait
+		ai_chance = 95
+		command = { type = dissent value = 1 }
+		command = { type = setflag which = warsawuprising_SOV_hard }
+	}
+	
+	action = {
+		name = EVT_8222001_B # Offer our full support 
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+		command = { type = damage_division which = -1 where = 50 } # Losses
+		command = { type = damage_division which = -1 where = 50 } # Losses
+		command = { type = money value = -400 } # A costly enterprise
+		command = { type = supplies value = -3000 }
+		command = { type = oilpool value = -1000 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = setflag which = warsawuprising_SOV_light }
+	}
+}
+
+event = { # Allied help for the Warsaw Uprising
+	id = 8222002
+	country = ENG
+
+	name = EVT_8222002_NAME
+	desc = EVT_8222002_DESC
+	picture = nwo\warsaw_uprising
+	style = 1
+
+	trigger = {
+		war = { country = GER }
+		event = 8222000
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8222002_A # We cannot help much 
+		ai_chance = 80
+		command = { type = dissent value = 1 }
+		command = { type = money value = -50 }
+		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -100 }
+		command = { type = setflag which = warsawuprising_ENG_hard }
+	}
+	
+	action = {
+		name = EVT_8222002_B #"We will do everything we can"
+		ai_chance = 20
+		command = { type = dissent value = 3 }
+		command = { type = money value = -200 } # A costly enterprise
+		command = { type = supplies value = -1500 } # High risk of transports being lost
+		command = { type = oilpool value = -500 } # High risk of transports being lost
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = setflag which = warsawuprising_ENG_light }
+	}
+}
+
+event = { # Randomizer
+	id = 8222003
+	country = REB
+
+	trigger = {
+		event = 8222000
+		event = 8222001
+		event = 8222002
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		ai_chance = 100
+		trigger = {
+			flag = warsawuprising_GER_hard
+			flag = warsawuprising_SOV_hard
+		}
+		command = { type = setflag which = warsawuprising_lost }
+	}
+
+	
+	
+	action = {
+		ai_chance = 99
+		trigger = {
+			flag = warsawuprising_GER_hard
+			flag = warsawuprising_SOV_light
+		}
+		command = { type = setflag which = warsawuprising_lost }
+	}
+
+	action = {
+		ai_chance = 1
+		trigger = {
+			flag = warsawuprising_GER_hard
+			flag = warsawuprising_SOV_light
+		}
+		command = { type = setflag which = warsawuprising_won }
+	}
+
+	
+	
+	action = {
+		ai_chance = 96
+		trigger = {
+			flag = warsawuprising_GER_light
+			flag = warsawuprising_SOV_hard
+		}
+		command = { type = setflag which = warsawuprising_lost }
+	}
+
+	action = {
+		ai_chance = 4
+		trigger = {
+			flag = warsawuprising_GER_light
+			flag = warsawuprising_SOV_hard
+		}
+		command = { type = setflag which = warsawuprising_won }
+	}
+	
+
+	
+	action = {
+		ai_chance = 92
+		trigger = {
+			flag = warsawuprising_GER_light
+			flag = warsawuprising_SOV_light
+			flag = warsawuprising_ENG_hard
+		}
+		command = { type = setflag which = warsawuprising_lost }
+	}
+	
+	action = {
+		ai_chance = 8
+		trigger = {
+			flag = warsawuprising_GER_light
+			flag = warsawuprising_SOV_light
+			flag = warsawuprising_ENG_hard
+		}
+		command = { type = setflag which = warsawuprising_won }
+	}
+	
+	
+	
+	action = {
+		ai_chance = 80
+		trigger = {
+			flag = warsawuprising_GER_light
+			flag = warsawuprising_SOV_light
+			flag = warsawuprising_ENG_light
+		}
+		command = { type = setflag which = warsawuprising_lost }
+	}
+	
+	action = {
+		ai_chance = 10
+		trigger = {
+			flag = warsawuprising_GER_light
+			flag = warsawuprising_SOV_light
+			flag = warsawuprising_ENG_light
+		}
+		command = { type = setflag which = warsawuprising_won }
+	}
+	
+	action = {
+		ai_chance = 10
+		trigger = {
+			flag = warsawuprising_GER_light
+			flag = warsawuprising_SOV_light
+			flag = warsawuprising_ENG_light
+		}
+		command = { type = setflag which = warsawuprising_won_full }
+	}
+}
+
+event = { # German reaction
+	id = 8222004
+	country = GER
+
+	name = EVT_8222004_NAME
+	desc = EVT_8222004_DESC
+	picture = nwo\warsaw_uprising
+	style = 1
+
+	trigger = {
+		flag = warsawuprising_lost
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8222004_A
+		command = { type = dissent value = -2 }
+		command = { type = damage_division which = -1 where = 10 } # Symbolic losses
+	}
+}
+
+event = { # German reaction
+	id = 8222005
+	country = GER
+
+	name = EVT_8222005_NAME
+	desc = EVT_8222005_DESC
+	picture = nwo\warsaw_uprising
+	style = 1
+
+	trigger = {
+		OR = {
+			flag = warsawuprising_won
+			flag = warsawuprising_won_full
+		}
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8222005_A
+		command = { type = dissent value = 3 }
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } # losses
+	}
+}
+
+event = { # Soviet reaction
+	id = 8222006
+	country = SOV
+
+	name = EVT_8222006_NAME
+	desc = EVT_8222006_DESC
+	picture = nwo\warsaw_uprising
+	style = 1
+
+	trigger = {
+		flag = warsawuprising_lost
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8222006_A
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = { # Soviet reaction
+	id = 8222007
+	country = SOV
+
+	name = EVT_8222007_NAME
+	desc = EVT_8222007_DESC
+	picture = nwo\warsaw_uprising
+	style = 1
+
+	trigger = {
+		flag = warsawuprising_won
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8222007_A
+		command = { type = dissent value = 3 }
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } # losses
+	}
+}
+
+event = { # Soviet reaction
+	id = 8222008
+	country = SOV
+
+	name = EVT_8222008_NAME
+	desc = EVT_8222008_DESC
+	picture = nwo\warsaw_uprising
+	style = 1
+
+	trigger = {
+		flag = warsawuprising_won_full
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8222008_A
+		command = { type = dissent value = 15 }
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } # losses
+	}
+}
+
+event = {
+	id = 8222009
+	country = POL
+
+	name = EVT_8222009_NAME
+	desc = EVT_8222009_DESC
+	picture = nwo\warsaw_uprising
+	style = 1
+	
+	trigger = {
+		flag = warsawuprising_won_full
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8222009_A
+		command = { type = dissent value = -25 }
+		# Government is set up here
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = set_domestic which = freedom value = 7 }
+		command = { type = set_domestic which = free_market value = 6 }
+		command = { type = set_domestic which = professional_army value = 0 }
+		command = { type = set_domestic which = defense_lobby value = 8 }
+		command = { type = set_domestic which = interventionism value = 8 }
+		# Our government
+		command = { type = headofstate which = 60016 } #Wladyslaw Raczkiewicz
+		command = { type = headofgovernment which = 60025 } #Stanislaw Mikolajczyk
+		command = { type = foreignminister which = 60038 } # Tadeusz Romer
+		command = { type = armamentminister which = 60065 } # Józef Haller
+		command = { type = ministerofsecurity which = 60069 } # Eugeniusz Kwiatkowski
+		command = { type = ministerofintelligence which = 60084 } # Adam Tarnowski
+		command = { type = chiefofstaff which = 60098 } # Leopold Okulicki
+		command = { type = chiefofarmy which = 60102 } # Tadeusz Bór-Komorowski
+		command = { type = chiefofnavy which = 60106 } # Józef Unrug
+		command = { type = chiefofair which = 60110 } # Ludomi³ Rayski
+		
+		command = { type = guarantee which = ENG where = POL }
+		command = { type = guarantee which = USA where = POL }
+	}
+}

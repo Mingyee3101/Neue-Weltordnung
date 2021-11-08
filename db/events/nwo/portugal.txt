@@ -1,0 +1,442 @@
+event = {
+	id = 8011701
+	country = POR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = communist
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 20057 } # Bento Gon?alves
+		command = { type = headofgovernment which = 20051 } # Jaime Cortes?o
+		command = { type = foreignminister which = 20059 } # H. Barrilao Ruas
+		command = { type = armamentminister which = 20029 } # F.Salgado Zenha
+		command = { type = ministerofsecurity which = 20060 } # ?lvaro Cunhal
+		command = { type = ministerofintelligence which = 20061 } # Antonio Sergo
+		command = { type = chiefofstaff which = 20062 } # Jose A.P. Rebelo
+		command = { type = chiefofarmy which = 20063 } # Jose A.P. Rebelo
+		command = { type = chiefofnavy which = 20064 } # Bento Gon?alves
+		command = { type = chiefofair which = 20065 } # Antonio Sergo
+	}
+}
+
+event = {
+	id = 8011702
+	country = POR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 20066 } # Francisco Craveiro Lopes
+	}
+}
+
+event = {
+	id = 8011703
+	country = POR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1967 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 20200 } # Am?rico Tomas
+	}
+}
+event = {
+	id = 8011704
+	country = POR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1968 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1973 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofgovernment which = 20201 } # Marcello Caetano
+	}
+}
+
+event = {
+	id = 8011705
+	country = POR
+
+	name = EVT_8011705_NAME
+	desc = EVT_8011705_DESC
+	picture = nwo\carnation_revolution
+	style = 1
+
+	date = { day = 0 month = january year = 1974 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1974 }
+
+	action = {
+		name = EVT_8011705_A
+		ai_chance = 99
+		command = { type = dissent value = 5 }
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 20202 } # Francisco da Costa Gomes
+		command = { type = headofgovernment which = 20203 } # Vasco Goncalves
+		command = { trigger = { exists = INO } type = secedeprovince which = INO value = 1617 when = 1 }
+	}
+	
+	action = {
+		name = EVT_8011705_B
+		ai_chance = 1
+		command = { type = dissent value = 30 }
+	}
+}
+
+event = {
+	id = 8011706
+	country = POR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1975 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 20204 } # Jose Pinheiro de Azevedo
+	}
+}
+
+event = {
+	id = 8011707
+	country = POR
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1976 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1978 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 20207 } # António Ramalho Eanes
+		command = { type = headofgovernment which = 20206 } # Mario Soares
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 20205 } # Octavio Rodrigues Pato
+		command = { type = headofgovernment which = 20206 } # Mario Soares
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8011708
+	country = POR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1979 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1979 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 20209 } # Maria Pintasilgo
+	}
+}
+
+event = {
+	id = 8011709
+	country = POR
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1980 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 20207 } # António Ramalho Eanes
+		command = { type = headofgovernment which = 20211 } # Francisco Sa Carneiro
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 20210 } # Antonio Soares Carneiro
+		command = { type = headofgovernment which = 20211 } # Francisco Sa Carneiro
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8011710
+	country = POR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1981 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1982 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 20212 } # Francisco Pinto Balsemao
+	}
+}
+
+event = {
+	id = 8011711
+	country = POR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1983 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofgovernment which = 20206 } # Mario Soares
+	}
+}
+
+event = {
+	id = 8011712
+	country = POR
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1986 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 20215 } # Diogo Freitas do Amaral
+		command = { type = headofgovernment which = 20209 } # Maria Pintasilgo
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 20213 } # Mario Soares
+		command = { type = headofgovernment which = 20214 } # Anibal Cavaco Silva
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8011713
+	country = POR
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1991 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 20216 } # Basilio Horta
+		command = { type = headofgovernment which = 20217 } # Diogo Freitas do Amaral
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 20213 } # Mario Soares
+		command = { type = headofgovernment which = 20214 } # Anibal Cavaco Silva
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 15 }
+	}
+}
+
+### Our stance on Goa issue
+
+event = {
+	id = 8011714
+	country = POR
+
+	name = EVT_8011714_NAME
+	desc = EVT_8011714_DESC
+	picture = "nwo\portuguese_goa"
+	style = 1
+	
+	trigger = {
+		exists = IND
+		control = { province = 1513 data = -1 }
+		NOT = { war = { country = IND country = POR } }
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8011714_A #"Hang on this piece of land!"
+		ai_chance = 95
+		command = { type = dissent value = 5 }
+		command = { type = relation which = IND value = -100 }
+	}
+	
+	action = {
+		name = EVT_8011714_B #"Negotiate the transfer of Goa"
+		ai_chance = 5
+		command = { type = dissent value = 15 }
+		command = { type = relation which = IND value = 100 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = freedom value = 2 }
+		command = { type = secedeprovince which = IND value = 1513 when = 1 }
+	}
+
+}

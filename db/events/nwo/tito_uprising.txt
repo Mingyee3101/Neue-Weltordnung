@@ -1,0 +1,410 @@
+event = { # The launch of Tito large scale uprising
+	id = 8223000
+	country = GER
+
+	name = EVT_8223000_NAME
+	desc = EVT_8223000_DESC
+	picture = nwo\tito_uprising
+	style = 1
+
+	trigger = {
+		war = { country = SOV country = GER }
+		NOT = {	exists = U27 }
+		OR = {
+			control = { province = 336 data = SOV } # Petrovgrad
+			control = { province = 339 data = SOV } # Bor
+			control = { province = 330 data = SOV } # Nis
+			control = { province = 331 data = SOV } # Pirot
+		}
+		# At least one of the Yugoslav core provinces is still controlled
+		OR = {
+			control = { province = 327 data = -1 } # Krusevac
+			control = { province = 329 data = -1 } # Pristina
+			control = { province = 335 data = -1 } # Prijepolje
+			control = { province = 342 data = -1 } # Uzice
+		}
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 15
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8223000_A # Withdraw in stages
+		ai_chance = 80
+		command = { type = dissent value = 1 }
+		command = { type = setflag which = titouprising_GER_light }
+	}
+	
+	action = {
+		name = EVT_8223000_B # Hold every inch
+		ai_chance = 20
+		command = { type = dissent value = 10 }
+		command = { type = setflag which = titouprising_GER_hard }
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+	}
+}
+
+event = { # Soviet reaction
+	id = 8223001
+	country = SOV
+
+	name = EVT_8223001_NAME
+	desc = EVT_8223001_DESC
+	picture = nwo\tito_uprising
+	style = 1
+
+	trigger = {
+		war = { country = SOV country = GER }
+		event = 8223000
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8223001_A # Cooperate with Tito
+		ai_chance = 80
+		command = { type = dissent value = -3 }
+		command = { type = setflag which = titouprising_SOV_light }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+	}
+	
+	action = {
+		name = EVT_8223001_B # Ignore partisans help
+		ai_chance = 20
+		command = { type = dissent value = 15 }
+		command = { type = setflag which = titouprising_SOV_hard }
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+	}
+}
+
+event = { # Randomizer
+	id = 8223003
+	country = REB
+
+	trigger = {
+		event = 8223000
+		event = 8223001
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 30
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		ai_chance = 95
+		trigger = {
+			flag = titouprising_GER_hard
+			flag = titouprising_SOV_hard
+		}
+		command = { type = setflag which = titouprising_lost }
+	}
+	
+	action = {
+		ai_chance = 5
+		trigger = {
+			flag = titouprising_GER_hard
+			flag = titouprising_SOV_hard
+		}
+		command = { type = setflag which = titouprising_won }
+	}
+
+	
+	
+	action = {
+		ai_chance = 25
+		trigger = {
+			flag = titouprising_GER_hard
+			flag = titouprising_SOV_light
+		}
+		command = { type = setflag which = titouprising_lost }
+	}
+
+	action = {
+		ai_chance = 75
+		trigger = {
+			flag = titouprising_GER_hard
+			flag = titouprising_SOV_light
+		}
+		command = { type = setflag which = titouprising_won }
+	}
+
+	
+	
+	action = {
+		ai_chance = 60
+		trigger = {
+			flag = titouprising_GER_light
+			flag = titouprising_SOV_hard
+		}
+		command = { type = setflag which = titouprising_lost }
+	}
+
+	action = {
+		ai_chance = 40
+		trigger = {
+			flag = titouprising_GER_light
+			flag = titouprising_SOV_hard
+		}
+		command = { type = setflag which = titouprising_won }
+	}
+	
+
+	
+	action = {
+		ai_chance = 2
+		trigger = {
+			flag = titouprising_GER_light
+			flag = titouprising_SOV_light
+		}
+		command = { type = setflag which = titouprising_lost }
+	}
+	
+	action = {
+		ai_chance = 98
+		trigger = {
+			flag = titouprising_GER_light
+			flag = titouprising_SOV_light
+		}
+		command = { type = setflag which = titouprising_won }
+	}
+}
+
+event = { # German reaction
+	id = 8223004
+	country = GER
+
+	name = EVT_8223004_NAME
+	desc = EVT_8223004_DESC
+	picture = nwo\tito_uprising
+	style = 1
+
+	trigger = {
+		flag = titouprising_lost
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8223004_A
+		command = { type = dissent value = -5 }
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+	}
+}
+
+event = { # German reaction
+	id = 8223005
+	country = GER
+
+	name = EVT_8223005_NAME
+	desc = EVT_8223005_DESC
+	picture = nwo\tito_uprising
+	style = 1
+
+	trigger = {
+		flag = titouprising_won
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8223005_A
+		command = { type = dissent value = 3 }
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+	}
+}
+
+event = { # Soviet reaction
+	id = 8223006
+	country = SOV
+
+	name = EVT_8223006_NAME
+	desc = EVT_8223006_DESC
+	picture = nwo\tito_uprising
+	style = 1
+
+	trigger = {
+		flag = titouprising_lost
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8223006_A
+		command = { type = dissent value = 10 }
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+		command = { type = damage_division which = -1 where = 50 } 
+	}
+}
+
+event = { # Soviet reaction
+	id = 8223007
+	country = SOV
+
+	name = EVT_8223007_NAME
+	desc = EVT_8223007_DESC
+	picture = nwo\tito_uprising
+	style = 1
+
+	trigger = {
+		flag = titouprising_won
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8223007_A
+		command = { type = dissent value = -2 }
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } # losses
+		command = { type = damage_division which = -1 where = 50 } # losses
+	}
+}
+
+event = {
+	id = 8223008
+	country = U27
+
+	name = EVT_8223008_NAME
+	desc = EVT_8223008_DESC
+	picture = nwo\tito_uprising
+	style = 1
+
+	trigger = {
+		flag = titouprising_won
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = EVT_8223008_A
+		
+		# Government is set up here
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = set_domestic which = free_market value = 4 }
+		command = { type = set_domestic which = professional_army value = 3 }
+		command = { type = set_domestic which = defense_lobby value = 5 }
+		command = { type = set_domestic which = interventionism value = 5 }
+		# Our government
+		command = { type = headofstate which = 950100 } # Ivan Ribar
+		command = { type = headofgovernment which = 950003 } # Josip Broz Tito
+		command = { type = foreignminister which = 950101 } # Ivan Subasic
+		command = { type = armamentminister which = 950005 } # Milentije Popovic
+		command = { type = ministerofsecurity which = 950014 } # Koca Popovic
+		command = { type = ministerofintelligence which = 950006 } # Aleksandar Rankovic
+		command = { type = chiefofstaff which = 950009 } # Koca Popovic
+		command = { type = chiefofarmy which = 950010 } # Josip Broz Tito
+		command = { type = chiefofnavy which = 950011 } # Josip Broz Tito
+		command = { type = chiefofair which = 950008 } # Ivan Ribar
+		# We give military access and ally with SU
+		command = { type = access which = SOV } 
+		command = { type = alliance which = SOV }
+	}
+}
+
+event = {
+	id = 8223009
+	country = U27
+
+	name = EVT_8223009_NAME
+	desc = EVT_8223009_DESC
+	picture = nwo\tito_uprising
+	style = 1
+
+	trigger = {
+		flag = titouprising_lost
+	}
+
+    date = { day = 0 month = january year = 1943 }
+    offset = 3
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = EVT_8223009_A
+		
+		# Sleep Tito
+		command = { type = sleepminister which = 950001 }
+		command = { type = sleepminister which = 950002 }
+		command = { type = sleepminister which = 950003 }
+		command = { type = sleepminister which = 950010 }
+		command = { type = sleepminister which = 950011 }
+		
+		# Government is set up here
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = set_domestic which = free_market value = 2 }
+		command = { type = set_domestic which = professional_army value = 3 }
+		command = { type = set_domestic which = defense_lobby value = 5 }
+		command = { type = set_domestic which = interventionism value = 2 }
+		# Our government
+		command = { type = headofstate which = 950100 } # Ivan Ribar
+		command = { type = headofgovernment which = 950121 } # Aleksandar Rankovic
+		command = { type = foreignminister which = 950101 } # Ivan Subasic
+		command = { type = armamentminister which = 950005 } # Milentije Popovic
+		command = { type = ministerofsecurity which = 950014 } # Koca Popovic
+		command = { type = ministerofintelligence which = 950006 } # Aleksandar Rankovic
+		command = { type = chiefofstaff which = 950009 } # Koca Popovic
+		command = { type = chiefofarmy which = 950010 } # Josip Broz Tito
+		command = { type = chiefofnavy which = 950011 } # Josip Broz Tito
+		command = { type = chiefofair which = 950008 } # Ivan Ribar
+		# We give military access and ally with SU
+		command = { type = access which = SOV } 
+		command = { type = alliance which = SOV }
+	}
+}

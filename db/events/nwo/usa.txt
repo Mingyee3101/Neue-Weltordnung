@@ -1,0 +1,1046 @@
+event = {
+	id = 8015801
+	country = USA
+
+	name = EVT_8015801_NAME
+	desc = EVT_8015801_DESC
+	picture = nwo\usa_elections_1948
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = november year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = EVT_8015801_A # Elect Truman
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = dissent value = -8 }
+		command = { type = headofstate which = 240013 } # Harry S. Truman
+		command = { type = headofgovernment which = 240025 } # Alben W. Barkley
+		command = { type = foreignminister which = 240040 } # George C. Marshall
+		command = { type = armamentminister which = 240177 } # John W. Snyder
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240097 } # Roscoe H. Hillenkoetter
+		command = { type = chiefofstaff which = 240190 }
+		command = { type = chiefofarmy which = 240191 }
+		command = { type = chiefofnavy which = 240192 }
+		command = { type = chiefofair which = 240195 }
+	}
+	action = {
+		name = EVT_8015801_B # Elect Dewey
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = -2 }
+		command = { type = headofstate which = 240017 } # Thomas E. Dewey
+		command = { type = headofgovernment which = 240028 } # John Bricker
+		command = { type = foreignminister which = 240041 } # Arthur Vandenberg
+		command = { type = armamentminister which = 240062 } # Warren G. Hooper
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240098 } # William J. Donovan
+		command = { type = chiefofstaff which = 240190 }
+		command = { type = chiefofarmy which = 240191 }
+		command = { type = chiefofnavy which = 240192 }
+		command = { type = chiefofair which = 240195 }
+	}
+}
+
+event = {
+	id = 8015802
+	country = USA
+
+	name = EVT_8015802_NAME
+	desc = EVT_8015802_DESC
+	picture = nwo\usa_elections_1952
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = november year = 1952 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = EVT_8015802_A # Elect Ike
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = -8 }
+		command = { type = headofstate which = 240168 } # Dwight D. Eisenhower
+		command = { type = headofgovernment which = 240171 } # Richard M. Nixon
+		command = { type = foreignminister which = 240175 } # John Foster Dulles
+		command = { type = armamentminister which = 240179 } # George M. Humphrey
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240188 } # Allen W. Dulles
+		command = { type = chiefofstaff which = 240190 }
+		command = { type = chiefofarmy which = 240220 }
+		command = { type = chiefofnavy which = 240194 }
+		command = { type = chiefofair which = 240229 }
+	}
+	action = {
+		name = EVT_8015802_B # Elect Stevenson
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = dissent value = -2 }
+		command = { type = headofstate which = 240169 } # Adlai Stevenson
+		command = { type = headofgovernment which = 240172 } # John Sparkman
+		command = { type = foreignminister which = 240176 } # Culbert Levy Olson
+		command = { type = armamentminister which = 240180 } # Herbert R. O'Connor
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240189 } # William Preston Lane
+		command = { type = chiefofstaff which = 240190 }
+		command = { type = chiefofarmy which = 240220 }
+		command = { type = chiefofnavy which = 240194 }
+		command = { type = chiefofair which = 240229 }
+	}
+}
+
+event = {
+	id = 8015803
+	country = USA
+
+	name = EVT_8015803_NAME
+	desc = EVT_8015803_DESC
+	picture = nwo\usa_elections_1956
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = november year = 1956 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = EVT_8015803_A # Elect Ike
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = -8 }
+		command = { type = headofstate which = 240168 } # Dwight D. Eisenhower
+		command = { type = headofgovernment which = 240171 } # Richard M. Nixon
+		command = { type = foreignminister which = 240175 } # John Foster Dulles
+		command = { type = armamentminister which = 240208 } # Robert B. Anderson
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240188 } # Allen W. Dulles
+		command = { type = chiefofstaff which = 240217 }
+		command = { type = chiefofarmy which = 240221 }
+		command = { type = chiefofnavy which = 240226 }
+		command = { type = chiefofair which = 240230 }
+	}
+	action = {
+		name = EVT_8015803_B # Elect Stevenson
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = dissent value = -2 }
+		command = { type = headofstate which = 240169 } # Adlai Stevenson
+		command = { type = headofgovernment which = 240205 } # Estes Kefauver
+		command = { type = foreignminister which = 240173 } # Dean Acheson
+		command = { type = armamentminister which = 240209 } # Robert A. Lovett
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240212 } # Peter C. Reilly
+		command = { type = chiefofstaff which = 240217 }
+		command = { type = chiefofarmy which = 240221 }
+		command = { type = chiefofnavy which = 240226 }
+		command = { type = chiefofair which = 240230 }
+	}
+}
+
+event = {
+	id = 8015804
+	country = USA
+
+	name = EVT_8015804_NAME
+	desc = EVT_8015804_DESC
+	picture = nwo\usa_elections_1960
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = november year = 1960 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = EVT_8015804_A
+		ai_chance = 85
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = dissent value = -8 }
+		command = { type = headofstate which = 240202 } # John F. Kennedy
+		command = { type = headofgovernment which = 240204 } # Lyndon B. Johnson
+		command = { type = foreignminister which = 240207 } # Dean Rusk
+		command = { type = armamentminister which = 240210 } # C. Douglas Dillon
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240213 } # John A. McCone
+		command = { type = chiefofstaff which = 240218 }
+		command = { type = chiefofarmy which = 240223 }
+		command = { type = chiefofnavy which = 240227 }
+		command = { type = chiefofair which = 240231 }
+	}
+	action = {
+		name = EVT_8015804_B
+		ai_chance = 15
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = dissent value = -2 }
+		command = { type = headofstate which = 240201 } # Richard M. Nixon
+		command = { type = headofgovernment which = 240203 } # Henry Cabot Lodge jr.
+		command = { type = foreignminister which = 240206 } # Strom Thurmond
+		command = { type = armamentminister which = 240211 } # Nelson A. Rockefeller
+		command = { type = ministerofsecurity which = 240005 } # J. Edgar Hoover
+		command = { type = ministerofintelligence which = 240188 } # Allen W. Dulles
+		command = { type = chiefofstaff which = 240218 }
+		command = { type = chiefofarmy which = 240223 }
+		command = { type = chiefofnavy which = 240227 }
+		command = { type = chiefofair which = 240231 }
+	}
+}
+
+# Assassination of JFK
+event = {
+	id = 8015805
+	country = USA
+
+	name = EVT_8015805_NAME
+	desc = EVT_8015805_DESC
+	picture = nwo\assassination_of_jfk
+	style = 1
+
+	trigger = {
+		government = democratic
+		headofstate = 240202
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = EVT_8015805_A
+		ai_chance = 100
+		command = { type = sleepminister which = 240202 } # John F. Kennedy
+		command = { type = headofstate which = 240214 } # Lyndon B. Johnson
+		command = { type = headofgovernment which = 240215 } # Hubert Humphrey
+	}
+}
+
+event = {
+	id = 8015806
+	country = USA
+
+	name = EVT_8015806_NAME
+	desc = EVT_8015806_DESC
+	picture = nwo\usa_elections_1964
+	style = 1
+
+	trigger = {
+		headofstate = 240214
+		government = democratic
+	}
+
+	date = { day = 2 month = november year = 1964 }
+	offset = 1
+	deathdate = { day = 3 month = november year = 1968 }
+
+	action = {
+		name = EVT_8015806_A
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 240214 } # Lyndon B. Johnson
+		command = { type = headofgovernment which = 240215 } # Hubert Humphrey
+	}
+	action = {
+		name = EVT_8015806_B
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 240424 } # Barry Goldwater
+		command = { type = headofgovernment which = 240425 } # William E. Miller
+	}
+}
+
+event = {
+	id = 8015807
+	country = USA
+
+	name = EVT_8015807_NAME
+	desc = EVT_8015807_DESC
+	picture = nwo\usa_elections_1968
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 4 month = november year = 1968 }
+	offset = 1
+	deathdate = { day = 5 month = november year = 1972 }
+
+	action = {
+		name = EVT_8015807_A
+		ai_chance = 84
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 240428 } # Richard Nixon
+		command = { type = headofgovernment which = 240429 } # Spiro Agnew
+	}
+	action = {
+		name = EVT_8015807_B
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 240426 } # Hubert Humphrey
+		command = { type = headofgovernment which = 240427 } # Edmund Muskie
+	}
+	action = {
+		name = EVT_8015807_C
+		ai_chance = 1
+		command = { type = dissent value = 20 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 240452 } # George Wallace
+		command = { type = headofgovernment which = 240453 } # Curtis LeMay
+	}
+}
+
+event = {
+	id = 8015808
+	country = USA
+
+	name = EVT_8015808_NAME
+	desc = EVT_8015808_DESC
+	picture = nwo\usa_elections_1972
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 6 month = november year = 1972 }
+	offset = 1
+	deathdate = { day = 4 month = december year = 1973 }
+
+	action = {
+		name = EVT_8015808_A
+		ai_chance = 95
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 240428 } # Richard Nixon
+		command = { type = headofgovernment which = 240429 } # Spiro Agnew
+	}
+	action = {
+		name = EVT_8015808_B
+		ai_chance = 5
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 240430 } # George McGovern
+		command = { type = headofgovernment which = 240431 } # Sargent Shriver
+	}
+}
+
+event = {
+	id = 8015809
+	country = USA
+
+	name = EVT_8015809_NAME
+	desc = EVT_8015809_DESC
+	picture = nwo\spiro_agnew
+	style = 1
+
+	trigger = {
+		government = democratic
+		headofgovernment = 240429
+	}
+
+	date = { day = 5 month = december year = 1973 }
+	offset = 1
+	deathdate = { day = 7 month = august year = 1974 }
+
+	action = {
+		name = EVT_8015809_A
+		ai_chance = 98
+		command = { type = headofgovernment which = 240432 } # Gerald Ford
+	}
+	
+	action = {
+		name = EVT_8015809_B
+		ai_chance = 2
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 8015810
+	country = USA
+
+	name = EVT_8015810_NAME
+	desc = EVT_8015810_DESC
+	picture = nwo\nixon_resigns
+	style = 1
+
+	trigger = {
+		government = democratic
+		headofstate = 240428
+	}
+
+	action = {
+		name = EVT_8015810_A
+		ai_chance = 100
+		command = { trigger = { headofgovernment = 240429 } type = headofstate which = 240445 } # Spiro Agnew
+		command = { trigger = { NOT = { headofgovernment = 240429 } } type = headofstate which = 240433 } # Gerald Ford
+		command = { type = headofgovernment which = 240434 } # Nelson Rockefeller
+	}
+}
+
+event = {
+	id = 8015811
+	country = USA
+
+	name = EVT_8015811_NAME
+	desc = EVT_8015811_DESC
+	picture = nwo\usa_elections_1976
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 1 month = november year = 1976 }
+	offset = 1
+	deathdate = { day = 2 month = november year = 1980 }
+
+	action = {
+		name = EVT_8015811_A
+		ai_chance = 80
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 240435 } # Jimmy Carter
+		command = { type = headofgovernment which = 240436 } # Walter Mondale
+	}
+	action = {
+		name = EVT_8015811_B
+		ai_chance = 20
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 240433 } # Gerald Ford
+		command = { type = headofgovernment which = 240437 } # Bob Dole
+		command = { type = armamentminister which = 240472 } #James Schlesinger
+	}
+}
+
+event = {
+	id = 8015812
+	country = USA
+
+	name = EVT_8015812_NAME
+	desc = EVT_8015812_DESC
+	picture = nwo\usa_elections_1980
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 3 month = november year = 1980 }
+	offset = 1
+	deathdate = { day = 4 month = november year = 1984 }
+
+	action = {
+		name = EVT_8015812_A
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 240414 } # Ronald Reagan
+		command = { type = headofgovernment which = 240438 } # George H. W. Bush
+		command = { type = foreignminister which = 240470 } # Alexander Haig
+	}
+	action = {
+		name = EVT_8015812_B
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 240435 } # Jimmy Carter
+		command = { type = headofgovernment which = 240436 } # Walter Mondale
+	}
+}
+
+event = {
+	id = 8015813
+	country = USA
+
+	name = EVT_8015813_NAME
+	desc = EVT_8015813_DESC
+	picture = nwo\usa_elections_1984
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 5 month = november year = 1984 }
+	offset = 1
+	deathdate = { day = 6 month = november year = 1988 }
+
+	action = {
+		name = EVT_8015813_A
+		ai_chance = 95
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 240414 } # Ronald Reagan
+		command = { type = headofgovernment which = 240438 } # George H. W. Bush 
+	}
+	action = {
+		name = EVT_8015813_B
+		ai_chance = 5
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 240439 } # Walter Mondale
+		command = { type = headofgovernment which = 240440 } # Geraldine Ferraro
+	}
+}
+
+event = {
+	id = 8015814
+	country = USA
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\usa_elections_1988
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 7 month = november year = 1988 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 240443 } # George H. W. Bush
+		command = { type = headofgovernment which = 240444 } # Dan Quayle
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 240441 } # Michael Dukakis
+		command = { type = headofgovernment which = 240442 } # Lloyd Bentsen
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+
+# McCarthyism
+
+event = {
+	id = 8015840
+	country = USA
+
+	name = EVT_8015840_NAME
+	desc = EVT_8015840_DESC
+	picture = nwo\mc_carthy
+	decision_picture = nwo\d_mccarthy
+	style = 1
+
+	decision = {
+		NOT = { government = communist }
+	}
+	
+	trigger = {
+		NOT = { government = communist }
+	}
+
+	date = { day = 1 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = EVT_8015840_A #"Suppress those commies"
+		ai_chance = 80
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = dissent value = -2 }
+	}
+	
+	action = {
+		name = EVT_8015840_B #"It's the land of the free"
+		ai_chance = 20
+		trigger = { ai = yes }
+		command = { type = sleepevent which = 8015841 }
+	}
+
+}
+
+event = {
+	id = 8015841
+	country = USA
+
+	name = EVT_8015841_NAME
+	desc = EVT_8015841_DESC
+	picture = nwo\mc_carthy
+	style = 1
+
+	trigger = {
+		NOT = { government = communist }
+		event = 8015840
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = EVT_8015841_A
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = dissent value = 5 }
+	}
+	
+}
+
+###
+
+event = {
+	id = 8015842
+	country = USA
+
+	name = EVT_8015842_NAME
+	desc = EVT_8015842_DESC
+	picture = nwo\affluent_society
+	style = 1
+
+	trigger = {
+		government = democratic
+		atwar = no
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = EVT_8015842_A
+		command = { type = dissent value = -15 }
+		command = { type = money value = 10000 }
+	}
+}
+
+# Trial of the Rosenbergs
+event = {
+	id = 8015843
+	country = USA
+
+	name = EVT_8015843_NAME
+	desc = EVT_8015843_DESC
+	picture = nwo\rosenbergs
+	decision_picture = nwo\d_rosenbergs
+	style = 1
+
+	decision = {
+		NOT = { government = communist }
+		exists = SOV
+	}
+	
+	trigger = {
+		NOT = { government = communist }
+		exists = SOV
+	}
+
+	date = { day = 1 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = EVT_8015843_A
+		ai_chance = 80
+		command = { type = dissent value = -2 }
+		command = { type = relation which = SOV value = -25 }
+		# WILL IT WORK?
+		command = { type = intelligence which = us value = 5 } # Modifier in percents
+		command = { type = intelligence which = them value = 5 } # Modifier in percents
+	}
+	
+	action = {
+		name = EVT_8015843_B
+		ai_chance = 20
+		trigger = { ai = yes }
+		command = { type = dissent value = 1 }
+	}
+}
+
+# Civil Rights Movement
+event = {
+	id = 8015844
+	country = USA
+
+	name = EVT_8015844_NAME
+	desc = EVT_8015844_DESC
+	picture = nwo\civil_rights_movement
+	decision_picture = nwo\d_civil_rights_movement
+	style = 1
+
+	trigger = {
+		government = democratic
+		atwar = no
+	}
+
+	date = { day = 1 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = EVT_8015844_A #"Changes are slow but steady"
+		ai_chance = 90
+		command = { type = dissent value = -2 }
+		command = { type = domestic which = freedom value = 1 }
+	}
+	
+	action = {
+		name = EVT_8015844_B #"No change to the current system!"
+		ai_chance = 10
+		trigger = { ai = yes }
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = sleepevent which = 8015811 }
+	}
+}
+
+# 'I Have a Dream' speech
+event = {
+	id = 8015845
+	country = USA
+
+	name = EVT_8015845_NAME
+	desc = EVT_8015845_DESC
+	picture = nwo\dr_martin_luther_king
+	style = 1
+
+	trigger = {
+		government = democratic
+		event = 8015810
+		atwar = no
+	}
+
+	date = { day = 28 month = august year = 1963 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8015845_A
+		command = { type = dissent value = -5 }
+		command = { type = domestic which = freedom value = 2 }
+	}
+
+}
+
+# Great society
+event = {
+	id = 8015846
+	country = USA
+
+	name = EVT_8015846_NAME
+	desc = EVT_8015846_DESC
+	picture = nwo\great_society
+	decision_picture = nwo\d_great_society
+	style = 1
+	
+	decision = {
+		government = democratic
+		headofstate = 240214
+		atwar = no
+	}
+
+	trigger = {
+		government = democratic
+		headofstate = 240214
+		atwar = no
+	}
+
+	date = { day = 1 month = january year = 1965 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1968 }
+
+	action = {
+		name = EVT_8015846_A
+		command = { type = dissent value = -5 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = money value = 10000 }
+	}
+}
+
+# Reaganomics
+event = {
+	id = 8015847
+	country = USA
+
+	name = EVT_8015847_NAME
+	desc = EVT_8015847_DESC
+	picture = nwo\reaganomics
+	decision_picture = nwo\d_reaganomics
+	style = 1
+	
+	decision = {
+		government = democratic
+		headofstate = 240414
+		atwar = no
+	}
+
+	trigger = {
+		government = democratic
+		headofstate = 240414
+		atwar = no
+	}
+
+	date = { day = 1 month = january year = 1982 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1986 }
+
+	action = {
+		name = EVT_8015847_A
+		command = { type = dissent value = -5 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = domestic which = free_market value = 6 }
+		command = { type = money value = 10000 }
+	}
+}
+
+### Watergate scandal
+event = {
+	id = 8015850
+	country = USA
+
+	name = EVT_8015850_NAME
+	desc = EVT_8015850_DESC
+	picture = nwo\watergate
+	style = 1
+	
+	trigger = {
+		government = democratic
+		headofstate = 240201
+		atwar = no
+		random = 95
+	}
+
+	date = { day = 1 month = june year = 1972 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1972 }
+
+	action = {
+		name = EVT_8015850_A
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 8015851
+	country = USA
+
+	name = EVT_8015851_NAME
+	desc = EVT_8015851_DESC
+	picture = nwo\watergate
+	style = 1
+	
+	trigger = {
+		government = democratic
+		headofstate = 240201
+		atwar = no
+		random = 95
+		event = 8015850
+	}
+
+	date = { day = 1 month = june year = 1973 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1973 }
+
+	action = {
+		name = EVT_8015851_A
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 8015852
+	country = USA
+
+	name = EVT_8015852_NAME
+	desc = EVT_8015852_DESC
+	picture = nwo\watergate
+	style = 1
+	
+	trigger = {
+		government = democratic
+		headofstate = 240201
+		atwar = no
+		random = 95
+		event = 8015850
+	}
+
+	date = { day = 8 month = august year = 1974 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1974 }
+
+	action = {
+		name = EVT_8015852_A
+		ai_chance = 90
+		command = { type = dissent value = -5 }
+		command = { type = trigger which = 8015810 }
+	}
+	
+	action = {
+		name = EVT_8015852_B
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 8015853 }
+	}
+	
+	action = {
+		name = EVT_8015852_C
+		ai_chance = 5
+		command = { type = dissent value = 25 }
+		command = { type = trigger which = 8015854 }
+	}
+}
+
+event = {
+	id = 8015853
+	country = USA
+	one_action = yes
+
+	name = EVT_8015853_NAME
+	desc = EVT_8015853_DESC
+	picture = nwo\impeachment
+	style = 1
+
+	action = {
+		name = EVT_8015853_A
+		ai_chance = 97
+		command = { type = trigger which = 8015855 }
+	}
+	
+	action = {
+		name = EVT_8015853_B
+		ai_chance = 3
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 8015854
+	country = USA
+	one_action = yes
+
+	name = EVT_8015854_NAME
+	desc = EVT_8015854_DESC
+	picture = nwo\impeachment
+	style = 1
+
+	action = {
+		name = EVT_8015854_A
+		command = { type = trigger which = 8015855 }
+	}
+	
+	action = {
+		name = EVT_8015854_B
+		command = { type = domestic which = democratic value = -3 }
+		command = { type = dissent value = 20 }
+	}
+}
+
+event = {
+	id = 8015855
+	country = USA
+	one_action = yes
+
+	name = EVT_8015855_NAME
+	desc = EVT_8015855_DESC
+	picture = nwo\nixon_leaves
+	style = 1
+
+	action = {
+		name = EVT_8015855_A
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { trigger = { headofgovernment = 240429 } type = headofstate which = 240445 } # Spiro Agnew
+		command = { trigger = { NOT = { headofgovernment = 240429 } } type = headofstate which = 240433 } # Gerald Ford
+		command = { type = headofgovernment which = 240434 } # Nelson Rockefeller
+	}
+}
+
+event = {
+	id = 8015856
+	country = USA
+
+	name = EVT_8015856_NAME
+	desc = EVT_8015856_DESC
+	picture = nwo\usa_elections_1964
+	style = 1
+
+	trigger = {
+		headofstate = 240201
+		government = democratic
+	}
+
+	date = { day = 2 month = november year = 1964 }
+	offset = 1
+	deathdate = { day = 3 month = november year = 1968 }
+
+	action = {
+		name = EVT_8015856_A
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 240201 } # Richard M. Nixon
+		command = { type = headofgovernment which = 240203 } # Henry Cabot Lodge jr.
+	}
+	action = {
+		name = EVT_8015856_B
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 240448 } # Stuart Symington
+		command = { type = headofgovernment which = 240215 } # Hubert Humphrey
+		command = { type = ministerofsecurity which = 240451 } # George Smathers
+	}
+}

@@ -1,0 +1,571 @@
+event = {
+	id = 8021301
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 880100 } # B?la Mikl?s de Daln?k
+		command = { type = headofgovernment which = 880101 } # Zolt?n Tildy
+		command = { type = foreignminister which = 880011 } # Matta Zalka
+		command = { type = armamentminister which = 880015 } # Ern? Ger?
+		command = { type = ministerofsecurity which = 880021 } # Imre Nagy
+		command = { type = ministerofintelligence which = 880025 } # L?szl? Rajk
+		command = { type = chiefofstaff which = 880026 } # Matta Zalka
+		command = { type = chiefofarmy which = 880027 } # Gabor Sziszkalatay
+		command = { type = chiefofnavy which = 880030 } # K?lm?n Hardy
+		command = { type = chiefofair which = 880032 } # Gy?rghyi De Brody
+		command = { type = name where = U13 which = U1346 }
+		command = { type = flag_ext where = U13 which = _1946 }
+	}
+}
+
+event = {
+	id = 8021302
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 880002 } # Zoltan Tildy 
+		command = { type = headofgovernment which = 880102 } # Ferenc Nagy 
+		command = { type = armamentminister which = 880016 } # Zolt?n Vas
+		command = { type = ministerofsecurity which = 880021 } # Imre Nagy
+		command = { type = ministerofintelligence which = 880025 } # L?szl? Rajk
+		command = { type = name where = U13 which = U1346 }
+	}
+}
+
+event = {
+	id = 8021303
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 880005 } # M?tyas R?kosi
+		command = { type = headofgovernment which = 880038 } # Istvan Dobi
+		command = { type = foreignminister which = 880012 } # L?szl? Rajk
+		command = { type = armamentminister which = 880016 } # Zolt?n Vas
+		command = { type = ministerofsecurity which = 880043 } # Janos Kadar
+		command = { type = ministerofintelligence which = 880025 } # L?szl? Rajk
+		command = { type = name where = U13 which = U13 }
+		command = { type = flag_ext where = U13 which = "" }
+	}
+}
+
+event = {
+	id = 8021304
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 880005 } # M?tyas R?kosi
+		command = { type = headofgovernment which = 880008 } # M?tyas R?kosi
+		command = { type = foreignminister which = 880041 } # Karoly Kiss
+		command = { type = armamentminister which = 880042 } # Imre Horvath
+		command = { type = ministerofsecurity which = 880043 } # Janos Kadar
+		command = { type = ministerofintelligence which = 880023 } # K?roly Peyer
+	}
+}
+
+event = {
+	id = 8021305
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = april year = 1953 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 880103 } # M?ty?s R?kosi
+		command = { type = headofgovernment which = 880039 } # Imre Nagy
+	}
+}
+
+event = {
+	id = 8021306
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 880103 } # M?ty?s R?kosi
+		command = { type = headofgovernment which = 880104 } # Andras Hegedus
+	}
+}
+
+event = {
+	id = 8021307
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 90
+	deathdate = { day = 29 month = march year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 880105 } # Ern? Ger?
+		command = { type = headofgovernment which = 880039 } # Imre Nagy
+	}
+}
+
+event = {
+	id = 8021308
+	country = U13
+
+	name = EVT_8021308_NAME
+	desc = EVT_8021308_DESC
+	picture = "nwo\hungarian_revolution_1956_victory"
+	style = 1
+
+	# Triggered by success of Hungarian Revolution
+
+	# Forfeit communism!
+	action = {
+		name = EVT_8021308_A
+		ai_chance = 98
+		command = { type = headofstate which = 880106 } # Imre Nagy 
+		command = { type = headofgovernment which = 880101 } # Zoltan Tildy
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		
+		command = { type = setflag which = lower_soviet_bloc_coherence } ## CEE influence -1
+		command = { type = event which = 8225001 where = SOV when = 2 } ## CEE influence -1
+		command = { type = event which = 8225001 where = SOV when = 3 } ## CEE influence -1
+	}
+	
+	# Stay in the current system
+	action = {
+		name = EVT_8021308_B
+		ai_chance = 2
+		command = { type = headofstate which = 880106 } # Imre Nagy 
+		command = { type = headofgovernment which = 880101 } # Zoltan Tildy
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 9 }
+		
+		command = { type = setflag which = lower_soviet_bloc_coherence } ## CEE influence -1
+		command = { type = event which = 8225001 where = SOV when = 2 } ## CEE influence -1
+		command = { type = event which = 8225001 where = SOV when = 3 } ## CEE influence -1
+	}
+}
+
+event = {
+	id = 8021309
+	country = U13
+
+	name = EVT_8021309_NAME
+	desc = EVT_8021309_DESC
+	picture = "nwo\hungarian_revolution_1956_aftermath"
+	style = 1
+
+	# Triggered by failure of Hungarian Revolution
+	
+	action = {
+		name = EVT_8021309_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 880107 } # Janos Kadar
+		command = { type = headofgovernment which = 880108 } # Janos Kadar 
+		
+		command = { type = setflag which = raise_soviet_bloc_coherence } ## CEE influence +1
+		command = { type = event which = 8225000 where = SOV when = 2 } ## CEE influence +1
+	}
+}
+
+event = {
+	id = 8021310
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 880107 } # Janos Kadar 
+		command = { type = headofgovernment which = 880109 } # Ferenc Munnich
+		command = { type = flag_ext where = U13 which = _1957 }
+	}
+}
+
+event = {
+	id = 8021311
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 880107 } # Janos Kadar 
+		command = { type = headofgovernment which = 880108 } # Janos Kadar 
+	}
+}
+
+event = {
+	id = 8021312
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1965 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1966 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 880110 } # Gyula Kallai
+	}
+}
+
+event = {
+	id = 8021313
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1967 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1974 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 880111 } # Jeno Fock
+	}
+}
+
+event = {
+	id = 8021314
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1975 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1986 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 880112 } # György Lazar
+	}
+}
+
+event = {
+	id = 8021315
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1987 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1987 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 880113 } # Karoly Grósz
+	}
+}
+
+event = {
+	id = 8021316
+	country = U13
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1988 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 880114 } # Karoly Grósz
+		command = { type = headofgovernment which = 880115 } # Miklós Németh
+	}
+}
+
+event = {
+	id = 8021317
+	country = U13
+
+	name = EVT_8021317_NAME #"Formation of Hungarian Working People's Party"
+	desc = EVT_8021317_DESC #"Faced with failures at the polls, the Communists changed tactics, and, under new orders from Moscow, decided to eschew democratic facades and speed up the Communist takeover. In June 1948 the Social Democratic Party was forced to 'merge' with the Communist Party. Anti-Communist leaders of the Social Democrats were forced into exile or excluded from the party. Eventually, opposition parties were simply declared illegal."
+	picture = nwo\hungarian_communist_party
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = EVT_8021317_A
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = free_market value = -3 }
+		command = { type = domestic which = freedom value = -3 }
+	}
+
+}
+
+event = {
+	id = 8021318
+	country = U13
+
+	name = EVT_8021318_NAME #"The Rajk Trial"
+	desc = EVT_8021318_DESC #"The main opposition fraction in the party were the 'Hungarian' Communists who led the illegal party during the war. Their most influential leader, László Rajk, was arrested in May 1949. At his trial he made a forced confession to be an agent of Miklós Horthy, Trotsky, Tito and Western imperialism. He also admitted that he had taken part in a murder plot against Mátyás Rákosi and Ernõ Gerõ. Rajk was found guilty and executed."
+	picture = nwo\rajk_trial
+	style = 1
+
+	trigger = {
+		OR = {
+			incabinet = 880004
+			incabinet = 880007
+			incabinet = 880012
+			incabinet = 880019
+			incabinet = 880025
+		}
+		flag = cold_war
+	}
+
+	date = { day = 0 month = may year = 1949 }
+	offset = 60
+	deathdate = { day = 29 month = october year = 1949 }
+
+	action = {
+		name = EVT_8021318_A
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = sleepminister which = 880004 }
+		command = { type = sleepminister which = 880007 }
+		command = { type = sleepminister which = 880012 }
+		command = { type = sleepminister which = 880019 }
+		command = { type = sleepminister which = 880025 }
+	}
+}
+
+# Hungarian Round Table talks
+event = {
+	id = 8021319
+	country = U13
+
+	name = EVT_8021319_NAME
+	desc = EVT_8021319_DESC
+	picture = nwo\hungarian_round_table
+	style = 1
+
+	trigger = {		
+		flag = autumn_of_nations
+		atwar = no
+	}
+
+	date = { day = 0 month = june year = 1989 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1991 }
+
+	action = {
+		name = EVT_8021319_A
+		ai_chance = 99
+		command = { type = dissent value = -5 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = freedom value = 5 }
+	}
+	
+	action = {
+		name = EVT_8021319_B
+		ai_chance = 1
+		command = { type = dissent value = 25 }
+		command = { type = sleepevent which = 8021320 }
+	}
+}
+
+# End of People's Republic
+event = {
+	id = 8021320
+	country = U13
+
+	name = EVT_8021320_NAME
+	desc = EVT_8021320_DESC
+	picture = nwo\hungary_1989
+	style = 1
+
+	trigger = {		
+		flag = autumn_of_nations
+		event = 8021319
+		atwar = no
+	}
+
+	date = { day = 0 month = october year = 1989 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1991 }
+
+	action = {
+		name = EVT_8021320_A
+		ai_chance = 99
+		command = { type = country which = HUN }
+		command = { type = trigger which = 8006905 }
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = flag_ext where = HUN which = _1989 }
+	}
+	
+	action = {
+		name = EVT_8021320_B
+		ai_chance = 1
+		command = { type = dissent value = 25 }
+		command = { type = end_puppet }
+	}
+}

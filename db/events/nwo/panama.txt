@@ -1,0 +1,610 @@
+event = {
+	id = 8011201
+	country = PAN
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 405200 } # Enrique Adolfo Jim?nez
+		command = { type = headofgovernment which = 405201 } # Ernesto de la Guardia
+		command = { type = foreignminister which = 405029 } # Roberto J?menez de Roux
+		command = { type = armamentminister which = 405034 } # Enrique Jim?nez Br?n
+		command = { type = ministerofsecurity which = 405039 } # Nicolas Ardito Barletta
+		command = { type = ministerofintelligence which = 405044 } # Ignacio C. Garces
+		command = { type = chiefofstaff which = 405049 } # Jos? Gomez Ayan
+		command = { type = chiefofarmy which = 405050 } # Juan Rem?n
+		command = { type = chiefofnavy which = 405053 } # Arturo Osborne Irrag?
+		command = { type = chiefofair which = 405055 } # Juan Jos? Parada
+	}
+}
+
+event = {
+	id = 8011202
+	country = PAN
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = foreignminister which = 405030 } # Horac?o Alfaro D?az
+		command = { type = armamentminister which = 405035 } # Ignacio E. Mendoza
+		command = { type = ministerofsecurity which = 405040 } # Jos? Avila
+		command = { type = ministerofintelligence which = 405045 } # Jos? Lefebvr? de la Ossa
+		command = { type = chiefofstaff which = 405007 } # Juan Rem?n
+		command = { type = chiefofarmy which = 405052 } # Omar Torrijos
+		command = { type = chiefofnavy which = 405053 } # Arturo Osborne Irrag?
+		command = { type = chiefofair which = 405057 } # Nestor Urribe Suarez
+	}
+}
+
+event = {
+	id = 8011203
+	country = PAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 405073 } # Domingo Diaz Arosemena
+		command = { type = headofgovernment which = 405077 } # Alciabides Arosemena
+		command = { type = foreignminister which = 405031 } # Herma?o Castillo Ballid?
+		command = { type = armamentminister which = 405035 } # Ignacio E. Mendoza
+		command = { type = ministerofsecurity which = 405075 } # Henrique de Obarrio
+		command = { type = ministerofintelligence which = 405045 } # Jos? Lefebvr? de la Ossa
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 405012 } # Arnulfo Ar?as de la Madrid
+		command = { type = headofgovernment which = 405202 } # Roberto Chiari
+		command = { type = foreignminister which = 405031 } # Herma?o Castillo Ballid?
+		command = { type = armamentminister which = 405035 } # Ignacio E. Mendoza
+		command = { type = ministerofsecurity which = 405075 } # Henrique de Obarrio
+		command = { type = ministerofintelligence which = 405045 } # Jos? Lefebvr? de la Ossa
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8011204
+	country = PAN
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		headofstate = 405073
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 405012 } # Arnulfo Ar?as de la Madrid
+		command = { type = headofgovernment which = 405077 } # Alciabides Arosemena
+	}
+}
+
+event = {
+	id = 8011205
+	country = PAN
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		headofstate = 405012
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 405078 } # Alciabides Arosemena
+		command = { type = headofgovernment which = 405203 } # Jos? Ram?n Guizado
+		command = { type = foreignminister which = 405080 } # Pietro del Oramio
+		command = { type = armamentminister which = 405035 } # Ignacio E. Mendoza
+		command = { type = ministerofsecurity which = 405075 } # Henrique de Obarrio
+		command = { type = ministerofintelligence which = 405045 } # Jos? Lefebvr? de la Ossa
+	}
+}
+
+event = {
+	id = 8011206
+	country = PAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 405205 } # Jos? Antonio Rem?n Cantera
+		command = { type = headofgovernment which = 405206 } # Jos? Ram?n Guizado
+		command = { type = foreignminister which = 405029 } # Roberto J?menez de Roux
+		command = { type = armamentminister which = 405034 } # Enrique Jim?nez Br?n
+		command = { type = ministerofsecurity which = 405039 } # Nicolas Ardito Barletta
+		command = { type = ministerofintelligence which = 405044 } # Ignacio C. Garces
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 405204 } # Roberto Francisco Chiari Rem?n
+		command = { type = headofgovernment which = 405202 } # Roberto Chiari
+		command = { type = foreignminister which = 405080 } # Pietro del Oramio
+		command = { type = armamentminister which = 405035 } # Ignacio E. Mendoza
+		command = { type = ministerofsecurity which = 405082 } # Ernesto de la Guardia
+		command = { type = ministerofintelligence which = 405045 } # Jos? Lefebvr? de la Ossa
+		command = { type = chiefofstaff which = 405083 } # Henrique de Obarrio
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8011207
+	country = PAN
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		headofstate = 405205
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 405210 } # Ricardo Arias
+		command = { type = headofgovernment which = 405211 } # Ricardo Arias
+	}
+}
+
+event = {
+	id = 8011208
+	country = PAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 405207 } # Ernesto de la Guardia
+		command = { type = headofgovernment which = 405208 } # Temistocles D?az
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 405212 } # Victor Florencio Goytia
+		command = { type = headofgovernment which = 405213 } # Sergio Gonz?lez Ru?z
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8011209
+	country = PAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 405212 } # Victor Florencio Goytia
+		command = { type = headofgovernment which = 405213 } # Sergio Gonz?lez Ru?z
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 405209 } # Roberto Chiari
+		command = { type = headofgovernment which = 405208 } # Temistocles D?az
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8011210
+	country = PAN
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = nwo\elections
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1964 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1967 }
+
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 405216 } # Marco Aurelio Robles
+		command = { type = headofgovernment which = 405217 } # Juan de Arco Galindo
+	}
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 405218 } # Arnulfo Arias
+		command = { type = headofgovernment which = 405219 } # José Antonio Molino
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8011211
+	country = PAN
+
+	name = EVT_8011211_NAME
+	desc = EVT_8011211_DESC
+	picture = nwo\national_guard_coup
+	style = 1
+
+	date = { day = 0 month = january year = 1968 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action = {
+		name = EVT_8011211_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 405220 } # Omar Torrijos
+		command = { type = headofgovernment which = 405221 } # Omar Torrijos
+	}
+}
+
+event = {
+	id = 8011212
+	country = PAN
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1981 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1981 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 405222 } # Florencio Flores Aguilar
+		command = { type = headofgovernment which = 405223 } # Florencio Flores Aguilar
+	}
+}
+
+event = {
+	id = 8011213
+	country = PAN
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1982 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1982 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 405224 } # Ruben Dario Paredes
+		command = { type = headofgovernment which = 405225 } # Ruben Dario Paredes
+	}
+}
+
+event = {
+	id = 8011214
+	country = PAN
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 1
+
+	trigger = {
+		government = fascist
+	}
+
+	date = { day = 0 month = january year = 1983 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1988 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 405214 } # Manuel Noriega
+		command = { type = headofgovernment which = 405215 } # Manuel Noriega
+	}
+}
+
+event = {
+	id = 8011215
+	country = PAN
+
+	name = EVT_8011215_NAME
+	desc = EVT_8011215_DESC
+	picture = nwo\manuel_noriega
+	style = 1
+
+	date = { day = 0 month = january year = 1989 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_8011215_A
+		ai_chance = 95
+		command = { type = dissent value = 20 }
+		command = { type = relation which = USA value = -150 }
+		
+	}
+	
+	action = {
+		name = EVT_8011215_B
+		ai_chance = 5
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 405226 } # Guillermo Endara
+		command = { type = headofgovernment which = 405227 } # Guillermo Endara
+		command = { type = sleepevent which = 8011217 }
+	}
+}
+
+event = {
+	id = 8011216
+	country = PAN
+
+	name = EVT_8011216_NAME
+	desc = EVT_8011216_DESC
+	picture = nwo\manuel_noriega
+	style = 1
+
+	trigger = {
+		headofstate = 405214
+	}
+
+	date = { day = 0 month = january year = 1987 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1988 }
+
+	action = {
+		name = EVT_8011216_A
+		command = { type = dissent value = 10 }
+		command = { type = relation which = USA value = -100 }
+	}
+}
+
+event = {
+	id = 8011217
+	country = USA
+
+	name = EVT_8011217_NAME
+	desc = EVT_8011217_DESC
+	picture = nwo\manuel_noriega
+	style = 1
+
+	trigger = {
+		event = 8011215
+		NOT = { war = { country = USA country = PAN } }
+		NOT = { alliance = { country = USA country = PAN } }
+	}
+
+	date = { day = 0 month = january year = 1989 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		name = EVT_8011217_A
+		ai_chance = 95
+		command = { type = trigger which = 8011218 }
+	}
+	
+	action = {
+		name = EVT_8011217_B
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 8011218
+	country = PAN
+	one_action = yes
+
+	name = EVT_8011218_NAME
+	desc = EVT_8011218_DESC
+	picture = nwo\manuel_noriega
+	style = 1
+
+	action = {
+		name = EVT_8011218_A
+		ai_chance = 1
+		command = { type = dissent value = 20 }
+		command = { type = relation which = USA value = -150 }
+		
+	}
+	
+	action = {
+		name = EVT_8011218_B
+		ai_chance = 99
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 405226 } # Guillermo Endara
+		command = { type = headofgovernment which = 405227 } # Guillermo Endara
+	}
+}

@@ -1,0 +1,1228 @@
+2.3.4
+compatible with Darkest Hour 1.05
+[x] both Koreas are now selectable in 1950+ scenarios (reported by Gezza12)
+[x] Death of Stalin event fixed (had incorrect minister IDs before (reported by DmitryDonskoy)
+[x] updated naval doctrine techs to upgrade add-on models too
+[x] small fix to naval models (reported by modelarz1981)
+
+2.3.3
+compatible with Darkest Hour 1.05
+[x] the mod is now compatible with DH 1.05 patch
+[x] the mod is now standalone (includes DH Full)
+[x] several improvements brought over from DH Full 1.05 and integrated into the mod
+[x] leaders in pre-1970 scenarios will no longer mass-die in 1964 (generic commanders become still available starting in 1960 and two latest scenarios do not include WW2-era commanders)
+[x] multiple fixes regarding event-driven declarations of war which now break military access, guarantees etc. so wars should start more reliably (reported by Andrey1984)
+[x] a lot of other bugs/glitches fixed
+
+2.3.2
+compatible with Darkest Hour 1.04
+[x] several additions of ministers integrated and a couple of other fixes (by der Kriegsherr)
+[x] fixed wrong governments appearing when German countries get formed
+[x] added a couple of ministers or minister portraits (by Polishruskie)
+[x] added birthday events and aging photos for Hirohito and Franco (by Polishruskie)
+[x] implemented additional ministers and tech teams for Finland (by Korsteeni)
+
+2.3.1
+compatible with Darkest Hour 1.04
+[x] fixed secret weapons events not firing when intended
+[x] fixes to AI switches, particularly for Japan
+[x] a lot of minor fixes in events, especially in triggers
+
+2.3.0
+compatible with Darkest Hour 1.04
+[+] 1972 and 1980 scenarios added
+[x] the mod is now compatible with DH 1.04
+[x] made some tweaks to the economic development model
+[x] fixed a lot of minor problems with 1945-1959 scenarios
+[x] large sweep of fixes by eeex:
+	-various event fixes (e.g. economic_mechanism.txt had a mistake in it or adding minister files into the ministers.txt),
+	-various scenario fixes (e.g. adding Gabon to the 1972 and 1980 scenario, minister fixes)
+	-a few minister pics,
+	-a lot of flags (also fixed flags)
+	-adding Syria as state (though the scenario file exists it wasn't activated and Egypt controlled and owned Syrian provinces)
+	-modifying the succession of Chernenko (credits go to Turning Point 0.2, e.g. choosing either Gorbachev, Romanov or Grishin as successor)
+	-fixing the ministers of Dem. Rep. of Afghanistan (its ministers didn't load into the game after playing from save)
+	-removed some slept events (e.g. martial law in Poland 1981, this event wouldn't fire in 1980 scenario)
+	-fixed event picture of event #8014237
+	-fixed cabinet of Jordan
+	-fixed end date of Belgian HoS
+	-various mini fixes
+	-Zanzibar issue in both scenarios
+	-The martial law events in both scenarios
+	-The puppet status of several countries
+	-And Spain shouldn't be PA anymore (also fixed HoS, HoG)
+	-Change of gov. for India (also fixed HoG in 1980)
+	-Corrected ownership of some provinces
+	-Corrected wrong flags on counters
+	-Corrected death dates of Soviet leader (Brezhnev, ...)
+	-Corrected traits of newly added Gorbachev alternatives Romanov, Grishin (thanks and credits to Turning Point 0.2)
+	-Corrected names of various Hungarian ministers (they had corrupted letters)
+	-Algeria is LWR in 1972
+	-Independent countries should get necessary provinces
+	-Added Russan flag of 1991-1993
+	-Corrected HoS after Russia becomes independent (though not immediately)
+	-Increased offset of some events to 13 or 14 in order to decrease lag (though not sure if it's effective)
+	-Corrected flag of Oman
+[x] Suharto is no longer a 'communist' general in scenario description (reported by Galbatorix994)
+[+] added Saudi Arabian tech teams (provided by burning_phoneix)
+[x] vastly limited bonuses given by very-late-game human cloning techs (suggested by JulianSol)
+[x] added a picture for the victory of Bangladesh in independence war (provided by Ericafaq)
+[-] removed "End of History" event
+
+2.2.8
+compatible with Darkest Hour 1.04 RC1
+[+] UAU is now South Yemen (flag link given by eeex)
+[+] UBO is now Burundi
+[x] tech tree improvement adopted from The Grand Campaign mod
+[x] reviewed starting setup (OOB models and techs) for all scenarios
+[x] fixed errors connected with unit/brigade modifiers and crashes in tech tree
+[x] modified Warsaw Uprising and Tito Uprising event chains not to involve actual independence of the revolting nations
+[x] Poland and Communist Yugoslavia have now standard set of cores
+[+] integrated USA ministers pack (by Korsteeni)
+[+] added U32 header (by JonathanJ6)
+[x] fixed AI research priorities for Communist China (reported by Galbatrix)
+[x] fixed some errors in der_untergang event chain (reported by Polykrates)
+[x] fixed issues when both Austrian states have to be created in 1945
+
+2.2.7
+compatible with Darkest Hour 1.04 RC1
+[+] UTL is now Zambia
+[+] UTO is now Botswana
+[+] URO is now Malawi
+[x] fix of anti_tank research, published in 2.2.6 hotfix is now included
+[+] integrated mobilization and tech-related hotfixes (provided by A-150)
+[+] integrated fixed unit/brigade modifiers (provided by Stuka Ju87 D3)
+[+] added several improvements to post-war Spain (by derekg36)
+[+] added Soviet leaders for communist Poland (by JonathanJ6)
+[+] added end of apartheid event for South Africa and independence events for Namibia, Zambia, Malawi and Botswana
+[x] Italy now uses pre-1946 flag in 1945 scenario
+[x] Austria uses its modern flag for 1945+ scenarios (reported by Ericafaq)
+[x] corrected tech teams of several newly added countries
+[x] tech teams ending their existence in 1970 have it extended to 1990
+[x] fixed crash for 1959 scenario because of bad model identifiers
+[x] fixed Biafran revolt date (reported by NickFeyR)
+[x] fixed Japan not losing its puppet status in 1952 (reported by th3redmenace)
+[x] fixed Prague Spring event not working (reported by NickFeyR)
+[x] fixed several broken event chains, a.o. Stalin's Note, Hungarian Revolution and Polish martial law (because of incorrect command usage)
+[+] added an event for Vittorio Emanuele IV accession (suggested by nousername)
+[+] added several events for united Europe (provided by Panda69)
+[x] if USSR chooses to back down on Communist Greece, their alliance is now properly discarded (reported by evilcorgi)
+[x] post-1950 Communist Greece AI should now build much less militia (reported by evilcorgi)
+[x] having researched space techs gives now benefits for space race events (reported by evilcorgi)
+[x] integrated model fix by derekg36
+[x] small other fixes
+[x] changed AWACS brigades range (reported by satilisu)
+[x] added some extra checks for the Manchurian Strategic Offensive Operation event so it shouldn't fire after WW2 ends in Asia (reported by -Hiki-)
+
+2.2.6
+compatible with Darkest Hour 1.04 RC1
+[x] the mod is now compatible with the latest 1.04 RC (a lot of fixes provided by eeex)
+[+] added ministers and events for U70-U99 countries
+[x] post-1945 scenarios should have now proper flags for countries in scenario menu
+[x] a lot of date triggers fixed for events (mainly government changes) so now they will work
+[x] added several events for India and Pakistan and rebalanced the First Kashmir War (provided by borrowski4)
+[x] Sino-Indian War of 1962 will now check for which side has won Chinese Civil War (reported by Galbatorix994)
+[x] fixed crash on Tribal Warfare tech mouseover (reported by only_once)
+[x] East Turkestan now uses UPE tag and event are changed accordingly for compatibility with 1.04
+[x] vastly simplified 'ideology switch' events - should solve 'Unite with our brothers' strings of events
+[x] force rebalancing made again in Israel, India and Indonesia
+
+2.2.5
+compatible with Darkest Hour 1.03
+[+] added historical ministers and events for Eastern European countries (U**)
+[x] hugely relaxed army limits
+[x] fixed descriptions regarding army limits
+[x] added Soviet bloc coherence modifiers for 1963+ timeline
+[x] integrated additional flags and names for Eastern European countries (by eeeex)
+[x] USA and USSR get their proper submarine doctrines for all scenarios + USA gets CAS doctrines (reported by Kennelly)
+[x] fixed Stalin's Note event chain for ahistorical early German unification (reported by Aquamenti)
+[x] event "Hungarian Revolution aftermath" is no longer slept for 1956 scenario (reported by eeeex)
+[+] added an event giving USSR free reactors in mid-50s to help them in arms race (AI only)
+[x] fixed McCarthyism event for USA (reported by eeeex)
+[x] fixed missing EVT_SELFRULE_MLY_NAME missing string (reported by Kennelly)
+[x] slight alterations to USA OOB in 1945 (reported by Kennelly)
+[x] fixes to Soviet nuclear techs for later scenarios (reported by Myrten)
+[x] American communist revolution event (if dissent > 65) is turned off after 1945 (reported by Myrten)
+[x] fixed divisions and brigade modifiers for CTWW (suggested by Stuka Ju87 D3)
+[x] USA and USSR should now have access to post-1950s ICBM techs (reported by Myrten)
+[x] fixes to Cuban Revolution event chain (reported by Myrten)
+[x] raised neutrality AI factors for a couple of countries
+[x] Korean War now ends with non-aggression pact being signed so the war shouldn't recommence later
+[x] the game should try to take into account how much peacetime modifier USA already can have and prevent it from getting prohibitively high amount, like -99% (reported by Stuka Ju87 D3)
+[x] Saud Arabia now has a possiblity to join war against Israel in 1948 (reported by warpedmind)
+[x] now if Castro is caught by Batista, he is gone for good (reported by warpedmind)
+[x] if Sino-Indian of 1962 ends once, peace events won't fire anymore (reported by warpedmind)
+[x] countries will join Warsaw Pact / NATO only if they have at least -100 relation with the corresponding superpower and not more than 150 relation with opposing superpower (reported by warpedmind)
+[+] added scenario description for Israel (suggested by FCZP)
+[-] removed several Vichy France ministers/leaders from post-war scenarios from French pool (enddate set to 1944, suggested by FCZP)
+[x] South Vietnam will receive now less units from USA not to make its army too big; they will receive slightly smaller dissent hits too (reported by FCZP) 
+[x] Greek Civil War has now chance to fire with more variation in time, foreign help will also arrive sooner, closer to the war start (suggested by Julius Root)
+[x] communists in Greece will no longer lose troops if they hold considerable part of the Greek territory (reported by Julius Root)
+[x] fixed a major bug where USSR could leave Comintern, this often could happen under certain circumstances during Greek Civil War (reported by Julius Root)
+[x] a lot of little fixes
+
+2.2.4
+compatible with Darkest Hour 1.03
+[+] Cold War Tech Tree Expansion (CWTT) by Kretoxian and others is now included in the mod
+[x] included corrected counters by eeex
+[x] Israel will now be correctly released in 1948
+[+] added historical ministers and events for the remaining countries up to Yugoslavia, with only U** tags yet remaining
+[x] fixed nuclear AI and added free ICBM events (suggested by Myrten)
+[x] further altered Chinese Civil War balance to make it slightly easier for Communist to win in historical circumstances
+[+] finally added events for Nuremberg Trials, with three different outcomes possible
+[x] fixed 8229000 event triggers to be less stringent (reported by nelsonlee)
+[x] Italy is now getting its "democratic" flag after its consitutional referendum 1946 and only if it passes (reported by Gwax23)
+[x] fixed Stalin's personalities once more, hopefully for good (reported by Miihkali)
+[+] added a semi-flavor event for Nazi veterans assistance in case of WW3, provided that lenient sentence was given in Nuremberg Trials (suggested by Comrad Urio)
+[x] completely retooled Soviet peace AI towards building airforce and navy (their land force is already huge and requires only upgrading)
+[x] once again slightly modified IC development (mostly in case of UK, West Germany and East Germany)
+[x] if both Germany and Italy exist upon German surrender and fights on Axis side, Germany annexes Italy to minimize possibility of a crash (reported by alxeu)
+[x] models of troops given to Korean states in Korean War are more realistic (reported by Kennelly)
+[x] changed route towards independence of Malaya and, slightly, Sarawak (reported by Kennelly)
+[x] fixed DEI cores (reported by Kennelly)
+[x] DEI and Indonesia have now ferocity = yes flag so they shouldn't break their war with white peace, peaceful resolution of the conflict is also now less probable
+[x] fixed Nationalist China's decisions regarding Sino-Indian War of 1962 (reported by Myrten)
+[x] revised Chinese borders in 1945 not to make it trivial for Nationalists to cut Manchuria off the Communist capital
+[x] First Kashmir War should now fire properly
+[x] made changes to Hungarian ruling cabinets (provided by eeex)
+[x] two missing images in CWTT fixed
+[+] Warsaw Pact should now dissolve in 1990 if historical events leading to end of USSR unfold
+[x] fixed Warsaw Pact dissolution events (reported by LordInsane)
+[x] fixes to balance of Iran Crisis 1946 and First Kashmir War
+
+2.2.3
+compatible with Darkest Hour 1.03
+compatible with CWTT Beta 1.1
+[x] fixed serious problems with "dissolution of the Eastern Bloc" events that prevented them from firing
+[+] added historical ministers and events for countries O-S (up to and including Syria)
+[+] added events for the demise of USSR 1985-1991
+[+] added Spanish translation (by derekg36)
+[+] updated unit models graphics (by derekg36)
+[x] important balance-aimed modifications to economic development events (all countries experience lower IC growth, USA has noticeably less IC, DDR a bit more)
+[x] redrawn borders of Chinese faction in the wake of Chinese Civil War (suggested by tovarish)
+[x] significant rebalance of Chinese Civil War to allow AI-led KMT a chance to win, especially if the war starts ahistorically early
+[x] South Korea gets a couple more division before the war starts to help balance
+[+] Hungary should no longer rejoin Warsaw Pact during 1956 revolution
+[x] fixed Stalin's personalities (reported by Miihkali)
+[x] reviewed DH Full mobilization events to prevent demobilization by Chinese states in 1945
+[x] land army limits relaxed
+[x] economic development events no longer need cold_war to be set (ended WW2); 1945 events are postponed until 1950 though if the flag is missing
+
+2.2.2
+compatible with Darkest Hour 1.03
+compatible with CWTT Beta 1.1
+[+] added historical ministers and events for countries G-N (up to and including New Zealand)
+[+] among the new events are the ones for: Indian-Pakistani conflict (including liberation of Bangladesh)
+[+] added a new lobby music piece created for the mod, by Fernando Torres
+[+] AI preparation completed with the 1990s set added
+[x] fixed 1980s AI set so that countries will build IC in that decade
+[x] Operation PBSUCCESS now has a chance of failure and is initiated by the USA
+[+] UIR tag is now Bangladesh
+[+] UAP tag is now Biafra
+[x] fixed errors in United Nations resolution over Falklands War
+[x] Arab countries now enter into temporary alliances when in war with Israel
+[x] Dem. Rep. of Afghanistan has now UPS tag not to collide with Basmatchi (UPE)
+[x] Dem. Rep. of Afghanistan has its revolt.txt entry fixed so should appear correctly
+[x] correct flag of Canada is now used
+[+] Cod Wars events added for Iceland
+[x] AI neutrality of Israel, North Vietnam, South Vietnam and Italy increased a bit
+[x] implemented several proposals by Ariosto Marzani
+[x] American event "Gearing up for War" will not happen during Cold War
+[x] some events are now properly slept for some scenarios or their enddates are altered
+[x] generic decisions are brought back after 1950, with some scaling in money input needed
+[x] South Vietnam will start with a flag set to limited American help in 1959 scenario
+[x] Iranian AI is now told to guard border with IRaq in later scenarios
+[x] East Prussia remains now a claim of West Germany after the war, to be removed by event during Brandt's tenure
+
+2.2.1
+compatible with Darkest Hour 1.03
+compatible with CWTT Beta 1.1
+[+] the mod now contains SKIF icons (including some additions for 1964+ timeline) by derekg
+[+] added historical ministers and events for countries C-F
+[+] added a 1980 AI set
+[x] Eastern European countries have their neutrality raised so they shouldn't now join the Warsaw Pact prematurely
+[x] corrected an error with Wang Jigwei (max skill 0, reported by eeeex)
+[x] Stalin's "paranoid megalomaniac 2" personality corrected (reported by eeeex)
+[x] fixed location of East Turkestan's units in 1945 (reported by FCZP)
+[+] Quebec may now declare independence if a specific event chain for Canada succeeds
+[+] Tiananmen protests can result in changes in mainland China regime and possible ahistorical democratization
+[x] readded missing WW1-era leaders (reported by delanonne)
+[x] several graphical glitches corrected (flags, photos)
+[x] CHC altered so that they are now be much more aggressive towards Tibet (and annex it successfully)
+[-] removed "shadow" ministers so they no longer clash with historical persons
+[x] capital of Niger moved from Say to Niamey
+[-] removed end of game event ("Hoiception") introduced by CWTT
+[x] most of 'generic decisions' have now an enddate of 1950
+[x] shortened several countries' names
+[x] India has now its IC levels toned down (were higher than Chinese)
+
+2.2.0
+compatible with Darkest Hour 1.03
+compatible with CWTT Beta 1.1
+[+] supported timeline extended towards 1991
+[+] added generic ministers and leaders for all countries for 1960+ timeline
+[x] modified sleep dates of a lot of ministers
+[+] 1970 AI set added and some related corrections made
+[x] Jordanian AI will no longer autorelease Palestine to prevent ahistorical setup
+[x] Greek states have their neutrality increased
+[x] balance in Chinese Civil War is altered again so that communists again have their chance
+[+] events for European integration (ahistorical United States for Europe and historical events) make a late return from New World Order 1
+[x] again, DDR now will be slightly less punished IC-wise due to Soviet occupation so they can get a couple of extra IC points
+[x] colonial release events edited so that each of them will appear maximum 4 times, not indefinitely if constantly refused
+[x] nuke mission is disabled until Cold War gets hot (suggested by many people :) )
+[+] if USA discovers nukes during WW2 and is in war against Japan, they make nuke Hiroshima and Nagasaki via decision (giving Japan big dissent hits)
+[x] Japanese surrender events altered so that nuking via decision may also bring Japanese to negotations table
+[x] missing "ferocity = yes" attributes added to Greek, Vietnamese and Korean AIs, where not present, to prevent civil wars ending being broken by white peace resolutions
+[x] Dutch East India will receive considerably less dissent until the last part of the war in Indonesia
+[x] almost no partisans will help Communist China in 1946 to facilitate early KMT advantage, slightly less partisans will show up in 1947 too
+[x] on average events bringing Chinese Civil War to quicker conclusion will happen a year later than before
+[x] made tweaks so that the historical outcome of Arab-Israeli War of 1948 is much more probable
+[x] South Vietnam should be now getting bigger forces during First Indochina War to create more trouble to Hanoi
+[x] an event doubling IC production time in Cold War gets a different description that the usual peacetime modifiers event (as it is a separate mechanic indeed)
+[-] removed decision to block army limiting mechanism
+[+] added country-specific events and ministers for countries AFG-BUR (1964-1991)
+[+] UES is now European Union (a.k.a. United States of Europe)
+[+] UPE is now Democratic Republic of Afghanistan
+[+] added an event chain for the Falklands War
+[x] CHC will not receive the event to disband militias in 1950+ scenarios
+[x] several events that should be slept for later scenarios are now indeed slept
+[x] tweaked some AI parameters and CHC is now much less agressive (reported by Blsterken)
+[x] Albania is again in the Warsaw Pact in 1959
+[x] updated vanilla events (files provided by eeeex)
+[x] USA can now go past the starting point in nuclear research in 1945 scenario (reported by Sithlord_man)
+[x] events to decide alignment of Cuba should now be firing properly (reported by tovarish)
+[+] added unit names for Australia (provided by OneAussieMan777)
+[x] removed duplicated Polish tech teams, for POL and U32 (reported by JonathanJ6)
+[x] updated list of Soviet leaders and ministers (updated files by FCZP)
+[x] added an event for 1941 Soviet purge (by FCZP)
+[x] American and Chinese interventions in the Chinese Civil War should now have a logical flow of steps, possibly ending in WW3 (reported by FCZP)
+
+2.1.2
+compatible with Darkest Hour 1.03
+compatible with CWTT Beta 1.1
+[x] 1960 AI set added and some small tweaks to AI made
+[x] several fixes to Peace in Our Time event chain (reported by JoeyB2198)
+	[x] if Ribbentrop-Molotov pact results in Eastern Poland going to the Soviets, Eastern Prussia will be given to Poland too
+	[x] Peace in Our Time events will now give Saar Region to France
+	[x] BRD will be now correctly released
+[+] added an event chain for Italian Communist Party, with a small possibility of Italy going way of radical dictatorship and joining Comintern or WW3 happening in defence of Western influence end
+[x] if the UK refuses to release Burma/India, they will periodically receive events giving dissent, unless they release them (reported by Adonnus)
+[x] several database fixes
+
+2.1.1
+compatible with Darkest Hour 1.03
+compatible with CWTT Beta 1.1
+[+] 1950 AI set added
+[x] all non-shadow ministers have now their personalities different than "Undistinguished Suit"
+[+] added event chain to determine alignment of Castrist Cuba (suggested by danielshannon)
+[x] if there is military access between two Chinas pre-CCW, it is now cancelled not to prevent CCW from happening
+[x] neutrality of Egypt and Iran increased a bit
+[x] bonuses for Israeli army in 1948 toned down a lot for better balance
+[x] Egypt gets now its bonus army in Alexandria rather than Sinai peninsula
+[x] Israel will now release its neighboring states automatically
+[x] USA gets Semi-Fission bomb and Fission bomb techs in 1945 scenario (reported by FCZP)
+[x] Japan has its defence forces removed for 1945 scenario (reported by FCZP)
+[+] added a small event chain for the National Alliance of Russian Solidarists within WW3 framework (suggested by FCZP)
+[+] added a small event chain for Indonesian-Malayan confrontation in 1960s (suggested by NickRooz)
+[x] small fixes to Germany occupation events
+[+] added a small event chain for Stalin's Note in 1952 (suggested by Mexbuild)
+[x] applied small fixes/additions to Soviet leaders and ministers (provided by FCZP)
+[x] a lot of fixes and additions to the mechanism of Soviet control over Eastern European puppets
+
+2.1.0
+compatible with Darkest Hour 1.03
+compatible with CWTT Beta 1.1
+[+] new 1945 AI setup added
+	[+] new provincial priorities regarding construction
+	[+] revised division/brigade construction patterns
+	[+] more aggressive invasion system
+	[+] reworked other parameters and priorities
+[+] the mod is now compatible with (and requires to work) Cold War Tech Tree mod - the tech tree is more detailed and enhanced to provide techs until 1990s
+[x] 1945 OOBs of 23 countries are now modified (existence, placement and models more historical; files provided by omega20)
+[x] tech teams are compatible now with CWTT, with new teams and specialties added
+[+] adapted almost 50 events from "Australia, A Nation Worth Fighting For" mod by OneAussieMan777
+[x] countries during Cold War (unless at war) have considerable negative modifiers to building construction time
+[x] negative modifiers for Italian IC should no longer fire multiple times
+[x] there is now much less risk of Kashmir War not ending properly due to one of parties not being able to conquer Kashmir
+[x] USA has now nuclear tech allowing to build some basic nukes in 1945 (reported by FCZP)
+[+] added GAZ techteam for USSR (suggested by tovarish)
+[x] made some changes to Soviet tech teams (suggested by danielshannon)
+[x] event for federation of Iraq and Jordan will now work (reported by NickRooz)
+[x] events for China disbanding militias after the civil war redone, should happen quicker than army limiting event triggers (reported by Myrten)
+[x] references to "light_carrier" removed from minister_personalities.txt, should help with errors upon load
+[x] even if Germany or Austria are strictly neutral, USA and USSR will guarantee their independence and declare war if it is at risk
+[x] both USA and USSR will now protect both German states (and both occupation zones each) from aggression by default
+[x] if single democratic/communist Greek state exists, USA/USSR will guarantee its independence and step into possible wars; if both states exist and either USA or USSR tries to intervene in the Greek Civil War, the other party will have a chance to send ultimatum
+[x] Aswan High Dam event has the province location corrected (reported by TimeKiller)
+[x] fixes to minister personalities (reported by jamiroquai000)
+[x] India receives a couple more division upon independence
+[x] small fixes to USSR (reported by FCZP)
+[x] fixes to Iran Crisis of 1946 (reported by FCZP)
+
+2.0.6
+compatible with Darkest Hour 1.03
+[+] addition of about 170 new propaganda pictures for 1945+ scenarios starting countries as well as a lot of revolting countries
+[+] roughly the same number of scenario descriptions added, both for 1945+ scenarios and for countries that lacked them for any scenario
+[x] all events previously having deathdate of 29/30.12.1963 are pushed forward to be active until end of 1999 (recently suggested by Myrten)
+[+] new chiefs of staff and chiefs of army (included in events and scenarios) for USSR, West Germany, Belgium, Italy (suggested by bestmajor)
+[x] all tech teams that had their enddate set to 1970 have it extended to 1999 (recently reported by Weserübung)
+[x] West German army moved from Erfurt (in East Germany) to Bayreuth (reported by bestmajor)
+[+] added historical aircraft carriers to Australian postwar fleet (suggested by bestmajor)
+[+] if Mao decides not to break up with Krushchev (or there is no de-Stalinization at all), there is a chance of SOV-CHC alliance forming (suggested by Tank_Man)
+[x] Communist China no longer gets a small morale/organization boost at the start of the civil war, they are too powerful even without it
+[x] some more fixes for Chinese tech teams (reported by Limith)
+[x] Chiang Kai-shek is now always an Old Generalissimo (reported by Limith)
+[x] Post-1945 Harbin now has 1 VP which make annexing CHC a bit harder (suggested by Myrten)
+[x] several CHC infantry division are converted to militia in 1945 OOB for better balance of the civil war
+[x] removed duplicated nuclear reactor and test sites (reported by makif130289)
+[x] USSR should now build some strategic bombers post-1945 so they will have better capability to deliver nukes (suggested by Myrten)
+[x] Beginning the Bitter Peace sequence will now sleep Claiming Bessarabia and The Winter War events for USSR (reported by Myrten)
+[x] France will not be annexed when Germany is defeated if she is allied to Germany (reported by Myrten)
+[x] Stalin #30002 is now HoG, duplicated Stalin #30011 remains HoS, minister_personalities.txt changed accordingly (reported by FCZP)
+[x] pre-1945 scenarios have their year 1964 time limit effectively removed (reported by jamiroquai000)
+[x] small changes to Soviet aircraft OOB (reported by FCZP)
+[x] December 1944 scenario now references to rebels.inc rather than non-existent china_sinkiang.inc (reported by eeeex)
+[x] several smaller fixes
+
+2.0.5
+compatible with Darkest Hour 1.03
+[-] no longer checked for compatibility with 1.03RC2
+[+] added events for Irish Border Campaign, giving possibility of (relatively) peaceful Irish reunification (suggested by NickRooz)
+[+] added events for German refugee scientists and their influence on countries of their post-war interest (suggested by Easy1)
+[x] 1933 scenario won't crash over rebellious provinces in Sinkiang (reported by JK07)
+[x] merged with new DH 1.03 additions (Chinese tech teams and additions to scenario files, reported by Limith)
+[x] made small changes to scenario files and the database (reported by bestmajor)
+[+] added events to unite Zanzibar with Tanganyika to form Tanzania (suggested by danielshannon)
+[x] corrected history of Finnish events for 1944.12+ scenarios so that YYA Treaty event will fire (reported by NickRooz)
+[+] added events for 1961 F-84 Thunderstreak incident, with very thin chance of escalating into a war (suggested by FCZP)
+[x] USSR gets cores over the Kuriles and Southern Sakhalin in post-1945 scenarios
+[x] at the end of the WW2 (pre-1945 scenarios) USSR will get a proper postwar set of cores (reported by tovarish)
+[x] Polish propaganda pictures now work correctly
+
+2.0.4
+compatible with Darkest Hour 1.03RC2, 1.03RC3
+[+] added a lot of events for Nationalist China, especially covering years after their ahistorical victory in the civil war (provided by Limith)
+[+] rebalanced Chinese Civil War and added a couple more events to allow for Nationalist victory and make the war begin evenly balanced
+[+] the system of monitoring Soviet influence over the Eastern Bloc is completely redone, with various events changing strength of Soviet grip over its puppets
+[x] the mod is now compatible with the patch 1.03 RC3
+[+] added events for ahistorical Tito-Stalin war and possibilities for every side to win
+[x] Soviet divisions in 1945 scenarios have their models "pushed back" so the army is a bit less modern (reported by FCZP)
+[+] Sino-Indian War of 1962 can also happen between India and Nationalist China if the latter wins the civil war
+[x] some other events altered to make them more dependent on the outcome of the war in China
+[x] war in Indonesia is considerably rebalanced, giving the Dutch better standing throughout the whole war
+[+] added Chinese dormant tech teams for 1945+ scenarios (suggested by Limith)
+[x] Philippines are no longer US puppet in 1950 scenario (reported by TheQMeister)
+[+] added new flags for Republic of Yemen and Malaysia (reported by NickRooz)
+[x] Karlsruhe is given to USA in the beginning of 1945 scenario (reported by Aldrich)
+[+] added Gosplan as a tech team and custom-trait Voznesensky as its boss (proposed by danielshannon)
+[x] fixed non-displaying counters for several countries in the mod
+[x] a lot of minor text changes made
+
+2.0.3:
+compatible with Darkest Hour 1.03RC2
+[+] added a lot of new ministers and tech teams for Poland and Communist Poland (provided by Piajr)
+[+] added 1945+ propaganda pictures for CHI and CHC (provided by Limith)
+[+] added events for Sino-Indian War of 1962
+[x] cut down size of Canadian land OOB (reported by Horton13)
+[x] there is now an option to reject Burmese independence once and for all but now it doesn't rule out independence of India (reported by mottw)
+[+] integrated fixes and additions to Soviet leaders, ministers and tech teams (provided by FCZP)
+[x] Communist China no longer has any claims over India and vice versa until tensions in 1960 take place
+[x] remaining issues with pictures showing up corrupted fixed
+[x] war between Vietnam states happens now from the beginning of every post-1945 scenario
+[x] Netherlands New Guinea should get the proper flag in 1962 (mistaken file name fixed)
+[x] now, when United Arab Republic is dissolved, Egypt returns to original name but keeps UAR's flag (as happened historically)
+[x] fixed event that dissolves Union of Mali
+
+2.0.2:
+compatible with Darkest Hour 1.03RC2
+[+] more than 50 events added, covering First and Second Indochina Wars (1947-1954 and 1955-1963+)
+[x] events for changes in Iranian government finally work (and Mossadegh becomes PM)
+[x] independence of South Vietnam is now more probable to happen and costs more dissent to keep within France
+[x] Vietnamese event for 1955 referendum redone
+[x] several 8-bit even pictures, that appeared corrupted, converted to 24-bit
+[x] South Vietnam is no longer a French puppet to prevent France from intervening in the war
+[+] added an entry in leaders.csv so that North Vietnam now gets leaders too
+[x] changed selection of starting countries for 1945+ scenarios so that North and South Vietnam appear on the lists
+[+] added main menu descriptions for North Vietnam and South Vietnam
+[x] Indonesian National Revolution again happens, having been previously slept by mistake
+[x] NATO successfully forms in 1949 by lifting interventionism requirement
+[x] Soviet no longer have cores over Western Sinkiang in 1945+ scenarios
+[x] Austria is no longer selectable in 1945 scenario (where it doesn't exist), preventing possible crash and "duplicated entry" error
+[+] added a Polish "cursed soldiers" event
+
+2.0.1:
+compatible with Darkest Hour 1.03RC2
+[+] added events limiting army sizes around the world
+[x] slightly changed ministerial setup of USSR in 1956 scenario (reported by NickRooz)
+[x] Tunisia is now a French puppet in 1956 scenario, South Vietnam is fully independent (reported by Kennelly)
+[x] Cyprus disappears from 1956 scenario and in 1959 is a British puppet (reported by Kennelly)
+[x] corrected pre-WWI interceptors in Soviet OOB (reported by FCZP)
+[+] added propaganda pictures for USSR (provided by FCZP)
+[x] fixed cases where British decision to support either Jews or Palestinians fully meant that the other state didn't form at all
+[x] extra troops for fighting sides in Indonesian National Revolution are not given out in 1945 scenarios (they shouldn't be)
+[x] Western European countries are now more likely to join USA in WW3
+[x] Greek communist guerilla won't wither away when WW3 rages on
+[x] In 1959 scenario Egypt exists now as UAR (united with Syria, reported by NickRooz)
+[x] Suez is given to Egypt in 1959 scenario
+[x] Invasion of Goa decision is now available to India in December 1961 (reported by NickRooz)
+[x] other small fixes
+
+2.0.0:
+compatible with Darkest Hour 1.03RC2
+[+] added tech teams for Denmark (provided by lanodaka)
+[x] modified various tech teams, modifying or removing incorrect entries (reported by lanodaka)
+[x] "Castro fails" no longer fires spontaneously, so the rebellion should now have a real chance of succeeding (reported by Tuskin38)
+[x] all occupying powers get now asked to accept Beria's proposal of united Germany (with high chance of success)
+[x] removed nonsensical "ai=no" trigger that made German reunification after Beria's proposal impossible for AI Germany (reported by walrus)
+[x] fixed missing ai_chances for XX Party Congress event
+[+] added alternative XX Party Congress event in case of Khrushchev not being in power (with low chance of de-Stalinization occurring, suggested by Andropov123)
+[x] all references to anti-tank brigades replaced by tank destroyers in post-1945 scenarios (suggested by lanodaka)
+[x] non-aggression pact now exists between Koreas in 1956 and 1959 scenarios and proper Korean War events are added to history (reported by Kennelly)
+[x] army creation events slept for 1956+ scenarios for Cameroon and Trinidad and Tobago
+[x] Taiwan Strait crisis events reworked so CHC shouldn't now stay at war with USA even if the latter backs down after Soviet ultimatum (reported by nelsonlee)
+[x] Tibetan event chain should no longer be broken for 1950 scenario (reported by nelsonlee)
+[x] Communist China should no longer give expeditionary forces to Nationalists (reported by Unluckyimmortal)
+[x] dissolution of the Eastern Bloc happens now after The Bitter Peace event and in case of SOV not existing at all too
+[x] fixed duplicated HMCS Ontario for Canada (reported by Tuskin38)
+[x] if USSR goes for Communist Austria creation, they now receive alliance and puppet status (reported by Andropov123)
+[x] fixed United Balkans event chain, so Yugoslavia should now be able to peacefully inherit Bulgaria (reported by Andropov123)
+[+] Canada has now carriers too! (suggested by Horton13)
+[x] Romania should always receive Bessarabia in The Bitter Peace event chain (reported by -Hiki-)
+[x] small changes in starting countries lineup in some scenarios
+
+1.9.6 RC1:
+compatible with Darkest Hour 1.03RC2
+[+] Caribbean Crisis (1959) scenario added
+[x] USSR gets its bonus IC from Hero Cities events in post-1945 scenarios
+[x] Belgium no longer has cores over Kigali and Usumbura in post-1945 scenarios
+[+] Usumbura added to "extra" provinces for Rwanda (there is no Burundi in game)
+[x] corrected some bad references to scenario files
+[x] corrected and added many missing names in world_names.csv
+[x] counters updated with new flags introduced in recent versions
+[-] the mod no longer modifies spy_costs.txt (couping should be 'less impossible')
+[x] if Egypt loses Suez War, it reverts to the old flag
+[x] if USSR breaks up after Stalin's death, Eastern European countries can freely choose their ideology too
+[x] Tanger Protocol now gives Morocco not only provinces but cores over them too
+[x] if Malinese union with Senegal persists, Mali receives cores over Senegal
+[x] after breakup with Senegal, Union of Mali shortens its name
+[x] Iraq is not a British puppet anymore in 1953 and 1956 scenarios
+[x] finally made fixes to Soviet support of Kurdistan which allows Soviet to keep it in their sphere of influence (reported by Kennelly)
+[x] Castro rebellion redone so it is now a purely random event but which should finally result in Castro coming to power in most of the cases
+[x] default capital city of Congo-Leopoldville changed to Leopoldville
+[x] DH Full 1.03 event of Proclamation of PRC (2053004) won't happen in post-1945 scenarios
+[x] fixed several UXX countries ministers' photos missing white borders
+[x] left-leaning and republican ministers from Egypt, Jordan, Syria and Iraq copied to United Arab Republic (ARA) file
+[x] after permanent establishment of UAR (ARA tag) it gets proper government
+[x] added postwar tech teams to Belgium, Holland, West Germany and East Germany (supplied by lanodaka)
+[x] Belgium and Holland get a couple of bonus IC points (reported by lanodaka)
+[x] East Pakistan is once again released as the part of Pakistan and Jerusalem is not assigned to Israel (so Arab-Israeli War of 1948 will happen)
+
+1.9.5:
+compatible with Darkest Hour 1.03RC2
+[-] lost compatibility with 1.03RC1
+[x] mobilization flags are moved to scenario files and a lot of AI files are deleted to let DH Full ones take precedence
+[x] a lot of errors concerning mobilization levels in different scenarios fixed
+[+] added events for Hero Cities of USSR, for rough parity in VP distribution for Cold War (proposed by danielshannon)
+[x] Internal Troops events for USSR now requires half as much manpower as it used to and properly lowers dissent (reported by Limith)
+[x] isolationist countries should now usually join NATO, too
+[X] economic development data updated to change balance in Eastern Europe, Yugoslav IC raised by 40-50%, now on par with Czechoslovak IC levels (reported by MajkaRusija)
+[+] added a 1962 Morning Star flag for Netherlands New Guinea, with an event to enact its use
+[x] countries now change their flags by event properly (reported by lanodaka)
+[+] updated Yugoslav OOB, adding naval and air units (provided by Kretoxian and MajkaRusija)
+[x] made corrections to names in Soviet OOBs (reported by FCZP)
+[+] added bases in post-1945 Yugoslavia (provided by Kretoxian)
+[x] Shalin is now head of Soviet intelligence in 1956 (reported by FCZP)
+[x] replaced bases.inc province installations data with DH 1.03 data for December 1944, adding many new installations
+[x] event history updated with DH 1.03 data for December 1944
+[+] added missing WW1 techs for all the countries in post-1945 scenarios (reported by lanodaka)
+[+] updated dormant leaders for several countries
+[x] small changes to minister personalities (reported by Aueralian603)
+[x] "default" Getulio Vargas is now Social Conservative while an alternative LWR is retained (reported by sfh3000)
+[x] fixed Joao Goulart's picture (reported by sfh3000)
+[x] United Arab Republic events are now redone as decisions
+[x] UAR gets cores over annexed areas and inherits armies (cores are lost upon dissolution, reported by Asalto)
+[x] Egypt gets renamed as UAR after annexation of Syria (its tag remains unchanged until successfull annexation of Iraq and Jordan, though)
+[+] added events for annexation of Lebanon and Palestine, if UAR is formed permanently
+[x] fixed revolt.txt for Kurdistan so it gets independent when it should (reported by Limith)
+[x] fixed revolt.txt for Trieste so it gets independent when it should (reported by NickRooz)
+[x] colonial countries, after release, should now get their historical domestic sliders setting (reported by NickRooz)
+[x] added special protection for Allied Occupation Zone, West Germany, Japan and South Korea (by USA) and North Korea, Soviet Occupation Zone and East Germany (by USSR) in case of war (reported by Cybvep)
+[x] Treaty of Zgorzelec removed East German claim on Allenstein, too (reported by Aldrich)
+
+1.9.4:
+compatible with Darkest Hour 1.03RC1, 1.03RC2
+[+] added Novus Ordo Seclorum event chain for American victory over USSR
+[+] added The Red Dusk event chain for Soviet victory over USA
+[+] Eastern European countries will now becomes democracies (usually) if USSR is beaten by USA
+[x] when Cuba turns communist under Castro, American guarantees and non-aggression pacts are cancelled (reported by NickRooz)
+[x] if Germany goes ahistorical path in 1933 (e.g. communist one), surrender events should no longer fire in 1939 (reported by JonathanJ6)
+[x] placement of Colombian and Paraguayan capital cities is corrected in all scenarios (reported by Kennelly)
+[x] fixed Nuclear Submarines in the Soviet fleet in 1945 scenario (reported by FCZP)
+[x] added flags for Burma, Egypt and Iraq for later points in history (reported by NickRooz, flags by Rrt877, in case of Burma for now added a socialist 1970s flag which is similar to historically correct one)
+[x] added a flag for communist USA (flag by RumpNissen89)
+[x] corrected AI chances for 1960 Ethopian coup event (reported by NickRooz)
+[x] small changes to Hungarian Revolution events
+[x] Jaen is given to Peru in all post-1945 scenarios and Buea is given to Cameroon in 1956 scenario (reported by NickRooz)
+[x] fixed a lot of scenario and AI files duplicated entries
+[+] added events for USSR in case of Beria's succession (with possibility of Germany reunification)
+[x] added missing techs for UK (reported by nsr433)
+
+1.9.3:
+compatible with Darkest Hour 1.03RC1
+[x] Soviet garrison names corrected (reported by FCZP)
+[x] fixed (removed) French access to Lebanon and Syria and vice versa (reported by Kennelly)
+[x] fixed probabilities for Japanese surrender, made them higher (reported by nachopontmercy)
+[x] Israel no longer gets Jerusalem upon independence (reverted to old behavior)
+[x] post-1945 Belgium no longer has cores on Congo
+[x] both Congo states can now be released
+[x] in case of Tito-Soviet split Yugoslavia won't be protected by USSR and won't be invited to Warsaw Pact
+[x] Yugoslavia is not in Warsaw Pact in 1956 anymore (reported by Kennelly)
+[x] Tibet is now a Chinese puppet and gives access to them in 1953/1956 scenarios; also China should get their mastery over them in 1951 (reported by Aldrich)
+[x] corrected major pacts setup in post-1945 scenarios (reported by Kennelly)
+[x] name and flag change for Chinese states after 1949 is now properly handled (reported by NickRooz)
+[x] Hungarian Revolution redone as an event chain, is working again
+[+] Warsaw Uprising events readded
+[+] Tito Uprising events readded
+[+] added events for Free City of Trieste
+[x] numerous fixes in revolt.txt file
+[x] Communist China now has a very high chance of being released from puppet status by USSR after 1945 (popular occurence in pre-1945 scenarios)
+[x] new scenario plates made
+[x] new Warsaw Pact emblem included
+[x] made changes to Soviet ministers, with new pictures and personalities (provided by danielshannon)
+[x] Free City of Trieste renamed to Free Territory of Trieste
+[x] Nationalist China will no longer support giving Eritrea to Ethiopia randomly
+
+1.9.2:
+compatible with Darkest Hour 1.03RC1
+[+] the mod is now compatible with Darkest Hour 1.03 RC1 (with merged events, scenario, ministers and tech teams files)
+[-] lost compatibility with 1.02
+[x] reviewed all tech and invention levels; tech levels for 1950+ scenarios brought down considerably
+[x] made corrections to inventions logic and corrected some errors
+[x] OOB's models also scaled down to partially fit with techs' reduction
+[x] problems with events releasing colonial countries should now be solved (reported by NickRooz)
+[x] demobilization should be now properly blocked in specific cases for certain AI countries
+[x] Iceland will now join NATO by event, as other participants
+[x] corrected bugs which prevented some of Marshall Plan events from firing
+[x] the surrender events had several area names corrected so that proper provinces should be seceded now
+[x] a bug preventing Canada from getting Newfoundland fixed
+[-] reverted communist countries names to DH Full defaults
+[x] filled in several missing strings
+[x] corrected numerous syntax errors which may have prevented some events from firing
+
+1.9.1:
+compatible with Darkest Hour 1.02
+[+] added full support for 1956 scenario (OOBs, cabinets, tech levels, etc.)
+[x] corrected Hungarian Revolution of 1956 events but blocked them for the time being (reported by NickRooz)
+[x] yet again fixed economic development model, correcting problems with countries lacking manpower, e.g. Sweden (reported several times, last time by caksz)
+[+] Free City of Trieste appears in 1950 and 1953 scenarios (with no political setup and no events yet)
+[x] Juliana is now the Dutch HoS in 1950+ scenarios (reported by NickRooz)
+[x] more Iranian HoG are now forced through events so they should appear correctly (reported by NickRooz)
+[x] Finnish Continuation War event should no longer fire after 1945 (reported by Legions of Rome)
+[x] adopted more changes to Soviet ministers and leaders (supplied by FCZP)
+[x] a lot of smaller fixes
+
+1.9.0:
+compatible with Darkest Hour 1.02
+[+] added full support for 1953 scenario (OOBs, cabinets, tech levels, etc.)
+[+] added flavor events and power struggles after death of Stalin (proposed by FCZP and Andropov123)
+[x] corrected names of Pakistani garrisons in 1950 scenario
+[-] removed building queues for Italy and Turkey in 1950 scenario
+[x] a lot of countries that did not pursue revisionist policies post-1945 have their extra cores/claims removed for later scenarios
+[+] Japan now claims the Kuriles in 1950 and 1953 scenario
+[x] USA now guarantees Japan in all scenarios and has military access
+[x] In 1945 scenario USA now can research Miniaturized Fission Bomb tech and progress further down the nuclear tech tree (reported by Deuterium Dawn)
+[-] removed inland seaport in Kandy (reported by Occlude)
+[x] relocation of the Soviet rocket centre had incorrect description, fixed
+[x] fixed Submission of Tibet event which made Tibet be annexed by China regardless of Chinese action choice
+[x] Iraq ceases to be British puppet after 1958 revolution
+[x] Soviet ministers at the start of 1945, 1950 and 1953 scenarios changed (reported by FCZP)
+[x] if Peron stays in power in Argentina (left-wing radical) there is now possibility of some later elections
+[x] Warsaw Pact is now correctly activated (with its name and symbol properly displayed)
+[x] unified the name of Dutch colonies: "Dutch East Indies" and "Netherlands New Guinea"
+[x] Soviet ministers get their missing traits (proposed by Xie)
+[x] fixed once again Dutch East India being allied with the Allies in Indonesian National Revolution (they cease to be puppet for the time of war)
+[x] added white border to all the minister/tech photos that lacked it, for consistency
+[x] added a couple of "walkaround" events so that East Turkestan and Indonesia finally get correct ministers shortly after scenarios start
+[x] simplified and possibly corrected events concerning peacetime modifiers (reported by ...)
+[x] NAP between Chinas now lasts till the end of the timeline (can still be broken during Taiwan Crisis)
+[+] added Andrei Zhdanov, Soviet minister (proposed by FCZP)
+[x] new photos for Gen. Laskin (proposed by FCZP), Gomulka, Nixon, L. Johnson, Kennedy and Eisenhower
+[x] Greece gets Rhodes as core province in 1945 and core and owned province in 1950/1953 scenario
+[x] East Timor is no longer a core province of Dutch East India
+[x] changes among American chiefs of staff are now taken into account in scenarios and election events (reported by Kennelly)
+[x] if USSR chooses not to release any European states after beating Nazi Germany, an event to release German zone of occupation or Germany is also slept (reported by Andropov123)
+[x] corrected date of event giving Eritrea to Ethiopia which makes the event chain to finally work
+[x] simplified triggers of Abadan Crisis so it happens actually now; the game ensures also that Mossadeq really is in the office (reported by NickRooz)
+[x] Hungary, if victorious in 1956, can choose to remain left-wing radical or go fully democratic
+[x] In 1950 scenario Malaya, Sarawak, Somalia and Libya are British puppets (reported by Andropov123)
+[x] corrected problems in case of ahistorical Polish western border in 1945 and added an event giving Poland proper cores
+[+] added a photo of Leopold III of Belgium for his ahistorical reign in 1950s
+[x] Egypt revokes access for the UK in 1952
+[x] Busan is now landfort level 3 to help PRK in achieving victory
+[x] colonial claims removal event does not fire for UK in 1950 scenario
+[x] fixed serious problems with surrender events which could force peace imposed on the UK (The Crumbling Empire) or USA (The Lost Hope) on the rest of the Allies
+[+] added AI files for postwar Chinas and Koreas, possibly to limit their tendency to go to war
+[x] USSR no longer guarantees Communist Greece in 1945 scenario (and shouldn't give its guarantee as long as democratic Greece exists too), so it shouldn't go into war over Greek Civil War (reported by Kennelly)
+[x] fixed glitches on Warsaw Pact emblem
+[x] many other small fixes
+
+1.8.8:
+compatible with Darkest Hour 1.02
+[x] USA and USSR can choose not to go into war over guaranteed countries and not to be bugged anymore over this
+[+] NATO and Warsaw Pact get their own endgame graphics and proper names of alliances are loaded upon the scenario start
+[x] Foundation of Warsaw Pact changes the name and graphics of a proper alliance now
+[+] In 1943 the Allies and Comintern become Western Allies and Eastern Allies (Comintern was dissolved in 1943)
+[+] added events for government changes of Federation of Rhodesia and Nyasaland
+[x] corrected Zvezda Shipyard tech team name that caused error upon scenario loading (reported by Aldrich)
+[x] decision picture for End of UN boycott now uses proper colordepth and should appear no longer corrupted (reported by makif130289)
+[x] Russia after the Bitter Peace and breakaway countries should now be authoritarian and no longer communist
+[x] made changes to Hungarian Revolution event chain that should make American intervention possible
+[x] due to a mistake in an event ID Japan could not receive any gains in the Bitter Peace events, now corrected (reported by Andrey1984)
+[x] Hungary will now get back its leninist government after failure of the revolution (reported by NickRooz)
+[+] activated two colonial unrest events
+[x] colonial powers should lose claims over their colonial lands after 1945 which should prevent newly independent countries from ceding their lands (reported by Serban)
+[+] added events for annexation or new war over Dutch New Guinea in 1962/63 (suggested by NickRooz)
+[x] the rest of American troops are moved from South Korea to Japan (reported by Kennelly)
+[x] made all the corrections of Russian grammar in Soviet OOBs suggested by FCZP
+[x] corrected military access for Cambodia and Lebanon for 1945/1950 scenarios (reported by Andropov123)
+[x] Dutch East India / Dutch New Guinea is now a puppet state of the Netherlands (reported by Andropov123)
+[x] Renner's Austria now gives military access to USSR immediately so no occupying forces are auto-transferred (reported by Andropov123)
+[x] now Communist Greece has the correct starting cabinet for 1945 scenario
+
+1.8.7:
+compatible with Darkest Hour 1.02
+[x] Korean War drastically redone and rebalanced
+[+] added Soviet ministers, as provided by FCZP
+[x] If USA decides not to continue war with Communist China in Taiwan Strait Crisis, peace should apply to all Allies (reported by Viden)
+[+] added a flavor event for the project of Avro CF-105 Arrow interceptor for Canada (suggested by KaiserMuffin)
+[x] Allied and Soviet zones of occupation in Germany should now give access to the occupying powers immediately after their formation (reported by DeSpinoza)
+[+] added an event for Hitler's suicide and formation of Flensburg government within Der Untergang event chain
+[x] A Soviet player may now choose not to release puppet countries after victory in Europe, at the cost of a massive dissent/belligerence hit (reported by Akaki)
+[+] USSR now has an event to decide Polish post-war western borders out of 4 options (with historical one having 96% chance)
+[x] there's no longer an obligation for a British player to release Burma (but a yearly hit of dissent is perpetually made, reported by Napalm Eddie)
+[x] every nation declaring war on Israel in 1948 leaves its alliance which should ensure that Israel doesn't have to fight the Allies (reported by Kurfürst)
+[x] filled in missing Land Doctrine techs from tech setups in 1945 and 1950 scenarios (reported by Fernando Torres)
+[x] an event chain to transfer Eritrea to Ethiopia in early 1950s now should fire properly (reported by Kurfürst) 
+[x] fixed a bug making France annex British Raj and become Algeria (reported by Andrey1984)
+[x] Mongolia no longer has a core province in central China (reported by Kurfürst)
+[x] corrected military access entries in 1945/1950 scenarios so they are given in a correct direction (reported by Kennely)
+[x] no longer most countries leave and shortly rejoin NATO in 1950 scenario (reported by Hyo)
+[x] added a special exclusion so that USA won't jump into Indonesian National Revolution backing the Dutch (reported by Kennelly)
+[x] updated history of events for 1945 and 1950 scenarios
+[x] other small additions and changes
+
+1.8.6:
+compatible with Darkest Hour 1.02
+[+] added event chain for unification of Communist Yugoslavia with Albania and Bulgaria
+[+] added country-specific countries for communist states of Eastern Europe
+[x] Iran used to be punished with economic sanctions twice during Abadan Crisis, fixed
+[x] Iranian industrial modifier is restored to normal after Abadan Crisis (sanctions end)
+[x] Communist Poland and Czechoslovakia receive Marshall Plan help properly if USSR accepts it
+[x] East Germany gets a bit bigger positive IC modifier in New Economic System event, offsetting a bit other punishing events
+[x] Flights from East Germany now give -1 rather than -2 IC modifier (DDR is already badly punished for various things)
+[x] Polish OOB for 1945 and 1950 scenario corrected with semi-historical plausible division setup
+[+] added an event for Slansky trial, with alternative outcome possible
+[x] fixed badly generated events for government setup of various European communist countries
+[+] 1945 and 1950 scenarios have now the system of guarantees properly set up to make 1945-1949/55 Western/Eastern Allies fight for each other
+[x] fixed bad tag for Iceland that caused an error upon loading 1950 scenario (reported by madman12)
+[+] events for creation of United Arab Republic are modified and reactivated again
+[+] Nationalist China can now return to Beijing once they beat Communists, even if they retreat to Taipei first (reported by rstar17)
+[x] modified Eastern Europe starting ministerial setups for 1945-1956 scenarios, added a couple of missing pictures (provided by eeex)
+[+] merged part of new Soviet ministers with the existing set (provided by FCZP)
+[x] Poland in 1956 can now decide if they want to get rid of Stalinist hardliners and push Gomulka to power or if they want to retain status quo
+[x] Saarland should be now annexable in 1956 by West Germany (reported by Viden)
+[x] There is now higher chance that Saarland votes to unify with West Germany
+[x] fixed erroenous switching of national provinces of two Congo states (reported by PattonUS)
+[+] added a block_ideology_switch local flag that will prevent switching tags between democratic/nationalist and communist version if not meant to (like in case of Togliatti's Italy, reported by NapalmEddie)
+[+] added events for Hungarian Revolution of 1956 with 0.5% probability of escalating into WW3
+[x] East Germany is now Soviet puppet in 1950 scenario (reported by NickRooz)
+[x] Israel has now even more garrison divisions than before, at the cost of normal infantry/motorized ones; should curb their ability to storm surrounding countries (reported by KaiserMuffin)
+[x] Belgium now loses cores over Congo-Leopoldville upon its independence (reported by NickRooz)
+[x] British minister Sir Roger Backhouse is now slept in 1939 (reported by Kennelly)
+[x] fixed a minor bug in the British surrender so that allied Italy will always get her share
+[+] added events for dissolution of the Allies after the British surrender in WW2
+
+1.8.5:
+compatible with Darkest Hour 1.02
+[x] major alliances in post-1945 scenarios are limited to a few participants
+[+] added events for dissolution of major alliances in 1945
+[+] added events for creation of NATO and Warsaw Pact
+[+] added events for maintaining spheres of influence in 1945-1949/55 timeline
+[-] removed potentially conflicting British and American surrender events of DH Full
+[x] Uruguayan election of 1951/2 is redone as a multi-choice event
+[x] Communist China gets its offmap bonuses in all 1938-1944 scenario right from the start
+[+] historical locations and sizes of rocket sites and nuclear reactors added to 1945 and 1950 scenarios
+[+] added events for relocation of rocket tests sites to Cape Canaveral and Baikonur Cosmodrome to represent construction of space rockets launchpads in 1950s
+[x] fixed looped event chain within Cuban Missile Crisis
+[x] reviewed AI chances of WW3 firing in all of the possible events
+[x] WW3 made far more probable through Chinese Civil War (4% chance)
+[+] added events for government changes in communist European countries after 1945
+[x] 1945 and 1950 scenarios have proper communist governments
+[-] removed buggy limited war events and redone the way the Greek Civil War is created as a proxy war
+[b] Hotfixed: occupier of Berlin will no longer annex France upon start of WW3 (reported by 
+
+1.8.4:
+compatible with Darkest Hour 1.02
+[+] added The Crumbling Empire event chain for the British surrender, changes from NWO1:
+	[x] fixes to events setting up German sphere of influence afterwards
+	[x] some changes between outcome of the surrender (territorial gains, limiting UK to the Isles, full dissolution of UK)
+	[x] Edward VIII remains HoS for Mosley's government unless Germany creates a puppet Nazi England (U73)
+[+] added The Lost Hope event chain for the American surrender, changes from NWO1:
+	[x] fixes to the buggy events outcomes in case of Japanese victory
+	[+] both Japanese and Americans can elect Dixiecrats to lead American government after the surrender
+[+] added Peace in Our Time event chain, based on the current German surrender, for the early demise of the Reich (before the Soviets join)
+	[x] all events remodeled not to rely on USSR's participation
+	[x] pictures changed to remove all references to the Soviets
+[+] added elections events for colonial nations (U70-U99)
+[x] Manchurian Strategic Offensive will not happen after surrender of Japan (including 1945+ scenarios) so no event will force a war between USSR and Japan (reported by Timmie0307)
+[x] Isoroku Yamamoto is slept as a tech team in post-1945 scenarios for Japan (reported by razorbird789)
+[x] two immovable fleets of UK from 1945+ scenarios are moved to Scapa Flow so they are usable again (reported by DeSpinoza)
+[x] a Middle Eastern British air fleet is moved from Tel Aviv to Cyprus for 1950+ scenarios (reported by KaiserMuffin)
+
+1.8.3:
+compatible with Darkest Hour 1.02
+[+] added The Bitter Peace event chain for the Soviet surrender, changes from NWO1:
+	[+] Turkey may now receive some land in the Caucasus for their entry into the war (there is a DH Full event for this)
+	[x] in line with DH Full approach, the default outcome for Germany is to go with the Rosenberg Plan and release Reichskommisariats
+	[x] after the lost war USSR may dissolve (and give up all claims), transform into monarchist Russia or remain intact
+[x] numerous bugs fixed in newly released The Jewel Voice surrender event chain:
+	[x] a critical bug causing China to become errouneously designated as the major victor fixed
+	[x] Japan now loses the core over Chumcheon (1233) in Korea
+	[X] China now correctly gives Burma back to the British
+	[x] order of liberation of nations in Malaya redone, should give more proper results
+	[x] the Dutch will give independence to the Dutch East India also when they only have holdings on New Guinea
+	[+] an event to make France annex Indochinese Union added
+	[x] Emperor Hirohito is guaranteed to remain the Japanese head of state until the decision what to do with him is taken
+	[+] missing text strings added
+	[x] renamed Prince Takamatsu to Emperor Takamatsu to describe his presumed post-war role
+	[x] Japan properly cedes Ryukus now
+[x] Japan after the war has its election events altered to remember the choice of head of state made upon the surrender
+[+] Burma will now not enter into alliance with the UK after its release which should prevent her from making peace deals for the whole alliance (reported by Kannon)
+[+] made two additions among the Soviet tech teams (contributed by FCZP)
+[-] removed DH Full event for Japanese and Soviet surrender
+
+1.8.2:
+compatible with Darkest Hour 1.02
+[+] added The Jewel Voice event chain for the Japanese surrender, changes from NWO1:
+	[x] there is now far more flexible way of new countries appearing after the Japanese surrender
+	[+] Japanese ministers and leaders that committed suicide upon surrender are properly slept
+[+] new picture added for United Nations intervention
+[x] some Indonesian War of Independence events didn't check if the war is ongoing so the events could fire meaninglessly
+[x] countries in 1950 scenario have now proper industrial modifiers resulting from historical Marshall Plan or occupation policy
+[x] 1945+ events that influence output of provinces influence now the starting setup of 1950 scenario
+[x] Finnish Continuation War surrender date pushed back a little and the Finns now declare war on Germany (reported by makif130289)
+
+1.8.1:
+compatible with Darkest Hour 1.02
+[+] added Der Untergang event chain for cooperative Allied and Soviet victory over Germany, changes from NWO1:
+	[x] there is a possibility that two governments (democratic and communist) divide provinces of a country if USA and USSR have significant parts of it each
+	[x] the occupied provinces are given now to two countries before their liberation: USA and USSR
+	[x] Yugoslavia (in democratic and communist flavor) can be released if either USA or USSR have majority of provinces around whole territory, otherwise consituent countries (Serbia, Montenegro, Bosnia, Croatia and Slovenia) are given independence and may be be either democratic or communist
+	[x] Poland, if democratic, may keep all of the eastern lands (Kresy) but the gains in the West would be limited
+[x] made a lot of balancing changes to post-1945 conflicts
+[X] corrected duplicated event for the death of Per Albin Hansson, Swedish HoG (reported by Kennelly)
+[x] event that makes Duke of Gloucester Australian HoS is slept for 1945 scenario (reported by Kennelly)
+[x] West German AI is changed so DFR no longer tries to become a nuclear power (reported by rstar17)
+[x] Egypt finds its way to selectable nation lists in 1945 and 1950 scenarios (reported by rstar17)
+[x] Spain receives Gibraltar as a national province in 1945 and 1950 scenarios (reported by rstar17)
+[-] removed army of Luxembourg (reported by omega20)
+[x] slept some ministers and leaders of Italy and USSR (reported by FCZP)
+[x] non-aggression pact between Korean states is removed when the war erupts
+[-] removed 2030005 and 2007062 Finnish events making Finland a puppet of USSR under Kuusinen to promote historical outcome (separate peace of 1944) which USSR can nevertheless decline
+[-] removed United Arab Republic events causing crashes (will be rewritten)
+
+1.8.0:
+compatible with Darkest Hour 1.02
+[+] added Doctrine of Containment (1950) scenario, changes from 1945 scenario:
+	[x] territorial changes and new countries
+	[x] changes in cabinets
+	[x] OOBs with new army sizes and placement
+	[x] new technology levels
+	[x] new AI files and mobilization levels where needed
+[x] drastically changed the way the dynamic economy events are coded, now 1 country = 1 event
+[+] integrated ACIP ministers for U70-U99 countries
+[x] two Koreas now have non-aggression treaty until the historical Korean War fires (or North Korea decides not to provoke war)
+[+] corrected several buggy event end dates
+[x] corrected buggy 8510504 event which prevented Eritrea from being transferred to Ethiopia
+[+] a couple of missing strings added
+
+1.7.7:
+compatible with Darkest Hour 1.02
+[x] a picture for CEA French tech team changed for the one provided by T.J.Arnold
+[x] corrected 1933 scenario descriptions (reported by makif130289)
+[x] old event ID corrected in a trigger for communist putsch in West Berlin (reported by Kennelly)
+[X] corrected Palestinian 1948 events so that revolts should take place correctly (reported by TJ Arnold)
+[x] cut down numbers of divisions in Arab-Israeli conflict of 1948 (reported by TJ Arnold)
+[-] Goa removed from British national provinces list
+[x] a couple of wrong province IDs corrected in revolt.txt file
+[x] Indonesia and Dutch East India should be now much more willing to make naval invasions against each other
+[x] changed colors of India and Ceylon
+[+] provided a correct picture for Jewaharlal Nehru and an improved picture for Leopold Figl
+[+] added a description for "Death of King Abdul Aziz" Saudi event (reported by danielshannon)
+[x] Khrushchev should have a correct picture as head of state of USSR in 1953 (reported by danielshannon)
+
+1.7.6:
+compatible with Darkest Hour 1.02
+[+] added tech teams by danielshannon
+[x] redesigned again the way economic development works, also making many corrections to IC placement again
+[+] added events and ministers for 4 last countries, finishing non-U** set
+[x] reviewed all the election events made to date and introduced changes to possibly prevent unplanned HoS/HoG from appearing
+[x] made several corrections to election events to prevent buggy elections
+[x] fixed critical errors for French elections post 1953 and several Lebanese election events
+[+] added government for Communist Tibet alternative outcome
+[+] added event for death of Yitzhak Ben Zvi
+[x] Egypt receives core on correct province (Suez) during the nationalization crisis (reported by danielshannon)
+[-] removed extra unneeded event for coronation of Elizabeth II and made the event for coronation work (reported by bteonnsg)
+[x] corrected an error that made Finnish separate peace in 1944 unable to work
+[-] removed Sinkiang annexation event made redundant by a separate event chain
+[x] French Fifth Republic redone as a decision
+[x] Pakistan now receives convoy transports and escort vessels upon its independence
+[x] if Indonesia is defeated, the Dutch can still release the puppet Federation of Indonesia but the chance is low
+[-] removed a lot of redundant events from DH Full (for 1945+ elections, independence of countries, etc.)
+[x] reviewed and corrected the rest of starting cabinet lineups for 1945 scenario
+[x] Burma doesn't receive forces of British Raj upon independence
+[x] UK loses cores over Ceylon when it decides to leave the island free
+[x] UN / American assistance to South Korea arrives a month earlier so it can now change the course of the war
+[x] American help for South Korea, when it comes, goes to Busan
+[x] Nationalist China receives slightly less dissent hits but loses divisions over time (to limit amount of partisans appearing and taking over Taiwan)
+[x] a lot of fixes and adjustments for Kashmir War and Indonesian National Revolution
+
+1.7.5:
+compatible with Darkest Hour 1.02
+[+] added events and ministers for 9 new countries (TAJ - UZB, Tajikistan - Uzbekistan), including Tibet and United States
+[x] toned down modernization of armies introduced for 1945 scenario in the previous version to realistic 1945 levels
+[x] American troops stationing in North Korea (Wonsan) at the beginning of 1945 scenario moved to Seoul (reported by omega20)
+[x] British province of Saint Pierre (2135) given to France (reported by omega20)
+[+] when Greek communist partisans become tired in 1950s their fortification are gradually dismantled by events to help their opponents decide to attack
+[x] Maginot Line is notably smaller (3 instead of 10) in the beginning of 1945 scenario (reported by bteonnsg)
+[x] a brute-force technique implemented to make Greek Civil War not end in instant peace
+[x] made several corrections in end of colonialism events (mostly removed extra events with no meaning and no chance of firing)
+[+] United Kingdom now waits for the fate of India to be decided and cedes Ceylon to federated India or makes a dominion out of it
+[x] Kavaratti is now given to Pakistan when India experiences total defeat in Kashmir war
+[x] corrected other incorrectly placed units
+[x] multiple problems corrected in Taiwan Straits Crisis event chain
+[x] Transjordan may become Jordan even after conclusion of Israeli war of independence
+[x] Palestine should receive all the land after total Arab victory in 1948/49 (reported by Bogdan.ua)
+[x] Israeli War of Independence should be about a month shorter
+[x] Israeli core removed from Kirikkale (reported by Kennelly)
+[x] color of Kashmir changed to grey, to let it be different from Nationalist China (reported by Kennelly)
+[x] free divisions events that need to be slept added to 1933-1941 scenario files and a couple of corrections made
+
+1.7.4:
+compatible with Darkest Hour 1.02
+[+] added converted space race events, courtesy of General Mosh
+[+] added end of colonialism events, giving autonomy and/or independence of various states in 1940s-1963 timeline
+[x] all OOBs and building queues for 1945 scenarios reconfigured to have modern unit models (depending on specific country's technological progress)
+[+] added events giving free division to newly created states
+[+] added events and ministers for 15 new countries (ROM - SYR, Romania - Syria)
+[+] added Civilization-like end of history event for 1964, letting extend play further (enddate of 1945 scenario removed)
+[x] Sinkiang gets a new shape and name in 1945 scenario
+[x] fixed a long-standing bug making Miklas appear as Austrian HoS
+[x] thanks to some illogical combinations, I managed to make Sukarno Indonesian HoS
+[+] added events changes industrial output of Berlin depending on whether it is divided or not
+[x] Soviets properly withdraw support for Kurds in Iran Crisis when complying with American ultimatum
+[x] fixed missing special triggers for several elections
+[+] added name changes: Transjordan -> Jordan, Dutch East India -> Dutch New Guinea, Union of South Africa -> Republic of South Africa, Sinkiang -> East Turkestan
+[x] fixed multiple problems with Berlin Airlift, Berlin Crisis and French elections events
+[x] fixed vast majority of "event may be missing" debug error messages
+[x] Doha is given to the UK (used to belong to Oman, reported by omega20)
+[x] Maseru and Mbabane are given to the UK (used to belong to South Africa)
+[x] in 1945 scenario several wrongly placed air wings are given correct bases
+[x] corrected extra core province for Mongolia in central China (reported by bteonnsg)
+
+1.7.3:
+compatible with Darkest Hour 1.02
+[x] major bug which prevented some countries from reinforcing (esp. Dutch East India) fixed
+[+] added set of events that should prevent demobilization for countries that expect taking part in post-1945 conflicts
+[+] added ministers and events for 15 new countries (NAM - PRU, Namibia - Peru)
+[+] added Iran Crisis of 1946 and Abadan Crisis event chains
+[x] reviewed and verified all NWO1-converted ministers and made several corrections in case of errors
+[x] unblocked Berlin Airlift event chain (there was a bug breaking it at some point)
+[x] Union of Transjordan and Palestine doesn't happen if Palestine happens to beat Israel earlier
+[x] Suez Crisis event chain now recognizes if Israel exists, if it does not, there's no way for the British to invoke Operation Kadesh (reported by walrus)
+[x] Egypt receives core over Suez upon nationalization of the Suez Canal
+[x] Allied Zone of Occupation becomes American puppet even if it happens to be released by another country (UK/France)
+[x] If UN doesn't intervene in Korean War, the full American intervention (not sending puny 2 divisions), risking Soviet retaliation, becomes much more probable
+[+] Iraq now ceases to be a British puppet around 1947
+[x] finally Greek Civil War is guaranteed not to begin with instant peace between two factions
+[x] Cyprus is no longer Greek core territory, to prevent UK from instantly ceding this island to its ally
+[x] Okinawa is no longer Japanese core territory, to prevent USA from instantly ceding this island to its ally (reported by Waplo)
+[x] Kavaratti is given to British Raj to let it become part of India upon its independence (reported by omega20)
+[x] Goa is Portuguese territory at the start of 1945 scenario
+[+] added new nomination events for democratic Hungary
+[x] smaller fixes and changes
+
+1.7.2:
+compatible with Darkest Hour 1.02
+[x] start date of 1945 scenario moved forward to 2 October 1945;
+[x] Lumphat (1398) is given to Cambodia in 1945 scenario and made a national province! (reported by eeeex)
+[+] added ideology switch / reunification events
+[+] added events and ministers for 15 new countries (LAO - MOZ, Laos - Mozambique)
+[x] redesigned IC boost of several countries, USA should be now down to around 700 IC mark from 1000 IC
+[x] better placement of IC in Israel
+[x] VP map, which carried many errors through conversion, is replaced with the DH Full one; a couple of additions are directly entered into 1945 scenario or activated through events for earlier scenarios
+[-] removed possibly game-disturbing AI preference for sending spies on minister assassination missions
+[+] a set of events creating forts where viable for post-1945 conflicts added
+[x] Egypt will cease to be a British puppet when 1952 Revolution fires (reported by walrus)
+[x] redone ways UN Security Council meetings are triggered; fixed a bug and ensured that each eligible country gets to vote
+[x] reviewed starting cabinets for 1945 scenario; Japan, Egypt, Indonesia, British Raj and Dutch East India which had no cabinets specified at mostly got their appropriate ministers
+[x] all instancies of event command "sleepevent value = x" changed to "sleepevent which = x" so they now work; relates to Indonesian National Revolution, Chinese Civil War and Taiwan Straits Crisis
+[x] invasion AI improved for Indonesian National Revolution
+[x] Kashmir War and Israeli-Palestinian conflict should occur a bit later and with more variance in time
+[x] reviewed core provinces of various countries: Tibet, Communist China, Nationalist China, Greece, Communist Greece, Communist Bulgaria, Communist Hungary, Finland, Venezuela and Israel have their core provinces changed
+[x] a couple of changes made to reduce volatility of Israeli-Arab and Kashmir conflicts
+[x] inserted missing text for Costs of Marshall Plan event
+[+] added 2 colonial unrest events
+
+1.7.1:
+compatible with Darkest Hour 1.02
+[x] fixed problem with wrong (close to 0) manpower values for a big number of provinces (reported by walrus)
+[x] events for IC/resource production/manpower changes less than 0.01 no longer show up
+[+] major rework of Greek Civil War
+	[+] Tito or Stalin now properly support communists
+	[+] USA may respond with Truman Plan help for Greece
+	[+] Communists in their prime fighting moments may receive partisan units
+	[+] if the communists don't resolve the war before 1949 they are punished for prolonged warfare, bringing inevitable defeat in 1950s
+	[+] events for end of the war when KKE takes Athens and the king retreats to Crete added
+[+] Korean War added
+	[+] release of Korean states events
+	[+] added events for Soviet, Chinese and American interventions
+	[+] American direct intervention may spark WW3
+	[+] added events for United Nations intervention
+[+] added events and ministers for 6 new countries (JAP - KYG + PRK, Japan - Kyrgyzstan + Communist Korea)
+[x] corrected wrong recipient of 8500509 event (Greece is betrayed, reported by eeex)
+[x] Greece shouldn't make peace with Communist Greece (reported by eeex)
+[+] Maoist China can now replace KMT China in UN Security Council if the latter doesn't exist or if they win the civil war and USA lets them (which is very improbable)
+[+] USSR can now boycott UN Security Council meetings which gives a 1% chance for USA to fold and invite Mao to the Council; meanwhile it means that Soviets won't have a veto possibility in Korean War intervention
+[x] thoroughly reviewed and improved triggers for United Nations Security Council resolutions
+[x] all event pictures are now 24-bit so they display correctly (a couple of them didn't)
+[x] small bugfixes and gameplay balancing tweaks
+[x] fixed a serious bug that resulted in Indonesia giving all the lands won in its independence war back to Dutch East India
+
+1.7.0:
+compatible with Darkest Hour 1.02
+[x] fixed a major bug in economic calculation development which caused IC of several countries to be severely rounded down
+[+] a couple of provinces receive additional victory points in 1945
+[x] Nationalist China is punished a bit less in the beginning of the civil war to let them have a chance of winning the war
+[+] new AI files for Chinese Civil War (1945, 1947, 1949)
+[+] added division of British Raj and independence of India / First Kashmir War event chains
+[+] added independence of Israel and Arab-Israeli War of 1948
+[+] added Indonesian National Revolution along with United Nations reaction
+[x] changed conflicting country colors for Allied Zone of Occupation and Indonesia
+[x] Portuguese receive Goa (Panaji) at the beginning of 1945 scenario
+[x] Sumdo is given to British Raj (was Tibetan; historically it became Chinese in early 1960s)
+[x] modified AI of India, Pakistan, Dutch East India and Indonesia to let them wage their wars better
+[x] remodelled Middle Eastern AI files to let help Arab-Israeli 1948 go more historically
+[x] fixed a bug that caused Chinese standpoint not being taken into account on UN Security Council meetings
+[+] added new event pictures
+[-] removed DH Full events for independence of Burma, Israel; Arab-Israeli War
+
+1.6.5:
+compatible with Darkest Hour 1.02
+[x] fixed mass-producing IC by AI until the end of 1945 (reported by nsr433)
+[+] added ministers and some events for 9 new countries (ICE - ITA, Iceland - Italy)
+[-] removed "Independence Struggle" events from DH Full
+[-] removed conflicting elections / coup events from DH Full for 1945+ timeline
+[x] further fixes to peacetime modifier events problems with text display
+[x] missing minister IDs in several event files fixed
+[x] fixed unfinished "Assassination of Rafael Trujillo" event for Dominican Republic
+[x] fixed an ommission that prevented Berlin Airlift and Berlin Crisis event chains from happening
+[x] AI adjusted for Greek Civil War and Indonesian National Revolution
+
+1.6.4:
+compatible with Darkest Hour 1.02
+[+] added United Nations Security Council reactions for following conflicts:
+	[+] Chinese Civil War
+	[+] Suez War
+	[+] Taiwan Strait Crisis
+	[+] Greek Civil War
+[+] added events for transfer of Eritrea to Ethiopia
+[+] added events for Marshall Plan for Europe
+[+] added events and ministers for 11 new countries (GAB - HUN, Gabon - Hungary)
+[x] fixed non-working text for wartime modifier events
+[+] Greek communists appear in 1945 scenario
+[x] Dutch East India is given Dutch posessions in Indonesian archipelago
+[+] a proper decision plate added for Greek Civil War declaration
+[x] setup for Indonesian National Revolution prepared
+[+] added events for transfer of national capitals in Europe
+[x] Dutch East India is one of proposed choices in 1945 scenario rather than Argentina
+[x] Soerabaja and Jogjakarta - key Indonesian republican cities - get 1 vp each
+[x] several fixes to occupation of Germany and Berlin Airlift - Berlin Airlift should no longer end prematurely and Germany should form as two separate states
+
+1.6.3:
+compatible with Darkest Hour 1.02
+[+] added events for possibility that Chinese Civil War sparks World War 3
+[+] added events for Cuban Missile Crisis and possibility of WW3
+[+] added events for Taiwan Straits Crisis and possibility of WW3
+[+] added events for Greek Civil War and possibility of WW3
+[+] added events for Berlin Blockade and possibility of WW3
+[+] added events for Berlin Crisis and possibility of WW3
+[+] added events and ministers for 6 new countries (ECU - FRA, Ecuador - France)
+[+] added 45 new event pictures, to the total of 154 pictures
+[-] AI countries again should not build IC, as a stop-gap measure against mass IC building (reported by nsr433)
+[x] events for DDR adjusted to suit newly added events
+[+] added events for enlargement of United Arab Republic and its permanent establishment
+[x] Yunnan is given to Communist China when Nationalists surrender
+[x] Nationalist China is given provinces on the coast of Yellow Sea to prevent early encirclement of Beijing
+[x] Nationalists get a little boost in Chinese Civil War
+[+] left-wing ministers added to Nationalist China for setting up unity government
+[+] added ministerial setups for unity governments in China
+[x] when peaceful unification succeeds the Republican China (UCH tag) is created, with proper ministers
+[+] fixed missing pictures from 1.6.2 released (especially for Cuba)
+[x] 1963 Dominican Republic government change redone as elections
+[x] Saar Protectorate is created within its historical borders
+[x] capital of Canada is now set properly to Ottawa, not Pembroke (long overlooked error with conversion)
+[x] Great Patriotic War event is slept for 1945 scenario and its trigger modified not to let it fire for Chinese Civil War (reported by Viden)
+[x] von Falkenhausen is slept as a leader for Nationalist China in 1945 (reported by Viden)
+[x] Italian fleet is moved to Taranto in 1945 so it's no longer inaccessible (reported by MastahCheef117)
+[x] made some changes and fixes to Communist China ministers (reported by nelsonlee)
+[x] various fixes for occupation of Austria event chain
+
+1.6.2:
+compatible with Darkest Hour 1.02
+[+] added events for post-war occupation of Austria and Germany
+[+] added 51 new event pictures, to the total of 109 pictures
+[+] chain of events for Saar Protectorate added
+[x] corrected non-integer values in "economic_development_1945.txt"
+[+] inserted missing country names in "world_names.csv"
+[-] reviewed 'hoi2.txt' events from DH Full and deactivated some conflicting events
+	[-] "Cold War gets hot" events removed
+	[-] "Resumption of Chinese Civil War" events removed
+	[-] Formation of Austria, Germany and Saar Protectorate events removed
+[+] added events and ministers for 11 new countries (CAM - DEN, Cameroon - Denmark)
+[x] corrected a NWO1 error preventing Bay of Pigs invasion hapenning for Cuba
+[x] in line with DH Full's annexation of warlords in the wake of Chinese Civil War, Yunnan and Xibei Sai Ma are integrated with Nationalist China in 1945 scenario
+[x] several minor corrections
+[-] no longer checked for compatibility with 1.02.b2
+	
+1.6.1:
+compatible with Darkest Hour 1.02, 1.02.b2
+[x] compatibility with 1.02
+[+] added events for 19 new countries (AFG - BUR, Afghanistan - Burma)
+[+] added 29 new event pictures, to the total of 58
+[x] corrected error that caused "Chinese Civil War erupts" event have no photo
+[+] added AI settings to cause historical nuclear powers to build reactors and do that in historical locations
+[x] Benin-Sahel renamed to Dahomey
+
+1.6.0:
+compatible with Darkest Hour 1.02.b2
+[+] Chinese Civil War, changes from NWO1:
+	[x] the war is balanced to normally begin in 1947 and end in Nationalist defeat in 1949
+	[+] there is now an event chain for Marshall Mission, unity government and peaceful resolution of conflict
+	[x] events for Soviet and American support (or even military alliance)
+	[x] USSR and Mongolia will now cede all the Chinese lands to Communists or even Nationalists if Communist China was annexed
+	[+] events for end of foreign military intervention
+	[x] Nationalist AI is programmed to defend the coast and southern parts of the country as well as Taiwan
+	[x] a great deal of minor bugfixes and alterations
+[-] AI switch events are now deactivated for cold war scenario so 1945+ AI works correctly
+[x] regenerated industry development events:
+	[x] Communist China all time low of 1950s is less debilitating, the total base IC should reach: 60 (1950), 70 (1955), 78 (1960), rather than: 52, 60, 67 respectively
+	[x] Indonesia gets a boost for every decade, starting with: 9 (1945), 13 (1950), 20 (1955), rather than: 5, 11, 16 respectively
+	[x] Poland is nerfed by about 10%
+	[x] many other countries have their IC and resources changed slightly to ensure the total IC/resource levels don't change
+[x] Communist China will not get their peacetime negative modifier to IC before 1950 to let her prepare better for civil war
+[+] added preliminary batch of NWO2's own AI switch events
+[x] Indonesia gets province no 1619 on Borneo, which erroneously remained Dutch (in scenario and revolt.txt)
+[+] scenario plates added
+[+] 29 event pictures and 2 decision plates added
+[x] Communist China, Nationalist China and Indonesia are no longer in general mobilization phase but in partial mobilizaton phase; previously in time of peace they tended to end mobilization which disrupted their performance in future wars
+[+] added ministers for DDR (by strits1945)
+[x] a lot of minor changes and fixes
+[+] United Kingdom, Soviet Union and United States get new techs: Advanced Light Tank brigade and 1945 Semi-Modern Tank division for 1945 scenario (reported by nsr433)
+
+1.5.6:
+compatible with Darkest Hour 1.02.b2
+[-] compatibility with 1.02.b1 lost
+[+] reactivated DH Full leaders for Communist Vietnam (reported by walrus)
+[x] Amami Islands are given to USA at the start of 1945 scenario (reported by Waplo)
+[+] missing WW1 land doctrine techs corrected (reported by Timmie0307)
+[+] USA gets Nuclear Power tech and nuclear bomb secrets techs up to and including Fission Bomb (reported by Timmie0307)
+[+] UK gets Practical Turbojet Engine tech and rocket interceptor techs (reported by nsr433)
+[x] slept a couple of events for 1945 scenario: Fate of Germany, US occupation of Greenland and Cabinet returns to Brussels/Amsterdam
+
+1.5.5:
+compatible with Darkest Hour 1.02.b1, 1.02.b2
+[x] mobilization levels specified as domestic policy sliders match with country flags; no more "mobilization decision is available" spam
+[x] revised ALL domestic policies for 1945 scenarios
+[x] fixed a glaring bug which made Bhutan receive considerable province manpower in years 1945-2000
+[x] all manpower levels for 1945 scenario are revised (usually lowered, on average by 50-70%), according to the country's manpower levels and current mobilization level
+
+1.5.4:
+compatible with Darkest Hour 1.02.b1, 1.02.b2
+[+] added an AI file for every country in the game, with modifications:
+	- there are no more ignored technologies (all techs get researched sooner or later)
+	- a lot of preferences regarding tech research, tech sharing and trade are erased
+	- naval AI set for most of the countries, save naval powers, to default values
+	- all references to Nazi Germany, Imperial Japan and a couple of other pre-1945 countries removed
+	- mobilization flags set for each country
+	- many smaller alterations
+[x] Korean states and German occupation zones are no longer automatically released (no early Korean War)
+
+1.5.3:
+compatible with Darkest Hour 1.02.b1, 1.02.b2
+[+] ensured compatibility with 1.02.b2
+[x] incorrect division and brigade models updated to proper WW2 values in 1945 scenario (reported by omega20)
+[+] Egypt is independent as a British puppet under military control in 1945 (reported by Waplo)
+[+] Indonesia is independent at the start of 1945 scenario (without the territory of Iryan Jaya)
+[x] both Korean countries are again not independent and occupied by USA and USSR
+[x] amassed divisions from Soviet and American capital cities were relocated to meaningful locations at the start of 1945 scenario
+[+] added event history and slept events set from 1941 DH Full scenario (covering years 1936-41, 1941-45 still to be done)
+[-] removed "max_strength" entries limiting division size in a couple of remaining cases
+[x] mod's text moved to mods.csv
+[-] removed ministers.txt, leaders.txt and teams.txt
+[x] Dobrich (307) goes to Bulgaria (reported by omega20)
+[x] Linz (187), Stuttgart (134), Augsburg (178) go to USA (reported by omega20)
+[x] Neuwied (143) goes to France (reported by omega20)
+[x] Porvenir (2043) goes to Argentina (reported by omega20)
+[x] Bougainville (1587) goes to Australia (reported by omega20)
+[x] Northern Persian Corridor: Rezaiye (1082), Tabriz (1083), Rast (1081), Sari (1080), Mashhad (1092) go to USSR (reported by omega20)
+[x] Salla (519) goes to USSR (reported by omega20)
+[x] Songhla (1431) goes to Thailand (reported by omega20)
+[x] Kengtung (1413) goes to British Raj (reported by omega20)
+[x] The island of Ceylon goes back to UK (reported by omega20)
+[x] Kalymnos (378) goes to UK (reported by omega20)
+[x] Guantanamo Bay (1778) goes to USA (reported by omega20 and Waplo)
+[x] Iraq is set as British puppet and put under military control (reported by Waplo)
+[x] Okinawa Island goes to USA (reported by Waplo)
+[x] Dutch East Indies have their end revolt date set at 1944
+[x] capital of Indonesia upon liberation is set to Jakarta
+
+1.5.2:
+compatible with Darkest Hour 1.02.b1
+[+] British Raj (controlled and puppeted by ENG) appears in 1945 scenario, just as it does in 1936 scenario, with OOB
+[+] added events for imposing IC peacetime modifiers
+[x] countries from Eastern European bloc are changed to their communist counterparts (UXX)
+[x] "inventions" entries are entered into scenario inc files to enable researching secret weapons techs (reported by nsr433)
+[x] air units of UK in 1945 scenario are moved from Imphal (1442), where there is no air base, to Delhi (1459)
+[x] global flags for 1945 scenario are now defined straight in the scenario file
+[x] Japanese surrender event (2011028) is modified to provide a way to set NWO2 flags in 1936 scenario and enable post-WW2 events
+[-] introductory event removed
+[+] added a makeshift event for recognizing German defeat in WW2 and set up NWO2 flag to enable post-WW2 events
+[x] interventionism levels of Korean nations lowered to make them less willing to go to war with each other and non-aggression pact given until 1948-1-1
+[x] Iasi (297) and Galati (298) provinces are given to Communist Romania (were possessed by USSR, reported by Pityubaa)
+[x] American-occupied province of Erfurt (171) is given to USSR, units are moved to Bayreuth (174, reported by Pityubaa)
+[x] Italian provinces of Capodistria (403) and Pola (406) provinces are given to Communist Yugoslavia (reported by Pityubaa)
+[x] Khorugh (1104) province is given to USSR (from Sinkiang, reported by Pityubaa)
+
+1.5.1a:
+compatible with Darkest Hour 1.02.b1
+[+] added bases.inc definition file so that air and naval bases appear in the game (locations and base levels should change in later versions, reported by Wowwars)
+
+1.5.1:
+compatible with Darkest Hour 1.02.b1
+[+] created a huge number of industry development and relocation events for years 1945-2000
+[+] 1945 scenario province data rebalanced using industry development data
+[x] DH Full events are reintroduced back to the game (were turned off for debugging)
+[x] corrected "?" characters in units' names resulting from bad conversion
+[x] Luxi province (1384) is given to Yunnan (was: UK) and put into Chinese national provinces pool
+[x] Pakistani revolt.txt entry gets also Eastern Pakistani (Bangladesh) provinces
+[x] country names are modified (generally shortened) to help them fit into space constraints
+[+] all text will apear from now on in new_text.csv file to allow longer event descriptions
+
+1.5.0:
+compatible with Darkest Hour 1.02.b1
+[x] first release of the second version of the mod
+[+] converted 1945 scenario from the original mod (OOBs, provinces ownership
+[+] new splash screen
+[+] some issues with slider setup and diplomatic relations resolved
+[+] all countries are given starting techs

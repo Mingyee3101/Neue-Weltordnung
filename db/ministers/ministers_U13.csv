@@ -1,0 +1,68 @@
+U13;Ruling Cabinet - Start;Name;Start Year;End Year;Retirement Year;Ideology;Personality;Loyalty;Picturename;X
+880001;Head of State;Károly Peyer;1933;1964;1999;LWR;Insignificant Layman;High;M21045;X
+880002;Head of State;Zoltán Tildy;1933;1964;1999;ST;Autocratic Charmer;High;M21011;X
+880003;Head of State;Béla Zsedényi;1933;1964;1999;ST;Stern Imperialist;High;M21031;X
+880004;Head of State;László Rajk;1933;1964;1999;ST;Autocratic Charmer;High;M21035;X
+880005;Head of State;Mátyás Rákosi;1933;1964;1999;ST;Powerhungry Demagogue;High;M21032;X
+880006;Head of Government;Arpád Szakasits;1933;1964;1999;LWR;Happy Amateur;High;M21061;X
+880007;Head of Government;László Rajk;1933;1964;1999;ST;Flamboyant Tough Guy;High;M21035;X
+880008;Head of Government;Mátyás Rákosi;1933;1964;1999;ST;Backroom Backstabber;High;M21032;X
+880009;Foreign Minister;Arpád Szakasits;1933;1964;1999;LWR;Biased Intellectual;High;M21061;X
+880010;Foreign Minister;Erik Molnár;1933;1964;1999;ST;Ideological Crusader;Medium;M21079;X
+880011;Foreign Minister;Matta Zalka;1933;1964;1999;ST;General Staffer;Medium;M21037;X
+880012;Foreign Minister;László Rajk;1933;1964;1999;ST;Iron Fisted Brute;Medium;M21035;X
+880013;Minister of Armament;Reszö Kastner;1933;1964;1999;LWR;Administrative Genius;Medium;M21089;X
+880014;Minister of Armament;Béla Zsedényi;1933;1964;1999;ST;Infantry Proponent;High;M21031;X
+880015;Minister of Armament;Erno Gero;1933;1981;1999;ST;Resource Industrialist;Medium;M21093;X
+880016;Minister of Armament;Zoltán Vas;1933;1964;1999;ST;Military Entrepreneur;Medium;M21034;X
+880017;Minister of Security;Jozsef Revay;1933;1964;1999;LWR;Crime Fighter;Medium;M21107;X
+880018;Minister of Security;Mihaly Farkas;1933;1964;1999;ST;Prince of Terror;Medium;M21110;X
+880019;Minister of Security;László Rajk;1933;1964;1999;ST;Crime Fighter;Medium;M21035;X
+880020;Minister of Security;Mátyás Rákosi;1933;1964;1999;ST;Crooked Kleptocrat;Very High;M21032;X
+880021;Minister of Security;Imre Nagy;1933;1964;1999;ST;Back Stabber;Medium;M21113;X
+880022;Minister of Security;Ferenc Erdei;1933;1964;1999;ST;Compassionate Gentleman;Medium;M21114;X
+880023;Head of Military Intelligence;Károly Peyer;1933;1964;1999;LWR;Industrial Specialist;Low;M21045;X
+880024;Head of Military Intelligence;Erno Gero;1933;1981;1999;ST;Logistics Specialist;Medium;M21093;X
+880025;Head of Military Intelligence;László Rajk;1933;1964;1999;ST;Political Specialist;Medium;M21035;X
+880026;Chief of Staff;Matta Zalka;1933;1964;1999;ST;School of Psychology;Medium;M21037;X
+880027;Chief of Army;Gabor Sziszkalatay;1933;1964;1999;LWR;Commando Doctrine Army;Medium;M21136;X
+880028;Chief of Army;Nikolaj Berzin;1933;1964;1999;ST;Decisive Battle Doctrine;Medium;M21038;X
+880029;Chief of Navy;Reszö Kastner;1933;1964;1999;LWR;Base Control Doctrine;High;M21089;X
+880030;Chief of Navy;KÃ¡lmÃ¡n Hardy;1933;1964;1999;ST;Decisive Naval Battle Doctrine;Medium;M21039;X
+880031;Chief of Air Force;Edgar Keksz;1933;1964;1999;LWR;Air Superiority Doctrine;Medium;M21073;X
+880032;Chief of Air Force;György De Brody;1933;1964;1999;ST;Air Superiority Doctrine;Medium;M21040;X
+880033;Chief of Staff;Gabor Sziszkalatay;1933;1964;1999;ST;Commando Doctrine Staff;Medium;M21136;X
+880034;Head of State;Arpád Szakasits;1933;1964;1999;ST;Insignificant Layman;High;M21061;X
+880035;Head of State;Sandor Ronai;1933;1964;1999;ST;Popular Figurehead;High;M21181;X
+880036;Head of State;Istvan Dobi;1933;1964;1999;ST;Autocratic Charmer;High;M21182;X
+880037;Head of Government;Lajos Dinnyes;1933;1964;1999;ST;Happy Amateur;High;M21183;X
+880038;Head of Government;Istvan Dobi;1933;1964;1999;ST;Ambitious Union Boss;High;M21182;X
+880039;Head of Government;Imre Nagy;1933;1964;1999;ST;Naive Optimist;High;M21113;X
+880040;Foreign Minister;Gyula Kallai;1933;1964;1999;ST;The Cloak N Dagger Schemer;Medium;M21186;X
+880041;Foreign Minister;Karoly Kiss;1933;1964;1999;ST;Apologetic Clerk;Medium;M21187;X
+880042;Minister of Armament;Imre Horvath;1933;1964;1999;ST;Theoretical Scientist;Medium;M21188;X
+880043;Minister of Security;János Kádár;1933;1964;1999;ST;Back Stabber;Very High;M21189;X
+880100;Head of State;Béla Miklós de Dalnók;1944;1964;1964;SC;Insignificant Layman;Medium;M21059;X
+880101;Head of Government;Zoltan Tildy;1946;1964;1964;SL;Naive Optimist;High;M21011;X
+880102;Head of Government;Ferenc Nagy ;1945;1964;1964;LWR;Backroom Backstabber;Medium;M880102;X
+880103;Head of State;Mátyás Rákosi;1953;1972;1972;ST;Die-hard Reformer;Medium;M880103;X
+880104;Head of Government;Andras Hegedus;1955;2000;2000;ST;Happy Amateur;Medium;M880104;X
+880105;Head of State;ErnÃ¶ GerÃ¶;1956;1981;1981;LE;Ruthless Powermonger;Medium;M21093;X
+880106;Head of State;Imre Nagy;1956;1959;1971;LWR;Benevolent Gentleman;Medium;M21113;X
+880107;Head of State;János Kádár;1956;1990;1990;LE;Barking Buffoon;Very High;M21189;X
+880108;Head of Government;János Kádár;1956;1990;1990;LE;Silent Workhorse;Very High;M21189;X
+880109;Head of Government;Ferenc Munnich;1958;1968;1968;LE;Political Protege;Medium;M880109;X
+880110;Head of Government;Gyula Kallai;1965;1997;1997;LE;Old Admiral;Medium;M880110;X
+880111;Head of Government;Jeno Fock;1967;2002;2002;LE;Silent Workhorse;Medium;M880111;X
+880112;Head of Government;György Lázár;1975;2014;2015;LE;Flamboyant Tough Guy;Medium;M880112;X
+880113;Head of Government;Károly Grósz;1987;1997;1997;LE;Flamboyant Tough Guy;Medium;M880113;X
+880114;Head of State;Károly Grósz;1988;1997;1997;LE;Insignificant Layman;Medium;M880113;X
+880115;Head of Government;Miklós Németh;1988;2020;2020;LE;Old General;Medium;M880115;X
+880116;Foreign Minister;Péter Várkonyi;1985;2009;2009;LE;Great Compromiser;Very High;HUN3;X
+880117;Minister of Armament;István Hetényi;1985;2009;2009;LE;Administrative Genius;Very High;HUN4;X
+880118;Minister of Security;István Horváth;1985;2020;2020;LE;Secret Police Chief;Very High;unknown;X
+880119;Head of Military Intelligence;Ferenc Kárpáti;1985;2014;2014;LE;Logistics Specialist;Very High;HUN12;X
+880120;Chief of Staff;Ferenc Kárpáti;1985;2014;2014;LE;School of Psychology;Very High;HUN12;X
+880121;Chief of Army;Ferenc Kárpáti;1985;2014;2014;LE;Guns and Butter Doctrine;Very High;HUN12;X
+880122;Chief of Navy;N/A;1933;2020;2020;ST;Generic;Very High;Unknown;X
+880123;Chief of Air Force;Ferenc Kárpáti;1985;2014;2014;LE;Army Aviation Doctrine;Very High;HUN12;X
