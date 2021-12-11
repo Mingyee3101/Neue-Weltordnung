@@ -8,8 +8,6 @@
 
 country = {
   tag                = BRU
-  puppet             = ENG
-  control            = ENG
   ai_settings        = { flags = { MOB1 = 1 MOB2 = 1 } }
   capital            = 1625 # Bandar Seri Begawan
   manpower           = 10
@@ -20,10 +18,6 @@ country = {
   oil            = 5000
   supplies       = 5000
   money          = 0
-
-  diplomacy = {
-    relation = { tag = ENG value = 200 access = yes }
-  }
 
   nationalprovinces      = { 1625 }
   ownedprovinces         = { 1625 }

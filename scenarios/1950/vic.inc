@@ -7,7 +7,7 @@
 #####################
 
 country = {
-  tag                = FRA
+  tag                = VIC
   ai_settings        = { flags = { MOB1 = 1 MOB2 = 1 MOB3 = 1 MOB4 = 1 } }
   capital            = 55 # Paris
   dissent            = 8
@@ -21,38 +21,6 @@ country = {
   money          = 1000
   transports     = 350
   escorts        = 60
-
-  diplomacy = {
-    relation = { tag = AST value = 150 }
-    relation = {
-      tag        = BEL
-      value      = 120
-      guaranteed = { year = 1935 month = december day = 29 }
-    }
-    relation = { tag = CMB value = 50 access = yes }
-    relation = { tag = DEN value = 75 }
-    relation = { tag = U23 value = 200 access = yes }
-    relation = { tag = DFR value = 150 access = yes }
-    relation = { tag = ENG value = 150 }
-    relation = { tag = GRE value = 75 }
-    relation = { tag = HOL value = 75 }
-    relation = { tag = IRQ value = 100 }
-    relation = { tag = ITA value = 100 }
-    relation = { tag = LUX value = 120 }
-    relation = { tag = NOR value = 100 }
-    relation = { tag = NZL value = 150 }
-    relation = { tag = SIA value = -100 }
-    relation = { tag = SWE value = 80 }
-  }
-  SpyInfo                = { country = "POR" NumberOfSpies = 3 }
-  SpyInfo                = { country = "SOV" NumberOfSpies = 3 }
-  SpyInfo                = { country = "SPA" NumberOfSpies = 3 }
-  SpyInfo                = { country = "ARG" NumberOfSpies = 3 }
-  SpyInfo                = { country = "TUR" NumberOfSpies = 2 }
-  SpyInfo                = { country = "SWE" NumberOfSpies = 1 }
-  SpyInfo                = { country = "CHI" NumberOfSpies = 4 }
-  SpyInfo                = { country = "FIN" NumberOfSpies = 2 }
-  SpyInfo                = { country = "FRA" NumberOfSpies = 3 }
 
   nationalprovinces      = { 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 }
   ownedprovinces         = { 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 717 718 719 720 721 722 723 724 725 726 727 728 729 730 731 732 733 734 735 736 737 738 739 740 741 742 743 744 745 746 747 748 749 833 907 908 909 910 911 914 915 917 918 919 920 921 922 923 924 925 926 927 928 942 943 944 945 946 947 948 949 950 951 957 958 959 960 961 962 965 966 967 968 970 971 972 973 974 975 976 977 978 980 981 982 983 984 985 986 996 999 1000 1001 1002 1003 1581 1582 1583 1584 1585 1586 1740 1743 1744 1752 1767 1768 2000 2135 }
@@ -71,17 +39,6 @@ country = {
     defense_lobby     = 4
     interventionism   = 4
   }
-  headofstate            = { type = 9 id = 5187 } # Vincent Auriol
-  headofgovernment       = { type = 9 id = 5168 } # René Pleven
-  foreignminister        = { type = 9 id = 5173 } # Robert Schumann
-  armamentminister       = { type = 9 id = 5068 } # Jules Romains
-  ministerofsecurity     = { type = 9 id = 5179 } # Antoine Henri Queuille
-  ministerofintelligence = { type = 9 id = 5183 } # René Mayer
-  chiefofstaff           = { type = 9 id = 5128 } # Pierre Bourges-Maunory
-  chiefofarmy            = { type = 9 id = 5131 } # Jean de Lattre de Tassigny
-  chiefofnavy            = { type = 9 id = 5141 } # Etienne Schlumberger
-  chiefofair             = { type = 9 id = 5151 } # Raymond Roques
-  dormant_ministers      = { 5002 5016 5019 5003 5031 5035 5004 5072 5005 5098 5006 }
 
   landunit = {
     id       = { type = 30101 id = 1 }

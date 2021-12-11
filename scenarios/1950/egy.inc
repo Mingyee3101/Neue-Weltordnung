@@ -8,7 +8,7 @@
 
 country = {
   tag                = EGY
-  puppet             = ENG
+  puppet             = ITA
   ai_settings        = { flags = { MOB1 = 1 MOB2 = 1 } }
   capital            = 787 # Cairo
   manpower           = 15

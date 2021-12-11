@@ -8,7 +8,6 @@
 
 country = {
   tag                = ITA
-  flag_ext           = _democratic
   ai_settings        = { flags = { MOB1 = 1 MOB2 = 1 MOB3 = 1 } }
   capital            = 419 # Rome
   dissent            = 15

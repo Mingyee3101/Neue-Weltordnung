@@ -8,8 +8,6 @@
 
 country = {
   tag                = BHU
-  puppet             = ENG
-  control            = ENG
   ai_settings        = { flags = { MOB1 = 1 MOB2 = 1 } }
   capital            = 1456 # Punakha
   manpower           = 10
@@ -22,8 +20,6 @@ country = {
   money          = 0
 
   diplomacy = {
-    relation = { tag = ENG value = 100 }
-    relation = { tag = FRA value = 25 }
     relation = { tag = NEP value = 50 }
   }
 

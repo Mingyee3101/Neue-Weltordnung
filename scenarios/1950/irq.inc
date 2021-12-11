@@ -8,8 +8,8 @@
 
 country = {
   tag                = IRQ
-  puppet             = ENG
-  control            = ENG
+  puppet             = ITA
+  control            = ITA
   ai_settings        = { flags = { MOB1 = 1 MOB2 = 1 MOB3 = 1 MOB4 = 1 } }
   capital            = 1034 # Baghdad
   manpower           = 50
