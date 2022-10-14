@@ -1,34 +1,21 @@
-##### Generic decisions/events
-# 1300002 Grand Offensive - GER
-# 1300003 Grand Offensive - GER
-# 1300004 Grand Offensive - SOV
-# 1300005 Grand Offensive - SOV
-# 1300006 Grand Offensive - ENG
-# 1300007 Grand Offensive - ENG
-# 1300008 Grand Offensive - JAP
-# 1300009 Grand Offensive - JAP
-# 1300010 Grand Offensive - USA
-# 1300011 Grand Offensive - USA
-# 1300012 Grand Offensive - U08
-# 1300013 Grand Offensive - U08
-# 1300014 Grand Offensive - FRA
-# 1300015 Grand Offensive - FRA
-# 1300016 Grand Offensive - RUS
-# 1300017 Grand Offensive - RUS
-# 1300018 Grand Offensive - U09
-# 1300019 Grand Offensive - U09
-# 9000000-12 Equipment decisions
-# 9000021 Create Public Works
-# ETC
-################################
+#######################################
+# G.E.D. (Generic Events and Decisions)
+# Made By Pako
+#######################################
+
+										####################
+										# Grand Offensives #
+										####################
+
+#############################################################
 # Grand Offensive - GER
-################################
+#############################################################
 event = {
 	id = 1300002
 	random = no
 	country = GER
 	
-	decision = { atwar = yes }
+	decision = { ai = yes atwar = yes }
 
 	decision_trigger = { supplies = 10000 }
 
@@ -49,9 +36,9 @@ event = {
 	picture = "Wehrmacht"
 	decision_picture = "decision_grand_offensive"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 10
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -106,9 +93,9 @@ event = {
 	}
 }
 
-################################
+#############################################################
 # Grand Offensive - SOV
-################################
+#############################################################
 event = {
 	id = 1300004
 	random = no
@@ -139,9 +126,9 @@ event = {
 	picture = "Wehrmacht"
 	decision_picture = "decision_grand_offensive3"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 10
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -160,10 +147,10 @@ event = {
 		command = { type = sce_frequency value = 0.3 }
 		command = { type = attrition_mod value = 2 }
 		command = { type = trickleback_mod value = 5 }
-		command = { type = frozen_move which = land value = 13 }
-		command = { type = frozen_attack which = land value = 13 }
-		command = { type = snow_move which = land value = 13 }
-		command = { type = snow_attack which = land value = 13 }
+	  	command = { type = frozen_move which = land value = 13 }
+      		command = { type = frozen_attack which = land value = 13 }
+	  	command = { type = snow_move which = land value = 13 }
+      		command = { type = snow_attack which = land value = 13 }
 		command = { trigger = { ai = no } type = supplies value = -10000 }
 		command = { type = event which = 1300005 where = -1 when = 30 }
 	}
@@ -196,16 +183,16 @@ event = {
 		command = { type = sce_frequency value = -0.3 }
 		command = { type = attrition_mod value = -2 }
 		command = { type = trickleback_mod value = -5 }
-		command = { type = frozen_move which = land value = -13 }
-		command = { type = frozen_attack which = land value = -13 }
-		command = { type = snow_move which = land value = -13 }
-		command = { type = snow_attack which = land value = -13 }
+	  	command = { type = frozen_move which = land value = -13 }
+      		command = { type = frozen_attack which = land value = -13 }
+	  	command = { type = snow_move which = land value = -13 }
+      		command = { type = snow_attack which = land value = -13 }
 	}
 }
 
-################################
+#############################################################
 # Grand Offensive - ENG
-################################
+#############################################################
 event = {
 	id = 1300006
 	random = no
@@ -228,11 +215,11 @@ event = {
 	desc = "GrandOffensiveDesc" 
 	style = 2
 	picture = "Wehrmacht"
-	decision_picture = "decision_grand_offensive4"
+	decision_picture = "decision_grand_offensive5"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 10
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -284,9 +271,9 @@ event = {
 	}
 }
 
-################################
+#############################################################
 # Grand Offensive - JAP
-################################
+#############################################################
 event = {
 	id = 1300008
 	random = no
@@ -315,9 +302,9 @@ event = {
 	picture = "Wehrmacht"
 	decision_picture = "decision_grand_offensive5"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 10
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -375,11 +362,11 @@ event = {
 		command = { type = trickleback_mod value = -5 }
 	}
 }
-################################
+#############################################################
 # Grand Offensive - USA
-################################
+#############################################################
 event = {
-	id = 1300010
+	id = 13000010
 	random = no
 	country = USA
 
@@ -402,9 +389,9 @@ event = {
 	picture = "Wehrmacht"
 	decision_picture = "decision_grand_offensive2"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 10
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -455,9 +442,9 @@ event = {
 		command = { type = trickleback_mod value = -5 }
 	}
 }
-################################
+#############################################################
 # Grand Offensive - U08
-################################
+#############################################################
 event = {
 	id = 13000012
 	random = no
@@ -481,9 +468,9 @@ event = {
 	picture = "WW1_Offensive"
 	decision_picture = "decision_german_mobilization"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 10
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -539,9 +526,9 @@ event = {
 		command = { type = trickleback_mod value = -5 }
 	}
 }
-################################
+#############################################################
 # Grand Offensive - FRA
-################################
+#############################################################
 event = {
 	id = 13000014
 	random = no
@@ -566,9 +553,9 @@ event = {
 	picture = "WW1_Offensive"
 	decision_picture = "decision_german_mobilization"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 10
-	deathdate = { day = 29 month = december year = 1925 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -622,9 +609,9 @@ event = {
 		command = { type = trickleback_mod value = -5 }
 	}
 }
-################################
+#############################################################
 # Grand Offensive - RUS
-################################
+#############################################################
 event = {
 	id = 13000016
 	random = no
@@ -649,9 +636,9 @@ event = {
 	picture = "WW1_Offensive"
 	decision_picture = "decision_german_mobilization"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 10
-	deathdate = { day = 29 month = december year = 1925 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -704,9 +691,9 @@ event = {
 	}
 }
 
-################################
+#############################################################
 # Grand Offensive - U09
-################################
+#############################################################
 event = {
 	id = 13000018
 	random = no
@@ -730,9 +717,9 @@ event = {
 	picture = "WW1_Offensive"
 	decision_picture = "decision_german_mobilization"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 10
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "GrandOffensiveText"
@@ -786,6 +773,8 @@ event = {
 		command = { type = trickleback_mod value = -5 }
 	}
 }
+# Up to 1300019 free for Grand Offensive decisions
+
 
 ################################
 # Equipment decisions
@@ -794,33 +783,21 @@ event = { #start winterequip production
 	id = 9000000
 	random = no
 	persistent = yes
+	TAG = { AFG AUS AST BEL BUL CAL CAN CHC CHI CSA CZE DDR DEN DFR ENG EST FIN FLA FRA GEO GER GRE HOL HUN IND IRE ITA JAP LAT LIT MAN MEN MEX NOR OTT PAK PER POL POR PRK PRU QUE ROM RSI RUS SCA SCH SCO SER SLO SLV SOV SPA SPR SWE TUR UKR VEN VIC VIE WLL YUG USA U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 } 
 
 	decision = {
-		technology = 5920	# Infantry equipment - winter
-		technology = 5930	# Machinery adaption - winter
+		technology = 5920
+		technology = 5930
 		NOT = { local_flag = wequip}
 	}
 
 	decision_trigger = {
-		technology = 5130	# Assembly Line Experimentation
+		technology = 5130
+		year = 1933
 	}
 
 	trigger = {
-		OR = {
-			AND = {
-				ai = yes
-				OR = {
-					technology = 5920	# Infantry equipment - winter
-					technology = 5930	# Machinery adaption - winter
-				}
-			}
-			AND = {
-				ai = no
-				technology = 5920	# Infantry equipment - winter
-				technology = 5930	# Machinery adaption - winter
-				technology = 5130	# Assembly Line Experimentation
-			}
-		}
+	year = 1948
 		NOT = { local_flag = wequip}
 		OR = {
 			ai = no
@@ -844,9 +821,9 @@ event = { #start winterequip production
 	picture = "Wehrmacht"
 	decision_picture = "decision_winter_equipment_start"
 	
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = { 
 		name = "equip_act"
@@ -859,7 +836,7 @@ event = { #start winterequip production
 		command = { type = build_cost which = mechanized when = on_upgrade value = 2 }
 		command = { type = build_cost which = armor when = on_upgrade value = 2 }
 		command = { type = build_cost which = light_armor when = on_upgrade value = 2 }	  
-		command = { type = supply_consumption which = land value = 0.3 }
+		command = { type = supply_consumption which = land value = 0.3 where = relative }
 		command = { type = local_setflag which = wequip }
 		command = { type = event which = 9000003 where = -1 when = 90 }
 	}
@@ -869,6 +846,7 @@ event = {  #stop winterequip production
 	id = 9000001
 	random = no
 	persistent = yes
+	TAG = { AFG AUS AST BEL BUL CAL CAN CHC CHI CSA CZE DDR DEN DFR ENG EST FIN FLA FRA GEO GER GRE HOL HUN IND IRE ITA JAP LAT LIT MAN MEN MEX NOR OTT PAK PER POL POR PRK PRU QUE ROM RSI RUS SCA SCH SCO SER SLO SLV SOV SPA SPR SWE TUR UKR VEN VIC VIE WLL YUG USA U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 } 
 
 	decision = {
 		local_flag = wequipx
@@ -900,9 +878,9 @@ event = {  #stop winterequip production
 	picture = "Wehrmacht"
 	decision_picture = "decision_winter_equipment_stop"
 	
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 	
 	action = {
 		name = "uequip_act"
@@ -956,33 +934,21 @@ event = { #start jungleequip production
 	id = 9000004
 	random = no
 	persistent = yes
+	TAG = { ARG AUS AST BEL BOL BRA CAL CHC CHI CHL COL CSA DDR DFR EAF ENG ETH FRA GER HOL IND INO ITA JAP KOR MAN MEN MEX NZL OTT PAR PER POL POR PRK PRU ROM RSI RUS SAF SCA SIA SOV SPA SPR SWE TEX TUR UKR VEN VIC VIE YUG USA U01 u02 u03 u08 u09 u72 u73 u74 u77 u78 } 
 
 	decision = {
-		technology = 5940	# Infantry equipment - Jungle
-		technology = 5950	# Machinery adaption - Jungle
+		technology = 5940
+		technology = 5950		
 		NOT = { local_flag = jequip}
 	}
 
 	decision_trigger = {
-		technology = 5130	# Assembly Line Experimentation
+		technology = 5130
+		year = 1933
 	}
 
 	trigger = {
-		OR = {
-			AND = {
-				ai = yes
-				OR = {
-					technology = 5940	# Infantry equipment - Jungle
-					technology = 5950	# Machinery adaption - Jungle
-				}
-			}
-			AND = {
-				ai = no
-				technology = 5940	# Infantry equipment - Jungle
-				technology = 5950	# Machinery adaption - Jungle
-				technology = 5130	# Assembly Line Experimentation
-			}
-		}
+	year = 1933
 		NOT = { local_flag = jequip}
 		OR = {
 			ai = no
@@ -1006,9 +972,9 @@ event = { #start jungleequip production
 	picture = "Wehrmacht"
 	decision_picture = "decision_jungle_equipment_start"
 	
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = { 
 		name = "equip_act"
@@ -1021,7 +987,7 @@ event = { #start jungleequip production
 		command = { type = build_cost which = mechanized when = on_upgrade value = 2 }
 		command = { type = build_cost which = armor when = on_upgrade value = 2 }
 		command = { type = build_cost which = light_armor when = on_upgrade value = 2 }
-		command = { type = supply_consumption which = land value = 0.3 }
+		command = { type = supply_consumption which = land value = 0.3 where = relative }
 		command = { type = local_setflag which = jequip }
 		command = { type = event which = 9000006 where = -1 when = 90 }
 	}
@@ -1031,6 +997,7 @@ event = { #stop jungleequip production
 	id = 9000005
 	random = no
 	persistent = yes
+	TAG = { ARG AUS AST BEL BOL BRA CAL CHC CHI CHL COL CSA DDR DFR EAF ENG ETH FRA GER HOL IND INO ITA JAP KOR MAN MEN MEX NZL OTT PAR PER POL POR PRK PRU ROM RSI RUS SAF SCA SIA SOV SPA SPR SWE TEX TUR UKR VEN VIC VIE YUG USA U01 u02 u03 u08 u09 u72 u73 u74 u77 u78 } 
 
 	decision = {
 		local_flag = jequipx
@@ -1062,9 +1029,9 @@ event = { #stop jungleequip production
 	picture = "Wehrmacht"
 	decision_picture = "decision_jungle_equipment_stop"
 	
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	
 	action = { #issued
@@ -1119,33 +1086,21 @@ event = { #start desertequip production
 	id = 9000007
 	random = no
 	persistent = yes
+	TAG = { AFG ARA AUS AST BEL BRA CAL CHC CHI COL CSA DDR DFR EGY ENG ETH FRA GER GRE HOL HUN IND IRQ ISR ITA JAP LBY MAN MEN MEX NZL OTT PAK PER POL POR PRK PRU ROM RSI RUS SAF SAU SOV SPA SPR SWE TEX TUR UKR VEN VIC VIE YUG USA U01 u02 u03 u08 u09 u72 u73 u74 u77 u78 } 
 
 	decision = {
-		technology = 5960	# Infantry equipment - Desert
-		technology = 5970	# Machinery adaption - Desert
+		technology = 5960
+		technology = 5970		
 		NOT = { local_flag = dequip}
 	}
 
 	decision_trigger = {
-		technology = 5130	# Assembly Line Experimentation
+		technology = 5130
+		year = 1933
 	}
 
 	trigger = {
-		OR = {
-			AND = {
-				ai = yes
-				OR = {
-					technology = 5960	# Infantry equipment - Desert
-					technology = 5970	# Machinery adaption - Desert
-				}
-			}
-			AND = {
-				ai = no
-				technology = 5960	# Infantry equipment - Desert
-				technology = 5970	# Machinery adaption - Desert
-				technology = 5130	# Assembly Line Experimentation
-			}
-		}
+	year = 1933
 		NOT = { local_flag = dequip}
 		OR = { 
 			ai = no
@@ -1167,9 +1122,9 @@ event = { #start desertequip production
 	picture = "Wehrmacht"
 	decision_picture = "decision_desert_equipment_start"
 	
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = { 
 		name = "equip_act"
@@ -1182,7 +1137,7 @@ event = { #start desertequip production
 		command = { type = build_cost which = mechanized when = on_upgrade value = 2 }
 		command = { type = build_cost which = armor when = on_upgrade value = 2 }
 		command = { type = build_cost which = light_armor when = on_upgrade value = 2 }
-		command = { type = supply_consumption which = land value = 0.3 }
+		command = { type = supply_consumption which = land value = 0.3 where = relative }
 		command = { type = local_setflag which = dequip }
 		command = { type = event which = 9000009 where = -1 when = 90 }
 	}
@@ -1192,6 +1147,7 @@ event = { #stop desertequip production
 	id = 9000008
 	random = no
 	persistent = yes
+	TAG = { AFG ARA AUS AST BEL BRA CAL CHC CHI COL CSA DDR DFR EGY ENG ETH FRA GER GRE HOL HUN IND IRQ ISR ITA JAP LBY MAN MEN MEX NZL OTT PAK PER POL POR PRK PRU ROM RSI RUS SAF SAU SOV SPA SPR SWE TEX TUR UKR VEN VIC VIE YUG USA U01 u02 u03 u08 u09 u72 u73 u74 u77 u78 } 
 
 	decision = {
 		local_flag = dequipx
@@ -1222,9 +1178,9 @@ event = { #stop desertequip production
 	picture = "Wehrmacht"
 	decision_picture = "decision_desert_equipment_stop"
 	
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 	
 	action = { #issued
 		name = "uequip_act"
@@ -1272,33 +1228,21 @@ event = { #start sturdyequip production
 	id = 9000010
 	random = no
 	persistent = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DDR DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO GER GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SOV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG USA U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 } 
 
 	decision = {
-		technology = 5980	# Infantry equipment - rough terrain
-		technology = 5990	# Machinery adaption - rough terrain
+		technology = 5980
+		technology = 5990
 		NOT = { local_flag = sequip}
 	}
 
 	decision_trigger = {
-		technology = 5130	# Assembly Line Experimentation
+		technology = 5130
+		year = 1933
 	}
 
 	trigger = {
-		OR = {
-			AND = {
-				ai = yes
-				OR = {
-					technology = 5980	# Infantry equipment - rough terrain
-					technology = 5990	# Machinery adaption - rough terrain
-				}
-			}		
-			AND = {
-				ai = no
-				technology = 5980	# Infantry equipment - rough terrain
-				technology = 5990	# Machinery adaption - rough terrain
-				technology = 5130	# Assembly Line Experimentation	
-			}
-		}
+	year = 1933
 		NOT = { local_flag = sequip}
 		OR = { 
 			ai = no
@@ -1324,9 +1268,9 @@ event = { #start sturdyequip production
 	picture = "Wehrmacht"
 	decision_picture = "decision_rough_terrain_equipment_start"
 	
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = { 
 		name = "equip_act"
@@ -1339,7 +1283,7 @@ event = { #start sturdyequip production
 		command = { type = build_cost which = mechanized when = on_upgrade value = 2 }
 		command = { type = build_cost which = armor when = on_upgrade value = 2 }
 		command = { type = build_cost which = light_armor when = on_upgrade value = 2 }
-		command = { type = supply_consumption which = land value = 0.3 }
+		command = { type = supply_consumption which = land value = 0.3 where = relative }
 		command = { type = local_setflag which = sequip }
 		command = { type = event which = 9000012 where = -1 when = 90 }
 	}
@@ -1349,6 +1293,7 @@ event = { #stop sturdyequip production
 	id = 9000011
 	random = no
 	persistent = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DDR DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO GER GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SOV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG USA U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 } 
 
 	decision = {
 		local_flag = sequipx
@@ -1382,9 +1327,9 @@ event = { #stop sturdyequip production
 	picture = "Wehrmacht"
 	decision_picture = "decision_rough_terrain_equipment_stop"
 	
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 	
 	action = { #issued
 		name = "uequip_act"
@@ -1448,9 +1393,8 @@ event = {
 	id = 9000021
 	random = no
 	persistent = yes
-
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	decision = { 
-		technology = 5800	#Early Construction Engineering - enables IC construction
 		atwar = no
 		OR = {
 			money = 3000
@@ -1495,7 +1439,6 @@ event = {
 	trigger = {
 		atwar = no
 		money = 6000
-		technology = 5800	#Early Construction Engineering - enables infrastructure construction
 		OR = { 
 			NOT = { policy = { type = free_market value = 8 } }
 			headofstate = 240001 # FDR
@@ -1508,9 +1451,9 @@ event = {
 	picture = "public_jobs"
 	decision_picture = "decision_public_jobs"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 120
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "9000021text"
@@ -1528,6 +1471,7 @@ event = {
 	id = 9000040
 	random = no
 	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	name = "9000040name"
 	desc = "9000040desc" 
@@ -1544,6 +1488,7 @@ event = {
 #### Issue Currency
 event = {
 	id = 9000022
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	random = no
 	persistent = yes
@@ -1568,9 +1513,9 @@ event = {
 	picture = "issue_currency"
 	decision_picture = "decision_issue_currency"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 180
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "9000022text"
@@ -1587,7 +1532,7 @@ event = {
 	id = 9000023
 	random = no
 	persistent = yes
-
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	decision = { 
 		OR = {
 			money = 1000
@@ -1637,9 +1582,9 @@ event = {
 	picture = "money_devaluation"
 	decision_picture = "decision_money_devaluation"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 180
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "9000023text"
@@ -1655,6 +1600,7 @@ event = {
 #### Allow Foreign Volunteers
 event = {
 	id = 9000025
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	random = no
 	persistent = yes
@@ -1686,9 +1632,9 @@ event = {
 	picture = "foreign_volunteers"
 	decision_picture = "decision_foreign_volunteers"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 180
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "9000025text"
@@ -1704,7 +1650,7 @@ event = {
 	id = 9000026
 	random = no
 	persistent = yes
-
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	decision = { 
 		NOT = { ic = 40 }
 		#NOT = { army = 20 }
@@ -1730,9 +1676,9 @@ event = {
 	picture = "licensed_unit"
 	decision_picture = "decision_licensed_unit"
 
-	date = { day = 0 month = january year = 1920 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 150
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {  trigger = { exists = USA money = 4000 technology = { country = USA value = 1396 } NOT = {motorized = { country = -1 value = 3 } } }
 		ai_chance = 25
@@ -1852,7 +1798,7 @@ event = {
 	id = 9000039
 	random = no
 	persistent = yes
-
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	decision = { 
 		NOT = { ic = 40 }
 		#NOT = { army = 20 }
@@ -1878,9 +1824,9 @@ event = {
 	picture = "obs_unit"
 	decision_picture = "decision_obs_unit"
 
-	date = { day = 0 month = january year = 1920 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 150
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {  trigger = { exists = USA money = 1500 technology = { country = USA value = 1410 } NOT = { motorized = { country = -1 value = 3 } } }
 		ai_chance = 25
@@ -1990,7 +1936,7 @@ event = {
 	id = 9000027
 	random = no
 	persistent = yes
-
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	decision = { 
 		NOT = { local_flag = press_censorship }
 		government = democratic
@@ -2034,9 +1980,9 @@ event = {
 	picture = "censorship"
 	decision_picture = "decision_censorship"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 120
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "9000027text"
@@ -2055,7 +2001,7 @@ event = {
 	id = 9000028
 	random = no
 	persistent = yes
-
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	decision = { 
 		NOT = { local_flag = war_propaganda }
 		atwar = yes
@@ -2098,9 +2044,9 @@ event = {
 	picture = "war_propaganda"
 	decision_picture = "decision_war_propaganda"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 60
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "9000028text"
@@ -2124,28 +2070,20 @@ event = {
 	decision = { 
 		energy = 5000
 		NOT = { rare_materials = 10000 }
-		NOT = { 
-			OR = { 
-				local_flag = ersatz_conversion1 
-				local_flag = ersatz_conversion2 
-				local_flag = ersatz_conversion3 
-			}
-		}
+		NOT = { local_flag = ersatz_conversion }
 	}
 
 	decision_trigger = {
-		money = 50
-		energy = 10000
+		#money = 500
+		energy = 20000
 		NOT = { rare_materials = 10000 }
 	}
 
 	trigger = {
-		OR = {
-			ai = yes 
-			money = 50	}
-		NOT = { rare_materials = 1000 }
+		#NOT = { dissent = 5 }
+		NOT = { rare_materials = 200 }
 		NOT = { local_flag = ersatz_conversion }
-		energy = 11000
+		energy = 20000
 	}
    
 	name = "9000029name"
@@ -2154,39 +2092,16 @@ event = {
 	picture = "ersatz_conversion"
 	decision_picture = "decision_ersatz_conversion"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 120
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
-		name = "9000029a"
-		ai_chance = 100
-		command = { type = energypool value = -10000 }
-		command = { trigger = { ai = no } type = money value = -50 }
-		command = { type = event which = 9000052 where = -1 when = 10 }
-		command = { type = local_setflag which = ersatz_conversion1 }
-	}
-	action = {
-		trigger = { energy = 30000
-					OR = {	ai = yes 
-							money = 100	} }
-		name = "9000029b"
-		ai_chance = 0
-		command = { type = energypool value = -30000 }
-		command = { trigger = { ai = no } type = money value = -100 }
+		name = "9000029text"
+		#command = { type = dissent value = 2 }
+		#command = { trigger = { ai = no } type = money value = -500 }
 		command = { type = event which = 9000052 where = -1 when = 15 }
-		command = { type = local_setflag which = ersatz_conversion2 }
-	}
-	action = {
-		trigger = { energy = 60000
-					OR = {	ai = yes 
-							money = 200	} }
-		name = "9000029c"
-		ai_chance = 0
-		command = { type = energypool value = -60000 }
-		command = { trigger = { ai = no } type = money value = -200 }
-		command = { type = event which = 9000052 where = -1 when = 30 }
-		command = { type = local_setflag which = ersatz_conversion3 }
+		command = { type = local_setflag which = ersatz_conversion }
 	}
 }
 event = {
@@ -2201,22 +2116,10 @@ event = {
 	picture = "ersatz_conversion"
 
 	action = {
-		trigger = { local_flag = ersatz_conversion1 }
 		name = ACTION_NAME_EXCELLENT
-		command = { type = rarematerialspool value = 1000 }
-		command = { type = local_clrflag which = ersatz_conversion1 }
-	}
-	action = {
-		trigger = { local_flag = ersatz_conversion2 }
-		name = ACTION_NAME_EXCELLENT
-		command = { type = rarematerialspool value = 3000 }
-		command = { type = local_clrflag which = ersatz_conversion2 }
-	}
-	action = {
-		trigger = { local_flag = ersatz_conversion3 }
-		name = ACTION_NAME_EXCELLENT
-		command = { type = rarematerialspool value = 7000 }
-		command = { type = local_clrflag which = ersatz_conversion3 }
+		command = { type = energypool value = -20000 }
+		command = { type = rarematerialspool value = 2500 }
+		command = { type = local_clrflag which = ersatz_conversion }
 	}
 }
 
@@ -2225,9 +2128,8 @@ event = {
 	id = 9000030
 	random = no
 	persistent = yes
-
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	decision = { 
-		technology = 5800	#Early Construction Engineering - enables infrastructure construction
 		OR = {
 			money = 800
 			AND = {
@@ -2270,7 +2172,6 @@ event = {
 	trigger = {
 		random = 20
 		money = 1000
-		technology = 5800	#Early Construction Engineering - enables infrastructure construction
 		#NOT = { policy = { type = free_market value = 8 } }
 		NOT = { local_flag = infra_investment_1 }
 		NOT = { local_flag = infra_investment_2 }
@@ -2283,16 +2184,15 @@ event = {
 	picture = "invest_infrastructures"
 	decision_picture = "decision_invest_infrastructures"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 120
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		trigger = { OR = { AND = { IC = 80 money = 1000 } AND = { IC = 50 NOT = { IC = 80 } money = 800 } AND = { IC = 15 NOT = { IC = 50 } money = 600 } AND = { NOT = { IC = 15 } money = 300 } } }
 		ai_chance = 30
 		name = "9000030a"
 		command = { type = dissent value = -0.5 }
-		command = { type = tc_mod value = 0.5 }		
 		command = { trigger = { IC = 80 money = 1000 } type = money value = -1000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 800 } type = money value = -800 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 600 } type = money value = -600 }
@@ -2305,7 +2205,6 @@ event = {
 		ai_chance = 30
 		name = "9000030b"
 		command = { type = dissent value = -1 }
-		command = { type = tc_mod value = 1 }		
 		command = { trigger = { IC = 80 money = 2000 } type = money value = -2000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 1600 } type = money value = -1600 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 1200 } type = money value = -1200 }
@@ -2318,12 +2217,11 @@ event = {
 		ai_chance = 40
 		name = "9000030c"
 		command = { type = dissent value = -2 }
-		command = { type = tc_mod value = 2.5 }		
 		command = { trigger = { IC = 80 money = 4000 } type = money value = -4000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 3200 } type = money value = -3200 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 2400 } type = money value = -2400 }
 		command = { trigger = { NOT = { IC = 15 } money = 1200 } type = money value = -1200 }
-		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
+		command = { trigger = { domestic = { type = free_market value = 5 } } type = domestic which = free_market value = -1 }
 		command = { type = event which = 9000053 where = -1 when = 30 }
 		command = { type = local_setflag which = infra_investment_3 }
 	}
@@ -2332,6 +2230,7 @@ event = {
 	id = 9000053
 	random = no
 	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	name = "9000053name"
 	desc = "9000030desc" 
@@ -2341,11 +2240,14 @@ event = {
 	action = {
 		name = ACTION_NAME_EXCELLENT
 		command = { }
+		command = { trigger = { local_flag = infra_investment_1 } type = tc_mod value = 0.5 }
 		command = { trigger = { local_flag = infra_investment_1 } type = construct which = infrastructure where = -1 value = 10 }
 		command = { trigger = { local_flag = infra_investment_1 } type = local_clrflag which = infra_investment_1 }
+		command = { trigger = { local_flag = infra_investment_2 } type = tc_mod value = 1 }
 		command = { trigger = { local_flag = infra_investment_2 } type = construct which = infrastructure where = -1 value = 10 }
 		command = { trigger = { local_flag = infra_investment_2 } type = construct which = infrastructure where = -1 value = 10 }
 		command = { trigger = { local_flag = infra_investment_2 } type = local_clrflag which = infra_investment_2 }
+		command = { trigger = { local_flag = infra_investment_3 } type = tc_mod value = 2.5 }
 		command = { trigger = { local_flag = infra_investment_3 } type = construct which = infrastructure where = -1 value = 10 }
 		command = { trigger = { local_flag = infra_investment_3 } type = construct which = infrastructure where = -1 value = 10 }
 		command = { trigger = { local_flag = infra_investment_3 } type = construct which = infrastructure where = -1 value = 10 }
@@ -2358,7 +2260,7 @@ event = {
 	id = 9000031
 	random = no
 	persistent = yes
-
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	decision = { 
 		OR = {
 			money = 800
@@ -2414,18 +2316,15 @@ event = {
 	picture = "invest_research"
 	decision_picture = "decision_invest_research"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 120
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		trigger = { OR = { AND = { IC = 80 money = 1000 } AND = { IC = 50 NOT = { IC = 80 } money = 800 } AND = { IC = 15 NOT = { IC = 50 } money = 600 } AND = { NOT = { IC = 15 } money = 300 } } }
 		ai_chance = 30
 		name = "9000031a"
 		command = { type = dissent value = -0.5 }
-		command = { trigger = { research_mod = 120 } type = research_mod value = 0.1 }		
-		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.3 }
-		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 0.5 }
 		command = { trigger = { IC = 80 money = 1000 } type = money value = -1000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 800 } type = money value = -800 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 600 } type = money value = -600 }
@@ -2438,9 +2337,6 @@ event = {
 		ai_chance = 30
 		name = "9000031b"
 		command = { type = dissent value = -1 }
-		command = { trigger = { research_mod = 120 } type = research_mod value = 0.2 }		
-		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.6 }
-		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 1 }
 		command = { trigger = { IC = 80 money = 2000 } type = money value = -2000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 1600 } type = money value = -1600 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 1200 } type = money value = -1200 }
@@ -2453,14 +2349,11 @@ event = {
 		ai_chance = 40
 		name = "9000031c"
 		command = { type = dissent value = -2 }
-		command = { trigger = { research_mod = 120 } type = research_mod value = 0.8 }		
-		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 1.6 }
-		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 2.5 }
 		command = { trigger = { IC = 80 money = 4000 } type = money value = -4000 }
 		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 3200 } type = money value = -3200 }
 		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 2400 } type = money value = -2400 }
 		command = { trigger = { NOT = { IC = 15 } money = 1200 } type = money value = -1200 }
-		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
+		command = { trigger = { domestic = { type = free_market value = 5 } } type = domestic which = free_market value = -1 }
 		command = { type = event which = 9000054 where = -1 when = 30 }
 		command = { type = local_setflag which = research_investment_3 }				
 	}
@@ -2469,6 +2362,7 @@ event = {
 	id = 9000054
 	random = no
 	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	name = "9000054name"
 	desc = "9000031desc" 
@@ -2478,10 +2372,18 @@ event = {
 	action = {
 		name = ACTION_NAME_EXCELLENT
 		command = { }
-		command = { trigger = { local_flag = research_investment_1 } type = gain_tech which = -1 }		
+		command = { trigger = { local_flag = research_investment_1 NOT = { research_mod = 100 } } type = research_mod value = 0.5 }
+		command = { trigger = { local_flag = research_investment_1 research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.3 }
+		command = { trigger = { local_flag = research_investment_1 research_mod = 120 } type = research_mod value = 0.1 }
 		command = { trigger = { local_flag = research_investment_1 } type = local_clrflag which = research_investment_1 }
+		command = { trigger = { local_flag = research_investment_2 NOT = { research_mod = 100 } } type = research_mod value = 1 }
+		command = { trigger = { local_flag = research_investment_2 research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.6 }
+		command = { trigger = { local_flag = research_investment_2 research_mod = 120 } type = research_mod value = 0.2 }		
 		command = { trigger = { local_flag = research_investment_2 } type = gain_tech which = -2 }
 		command = { trigger = { local_flag = research_investment_2 } type = local_clrflag which = research_investment_2 }
+		command = { trigger = { local_flag = research_investment_3 NOT = { research_mod = 100 } } type = research_mod value = 2.5 }
+		command = { trigger = { local_flag = research_investment_3 research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 1.6 }
+		command = { trigger = { local_flag = research_investment_3 research_mod = 120 } type = research_mod value = 0.8 }
 		command = { trigger = { local_flag = research_investment_3 } type = gain_tech which = -1 }
 		command = { trigger = { local_flag = research_investment_3 } type = gain_tech which = -2 }
 		command = { trigger = { local_flag = research_investment_3 } type = local_clrflag which = research_investment_3 }
@@ -2492,12 +2394,12 @@ event = {
 	id = 9000032
 	random = no
 	persistent = yes
-
-	decision = {
-		NOT = { country = SOV }
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
 		NOT = { local_flag = purges_army }
 		NOT = { government = democratic }
-		policy = { type = defense_lobby value = 3 }	
+		policy = { type = defense_lobby value = 3 }
+		NOT = { AND = { country = SOV event = 2007025 } }
 	}
 
 	decision_trigger = { 
@@ -2506,7 +2408,6 @@ event = {
 	}
 
 	trigger = {
-		NOT = { country = SOV }
 		NOT = { local_flag = purges_army }
 		random = 1
 		NOT = { government = democratic }
@@ -2519,15 +2420,16 @@ event = {
 	picture = "purge_army"
 	decision_picture = "decision_purge_army"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 180
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "9000032text"
-		command = { type = dissent value = 2 }
+		command = { trigger = { NOT = { country = SOV } } type = dissent value = 2 }
 		command = { type = morale which = land value = 3 }
-		command = { type = trigger which = 9000036 }
+		command = { trigger = { NOT = { country = SOV } } type = trigger which = 9000036 }
+		command = { trigger = { country = SOV } type = trigger which = 2007025 }
 		command = { type = local_setflag which = purges_army }
 	}
 }
@@ -2536,7 +2438,7 @@ event = {
 	random = no
 	persistent = yes
 	one_action = yes
-
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 	name = "9000036name"
 	desc = "9000032desc" 
 	style = 2
@@ -2591,88 +2493,88 @@ event = {
 	}
 }
 #### Wargames
-event = {
-	id = 9000033
-	random = no
-	persistent = yes
-
-	decision = { 
-		money = 400
-		supplies = 100
-		policy = { type = defense_lobby value = 3 }
-	}
-
-	decision_trigger = { 
-		money = 800
-		supplies = 200
-	}
-
-	trigger = {
-		random = 50
-		money = 800
-		supplies = 200
-		policy = { type = defense_lobby value = 3 }
-	}
-   
-	name = "9000033name"
-	desc = "9000033desc" 
-	style = 2
-	picture = "wargames"
-	decision_picture = "decision_wargames"
-
-	date = { day = 0 month = january year = 1914 }
-	offset = 90
-	deathdate = { day = 29 month = december year = 1945 }
-
-	action = {
-		name = "9000033text"
-		command = { type = money value = -800 }
-		command = { type = supplies value = -200 }
-		command = { type = trigger which = 9000035 }
-	}
-}
-event = {
-	id = 9000035
-	random = no
-	persistent = yes
-	one_action = yes
-
-	name = "9000033name"
-	desc = "9000033desc" 
-	style = 2
-	picture = "wargames"
-
-	action = {
-		ai_chance = 33
-		name = "9000033text"
-		command = { type = add_leader_skill which = -1 value = 1 }
-		command = { }
-	}
-	action = {
-		ai_chance = 34
-		name = "9000033text"
-		command = { type = add_leader_skill which = -1 value = 1 }
-		command = { type = add_leader_skill which = -1 value = 1 }
-		command = { type = add_leader_skill which = -1 value = 1 }
-		command = { }
-	}
-	action = {
-		ai_chance = 33
-		name = "9000033text"
-		command = { type = add_leader_skill which = -1 value = 1 }
-		command = { type = add_leader_skill which = -1 value = 1 }
-		command = { type = add_leader_skill which = -1 value = 1 }
-		command = { type = add_leader_skill which = -1 value = 1 }
-		command = { type = add_leader_skill which = -1 value = 1 }
-		command = { }
-	}
-}
+#event = {
+#	id = 9000033
+#	random = no
+#	persistent = yes
+#	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR #EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN #MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM #SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 #U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 #U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+#	decision = { 
+#		money = 400
+#		supplies = 100
+#		policy = { type = defense_lobby value = 3 }
+#	}
+#
+#	decision_trigger = { 
+#		money = 800
+#		supplies = 200
+#	}
+#
+#	trigger = {
+#		random = 50
+#		money = 800
+#		supplies = 200
+#		policy = { type = defense_lobby value = 3 }
+#	}
+#  
+#	name = "9000033name"
+#	desc = "9000033desc" 
+#	style = 2
+#	picture = "wargames"
+#	decision_picture = "decision_wargames"
+#
+#	date = { day = 1 month = august year = 1948 }
+#	offset = 90
+#	deathdate = { day = 29 month = december year = 1999 }
+#
+#	action = {
+#		name = "9000033text"
+#		command = { type = money value = -800 }
+#		command = { type = supplies value = -200 }
+#		command = { type = trigger which = 9000035 }
+#	}
+#}
+#event = {
+#	id = 9000035
+#	random = no
+#	persistent = yes
+#	one_action = yes
+#	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR #EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN #MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM #SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 #U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 #U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }   
+#	name = "9000033name"
+#	desc = "9000033desc" 
+#	style = 2
+#	picture = "wargames"
+#
+#	action = {
+#		ai_chance = 33
+#		name = "9000033text"
+#		command = { type = add_leader_skill which = -1 value = 1 }
+#		command = { }
+#	}
+#	action = {
+#		ai_chance = 34
+#		name = "9000033text"
+#		command = { type = add_leader_skill which = -1 value = 1 }
+#		command = { type = add_leader_skill which = -1 value = 1 }
+#		command = { type = add_leader_skill which = -1 value = 1 }
+#		command = { }
+#	}
+#	action = {
+#		ai_chance = 33
+#		name = "9000033text"
+#		command = { type = add_leader_skill which = -1 value = 1 }
+#		command = { type = add_leader_skill which = -1 value = 1 }
+#		command = { type = add_leader_skill which = -1 value = 1 }
+#		command = { type = add_leader_skill which = -1 value = 1 }
+#		command = { type = add_leader_skill which = -1 value = 1 }
+#		command = { }
+#	}
+#}
 #### Diplomatic Campaign
 event = {
 	id = 9000034
 	random = no
 	persistent = yes
-	country = GER
+	TAG = { GER U08 }
 
 	decision = { 
 		money = 300
@@ -2697,11 +2599,11 @@ event = {
 	picture = "diplomatic_campaign"
 	decision_picture = "decision_diplomatic_campaign"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 180
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
-	action = {  trigger = { country = GER }
+	action = {
 		name = "9000034text"
 		command = { type = money value = -500 }
 		command = { type = 	belligerence value = -1 }
@@ -2710,12 +2612,15 @@ event = {
 		command = { type = 	relation which = POL value = 10 }
 		command = { type = 	relation which = SOV value = 10 }
 		command = { type = 	relation which = ITA value = 10 }
-		command = { type = 	relation which = JAP value = 5 }
+		command = { type = 	relation which = JAP value = 10 }
 		command = { type = 	relation which = HUN value = 10 }
 		command = { type = 	relation which = AUS value = 10 }
 		command = { type = 	relation which = ROM value = 10 }
 		command = { type = 	relation which = YUG value = 10 }
 		command = { type = 	relation which = BUL value = 10 }
+		command = { type = 	relation which = RUS value = 10 }
+		command = { type = 	relation which = USA value = 10 }
+		command = { type = 	relation which = U09 value = 10 }
 	}
 }
 #### War Bonds
@@ -2747,9 +2652,9 @@ event = {
 	picture = "War_Bonds"
 	decision_picture = "decision_War_Bonds"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 90
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 
 	action = {
 		name = "9000037text"
@@ -2782,9 +2687,9 @@ event = {
 		atwar = yes
 	}
 
-   date = { day = 0 month = january year = 1914 }
+   date = { day = 1 month = august year = 1948 }
    offset = 30
-   deathdate = { day = 29 month = december year = 1919 }
+   deathdate = { day = 29 month = december year = 1999 }
    
    name = "EVT1914_9000038_NAME"
    desc = "EVT1914_9000038_DESC" 
@@ -2796,7 +2701,7 @@ event = {
 	name = "EVT1914_9000038_TEXT"
 		command = { type = 	dissent value = -5  }
 		command = { trigger = { country = FRA } type = domestic which = political_left value = 4 }
-		command = { trigger = { country = FRA } type = foreignminister which = 5273 } # Delcassé
+		command = { trigger = { country = FRA } type = foreignminister which = 5273 } # Delcassï¿½
 		command = { trigger = { country = FRA } type = armamentminister which = 5372 } # Millerand
 		command = { type = local_setflag which = sacred_union }
 
@@ -2808,6 +2713,7 @@ event = {
 #### Bank Bankruptcy
 event = {
 	id = 9000041
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	random = yes
 	persistent = yes
@@ -2823,16 +2729,15 @@ event = {
 	picture = "Bankruptcy"
 	
 	action = {
-		name = ACTION_NAME_OK
-		command = { trigger = { NOT = { local_flag = bank_bankruptcy } } type = industrial_modifier which = total value = -0.5 }
-		command = { type = money value = -100 }
-		command = { type = dissent value = 1 }
-		command = { type = local_setflag which = bank_bankruptcy }
+	name = ACTION_NAME_OK
+	command = { type = industrial_modifier which = total value = -0.5 }
+	command = { type = dissent value = 1 }
 	}
 }
 #### Bank Run
 event = {
 	id = 9000042
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	random = yes
 	persistent = yes
@@ -2840,7 +2745,6 @@ event = {
 	trigger = { 
 		domestic = { type = free_market value = 6 } 
 		atwar = no 
-		NOT = { local_flag = bank_run }
 	}
 
 	name = "9000042name"
@@ -2853,35 +2757,35 @@ event = {
 		command = { type = industrial_modifier which = total value = -3 }
 		command = { type = dissent value = 3 }
 		command = { type = local_setflag which = bank_run }
-		command = { type = local_setflag which = unconventional_monetary_policy } # Added another local flag so it will only happen once a game per country
 	}
 }
 #### Unconventional Monetary Policy
 event = {
 	id = 9000043
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	random = no
 	persistent = yes
 
-	decision = { local_flag = bank_run local_flag = unconventional_monetary_policy }
+	decision = { local_flag = bank_run }
 	decision_trigger = { 
 		OR = {
 			money = 500
 			AND = {
 				NOT = { IC = 80 }
 				money = 300
-			}
+				}
 			AND = {
 				NOT = { IC = 50 }
 				money = 200
-			}
+				}
 			AND = {
 				NOT = { IC = 15 }
 				money = 100
-			}	
-		}
-	}
-	trigger = { local_flag = bank_run local_flag = unconventional_monetary_policy }
+				}	
+			}
+ }
+	trigger = { local_flag = bank_run }
 
 	name = "9000043name"
 	desc = "9000043desc"
@@ -2889,9 +2793,9 @@ event = {
 	picture = "Monetary_Policy"
 	decision_picture = "decision_Unconventional_Monetary_Policy"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 180
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 	
 	action = {
 		name = "9000043text"
@@ -2901,19 +2805,19 @@ event = {
 		command = { trigger = { ai = no IC = 50 NOT = { IC = 80 } } type = money value = -300 }
 		command = { trigger = { ai = no IC = 15 NOT = { IC = 50 } } type = money value = -200 }
 		command = { trigger = { ai = no NOT = { IC = 15 } } type = money value = -100 }
-		# command = { type = local_clrflag which = bank_run } # Commented out so it will only happen once a game per country
-		command = { type = local_clrflag which = unconventional_monetary_policy } # Added so it will only happen once a game per country
+		command = { type = local_clrflag which = bank_run }
 	}
 }
 #### Financial Meltdown
 event = {
 	id = 9000044
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	random = yes
 	persistent = yes
 
 	trigger = { 
-		local_flag = unconventional_monetary_policy 
+		local_flag = bank_run 
 		domestic = { type = free_market value = 6 } 
 		atwar = no 
 	}
@@ -2927,11 +2831,13 @@ event = {
 		name = "9000044text"
 		command = { type = dissent value = 5 }
 		command = { type = money value = -1000 }
+		command = { type = local_clrflag which = bank_run }
 	}
 }
 #### Credit if Flowing
 event = {
 	id = 9000045
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	random = yes
 	persistent = yes
@@ -2939,7 +2845,7 @@ event = {
 	trigger = { 
 		domestic = { type = free_market value = 6 } 
 		atwar = no 
-		NOT = { local_flag = unconventional_monetary_policy }
+		NOT = { local_flag = bank_run }
 	}
 
 	name = "9000045name"
@@ -2949,20 +2855,19 @@ event = {
 	
 	action = {
 		name = ACTION_NAME_OK
-		command = { trigger = { local_flag = bank_bankruptcy } type = industrial_modifier which = total value = 0.5 }
-		command = { type = money value = 100 }
+		command = { type = industrial_modifier which = total value = 0.5 }
 		command = { type = dissent value = -1 }
-		command = { type = local_clrflag which = bank_bankruptcy }
 	}
 }
 #### Free Market Stimulates Research
 event = {
 	id = 9000046
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	random = yes
 	persistent = yes
 
-	trigger = { domestic = { type = free_market value = 6 } NOT = { local_flag = unconventional_monetary_policy } }
+	trigger = { domestic = { type = free_market value = 6 } NOT = { local_flag = bank_run } }
 
 	name = "9000046name"
 	desc = "9000046desc"
@@ -2980,6 +2885,7 @@ event = {
 #### Free Market Stimulates Military Investment
 event = {
 	id = 9000047
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	random = yes
 	persistent = yes
@@ -2987,7 +2893,7 @@ event = {
 	trigger = { 
 		domestic = { type = free_market value = 6 } 
 		atwar = yes 
-		NOT = { local_flag = unconventional_monetary_policy } 
+		NOT = { local_flag = bank_run } 
 	}
 
 	name = "9000047name"
@@ -3007,7 +2913,7 @@ event = {
 #################################
 event = {
 	id = 9000048
-
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }   
 	persistent = yes
 	random = no
 
@@ -3074,9 +2980,9 @@ event = {
 		}	
 	}
 
-   date = { day = 0 month = january year = 1914 }
+   date = { day = 1 month = august year = 1948 }
    offset = 210
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
    
    name = "9000048name"
    desc = "9000048desc" 
@@ -3100,6 +3006,7 @@ event = {
 	id = 9000049
 	random = no
 	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	name = "9000049name"
 	desc = "9000049desc"
@@ -3137,25 +3044,13 @@ event = {
 #### Women Work
 event = {
 	id = 9000050
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
-	persistent = yes
 	random = no
 
-	decision = { 
-		IC = 100	
-		NOT = { local_flag = women_work }
-		domestic = { type = freedom value = 7 } 
-	}
-	decision_trigger = {
-		atwar = yes 
-	}
-	trigger = { 
-		IC = 100 
-		random = 5 		
-		atwar = yes 
-		domestic = { type = freedom value = 7 } 
-		NOT = { local_flag = women_work }
-	}
+	decision = { atwar = yes IC = 100 domestic = { type = freedom value = 7 } }
+	decision_trigger = { }
+	trigger = { atwar = yes IC = 100 domestic = { type = freedom value = 7 } random = 5 }
 
 	name = "9000050name"
 	desc = "9000050desc"
@@ -3163,20 +3058,20 @@ event = {
 	picture = "Women_Work"
 	decision_picture = "decision_Women_Work"
 
-	date = { day = 0 month = january year = 1915 }
+	date = { day = 1 month = january year = 1915 }
 	offset = 180
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 	
 	action = {
 		name = "ACTION_NAME_GREAT"
-		command = { trigger = { ai = no } type = dissent value = 5 }
-		command = { type = manpowerpool value = 1.0 when = 1 }
-		command = { type = local_setflag which = women_work }
+		command = { type = industrial_modifier which = total value = 2 }
+		command = { type = dissent value = -2 }
 	}
 }
 #### Convert Commerce Convoys Into Troop Carriers
 event = {
 	id = 9000051
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
 
 	persistent = yes
 	random = no
@@ -3191,9 +3086,9 @@ event = {
 	picture = "Convoys"
 	decision_picture = "decision_convoys"
 
-	date = { day = 0 month = january year = 1914 }
+	date = { day = 1 month = august year = 1948 }
 	offset = 180
-	deathdate = { day = 29 month = december year = 1945 }
+	deathdate = { day = 29 month = december year = 1999 }
 	
 	action = {
 		name = "ACTION_NAME_GREAT"
@@ -3207,3 +3102,1888 @@ event = {
 		command = { type = money value = -200 }
 	}
 }
+#################################
+# Scientific Interchange
+#################################
+
+event = {
+	id = 999151 
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+		atwar = no
+		NOT = { 
+			ic = 80
+			alliance = { country = -1 country = ENG }
+			alliance = { country = -1 country = USA }
+			alliance = { country = -1 country = GER }
+			alliance = { country = -1 country = SOV }
+			alliance = { country = -1 country = JAP }
+			}
+		local_flag = education
+		OR = {
+			relation = { which = ENG value = 150 }
+			relation = { which = USA value = 100 }
+			relation = { which = GER value = 180 }
+			relation = { which = SOV value = 200 }
+			relation = { which = JAP value = 200 }
+		  	}
+ 	}
+
+	name = "Scientific Interchange"
+	desc = "Our investments in scientific interchange with our closest major power friend has given us some benefits. Some graduated students came back to our country with new technological knowledges."
+	style = 2
+	picture = "scientist"
+	
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = gain_tech which = -1 }
+	}
+}
+
+#################################
+# Epidemy
+#################################
+
+event = {
+	id = 999152 
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+		atwar = no
+		manpower = 2
+		NOT = { local_flag = health }
+ 	}
+
+	name = "Epidemic Outbreak"
+	desc = "A disease has been constantly growing up among our people. As our hospitals and public health system was not prepared to deal with it, the problem increased and can now be called as an epidemic outbreak!"
+	style = 2
+	picture = "health"
+	
+	action = {
+	name = "9000042text"
+	command = { type = manpowerpool value = -1 }
+	command = { type = dissent value = 2 }
+	}
+}
+
+#################################
+# Unemployment Rate Raises
+#################################
+
+event = {
+	id = 999132 
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+		atwar = no
+		OR = {
+			local_flag = bank_run
+			local_flag = taxhigh
+			local_flag = taxacc
+		  	}
+ 	}
+
+	name = "Unemployment Raises"
+	desc = "The unemployment rate had significantly raised in the past year. The people is displeased with our economic policy and start to call for urgent reforms. Shall we attend these demands?"
+	style = 2
+	picture = "strikesruspetro"
+	
+	action = {
+	name = "9000042text"
+	command = { type = dissent value = 2 }
+	command = { type = local_setflag which = unemp }
+	}
+}
+
+
+#################################
+# Factories Closing
+#################################
+
+event = {
+	id = 999150
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+			local_flag = taxhigh
+ 	}
+
+	name = "Enterprise Bankruptcy"
+	desc = "It looks like our tax policy has been too high, demanding too much from the national plant. Some factories entered in financial problems and are now closing their doors, letting many workers unemployed."
+	style = 2
+	picture = "ndp"
+	
+	action = {
+	name = "9000042text"
+	command = { type = construct which = ic where = -1 value = -1 }
+	command = { type = dissent value = 2 }
+	command = { type = local_setflag which = unemp }
+	}
+}
+
+#################################
+# Crime Rate Raises
+#################################
+
+event = {
+	id = 999135 
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+		atwar = no
+		OR = {
+		local_flag = nopolice
+		local_flag = unemp
+			}
+ 	}
+
+	name = "Crime Rate Raises"
+	desc = "The crime rate has significantly increased in the last months. One of the reasons certainly is the large ammount of unemployment people that we have in our country. We've to do something about it."
+	style = 2
+	picture = "strikesruspetro"
+	
+	action = {
+	name = "9000042text"
+	command = { type = dissent value = 3 }
+	command = { type = local_clrflag which = unemp }
+	}
+}
+
+#########################################################################
+############### National Development Plan
+#########################################################################
+
+event = {
+	id = 999051
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		OR = {
+			money = 3200
+			AND = {
+				NOT = { IC = 80 }
+				money = 2600
+				}
+			AND = {
+				NOT = { IC = 50 }
+				money = 1600
+				}
+			AND = {
+				NOT = { IC = 15 }
+				money = 800
+				}	
+			}
+		NOT = { IC = 150 }
+		# NOT = { policy = { type = free_market value = 9 } }
+		NOT = { local_flag = industry_investment_1 }
+		NOT = { local_flag = industry_investment_2 }
+		NOT = { local_flag = industry_investment_3 }
+		NOT = { ai = yes }		
+	}
+
+	decision_trigger = { 
+		OR = {
+			money = 4000
+			AND = {
+				NOT = { IC = 80 }
+				money = 3200
+				}
+			AND = {
+				NOT = { IC = 50 }
+				money = 2400
+				}
+			AND = {
+				NOT = { IC = 15 }
+				money = 1200
+				}	
+			}
+	}
+
+	trigger = {
+		OR = {
+			money = 4000
+			AND = {
+				NOT = { IC = 80 }
+				money = 3200
+				}
+			AND = {
+				NOT = { IC = 50 }
+				money = 2400
+				}
+			AND = {
+				NOT = { IC = 15 }
+				money = 1200
+				}	
+			}
+		NOT = { IC = 150 }
+		NOT = { local_flag = industry_investment_1 }
+		NOT = { local_flag = industry_investment_2 }
+		NOT = { local_flag = industry_investment_3 }
+		NOT = { ai = yes }		
+	}
+   
+	name = "National Development Plan"
+	desc = "By investing in our infrastructure and industries we might reduce the number of unemployed and create a good scenario to atract new investments to the area. This will not only help and please the population, but it will also increase the industrial capacity of our country." 
+	style = 2
+	picture = "ndp"
+	decision_picture = "decision_ndp"
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		trigger = { OR = { AND = { IC = 80 money = 4000 } AND = { IC = 50 NOT = { IC = 80 } money = 3200 } AND = { IC = 15 NOT = { IC = 50 } money = 2400 } AND = { NOT = { IC = 15 } money = 1200 } } }
+		ai_chance = 30
+		name = "9000031a"
+		command = { type = dissent value = -0.5 }
+		command = { trigger = { IC = 80 money = 4000 } type = money value = -4000 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 3200 } type = money value = -3200 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 2400 } type = money value = -2400 }
+		command = { trigger = { NOT = { IC = 15 } money = 1200 } type = money value = -1200 }
+		command = { type = event which = 999052 where = -1 when = 90 }
+		command = { type = local_setflag which = industry_investment_1 }	
+	}
+	action = {
+		trigger = { OR = { AND = { IC = 80 money = 8000 } AND = { IC = 50 NOT = { IC = 80 } money = 6400 } AND = { IC = 15 NOT = { IC = 50 } money = 4800 } AND = { NOT = { IC = 15 } money = 2400 } } }
+		ai_chance = 30
+		name = "9000031b"
+		command = { type = dissent value = -1 }
+		command = { trigger = { IC = 80 money = 8000 } type = money value = -8000 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 6400 } type = money value = -6400 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 4800 } type = money value = -4800 }
+		command = { trigger = { NOT = { IC = 15 } money = 2400 } type = money value = -2400 }
+		command = { type = event which = 999052 where = -1 when = 90 }
+		command = { type = local_setflag which = industry_investment_2 }		
+	}
+	action = { 
+		trigger = { OR = { AND = { IC = 80 money = 12000 } AND = { IC = 50 NOT = { IC = 80 } money = 9600 } AND = { IC = 15 NOT = { IC = 50 } money = 7200 } AND = { NOT = { IC = 15 } money = 3600 } } }
+		ai_chance = 40
+		name = "9000031c"
+		command = { type = dissent value = -2 }
+		command = { trigger = { IC = 80 money = 12000 } type = money value = -12000 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 9600 } type = money value = -9600 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 7200 } type = money value = -7200 }
+		command = { trigger = { NOT = { IC = 15 } money = 3600 } type = money value = -3600 }
+		# command = { trigger = { domestic = { type = free_market value = 6 } } type = domestic which = free_market value = -1 }
+		command = { type = event which = 999052 where = -1 when = 90 }
+		command = { type = local_setflag which = industry_investment_3 }				
+	}
+}
+event = {
+	id = 999052
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	name = "National Development Plan"
+	desc = "Here are the results of our investments in the national industrial plant." 
+	style = 2
+	picture = "ndp"
+
+	action = {
+		name = ACTION_NAME_EXCELLENT
+		command = { trigger = { local_flag = industry_investment_1 } type = construct which = ic where = -4 value = 1 }
+		command = { trigger = { local_flag = industry_investment_1 } type = local_clrflag which = industry_investment_1 }
+		command = { trigger = { local_flag = industry_investment_2 } type = construct which = infrastructure where = -1 value = 10 }	
+		command = { trigger = { local_flag = industry_investment_2 } type = construct which = ic where = -1 value = 1 }
+		command = { trigger = { local_flag = industry_investment_2 } type = construct which = ic where = -4 value = 1 }
+		command = { trigger = { local_flag = industry_investment_2 } type = local_clrflag which = industry_investment_2 }
+		command = { trigger = { local_flag = industry_investment_3 } type = construct which = infrastructure where = -1 value = 10 }
+		command = { trigger = { local_flag = industry_investment_3 } type = construct which = infrastructure where = -1 value = 10 }
+		command = { trigger = { local_flag = industry_investment_3 } type = construct which = ic where = -1 value = 1 }
+		command = { trigger = { local_flag = industry_investment_3 } type = construct which = ic where = -1 value = 1 }
+		command = { trigger = { local_flag = industry_investment_3 } type = construct which = ic where = -4 value = 1 }
+		command = { trigger = { local_flag = industry_investment_3 } type = local_clrflag which = industry_investment_3 }
+	}
+}
+
+#########################################################################
+########### Indoctrination
+#########################################################################
+
+event = {
+	id = 999068
+	random = no
+	all = yes
+	persistent = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	
+	decision = { 
+		NOT = { local_flag = indoctrination }
+		NOT = { ai = yes }	
+		OR = {
+		NOT = { domestic = { type = democratic value = 4 } }	
+		NOT = { domestic = { type = freedom value = 4 } }	
+		     }
+		     }
+
+	decision_trigger = { 
+		NOT = { local_flag = indoctrination }
+		NOT = { ai = yes }	
+		OR = {
+		NOT = { domestic = { type = democratic value = 4 } }	
+		NOT = { domestic = { type = freedom value = 4 } }	
+		     }
+		     }
+
+	trigger = { 
+		NOT = { local_flag = indoctrination }
+		NOT = { ai = yes }	
+		OR = {
+		NOT = { domestic = { type = democratic value = 4 } }	
+		NOT = { domestic = { type = freedom value = 4 } }	
+		     }
+		     }
+
+	name = "Indoctrination"
+	desc = "Indoctrination is the process of inculcating ideas, attitudes, cognitive strategies or a professional methodology. The indoctrinated person is expected not to question or critically examine the doctrine they have learned. Implement it in our country may cause some protests, but will bring profits in the long term." 
+	style = 2
+	picture = "indoctrination"
+	decision_picture = "decision_indoctrination"
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = "FW_EVT_900008_ACTIONB"
+		command = { type = dissent value = 4 }
+		command = { type = relative_manpower value = 0.0500 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = local_setflag which = indoctrination }
+	}
+}
+
+##################################
+####### SOCIAL INVESTMENTS #######
+##################################
+
+#################################
+# Invest in Education
+#################################
+
+event = {
+	id = 999139
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		atwar = no
+		NOT = { local_flag = education }
+		NOT = { local_flag = noeducation }
+		NOT = { ai = yes }
+	}
+
+	decision_trigger = { 
+		atwar = no
+		NOT = { local_flag = education }
+		NOT = { local_flag = noeducation }
+		NOT = { ai = yes }
+	}
+
+	trigger = {
+		atwar = no
+		NOT = { local_flag = education }
+		NOT = { local_flag = noeducation }
+		NOT = { ai = yes }
+	}
+   
+	name = "Invest in Education"
+	desc = "Investing in Education is crucial to any country that wants to develop itself. By increasing the government investment in our schools and universities we will spend more money in the present, but in the future this will prove to be worthwile." 
+	style = 2
+	picture = "education"
+	decision_picture = "decision_education"
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = "9000031b"
+		command = { trigger = { IC = 80 } type = free_money value = -1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = -0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = -0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = -0.3 }
+		command = { type = event which = 999140 where = -1 when = 1000 } #1000 days, same as Invest in Research
+		command = { type = local_setflag which = education }
+		command = { type = belligerence value = -2 }	
+	}
+	action = {
+		name = "ACTION_NAME_NO_NEED"
+		command = { type = event which = 999140 where = -1 when = 1000 } #1000 days, same as Invest in Research
+		command = { type = local_setflag which = noeducation }	
+	}
+}
+
+event = {
+	id = 999140
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	name = "Invest in Education"
+	desc = "The results of our investments in the educational area start to appear. Shall we continue to invest or elect other priorities?" 
+	style = 2
+	picture = "education"
+
+	action = {
+		trigger = { local_flag = education atwar = no }
+		name = "Great! Keep investing!"
+		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 0.5 }
+		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.3 }
+		command = { trigger = { research_mod = 120 } type = research_mod value = 0.1 }
+		command = { type = event which = 999140 where = -1 when = 1000 } #1000 days, same as Invest in Research
+		command = { type = belligerence value = -1 }
+	}
+
+	action = {
+		trigger = { local_flag = education }
+		name = "Great! But we've another priorities now."
+		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 0.5 }
+		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.3 }
+		command = { trigger = { research_mod = 120 } type = research_mod value = 0.1 }
+		command = { trigger = { IC = 80 } type = free_money value = 1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = 0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = 0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = 0.3 }
+		command = { type = local_clrflag which = education }
+		command = { type = belligerence value = -1 }
+	}
+
+	action = {
+		trigger = { local_flag = noeducation }
+		name = "We haven't invested enough..."
+		command = { type = local_clrflag which = noeducation }
+	}
+
+}
+
+#################################
+# Invest in Public Health
+#################################
+
+event = {
+	id = 999141
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		atwar = no
+		NOT = { local_flag = health }
+		NOT = { local_flag = nohealth }
+		NOT = { ai = yes }
+	}
+
+	decision_trigger = { 
+		atwar = no
+		NOT = { local_flag = health }
+		NOT = { local_flag = nohealth }
+		NOT = { ai = yes }
+	}
+
+	trigger = {
+		atwar = no
+		NOT = { local_flag = health }
+		NOT = { local_flag = nohealth }
+		NOT = { ai = yes }
+	}
+   
+	name = "Invest in Public Health"
+	desc = "By increasing the government investment in the public health area, we will be preventing diseases and hospitals will be working better. It will cost more money in the present, but might be worthwile in the future." 
+	style = 2
+	picture = "health"
+	decision_picture = "decision_health"
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = "9000031b"
+		command = { trigger = { IC = 80 } type = free_money value = -1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = -0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = -0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = -0.3 }
+		command = { type = event which = 999142 where = -1 when = 1000 } #1000 days, same as Invest in Research
+		command = { type = local_setflag which = health }
+		command = { type = belligerence value = -2 }	
+	}
+	action = {
+		name = "ACTION_NAME_NO_NEED"
+		command = { type = event which = 999142 where = -1 when = 1000 } #1000 days, same as Invest in Research
+		command = { type = local_setflag which = nohealth }	
+	}
+}
+
+event = {
+	id = 999142
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	name = "Invest in Public Health"
+	desc = "The results of our investments in the public health area start to appear. Shall we continue to invest or elect other priorities?" 
+	style = 2
+	picture = "health"
+
+	action = {
+		trigger = { local_flag = health atwar = no }
+		name = "Great! Keep investing!"
+		command = { type = trickleback_mod value = 0.5 }
+		command = { type = event which = 999142 where = -1 when = 1000 } #1000 days, same as Invest in Research
+		command = { type = belligerence value = -1 }
+	}
+
+	action = {
+		trigger = { local_flag = health }
+		name = "Great! But we've another priorities now."
+		command = { type = trickleback_mod value = 0.5 }
+		command = { trigger = { IC = 80 } type = free_money value = 1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = 0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = 0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = 0.3 }
+		command = { type = local_clrflag which = health }
+		command = { type = belligerence value = -1 }
+	}
+
+	action = {
+		trigger = { local_flag = nohealth }
+		name = "We haven't invested enough..."
+		command = { type = local_clrflag which = nohealth }
+	}
+
+}
+
+#################################
+# Invest in Public Security
+#################################
+
+event = {
+	id = 999143
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		atwar = no
+		NOT = { local_flag = police }
+		NOT = { local_flag = nopolice }
+		NOT = { ai = yes }
+	}
+
+	decision_trigger = { 
+		atwar = no
+		NOT = { local_flag = police }
+		NOT = { local_flag = nopolice }
+		NOT = { ai = yes }
+	}
+
+	trigger = {
+		atwar = no
+		NOT = { local_flag = police }
+		NOT = { local_flag = nopolice }
+		NOT = { ai = yes }
+	}
+   
+	name = "Invest in Public Security"
+	desc = "By increasing the government investment in the public security area, our population will feel more secure and pleased. It will cost more money in the present, but might be opportune in any time." 
+	style = 2
+	picture = "police"
+	decision_picture = "decision_police"
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = "9000031b"
+		command = { trigger = { IC = 80 } type = free_money value = -1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = -0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = -0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = -0.3 }
+		command = { type = local_setflag which = police }	
+		command = { type = event which = 999144 where = -1 when = 1000 } #1000 days, same as Invest in Research
+	}
+	action = {
+		name = "ACTION_NAME_NO_NEED"
+		command = { type = event which = 999144 where = -1 when = 1000 } #1000 days, same as Invest in Research
+		command = { type = local_setflag which = nopolice }	
+	}
+}
+
+event = {
+	id = 999144
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	name = "Invest in Public Security"
+	desc = "Our investments in the public security area seems to appear. A big scheme of corruption and traffic was dismantled and we recovered a good amount of the value. Now, shall we continue to invest or elect other priorities?" 
+	style = 2
+	picture = "police"
+
+	action = {
+		trigger = { local_flag = police atwar = no NOT = { local_flag = police2} }
+		name = "Great! Keep investing!"
+		command = { trigger = { IC = 80 } type = money value = 1000 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = money value = 800 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = money value = 600 }
+		command = { trigger = { NOT = { IC = 15 } } type = money value = 300 }
+		command = { type = event which = 999144 where = -1 when = 1000 } #1000 days, same as Invest in Research
+	}
+
+	action = {
+		trigger = { local_flag = police NOT = { local_flag = police2} }
+		name = "Great! But we've another priorities now."
+		command = { trigger = { IC = 80 } type = money value = 1000 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = money value = 800 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = money value = 600 }
+		command = { trigger = { NOT = { IC = 15 } } type = money value = 300 }
+		command = { trigger = { IC = 80 } type = free_money value = 1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = 0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = 0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = 0.3 }
+		command = { type = local_clrflag which = police }
+	}
+
+	action = {
+		trigger = { local_flag = nopolice }
+		name = "We haven't invested enough..."
+		command = { type = local_clrflag which = nopolice }
+	}
+
+	action = {
+		trigger = { local_flag = police atwar = no local_flag = police2 }
+		name = "Great! Keep investing!"
+		command = { trigger = { IC = 80 } type = money value = 500 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = money value = 400 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = money value = 300 }
+		command = { trigger = { NOT = { IC = 15 } } type = money value = 150 }
+		command = { type = local_clrflag which = police2 }
+		command = { type = event which = 999144 where = -1 when = 1000 } #1000 days, same as Invest in Research
+	}
+
+	action = {
+		trigger = { local_flag = police local_flag = police2 }
+		name = "Great! But we've another priorities now."
+		command = { trigger = { IC = 80 } type = money value = 500 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = money value = 400 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = money value = 300 }
+		command = { trigger = { NOT = { IC = 15 } } type = money value = 150 }
+		command = { trigger = { IC = 80 } type = free_money value = 1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = 0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = 0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = 0.3 }
+		command = { type = local_clrflag which = police }
+		command = { type = local_clrflag which = police2 }
+	}
+}
+
+event = {
+	id = 999145
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	trigger = {
+		atwar = no
+		local_flag = police
+		NOT = { local_flag = police2 }
+		dissent = 3
+	}
+   
+	name = "Invest in Public Security"
+	desc = "Our investment in public security now pays off. Thanks the security provided by our police force the people feels protected and the number of dissents isn't raising." 
+	style = 2
+	picture = "police"
+	decision_picture = "decision_police"
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = dissent value = -3 }
+		command = { type = local_setflag which = police2 }	
+	}
+}
+
+#################################
+# WAGES
+#################################
+
+# event = {
+# 	id = 999146
+# 	random = no
+# 	persistent = yes
+# 	save_date = yes
+# 	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+# 	decision = { 
+# 		NOT = {
+# 			local_flag = wagenone 
+# 			local_flag = wagemin 
+# 			local_flag = wagelow 
+# 			local_flag = wageacc 
+# 			local_flag = wagegood 
+# 			local_flag = nowage 
+# 			ideology = stalinist 
+# 			ideology = leninist 
+# 			ai = yes
+# 			}
+# 	}
+
+# 	decision_trigger = { 
+# 		NOT = {
+# 			local_flag = wagenone 
+# 			local_flag = wagemin 
+# 			local_flag = wagelow 
+# 			local_flag = wageacc 
+# 			local_flag = wagegood 
+# 			local_flag = nowage 
+# 			ideology = stalinist 
+# 			ideology = leninist 
+# 			ai = yes
+# 			}
+# 	}
+
+# 	trigger = {
+# 		NOT = {
+# 			local_flag = wagenone 
+# 			local_flag = wagemin 
+# 			local_flag = wagelow 
+# 			local_flag = wageacc 
+# 			local_flag = wagegood 
+# 			local_flag = nowage 
+# 			ideology = stalinist 
+# 			ideology = leninist 
+# 			ai = yes
+# 			}
+# 	}
+   
+# 	name = "Minimum Wage"
+# 	desc = "People are asking for a law on minimum wages. Without a law on minimum wages, workers can be exploited by employers and can often decide to join the army to get a decent pay. If we choose to turn up the minimum wage we could find ourselves in a situation where employers fail to pay or to hire new employees, being forced to close their businesses." 
+# 	style = 2
+# 	picture = "wage"
+# 	decision_picture = "decision_wage"
+
+# 	date = { day = 1 month = august year = 1948 }
+# 	offset = 40
+# 	deathdate = { day = 29 month = december year = 1999 }
+
+# 	action = {
+# 		name = "None"
+# 		trigger = {
+# 			 OR = {
+# 				ideology = market_liberal
+# 				ideology = social_liberal
+# 				ideology = social_democrat
+# 				ideology = social_conservative
+# 				ideology = paternal_autocrat 
+# 				ideology = fascist 
+# 				ideology = nazi
+# 				}
+# 			}
+# 		command = { type = dissent value = 9 }
+# 		command = { type = free_manpower value = 0.01 }
+# 		command = { type = free_money value = 2 }
+# 		command = { type = free_ic value = 5 }
+# 		command = { type = domestic which = political_left value = -1 }
+# 		command = { type = domestic which = democratic value = -1 }
+# 		command = { type = event which = 999147 where = -1 when = 361 } #360 days, each year
+# 		command = { type = local_setflag which = wagenone }	
+# 	}
+
+# 	action = {
+# 		name = "Minimum"
+# 		trigger = {
+# 			 OR = {
+# 				ideology = market_liberal
+# 				ideology = social_liberal
+# 				ideology = social_democrat
+# 				ideology = social_conservative
+# 				ideology = paternal_autocrat 
+# 				ideology = fascist 
+# 				ideology = nazi
+# 				}
+# 			}
+# 		command = { type = dissent value = 4 }
+# 		command = { type = free_manpower value = 0.009 }
+# 		command = { type = free_money value = 1 }
+# 		command = { type = free_ic value = 3 }
+# 		command = { type = event which = 999147 where = -1 when = 361 } #360 days, each year
+# 		command = { type = local_setflag which = wagemin }	
+# 	}
+
+# 	action = {
+# 		name = "Low"
+# 		trigger = {
+# 			 OR = {
+# 				ideology = market_liberal
+# 				ideology = social_liberal
+# 				ideology = social_democrat
+# 				ideology = social_conservative
+# 				ideology = left_wing_radical
+# 				ideology = leninist
+# 				ideology = paternal_autocrat 
+# 				ideology = fascist 
+# 				}
+# 			}
+# 		command = { type = dissent value = -5 }
+# 		command = { type = free_manpower value = 0.008 }
+# 		command = { type = free_ic value = 1 }
+# 		command = { type = event which = 999147 where = -1 when = 361 } #360 days, each year
+# 		command = { type = local_setflag which = wagelow }	
+# 	}
+
+# 	action = {
+# 		name = "Medium"
+# 		trigger = {
+# 			 OR = {
+# 				ideology = social_democrat
+# 				ideology = social_conservative
+# 				ideology = left_wing_radical
+# 				ideology = leninist
+# 				ideology = stalinist
+# 				ideology = paternal_autocrat 
+# 				ideology = fascist 
+# 				}
+# 			}
+# 		command = { type = dissent value = -8 }
+# 		command = { type = free_money value = -1 } 
+# 		command = { type = domestic which = political_left value = 1 }
+# 		command = { type = event which = 999147 where = -1 when = 361 } #360 days, each year
+# 		command = { type = local_setflag which = wageacc }	
+# 	}
+
+# 	action = {
+# 		name = "High"
+# 		trigger = {
+# 			 OR = {
+# 				ideology = social_democrat
+# 				ideology = social_conservative
+# 				ideology = left_wing_radical
+# 				ideology = leninist
+# 				ideology = stalinist
+# 				}
+# 			}
+# 		command = { type = dissent value = -10 }
+# 		command = { type = free_money value = -2 } 
+# 		command = { type = free_ic value = -3 }
+# 		command = { type = domestic which = political_left value = 2 }
+# 		command = { type = event which = 999147 where = -1 when = 361 } #360 days, each year
+# 		command = { type = local_setflag which = wagegood }	
+# 	}
+
+
+# 	action = {
+# 		name = "Game standard"
+# 		command = { type = event which = 999147 where = -1 when = 361 } #360 days, each year
+# 		command = { type = local_setflag which = nowage }	
+# 	}
+# }
+
+# event = {
+# 	id = 999147
+# 	random = no
+# 	persistent = yes
+# 	save_date = yes
+# 	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+# 	name = "Minimum Wage"
+# 	desc = "It 's been a year since our reform on minimum wages. If the government intends to change the reform, we can submit a new law proposal." 
+# 	style = 2
+# 	picture = "wage"
+
+# 	action = {
+# 		trigger = { 
+# 		OR = {
+# 			local_flag = wagenone 
+# 			local_flag = wagemin 
+# 			local_flag = wagelow 
+# 			local_flag = wageacc 
+# 			local_flag = wagegood 
+# 			}
+# 				}
+# 		name = "Keep current standings."
+# 		command = { type = event which = 999147 where = -1 when = 361 } #360 days, each year
+# 	}
+
+# 	action = {
+# 		trigger = { local_flag = wagenone }
+# 		name = "Review the index."
+# 		command = { type = local_clrflag which = wagenone }
+# 		command = { type = free_manpower value = -0.01 }
+# 		command = { type = free_money value = -2 }
+# 		command = { type = free_ic value = -5 }
+# 	}
+
+# 	action = {
+# 		trigger = { local_flag = wagemin }
+# 		name = "Review the index."
+# 		command = { type = local_clrflag which = wagemin }
+# 		command = { type = free_manpower value = -0.009 }
+# 		command = { type = free_money value = -1 }
+# 		command = { type = free_ic value = -3 }
+# 	}
+
+# 	action = {
+# 		trigger = { local_flag = wagelow }
+# 		name = "Review the index."
+# 		command = { type = local_clrflag which = wagelow }
+# 		command = { type = free_manpower value = -0.008 }
+# 		command = { type = free_ic value = -1 }
+# 	}
+
+# 	action = {
+# 		trigger = { local_flag = wageacc }
+# 		name = "Review the index."
+# 		command = { type = local_clrflag which = wageacc }
+# 		command = { type = free_money value = 1 } 
+# 	}
+
+# 	action = {
+# 		trigger = { local_flag = wagegood }
+# 		name = "Review the index."
+# 		command = { type = local_clrflag which = wagegood }
+# 		command = { type = free_money value = 2 } 
+# 		command = { type = free_ic value = 3 }
+# 	}
+
+# 	action = {
+# 		trigger = { local_flag = nowage }
+# 		name = "Review the index."
+# 		command = { type = local_clrflag which = nowage }
+# 	}
+
+# }
+
+#################################
+# TAXES
+#################################
+
+event = {
+	id = 999148
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		NOT = {
+			local_flag = taxmin 
+			local_flag = taxlow 
+			local_flag = taxacc 
+			local_flag = taxhigh 
+			local_flag = notax 
+			ideology = stalinist 
+			ideology = leninist 
+			ai = yes
+			}
+	}
+
+	decision_trigger = { 
+		NOT = {
+			local_flag = taxmin 
+			local_flag = taxlow 
+			local_flag = taxacc 
+			local_flag = taxhigh 
+			local_flag = notax 
+			ideology = stalinist 
+			ideology = leninist 
+			ai = yes
+			}
+	}
+
+	trigger = {
+		NOT = {
+			local_flag = taxmin 
+			local_flag = taxlow 
+			local_flag = taxacc 
+			local_flag = taxhigh 
+			local_flag = notax 
+			ideology = stalinist 
+			ideology = leninist 
+			ai = yes
+			}
+	}
+   
+	name = "Taxes"
+	desc = "Once again this year we have to decide the annual budget. We may collect more money by overtaxing the nation, but it can be very harsh for our industries." 
+	style = 2
+	picture = "wage"
+	decision_picture = "decision_wage"
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = "Minimum"
+		command = { type = dissent value = -6 }
+		command = { trigger = { IC = 80 } type = free_money value = -2 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = -1.6 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = -1.2 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = -0.6 }
+		command = { type = free_ic value = 2 }
+		command = { type = event which = 999149 where = -1 when = 360 } #360 days, each year
+		command = { type = local_setflag which = taxmin }	
+	}
+
+	action = {
+		name = "Low"
+		command = { type = dissent value = -3 }
+		command = { trigger = { IC = 80 } type = free_money value = -1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = -0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = -0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = -0.3 }
+		command = { type = free_ic value = 1 }
+		command = { type = event which = 999149 where = -1 when = 360 } #360 days, each year
+		command = { type = local_setflag which = taxlow }	
+	}
+
+	action = {
+		name = "Medium"
+		command = { type = dissent value = 3 }
+		command = { trigger = { IC = 80 } type = free_money value = 1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = 0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = 0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = 0.3 }
+		command = { type = free_ic value = -1 }
+		command = { type = event which = 999149 where = -1 when = 360 } #360 days, each year
+		command = { type = local_setflag which = taxacc }	
+	}
+
+	action = {
+		name = "High"
+		command = { type = dissent value = 5 }
+		command = { trigger = { IC = 80 } type = free_money value = 2 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = 1.6 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = 1.2 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = 0.6 }
+		command = { type = free_ic value = -2 }
+		command = { type = event which = 999149 where = -1 when = 360 } #360 days, each year
+		command = { type = local_setflag which = taxhigh }	
+	}
+
+	action = {
+		name = "Game standard"
+		command = { type = event which = 999149 where = -1 when = 360 } #360 days, each year
+		command = { type = local_setflag which = notax }	
+	}
+}
+
+event = {
+	id = 999149
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	name = "Taxes"
+	desc = "Once again this year we have to decide the annual budget. We may collect more money by overtaxing the nation, but it can be very harsh for our industries." 
+	style = 2
+	picture = "wage"
+
+	action = {
+		trigger = { 
+		OR = {
+			local_flag = taxmin 
+			local_flag = taxlow 
+			local_flag = taxacc 
+			local_flag = taxhigh 
+			}
+				}
+		name = "Keep current standings."
+		command = { type = event which = 999149 where = -1 when = 360 } #360 days, each year
+	}
+
+	action = {
+		trigger = { local_flag = taxmin }
+		name = "Review the index."
+		command = { type = local_clrflag which = taxmin }
+		command = { trigger = { IC = 80 } type = free_money value = 2 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = 1.6 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = 1.2 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = 0.6 }
+		command = { type = free_ic value = -2 }
+
+	}
+
+	action = {
+		trigger = { local_flag = taxlow }
+		name = "Review the index."
+		command = { type = local_clrflag which = taxlow }
+		command = { trigger = { IC = 80 } type = free_money value = 1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = 0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = 0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = 0.3 }
+		command = { type = free_ic value = -1 }
+	}
+
+	action = {
+		trigger = { local_flag = taxacc }
+		name = "Review the index."
+		command = { type = local_clrflag which = taxacc }
+		command = { trigger = { IC = 80 } type = free_money value = -1 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = -0.8 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = -0.6 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = -0.3 }
+		command = { type = free_ic value = 1 }
+	}
+
+	action = {
+		trigger = { local_flag = taxhigh }
+		name = "Review the index."
+		command = { type = local_clrflag which = taxhigh }
+		command = { trigger = { IC = 80 } type = free_money value = -2 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = free_money value = -1.6 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = free_money value = -1.2 }
+		command = { trigger = { NOT = { IC = 15 } } type = free_money value = -0.6 }
+		command = { type = free_ic value = 2 }
+	}
+
+	action = {
+		trigger = { local_flag = notax }
+		name = "Review the index."
+		command = { type = local_clrflag which = notax }
+	}
+
+}
+
+#########################################################################
+############### Search for Oil, Metal and Rare Materials
+#########################################################################
+
+event = {
+	id = 9991500
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		OR = {
+			money = 100
+			AND = {
+				NOT = { IC = 80 }
+				money = 100
+				}
+			AND = {
+				NOT = { IC = 50 }
+				money = 100
+				}
+			AND = {
+				NOT = { IC = 15 }
+				money = 100
+				}	
+			}
+		NOT = { local_flag = oil_investment_1 }
+		NOT = { local_flag = oil_investment_2 }
+		NOT = { local_flag = oil_investment_3 }
+		NOT = { ai = yes }		
+	}
+
+	decision_trigger = { 
+		OR = {
+			money = 7000
+			AND = {
+				NOT = { IC = 80 }
+				money = 6000
+				}
+			AND = {
+				NOT = { IC = 50 }
+				money = 4000
+				}
+			AND = {
+				NOT = { IC = 15 }
+				money = 2000
+				}	
+			}
+	}
+
+	trigger = {
+		OR = {
+			money = 7000
+			AND = {
+				NOT = { IC = 80 }
+				money = 6000
+				}
+			AND = {
+				NOT = { IC = 50 }
+				money = 4000
+				}
+			AND = {
+				NOT = { IC = 15 }
+				money = 2000
+				}	
+			}
+		NOT = { local_flag = oil_investment_1 }
+		NOT = { local_flag = oil_investment_2 }
+		NOT = { local_flag = oil_investment_3 }
+		NOT = { ai = yes }		
+	}
+   
+	name = "Search for Oil, Metal and Rare Materials."
+	desc = "By investing in the search for oil, metal and rare materials we might reduce the number of unemployed and create a good scenario to attractive new investments to the area. This will not only help and pleased the population, but it will also increase the economic capacity of our country." 
+	style = 2
+	picture = "abadan_oil"
+	decision_picture = "decision_abadan_oil"
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		trigger = { OR = { AND = { IC = 80 money = 7000 } AND = { IC = 50 NOT = { IC = 80 } money = 6000 } AND = { IC = 15 NOT = { IC = 50 } money = 4000 } AND = { NOT = { IC = 15 } money = 2000 } } }
+		ai_chance = 30
+		name = "9000031a"
+		command = { type = dissent value = -0.5 }
+		command = { trigger = { IC = 80 money = 3500 } type = money value = -7000 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 6000 } type = money value = -6000 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 4000 } type = money value = -4000 }
+		command = { trigger = { NOT = { IC = 15 } money = 2000 } type = money value = -2000 }
+		command = { type = event which = 9991510 where = -1 when = 360 }
+		command = { type = local_setflag which = oil_investment_1 }	
+	}
+	action = {
+		trigger = { OR = { AND = { IC = 80 money = 9000 } AND = { IC = 50 NOT = { IC = 80 } money = 8000 } AND = { IC = 15 NOT = { IC = 50 } money = 6000 } AND = { NOT = { IC = 15 } money = 4000 } } }
+		ai_chance = 30
+		name = "9000031b"
+		command = { type = dissent value = -1 }
+		command = { trigger = { IC = 80 money = 9000 } type = money value = -9000 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 8000 } type = money value = -8000 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 6000 } type = money value = -6000 }
+		command = { trigger = { NOT = { IC = 15 } money = 4000 } type = money value = -4000 }
+		command = { type = event which = 9991510 where = -1 when = 360 }
+		command = { type = local_setflag which = oil_investment_2 }		
+	}
+	action = { 
+		trigger = { OR = { AND = { IC = 80 money = 11000 } AND = { IC = 50 NOT = { IC = 80 } money = 10000 } AND = { IC = 15 NOT = { IC = 50 } money = 8000 } AND = { NOT = { IC = 15 } money = 6000 } } }
+		ai_chance = 40
+		name = "9000031c"
+		command = { type = dissent value = -2 }
+		command = { trigger = { IC = 80 money = 11000 } type = money value = -11000 }
+		command = { trigger = { IC = 50 NOT = { IC = 80 } money = 10000 } type = money value = -10000 }
+		command = { trigger = { IC = 15 NOT = { IC = 50 } money = 8000 } type = money value = -8000 }
+		command = { trigger = { NOT = { IC = 15 } money = 6000 } type = money value = -6000 }
+		command = { type = event which = 9991510 where = -1 when = 360 }
+		command = { type = local_setflag which = oil_investment_3 }				
+	}
+}
+event = {
+	id = 9991510
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	name = "Search for Oil, Metal and Rare Materials."
+	desc = "Here are the results of our investments in the search for oil, metal and rare materials." 
+	style = 2
+	picture = "abadan_oil"
+
+	action = {
+		name = ACTION_NAME_EXCELLENT
+		command = { trigger = { local_flag = oil_investment_1 } type = add_prov_resource which = -1 value = 1.2 where = metal }
+		command = { trigger = { local_flag = oil_investment_1 } type = add_prov_resource which = -1 value = 0.8 where = rare_materials }
+		command = { trigger = { local_flag = oil_investment_1 } type = add_prov_resource which = -1 value = 0.4 where = oil }
+		command = { trigger = { local_flag = oil_investment_1 } type = local_clrflag which = oil_investment_1 }	
+		command = { trigger = { local_flag = oil_investment_2 } type = add_prov_resource which = -1 value = 1.8 where = metal }	
+		command = { trigger = { local_flag = oil_investment_2 } type = add_prov_resource which = -1 value = 1.4 where = rare_materials }
+		command = { trigger = { local_flag = oil_investment_2 } type = add_prov_resource which = -1 value = 0.8 where = oil }
+		command = { trigger = { local_flag = oil_investment_2 } type = local_clrflag which = oil_investment_2 }
+		command = { trigger = { local_flag = oil_investment_3 } type = add_prov_resource which = -1 value = 2.4 where = metal }
+		command = { trigger = { local_flag = oil_investment_3 } type = add_prov_resource which = -1 value = 1.8 where = rare_materials }
+		command = { trigger = { local_flag = oil_investment_3 } type = add_prov_resource which = -1 value = 1.1 where = oil }
+		command = { trigger = { local_flag = oil_investment_3 } type = local_clrflag which = oil_investment_3 }
+	}
+}
+
+#### Credits
+event = {
+	id = 99999999
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	random = no
+	style = 2
+
+	trigger = { ai = no }
+
+	name = "The Grand Campaign Mod Credits"
+	desc = "All hail to Ejwith9953 and the team and those who have helped make this mod possible, delanonne, Bizon, OneAussieMan777, Kretoxian, Smoggy, Dskod1, eeeex, El_que, Horton13, KaiserMuffin (-KM-), makif130289, AC, clanjay, dukeofboom, Fernando, kaiserfranz, mib, old'joe, Tipsy3000, T.J. Arnold, whatgutsm, Arkocento, Nymet260, Pasalietis, Sargeras, Steppen, Agent Larkin, Ericafaq, derekg36, commanderx, Aquelarrefox and every one else that I may have forgotten!"
+
+	date = { day = 27 month = june year = 1914 }
+
+	action = {
+		name = "Thank you and enjoy The Grand Campaign!!!"
+		command = { }
+		
+	}
+}
+
+### new desitions
+
+event = {
+	id = 99999000
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		atwar = no
+		NOT = { IC = 50 }
+		NOT = { local_flag = sectorize }
+		NOT = { ai = yes }
+	}
+
+	decision_trigger = { 
+		atwar = no
+		NOT = { IC = 50 }
+		NOT = { local_flag = sectorize }
+		NOT = { ai = yes }
+	}
+
+	trigger = {
+		atwar = no
+		NOT = { IC = 50 }
+		NOT = { local_flag = sectorize }
+		NOT = { ai = yes }
+	}
+   
+	name = "invest in a sector of industry"
+	desc = "invest in a sector of industry." 
+	style = 2
+	picture = "health" # to change
+	decision_picture = "decision_health" # to change
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = "food and supplies quinquenal plan"
+		command = { type = industrial_modifier which = total value = -15 }
+		command = { trigger = { IC = 40 NOT = { IC = 50 } } type = free_money value = 4.09 }
+		command = { trigger = { IC = 40 NOT = { IC = 50 } } type = supplies value = 15 }
+		command = { trigger = { IC = 40 NOT = { IC = 50 } } type = money value = -4000 }
+		command = { trigger = { IC = 30 NOT = { IC = 40 } } type = free_money value = 3.46 }
+		command = { trigger = { IC = 30 NOT = { IC = 40 } } type = supplies value = 12 }
+		command = { trigger = { IC = 30 NOT = { IC = 40 } } type = money value = -3500 }
+		command = { trigger = { IC = 20 NOT = { IC = 30 } } type = free_money value = 2.82 }
+		command = { trigger = { IC = 20 NOT = { IC = 30 } } type = supplies value = 9 }
+		command = { trigger = { IC = 20 NOT = { IC = 30 } } type = money value = -3000 }
+		command = { trigger = { IC = 10 NOT = { IC = 20 } } type = free_money value = 2.19 }
+		command = { trigger = { IC = 10 NOT = { IC = 20 } } type = supplies value = 6 }
+		command = { trigger = { IC = 10 NOT = { IC = 20 } } type = money value = -2500 }
+		command = { trigger = { NOT = { IC = 10 } }  type = free_money value = 1.55 }
+		command = { trigger = { NOT = { IC = 10 } }  type = supplies value = 3 }
+		command = { trigger = { NOT = { IC = 10 } }  type = money value = -2000 }
+		command = { type = event which = 99999001 where = -1 when = 1800 } #1800 days, same as Invest in Research
+		command = { type = local_setflag which = sectorize }	
+	}
+	action = {
+		name = "transport quinquenal plan"
+		command = { type = industrial_modifier which = total value = -15 }
+		command = { type = tc_mod value = 8 }
+		command = { trigger = { NOT = { IC = 50 } }  type = money value = -2000 }
+		command = { type = event which = 99999002 where = -1 when = 1800 } #1800 days, same as Invest in Research
+		command = { type = local_setflag which = sectorize }		
+	}
+}
+
+event = {
+	id = 99999001
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	name = "end of food and supplies quinquenal plan"
+	desc = "The results of our investments in the public health area start to appear. Shall we continue to invest or elect other priorities?" 
+	style = 2
+	picture = "health"
+
+	action = {
+		trigger = { local_flag = sectorize }
+		name = "Great! Succesfull end of food and supplies quinquenal plan"
+		command = { type = industrial_modifier which = total value = 15 }
+		command = { trigger = { IC = 40 NOT = { IC = 50 } } type = free_money value = -4.09 }
+		command = { trigger = { IC = 40 NOT = { IC = 50 } } type = supplies value = -15 }
+		command = { trigger = { IC = 30 NOT = { IC = 40 } } type = free_money value = -3.46 }
+		command = { trigger = { IC = 30 NOT = { IC = 40 } } type = supplies value = -12 }
+		command = { trigger = { IC = 20 NOT = { IC = 30 } } type = free_money value = -2.82 }
+		command = { trigger = { IC = 20 NOT = { IC = 30 } } type = supplies value = -9 }
+		command = { trigger = { IC = 10 NOT = { IC = 20 } } type = free_money value = -2.19 }
+		command = { trigger = { IC = 10 NOT = { IC = 20 } } type = supplies value = -6 }
+		command = { trigger = { NOT = { IC = 10 } }  type = free_money value = -1.55 }
+		command = { trigger = { NOT = { IC = 10 } }  type = supplies value = -3 }
+		command = { type = local_clrflag which = sectorize }
+	}
+
+}
+
+event = {
+	id = 99999002
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	name = "end of transport quinquenal plan"
+	desc = "The results of our investments in the public health area start to appear. Shall we continue to invest or elect other priorities?" 
+	style = 2
+	picture = "health"
+
+	action = {
+		trigger = { local_flag = sectorize }
+		name = "Great! Succesfull end of transport quinquenal plan"
+		command = { type = tc_mod value = -7 }
+		command = { type = local_clrflag which = sectorize}
+	}
+
+}
+
+
+
+event = {
+	id = 99999010
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		NOT = { ai = yes }
+		policy = { country = -1 type = democratic value = 5 } 
+		NOT = { policy = { country = -1 type = interventionism value = 5 } }
+		NOT = { local_flag = militarupset  }
+		supplies = 1000
+	}
+
+	decision_trigger = { 
+		NOT = { ai = yes }
+		supplies = 1000
+		policy = { country = -1 type = democratic value = 5 }
+		NOT = { policy = { country = -1 type = interventionism value = 5 } }
+		NOT = { local_flag = militarupset  }		
+	}
+
+	trigger = {
+		NOT = { ai = yes }
+		supplies = 1000
+		policy = { country = -1 type = democratic value = 5 } 
+		NOT = { policy = { country = -1 type = interventionism value = 5 } }
+		NOT = { local_flag = militarupset  }
+	}
+   
+	name = "military upset"
+	desc = "The corps of navy and army have intention of left this isolation statment. If would be need, they should use the force to make the change for us, if we are interested" 
+	style = 2
+	picture = "health" # to change
+	decision_picture = "decision_health" # to change
+	save_date = yes 
+	
+	date = { day = 1 month = august year = 1948 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = "military upset"
+		command = { trigger = { policy = { country = -1 type = democratic value = 9 } }  type = event which = 99999011 where = -1 when = 5 }
+		command = { trigger = { policy = { country = -1 type = democratic value = 8 } }  type = event which = 99999012 where = -1 when = 7 }
+		command = { trigger = { policy = { country = -1 type = democratic value = 7 } }  type = event which = 99999013 where = -1 when = 15 }
+		command = { trigger = { policy = { country = -1 type = democratic value = 7 } }  type = event which = 99999014 where = -1 when = 20 }
+		command = { type = dissent value = 15 }
+		command = { type = supplies value = -150 }
+		command = { type = event which = 99999015 where = -1 when = 90 }
+		command = { type = local_setflag which = militarupset }
+	}
+	
+	
+	
+	
+}
+
+event = {
+	id = 99999011
+	random = no
+	persistent = yes
+	trigger = { random = 20 }
+	picture = "health" # to change
+	name = "military definitions"
+	desc = "a realy bad for democracy"
+	action = {
+		name = "politics gets a bit hard and accepts democratic procedures aren't the best way for the country"
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = dissent value = 8 }
+		command = { type = supplies value = -200 }
+		}
+		
+}
+
+event = {
+	id = 99999012
+	random = no
+	persistent = yes	
+	trigger = { random = 20 }
+	picture = "health" # to change
+	name = "military definitions"
+	desc = "wild military upset"
+	action = {
+		name = "unique way"
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = interventionism value = 4 }
+		command = { type = dissent value = 4 }
+		command = { type = supplies value = -300 }
+		}
+		
+}
+
+event = {
+	id = 99999013
+	random = no
+	persistent = yes
+	trigger = { random = 20 }
+	picture = "health" # to change
+	name = "military definitions"
+	desc = "politics gets a bit hard and acepts democratic procedures aren't the best way for the country"
+	action = {
+		name = "words from the guns"
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = dissent value = 8 }
+		command = { type = supplies value = -400 }
+		}
+		
+}
+
+event = {
+	id = 99999014
+	random = no
+	persistent = yes
+	trigger = { random = 20 }
+	picture = "health" # to change
+	name = "military definitions"
+	desc = "democracy and isalacionim is the reason, and the guns our solution"
+	action = {
+		name = "well, no other way"
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = interventionism value = 5 }
+		command = { type = dissent value = 15 }
+		command = { type = supplies value = -600 }
+		}
+}		
+		
+event = {
+	id = 99999015
+	random = no
+	persistent = yes
+	trigger = { random = 20 }
+	picture = "health" # to change
+	name = "military are walking in the streets again"
+	desc = "theres posibility of a new upset if you want sir."
+	action = {
+		name = "ok"
+		command = { type = local_clrflag which = militarupset }
+		}		
+		
+}
+
+#### Wargames
+event = {
+	id = 9000033
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	decision = { 
+		money = 600
+		supplies = 100
+		policy = { type = defense_lobby value = 3 }
+		atwar = no
+		NOT = { local_flag = wargame }
+	}
+
+	decision_trigger = { 
+		money = 600
+		supplies = 200
+		atwar = no
+		NOT = { local_flag = wargame }
+	}
+
+	trigger = {
+		random = 50
+		money = 600
+		supplies = 200
+		policy = { type = defense_lobby value = 3 }
+		atwar = no
+		NOT = { local_flag = wargame }
+	}
+   
+	name = "9000033name"
+	desc = "9000033desc" 
+	style = 2
+	picture = "wargames"
+	decision_picture = "decision_wargames"
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = "9000033text"
+		command = { type = money value = -800 }
+		command = { type = trigger which = 9000035 }
+	}
+}
+
+event = {
+	id = 9000035
+	random = no
+	persistent = yes
+	one_action = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }   
+	name = "9000033name"
+	desc = "9000033desc" 
+	style = 2
+	picture = "wargames"
+
+	action = {
+		ai_chance = 67
+		name = "army wargame"
+		trigger = { army = 5 }
+		command = { type = add_leader_skill which = -1 value = 1 }
+		command = { type = supplies value = -200 }
+		command = { type = local_setflag which = wargame }
+		command = { type = event which = 99999009 where = -1 when = 200 } #200 days
+		command = { type = 	belligerence value = 7 }
+	}
+	action = {
+		ai_chance = 33
+		name = "combined wargames: army, navy and air force"
+		trigger = { army = 5 }
+		trigger = { air = 2 }
+		trigger = { navy = 2 }
+		command = { type = add_leader_skill which = -1 value = 1 }
+		command = { type = add_leader_skill which = -1 value = 1 }
+		command = { type = add_leader_skill which = -1 value = 1 }
+		command = { type = supplies value = -600 }
+		command = { type = local_setflag which = wargame }
+		command = { type = event which = 99999009 where = -1 when = 200 } #200 days
+		command = { type = belligerence value = 7 }	
+	}
+}
+
+event = {
+	id = 99999009
+	random = no
+	persistent = yes
+	save_date = yes
+	TAG =  { AFG ALB ALG ALI ALS ANG ARA ARG ARM AST AUS AXI AZB BEL BEN BHU BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR DOM EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HAI HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIB LIT LUX MAD MAL MAN MEN MEX MIN MLY MON MOR MOZ MTN NAM NEP NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TIB TRA TRK TUN TUR UKR URU USA UZB VEN VIC VIE WLL YEM YUG U00 U01 U02 U03 U04 U05 U06 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U39 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U60 U66 U67 UCH UTC UGS UER UPE U70 U71 U72 U73 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+
+	name = "Time for more war games"
+	desc = "Now we are ready for other war game to get better officers, or no?" 
+	style = 2
+	picture = "wargames"
+
+	action = {
+		name = "Ok"
+		command = { type = local_clrflag which = wargame}
+	}
+}
+
+event = {
+
+	id = 8014313
+	name = "Invest into our country's needed resources"
+	random = no
+	persistent = yes
+	TAG = {}
+	desc = "Our country's might can only grow that much by only creating new production facilities... And now is the time to invest into one of the things that keeps our nation running : coal, metal, rare materials, oil, and men."
+	picture = "fatherland/invest_HI"
+	style=2
+
+	decision = { 
+		money = 250
+		supplies = 500
+				}
+
+				
+				
+	decision_trigger = {
+		money = 300
+		supplies = 450
+		NOT = { local_flag = build_dam }
+		NOT = { local_flag = build_coal_plant }
+		NOT = { local_flag = build_metal_mine }
+		NOT = { local_flag = build_rares_mine }
+		NOT = { local_flag = build_oil_well }
+		NOT = { local_flag = build_barracks }
+						}
+
+	trigger = {
+		money = 300
+		supplies = 450
+		NOT = { local_flag = build_dam }
+		NOT = { local_flag = build_coal_plant }
+		NOT = { local_flag = build_metal_mine }
+		NOT = { local_flag = build_rares_mine }
+		NOT = { local_flag = build_oil_well }
+		NOT = { local_flag = build_barracks }
+				}
+
+				
+				
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	
+	action = {
+		trigger = { AND = { money = 300 supplies = 450 } }
+		name = "Build a dam"
+		command = { type = event which = 8014303 where = -1 when = 90 }
+		command = { type = local_setflag which = build_dam }
+		command = { type = money value = -300 }
+		command = { type = supplies value = -450 }
+			}
+			
+			
+	action = {
+		trigger = { AND = { money = 450 supplies = 600 } }
+		name = "Build a coal-fired power plant"
+		command = { type = event which = 8014303 where = -1 when = 60 }
+		command = { type = local_setflag which = build_coal_plant }
+		command = { type = money value = -450 }
+		command = { type = supplies value = -600 }
+			}
+			
+			
+	action = {
+		trigger = { AND = { money = 500 supplies = 750 } }
+		name = "Build a metal mine"
+		command = { type = event which = 8014303 where = -1 when = 45 }
+		command = { type = local_setflag which = build_metal_mine }
+		command = { type = money value = -500 }
+		command = { type = supplies value = -750 }
+				}
+							
+	action = {
+		trigger = { AND = { money = 650 supplies = 1000 } }
+		name = "Build a rares mine"
+		command = { type = event which = 8014303 where = -1 when = 45 }
+		command = { type = local_setflag which = build_rares_mine }
+		command = { type = money value = -650 }
+		command = { type = supplies value = -1000 }
+				}
+				
+							
+	action = {
+		trigger = { AND = { money = 750 supplies = 1350 } }
+		name = "Build a oil well"
+		command = { type = event which = 8014303 where = -1 when = 75 }
+		command = { type = local_setflag which = build_oil_well }
+		command = { type = money value = -750 }
+		command = { type = supplies value = -1350 }
+				}
+				
+							
+	action = {
+		trigger = { AND = { money = 400 supplies = 2000 } }
+		name = "Build military barracks"
+		command = { type = event which = 8014303 where = -1 when = 60 }
+		command = { type = local_setflag which = build_barracks }
+		command = { type = money value = -400 }
+		command = { type = supplies value = -2000 }
+				}
+				
+				
+		}
+
+		
+		
+event = {
+
+	id = 8014314
+	name = "Results of investment into our contry's resources"
+	TAG = {}
+	one_action = no
+	persistent = yes
+	desc = "Now that we have invested into a specific project, it's time to reep what we sowed. "
+	picture = "fatherland/invest_HI"
+	style = 2
+
+
+	action = {
+		name = "Dam built and running"
+		trigger = { local_flag = build_dam }
+		command = { type = add_prov_resource which = -1 value = 3 where = energy }
+		command = { type = province_manpower value = 1 }
+		command = { type = local_clrflag which = build_dam }
+		command = { type = dissent value = 3 }
+				}
+
+
+	action = {
+		name = "Coal plant built and running"
+		trigger = { local_flag = build_coal_plant }
+		command = { type = add_prov_resource which = -1 value = 5 where = energy }
+		command = { type = local_clrflag which = build_coal_plant }
+		command = { type = dissent value = 5 }
+				}
+
+
+	action = {
+		name = "Metal mine built and running"
+		trigger = { local_flag = build_metal_mine }
+		command = { type = add_prov_resource which = -1 value = 4 where = metal }
+		command = { type = local_clrflag which = build_metal_mine }
+		command = { type = dissent value = 5 }
+				}
+
+
+	action = {
+		name = "Rares mine built and running"
+		trigger = { local_flag = build_rares_mine}
+		command = { type = add_prov_resource which = -1 value = 3 where = rare_materials }
+		command = { type = local_clrflag which = build_rares_mine }
+		command = { type = dissent value = 5 }
+				}
+				
+
+	action = {
+		name = "Oil well built and running"
+		trigger = { local_flag = build_oil_well }
+		command = { type = add_prov_resource which = -1 value = 2 where = oil }
+		command = { type = local_clrflag which = build_oil_well }
+		command = { type = dissent value = 5 }
+				}
+
+				
+	action = {
+		name = "Military barracks built"
+		trigger = { local_flag = build_barracks }
+		command = { type = province_manpower which = -1 value = 3 }
+		command = { type = local_clrflag which = build_barracks }
+		command = { type = dissent value = 5 }
+				}
+
+
+		}

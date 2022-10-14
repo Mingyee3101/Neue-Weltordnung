@@ -1,0 +1,60 @@
+###################################
+#German Asistance Axis Americas by RedZeppelin
+###################################
+#8001821 - Argentina has turned Fascist (GER)  
+###################################
+
+event = { id = 8001822
+          random = no
+          country = GER
+
+          date = { day = 18 month = 2 year = 1952 }
+          offset = 24
+          deathdate = { day = 29 month = 9 year = 1953 }
+
+          trigger = { flag = argentine_coup }
+          
+          name = "Argentina has turned Fascist"
+          Desc = "The goverment in Argentina has suddenly turned fascist under Carlos Alberto Pueyrredon and this now presents us with an interesting opportunity. With the current allied embargo we've had shortages of food and other essential raw materials for over a decade but now we could exchange military goods the new goverment in order to both frustrate the Americans, and improve our recourse situation." 
+          Picture = "argentinesupport"
+          style = 2
+
+          action_a = { 
+                     ai_chance = 90
+                     name = "We shall recognise the legitimate govement"
+		     command = { type = relation which = ARG value = 50 }
+		     command = { type = relation which = USA value = -50 }
+                     }
+
+          action_b = { 
+                     ai_chance = 10
+                     name = "This isn't worth our time"
+		     command = { type = relation which = ARG value = -30 }
+		     command = { type = relation which = USA value = 20 }
+                   }
+}
+event = { id = 8001823
+          random = no
+          country = GER
+          
+          name = "Argentina has requested assistance"
+          Desc = "The goverment in Argentina has made an offer that in exchange for military goods, we'll get the raw materials we so desperately need." 
+          Picture = "Convoys"
+          style = 2
+
+          action_a = { 
+                     ai_chance = 85
+                     name = "This is an offer we can't refuse"
+		     command = { type = relation which = ARG value = 60 }
+		     command = { type = relation which = USA value = -50 }
+		     command = { type = trigger which = 8000822 }
+	             command = { type = setflag which = german_assistance }
+                     }
+
+          action_b = { 
+                     ai_chance = 15
+                     name = "We can't afford it"
+		     command = { type = relation which = ARG value = -70 }
+		     command = { type = relation which = USA value = 10 }
+                   }
+}

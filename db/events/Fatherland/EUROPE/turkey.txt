@@ -1,0 +1,2641 @@
+event = {
+	id = 8015501
+	country = TUR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 45076 } # Mehmet Recep Peker
+	}
+}
+
+event = {
+	id = 8015502
+	country = TUR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 45077 } # Hassan Saka
+	}
+}
+
+event = {
+	id = 8015503
+	country = TUR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 45078 } # Mehmet G?naltay
+	}
+}
+
+event = {
+	id = 8015504
+	country = TUR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 45075 } # Mahmud Celal Bayar
+		command = { type = headofgovernment which = 45079 } # Adnan Menderes
+	}
+}
+
+event = {
+	id = 8015505
+	country = TUR
+
+	name = EVT_8015505_NAME
+	desc = EVT_8015505_DESC
+	picture = "nwo\cemal_guersel"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1960 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = EVT_8015505_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 45200 } # Cemal Gursel
+		command = { type = headofgovernment which = 45201 } # Cemal Gursel
+	}
+}
+
+event = {
+	id = 8015506
+	country = TUR
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1961 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 45200 } # Cemal Gursel
+		command = { type = headofgovernment which = 45002 } # Mustafa Ismet In?n?
+	}
+}
+
+#########################################################################
+# Formation of the Oriental Entente
+#########################################################################
+
+event = {
+	id = 1000452
+	random = no
+	country = TUR
+	trigger = { NOT = { war = { country = TUR } } }
+
+	date = { day = 08 month = july year = 1954 }
+	
+	name = "EVT_1000452_NAME"
+	desc = "EVT_1000452_DESC"
+	style = 2
+	picture = "turkey_flag"
+	action = {
+		name = "1000452a"
+		ai_chance = 100
+		command = { type = relation which = IRQ value = 10 }
+		command = { type = relation which = PER value = 10 }
+		command = { type = relation which = AFG value = 10 }
+		command = { type = trigger which = 1000453 }
+		command = { type = trigger which = 1000454 }
+		command = { type = trigger which = 1000455 }
+	}
+}
+
+event = {
+	id = 1000453
+	random = no
+	country = IRQ
+
+	name = "EVT_1000452_NAME"
+	desc = "EVT_1000452_DESC"
+	style = 2
+	picture = "turkey_flag"
+	action_a = {
+		name = "1000452a"
+		ai_chance = 99
+		command = { type = relation which = TUR value = 10 }
+		command = { type = non_aggression which = IRQ where = TUR }
+	}
+	action_b = {
+		name = "ACTION_NAME_NO"
+		ai_chance = 1
+		command = { }
+	}
+}
+
+event = {
+	id = 1000454
+	random = no
+	country = PER
+
+	name = "EVT_1000452_NAME"
+	desc = "EVT_1000452_DESC"
+	style = 2
+	picture = "turkey_flag"
+	action_a = {
+		name = "1000452a"
+		ai_chance = 99
+		command = { type = relation which = TUR value = 10 }
+		command = { type = non_aggression which = PER where = TUR }
+	}
+	action_b = {
+		name = "ACTION_NAME_NO"
+		ai_chance = 1
+		command = { }
+	}
+}
+event = {
+	id = 1000455
+	random = no
+	country = AFG
+
+	name = "EVT_1000452_NAME"
+	desc = "EVT_1000452_DESC"
+	style = 2
+	picture = "turkey_flag"
+	action_a = {
+		name = "1000452a"
+		ai_chance = 99
+		command = { type = relation which = TUR value = 10 }
+		command = { type = non_aggression which = AFG where = TUR }
+	}
+	action_b = {
+		name = "ACTION_NAME_NO"
+		ai_chance = 1
+		command = { }
+	}
+}
+
+event = {
+	id = 13402801
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR 
+	}
+
+	name = "Anatolian Railways"
+	desc = "By spurring the creation of an Anatolian Railway, we can better link our core lands and ensure for the efficient transportation of goods and troops." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = march year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = {  }
+	}
+}
+
+
+
+event = {
+   id = 13402803                    
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+		control = { province = 1068 data = TUR }  
+	}
+	date = { day = 10 month = april year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = February year = 1952 }
+
+	name = "Zonguldak coal fields"
+	desc = "The main deposits of coal are located in the north of the country in the Zonguldak basin. By the beginning of 1915, the Turkish Empire was able to organize permanent coal mining at this field."
+	style = 2
+	picture = "TUR1"
+
+		action = {
+		name = "Great!"
+                command = { type = add_prov_resource which = 1068 value = 10 where = energy }
+		}
+	}
+
+
+event = {
+   id = 13402804                    
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+		control = { province = 1068 data = TUR }
+	}
+
+	date = { day = 10 month = april year = 1954 } 
+	offset = 10
+	deathdate = { day = 29 month = February year = 1962 }  
+
+	name = "New Zonguldak deposits"
+	desc = "The main deposits of coal are located in the north of the country in the Zonguldak basin. By the beginning of 1915, the Turkish Empire was able to organize permanent coal mining at this field."
+	style = 2
+	picture = "TUR1"
+
+
+	action = {
+	name = "Great work!"
+                command = { type = add_prov_resource which = 1068 value = 7 where = energy }
+		}
+	}
+
+
+
+event = {
+   id = 13402805                    
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+	}
+	date = { day = 10 month = april year = 1956 } 
+	offset = 10
+	deathdate = { day = 29 month = December year = 1962 }  
+
+	name = "Modernization of the Turkish mines."
+	desc = "In 1924, the government allocated enormous funds to modernize the coal mines. Also, new imported equipment for miners was purchased."
+	style = 2
+	picture = "TUR1"
+
+		
+	action = {
+		name = "Great" 
+		command = { type = add_prov_resource which = -4 value = 5 where = energy }
+                command = { type = add_prov_resource which = -4 value = 5 where = energy }
+                command = { type = add_prov_resource which = -4 value = 5 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 5 where = rare_materials }
+	}
+	
+}
+
+
+
+event = {
+   id = 13402806                   
+    random = no
+    country = TUR
+
+	trigger = {
+                exists = TUR
+	}
+	date = { day = 10 month = April year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = December year = 1962 }
+
+	name = "Enhanced coal mining"
+	desc = "Thanks to the modernization of the mines and new imported equipment, the country managed to achieve a record pace in coal mining."
+	style = 2
+	picture = "TUR1"
+
+
+		action = {
+		name = "Great"
+                command = { type = add_prov_resource which = -4 value = 5 where = energy }
+                command = { type = add_prov_resource which = -4 value = 5 where = energy }
+                command = { type = add_prov_resource which = -4 value = 5 where = energy }
+                command = { type = add_prov_resource which = -4 value = 5 where = energy }
+                command = { type = add_prov_resource which = -4 value = 5 where = energy }
+		}
+	}
+
+
+
+event = {
+   id = 13402807                  
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+ 	        control = { province = 1065 data = TUR }
+
+	}
+	date = { day = 10 month = april year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }  
+
+	name = "Kastamonu coal bassin"
+	desc = "A small coal basin in the area of Kastamonu includes 3 coal-bearing areas. In the late 1950s, thanks to foreign capital, it was possible to carry out technical re-equipment of coal mines. The growth of coal production has become more noticeable."
+	style = 2
+	picture = "TUR1"
+
+
+		action = {
+		name = "Ok"
+                command = { type = add_prov_resource which = 1065 value = 5 where = energy }
+		}
+	}
+
+event = {
+   id = 13402808                   
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+	}
+	date = { day = 10 month = april year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	name = "Improved coal production"
+	desc = "Foreign direct investment in the mining industry has led to an increase in coal production in some mines. Foreign experts also helped significantly to get this result."
+	style = 2
+	picture = "TUR1"
+
+
+		action = {
+		name = "Ok"
+                command = { type = add_prov_resource which = -4 value = 4 where = energy }
+                command = { type = add_prov_resource which = -4 value = 5 where = energy }
+                command = { type = add_prov_resource which = -4 value = 4 where = energy }
+		}
+	}
+
+
+
+
+event = {
+   id = 13402809                 
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+	}
+	date = { day = 10 month = april year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }  
+	name = "New oil fields"
+	desc = "In 1939, Turkish investors strongly recommended to allocate funds for the exploration of new oil fields. The developing economy of the empire requires more and more oil."
+	style = 2
+	picture = "TUR1"
+		
+	action = {
+		name = "Good idea" 
+		command = { type = add_prov_resource which = -4 value = 2 where = oil }
+                command = { type = add_prov_resource which = -4 value = 2 where = oil }
+                command = { type = add_prov_resource which = -4 value = 2 where = oil }
+	}
+	
+}
+
+
+
+event = {
+   id = 13402810                  
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+	}
+	date = { day = 10 month = April year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1962 }  
+
+	name = "Turkish magnesite"
+	desc = "The Turkish Empire has large reserves of magnesite. The first works on the search for magnesite in the empire began in 1808. The production of magnesite began as early as 1929 and from that moment it gained rapid growth rates."
+	style = 2
+	picture = "TUR1"
+		
+	action = {
+		name = "Great" 
+		command = { type = add_prov_resource which = -4 value = 5 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 5 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 5 where = rare_materials }
+	}
+}
+
+
+
+event = {
+   id = 13402811                   
+    random = no
+    country = TUR
+
+	trigger = {
+                exists = TUR
+                control = { province = 1064 data = TUR }
+	}
+	date = { day = 10 month = april year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 } 
+
+	name = "Raman oil fields"
+	desc = "One of the first oil fields discovered by Turkish geologists was the Raman field. Explored field was in 1940. Oil production on it exceeds 4,000 barrels daily."
+	style = 2
+	picture = "TUR1"
+
+		action = {
+		name = "Turkish treasure"
+                command = { type = add_prov_resource which = 1064 value = 12 where = oil }
+		}
+	}
+
+
+
+event = {
+   id = 13402812                    
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR 
+	}
+	date = { day = 10 month = april year = 1955 }  
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 } 
+
+	name = "ISDMR"
+	desc = "Research work in the field of geology and mining is carried out by the Institute for the Study and Development of Mineral Resources. The Institute is located in Ankara, founded in 1935."
+	style = 2
+	picture = "TUR1"
+
+	action = {
+		name = "Well done"
+		command = { type = research_mod value = 1 }
+		command = { type = money value = -290 }
+		command = { type = supplies value = -480 }
+	}
+}
+
+event = {
+   id = 13402813                   
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+	}
+	date = { day = 10 month = April year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }  
+
+	name = "Turkish iron ore"
+	desc = "In Turkey, several hundred known deposits of iron ore, of which more than 100 explored. Ores contain impurities of titanium, vanadium, manganese, and others. Since 1939, the Turkish Empire has been actively increasing iron mining."
+	style = 2
+	picture = "TUR1"
+		
+	action = {
+		name = "Great" 
+		command = { type = add_prov_resource which = -4 value = 2 where = metal }
+                command = { type = add_prov_resource which = -4 value = 2 where = metal }
+                command = { type = add_prov_resource which = -4 value = 2 where = metal }
+                command = { type = add_prov_resource which = -4 value = 2 where = metal }
+	}
+}
+
+
+
+
+event = {
+   id = 13402814                   
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+	}
+	date = { day = 10 month = april year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1962 } 
+
+	name = "New boron ore deposits"
+	desc = "In terms of boron ore reserves, the Turkish Empire is ranked 1st among developed capitalist and developing countries. In 1934, even more boron ore deposits were discovered."
+	style = 2
+	picture = "TUR1"
+		
+	action = {
+		name = "Great" 
+                command = { type = add_prov_resource which = -4 value = 2 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 2 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 2 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 2 where = rare_materials }
+	}
+}
+
+event = {
+   id = 13402815                   
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+	}
+	date = { day = 10 month = April year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1962 }  
+
+	name = "New copper ore deposits"
+	desc = "In the Turkish Empire, numerous deposits of copper ores are known. Most of them are located in the north of the empire. In 1926, new deposits were discovered."
+	style = 2
+	picture = "TUR1"
+		
+	action = {
+		name = "Great" 
+                command = { type = add_prov_resource which = -4 value = 2 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 2 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 2 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 2 where = rare_materials }
+	}
+}
+
+event = {
+   id = 13402816                   
+    random = no
+    country = TUR
+
+	trigger = {
+		exists = TUR
+	}
+	date = { day = 10 month = April year = 1957 }  
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }  
+
+	name = "Turkish bauxite"
+	desc = "In 1937, more than 35 bauxite deposits were discovered by Turkish geologists. Their deposits were later expanded."
+	style = 2
+	picture = "TUR1"
+		
+	action = {
+		name = "Well done!" 
+                command = { type = add_prov_resource which = -4 value = 2 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 2 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 1 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 1 where = rare_materials }
+                command = { type = add_prov_resource which = -4 value = 1 where = rare_materials }
+	}
+} 
+
+
+event = {
+ id = 13402817
+ random = no
+ country = TUR
+ style = 2
+
+
+ trigger = {
+ exists = TUR
+  }
+
+ name = "Purge in the Turkish government"
+ desc = "Under the influence of nationalists, the Turkish government was forced to purge personnel from possible dangerous elements. Inefficient managers, political adventurers, and some other corrupt leaders were ousted from the government. Some possible spies and authoritative oppositionists were arrested."
+
+picture = "TUR1"
+
+ date = { day = 10 month = august year = 1950 }
+ offset = 10
+ deathdate = { day = 29 month = december year = 1952 }
+
+
+ action = {
+ name = "We need it"
+ command = { type = dissent value = 4 }
+
+  }
+}
+
+
+
+event = {
+ id = 13402818
+ random = no
+ country = TUR
+ style = 2
+
+trigger = {
+  exists = TUR
+}
+
+ name = "New taxes for farmers"
+ desc = "Due to the difficult economic situation in the empire and the stagnation in industrial development, the government had to increase taxes for the peasants of the Turkish Empire to find money to cover expenses."
+
+picture = "TUR1"
+
+        date = { day = 10 month = april year = 1950 }
+        offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+action = {
+ name = "Ok"
+command = { type = dissent value = 2 }
+command = { type = free_money value = 0.3 }
+command = { type = free_supplies value = 0.3 }
+  }
+ }
+
+
+
+event = {
+ id = 13402820
+ random = no
+ country = TUR
+ style = 2
+trigger = {
+  exists = TUR
+}
+ name = "Poverty among the peasants"
+ desc = "In 1922, an increase in poverty among the peasants of the Turkish Empire was recorded. This is largely due to increased taxes, which supposedly should increase the economic reserves of the empire."
+
+picture = "TUR1"
+
+        date = { day = 10 month = june year = 1952 }
+        offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+action = {
+ name = "Government will find solution"
+command = { type = dissent value = 5 }
+  }
+ }
+
+
+event = {
+	id = 13402823	
+	random = no
+        country = TUR   
+	trigger = { 
+  				
+                exists = TUR
+	}
+	name = "Turkish light industry"
+	desc = "In 1925, the Turkish government began to carry out the first projects for the development of the light industry of the empire. This was made possible thanks to the money that the empire received as a result of successful trade in the region and some countries in Europe and Asia." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = july year = 1955 }
+        offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+         name = "Great"
+	command = { type = construct which = ic where = -4 value = 1 }
+		}	
+}
+
+
+
+event = {
+	id = 13402824
+	random = no
+        country = TUR  
+	trigger = { 
+                exists = TUR
+                
+	}
+	name = "Turkish agriculture reform"
+	desc = "In 1926, a deep modernization of the Turkish Empire�s agriculture was carried out. New farm plots were built, new tractor plants were opened, and new harvesters were purchased. New growing tools will bring greater profits to the economy." 
+	style = 2
+	picture = "TUR1" 
+    
+        date = { day = 10 month = april year = 1956 }
+        offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+                name = "Sounds good!"
+                command = { type = industrial_modifier which = supplies value = 0.5 }
+                command = { type = industrial_modifier which = money value = 1 }
+                }
+                }
+
+
+
+event = {
+	id = 13402825	
+	random = no
+        country = TUR   
+	trigger = { 
+                exists = TUR
+	}
+	name = "New educational institutions"
+	desc = "In 1927 began the new modernization in education. During this time, new schools were opened, more than 200 gymnasiums, and 4 universities." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = october year = 1957 }
+        offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+                name = "Great"
+                command = { type = dissent value = -1 }
+                command = { type = research_mod value = 0.5 }
+                }
+                }
+
+
+event = {
+	id = 13402826	
+	random = no
+        country = TUR   
+	trigger = {
+                exists = TUR
+
+	}
+	name = "Turkish worker's towns"
+	desc = "In 1928, the Turkish government began a program to build new worker's towns. Specialists from Germany and some other European countries were invited as architects. Towns were built at factories and plants with all the infrastructure." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = september year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+                name = "Great"
+		command = { type = dissent value = -2 }
+                command = { type = industrial_modifier which = supplies value = 0.5 }
+                command = { type = industrial_modifier which = total value = 0.5 }
+
+
+                }
+                }
+
+
+
+event = {
+	id = 13402827	
+	random = no
+        country = TUR   
+	trigger = {
+                exists = TUR
+	}
+	name = "Support for the textile industry."
+	desc = "Due to the difficult economic situation in the Turkish Empire, in 1929 the government provided very limited economic support for the textile industry. The textile industry is one of the most important for the Turkish Empire." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = june year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+                name = "Ok then"
+                command = { type = money value = -90 }
+		command = { type = industrial_modifier which = supplies value = 1 }
+                command = { type = industrial_modifier which = total value = 0.5 } 
+		command = { type = dissent value = -2 }
+                }
+                }
+
+event = {
+	id = 13402828	
+	random = no
+        country = TUR  
+	trigger = {
+                exists = TUR
+	}
+	name = "Turkish food industry in 1950"
+	desc = "State support of sugar, distillery and canning industry. One of the most developed industries of the Turkish Empire. However, in 1950, due to the financial crisis, the government came to give limited economic support." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = march year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+                name = "Ok"
+                command = { type = money value = -300 }
+		command = { type = construct which = ic where = -4 value = 1 }
+                }
+                }
+
+
+event = {
+	id = 13402829	
+	random = no
+        country = TUR
+        trigger = {
+                exists = TUR
+	}  
+
+	name = "New power plants"
+	desc = "In 1931, a solemn launch of new power plants. Turkish industry will receive additional opportunities to overcome the financial crisis." 
+	style = 2
+	picture = "TUR1"
+
+        date = { day = 10 month = july year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 } 
+
+	action = {
+                name = "Ok"
+                command = { type = add_prov_resource which = -4 value = 10 where = energy }
+                command = { type = industrial_modifier which = total value = 3 }
+                }
+                }
+
+
+
+event = {
+	id = 13402830	
+	random = no
+        country = TUR   
+	trigger = {
+                exists = TUR
+	}
+	name = "Turkish lubricants"
+	desc = "In 1950, a decree was issued on the organization of the production of lubricants from oil substitutes. In 1932, the problem was solved by opening the production of lubricants in Ankara." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = june year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+                name = "OK"
+                command = { type = supply_dist_mod value = 2 } 
+                command = { type = repair_mod value = 2 } 
+                }
+                }
+
+
+
+event = {
+	id = 13402831	
+	random = no
+        country = TUR   
+	trigger = {
+                exists = TUR
+	}
+	name = "Army tractors"
+	desc = "In the middle of the 1950s, the first Turkish tractors were produced which were used by the Turkish army as an artillery tractor for large caliber guns." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = september year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action_a = {
+                name = "Great news!"
+		command = { type = speed which = super_heavy_artillery value = 1 }
+                command = { type = money value = -100 }
+	  	command = { type = muddy_move which = land value = 1 } 
+	 	command = { type = mountain_move which = land value = 2 } 
+	  	command = { type = forest_move which = land value = 2 } 
+	  	command = { type = urban_move which = land value = 2 }
+                }
+                }
+
+
+
+event = {
+	id = 13402832	
+	random = no
+        country = TUR   
+	trigger = { 
+                exists = TUR
+	}
+	name = "New Turkish armored cars"
+	desc = "In 1934, the idea of production in the Turkish Empire armored car. The order came from the Turkish cavalry, the French Panar 178 was chosen to play the role of reconnaissance machine for cavalry units." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = june year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+          name = "Begin production"
+                command = { type = build_time which = armored_car when = on_upgrade where = relative value = -5 }
+		}
+
+	
+                }
+
+
+
+event = {
+	id = 13402833	
+	random = no
+        country = TUR   
+	trigger = {
+
+        exists = TUR 
+
+	}
+	name = "Modernized army unifrom"
+	desc = "In 1935, the Turkish army uniforms were modernized. Helmets from Germany were purchased and made. New, more comfortable boots were sewn. New belts were also made allowing the soldier to have more ammunition. There was also a reform epaulet. The shoulder straps were now more like German ones." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = august year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+        name = "Modernize"
+		command = { type = metalpool value = -700 }
+                command = { type = money value = -300 }
+                command = { type = morale which = land value = 0.5 }
+		}
+	
+                }
+
+
+event = {
+	id = 13402834	
+	random = no
+        country = TUR   
+	trigger = { 
+
+                exists = TUR
+
+	}
+	name = "Newest rifles for the army"
+	desc = "In 1936, the Turkish Empire purchased rifles for the Turkish army. More than 5,000,000 rifles were purchased from Germany, Italy and Czechoslovakia. In the near future, the Turkish Empire will manufacture its own rifles." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = april year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+               name = "Purchase"
+                command = { type = money value = -1500 }
+                command = { type = morale which = land value = 1 }
+                command = { type = max_organization which = land value = 1 }
+
+		}
+
+	
+                }
+				
+
+
+
+
+
+event = {
+ id = 13402835
+ random = no
+ country = TUR
+ style = 2
+
+ trigger = {
+                exists = TUR 
+  }
+ name = "Turkish Army Headquarters"
+ desc = "In 1937, the retraining and modernization of the general staff was carried out. For the modernization of the headquarters, Turkish veterans of the First World War and officers of the Turkish Empire who were trained in Europe were invited."
+
+picture = "TUR1"
+
+ date = { day = 10 month = may year = 1957 }
+ offset = 10
+ deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+                name = "Great"
+                command = { type = max_organization which = land value = 1 }
+		command = { type = add_division value = hq when = 3 }
+                }
+                }
+
+
+
+event = {
+	id = 13402836
+	random = no
+        country = TUR   
+	trigger = { 
+
+		exists = TUR
+	}
+	name = "Turkish military centers"
+	desc = "In 1938, the Turkish government completed the construction of new military centers. These were flight schools, tank schools, artillery training schools and experimental centers. This was done because of growing tensions in Europe." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = november year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }  
+	
+	action = {
+		name = "Great"
+                command = { type = max_organization which = air value = 1 }
+                command = { type = max_organization which = land value = 1 }
+                command = { type = morale which = air value = 1 }
+                command = { type = morale which = land value = 1 }
+                command = { type = industrial_modifier which = total value = 0.3 } 
+                command = { type = supplies value = -70 } 
+	}
+}
+
+
+
+event = {
+	id = 13402837
+	random = no
+        country = TUR   
+	trigger = { 
+		exists = TUR
+	}
+	name = "New military schools"
+	desc = "In the new military schools, hundreds of specialized Turkish cadets were trained. The value of the flight and tank schools was that students could get acquainted with the latest types of aircraft and tanks." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = june year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+	
+	action = {
+		name = "Good"
+                command = { type = morale which = air value = 1 }
+                command = { type = morale which = land value = 1 }
+                command = { type = supplies value = -50 }  
+	}
+}
+
+
+
+event = {
+	id = 13402838  
+	country = TUR
+	trigger = {
+		exists = TUR
+	}	
+	name = "Border service reform"
+	desc = "At the end of 1920, the Turkish border service was reorganized. New checkpoints were opened, the customs service was expanded. A new fee agreement was also signed with a number of states." 
+	style = 2
+	picture = "TUR1"
+	
+	date = { day = 10 month = november year = 1950 }
+	offset = 10
+	deathdate = { day = 28 month = december year = 1952 }
+	
+	action = {
+		name = "Well done"
+                command = { type = industrial_modifier which = money value = 1 }
+                command = { type = money value = 150 } 
+	}
+}
+
+
+
+
+event = {
+	id = 13402839 
+	country = TUR
+	trigger = {
+  		exists = TUR
+	}	
+	name = "New public works policy"
+	desc = "In 1921, the Turkish government approved a new public works policy. It was planned to build new hydropower plants, build new quarries and continue the economic expansion of the cities of the empire." 
+	style = 2
+	picture = "TUR1"
+	
+	date = { day = 10 month = october year = 1951 }
+	offset = 10
+	deathdate = { day = 28 month = december year = 1952 }
+	
+	action = {
+		name = "Empire will work"
+                command = { type = money value = -270 }
+                command = { type = industrial_modifier which = money value = 1 }
+                command = { type = industrial_modifier which = total value = 1 } 
+	}
+	
+	}
+
+
+
+event = {
+	id = 13402840
+	country = TUR
+	trigger = {
+		exists = TUR
+	}	
+	name = "Support for the peasants"
+	desc = "In 1922, the government of the Turkish Empire began a program of economic support for the peasants. The Turkish Empire had financial problems, so the program had a very limited result." 
+	style = 2
+	picture = "TUR1"
+	
+	date = { day = 10 month = september year = 1952 }
+	offset = 10
+	deathdate = { day = 28 month = december year = 1952 }
+	
+	action = {
+		name = "Great"
+                command = { type = dissent value = -2 }
+                command = { type = money value = -170 }
+                command = { type = construct which = ic where = -4 value = 1 }
+                command = { type = industrial_modifier which = supplies value = 1 }
+                command = { type = industrial_modifier which = total value = 0.5 } 
+	}
+}
+
+
+
+event = {
+	id = 13402841
+	country = TUR
+	trigger = {
+		exists = TUR
+	}	
+	name = "Stabilization in foreign trade"
+	desc = "In 1923, the Turkish Empire gained growth in foreign trade. In response, goods came from Europe that the Turkish Empire was already in need of. Oil, coal, salt, agricultural machinery, dishes and so on." 
+	style = 2
+	picture = "TUR1"
+	
+	date = { day = 10 month = august year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+	
+	action = {
+		name = "Great"
+                command = { type = industrial_modifier which = total value = 1 }
+                command = { type = money value = 120 }
+                command = { type = supplies value = 1500 }
+                command = { type = metalpool value = 900 }
+		command = { type = rarematerialspool value = 200 }   
+	}
+}
+
+
+
+event = {
+	id = 13402842
+	country = TUR
+	trigger = {
+  		exists = TUR
+	}	
+	name = "New universities"
+	desc = "In 1924, the Turkish government approved a decree on the creation of new state universities. The Turkish Empire should be the scientific leader in the region." 
+	style = 2
+	picture = "TUR1"
+	
+	date = { day = 10 month = july year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+	
+	action = {
+		name = "Great"
+                command = { type = research_mod value = 1 }
+                command = { type = money value = -180 }
+	}
+}
+
+
+
+
+event = {
+	id = 13402843 
+	country = TUR
+	trigger = {
+                exists = TUR
+	}	
+	name = "Counterintelligence reform"
+	desc = "In 1925, the Turkish counterintelligence was reformed. The task of the unit was to combat terrorism and separatism in the territory of the empire; detection and neutralization of people involved in intelligence activities in favor of foreign states; neutralization of political opponents." 
+	style = 2
+	picture = "TUR1"
+	
+	date = { day = 10 month = april year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+	
+	action = {
+		name = "Great"
+                command = { type = intelligence which = us value = 2 }
+                command = { type = money value = -76 }
+	}
+}
+
+
+
+
+event = {
+	id = 13402844	
+	random = no
+        country = TUR   
+	trigger = {
+ 
+        exists = TUR
+
+	}
+	name = "Artillery modernization"
+	desc = "In 1926, the Turkish Empire bought a license to manufacture some foreign artillery cannons. Production of new artillery established in Ankara. New artillery were equipped with armored trains, armored cars, first tanks and ground forces." 
+	style = 2
+	picture = "TUR1" 
+
+	date = { day = 10 month = january year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+         name = "Begin production"
+                command = { type = supplies value = -600 }
+                command = { type = money value = -150 }
+                command = { type = build_time which = artillery when = on_upgrade where = relative value = -5 }
+                command = { type = max_organization which = land value = 2 }
+		}
+   }
+
+event = {
+id = 13402845	
+random = no
+country = TUR   
+trigger = {
+exists = TUR
+
+	}
+name = "Minor investments"
+desc = "Since 1928, construction of new mines, chemical plants and metallurgical plants for the extraction and processing of boron products, lead, tin, coal, zinc, copper, bismuth, silver and gold began. The sale of metals and ores more than filled the budget of the Turkish Empire."
+style = 2
+picture = "TUR1"
+date = { day = 10 month = february year = 1957 }
+offset = 10
+deathdate = { day = 29 month = december year = 1960 }
+action = {
+name = "Great"
+command = { type = add_prov_resource which = -4 value = 5 where = metal }
+command = { type = add_prov_resource which = -4 value = 10 where = energy }
+command = { type = construct which = ic where = -4 value = 1 }
+command = { type = construct which = infrastructure where = -4 value = 10 }
+}
+
+}
+
+
+event = {
+	id = 13402846
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Turkish fishing industry"
+	desc = "In 1928, the government of the Turkish Empire began to strengthen the development of the fishing industry. Huge fish processing plants were built and new fishing vessels were produced."
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = february year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = supplies value = 3 }
+	}
+}
+
+
+event = {
+	id = 13402847
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Light industry development plan"
+	desc = "The influx of private and state capital became the basis for the development of linght industry in the Turkish Empire"
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = february year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = supplies value = 1 }
+                command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = construct which = ic where = -4 value = 1 }
+	}
+}
+
+
+event = {
+	id = 13402848
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Support for agricultural machinery"
+	desc = "The influx of private and state capital became the basis for the development of agricultural machinery in the Turkish Empire. In the Empire, it was possible to open new plants and start the production of agricultural machinery."
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = february year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = supplies value = 3 }
+	}
+}
+
+
+event = {
+	id = 13402849
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Turkish sea trade"
+	desc = "The inflow of private and state capital became the basis for the development of commercial ports. in the Turkish Empire, new trading berths were modernized and new cargo cranes were installed."
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = february year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = supplies value = 2 }
+	}
+}
+
+
+event = {
+	id = 13402850
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Turkish raw materials industry"
+	desc = "In 1932, Turkish geologists found large deposits of coal and non-ferrous metals. This will help the development of the Turkish industry, given the severe economic crisis."
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = july year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		 command = { type = free_money value = 0.3 }
+                 command = { type = dissent value = -1 }
+                 command = { type = industrial_modifier which = supplies value = 0.5 }
+                 command = { type = industrial_modifier which = total value = 0.5 }
+	}
+}
+
+
+event = {
+	id = 13402851
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Turkish nationalism in 1950s"
+	desc = "The difficult economic situation and social unrest caused a sharp rise in Turkish nationalism. Conditioned by the development of fascism in some European countries. Turkish nationalist parties and military units began to form. It is unclear what will come of this in the future for the Turkish Empire"
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = february year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		 command = {  }
+                 
+	}
+}
+
+
+event = {
+	id = 13402852
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "New radio stations"
+	desc = "In 1934, to alert and promote government regulations in Anatolia, the Turkish government opened new radio stations and radio towers."
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = february year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = money value = -150  }
+    command = { type = dissent value = -2 }
+                 
+	}
+}
+
+
+event = {
+	id = 13402853
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "New educational institutions"
+	desc = "In 1935, a large number of new schools and universities were opened on the territory of the Turkish Empire. This happened because of the exit of the Turkish industry from the crisis and the continuation of financing the scientific industry. Turkish Schools constantly felt a shortage of teachers and textbooks"
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = february year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = money value = -70  }
+    command = { type = dissent value = -1 }
+    command = { type = research_mod value = 1 }
+	}
+}
+
+
+event = {
+	id = 13402854
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "End of the economic recession"
+	desc = "By 1936, the Turkish industry was completely out of the crisis and began to grow steadily. New enterprises were created, production technologies were improved. Moreover, the Turkish Empire became a more powerful player in regional trade."
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = november year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "What a great news!"
+		command = { type = construct which = ic where = -4 value = 1 }
+command = { type = industrial_modifier which = total value = 4 }
+command = { type = gain_tech which = -1 }
+	}
+}
+
+
+event = {
+	id = 13402855
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Turkish union of industrialists"
+	desc = "On April 12, 1937, a union of merchants, industrialists and artisans of the Turkish Empire was created."
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = april year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Great"
+		command = { type = industrial_modifier which = total value = 5 }
+command = { type = money value = -60 }
+	}
+}
+
+
+event = {
+	id = 13402856
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Purchase of light tanks"
+	desc = "In 1938, the government of the Turkish Empire began to think about strengthening the army. For this, negotiations began on the purchase of German and some British light tanks. It was also planned to buy some weapons from Czechoslovakia."
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = december year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Great"
+		command = { type = add_division which = infantry when = -1 where = light_armor_brigade }
+command = { type = money value = -100 }
+	}
+}
+
+
+event = {
+	id = 13402857
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Turkish army reform"
+	desc = "In 1939, a large-scale reform was carried out to modernize the Turkish army. The officers were modernized and the army structure was expanded. In fact, the reform was carried out due to the difficult political situation in Europe."
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Great"
+		command = { type = max_organization which = air value = 1 }
+                command = { type = max_organization which = land value = 1 }
+                command = { type = morale which = air value = 1 }
+                command = { type = morale which = land value = 1 }
+	}
+}
+
+event = {
+id = 13402858
+random = no
+country = TUR
+style = 2
+
+trigger = {
+exists = TUR
+}
+
+name = "Government intervention"
+desc = "With at least partial political stabilisation finally in place, we are prepared to enact a series of intensive reforms, aimed at restoring pre-crisis industrial power."
+picture = "TUR1"
+
+date = { day = 10 month = june year = 1954 }
+offset = 10
+deathdate = { day = 29 month = december year = 1959 }
+
+action = {
+name = "Excellent!"
+command = { type = peacetime_ic_mod value = 5 }
+command = { type = dissent value = -1 }
+command = { type = money value = -50 }
+}
+}
+
+event = {
+id = 13402859
+random = no
+country = TUR
+style = 2
+
+trigger = {
+exists = TUR
+}
+
+name = "Further stabilisation"
+desc = "Thanks to renewed interest of foreign companies our economy continues to regain pre-crisis efficiency."
+picture = "TUR1"
+
+date = { day = 10 month = january year = 1955 }
+offset = 10
+deathdate = { day = 29 month = december year = 1959 }
+
+action = {
+name = "Keep it up!"
+command = { type = peacetime_ic_mod value = 3 }
+command = { type = money value = -50 }
+command = { type = dissent value = -1 }
+}
+}
+
+
+
+
+event = {
+	id = 13402860
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Modernization of the Turkish agriculture"
+	desc = "During the last several months, our food and agriculture companies have worked hard with the Turkish government with the aim of modernizing their agriculture. The Turkish Empire is slowly becoming our biggest foreign trade partner." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = industrial_modifier which = supplies value = 0.5 }
+                command = { type = relative_manpower value = 2 }
+	}
+}
+
+
+
+
+event = {
+	id = 13402861
+	random = no
+	country = TUR	
+	trigger = {
+
+         exists = TUR
+       	
+			}
+
+	name = "Great rearmament. 1936"
+	desc = "According to the land army rearmament plan, new infantry divisions were formed, equipped with the latest weapons. According to the government's plan, the formation of special divisions will continue until 1938"
+	style = 2
+	picture = "TUR1"
+
+        date = { day = 10 month = august year = 1956 }
+        offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Great"
+		command = { type = add_division value = infantry when = 4 where = artillery  }
+                command = { type = add_division value = infantry when = 4 where = artillery  }
+		command = { type = add_division value = infantry when = 4 where = artillery  }
+		command = { type = manpowerpool value = 5 }
+		}
+	}
+
+event = {
+	id = 13402862
+	random = no
+	country = TUR	
+	trigger = {
+
+            exists = TUR
+	
+			}
+
+	name = "Great rearmament. 1937"
+	desc = "According to the land army rearmament plan, new infantry divisions were formed, equipped with the latest weapons. According to the government's plan, the formation of special divisions will continue until 1938"
+	style = 2
+	picture = "TUR1"
+
+        date = { day = 10 month = august year = 1957 }
+        offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Great"
+		command = { type = add_division value = bergsjaeger when = 4 where = engineer }
+		command = { type = add_division value = bergsjaeger when = 4 where = engineer }
+		command = { type = add_division value = infantry when = 5 where = armored_car }
+		command = { type = manpowerpool value = 5 }
+		}
+	}
+
+event = {
+	id = 13402863
+	random = no
+	country = TUR	
+	trigger = {
+
+           exists = TUR
+
+			}
+
+	name = "Great rearmament. 1938"
+	desc = "According to the land army rearmament plan, new infantry divisions were formed, equipped with the latest weapons. According to the government's plan, the formation of special divisions will continue until 1938"
+	style = 2
+	picture = "TUR1"
+
+        date = { day = 10 month = august year = 1958 }
+        offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Great"
+		command = { type = add_division value = infantry when = 5 where = anti_air }
+		command = { type = add_division value = infantry when = 5 where = anti_air }
+		command = { type = add_division value = infantry when = 5 where = armored_car }
+		command = { type = manpowerpool value = 15 }
+		}
+	}
+
+
+
+
+event = {
+    id = 13402864
+    random = no
+    country = TUR
+	trigger = {
+                  exists = TUR
+        }
+	name = "Administrative reorganization"  
+	desc = "In 1933, in the administrative and political sphere, there was a complete reorganization of officials and regional politicians. Less efficient officials left the political scene. This was done to successfully continue the modernization of the empire."
+	style = 2
+	picture = "TUR1"
+
+        date = { day = 10 month = may year = 1953 }
+        offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+    action = {
+        name = "Interesting"
+       	command = { type = dissent value = -1 }
+       command = { type = domestic which = defense_lobby value = 1 }
+
+	}
+}
+
+
+
+event = {
+    id = 13402865
+    random = no
+    country = TUR
+	trigger = {
+
+        exists = TUR
+                    }
+
+	name = "Development of motor transport"  
+	desc = "1932 was a significant year for the development of motor transport in the empire. A huge number of cars were produced or purchased. Also, in more than 22 cities, the bus network was improved."
+	style = 2
+	picture = "TUR1"
+
+        date = { day = 10 month = november year = 1952 }
+        offset = 10
+	deathdate = { day = 29 month = december year = 1959 }  
+
+        action = {
+        name = "Great"
+                command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = industrial_modifier which = supplies value = 0.5 } 
+                command = { type = dissent value = -1 }
+                command = { type = tc_mod value = 2 }
+                command = { type = supply_dist_mod value = 2 }
+	}
+}
+
+
+
+
+event = {
+	id = 13402866
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Bureaucratic reforms"
+	desc = "Turkish Bureaucracy is a place where hopes and dreams go to die. We cannot hope to rejuvenate the Empire without fixing our corrupt and sluggish bureaucracy." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+                command = { type = dissent value = -2 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 13402867
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Administrative reforms"
+	desc = "It is no secret that our methods of administration are behind the times. We must take steps to ensure better administration by reassessing the wages of civil servants, switching to the metric system and adopting the Standard Turkish script as proposed by our academic institutions." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -2 }
+                command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 13402868
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Stuggle against opposition"
+	desc = "We did not find our people on the streets. We cannot allow these 'opposition' groups to poison their minds with Western propaganda" 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = 4 }
+                command = { type = domestic which = freedom value = -2 }
+	}
+}
+
+
+
+
+event = {
+	id = 13402869
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Gendarmerie reform"
+	desc = "The Turkish Gendarmerie is a rural police force nearly a hundred years old, and yet it is too unorganised and under-equipped to fulfil even its basics duties. Channelling more officers and funding into the Gendarmerie Command should greatly improve their capabilities." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -3 }
+	}
+}
+
+
+event = {
+	id = 13402870
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Legal reforms"
+	desc = "Our legal code Mecelle is always in the process of improvement. We could focus additional efforts to this area of reform to ensure that justice is always served quickly and decisively." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+                command = { type = dissent value = -2 }
+		command = { type = research_mod value = 0.3 }
+	}
+}
+
+
+
+event = {
+	id = 13402871
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Anatolian factories"
+	desc = "While our major cities are important centres of production with modern civilian factories, Anatolia is curiously devoid of such facilities. We must ensure the economic participation of the entire Turkish nation in our successful revival" 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+                command = { type = industrial_modifier which = total value = 1 }
+                command = { type = industrial_modifier which = supplies value = 1 }
+		command = { type = construct which = ic where = -4 value = 1 }
+                command = { type = construct which = ic where = -4 value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 13402872
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Training and Doctrine Schools Command"
+	desc = "The military doctrines that defined ground combat in the Weltkrieg are outdated. We must put our greatest minds to the task of shaping the military thought of tomorrow." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = max_organization which = air value = 1 }
+                command = { type = max_organization which = land value = 1 }
+                command = { type = morale which = air value = 1 }
+                command = { type = morale which = land value = 1 }
+                command = { type = research_mod value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 13402873
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Training and Doctrine Schools Command"
+	desc = "The military doctrines that defined ground combat in the Weltkrieg are outdated. We must put our greatest minds to the task of shaping the military thought of tomorrow." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = max_organization which = air value = 1 }
+                command = { type = max_organization which = land value = 1 }
+                command = { type = morale which = air value = 1 }
+                command = { type = morale which = land value = 1 }
+                command = { type = research_mod value = 1 }
+ 
+	}
+}
+
+
+
+event = {
+	id = 13402874
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Judicial reforms"
+	desc = "The independence of our judges safeguards every person's right to have their case decided solely on the basis of law, evidence and facts, without any improper influence. A well-functioning judiciary is therefore an essential requirement for fair and consistent administration of justice." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -3 }
+	}
+}
+
+
+
+event = {
+	id = 13402875
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Schools of Agriculture"
+	desc = "We can speed up the spread of new farming technologies by establishing schools of agriculture in all corners of our Empire." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = supplies value = 1 }
+                command = { type = industrial_modifier which = total value = 1 }
+                command = { type = research_mod value = 0.5 }
+	}
+}
+
+
+
+event = {
+	id = 13402876
+	random = no
+	country = TUR
+
+	trigger = {
+		
+	exists = TUR
+	}
+
+	name = "Land Reform of 1931"
+	desc = "An unpopular measure, but a necessary one nonetheless. We must redistribute the farmlands in our Empire. The ancient T?mar system has degenerated badly, and needs to be replaced by scientific allocation of farming lands to people capable of actually farming it." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = supplies value = 1 }
+                command = { type = industrial_modifier which = total value = 1 }
+                command = { type = relative_manpower value = 5 }
+	}
+}
+
+
+
+event = {
+	id = 13402877
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Education Reforms. PH I"
+	desc = "Reforming the education system on all levels, from the elementary schools to universities and traditional religious institutions, will help our nation regain its strength." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                command = { type = research_mod value = 0.5 }
+	}
+}
+
+
+
+event = {
+	id = 13402878
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Education Reforms. PH II"
+	desc = "Reforming the education system on all levels, from the elementary schools to universities and traditional religious institutions, will help our nation regain its strength." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                command = { type = research_mod value = 0.5 }
+	}
+}
+
+
+
+event = {
+	id = 13402879
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Expand the Steel Industry"
+	desc = "Reforming the education system on all levels, from the elementary schools to universities and traditional religious institutions, will help our nation regain its strength." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 3 }
+                command = { type = industrial_modifier which = supplies value = 3 }   
+	}
+}
+
+
+
+event = {
+	id = 13402880
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Central Bank"
+	desc = "Ensuring the stability of the central bank will go a long way in ensuring the stability of our currency and consumer satisfaction." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = free_money value = 0.5 }
+                command = { type = industrial_modifier which = total value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 13402881
+	random = no
+	country = TUR
+
+	trigger = {
+		
+	exists = TUR
+	}
+
+	name = "Robert College"
+	desc = "Founded in 1863 by an American philanthropist and an American missionary, Robert College has grown to become the top institution of higher education within the nation. By ensuring the funding of the university alongside staffing it with qualified personnel, we can allow for the greater educational development of our citizenry." 
+	style = 2
+	picture = "TUR1"
+
+	date = { day = 10 month = january year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                command = { type = research_mod value = 2 }
+	}
+}
+
+
+
+event = {
+	id = 13402882
+	random = no
+	country = TUR
+
+	trigger = {
+		
+		exists = TUR
+	}
+
+	name = "Anatolian Railways"
+	desc = "By spurring the creation of an Anatolian Railway, we can better link our core lands and ensure for the efficient transportation of goods and troops." 
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                command = { type = industrial_modifier which = total value = 1 }
+                command = { type = industrial_modifier which = supplies value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 13402883
+	random = no
+	country = TUR
+
+	decision = {
+		exists = GER
+		exists = TUR
+		
+	}
+
+	decision_trigger = {
+ 
+                exists = GER
+		exists = TUR
+           
+
+                 NOT = {
+                       ispuppet = TUR
+                       ispuppet = GER
+                       participant = { country = TUR value = 1 }
+                       participant = { country = TUR value = 2 }
+                       participant = { country = TUR value = 3 }
+                       war = { country = TUR country = GER }
+                       war = { country = TUR country = ITA }
+ 
+		        }
+		
+	}
+	
+	trigger = {
+
+
+                exists = GER
+		exists = TUR
+           
+
+                 NOT = {
+                       ispuppet = TUR
+                       ispuppet = GER
+                       participant = { country = TUR value = 1 }
+                       participant = { country = TUR value = 2 }
+                       participant = { country = TUR value = 3 }
+                       war = { country = TUR country = GER }
+                       war = { country = TUR country = ITA }
+ 
+		        }
+		
+		
+	}
+
+	name = "Turkishs and pact of steel"
+	desc = "In the summer of 1939, the Turkish government began negotiations with the leadership of Germany on the conclusion of a military alliance on limited obligations. The governments of Turkish and Germany concluded agreements on the mutual passage of troops through their territories, and, most importantly, mutual defense agreements were concluded. However, Turkishs did not dare to support Germany in its offensive wars."
+	style = 2
+  	picture = "Pact_of_Steel"
+	decision_picture = "decision_anticominternpact"
+	date = { day = 10 month = july year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = "We will take limited conditions."
+                ai_chance = 50
+                command = { type = dissent value = 8 }
+                command = { type = access which = GER }
+                command = { type = guarantee which = TUR where = GER }
+                command = { type = guarantee which = GER where = TUR }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = domestic which = interventionism value = 1 }
+                command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = relation which = FRA value = -10 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = relation which = GER value = 20 }
+		command = { type = setflag which = OTT_Anti_comintern_pact }
+		command = { type = trigger which = 13402884 }
+	}
+
+
+      action_b = {
+		name = "We will take all conditions."
+                ai_chance = 50               
+                command = { type = dissent value = 31 }
+                command = { type = alliance which = GER }
+                command = { type = access which = GER }
+                command = { type = guarantee which = TUR where = GER }
+                command = { type = guarantee which = GER where = TUR } 
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = domestic which = interventionism value = 3 }
+                command = { type = domestic which = defense_lobby value = 2 }  
+		command = { type = relation which = FRA value = -60 }
+		command = { type = relation which = ENG value = -60 }
+		command = { type = relation which = SOV value = -80 }
+		command = { type = relation which = GER value = 60 }
+		command = { type = setflag which = OTT_Anti_comintern_pact }
+		command = { type = trigger which = 13402884 }
+	}
+
+}
+
+
+
+
+event = {
+	id = 13402884
+	random = no
+	country = GER
+
+	name = "Turkishs signs pact of steel"
+	desc = "In the summer of 1949, the Turkish government began negotiations with the leadership of Germany on the conclusion of a military alliance on limited obligations. The governments of Turkish and Germany concluded agreements on the mutual passage of troops through their territories, and, most importantly, mutual defense agreements were concluded. However, Turkishs did not dare to support Germany in its offensive wars."
+	style = 2
+  	picture = "Mussolini"
+
+	action = {
+		name = "Great!"
+		command = { type = dissent value = -1 }
+                command = { type = relation which = TUR value = 60 }
+	}
+}
+
+
+
+
+event = { 
+	id = 13402885
+	random = no 
+	country = TUR
+
+	
+	
+	trigger = {
+		
+		Flag = OTT_Anti_comintern_pact
+		control = { province = 163 data = GER } # Berlin		
+		war = { country = GER country = ENG }
+		NOT = { war = { country = GER country = SOV } }
+		NOT = { war = { country = GER country = USA } }
+		NOT = { war = { country = TUR country = ENG } }
+		NOT = { war = { country = TUR country = GER } }
+		NOT = { alliance = { country = TUR country = SOV } }
+		NOT = { alliance = { country = TUR country = ENG } }
+		NOT = { alliance = { country = TUR country = GER } }
+
+               
+		
+	}
+	
+	date = { day = 10 month = June year = 1960 }		 
+	offset = 15
+	deathdate = { day = 29 month = september year = 1999 }	
+	
+	name = 459name
+	desc = "German success have convinced Turkish government that it is the right time for Turkishs to join the conflict. We should be able to grab the most territories, at the least cost, when the peace conference is finally called"
+  	style = 2
+  	picture = "Pact_of_Steel"
+	
+	action_a = {
+                ai_chance = 70
+		name = "Attack!"
+                command = { type = war which = ENG }
+                command = { trigger = { exists = U04 NOT = { alliance = { country = U04 country = GER }  puppet = { country = U04 country = GER } alliance = { country = U04 country = SOV } puppet = { country = U04 country = SOV }  } } type = war which = U04 }
+                command = { trigger = { exists = SYR NOT = { alliance = { country = SYR country = GER }  puppet = { country = SYR country = GER } alliance = { country = SYR country = SOV } puppet = { country = SYR country = SOV }  } } type = war which = SYR }
+                command = { trigger = { exists = IRQ NOT = { alliance = { country = IRQ country = GER }  puppet = { country = IRQ country = GER } alliance = { country = IRQ country = SOV } puppet = { country = IRQ country = SOV }  } } type = war which = IRQ }
+                command = { trigger = { exists = PAL NOT = { alliance = { country = PAL country = GER }  puppet = { country = PAL country = GER } alliance = { country = PAL country = SOV } puppet = { country = PAL country = SOV }  } } type = war which = PAL }
+                command = { trigger = { exists = JOR NOT = { alliance = { country = JOR country = GER }  puppet = { country = JOR country = GER } alliance = { country = JOR country = SOV } puppet = { country = JOR country = SOV }  } } type = war which = JOR }
+                command = { trigger = { exists = KUR NOT = { alliance = { country = KUR country = GER }  puppet = { country = KUR country = GER } alliance = { country = KUR country = SOV } puppet = { country = KUR country = SOV }  } } type = war which = KUR }  
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = FRA value = -100 }
+		command = { type = relation which = GER value = 50 }
+		command = { type = alliance which = GER }
+	}
+	action_b = {
+		ai_chance = 30
+		name = "This is not our war."
+		command = { type = dissent value = 5 }
+		command = { type = relation which = GER value = -100 }
+	}
+}
+
+
+
+
+event = { 
+	id = 13402886
+	random = no 
+	country = TUR
+	
+	
+
+	
+	trigger = {
+       	        
+                army = 15
+		exists = SOV
+                war = { country = SOV country = GER }  
+                Flag = OTT_Anti_comintern_pact 
+		NOT = {
+                      non_aggression = { country = TUR country = SOV } 
+		      war = { country = TUR country = SOV }
+		      war = { country = TUR country = GER }
+                       ispuppet = TUR
+                       participant = { country = TUR value = 1 }
+                       participant = { country = TUR value = 2 }
+                       participant = { country = TUR value = 3 }
+		       lost_national = { country = TUR value = 5 }
+		}
+	}
+
+	date = { day = 1 month = june year = 1961 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1963 }
+	name = "Operation Yatagan"
+	desc = "The time has finally come to destroy the true enemy of the mighty Turkey, the Soviet Union, and secure once and for all hegemony for the Turkishs"
+	style = 2
+	picture = "Wehrmacht"
+	decision_picture = "decision_barbarossa"
+	
+	action = {
+		name = "Destroy godless bolsheviks!"
+		command = { type = war which = SOV }
+                command = { type = relation which = GER value = 30 }
+                command = { type = dissent value = -2 } 
+		
+	}
+}
+

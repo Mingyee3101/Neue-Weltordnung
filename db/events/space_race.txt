@@ -1,0 +1,5753 @@
+### 9000100 and UP
+### 9000100 Secret Weapons Tech
+### 9000101 to 9000159 space agencies 
+### 9000160 to 9000201 Soviet Space Aid to Friendly Nations
+### 9000202 to X Artificial Satellite events
+#########################################################################
+#  SPACE RACE DECISIONS START HERE
+#########################################################################
+#################################
+# National Space Agency SOV
+#################################
+event = { #start Space Program
+	id = 9000101
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+	}
+
+trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                command = { type = waketeam which = 30021 }
+		command = { type = waketeam which = 30031 }
+                command = { type = waketeam which = 30033 }
+                command = { type = waketeam which = 30034 }
+                command = { type = waketeam which = 30035 }
+                command = { type = waketeam which = 30036 }
+                command = { type = sleepteam which = 30032 }
+                command = { type = construct which = ic where = 572 value = 5 }
+                command = { type = province_keypoints which = 572 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency ALG
+#################################
+event = { #start Space Program
+	id = 9000102
+	random = no
+	persistent = no
+	country = ALG
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 727 data = ALG }
+	}
+
+trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 727 data = ALG }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 450009 }
+                 command = { type = construct which = ic where = 727 value = 5 }
+                command = { type = province_keypoints which = 727 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency ARG
+#################################
+event = { #start Space Program
+	id = 9000103
+	random = no
+	persistent = no
+	country = ARG
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2050 data = ARG }
+	}
+
+trigger = {
+ 		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2050 data = ARG }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 165030 }
+                 command = { type = construct which = ic where = 2050 value = 5 }
+                command = { type = province_keypoints which = 2050 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency AST
+#################################
+event = { #start Space Program
+	id = 9000104
+	random = no
+	persistent = no
+	country = AST
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1707 data = AST }
+	}
+
+trigger = {
+ 		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1707 data = AST }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 225028 }
+                 command = { type = construct which = ic where = 1707 value = 5 }
+                command = { type = province_keypoints which = 1707 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency AUS
+#################################
+event = { #start Space Program
+	id = 9000105
+	random = no
+	persistent = no
+	country = AUS
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 195 data = AUS }
+	}
+
+trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 195 data = AUS }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 115022 }
+                 command = { type = construct which = ic where = 195 value = 5 }
+                command = { type = province_keypoints which = 195 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency AZB
+#################################
+event = { #start Space Program
+	id = 9000106
+	random = no
+	persistent = no
+	country = AZB
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 713 data = AZB }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 713 data = AZB }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 460008 }
+                 command = { type = construct which = ic where = 713 value = 5 }
+                command = { type = province_keypoints which = 713 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency BEL
+#################################
+event = { #start Space Program
+	id = 9000107
+	random = no
+	persistent = no
+	country = BEL
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 116 data = BEL }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 116 data = BEL }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 70018 }
+                 command = { type = construct which = ic where = 116 value = 5 }
+                command = { type = province_keypoints which = 116 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency BRA
+#################################
+event = { #start Space Program
+	id = 9000108
+	random = no
+	persistent = no
+	country = BRA
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2075 data = BRA }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2075 data = BRA }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 160026 }
+                 command = { type = construct which = ic where = 2075 value = 5 }
+                command = { type = province_keypoints which = 2075 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency BUL
+#################################
+event = { #start Space Program
+	id = 9000109
+	random = no
+	persistent = no
+	country = BUL
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 321 data = BUL }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 321 data = BUL }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 95019 }
+                 command = { type = construct which = ic where = 321 value = 5 }
+                command = { type = province_keypoints which = 321 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency CAN
+#################################
+event = { #start Space Program
+	id = 9000110
+	random = no
+	persistent = no
+	country = CAN
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2108 data = CAN }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2108 data = CAN }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 220030 }
+                 command = { type = construct which = ic where = 2108 value = 5 }
+                command = { type = province_keypoints which = 2108 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency COL
+#################################
+event = { #start Space Program
+	id = 9000111
+	random = no
+	persistent = no
+	country = COL
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1991 data = COL }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1991 data = COL }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 175015 }
+                 command = { type = construct which = ic where = 1991 value = 5 }
+                command = { type = province_keypoints which = 1991 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency CRO
+#################################
+event = { #start Space Program
+	id = 9000112
+	random = no
+	persistent = no
+	country = CRO
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 352 data = CRO }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 352 data = CRO }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 275013 }
+                 command = { type = construct which = ic where = 352 value = 5 }
+                command = { type = province_keypoints which = 352 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency CZE
+#################################
+event = { #start Space Program
+	id = 9000113
+	random = no
+	persistent = no
+	country = CZE
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 207 data = CZE }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 207 data = CZE }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 120019 }
+                 command = { type = construct which = ic where = 207 value = 5 }
+                command = { type = province_keypoints which = 207 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency DEN
+#################################
+event = { #start Space Program
+	id = 9000114
+	random = no
+	persistent = no
+	country = DEN
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 294 data = DEN }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 294 data = DEN }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 75027 }
+                 command = { type = construct which = ic where = 294 value = 5 }
+                command = { type = province_keypoints which = 294 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency ECU
+#################################
+event = { #start Space Program
+	id = 9000115
+	random = no
+	persistent = no
+	country = ECU
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2042 data = ECU }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2042 data = ECU }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 190010 }
+                 command = { type = construct which = ic where = 2042 value = 5 }
+                command = { type = province_keypoints which = 2042 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency ENG
+#################################
+event = { #start Space Program
+	id = 9000116
+	random = no
+	persistent = no
+	country = ENG
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 29 data = ENG }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 29 data = ENG }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 10057 }
+                 command = { type = construct which = ic where = 29 value = 5 }
+                command = { type = province_keypoints which = 29 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency FRA
+#################################
+event = { #start Space Program
+	id = 9000117
+	random = no
+	persistent = no
+	country = FRA
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 55 data = FRA }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 55 data = FRA }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 5045 }
+                 command = { type = construct which = ic where = 55 value = 5 }
+                command = { type = province_keypoints which = 55 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency GER
+#################################
+event = { #start Space Program
+	id = 9000118
+	random = no
+	persistent = no
+	country = GER
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 163 data = GER }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 163 data = GER }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 53 }
+                 command = { type = construct which = ic where = 163 value = 5 }
+                command = { type = province_keypoints which = 163 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency GRE
+#################################
+event = { #start Space Program
+	id = 9000119
+	random = no
+	persistent = no
+	country = GRE
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 377 data = GRE }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 377 data = GRE }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 90015 }
+                 command = { type = construct which = ic where = 377 value = 5 }
+                command = { type = province_keypoints which = 377 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency HOL
+#################################
+event = { #start Space Program
+	id = 9000120
+	random = no
+	persistent = no
+	country = HOL
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 122 data = HOL }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 122 data = HOL }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 15023 }
+                 command = { type = construct which = ic where = 122 value = 5 }
+                command = { type = province_keypoints which = 122 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency HUN
+#################################
+event = { #start Space Program
+	id = 9000121
+	random = no
+	persistent = no
+	country = HUN
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 284 data = HUN }
+	}
+
+trigger = {
+      		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 284 data = HUN }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 105018 }
+                 command = { type = construct which = ic where = 284 value = 5 }
+                command = { type = province_keypoints which = 284 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency IND
+#################################
+event = { #start Space Program
+	id = 9000122
+	random = no
+	persistent = no
+	country = IND
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1459 data = IND }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1459 data = IND }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 250030 }
+                 command = { type = construct which = ic where = 1459 value = 5 }
+                command = { type = province_keypoints which = 1459 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency INO
+#################################
+event = { #start Space Program
+	id = 9000123
+	random = no
+	persistent = no
+	country = INO
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1647 data = INO }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1647 data = INO }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 270008 }
+                 command = { type = construct which = ic where = 1647 value = 5 }
+                command = { type = province_keypoints which = 1647 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency ITA
+#################################
+event = { #start Space Program
+	id = 9000124
+	random = no
+	persistent = no
+	country = ITA
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 419 data = ITA }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 419 data = ITA }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 25053 }
+                 command = { type = construct which = ic where = 419 value = 5 }
+                command = { type = province_keypoints which = 419 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency JAP
+#################################
+event = { #start Space Program
+	id = 9000125
+	random = no
+	persistent = no
+	country = JAP
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1552 data = JAP }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1552 data = JAP }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 50066 }
+                 command = { type = construct which = ic where = 1552 value = 5 }
+                command = { type = province_keypoints which = 1552 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency KAZ
+#################################
+event = { #start Space Program
+	id = 9000126
+	random = no
+	persistent = no
+	country = KAZ
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 504 data = KAZ }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 504 data = KAZ }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 485007 }
+                 command = { type = construct which = ic where = 504 value = 5 }
+                command = { type = province_keypoints which = 504 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency KOR
+#################################
+event = { #start Space Program
+	id = 9000127
+	random = no
+	persistent = no
+	country = KOR
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1228 data = KOR }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1228 data = KOR }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 265011 }
+                 command = { type = construct which = ic where = 1228 value = 5 }
+                command = { type = province_keypoints which = 1228 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency MEX
+#################################
+event = { #start Space Program
+	id = 9000128
+	random = no
+	persistent = no
+	country = MEX
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1974 data = MEX }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1974 data = MEX }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 170026 }
+                 command = { type = construct which = ic where = 1974 value = 5 }
+                command = { type = province_keypoints which = 1974 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency MLY
+#################################
+event = { #start Space Program
+	id = 9000129
+	random = no
+	persistent = no
+	country = MLY
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1438 data = MLY }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1438 data = MLY }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 500004 }
+                 command = { type = construct which = ic where = 1438 value = 5 }
+                command = { type = province_keypoints which = 1438 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency MON
+#################################
+event = { #start Space Program
+	id = 9000130
+	random = no
+	persistent = no
+	country = MON
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1124 data = MON }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1124 data = MON }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 300004 }
+                 command = { type = construct which = ic where = 1124 value = 5 }
+                command = { type = province_keypoints which = 1124 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+		command = { type = sleepevent which = 9000200 }
+
+	}
+		
+}
+#################################
+# National Space Agency MOR
+#################################
+event = { #start Space Program
+	id = 9000131
+	random = no
+	persistent = no
+	country = MOR
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 718 data = MOR }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 718 data = MOR }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 505008 }
+                 command = { type = construct which = ic where = 718 value = 5 }
+                command = { type = province_keypoints which = 718 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency NIG
+#################################
+event = { #start Space Program
+	id = 9000132
+	random = no
+	persistent = no
+	country = NIG
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 929 data = NIG }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 929 data = NIG }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 715007 }
+                 command = { type = construct which = ic where = 929 value = 5 }
+                command = { type = province_keypoints which = 929 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency NOR
+#################################
+event = { #start Space Program
+	id = 9000133
+	random = no
+	persistent = no
+	country = NOR
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 483 data = NOR }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 483 data = NOR }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 65013 }
+                 command = { type = construct which = ic where = 483 value = 5 }
+                command = { type = province_keypoints which = 483 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency PAK
+#################################
+event = { #start Space Program
+	id = 9000134
+	random = no
+	persistent = no
+	country = PAK
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1530 data = PAK }
+	}
+
+trigger = {
+       technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1530 data = PAK }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 725016 }
+                 command = { type = construct which = ic where = 1530 value = 5 }
+                command = { type = province_keypoints which = 1530 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency PER
+#################################
+event = { #start Space Program
+	id = 9000135
+	random = no
+	persistent = no
+	country = PER
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1085 data = PER }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1085 data = PER }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 150011 }
+                 command = { type = construct which = ic where = 1085 value = 5 }
+                command = { type = province_keypoints which = 1085 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency POL
+#################################
+event = { #start Space Program
+	id = 9000136
+	random = no
+	persistent = no
+	country = POL
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 232 data = POL }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 232 data = POL }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 60020 }
+                 command = { type = construct which = ic where = 232 value = 5 }
+                command = { type = province_keypoints which = 232 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency POR
+#################################
+event = { #start Space Program
+	id = 9000137
+	random = no
+	persistent = no
+	country = POR
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 476 data = POR }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 476 data = POR }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 20018 }
+                 command = { type = construct which = ic where = 476 value = 5 }
+                command = { type = province_keypoints which = 476 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency PRK
+#################################
+event = { #start Space Program
+	id = 9000138
+	random = no
+	persistent = no
+	country = PRK
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1221 data = PRK }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1221 data = PRK }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 735013 }
+                 command = { type = construct which = ic where = 1221 value = 5 }
+                command = { type = province_keypoints which = 1221 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency PRU
+#################################
+event = { #start Space Program
+	id = 9000139
+	random = no
+	persistent = no
+	country = PRU
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2016 data = PRU }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2016 data = PRU }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 185016 }
+                 command = { type = construct which = ic where = 2016 value = 5 }
+                command = { type = province_keypoints which = 2016 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency ROM
+#################################
+event = { #start Space Program
+	id = 9000140
+	random = no
+	persistent = no
+	country = ROM
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 316 data = ROM }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 316 data = ROM }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 110025 }
+                 command = { type = construct which = ic where = 316 value = 5 }
+                command = { type = province_keypoints which = 316 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency RUS
+#################################
+event = { #start Space Program
+	id = 9000141
+	random = no
+	persistent = no
+	country = RUS
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = RUS }
+	}
+
+trigger = {
+        technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = RUS }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 515035 }
+                 command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency SAU
+#################################
+event = { #start Space Program
+	id = 9000142
+	random = no
+	persistent = no
+	country = SAU
+
+
+	decision = {		
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1045 data = SAU }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1045 data = SAU }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 295003 }
+                 command = { type = construct which = ic where = 1045 value = 5 }
+                command = { type = province_keypoints which = 1045 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency SCH
+#################################
+event = { #start Space Program
+	id = 9000143
+	random = no
+	persistent = no
+	country = SCH
+
+
+	decision = {	
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 392 data = SCH }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 392 data = SCH }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 80026 }
+                 command = { type = construct which = ic where = 392 value = 5 }
+                command = { type = province_keypoints which = 392 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency SIA
+#################################
+event = { #start Space Program
+	id = 9000144
+	random = no
+	persistent = no
+	country = SIA
+
+
+	decision = {	
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1423 data = SIA }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1423 data = SIA }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 290013 }
+                 command = { type = construct which = ic where = 1423 value = 5 }
+                command = { type = province_keypoints which = 1423 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency SPA
+#################################
+event = { #start Space Program
+	id = 9000145
+	random = no
+	persistent = no
+	country = SPA
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 460 data = SPA }
+	}
+
+trigger = {
+       	technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 460 data = SPA }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 35034 }
+                 command = { type = construct which = ic where = 460 value = 5 }
+                command = { type = province_keypoints which = 460 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency SPR
+#################################
+event = { #start Space Program
+	id = 9000146
+	random = no
+	persistent = no
+	country = SPR
+
+
+	decision = {	
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 460 data = SPR }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 460 data = SPR }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 255036 }
+                 command = { type = construct which = ic where = 460 value = 5 }
+                command = { type = province_keypoints which = 460 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency SWE
+#################################
+event = { #start Space Program
+	id = 9000147
+	random = no
+	persistent = no
+	country = SWE
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2159 data = SWE }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2159 data = SWE }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 40035 }
+                 command = { type = construct which = ic where = 2159 value = 5 }
+                command = { type = province_keypoints which = 2159 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency TUN
+#################################
+event = { #start Space Program
+	id = 9000148
+	random = no
+	persistent = no
+	country = TUN
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 747 data = TUN }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 747 data = TUN }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 535009 }
+                 command = { type = construct which = ic where = 747 value = 5 }
+                command = { type = province_keypoints which = 747 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency TUR
+#################################
+event = { #start Space Program
+	id = 9000149
+	random = no
+	persistent = no
+	country = TUR
+
+
+	decision = {	
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1075 data = TUR }
+	}
+
+trigger = {
+      		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1075 data = TUR }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 45015 }
+                 command = { type = construct which = ic where = 1075 value = 5 }
+                command = { type = province_keypoints which = 1075 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U72
+#################################
+event = { #start Space Program
+	id = 9000150
+	random = no
+	persistent = no
+	country = U72
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1395 data = U72 }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1395 data = U72 }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 1175038 }
+                 command = { type = construct which = ic where = 1395 value = 5 }
+                command = { type = province_keypoints which = 1395 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U75
+#################################
+event = { #start Space Program
+	id = 9000151
+	random = no
+	persistent = no
+	country = U75
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1432 data = U75 }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1432 data = U75 }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 1190004 }
+                 command = { type = construct which = ic where = 1432 value = 5 }
+                command = { type = province_keypoints which = 1432 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency URU
+#################################
+event = { #start Space Program
+	id = 9000152
+	random = no
+	persistent = no
+	country = URU
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2052 data = URU }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 2052 data = URU }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 195011 }
+                 command = { type = construct which = ic where = 2052 value = 5 }
+                command = { type = province_keypoints which = 2052 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency UKR
+#################################
+event = { #start Space Program
+	id = 9000153
+	random = no
+	persistent = no
+	country = UKR
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 617 data = UKR }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 617 data = UKR }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 545014 }
+                 command = { type = construct which = ic where = 617 value = 5 }
+                command = { type = province_keypoints which = 617 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency USA
+#################################
+event = { #start Space Program
+	id = 9000154
+	random = no
+	persistent = no
+	country = USA
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1809 data = USA }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1809 data = USA }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 240049 }
+                 command = { type = construct which = ic where = 1809 value = 5 }
+                command = { type = province_keypoints which = 1809 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency VEN
+#################################
+event = { #start Space Program
+	id = 9000155
+	random = no
+	persistent = no
+	country = VEN
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1993 data = VEN }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1993 data = VEN }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 180013 }
+                 command = { type = construct which = ic where = 1993 value = 5 }
+                command = { type = province_keypoints which = 1993 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency EGY
+#################################
+event = { #start Space Program
+	id = 9000156
+	random = no
+	persistent = no
+	country = EGY
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 787 data = EGY }
+	}
+
+trigger = {
+        technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 787 data = EGY }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 340013 }
+                 command = { type = construct which = ic where = 787 value = 5 }
+                command = { type = province_keypoints which = 787 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+
+#################################
+# National Space Agency CHC
+#################################
+event = { #start Space Program
+	id = 9000157
+	random = no
+	persistent = no
+	country = CHC
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1247 data = CHC }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1247 data = CHC }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 340013 }
+                 command = { type = construct which = ic where = 1247 value = 5 }
+                command = { type = province_keypoints which = 1247 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency CHI
+#################################
+event = { #start Space Program
+	id = 9000158
+	random = no
+	persistent = no
+	country = CHI
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1247 data = CHI }
+	}
+
+trigger = {
+       		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1247 data = CHI }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 340013 }
+                 command = { type = construct which = ic where = 1247 value = 5 }
+                command = { type = province_keypoints which = 1247 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency DFR
+#################################
+event = { #start Space Program
+	id = 9000159
+	random = no
+	persistent = no
+	country = DFR
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 131 data = DFR }
+	}
+
+trigger = {
+        		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 131 data = DFR }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                 command = { type = waketeam which = 340013 }
+                 command = { type = construct which = ic where = 131 value = 5 }
+                command = { type = province_keypoints which = 131 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#########################################################################
+#  SOVIET ASSISTANCE TO SOCIALIST PUPPETS
+#########################################################################
+#################################
+# National Space Agency DDR
+#################################
+event = { #start Space Program
+	id = 9000160
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = DDR country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = DDR country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = DDR country = SOV }
+    }   
+	name = "Assist the DDR Space program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000161 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000161
+	random = no
+	country = DDR
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by German event 9000160
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 625012 }
+                 command = { type = construct which = ic where = 163 value = 5 }
+                command = { type = province_keypoints which = 163 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U10;Dutch Socialist Union 
+#################################
+event = { #start Space Program
+	id = 9000162
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U10 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U10 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U10 country = SOV }
+    }   
+	name = "Assist the Dutch Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000163 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000163
+	random = no
+	country = U10
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 865018 }
+                 command = { type = construct which = ic where = 122 value = 5 }
+                command = { type = province_keypoints which = 122 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U11;Communist france 
+#################################
+event = { #start Space Program
+	id = 9000164
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U11 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U11 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U11 country = SOV }
+    }   
+	name = "Assist the French Space program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000165 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000165
+	random = no
+	country = U11
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 870026 }
+                 command = { type = construct which = ic where = 55 value = 5 }
+                command = { type = province_keypoints which = 55 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U12;English Republic 
+#################################
+event = { #start Space Program
+	id = 9000166
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U12 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U12 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U12 country = SOV }
+    }   
+	name = "Assist the English Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000167 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000167
+	random = no
+	country = U12
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 875028 }
+                 command = { type = construct which = ic where = 29 value = 5 }
+                command = { type = province_keypoints which = 29 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U13;Hungarian Socialist Republic 
+#################################
+event = { #start Space Program
+	id = 9000168
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U13 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U13 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U13 country = SOV }
+    }   
+	name = "Assist the Hungarian Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000169 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000169
+	random = no
+	country = U13
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 880013 }
+                 command = { type = construct which = ic where = 284 value = 5 }
+                command = { type = province_keypoints which = 284 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U14;Italian Union 419 
+#################################
+event = { #start Space Program
+	id = 9000170
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U14 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U14 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U14 country = SOV }
+    }   
+	name = "Assist the Italian Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000171 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000171
+	random = no
+	country = U14
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 885016 }
+                 command = { type = construct which = ic where = 419 value = 5 }
+                command = { type = province_keypoints which = 419 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U15;Socialist Republic of Portugal 476 
+#################################
+event = { #start Space Program
+	id = 9000172
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U15 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U15 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U15 country = SOV }
+    }   
+	name = "Assist The Portugese Space program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000173 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000173
+	random = no
+	country = U15
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 890012 }
+                 command = { type = construct which = ic where = 476 value = 5 }
+                command = { type = province_keypoints which = 476 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U16;Austrian Democratic Republic 195
+#################################
+event = { #start Space Program
+	id = 9000174
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U16 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U16 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U16 country = SOV }
+    }   
+	name = "Assist the Austrian Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000175 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000175
+	random = no
+	country = U16
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 895010 }
+                 command = { type = construct which = ic where = 195 value = 5 }
+                command = { type = province_keypoints which = 195 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U17;People's Republic of Belgium 116  
+#################################
+event = { #start Space Program
+	id = 9000176
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U17 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U17 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U17 country = SOV }
+    }   
+	name = "Assist the Belgian Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000177 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000177
+	random = no
+	country = U17
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 900015 }
+                 command = { type = construct which = ic where = 116 value = 5 }
+                command = { type = province_keypoints which = 116 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U19;People's Republic of Norway 483
+#################################
+event = { #start Space Program
+	id = 9000178
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U19 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U19 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U19 country = SOV }
+    }   
+	name = "Assist the Norwegian Space program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000179 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000179
+	random = no
+	country = U19
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 910011 }
+                 command = { type = construct which = ic where = 483 value = 5 }
+                command = { type = province_keypoints which = 483 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U21;Swedish Socialist Union 2159
+#################################
+event = { #start Space Program
+	id = 9000180
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U21 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U21 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U21 country = SOV }
+    }   
+	name = "Assist the Swedish Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000181 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000181
+	random = no
+	country = U21
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 920020 }
+                 command = { type = construct which = ic where = 2159 value = 5 }
+                command = { type = province_keypoints which = 2159 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U22;People's Republic of Denmark 294
+#################################
+event = { #start Space Program
+	id = 9000182
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U22 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U22 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U22 country = SOV }
+    }   
+	name = "Assist the Danish Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000183 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000183
+	random = no
+	country = U22
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 925017 }
+                 command = { type = construct which = ic where = 294 value = 5 }
+                command = { type = province_keypoints which = 294 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U26;Swiss Socialist Republic 392
+#################################
+event = { #start Space Program
+	id = 9000184
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U26 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U26 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U26 country = SOV }
+    }   
+	name = "Assist the Swiss Space program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000185 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000185
+	random = no
+	country = U26
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 945016 }
+                 command = { type = construct which = ic where = 392 value = 5 }
+                command = { type = province_keypoints which = 392 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U29;People's Republic of Bulgaria 321
+#################################
+
+event = { #start Space Program
+	id = 9000186
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U29 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U29 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U29 country = SOV }
+    }   
+	name = "Assist the Bulgarian Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000187 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000187
+	random = no
+	country = U29
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 960012 }
+                 command = { type = construct which = ic where = 321 value = 5 }
+                command = { type = province_keypoints which = 321 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U30;Romanian People's Republic 316
+#################################
+event = { #start Space Program
+	id = 9000188
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U30 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U30 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U30 country = SOV }
+    }   
+	name = "Assist the Romanian Space program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000189 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000189
+	random = no
+	country = U30
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 965016 }
+                 command = { type = construct which = ic where = 316 value = 5 }
+                command = { type = province_keypoints which = 316 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U31;Czechoslovak Socialist Republic 207
+#################################
+event = { #start Space Program
+	id = 9000190
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U31 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U31 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U31 country = SOV }
+    }   
+	name = "Assist the Czechoslovak Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000191 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000191
+	random = no
+	country = U31
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 970011 }
+                 command = { type = construct which = ic where = 207 value = 5 }
+                command = { type = province_keypoints which = 207 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U32;People's Republic of Poland  232
+#################################
+event = { #start Space Program
+	id = 9000192
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U32 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U32 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U32 country = SOV }
+    }   
+	name = "Assist the Polish Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000193 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000193
+	random = no
+	country = U32
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 975009 }
+                 command = { type = construct which = ic where = 232 value = 5 }
+                command = { type = province_keypoints which = 232 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U33;Democratic Republic of Greece 377
+#################################
+event = { #start Space Program
+	id = 9000194
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U33 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U33 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U33 country = SOV }
+    }   
+	name = "Assist the Greek Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000195 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000195
+	random = no
+	country = U33
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 980007 }
+                 command = { type = construct which = ic where = 377 value = 5 }
+                command = { type = province_keypoints which = 377 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U34;Socialist Republic of Turkey 1075
+#################################
+event = { #start Space Program
+	id = 9000196
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U34 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U34 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U34 country = SOV }
+    }   
+	name = "Assist the Turkish Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000197 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000197
+	random = no
+	country = U34
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 985014 }
+                 command = { type = construct which = ic where = 1075 value = 5 }
+                command = { type = province_keypoints which = 1075 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency U35;Communist Spain  460
+#################################
+event = { #start Space Program
+	id = 9000198
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = U35 country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = U35 country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = U35 country = SOV }
+    }   
+	name = "Assist the Spanish Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000199 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000199
+	random = no
+	country = U35
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 990016 }
+                 command = { type = construct which = ic where = 460 value = 5 }
+                command = { type = province_keypoints which = 460 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}
+#################################
+# National Space Agency MON 1124 (sleep 9000130)
+#################################
+event = { #start Space Program
+	id = 9000200
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+local_flag = spaceagency 
+puppet = { country = MON country = SOV }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 572 data = SOV }
+		puppet = { country = MON country = SOV }
+	}
+
+trigger = {
+        technology = 7130
+puppet = { country = MON country = SOV }
+		}
+   
+	name = "Assist the Mongolian Space Program"
+	desc = "9000102desc"
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000102text"
+		 command = { type = money value = -1000 }
+                command = { type = construct which = ic where = 572 value = 1 }
+                command = { type = province_keypoints which = 572 value = 1 }
+		command = { type = research_mod value = 5 }
+		command = { type = trigger which = 9000201 }
+		
+
+	}
+		
+}
+event = {
+	id =  9000201
+	random = no
+	country = MON
+
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+
+
+	# Triggered by Soviet event 
+action = { 
+		name = "9000101text"
+                 command = { type = waketeam which = 300004 }
+                 command = { type = construct which = ic where = 1124 value = 5 }
+                command = { type = province_keypoints which = 1124 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+		command = { type = sleepevent which = 9000130 }
+
+	}
+		
+}
+#########################################################################
+#  First Satellite Launch
+#########################################################################
+#########################################################################
+#  Currently apparently working. Test and See. Anyone with some working ideas on how to make an event for everyone to launch a satellite please let me #know
+#########################################################################
+event = {
+	id = 9000202
+		random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	
+	
+	
+	decision = {
+		NOT = { local_flag = 1stsatlaunched }
+		}
+	
+
+	decision_trigger = {
+		supplies = 1000
+                money = 1000
+		technology = 7640
+		NOT = { local_flag = 1stsatlaunched }
+	}
+	
+	trigger = {
+		technology = 7640 # the event fire for ai nations when they have finished researching tech 7130
+		NOT = { local_flag = 1stsatlaunched }
+	}
+	
+	name = "Launch our first Artificial Satellite"
+	desc = "We shall soon be able to launch an artificial satellite into orbit."
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+
+	date = { day = 1 month = march year = 1936 }
+	offset = 15
+	deathdate = { day = 12 month = march year = 2020 }
+	action = { 
+		name = "Launch our First Satellite!"
+              command = { type = money value = -100 }
+              command = { type = supplies value = -500 }
+	command = { type = trigger which = 9000203 } #result of scheduled launch
+	}
+	}
+event = {
+	id =  9000203
+	random = no
+	persistent = yes
+	one_action = yes 
+	name = "The results are in"
+	desc = "The scientists would like to speak to you..."
+	style = 2
+	picture = "satlaunchconfirmed"
+
+	action = {
+		ai_chance = 25
+		name = "Hopefully, they have good news."
+command = { type = trigger which = 9000204 }		
+command = { }
+	}
+	action = {
+		ai_chance = 75
+		name = "Hopefully, they have good news."
+		command = { type = trigger which = 9000205 }
+		command = { }
+	}
+}
+#########################################################################
+#  First Satellite Launch Failure
+#########################################################################
+
+event = {
+	id =   9000204
+	random = no
+	persistent = yes
+
+	name = "The launch was a colossal failure"
+	desc = "The scientists regret to inform you of an unfortunate mishap during our attempt to get our first satellite up. The rocket which was to carry the Satellite only reached an altitude of 1.2 meters (4 ft), before it fell and exploded. The satellite was thrown clear, bleeping pathetically as it rolled away into a nearby culvert." 
+	style = 2
+	picture = "launchfailure"
+
+
+	# Triggered by 9000202
+action = { 
+		name = "Heads will roll for this!"
+		command = { type = dissent value = 2 }
+
+	}
+		
+}
+#########################################################################
+#  First Satellite Launch Success
+#########################################################################
+
+event = {
+	id =   9000205
+	random = no
+	persistent = yes
+
+	name = "The launch was a success!"
+	desc = "The scientists are pleased to inform you that our nation's first artificial satellite is now in orbit. We should make a statement to world about our great achievement as soon as possible!" 
+	style = 2
+	picture = "rocketlaunch"
+
+
+	# Triggered by 9000202
+action = { 
+		name = "Break out the champagne and prepare my speech!"
+                        command = { type = local_setflag which = 1stsatlaunched }
+		command = { type = dissent value = -5 }
+		command = { type = research_mod value = 5 }
+
+	}	
+}
+#########################################################################
+#  Announcement and Reaction Events  9000206 to 9000232 (includes missed Israeli Space Agency Event)
+#########################################################################
+#################################
+# Sputnik Announcement
+#################################
+event = { # Sputnik
+	id = 9000206
+	random = no
+	persistent = no
+	country = SOV
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Sputnik Launch"
+	desc = 9000206desc
+	style = 2
+	picture = "sputnik"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 572 value = 5 }
+                command = { type = province_keypoints which = 572 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000207 }
+	}		
+}
+event = {
+	id = 9000207
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DDR DEN DFR EAF EGY ENG ETH EST FIN FLA FRA GEO GER GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE WLL YUG USA U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32 u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Soviets have launched Sputnik!"
+	desc = 9000206desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = SOV value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = SOV value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = SOV value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = SOV value = 50 } }
+	}
+command = { type = relation which = SOV value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Begleiter Announcement
+#################################
+event = { # Begleiter
+	id = 9000208
+	random = no
+	persistent = no
+	country = GER
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Begleiter Launch"
+	desc = 9000208desc
+	style = 2
+	picture = "begleiter"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 163 value = 5 }
+                command = { type = province_keypoints which = 163 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000209 }
+	}		
+}
+event = {
+	id = 9000209
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DDR DEN DFR EAF EGY ENG ETH  
+EST FIN FLA FRA GEO SOV GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE  
+WLL YUG USA U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Germans have launched Begleiter!"
+	desc = 9000208desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = GER value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = GER value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = GER value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = GER value = 50 } }
+	}
+command = { type = relation which = GER value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Explorer Announcement
+#################################
+event = { # Explorer
+	id = 9000210
+	random = no
+	persistent = no
+	country = USA
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Explorer Launch"
+	desc = 9000210desc
+	style = 2
+	picture = "explorer1"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 1809 value = 5 }
+                command = { type = province_keypoints which = 1809 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000211 }
+	}		
+}
+event = {
+	id = 9000211
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DDR DEN DFR EAF EGY ENG ETH  
+EST FIN FLA FRA GEO SOV GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Americans have launched Explorer!"
+	desc = 9000210desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = USA value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = USA value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = USA value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = USA value = 50 } }
+	}
+command = { type = relation which = USA value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Astérix Announcement
+#################################
+event = { # Astérix
+	id = 9000212
+	random = no
+	persistent = no
+	country = FRA
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Astérix Launch"
+	desc = 9000212desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 55 value = 5 }
+                command = { type = province_keypoints which = 55 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000213 }
+	}		
+}
+event = {
+	id = 9000213
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN CHC CHI CHL COL CSA CZE DDR DEN DFR EAF EGY ENG ETH  
+EST FIN FLA USA GEO SOV GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The French have launched Astérix!"
+	desc = 9000212desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = FRA value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = FRA value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = FRA value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = FRA value = 50 } }
+	}
+command = { type = relation which = FRA value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Dong Fang Hong Announcement
+#################################
+event = { # Dong Fang Hong
+	id = 9000214
+	random = no
+	persistent = no
+	country = CHC
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Dong Fang Hong Launch"
+	desc = 9000214desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 1247 value = 5 }
+                command = { type = province_keypoints which = 1247 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000215 }
+	}		
+}
+event = {
+	id = 9000215
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN FRA CHI CHL COL CSA CZE DDR DEN DFR EAF EGY ENG ETH  
+EST FIN FLA USA GEO SOV GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Chinese have launched Dong Fang Hong!"
+	desc = 9000214desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = CHC value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = CHC value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = CHC value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = CHC value = 50 } }
+	}
+command = { type = relation which = CHC value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Ohsumi  Announcement
+#################################
+event = { # Ohsumi
+	id = 9000216
+	random = no
+	persistent = no
+	country = JAP
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Ohsumi Launch"
+	desc = 9000216desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 1552 value = 5 }
+                command = { type = province_keypoints which = 1552 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000217 }
+	}		
+}
+event = {
+	id = 9000217
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN FRA CHI CHL COL CSA CZE DDR DEN DFR EAF EGY ENG ETH  
+EST FIN FLA USA GEO SOV GRE HOL HUN IDC IND INO IRE IRQ ISR ITA CHC KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Japanese have launched Ohsumi!"
+	desc = 9000216desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = JAP value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = JAP value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = JAP value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = JAP value = 50 } }
+	}
+command = { type = relation which = JAP value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Prospero  Announcement
+#################################
+event = { # Prospero
+	id = 9000218
+	random = no
+	persistent = no
+	country = ENG
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Prospero Launch"
+	desc = 9000218desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 29 value = 5 }
+                command = { type = province_keypoints which = 29 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000219 }
+	}		
+}
+event = {
+	id = 9000219
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN FRA CHI CHL COL CSA CZE DDR DEN DFR EAF EGY ETH  
+EST FIN FLA USA GEO SOV GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The British have launched Prospero!"
+	desc = 9000218desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = ENG value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = ENG value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = ENG value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = ENG value = 50 } }
+	}
+command = { type = relation which = ENG value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# New As of 25 Feburary 2012
+#################################
+#################################
+# Sun Yat-sen  Announcement
+#################################
+event = { #  Sun Yat-sen
+	id = 9000220
+	random = no
+	persistent = no
+	country = CHI
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Sun Yat-sen Launch"
+	desc = 9000220desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 1247 value = 5 }
+                command = { type = province_keypoints which = 1247 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000221 }
+	}		
+}
+event = {
+	id = 9000221
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN FRA ENG CHL COL CSA CZE DDR DEN DFR EAF EGY ETH  
+EST FIN FLA USA GEO SOV GRE HOL HUN IDC IND INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Chinese have launched Sun Yat-sen!"
+	desc = 9000220desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = CHI value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = CHI value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = CHI value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = CHI value = 50 } }
+	}
+command = { type = relation which = CHI value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Rohini   Announcement (IND)
+#################################
+event = { #  Rohini 
+	id = 9000222
+	random = no
+	persistent = no
+	country = IND
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Rohini Launch"
+	desc = 9000222desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 1459 value = 5 }
+                command = { type = province_keypoints which = 1459 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000223 }
+	}		
+}
+event = {
+	id = 9000223
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN FRA ENG CHL COL CSA CZE DDR DEN DFR EAF EGY ETH  
+EST FIN FLA USA GEO SOV GRE HOL HUN IDC CHI INO IRE IRQ ISR ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Indians have launched Rohini!"
+	desc = 9000222desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = IND value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = IND value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = IND value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = IND value = 50 } }
+	}
+command = { type = relation which = IND value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Ofeq   Announcement (ISR)
+#################################
+event = { #  Ofeq
+	id = 9000224
+	random = no
+	persistent = no
+	country = ISR
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Ofeq Launch"
+	desc = 9000224desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 1008 value = 5 }
+                command = { type = province_keypoints which = 1008 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000225 }
+	}		
+}
+event = {
+	id = 9000225
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN FRA ENG CHL COL CSA CZE DDR DEN DFR EAF EGY ETH  
+EST FIN FLA USA GEO SOV GRE HOL HUN IDC CHI INO IRE IRQ IND ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI RUS SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Israelis have launched Ofeq!"
+	desc = 9000224desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = ISR value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = ISR value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = ISR value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = ISR value = 50 } }
+	}
+command = { type = relation which = ISR value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Kosmos 2175   Announcement RUS
+#################################
+event = { #   Kosmos 2175
+	id = 9000226
+	random = no
+	persistent = no
+	country = RUS
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Kosmos Launch"
+	desc = 9000226desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 572 value = 5 }
+                command = { type = province_keypoints which = 572 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000227 }
+	}		
+}
+event = {
+	id = 9000227
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN FRA ENG CHL COL CSA CZE DDR DEN DFR EAF EGY ETH  
+EST FIN FLA USA GEO SOV GRE HOL HUN IDC CHI INO IRE IRQ IND ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI ISR SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR UKR VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Russians have launched Kosmos!"
+	desc = 9000226desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = RUS value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = RUS value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = RUS value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = RUS value = 50 } }
+	}
+command = { type = relation which = RUS value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Strela   Announcement UKR
+#################################
+event = { #   Strela
+	id = 9000228
+	random = no
+	persistent = no
+	country = UKR
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Strela Launch"
+	desc = 9000228desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 617 value = 5 }
+                command = { type = province_keypoints which = 617 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000229 }
+	}		
+}
+event = {
+	id = 9000229
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN FRA ENG CHL COL CSA CZE DDR DEN DFR EAF EGY ETH  
+EST FIN FLA USA GEO SOV GRE HOL HUN IDC CHI INO IRE IRQ IND ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR PER POL POR PRK PRU QUE ROM RSI ISR SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR RUS VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Ukrainians have launched Strela!"
+	desc = 9000228desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = UKR value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = UKR value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = UKR value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = UKR value = 50 } }
+	}
+command = { type = relation which = UKR value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# Omid   Announcement PER
+#################################
+event = { #   Omid
+	id = 9000230
+	random = no
+	persistent = no
+	country = PER
+
+
+	decision = {
+		local_flag = 1stsatlaunched
+#NOT = { local_flag = sputnik }
+		}
+	
+
+	decision_trigger = {
+local_flag = 1stsatlaunched }
+
+trigger = {
+        local_flag = 1stsatlaunched }   
+	
+        name = "Confirm Omid Launch"
+	desc = 9000230desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = { 
+		name = "Let the whole World know!"
+                command = { type = local_setflag which = sputnik }
+                command = { type = construct which = ic where = 1085 value = 5 }
+                command = { type = province_keypoints which = 1085 value = 5 }
+	command = { type = research_mod value = 5 }
+	command = { type = trigger which = 9000231 }
+	}		
+}
+event = {
+	id = 9000231
+	random = no
+        persistent = yes
+        all = yes
+	TAG = { AFG ARA ARG AUS AST BEL BOL BRA BUL CAL CAN FRA CHL COL CSA CZE DDR DEN DFR EAF EGY ENG ETH  
+EST FIN FLA USA GEO SOV GRE HOL HUN IDC CHI INO IRE IRQ IND ITA JAP KOR LAT LBY LIT MAN MEN MEX NOR NZL OTT PAK  
+PAR UKR POL POR PRK PRU QUE ROM RSI ISR SAF SAU SCA SCH SCO SER SIA SLO SLV SPA SPR SWE TEX TUR RUS VEN VIC VIE  
+WLL YUG GER U01 u02 u03 u08 u09 u10 u11 u12 u13 u14 u15 u16 u17 u18 u19 u20 u21 u22 u26 u27 u28 u29 u30 u31 u32  
+u33 u34 u35 u40 u41 u42 u43 u44 u45 u46 u47 u48 u72 u73 u74 u77 u78 }
+
+        name = "The Iranians have launched Omid!"
+	desc = 9000230desc
+	style = 2
+	picture = "satlaunchconfirmed"
+	
+	action = { 
+		name = "What a remarkable achievement!"
+		trigger = { 
+			relation = { which = PER value = 50 }	
+			NOT = { local_flag = 1stsatlaunched }	
+		}
+command = { type = relation which = PER value = 15 }		
+	}
+	
+	action = { 
+		name = "Welcome them to the Space Club."	
+		trigger = { 
+	        local_flag = 1stsatlaunched
+	}
+command = { type = relation which = PER value = 15 }
+}
+action = { 
+		name = "They could drop bombs on us with that thing!"	
+		trigger = { 
+		NOT = { local_flag = 1stsatlaunched
+		relation = { which = PER value = 50 } }
+	}
+command = { type = relation which = PER value = -15 }
+command = { type = dissent value = 5 }
+}	
+}
+#################################
+# National Space Agency ISR (missed Initially)
+#################################
+event = { #start Space Program
+	id = 9000232
+	random = no
+	persistent = no
+	country = ISR
+
+
+	decision = {
+NOT = { local_flag = spaceagency }
+		}
+	
+
+	decision_trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1008 data = ISR }
+	}
+
+trigger = {
+		technology = 7130
+		supplies = 1000
+                            money = 1000
+		control = { province = 1008 data = ISR }
+    }   
+	name = 9000101name
+	desc = 9000101desc
+	style = 2
+	picture = "spacerace"
+	decision_picture = "decision_spacerace"
+	
+	date = { day = 1 month = january year = 1914 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = { 
+		name = "9000101text"
+		 command = { type = money value = -1000 }
+                command = { type = waketeam which = 675011 }
+                command = { type = construct which = ic where = 1008 value = 5 }
+                command = { type = province_keypoints which = 1008 value = 5 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = spaceagency }
+
+	}
+		
+}

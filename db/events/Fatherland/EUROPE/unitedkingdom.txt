@@ -1,0 +1,1770 @@
+
+event = {
+	id = 8005000
+	random = no
+	country = ENG
+
+	name = "The Second World War"
+	desc = "When Winston Churchill pledged to fight on the beaches and in the hills, the war looked very dire. However, as the war progressed, the British began to win several key battles, such as El Alamein. When the Germans were pushed out of Africa, a great surge of morale struck the nation. While we could not win the war, we at least survived. Once an armistice was signed, the people sighed of relief. In the years following, the empire began to fall apart though." #When India gained it's independence, other colonial provinces began to rebel. In Africa, insurgency groups are fighting against our troops. In Britain, fascists with the support of Germany, are gaining more of a presence every day. With the looming threat of a third world war, this certainly does not help. We shall wait and see however."
+	style = 2
+	picture = "English_declaration_war"
+
+	date = { day = 15 month = january year = 1948 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 100
+		name = "A tragical outcome"
+		command = { type = dissent value = 1 }
+	}
+}
+
+## Elections from NWO2
+
+event = {
+	id = 8005001
+	country = ENG
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 2
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 10014 } # George VI
+		command = { type = headofgovernment which = 10018 } # Winston Churchill
+		command = { type = foreignminister which = 10003 } # Anthony Eden
+		command = { type = armamentminister which = 10154 } # Winston Churchill
+		command = { type = ministerofsecurity which = 10061 } # David Maxwell Fyfe
+		command = { type = ministerofintelligence which = 10079 } # Kim Philby
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 10014 } # George VI
+		command = { type = headofgovernment which = 10019 } # Clement Attlee
+		command = { type = foreignminister which = 10025 } # Herbert Morrison
+		command = { type = armamentminister which = 10043 } # Clement Attlee
+		command = { type = ministerofsecurity which = 10065 } # James Chuter Ede
+		command = { type = ministerofintelligence which = 10079 } # Kim Philby
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 12 }
+	}
+}
+
+event = {
+	id = 8005003
+	country = ENG
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 2
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -9 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		command = { type = headofgovernment which = 10159 } # Anthony Eden
+		command = { type = foreignminister which = 10164 } # Harold MacMillan
+		command = { type = armamentminister which = 10173 } # Walter Monckton
+		command = { type = ministerofsecurity which = 10180 } # Gwilym Lloyd-George
+		command = { type = ministerofintelligence which = 10185 } # Antony Head
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		command = { type = headofgovernment which = 10019 } # Clement Attlee
+		command = { type = foreignminister which = 10167 } # Alfred Robens
+		command = { type = armamentminister which = 10153 } # Emanuel Shinwell
+		command = { type = ministerofsecurity which = 10130 } # Leo Amery
+		command = { type = ministerofintelligence which = 10190 } # James Callaghan
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 9 }
+	}
+}
+
+event = {
+	id = 8005004
+	country = ENG
+
+	name = "EVT_8005004_NAME"
+	desc = "EVT_8005004_DESC"
+	picture = "nwo\anthony_eden"
+	style = 2
+
+	trigger = {
+		government = democratic
+		headofgovernment = 10164
+		event = 8500322 # Suez War is lost by Israels
+	}
+
+	date = { day = 9 month = january year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = "EVT_8005004_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		command = { type = headofgovernment which = 10160 } # Harold MacMillan
+		command = { type = foreignminister which = 10023 } # John Selwyn Lloyd
+		command = { type = armamentminister which = 10175 } # Duncan Sandys
+		command = { type = ministerofsecurity which = 10181 } # Richard A. Butler
+		command = { type = ministerofintelligence which = 10186 } # John Hugh Hare
+	}
+}
+
+event = {
+	id = 8005005
+	country = ENG
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 2
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -6 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		command = { type = headofgovernment which = 10160 } # Harold MacMillan
+		command = { type = foreignminister which = 10023 } # John Selwyn Lloyd
+		command = { type = armamentminister which = 10176 } # Harold Watkinson
+		command = { type = ministerofsecurity which = 10181 } # Richard A. Butler
+		command = { type = ministerofintelligence which = 10187 } # Christopher Soames
+	}
+	action = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -2 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 10158 } # Elisabeth II
+		command = { type = headofgovernment which = 10162 } # Hugh Gaitskell
+		command = { type = foreignminister which = 10169 } # Denis Healey
+		command = { type = armamentminister which = 10178 } # Harold Wilson
+		command = { type = ministerofsecurity which = 10183 } # Patrick Gordon Walker
+		command = { type = ministerofintelligence which = 10190 } # James Callaghan
+	}
+	action = {
+		name = "EVT_ELECTIONS_NOCHANGE"
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+	}
+}
+
+event = {
+	id = 8005006
+	country = ENG
+
+	name = "EVT_8005006_NAME"
+	desc = "EVT_8005006_DESC"
+	picture = "nwo\harold_macmillan"
+	style = 2
+
+	trigger = {
+		government = democratic
+		headofgovernment = 10160
+		event = 8005007 # Profumo Affair
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "EVT_8005006_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		command = { type = headofgovernment which = 10161 } # Alec Douglas-Home
+		command = { type = foreignminister which = 10166 } # Richard A. Butler
+		command = { type = armamentminister which = 10177 } # Peter Thorneycroft
+		command = { type = ministerofsecurity which = 10182 } # Henry Brooke
+		command = { type = ministerofintelligence which = 10189 } # James Ramsden
+	}
+}
+
+event = {
+	id = 8005007
+	country = ENG
+
+	name = EVT_8005007_NAME
+	desc = EVT_8005007_DESC
+	picture = "nwo\profumo_affair"
+	style = 2
+	
+	trigger = {
+		government = democratic
+		headofgovernment = 1192 # Harold MacMillan in office
+		}
+
+	date = { day = 1 month = may year = 1963 }
+	offset = 30
+	deathdate = { day = 29 month = may year = 1963 }
+
+
+	action_a = {
+		name = EVT_8005007_A
+		command = { type = dissent value = 3 }
+		command = { type = ministerofintelligence which = 1221 }
+		}
+}
+
+event = {
+	id = 8005008
+	country = ENG
+	
+	name = EVT_8005008_NAME
+	desc = EVT_8005008_DESC
+	picture = "nwo\george_vi_funeral"
+	style = 2
+	
+	trigger = {
+		OR = {
+			headofstate = 10014 # George VI
+			headofstate = 10015 # George VI
+			headofstate = 10157 # George VI
+		}
+	}
+
+	date = { day = 6 month = february year = 1952 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+
+	action_a = {
+		name = EVT_8005008_A
+		command = { type = headofstate which = 10150 } # Elisabeth II
+		}
+}
+
+event = {
+	id = 8005009
+	country = ENG
+	
+	name = EVT_8005009_NAME
+	desc = EVT_8005009_DESC
+	picture = "nwo\elizabeth_ii_coronation"
+	style = 2
+	
+	trigger = {
+		event = 8005008
+	}
+
+	date = { day = 10 month = february year = 1952 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+
+	action_a = {
+		name = EVT_8005009_A
+		command = { type = dissent value = -5 }
+		}
+}
+
+event = {
+	id = 8005010
+	country = ENG
+	
+	name = EVT_8005010_NAME
+	desc = EVT_8005010_DESC
+	picture = "nwo\london_1948"
+	style = 2
+	
+	trigger = {
+		atwar = no
+	}
+
+	date = { day = 29 month = july year = 1948 }
+	offset = 7
+	deathdate = { day = 14 month = august year = 1948 }
+
+
+	action_a = {
+		name = EVT_8005010_A
+		command = { type = dissent value = -3 }
+		}
+}
+
+#Mosley Trial
+event = {
+	id = 8005011
+	random = no
+	country = ENG
+
+	trigger = {
+		NOT = {
+			war = { country = ENG country = GER }
+		}
+	}
+
+	name = "Trial of Oswald Mosley"
+	desc = "Today, Oswald Moseley, founder of the British Union of Fascists, sat before a jury today. Ever since his arrest in 1940, he has not had a proper trial. Mosley is charged with treason, and may be put to death. The first day of the trial has went nowhere however. Court was adjourned with no verdict given. Mosley's defense stated that he was merely expressing his political freedoms, and it seemed to make the jury question a guilty verdict. The trial is expected to go on for quite a while."
+	style = 2
+	picture = "fatherland\trial_mosley" 
+
+	date = { day = 5 month = may year = 1951 }
+	offset = 1
+	deathdate = { day = 7 month = may year = 1951 }
+
+	action_a = {
+		name = "Justice, at the end"
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 8005012
+	random = no
+	country = ENG
+
+	trigger = {
+		event = { id = 8005011 days = 5  }
+	}
+
+	name = "Fascists take to the streets"
+	desc = "EVT_15001_DESC"
+	style = 2
+	picture = "fatherland\protest_mosley"
+
+	date = { day = 1 month = may year = 1951 }
+	offset = 1 
+	deathdate = { day = 1 month = january year = 1952 }
+
+	action_a = {
+		name = "Damn!"
+		command = { type = dissent value = 2 }
+	}
+}
+
+###################
+# Peace Demonstration
+event = {
+	id = 9300052
+	random = no
+	country = ENG
+
+	trigger = { 
+			  atwar = no 
+			  NOT = { policy = { type = interventionism value = 8 } }
+ 	}
+   
+	name = "Peace Demonstration"
+	desc = "Our country has committed itself to the promotion of peace over the continent." 
+	style = 2
+	picture = "strike"
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = ACTION_NAME_DAMN
+		command = { type = dissent value = 2 }
+	}
+}
+
+###################
+# Improve Radar Stations
+event = {
+	id = 9300053
+	random = no
+	country = ENG
+
+	decision = { war = { country = ENG country = GER } }
+
+	decision_trigger = {
+		technology = 5420 # Radar 1940
+		money = 500
+		metal = 20000
+	}
+
+	trigger = { war = { country = ENG country = GER } random = 50 }
+   
+	name = " Improve Radar Stations"
+	desc = " Improve Radar Stations" 
+	style = 2
+	picture = "Radar"
+	decision_picture = "decision_Radar"
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		ai_chance = 50
+		name = ACTION_NAME_GREAT
+		command = { type = building_prod_mod which = radar_station value = 25 }
+		command = { trigger = { control = { province = 23 data = ENG } } type = construct which = radar_station where = 23 value = 2 } # Plymouth
+		command = { trigger = { control = { province = 20 data = ENG } } type = construct which = radar_station where = 20 value = 2 } # Exeter
+		command = { trigger = { control = { province = 27 data = ENG } } type = construct which = radar_station where = 27 value = 2 } # Portsmouth
+		command = { trigger = { control = { province = 26 data = ENG } } type = construct which = radar_station where = 26 value = 2 } # Dover
+		command = { trigger = { control = { province = 25 data = ENG } } type = construct which = radar_station where = 25 value = 2 } # Norwich
+		command = { trigger = { control = { province = 19 data = ENG } } type = construct which = radar_station where = 19 value = 2 } # Bristol
+		command = { trigger = { ai = no } type = money value = -500 }
+		command = { trigger = { ai = no } type = metalpool value = -20000 }
+	}
+		action = {
+		name = "Not now"
+		ai_chance = 50
+		command = { trigger = { ai = no } type = money value = 50 }
+	}
+}
+
+###############
+# Outlaw British Union Party
+event = {
+	id = 9300098
+	random = no
+	country = ENG
+
+	decision = { 
+		government = democratic	
+	}
+
+	decision_trigger = {
+		government = democratic	
+	}
+
+	trigger = { 
+		government = democratic	
+		random = 50
+	}
+   
+	name = "9300098name"
+	desc = "9300098desc" 
+	style = 2
+	picture = "Mosley"
+	decision_picture = "decision_fireside_chat"
+
+	date = { day = 1 month = june year = 1948 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = dissent value = 3 }
+		command = { type = relation which = ITA value = -30 }
+	}
+}
+
+###################
+# Train Gurkha Regiments (22 units)
+event = {
+	id = 9300246
+	random = no
+	country = ENG
+
+	decision = { war = { country = GER }    }
+
+	decision_trigger = { supplies = 1000 }
+
+	trigger = { 
+		 war = { country = GER } 
+		random = 20
+	}
+   
+	name = 9300246name
+	desc = 9300246desc
+	style = 2
+	picture = "Gurkha"
+	decision_picture = "decision_Gurkha"
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		command = { type = activate_unit_type which = d_05 }
+		command = { type = strength_cap which = d_05 when = 0 value = 40 }
+		command = { type = build_division which = d_05 when = 8 cost = 0.1 where = 90 }
+		command = { type = build_division which = d_05 when = 7 cost = 0.1 where = 120 }
+		command = { type = build_division which = d_05 when = 7 cost = 0.1 where = 180 }
+		command = { trigger = { ai = no } type = supplies value = -100 }
+	}
+}
+
+###############
+# Initiate Diplomatic Talks with Ireland
+event = {
+	id = 9300347
+	random = no
+	country = ENG
+
+	decision = { 
+			war = { country = GER } 
+			not = { alliance = { country = IRE } } 
+			headofgovernment = 10017 
+			} # Paris
+	decision_trigger = { money = 100 }
+	trigger = { war = { country = GER } not = { alliance = { country = IRE } }  headofgovernment = 10017 random = 20 } # Paris
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1999 }
+
+   	name = 9300347name
+	desc = 9300347desc
+	style = 2
+	picture = "diplomatic_campaign"
+	decision_picture = "decision_diplomatic_campaign"
+
+	action = {
+		ai_chance = 80
+		name = 9300347a # Ports Access
+		command = { type = trigger which = 9300348 }
+	}
+	action = {
+		ai_chance = 20
+		name = 9300347b # Full-Alliance and Ulster Returns
+		command = { type = trigger which = 9300349 }
+	}
+}
+event = {
+	id = 9300348
+	random = no
+	country = IRE
+
+   	name = 9300348name
+	desc = 9300347desc
+	style = 2
+	picture = "diplomatic_campaign"
+
+	action = {
+		ai_chance = 40
+		name = 9300348a
+		command = { type = access which = ENG }
+		command = { type = relation which = ENG value = 20 }
+      		command = { trigger = { ai = no } type = dissent value = 5 }
+	}
+	action = {
+		ai_chance = 60
+		name = 9300348b
+		command = { }
+	}
+}
+event = {
+	id = 9300349
+	random = no
+	country = IRE
+
+   	name = 9300349name
+	desc = 9300347desc
+	style = 2
+	picture = "diplomatic_campaign"
+
+	action = {
+		ai_chance = 20
+		name = 9300348a
+		command = { type = alliance which = ENG when = 1 }
+		command = { type = relation which = ENG value = 100 }
+      		command = { type = trigger which = 9300350 }
+	}
+	action = {
+		ai_chance = 80
+		name = 9300348b
+		command = { type = relation which = ENG value = -20 }
+	}
+}
+event = {
+	id = 9300350
+	random = no
+	country = ENG
+
+   	name = 9300350name
+	desc = 9300347desc
+	style = 2
+	picture = "diplomatic_campaign"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = secedeprovince which = IRE value = 35 }
+		command = { type = secedeprovince which = IRE value = 36 }
+	}
+}
+
+###############
+# 'Churchill Crocodile' Flame-Throwing Tank http://en.wikipedia.org/wiki/Churchill_Crocodile#Flame_projector
+event = {
+	id = 9300403
+	random = no
+	country = ENG
+
+	trigger = { 
+		random = 10
+	}
+
+	name = 9300403name
+	desc = 9300403desc
+	style = 2
+	picture = "churchill_crocodile"
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = action_name_great
+	  	command = { type = soft_attack which = heavy_armor value = 1 }
+		command = { trigger = { ai = no } type = supplies value = -500 }
+	}
+}
+
+####################################################################
+#  Churchill Official Visit to Canada
+####################################################################
+
+event = {
+	id = 1000152
+	random = no
+	country = CAN
+	trigger = {
+		exists = ENG	
+	}
+
+	date = { day = 27 month = december year = 1951 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1951 }
+	
+	name = "EVT_1000152_NAME"
+	desc = "EVT_1000152_DESC"
+	style = 2
+	picture = "chruchill_canada"
+	action = {
+		name = "1000152a"
+		ai_chance = 100
+		command = { type = relation which = ENG value = 10 }
+		command = { type = trigger which = 1000153 }
+	}
+}
+event = {
+	id = 1000153
+	random = no
+	country = ENG
+	
+	name = "EVT_1000152_NAME"
+	desc = "EVT_1000152_DESC"
+	style = 2
+	picture = "chruchill_canada"
+	action = {
+		name = "1000152a"
+		ai_chance = 100
+		command = { type = relation which = ENG value = 10 }
+	}
+}
+
+#########################################################################
+#  Imperial Conference in London
+#########################################################################
+
+event = {
+	id = 1000276
+	random = no
+	country = ENG
+
+	trigger = { atwar = no }
+
+	date = { day = 13 month = april year = 1952 }
+	offset = 1
+	deathdate = { day = 15 month = april year = 1952 }
+	
+	name = "EVT_1000276_NAME"
+	desc = "EVT_1000276_DESC"
+	style = 2
+	picture = "imperial_conference"
+
+	action = {
+		name = "1000276a"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+
+#########################################################################
+#  British State Visit to France
+#########################################################################
+
+event = {
+	id = 1000287
+	random = no
+	country = ENG
+
+	trigger = { atwar = no }
+	
+	date = { day = 11 month = july year = 1952 }
+	offset = 1
+	deathdate = { day = 13 month = july year = 1952 }
+	
+	name = "EVT_1000287_NAME"
+	desc = "EVT_1000287_DESC"
+	style = 2
+	picture = "british_state_visit_paris"
+
+	action = {
+		name = "1000287a"
+		ai_chance = 100
+		command = { type = relation which = FRA value = 10 }
+		command = { type = trigger which = 1000288 }
+	}
+}
+event = {
+	id = 1000288
+	random = no
+	country = U01
+	
+	name = "EVT_1000287_NAME"
+	desc = "EVT_1000287_DESC"
+	style = 2
+	picture = "british_state_visit_paris"
+
+	action = {
+		name = "1000287a"
+		ai_chance = 100
+		command = { type = relation which = ENG value = 10 }
+	}
+}
+
+########################################################################
+#  Pan-Arab Congress at Bludan
+#########################################################################
+
+event = {
+	id = 1000281
+	random = no
+	country = ENG
+
+	trigger = { atwar = no }
+	
+	date = { day = 09 month = september year = 1952 }
+	offset = 1
+	deathdate = { day = 11 month = september year = 1952 }
+	
+	name = "EVT_1000281_NAME"
+	desc = "EVT_1000281_DESC"
+	style = 2
+	picture = "palestine"
+
+	action = {
+		name = "1000281a"
+		ai_chance = 100
+		command = { type = dissent value = 1 }	
+	}
+}
+#########################################################################
+#  Assassination of British Commissioner for Galilee
+#########################################################################
+
+event = {
+	id = 1000282
+	random = no
+	country = ENG
+
+	trigger = { atwar = no }
+	
+	date = { day = 25 month = september year = 1952 }
+	offset = 1
+	deathdate = { day = 27 month = september year = 1952 }
+	
+	name = "EVT_1000282_NAME"
+	desc = "EVT_1000282_DESC"
+	style = 2
+	picture = "palestine_funeral"
+
+	action = {
+		name = "1000282a"
+		ai_chance = 100
+		command = { type = dissent value = 1 }	
+	}
+}
+#########################################################################
+#  British Arrest of Arab High Committee in Palestine
+#########################################################################
+
+event = {
+	id = 1000283
+	random = no
+	country = ENG
+
+	trigger = { atwar = no }
+
+	date = { day = 01 month = october year = 1952 }
+	offset = 1
+	deathdate = { day = 03 month = october year = 1952 }
+	
+	name = "EVT_1000283_NAME"
+	desc = "EVT_1000283_DESC"
+	style = 2
+	picture = "arab_committee_arrest"
+
+	action = {
+		name = "1000283a"
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+	}
+}
+#########################################################################
+#  Palestinian Arab Leader Escape to Syria
+#########################################################################
+
+event = {
+	id = 1000284
+	random = no
+	country = ENG
+
+	trigger = { atwar = no }
+	
+	date = { day = 15 month = october year = 1952 }
+	offset = 1
+	deathdate = { day = 17 month = october year = 1952 }
+	
+	name = "Palestinian Arab Leader Escape to Egypt"
+	desc = "EVT_1000284_DESC"
+	style = 2
+	picture = "damascus"
+
+	action = {
+		name = "1000284a"
+		ai_chance = 100
+		command = { type = relation which = EGY value = -10 }
+	}
+}
+#########################################################################
+#  New British High Commissioner in Palestine
+#########################################################################
+
+event = {
+	id = 1000285
+	random = no
+	country = ENG
+
+	trigger = { atwar = no }
+	
+	date = { day = 02 month = march year = 1953 }
+	offset = 1
+	deathdate = { day = 04 month = march year = 1953 }
+	
+	name = "EVT_1000285_NAME"
+	desc = "EVT_1000285_DESC"
+	style = 2
+	picture = "high_commissioner_new"
+
+	action = {
+		name = "1000285a"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = relation which = SAU value = -5 }
+		command = { type = relation which = PER value = -5 }
+		command = { type = relation which = EGY value = -5 }
+		
+	}
+}
+#########################################################################
+#  Terrorist Attacks in Palestine
+#########################################################################
+
+event = {
+	id = 1000286
+	random = no
+	country = ENG
+
+	trigger = { atwar = no }
+	
+	date = { day = 02 month = july year = 1953 }
+	offset = 1
+	deathdate = { day = 04 month = july year = 1953 }
+	
+	name = "EVT_1000286_NAME"
+	desc = "EVT_1000286_DESC"
+	style = 2
+	picture = "palestine_explosion"
+	action = {
+		name = "1000286a"
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+	}
+}
+
+####################################################################
+#  Anglo-Australian Air Mail Service
+####################################################################
+event = {
+	id = 1000295
+	random = no
+	country = ENG
+	trigger = {
+		atwar = no
+		exists = AST
+	}
+
+	date = { day = 29 month = october year = 1949 }
+
+	name = "EVT_1000295_NAME"
+	desc = "EVT_1000295_DESC"
+	style = 2
+	picture = "anglo_mail"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = relation which = AST value = 5 }
+		command = { type = trigger which = 1000296 }
+	}
+}
+event = {
+	id = 1000296
+	random = no
+	country = AST
+
+	name = "EVT_1000295_NAME"
+	desc = "EVT_1000295_DESC"
+	style = 2
+	picture = "anglo_mail"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = relation which = ENG value = 5 }
+	}
+}
+
+####################################################################
+#  'Buy British' campaign
+#########################################################################
+
+event = {
+	id = 1000299
+	random = no
+	country = ENG
+
+	date = { day = 12 month = july year = 1953 }
+	offset = 1
+	deathdate = { day = 14 month = july year = 1953 }
+	
+	name = "EVT_1000299_NAME"
+	desc = "EVT_1000299_DESC"
+	style = 2
+	picture = "buy_british"
+	action = {
+		name = "ACTION_NAME_OK"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+
+####################################################################
+#  Opening of Mosul-Haifa Oil Pipeline
+####################################################################
+
+event = {
+	id = 1000302
+	random = no
+	country = ENG
+
+	trigger = { exists = IRQ }
+	
+	date = { day = 03 month = january year = 1953 }
+	offset = 1
+	deathdate = { day = 05 month = january year = 1953 }
+	
+	name = "EVT_1000302_NAME"
+	desc = "EVT_1000302_DESC"
+	style = 2
+	picture = "mosul_haifa_pipeline"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = construct which = infrastructure where = 1011 value = 10 } #  Haifa
+
+		command = { type = construct which = naval_base where = 1011 value = 1 } #  Haifa
+		command = { type = trigger which = 1000463 }
+		command = { type = trigger which = 1000464 }
+	}
+}
+
+####################################################################
+#  Anti-Catholic Riots in Belfast
+####################################################################
+
+event = {
+	id = 1000303
+	random = no
+	country = ENG
+	trigger = { exists = IRE }
+	
+	date = { day = 01 month = july year = 1953 }
+	offset = 1
+	deathdate = { day = 03 month = july year = 1953 }
+	
+	name = "EVT_1000303_NAME"
+	desc = "EVT_1000303_DESC"
+	style = 2
+	picture = "riot_belfast"
+
+	action = {
+		name = "1000303a"
+		ai_chance = 100
+		command = { type = relation which = IRE value = -10 }
+		command = { type = dissent value = 1 }	
+	}
+}
+
+#########################################################################
+#  BBC Launches TV Network
+#########################################################################
+event = {
+	id = 1000311
+	country = ENG
+	random = no
+	
+	name = "EVT_1000311_NAME"
+	desc = "EVT_1000311_DESC"
+	picture = "bbc_tv"
+	style = 2
+	
+	date = { day = 2 month = november year = 1950 }
+	offset = 30
+	deathdate = { day = 29 month = november year = 1963 }
+	
+		trigger = { random = 20 }
+	
+	action = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+
+##############################################################
+#  British Commandos
+#####################################################################
+event = { 
+	id = 1000315
+	random = no
+	country = ENG
+
+	trigger = { headofgovernment = 10018
+		    war = { country = GER country = ENG } }
+        		
+	name = "EVT_1000315_NAME"
+	desc = "EVT_1000315_DESC"
+	picture = "commandos"
+	style = 2
+
+	date = { day = 15 month = may year = 1940 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = "ACTION_NAME_GREAT" 
+		ai_chance = 100
+		command = { type = river_attack which = b_rsv_36 value = 2 }
+		command = { type = shore_attack which = b_rsv_36 value = 2 }
+		command = { type = mountain_attack which = b_rsv_36 value = 2 }
+		command = { type = mountain_defense which = b_rsv_36 value = 2 }
+		command = { type = morale which = b_rsv_36 value = 5 }
+		command = { type = river_attack which = marine value = 1 }
+		command = { type = shore_attack which = marine value = 1 }
+		command = { type = build_time which = marine when = on_upgrade where = relative value = 4 }
+		command = { trigger = { ai = no } type = money value = -10 }
+		command = { trigger = { ai = no } type = supplies value = -100 }
+	}
+}
+##############################################################
+#  The Special Operations Executive
+###############################################################
+event = { 
+	id = 1000316
+	random = no
+	country = ENG 
+
+	trigger = { headofgovernment = 10018
+		    war = { country = GER country = ENG } }
+        		
+	name = "EVT_1000316_NAME"
+	desc = "EVT_1000316_DESC"
+	picture = "special_operations_exceution"
+	style = 2
+
+	date = { day = 22 month = july year = 1940 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = { 
+		name = "1000389a" 
+		ai_chance = 100
+		command = { type = intelligence which = us value = 1 }
+		command = { type = intelligence which = them value = -1 }			
+	}
+}
+##########################################################################
+#  The Gloster E.28/39
+##########################################################################
+event = { 
+	id = 1000317
+	random = no
+	country = ENG
+
+	trigger = { technology = 5590 }
+
+	name = "EVT_1000317_NAME"
+	desc = "EVT_1000317_DESC"
+	picture = "gloster"
+	style = 2
+
+	date = { day = 15 month = may year = 1951 }
+	offset = 30
+	deathdate = { day = 29 month = january year = 1963 }
+	
+	action = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = 100		
+		command = { type = gain_tech which = 7570 }
+		command = { type = supplies value = -1000 }
+	}
+}
+##############################################################
+#  The Special Air Service
+##############################################################
+event = { 
+	id = 1000318
+	random = no
+	country = ENG
+  
+	trigger = { headofgovernment = 10018
+		    war = { country = GER country = ENG } }
+      		
+	name = "EVT_1000318_NAME"
+	desc = "EVT_1000318_DESC"
+	picture = "sas"
+	style = 2
+
+	date = { day = 1 month = july year = 1951 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action_a = {
+		name = "ACTION_NAME_GREAT" 
+		ai_chance = 100
+		command = { type = night_attack which = b_rsv_36 value = 2 }
+		command = { type = desert_attack which = b_rsv_36 value = 1 }
+		command = { type = desert_defense which = b_rsv_36 value = 1 }
+ 		command = { trigger = { ai = no } type = money value = -10 }
+		command = { trigger = { ai = no } type = supplies value = -100 }
+	}
+}
+#########################################################
+#  Colossus Computer
+#########################################################
+event = {
+    	id = 1000319
+    	country = ENG
+	random = no
+
+	trigger = { technology = 5340 }
+      
+	name = "EVT_1000319_NAME"
+	desc = "EVT_1000319_DESC"
+ 	picture = "colossus"
+	style = 2
+
+     	date = { day = 14 month = december year = 1953 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+     	action_a = {
+               name = "ACTION_NAME_GREAT"
+		ai_chance = 100
+               	command = { type = research_mod value = 1 }       	
+		command = { type = gain_tech which = 7140 }
+               }
+}
+
+####################################################################
+#  British Royal Visit to the U.S.
+####################################################################
+
+event = {
+	id = 1000350
+	random = no
+	country = ENG
+	trigger = { exists = USA }
+	
+	date = { day = 07 month = june year = 1949 }
+	offset = 1
+	deathdate = { day = 09 month = june year = 1949 }
+	
+	name = "EVT_1000350_NAME"
+	desc = "EVT_1000350_DESC"
+	style = 2
+	picture = "british_visit_us"
+
+	action = {
+		name = "1000350a"
+		ai_chance = 100
+		command = { type = relation which = USA value = 10 }
+		command = { type = money value = -5 }
+		command = { type = trigger which = 1000351 }	
+	}
+}
+event = {
+	id = 1000351
+	random = no
+	country = USA
+	
+	name = "EVT_1000350_NAME"
+	desc = "EVT_1000350_DESC"
+	style = 2
+	picture = "british_visit_us"
+
+	action = {
+		name = "1000350b"
+		ai_chance = 100
+		command = { type = relation which = ENG value = 10 }
+		command = { type = money value = -5 }
+	}
+}
+
+####################################################################
+# Opening of Mosul-Haifa Oil Pipeline
+####################################################################
+
+event = {
+	id = 1000463
+	random = no
+	country = IRQ
+	
+	name = "EVT_1000302_NAME"
+	desc = "EVT_1000302_DESC"
+	style = 2
+	picture = "mosul_haifa_pipeline"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = construct which = infrastructure where = 1029 value = 10 } #  Mosul
+
+		command = { type = relation which = ENG value = 10 }
+		command = { type = add_prov_resource which = 1029 value = 6 where = oil } #  Mosul	
+	}
+}
+
+event = {
+	id = 1000464
+	random = no
+	country = ENG
+	
+	name = "EVT_1000302_NAME"
+	desc = "EVT_1000302_DESC"
+	style = 2
+	picture = "mosul_haifa_pipeline"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = construct which = naval_base where = 750 value = 1 } #  Tripoli
+
+		command = { type = relation which = ENG value = 10 }
+	}
+}
+
+#################################################################### 
+# Britain's tank development 
+####################################################################
+event = { 
+        id = 1000552 
+        random = no 
+        country = ENG 
+
+        trigger = { 
+                technology = 2030 # ARM 1936 
+                random = 20 
+        } 
+
+        name = EVT_1000552_NAME 
+        desc = EVT_1000552_DESC 
+        style = 2 
+        picture = "britains_tanks" 
+
+        date = { day = 1 month = january year = 1950 } 
+        offset = 30 
+        deathdate = { day = 29 month = december year = 1999 } 
+
+        action = { 
+                name = action_name_ok 
+                command = { type = hard_attack which = armor value = -2 } 
+                command = { type = build_time which = armor when = on_upgrade where = relative value = -10 } 
+        } 
+}
+#########################################################################
+#  Return of British citizens from Mexico
+#########################################################################
+event = {
+	id = 14002
+	random = no
+	country = ENG
+
+	trigger = {
+		war = { country = MEX country = U07 }
+	}
+
+	name = "Return of British citizens from Mexico"
+	desc = "Violence in Mexico has escalated to a full-scale civil war. Since Mexico was home to many British citizens who were working for our companies active there, the Foreign Ministry has begun to organize their immediate evacuation. Our business interests in Mexico will suffer, but at least we can get our people back home safely."
+	style = 2
+	picture = "coup"
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 4
+	deathdate = { day = 1 month = december year = 1999 }
+
+	action = {
+		name = "Ok"
+		command = { type = money value = -50 }
+	}
+}
+#########################################################################
+#  Foreign sabotage
+#########################################################################
+event = {
+id = 71007
+persistent = yes
+country = ENG
+style = 2
+Picture = "news_paper"
+
+trigger = {
+	random = 10
+}
+
+date = { day = 0 month = january year = 1950 }
+offset = 50
+deathdate = { day = 29 month = december year = 1999 }
+
+name = "Foreign Sabotage"
+desc = "Enemies of British order from Axis are weakening the stability of Great Britian. Recently rebels caused a panic in one of the major British cities as am assassin tried to kill a famous government representative. Several soldiers and civilians suffered."
+
+action_a = {
+name = "Enemies of Britian will pay for that"
+command = { type = dissent value = 3 }
+}
+}
+
+# Supermarine Spitfire
+event = {
+        id = 9300387
+        random = no
+        country = ENG
+
+        trigger = {
+                technology = 4040 # FIG 1938
+                random = 20
+        }
+
+        name = 9300387name
+        desc = 9300387desc
+        style = 2
+        picture = "spitfire"
+
+        date = { day = 1 month = january year = 1949 }
+        offset = 30
+        deathdate = { day = 29 month = december year = 1999 }
+
+        action = {
+                name = action_name_great
+                command = { type = air_defense which = multi_role value = -2 } # bonus
+                command = { type = build_time which = multi_role when = on_upgrade where = relative value = 5 }
+                command = { trigger = { ai = no } type = supplies value = -500 }
+        }
+}
+
+#eventi da PWV
+event = {
+	id = 13304010
+	random = no
+	country = ENG
+
+	trigger = {
+		
+		exists = ENG
+	}
+
+	name = "The Unknown Hero"
+	desc = "The British grave of The Unknown Warrior (often known as 'The Tomb of The Unknown Warrior') holds an unidentified British soldier killed on a European battlefield during the First World War. He was buried in Westminster Abbey, London on 11 November 1950."
+	style = 2
+	picture = "ENG28"
+
+	date = { day = 10 month = October year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+        command = { type = money value = -20 }
+	}
+}
+
+event = {
+	id = 13304012
+	random = no
+	country = ENG
+
+	trigger = {
+		
+		exists = ENG
+	}
+
+	name = "Institute of Motor Industry"
+	desc = "The Institute of the Motor Industry is the professional body for individuals working in the motor industry, internationally. IMI is the authoritative source of retail industry information, standards and qualifications. IMI plays a vital role in developing and maintaining a skilled, competent and professional workforce, able to keep pace with evolving automotive technologies and rapidly changing markets"
+	style = 2
+	picture = "ENG1"
+
+	date = { day = 10 month = January year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = research_mod value = 0.5 }
+	}
+}
+
+event = {
+	id = 13304026
+	random = no
+	country = ENG
+
+	trigger = {
+		
+		exists = ENG
+	}
+
+	name = "RAF Staff College"
+	desc = "The RAF Staff College at RAF Andover was the first Royal Air Force staff college to be established. Its role was the training of officers in the administrative, staff and policy apects of air force matters"
+	style = 2
+	picture = "ENG27"
+
+	date = { day = 10 month = April year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+                command = { type = research_mod value = 1 }
+		command = { type = max_organization which = air value = 2 }
+                command = { type = morale which = air value = 2 }
+	}
+}
+
+event = {
+	id = 13304042
+	random = no
+	country = ENG
+
+	trigger = {
+		
+		exists = ENG
+	}
+
+	name = "British Institution of Radio Engineers"
+	desc = "The British Institution of Radio Engineers was a professional organization for radio engineers. It was founded in 1925. The main aim of the Institution was the advancement of the practice of radio engineering, through conferences, meetings, and training"
+	style = 2
+	picture = "ENG1"
+
+	date = { day = 10 month = January year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Ok"
+                command = { type = money value = -20 }
+		command = { type = research_mod value = 1 }
+	}
+}
+
+event = {
+	id = 13304047
+	random = no
+	country = ENG
+
+	trigger = {
+		
+		exists = ENG
+	}
+
+	name = "Commonwealth conference"
+	desc = "The 1956 Imperial Conference was the seventh Imperial Conference bringing together the prime ministers of the Dominions of the British Empire. It was held in London from 19 October to 22 November 1926. The conference was notable for producing the Balfour Declaration, which established the principle that the dominions are all equal in status, and autonomous communities within the British Empire not subordinate to the United Kingdom. The term Commonwealth was officially adopted to describe the community"
+	style = 2
+	picture = "ENG21"
+
+	date = { day = 10 month = November year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "One happy family"
+		command = { type = dissent value = -0.5 }
+		command = { type = relation which = CAN value = 40 }
+                command = { type = relation which = AST value = 40 }
+                command = { type = relation which = NZL value = 40 }
+                command = { type = relation which = SAF value = 40 }
+	}
+}
+
+event = {
+	id = 13304070
+	random = no
+	country = ENG
+
+	trigger = {
+		
+		exists = ENG
+	}
+
+	name = "Commonwealth Conference"
+	desc = "The 1930 Imperial Conference was the seventh Imperial Conference bringing together the Prime Ministers of the dominions of the British Empire. It was held in London. The conference was notable for producing the Statute of Westminster, which established legislative equality for the self-governing Dominions of the British Empire with the United Kingdom, thereby marking the effective legislative independence of these countries, either immediately or upon ratification"
+	style = 2
+	picture = "ENG21"
+
+	date = { day = 10 month = October year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "One happy family"
+		command = { type = dissent value = -0.5 }
+		command = { type = relation which = CAN value = 40 }
+                command = { type = relation which = AST value = 40 }
+                command = { type = relation which = NZL value = 40 }
+                command = { type = relation which = SAF value = 40 }
+	}
+}
+
+event = {
+	id = 13304052
+	random = no
+	country = ENG
+
+	trigger = {
+		
+		exists = ENG
+	}
+
+	name = "BBC Radio"
+	desc = "BBC Radio is an operational business division and service of the British Broadcasting Corporation (which has operated in the United Kingdom under the terms of a Royal Charter since 1927). On 1 January 1927 the British Broadcasting Company was succeeded in monopoly control of the airwaves by the British Broadcasting Corporation, under the terms of a Royal Charter"
+	style = 2
+	picture = "ENG12"
+
+	date = { day = 10 month = January year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                command = { type = money value = -10 }
+	}
+}
+
+event = {
+	id = 13304083
+	random = no
+	country = ENG
+
+	trigger = {
+		
+		exists = ENG
+	}
+
+	name = "Communist League"
+	desc = "The Communist League was one of the first Trotskyist groups in Britain, formed in 1932 by members of the Communist Party of Great Britain in Balham and Tooting in South London, including Harry Wicks, who had been expelled after forming a loose grouping inside the CPGB, known as the Balham Group"
+	style = 2
+	picture = "ENG1"
+
+	date = { day = 10 month = June year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Red Menace"
+		command = { type = dissent value = 1 }
+	}
+}
+
+#########################################################################
+#  British State Visit to France
+#########################################################################
+
+	event = {
+	id = 7776033 
+	random = no
+	country = ENG
+	trigger = {
+			exists = ENG
+			
+			}
+		
+	date = { day = 11 month = july year = 1948 }
+	
+	name = "British State Visit to Free France"
+	desc = "King George VI and Queen Elizabeth conducted an official state visit to Algiers."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We are allies!"
+		ai_chance = 100
+		
+		command = { type = relation which = U01 value = 15 }
+		command = { type = dissent value = -1 }
+		command = { type = trigger which = 7776034 }					
+		}
+}
+
+event = {
+	id = 7776034 
+	random = no
+	country = U01
+	
+	name = "British State Visit to Free France"
+	desc = "King George VI and Queen Elizabeth conducted an official state visit to Paris. This visit was conducted to highlight Anglo-French solidarity and as a counter-demonstration to Hitler's visit to Rome."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "We are allies."
+		ai_chance = 100
+		
+		command = { type = relation which = ENG value = 15 }
+		command = { type = dissent value = -1 }					
+		}
+}
+
+#########################################################################
+#  Anglo-Turkish Agreement
+#########################################################################
+
+	event = {
+	id = 7776429 
+	random = no
+	country = TUR
+	trigger = {
+			NOT = { war = { country = TUR country = ENG } }
+			}
+		
+	date = { day = 16 month = may year = 1949 }
+	
+	name = "Anglo-Turkish Agreement"
+	desc = "The British and Turkish governments signed an agreement to promote stability in the eastern Mediterranean."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Stability in the eastern Mediterranean!"
+		ai_chance = 100
+		
+		command = { type = dissent value = -1 }
+		command = { type = relation which = ENG value = 20 }
+		command = { type = trigger which = 7776430 }
+														
+		}
+}
+
+event = {
+	id = 7776430 
+	random = no
+	country = ENG
+	
+	name = "Anglo-Turkish Agreement"
+	desc = "The British and Turkish governments signed an agreement to promote stability in the eastern Mediterranean."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Stability in the eastern Mediterranean!"
+		ai_chance = 100
+		
+		command = { type = dissent value = -1 }
+		command = { type = relation which = TUR value = 20 }
+														
+		}
+}
+
+#########################################################################
+#  Terrorist Attacks in Palestine
+#########################################################################
+
+	event = {
+	id = 7776431 
+	random = no
+	country = ENG
+	trigger = {
+			exists = ENG
+			
+			}
+		
+	date = { day = 02 month = july year = 1950 }
+	
+	name = "Terrorist Attacks in Palestine"
+	desc = "During the summer of 1950, terrorist groups conducted a series of attacks in Palestine, which included major bombings in the Jerusalem, Haifa, and the Jaffa Arab markets. These attacks reflected an undeclared state of war between the Arabs and the Jews."
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Not again!"
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+		command = { type = revolt which = 1172 }
+				
+		}
+}
+

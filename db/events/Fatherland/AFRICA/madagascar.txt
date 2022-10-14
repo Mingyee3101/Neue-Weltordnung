@@ -1,0 +1,91 @@
+# Madagascar
+event = {
+	id = 8210001
+	tag = { U01 }
+
+	name = "Colonial unrest in Madagascar"
+	desc = "Colonial unrest in Madagascar"
+	picture = "nwo\colonial_unrest"
+	style = 2
+
+	trigger = {
+		control = { province = 1001 data = -1 }
+		random = 70
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = OK
+		command = { type = dissent value = 3 }
+		command = { type = revolt which = 1001 }
+		command = { type = revolt which = 1002 }
+		command = { type = revolt which = 1003 }
+	}
+}
+
+event = {
+	id = 800910
+	country = MAD
+
+	name = EVT_8009111_NAME
+	desc = EVT_8009111_DESC
+	picture = "nwo\empty"
+	style = 2
+
+	trigger = {
+		random = 50
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = EVT_8009111_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 690015 } # Philibert Tsiranana
+		command = { type = headofgovernment which = 690020 } # Philibert Tsiranana
+		command = { type = foreignminister which = 690022 } # Jean Jores Razafindrakoto
+		command = { type = armamentminister which = 690024 } # Ramilison Randriamampianina
+		command = { type = ministerofsecurity which = 690027 } # Eugene Rakotondramary
+		command = { type = ministerofintelligence which = 690029 } # Ullmont L. James
+		command = { type = chiefofstaff which = 690031 } # Joseph Rakotondrandria
+		command = { type = chiefofarmy which = 690033 } # Rafeno Fanjava
+		command = { type = chiefofnavy which = 690035 } # Olivier Randrianantenaina
+		command = { type = chiefofair which = 690037 } # Solomon Rabemanoela
+		
+		command = { type = peace which = USA value = 0 } #Allies
+		command = { type = peace which = U01 value = 0 } #France
+		
+		command = { type = trigger which = 8009111 }
+	}
+}
+
+
+
+event = {
+	id = 8009111
+	country = U01
+
+	name = "The Madagascar is independent"
+	desc = "They are independent."
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		event = 8009110
+	}
+		
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = peace which = MAD value = 0 }
+	}
+}
+

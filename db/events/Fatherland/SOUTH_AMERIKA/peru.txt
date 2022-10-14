@@ -1,0 +1,1323 @@
+
+# Odria's Coup
+event = {
+	id = 8012004
+	country = PRU
+
+	name = EVT_8012004_NAME
+	desc = EVT_8012004_DESC
+	picture = "nwo\manuel_odria"
+	style = 2
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = EVT_8012004_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 185114 } # Manuel Odria Amoretti
+		command = { type = headofgovernment which = 185116 } # Armando Reveredo Iglesias
+		command = { type = foreignminister which = 185032 } # Manuel Gallagher
+		command = { type = armamentminister which = 185046 } # Oscar Trelles Mont?s
+		command = { type = ministerofsecurity which = 185060 } # Carlos Berninzon
+		command = { type = ministerofintelligence which = 185071 } # Alfredo Alvarez Calder?n
+		command = { type = chiefofstaff which = 185118 } # Alberto Zenon Ag?ero
+		command = { type = chiefofarmy which = 185120 } # Manuel Odria Amoretti
+		command = { type = chiefofnavy which = 185095 } # Luis Navarret?
+		command = { type = chiefofair which = 185102 } # Luis Navarret?
+	}
+}
+
+event = {
+	id = 8012005
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 185114 } # Manuel Odria Amoretti
+		command = { type = headofgovernment which = 185117 } # Alberto Zenon Ag?ero
+		command = { type = chiefofstaff which = 185119 } # Nicolas Lindley Lopez
+		command = { type = chiefofarmy which = 185121 } # Riccardo Perez Godoy
+	}
+}
+
+event = {
+	id = 8012006
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 185114 } # Manuel Odria Amoretti
+		command = { type = headofgovernment which = 185115 } # Alberto Roque Sald?as
+	}
+}
+
+event = {
+	id = 8012007
+	country = PRU
+
+	name = EVT_8012007_NAME
+	desc = EVT_8012007_DESC
+	picture = "nwo\manuel_odria"
+	style = 2
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = EVT_8012007_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 185012 } # Manuel Prado y Ugarteche
+		command = { type = headofgovernment which = 185021 } # Manuel Cisneros Sanchez
+	}
+}
+
+event = {
+	id = 8012008
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 185012 } # Manuel Prado y Ugarteche
+		command = { type = headofgovernment which = 185200 } # Luis Gallo Porras
+	}
+}
+
+event = {
+	id = 8012009
+	country = PRU
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1961 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 185012 } # Manuel Prado y Ugarteche
+		command = { type = headofgovernment which = 185201 } # Pedro G. Beltran Espantoso
+	}
+}
+
+event = {
+	id = 8012010
+	country = PRU
+
+	name = EVT_8012010_NAME
+	desc = EVT_8012010_DESC
+	picture = "nwo\riccardo_godoy"
+	style = 2
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = EVT_8012010_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 185202 } # Riccardo Perez Godoy
+		command = { type = headofgovernment which = 185203 } # Nicolas Lindley Lopez
+	}
+}
+
+event = {
+	id = 8012011
+	country = PRU
+
+	name = EVT_8012011_NAME
+	desc = EVT_8012011_DESC
+	picture = "nwo\riccardo_godoy"
+	style = 2
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1963 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_8012011_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 185204 } # Fernando Belaunde Terry
+		command = { type = headofgovernment which = 185205 } # Julio Trelles Montes
+	}
+}
+
+### Peruvian Wars
+
+event = {
+	id = 300088
+	country = PRU
+	style = 2
+	picture = "southamerica"
+
+	trigger = {
+		exists = ECU						#ECU exists
+		exists = COL						#COL exists
+		NOT = {
+			war = { country = ECU country = PRU } 			#PRU and ECU not at war
+			war = { country = COL country = PRU } 			#PRU and ECU not at war
+			ispuppet = ECU
+			ispuppet = PRU
+			ispuppet = COL
+		}
+	}
+
+	date = { day = 1 month = july year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Peruvian expansionism"
+	desc = "Since 1840, Peru has been involved in territorial disputes with its northern neighbours. Despite the two wars against Gran Colombia in 1828 and independent Ecuador in 1857, Peruvian citizens have for decades settled in lands beyond the Amazon and Marañón rivers, claimed by Ecuador as part of its Amazonian Provinces, and also in territory near the Colombian city of Letícia."
+
+	action_a = {
+		ai_chance = 95
+		name = "We are ready to protect the interests of our people"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 300089 }
+		command = { type = trigger which = 300090 }
+		command = { type = addcore which = 2033 }
+		command = { type = addcore which = 2010 }
+		command = { type = addcore which = 2008 }
+	}
+	action_b = {
+		ai_chance = 5
+		name = "We have no interest in territorial expansion"
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = dissent value = 5 }
+		command = { type = removecore which = 2008 }
+		command = { type = sleepevent which = 300091 }
+		command = { type = sleepevent which = 300094 }
+		command = { type = sleepevent which = 300103 }
+		command = { type = sleepevent which = 300114 }
+		command = { type = sleepevent which = 300117 }
+		command = { type = sleepevent which = 300097 }
+		command = { type = sleepevent which = 300105 }
+		command = { type = sleepevent which = 300107 }
+		command = { type = sleepevent which = 300111 }
+		command = { type = sleepevent which = 300113 }
+		command = { type = sleepevent which = 300115 }
+	}
+}
+
+event = {
+	id = 300089
+	country = ECU
+	picture = "southamerica"
+	style = 2
+
+	name = "Peru announces her intentions"
+	desc = "Since 1840, Peru has been involved in territorial disputes with us. Despite the two wars against Gran Colombia in 1828 and independent Ecuador in 1857, Peruvian citizens have for decades settled in lands claimed by Ecuador as part of its Amazonian Provinces, and also in territory near the Colombian city of Letícia. Now, Lima has announced once again its ambitions of expansion over these areas..."
+
+	action_a = {
+		name = "We must be prepared"
+		command = { type = relation which = PRU value = -50 }
+	}
+}
+
+event = {
+	id = 300090
+	country = COL
+	picture = "southamerica"
+	style = 2
+
+	trigger = {
+		NOT = {
+			government = FASCIST
+		}
+	}
+
+	name = "Peru announces her intentions"
+	desc = "Since 1840, Peru has been involved in territorial disputes with us. Despite the two wars against Gran Colombia in 1828 and independent Ecuador in 1857, Peruvian citizens have for decades settled in lands claimed by Ecuador as part of its Amazonian Provinces, and also in territory near the Colombian city of Letícia. Now, Lima has once again announced its ambitions of expansion over these areas..."
+
+	action_a = {
+		name = "We must be prepared"
+		command = { type = relation which = PRU value = -50 }
+	}
+}
+
+event = {
+	id = 300091
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		exists = ECU						#ECU exists
+		control = { province = 2008 data = ECU }			#Iquitos
+		NOT = {
+			atwar = PRU
+			alliance = { country = ECU country = PRU }
+			ispuppet = ECU
+			ispuppet = PRU
+		}
+	}
+
+	date = { day = 0 month = october year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Claiming the Ecuadorian Amazon"
+	desc = "After several years of small border skirmishes and ambushes between Ecuadorian and Peruvian border posts, Peru is ready to pressure Ecuador in order to gain control of the Amazonian lands beyond the Marañón river."
+
+	action_a = {
+		ai_chance = 90
+		name = "Demand territorial concessions"
+		command = { type = domestic which = defense_lobby value = 2 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 300092 }
+		command = { type = addcore which = 2033 }
+		command = { type = addcore which = 2010 }
+		command = { type = addcore which = 2008 }
+	}
+
+	action_b = {
+		ai_chance = 10
+		name = "This is not worth the trouble"
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = domestic which = defense_lobby value = -2 }
+		command = { type = dissent value = 5 }
+		command = { type = removecore which = 2033 }
+		command = { type = removecore which = 2010 }
+		command = { type = removecore which = 2008 }
+		command = { type = sleepevent which = 300094 }
+		command = { type = sleepevent which = 300103 }
+		command = { type = sleepevent which = 300114 }
+		command = { type = sleepevent which = 300117 }
+		command = { type = sleepevent which = 300097 }
+		command = { type = sleepevent which = 300105 }
+		command = { type = sleepevent which = 300107 }
+		command = { type = sleepevent which = 300111 }
+		command = { type = sleepevent which = 300113 }
+		command = { type = sleepevent which = 300115 }
+	}
+}
+
+event = {
+	id = 300092
+	random = no
+	country = ECU
+	style = 2
+	picture = "news_paper"
+
+	name = "Peruvian demands"
+	desc = "Peru has demanded that we cede our Amazon lands to them!"
+
+	action_a = {
+		ai_chance = 10
+		name = "We must give in to their demands"
+		command = { type = dissent value = 10 }
+		command = { type = secedeprovince which = PRU value = 2008 } #Iquitos
+		command = { type = secedeprovince which = PRU value = 2010 }
+		command = { type = secedeprovince which = PRU value = 2033 }
+		command = { type = sleepevent which = 300094 }
+		command = { type = sleepevent which = 300103 }
+		command = { type = sleepevent which = 300114 }
+		command = { type = sleepevent which = 300117 }
+		command = { type = sleepevent which = 300097 }
+		command = { type = sleepevent which = 300105 }
+		command = { type = sleepevent which = 300107 }
+		command = { type = sleepevent which = 300111 }
+		command = { type = sleepevent which = 300113 }
+		command = { type = sleepevent which = 300115 }
+	}
+
+	action_b = {
+		ai_chance = 90
+		name = "We will resist to the end"
+		command = { type = trigger which = 300093 }
+		command = { type = dissent value = -10 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 300093
+	random = no
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	name = "War against Ecuador?"
+	desc = "Ecuador has failed to comply to our demands! How humiliating! Should we accept our defeat or are we ready to take our lands by force?"
+
+	action_a = {
+		ai_chance = 9
+		name = "We must back down... For now!"
+		command = { type = dissent value = 4 }
+		command = { type = sleepevent which = 300094 }
+		command = { type = sleepevent which = 300103 }
+		command = { type = sleepevent which = 300114 }
+		command = { type = sleepevent which = 300117 }
+		command = { type = sleepevent which = 300097 }
+		command = { type = sleepevent which = 300105 }
+		command = { type = sleepevent which = 300107 }
+		command = { type = sleepevent which = 300111 }
+		command = { type = sleepevent which = 300113 }
+		command = { type = sleepevent which = 300115 }
+	}
+
+	action_b = {
+		ai_chance = 1
+		name = "Revoke our claims, stop bullying the Ecuadorians!"
+		command = { type = dissent value = 8 }
+		command = { type = domestic which = interventionism value = -2 }
+		command = { type = removecore which = 818 }
+		command = { type = sleepevent which = 300094 }
+		command = { type = sleepevent which = 300103 }
+		command = { type = sleepevent which = 300114 }
+		command = { type = sleepevent which = 300117 }
+		command = { type = sleepevent which = 300097 }
+		command = { type = sleepevent which = 300105 }
+		command = { type = sleepevent which = 300107 }
+		command = { type = sleepevent which = 300111 }
+		command = { type = sleepevent which = 300113 }
+		command = { type = sleepevent which = 300115 }
+	}
+
+	action_c = {
+		ai_chance = 80
+		name = "We will take our lands by force! To war!"
+		command = { type = war which = ECU }
+		command = { type = setflag which = ANDINEANWAR }
+	}
+}
+
+event = {
+	id = 300094
+	country = COL
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = ECU country = PRU }
+		NOT = {
+			atwar = COL
+			alliance = { country = COL country = ECU }
+			alliance = { country = COL country = PRU }			
+			ispuppet = COL
+		}
+	}
+
+	date = { day = 0 month = july year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Peru at war with Ecuador"
+	desc = "Peru is now seeking to increase their influence in the region at the expense of Ecuador. Already their forces have struck deep into Ecuador, and they are pressing for territorial concessions in return for peace."
+
+	action_a = {
+		trigger = { government = democratic }
+		ai_chance = 20
+		name = "We must remain neutral"
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = domestic which = defense_lobby value = -1 }
+	}
+
+	action_b = {
+		trigger = { government = communist }
+		ai_chance = 75
+		name = "Intervene in favour of Ecuador"
+		command = { type = trigger which = 300095 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+
+	action_c = {
+		trigger = { government = fascist }
+		ai_chance = 5
+		name = "Screw Ecuador, team up with Peru"
+		command = { type = trigger which = 300096 }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = domestic which = defense_lobby value = 1 }
+	}
+}
+
+event = {
+	id = 300095
+	random = no
+	country = ECU
+	style = 2
+	picture = "news_paper"
+
+	name = "Colombian intervention"
+	desc = "Colombia has decided to intervene on this war on our favour!"
+
+	action_a = {
+		ai_chance = 99
+		name = "We need all the help we can get!"
+		command = { type = alliance which = COL }
+		command = { type = dissent value = -5 }
+	}
+
+	action_b = {
+		ai_chance = 1
+		name = "We dont need anyone's help!"
+		command = { type = dissent value = 5 }
+		command = { type = morale which = land value = 5 }
+	}
+}
+
+event = {
+	id = 300096
+	random = no
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	name = "Colombian intervention"
+	desc = "Colombia has decided to intervene on this war on our favour!"
+
+	action_a = {
+		ai_chance = 50
+		name = "Welcome our new allies!"
+		command = { type = alliance which = COL }
+		command = { type = dissent value = -5 }
+	}
+
+	action_b = {
+		ai_chance = 50
+		name = "This is our war, they have no business here!"
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 300097
+	country = ECU
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = ECU country = PRU }
+		control = { province = 2008 data = PRU } #Iquitos in PRU hands.
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Amazon lands occupied"
+	desc = "The enemy has occupied our Amazon provinces. We should now beg for peace."
+
+	action = {
+		trigger = { NOT = { alliance = { country = COL country = PRU } } }
+		ai_chance = 70
+		name = "We must end this madness"
+		command = { type = trigger which = 300098 }
+		command = { type = dissent value = 10 }
+
+	}
+	action = {
+		ai_chance = 30
+		name = "Fight to the end!"
+		command = { type = dissent value = -5 }
+		command = { type = morale which = land value = 5 }
+	}
+}
+
+event = {
+	id = 300098
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	name = "Peace talks with Ecuador"
+	desc = "As our army has occupied the main cities and bases on the disputed territories, the Ecuadorian government has contacted our diplomats and announced that they are willing to surrender the Iquitos area in exchange for a complete peace treaty. Should we accept their offer? Some Peruvians, however, think that we should even demand the complete surrender of the Ecuadorian government and its replacement by a more pro-Peru cabinet."
+
+	action_a = {
+		ai_chance = 60
+		name = "We have achieved our objectives, accept their offer"
+		command = { type = trigger which = 300099 }
+		command = { type = dissent value = -5 }
+		command = { type = peace which = ECU value = 0 }
+	}
+
+	action_b = {
+		ai_chance = 35
+		name = "Demand the surrender of their government as well"
+		command = { type = trigger which = 300100 }
+	}
+
+	action_c = {
+		ai_chance = 5
+		name = "No peace! Peru will fight to the end!"
+		command = { type = dissent value = 5 }
+		command = { type = morale which = land value = 5 }
+	}
+}
+
+event = {
+	id = 300099
+	country = ECU
+	style = 2
+	picture = "news_paper"
+
+	name = "Peru accepts our offer"
+	desc = "The Peruvian government has accepted our peace offer. Even right now thousands of our fellow citizens are protesting in Quito over our alleged cowardice. We know, however, that the only other possible outcome of this conflict would be the complete destruction of the Ecuadorian state, resulting in tens of thousands of deaths... The cession of the disputed Iquitos area is a small price to pay."
+
+	action_a = {
+		name = "So, it could be worse, right?"
+		command = { type = peace which = PRU value = 0 }
+		command = { type = secedeprovince which = PRU value = 2008 } #Iquitos
+		command = { type = secedeprovince which = PRU value = 2010 }
+		command = { type = secedeprovince which = PRU value = 2033 }
+		command = { type = sleepevent which = 300111 }
+		command = { type = sleepevent which = 300113 }
+		command = { type = sleepevent which = 300115 }
+	}
+}
+
+event = {
+	id = 300100
+	country = ECU
+	style = 2
+	picture = "news_paper"
+
+	name = "A Peruvian puppet in Quito?"
+	desc = "Peru has announced that they will accept our peace offer with one more condition: the dissolution of our government and its replacement by a cabinet more friendly to them. In other words, our country would be under military occupation and ruled by a puppet regime of colaborationists! This may be our last chance for peace, however, other than the complete destruction of Ecuador..."
+
+	action_a = {
+		ai_chance = 45
+		name = "Accept their demands, there's nothing that we can do"
+		command = { type = secedeprovince which = PRU value = 2008 } #Iquitos
+		command = { type = secedeprovince which = PRU value = 2010 }
+		command = { type = secedeprovince which = PRU value = 2033 }
+		command = { type = peace which = PRU value = 0 }
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 300101 }
+		command = { type = sleepevent which = 300111 }
+		command = { type = sleepevent which = 300113 }
+		command = { type = sleepevent which = 300115 }
+	}
+
+	action_b = {
+		ai_chance = 45
+		name = "Cede the disputed territories, nothing beyond that!"
+		command = { type = trigger which = 300102 }
+	}
+
+	action_c = {
+		ai_chance = 10
+		name = "We've had enough humiliation! Break those talks!"
+		command = { type = dissent value = -10 }
+		command = { type = morale which = land value = 5 }
+	}
+}
+
+event = {
+	id = 300101
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	name = "A loyal puppet in Quito"
+	desc = "Ecuador has accepted our demands. Not only we have regained the Iquitos area, but we have achieved complete domination over the Ecuadorian state!"
+
+	action_a = {
+		name = "Ha! We are invincible!"
+		command = { type = dissent value = -10 }
+		command = { type = peace which = ECU value = 0 }
+		command = { type = coup_nation which = ECU }
+		command = { type = make_puppet which = ECU }
+	}
+}
+
+event = {
+	id = 300102
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	name = "Ecuador declines"
+	desc = "The stubborn Ecuadorians have already announced they won't comply to our demands of complete surrender of their government! However, they are still willing to end this war if we accept only the disputed territories, without messing with their internal affairs."
+
+	action_a = {
+		ai_chance = 90
+		name = "Accept their previous offer, then"
+		command = { type = peace which = ECU value = 0 }
+		command = { type = dissent value = -10 }
+		command = { type = trigger which = 300099 }
+	}
+
+	action_b = {
+		ai_chance = 10
+		name = "No deal then, continue the war"
+		command = { type = dissent value = 5 }
+		command = { type = morale which = land value = 5 }
+	}
+}
+
+event = {
+	id = 300103
+	country = COL
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		OR = {
+			war = { country = COL country = PRU }
+			alliance = { country = COL country = PRU }
+		}
+		
+		NOT = {
+			alliance = { country = COL country = RUS }
+			alliance = { country = COL country = SOV }
+			alliance = { country = COL country = GER }
+			alliance = { country = COL country = USA }
+			alliance = { country = COL country = TEX }
+			alliance = { country = COL country = CSA }
+			alliance = { country = COL country = BRA }
+			exists = ECU
+			ispuppet = COL
+		}
+	}
+
+	date = { day = 1 month = january year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Ecuador has been defeated"
+	desc = "Ecuador has been defeated. Our people now see this war as meaningless... Should we attempt to end it now?"
+
+	action = {		
+		ai_chance = 60
+		trigger = { war = { country = COL country = PRU } }
+		name = "There is no point fighting on, attempt a peace deal"
+		command = { type = trigger which = 300104 }
+		command = { type = dissent value = 2 }
+
+	}
+	action = {
+		trigger = { war = { country = COL country = PRU } }
+		ai_chance = 20
+		name = "We will avenge our Ecuadorian friends! Death to Peru!"
+		command = { type = dissent value = 8 }
+		command = { type = morale which = land value = 5 }
+	}
+	action = {
+		trigger = { alliance = { country = COL country = PRU } }
+		ai_chance = 50
+		name = "We can made Bolivar dream ! Death to Peru!"
+		command = { type = dissent value = 8 }
+		command = { type = morale which = land value = 5 }
+		command = { type = leave_alliance }
+		command = { trigger = { flag = ANDINEAN_PACT } type = alliance which = VEN }
+		command = { type = war which = PRU }
+	}
+	action = {
+		trigger = { alliance = { country = COL country = PRU } }
+		ai_chance = 50
+		name = "There is no point fighting on"
+		command = { type = dissent value = -5 }		
+		command = { type = leave_alliance }
+		command = { trigger = { flag = ANDINEAN_PACT } type = alliance which = VEN }	
+	}
+}
+
+event = {
+	id = 300104
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	name = "Peace with Colombia?"
+	desc = "With their former allies gone, the Colombian government has contacted us in hope of ending the present conflict."
+
+	action_a = {
+		ai_chance = 95
+		name = "Accept their offer, sure!"
+		command = { type = peace which = COL value = 0 }
+		command = { type = dissent value = -5 }
+	}
+
+	action_b = {
+		ai_chance = 5
+		name = "Colombia will have the same fate as Ecuador!"
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 300105
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		control = { province = 2042 data = PRU } #Iquitos in PRU hands.
+		control = { province = 2008 data = PRU } #Guayaquil
+		NOT = {
+			exists = ECU 				#Ecuador is not around
+			ispuppet = PRU
+			atwar = PRU
+		}
+	}
+
+	date = { day = 0 month = july year = 1940 }
+	offset = 100
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Occupied Ecuador"
+	desc = "Ever since the beginning of our occupation, the people of Ecuador have been rioting, as they demand the restoration of their country's independence. Now that the war is over, it may be time to consider their demands. An independent Ecuador, even if under a puppet regime, would be much easier to tame than a country under military occupation authorities."
+
+	action_a = {
+		ai_chance = 80
+		trigger = { NOT = { alliance = { country = COL country = PRU } } }
+		name = "Establish a loyal government in Ecuador"
+		command = { type = belligerence which = PRU value = -5 }
+		command = { type = independence which = ECU value = 1 when = 0 }
+		command = { type = trigger which = 300106 }
+	}
+
+	action_b = {
+		ai_chance = 20
+		name = "Keep the area under occupation"
+		command = { type = belligerence which = PRU value = 5 }
+		command = { type = dissent value = 5 }
+		command = { type = 	leave_alliance }
+	}
+}
+
+event = {
+	id = 300106
+	country = PRU
+	picture = "southamerica"
+	style = 2
+
+	name = "Ecuadorian independence!"
+	desc = "We have restored the independence of Ecuador and installed a loyal government there."
+
+	action_a = {
+		name = "A loyal puppet in Quito!"
+		command = { type = coup_nation which = ECU }
+		command = { type = make_puppet which = ECU }
+	}
+}
+
+event = {
+	id = 300107
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		control = { province = 1991 data = PRU } #Bogotá in PRU hands.
+		NOT = {
+			exists = COL 				#Colombia is not around
+			ispuppet = PRU
+			atwar = PRU
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 100
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Colombia"
+	desc = "Ever since the beginning of our occupation, the people of Colombia have been rioting, as they demand the restoration of their country's independence. Now that the war is over, it may be time to consider their demands. An indepedent Colombia, even if under a puppet regime, would be much easier to tame than a country under military occupation authorities."
+
+	action_a = {
+		ai_chance = 80
+		name = "Restore their independence"
+		command = { type = belligerence which = PRU value = -5 }
+		command = { type = independence which = COL value = 1 when = 0 }
+		command = { type = trigger which = 300108 }
+	}
+
+	action_b = {
+		ai_chance = 20
+		name = "Keep the area under occupation"
+		command = { type = belligerence which = PRU value = 5 }
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 300108
+	country = PRU
+	picture = "southamerica"
+	style = 2
+
+	name = "Independence for Colombia"
+	desc = "We have restored the independence of Colombia, albeit under a loyal government, pledged to follow our directives."
+
+	action_a = {
+		name = "A loyal puppet in Bogotá!"
+		command = { type = coup_nation which = COL }
+		command = { type = make_puppet which = COL }
+		command = { type = trigger which = 300109 }
+	}
+}
+
+event = {
+	id = 300109
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	name = "The Western Amazon"
+	desc = "In order to further advance our control over Colombia, and also to assert our position as a military power in the Western Amazon, some of our politicians and military leaders have proposed demanding the Mitú area from Colombia."
+
+	action_a = {
+		ai_chance = 50
+		name = "Occupy Mitú"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = addclaim which = 1756 }
+		command = { type = trigger which = 300110 }
+	}
+
+	action_b = {
+		ai_chance = 50
+		name = "That would be too much"
+		command = { type = belligerence which = PRU value = -5 }
+		command = { type = domestic which = defense_lobby value = -1 }
+	}
+}
+
+event = {
+	id = 300110
+	country = COL
+	style = 2
+	picture = "news_paper"
+
+	name = "Territorial concessions"
+	desc = "In order to further advance their control over Colombia, and also to assert their position as a military power in the Western Amazon, the Peruvian government has demanded the Mitú area from us."
+
+	action_a = {
+		name = "We have no choice but to comply"
+		command = { type = dissent value = 3 }
+		command = { type = secedeprovince which = PRU value = 1756 }
+	}
+}
+
+event = {
+	id = 300111
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = ECU country = PRU }
+		OR = {
+			control = { province = 2014 data = ECU } #Trujillo.
+			control = { province = 2018 data = ECU } #Puccalpa.
+			control = { province = 2014 data = COL }
+			control = { province = 2018 data = COL }
+		}
+		NOT = {
+			ispuppet = COL
+			ispuppet = PRU
+			ispuppet = ECU
+			alliance = { country = PRU country = RUS }
+			alliance = { country = PRU country = SOV }
+			alliance = { country = PRU country = GER }
+			alliance = { country = PRU country = USA }
+			alliance = { country = PRU country = TEX }
+			alliance = { country = PRU country = CSA }
+			alliance = { country = PRU country = BRA }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Amazon lands occupied"
+	desc = "The enemy has occupied our northern provinces. We should now beg for peace."
+
+	action_a = {
+		ai_chance = 50
+		name = "This war was a mistake! Surrender now!"
+		command = { type = dissent value = 10 }
+		command = { type = peace which = ECU value = 0 }
+		command = { type = secedeprovince which = ECU value = 2008 } #Iquitos
+		command = { type = removecore which = 2008 }
+		command = { type = trigger which = 300112 }
+	}
+
+	action_b = {
+		ai_chance = 50
+		name = "Peru will fight to the end!"
+		command = { type = dissent value = -5 }
+		command = { type = morale which = land value = 5 }
+	}
+}
+
+event = {
+	id = 300112
+	country = ECU
+	style = 2
+	picture = "news_paper"
+
+	name = "Peru surrenders!"
+	desc = "As our forces have occupied several thousand square kilometres of Peruvian territory, they have sued for peace. Victory is ours!"
+
+	action_a = {
+		name = "Great! Now let's celebrate!"
+		command = { type = dissent value = -10 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = peace which = PRU value = 0 }
+		command = { type = sleepevent which = 300097 }
+		command = { type = sleepevent which = 300105 }
+		command = { type = sleepevent which = 300107 }
+	}
+}
+
+event = {
+	id = 300113
+	country = ECU
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = ECU country = PRU }
+		control = { province = 2016 data = ECU } #Lima
+		NOT = {
+			ispuppet = ECU
+			alliance = { country = ECU country = RUS }
+			alliance = { country = ECU country = SOV }
+			alliance = { country = ECU country = GER }
+			alliance = { country = ECU country = USA }
+			alliance = { country = ECU country = TEX }
+			alliance = { country = ECU country = CSA }
+			alliance = { country = ECU country = BRA }
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Victory!"
+	desc = "After a long campaign, we have finally reached the Peruvian capital, Lima! With their central government in disarray, we have been approached by a military board, who presented a document of surrender to the commander of our forces. Victory is ours! Now, should we keep a military occupation of their lands? This would certainly result in major unrest, however... So maybe it would be better to establish a puppet government in Peru?"
+
+	action_a = {
+		ai_chance = 10
+		name = "Establish a military occupation"
+		command = { type = dissent value = 5 }
+		command = { type = peace which = PRU value = 0 }
+		command = { type = inherit which = PRU }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = belligerence which = PRU value = 5 }
+	}
+
+	action_b = {
+		ai_chance = 90
+		name = "Create a new, loyal civilian government"
+		command = { type = peace which = PRU value = 0 }
+		command = { type = coup_nation which = PRU }
+		command = { type = make_puppet which = PRU }
+	}
+}
+
+event = {
+	id = 300114
+	country = COL
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		war = { country = COL country = PRU }
+		control = { province = 2016 data = COL } #Lima
+		NOT = {
+			ispuppet = COL
+			alliance = { country = COL country = RUS }
+			alliance = { country = COL country = SOV }
+			alliance = { country = COL country = GER }
+			alliance = { country = COL country = USA }
+			alliance = { country = COL country = TEX }
+			alliance = { country = COL country = CSA }
+			alliance = { country = COL country = BRA }
+		}
+	}
+
+	date = { day = 0 month = july year = 1941 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Victory!"
+	desc = "After a long campaign, we have finally reached the Peruvian capital, Lima! With their central government in disarray, we have been approached by a military board, who presented a document of surrender to the commander of our forces. Victory is ours! Now, should we keep a military occupation of their lands? This would certainly result in major unrest, however... So maybe it would be better to establish a puppet government in Peru?"
+
+	action_a = {
+		ai_chance = 40
+		name = "Establish a military occupation"
+		command = { type = dissent value = 5 }
+		command = { type = peace which = PRU value = 0 }
+		command = { type = inherit which = PRU }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = belligerence which = PRU value = 5 }
+	}
+
+	action_b = {
+		ai_chance = 60
+		name = "Create a new, loyal civilian government"
+		command = { type = peace which = PRU value = 0 }
+		command = { type = coup_nation which = PRU }
+		command = { type = make_puppet which = PRU }
+	}
+}
+
+event = {
+	id = 300115
+	country = ECU
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		control = { province = 2016 data = ECU } #Lima in ECU hands.
+		NOT = {
+			exists = PRU 				#PRU is not around
+			ispuppet = ECU
+			atwar = ECU
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "The situation in Peru"
+	desc = "Ever since the beginning of our occupation, the people of Peru have been rioting, as they demand the restoration of their country's independence. Now that the war is over, it may be time to consider their demands. An indepedent Peru, even if under a puppet regime, would be much easier to tame than a country under military occupation authorities."
+
+	action_a = {
+		ai_chance = 100
+		name = "Restore their independence"
+		command = { type = belligerence which = ECU value = -5 }
+		command = { type = independence which = PRU value = 1 }
+		command = { type = trigger which = 300116 }
+	}
+
+	action_b = {
+		ai_chance = 0
+		name = "Keep the area under occupation"
+		command = { type = belligerence which = ECU value = 5 }
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 300116
+	country = ECU
+	picture = "southamerica"
+	style = 2
+
+	name = "Independence for Peru"
+	desc = "We have restored the independence of Peru, albeit under a loyal government, pledged to follow our directives."
+
+	action_a = {
+		name = "A loyal puppet in Lima!"
+		command = { type = coup_nation which = PRU }
+		command = { type = make_puppet which = PRU }
+	}
+}
+
+event = {
+	id = 300117
+	country = COL
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		control = { province = 2016 data = COL } #Lima in COL hands.
+		NOT = {
+			exists = PRU 				#PRU is not around
+			ispuppet = COL
+			atwar = COL
+		}
+	}
+
+	date = { day = 0 month = january year = 1936 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "The Situation in Peru"
+	desc = "Ever since the beginning of our occupation, the people of Peru have been rioting, as they demand the restoration of their country's independence. Now that the war is over, it may be time to consider their demands. An indepedent Peru, even if under a puppet regime, would be much easier to tame than a country under military occupation authorities."
+
+	action_a = {
+		ai_chance = 80
+		name = "Restore their independence"
+		command = { type = belligerence which = COL value = -5 }
+		command = { type = independence which = PRU value = 1 }
+		command = { type = trigger which = 300118 }
+	}
+
+	action_b = {
+		ai_chance = 20
+		name = "Keep the area under occupation"
+		command = { type = belligerence which = COL value = 5 }
+		command = { type = dissent value = 10 }
+	}
+}
+
+event = {
+	id = 300118
+	country = COL
+	picture = "southamerica"
+	style = 2
+
+	name = "Independence for Peru"
+	desc = "We have restored the independence of Peru, albeit under a loyal government, pledged to follow our directives."
+
+	action_a = {
+		name = "A loyal puppet in Lima!"
+		command = { type = coup_nation which = PRU }
+		command = { type = make_puppet which = PRU }
+	}
+}
+
+event = {
+	id = 300119
+	country = COL
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		
+		war = { country = COL country = PRU }
+		
+		#Control Ecuador
+		control = { province = 2007 data = COL } 
+		control = { province = 2008 data = COL } 
+		control = { province = 2010 data = COL } 
+		control = { province = 2040 data = COL } 
+		control = { province = 2042 data = COL } 
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Treaty of Quito"
+	desc = "The Columbian Army control the Ecuador area and the war has reached a stalemate ... what we should do ?"
+
+	action_a = {
+		ai_chance = 80
+		name = "Sign a peace treaty"		
+		command = { type = addcore which = 2007 } 
+		command = { type = addcore which = 2008 } 
+		command = { type = addcore which = 2010 } 
+		command = { type = addcore which = 2040 } 
+		command = { type = addcore which = 2042 } 				
+		command = { type = trigger which = 300120 }
+	}
+
+	action_b = {
+		ai_chance = 20
+		name = "Keep the fight"
+		command = { type = belligerence which = COL value = 5 }
+		command = { type = addcore which = 2007 } 
+		command = { type = addcore which = 2008 } 
+		command = { type = addcore which = 2010 } 
+		command = { type = addcore which = 2040 } 
+		command = { type = addcore which = 2042 } 						
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 300120
+	country = PRU
+	style = 2
+	picture = "news_paper"
+
+	trigger = {
+		
+		war = { country = COL country = PRU }
+		
+		#Control Ecuador
+		control = { province = 2007 data = COL } 
+		control = { province = 2008 data = COL } 
+		control = { province = 2010 data = COL } 
+		control = { province = 2040 data = COL } 
+		control = { province = 2042 data = COL } 
+		
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1966 }
+
+	name = "Treaty of Quito"
+	desc = "The Columbian Army control the Ecuador area and the war has reached a stalemate ... what we should do ?"
+
+	action_a = {
+		ai_chance = 80
+		name = "Sign a peace treaty"		
+		command = { type = peace which = COL }
+		command = { type = secedeprovince which = COL value = 2007 }			
+		command = { type = secedeprovince which = COL value = 2008 }			
+		command = { type = secedeprovince which = COL value = 2010 }			
+		command = { type = secedeprovince which = COL value = 2040 }			
+		command = { type = secedeprovince which = COL value = 2042 }			
+	}
+
+	action_b = {
+		ai_chance = 20
+		name = "Keep the fight"
+		command = { type = belligerence which = PRU value = 5 }
+		command = { type = dissent value = 10 }
+	}
+}

@@ -1,0 +1,53 @@
+###################################
+#Boliva Axis Americas by RedZeppelin
+###################################
+#8001821 - Argentina has turned Fascist (BOL)  
+###################################
+
+event = { id = 8001821
+          random = no
+          country = BOL
+
+          date = { day = 20 month = 2 year = 1952 }
+          offset = 5
+          deathdate = { day = 29 month = 9 year = 1953 }
+
+          trigger = { flag = argentine_coup }
+          
+          name = "Argentina has turned Fascist"
+          Desc = "The Agentine goverment has been overthrown today in a bloody coup and now the fate of Bolivia seems uncertain. While we were happy cooperating with the socialist goverment in Argentina this sudden change has called our relationship into question. While our goverment has condemned this coup, there are many in the country who think it is now time for us ally with this new Argentina in order to reclaim our former territories." 
+          Picture = "fatherland\argentinecoup"
+          style = 2
+
+          action_a = { 
+                     ai_chance = 80
+                     name = "German Butron overthrows the goverment"
+		     command = { type = end_puppet }
+		     command = { type = relation which = GER value = 10 }
+		     command = { type = relation which = ARG value = 50 }
+		     command = { type = relation which = USA value = -50 }
+                     command = { type = set_domestic which = democratic value = 1 }
+	             command = { type = set_domestic which = political_left value = 1 }
+		     command = { type = set_domestic which = free_market value = 1 }
+		     command = { type = set_domestic which = freedom value = 1 }	
+		     command = { type = headofstate which = 205026 } # German Butron
+		     command = { type = headofgovernment which = 205044 } # German Butron
+		     command = { type = foreignminister which = 205059 } # Juan Mechin
+		     command = { type = armamentminister which = 205082 } # David Toro Ruilova
+		     command = { type = ministerofsecurity which = 205113 } # Edwin Möller
+		     command = { type = ministerofintelligence which = 205130 } # Juan Sanjines
+                     command = { type = chiefofstaff which = 205145 } # Carlos Altamirano
+		     command = { type = chiefofarmy which = 205186 } # Tomas Monje Gutierrez
+		     command = { type = chiefofnavy which = 205167 } # Juan Mechin
+		     command = { type = chiefofair which = 205181 } # Fabian Vaca Chavez
+                     }
+
+          action_b = { 
+                     ai_chance = 20
+                     name = "Our goverment ends our alliance"
+		     command = { type = end_puppet }
+		     command = { type = leave_alliance }
+		     command = { type = relation which = ARG value = -100 }
+		     command = { type = relation which = USA value = 50 }
+                   }
+}

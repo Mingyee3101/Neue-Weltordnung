@@ -1,0 +1,750 @@
+##############################
+#  Oil Production Increases  #
+#########################################################################
+#  Saudi Arabia (1986)
+#########################################################################
+event = {
+	id = 2020001
+	random = no
+	country = SAU
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1986 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 147 where = energy }
+	}
+}
+#########################################################################
+#  Saudi Arabia (1988)
+#########################################################################
+event = {
+	id = 2020002
+	random = no
+	country = SAU
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1988 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 21 where = energy }
+	}
+}
+#########################################################################
+#  Saudi Arabia (1990)
+#########################################################################
+event = {
+	id = 2020003
+	random = no
+	country = SAU
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1990 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 133 where = energy }
+	}
+}
+#########################################################################
+#  Saudi Arabia (1991)
+#########################################################################
+event = {
+	id = 2020004
+	random = no
+	country = SAU
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1991 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 170 where = energy }
+	}
+}
+#########################################################################
+#  Saudi Arabia (2003)
+#########################################################################
+event = {
+	id = 2020005
+	random = no
+	country = SAU
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 2003 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 66 where = energy }
+	}
+}
+#########################################################################
+#  Iran (1989)
+#########################################################################
+event = {
+	id = 2020006
+	random = no
+	country = PER
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1989 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 56 where = energy }
+	}
+}
+#########################################################################
+#  Iran (1990)
+#########################################################################
+event = {
+	id = 2020007
+	random = no
+	country = PER
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1990 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 27 where = energy }
+	}
+}
+#########################################################################
+#  Iran (1991)
+#########################################################################
+event = {
+	id = 2020008
+	random = no
+	country = PER
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1991 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 23 where = energy }
+	}
+}
+#########################################################################
+#  Iran (1992)
+#########################################################################
+event = {
+	id = 2020009
+	random = no
+	country = PER
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1992 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 12 where = energy }
+	}
+}
+#########################################################################
+#  Iran (1993)
+#########################################################################
+event = {
+	id = 2020010
+	random = no
+	country = PER
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1993 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 11 where = energy }
+	}
+}
+#########################################################################
+#  Iraq (1986)
+#########################################################################
+event = {
+	id = 2020011
+	random = no
+	country = IRQ
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1986 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 26 where = energy }
+	}
+}
+#########################################################################
+#  Iraq (1987)
+#########################################################################
+event = {
+	id = 2020012
+	random = no
+	country = IRQ
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1987 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 38 where = energy }
+	}
+}
+#########################################################################
+#  Iraq (1988)
+#########################################################################
+event = {
+	id = 2020013
+	random = no
+	country = IRQ
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1988 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 68 where = energy }
+	}
+}
+#########################################################################
+#  Iraq (1989)
+#########################################################################
+event = {
+	id = 2020014
+	random = no
+	country = IRQ
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1989 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 21 where = energy }
+	}
+}
+#########################################################################
+#  United Arab Emirates (1986)
+#########################################################################
+event = {
+	id = 2020015
+	random = no
+	country = U40
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1986 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 14 where = energy }
+	}
+}
+#########################################################################
+#  United Arab Emirates (1987)
+#########################################################################
+event = {
+	id = 2020016
+	random = no
+	country = U40
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1987 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 21 where = energy }
+	}
+}
+#########################################################################
+#  United Arab Emirates (1989)
+#########################################################################
+event = {
+	id = 2020017
+	random = no
+	country = U40
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1989 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 32 where = energy }
+	}
+}
+#########################################################################
+#  United Arab Emirates (1990)
+#########################################################################
+event = {
+	id = 2020018
+	random = no
+	country = U40
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1990 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 25 where = energy }
+	}
+}
+#########################################################################
+#  United Arab Emirates (1991)
+#########################################################################
+event = {
+	id = 2020019
+	random = no
+	country = U40
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1991 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 28 where = energy }
+	}
+}
+#########################################################################
+#  Venezuela (1986)
+#########################################################################
+event = {
+	id = 2020020
+	random = no
+	country = VEN
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1986 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 10 where = energy }
+	}
+}
+#########################################################################
+#  Venezuela (1988)
+#########################################################################
+event = {
+	id = 2020021
+	random = no
+	country = VEN
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1988 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 12 where = energy }
+	}
+}
+#########################################################################
+#  Venezuela (1990)
+#########################################################################
+event = {
+	id = 2020022
+	random = no
+	country = VEN
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1990 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 24 where = energy }
+	}
+}
+#########################################################################
+#  Venezuela (1991)
+#########################################################################
+event = {
+	id = 2020023
+	random = no
+	country = VEN
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1991 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 17 where = energy }
+	}
+}
+#########################################################################
+#  Venezuela (1993)
+#########################################################################
+event = {
+	id = 2020024
+	random = no
+	country = VEN
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1993 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 8 where = energy }
+	}
+}
+#########################################################################
+#  Venezuela (1994)
+#########################################################################
+event = {
+	id = 2020025
+	random = no
+	country = VEN
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1994 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 14 where = energy }
+	}
+}
+#########################################################################
+#  Venezuela (1995)
+#########################################################################
+event = {
+	id = 2020026
+	random = no
+	country = VEN
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1995 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 16 where = energy }
+	}
+}
+#########################################################################
+#  Venezuela (1996)
+#########################################################################
+event = {
+	id = 2020027
+	random = no
+	country = VEN
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1996 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 19 where = energy }
+	}
+}
+#########################################################################
+#  Venezuela (1997)
+#########################################################################
+event = {
+	id = 2020028
+	random = no
+	country = VEN
+
+	#trigger = { control = { province = 1996 data = -1 } }
+	trigger = {}
+
+	name = "oil_production"
+	desc = "oil_production_desc"
+	style = 2
+	picture = "oil_mosul"
+
+	date = { day = 1 month = january year = 1997 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 90
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = add_prov_resource which = -1 value = 34 where = energy }
+	}
+}
+####################
+#  1980s Oil Glut  #
+#########################################################################
+#  1986 Oil Price Drop
+#########################################################################
+event = {
+	id = 2020029
+	random = no
+	country = SOV
+
+	name = "oil_glut"
+	desc = "oil_glut_desc"
+	style = 2
+	picture = "Unemployment_rate"
+
+	date = { day = 1 month = january year = 1986 }
+	deathdate = { day = 1 month = december year = 1986 }
+	offset = 180
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		#command = { type = dissent value = 5 }
+		command = { type = industrial_modifier which = total value = -30 }
+		command = { type = free_money value = -30 }
+		command = { type = trigger which = 2020030 }
+	}
+}
+#########################################################################
+#  1986 Oil Price Drop
+#########################################################################
+event = {
+	id = 2020030
+	random = no
+	TAG = { SAU IRQ PER VEN ALG U91 U51 LBY NIG U40 }
+	persistent = yes
+	all = yes
+
+	name = "oil_glut"
+	desc = "oil_glut_desc"
+	style = 2
+	picture = "Unemployment_rate"
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		command = { type = dissent value = 20 }
+		command = { type = industrial_modifier which = total value = -20 }
+	}
+}

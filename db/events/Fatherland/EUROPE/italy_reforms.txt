@@ -1,0 +1,634 @@
+###########################################################
+#Censorship, Culture and Arts
+###########################################################
+event = {
+	id = 90000604 # Censorship, Culture and Arts
+	random = no
+	country = ITA
+
+	trigger = {
+		flag = Reforms
+	}
+
+	name = EVT_90000604_NAME
+	desc = EVT_90000604_DESC
+	style = 2
+	picture = "congress"
+
+	date = { day = 1 month = july year = 1948 }
+	offset = 5 # 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = EVT_90000604_A # Current level of censorship is sufficient
+		ai_chance = 50
+		command = { type = domestic which = freedom value = 1 }
+	}
+	action = {
+		name = EVT_90000604_B # We need tighter control on the arts and culture
+		ai_chance = 50
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = dissent value = 1 }
+	}
+}
+###########################################################
+#Youth Movements
+###########################################################
+event = {
+	id = 90000605 # Youth Movements (Gioventù Italiana del Littorio)
+	random = no
+	country = ITA
+
+	trigger = {
+		event = 90000604
+	}
+
+	name = EVT_90000605_NAME
+	desc = EVT_90000605_DESC
+	style = 2
+	picture = "congress"
+
+	date = { day = 1 month = july year = 1948 }
+	offset = 5 # 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000605_A # Blackshirts
+	ai_chance = 50
+	command = { type = domestic which = democratic value = -1 }
+	command = { type = dissent value = 1 }
+	}
+	action = {
+	name = EVT_90000605_B # Allow other youth movements but monitor them closely.
+	ai_chance = 10
+	command = { type = dissent value = 2 }
+	}
+	action = {
+	name = EVT_90000605_C # Also allow Catholic Youth movements.
+	ai_chance = 40
+	command = { type = domestic which = democratic value = 1 }
+	command = { type = dissent value = 1 }
+	}
+}
+###########################################################
+# Relations with the Vatican
+###########################################################
+event = {
+	id = 90000606 # Relations with the Vatican
+	random = no
+	country = ITA
+
+	trigger = {
+			event = 90000604
+		}
+
+	name = EVT_90000606_NAME
+	desc = EVT_90000606_DESC
+	style = 2
+	picture = "congress"
+
+	date = { day = 1 month = july year = 1948 }
+	offset = 10 # 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+	name = EVT_90000606_A # No pressure
+	ai_chance = 50
+	command = { type = dissent value = -5 }
+	command = { type = domestic which = interventionism value = -2 }
+	}
+	action = {
+	name = EVT_90000606_B # Pressure
+	ai_chance = 50
+	command = { type = dissent value = 5 }
+	command = { type = domestic which = interventionism value = 1 }
+	}
+}
+
+###########################################################
+#Chamber of Fasci and Corporations
+###########################################################
+event = {
+	id = 90000608 # Chamber of Fasci and Corporations
+	random = no
+	country = ITA
+
+	trigger = {
+			event = 90000607
+		}
+
+	name = EVT_90000608_NAME
+	desc = EVT_90000608_DESC
+	style = 2
+	picture = "congress"
+
+	date = { day = 1 month = july year = 1948 }
+	offset = 10 # 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+	name = EVT_90000608_A # The Corporatist system has served us well.
+	ai_chance = 50
+	trigger = { NOT = { flag = IndustrialItaly } }
+	command = { type = dissent value = -1 }
+	}
+	action_b = {
+	name = EVT_90000608_B # The Industrialist elites gain more influence.
+	ai_chance = 50
+	trigger = { NOT = { flag = RadicalItaly } }
+	command = { type = domestic which = free_market value = 1 }
+	command = { type = dissent value = 1 }
+	}
+	action_c = {
+	name = EVT_90000608_C # We need more government interventionism.
+	ai_chance = 50
+	trigger = { NOT = { flag = IndustrialItaly } }
+	command = { type = domestic which = free_market value = -1 }
+	command = { type = dissent value = -1 }
+	}
+}
+###########################################################
+#Ideology of the National Fascist Party
+###########################################################
+event = {
+	id = 90000609 # Ideology of the National Fascist Party
+	random = no
+	country = ITA
+
+	trigger = {
+			event = 90000608
+			flag = Reforms
+		}
+
+	name = EVT_90000609_NAME
+	desc = EVT_90000609_DESC
+	style = 2
+	picture = "congress"
+
+	date = { day = 1 month = july year = 1948 }
+	offset = 10 # 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = EVT_90000609_A # The Fascist party moves to the right.
+		ai_chance = 40
+		trigger = { NOT = { flag = IndustrialItaly } }
+		command = { type = domestic which = political_left value = -3 }
+		command = { type = dissent value = 1 }
+		command = { type = relation which = GER value = 10 }
+	}
+	action_b = {
+		name = EVT_90000609_B # Corporatist Fascism has served us well.
+		ai_chance = 60
+		command = { type = dissent value = -1 }
+	}
+	action_c = {
+		name = EVT_90000609_C # The Fascist party moves to the left.
+		ai_chance = 40
+		trigger = { NOT = { flag = RadicalItaly } }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = dissent value = 1 }
+		command = { type = relation which = GER value = -10 }
+	}
+}
+###########################################################
+#Women
+###########################################################
+event = {
+	id = 90000610 # Women
+	random = no
+	country = ITA
+
+	trigger = {
+			event = 90000608
+		}
+
+	name = EVT_90000610_NAME
+	desc = EVT_90000610_DESC
+	style = 2
+	picture = "congress"
+
+	date = { day = 1 month = july year = 1948 }
+	offset = 10 # 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+	name = EVT_90000610_A # Tradition protects women against Communism!
+	ai_chance = 60
+	command = { type = dissent value = -1 }
+	}
+	action_b = {
+	name = EVT_90000610_B # Support very limited female labor participation.
+	ai_chance = 40
+	command = { type = dissent value = 1 }
+	command = { type = industrial_modifier which = total value = 1 }
+	command = { type = manpowerpool value = 1 }
+	}
+	action_c = {
+	name = EVT_90000610_C # Encourage more emancipation of women.
+	ai_chance = 20
+	trigger = { NOT = { OR = {
+	flag = RadicalItaly
+	flag = IndustrialItaly } } } # Because Conservatives and radicals will not approve of this...
+	command = { type = dissent value = 2 }
+	command = { type = industrial_modifier which = total value = 2 }
+	command = { type = manpowerpool value = 2 }
+	}
+}
+
+##################################
+# 90000662 # ITA # Institute for Industrial Reconstruction
+##################################
+event = {
+	id = 90000662
+	random = no
+	country = ITA
+	trigger = {
+			NOT = {
+				government = democratic
+				 }
+				 event = 90000610
+			}
+	date = { day = 1 month = july year = 1948 }
+	offset = 10 # 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "Institute for Industrial Reconstruction"
+	desc = "The Istituto per la Ricostruzione Industriale ('Institute for Industrial Reconstruction') was an Italian public holding established in 1933 by the Fascist regime with the objective to rescue, restructure and finance banks and private companies that went bankrupt during the Great Depression. Although initially conceived as a temporary measure, IRI continued to be operated throughout the duration of Fascist regime and well beyond."
+	style = 2
+	picture = "ersatz_conversion"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = industrial_modifier which = total value = 1 }
+		command = { type = money value = 300 }
+	}
+}
+
+##################################
+# 90000663 # ITA # Reorganization of Blackshirt Divisions
+##################################
+event = {
+	id = 90000663
+	random = no
+	country = ITA
+	trigger = {
+			headofgovernment = 25002 # Mussolini
+			NOT = {
+				government = democratic
+				 }
+
+			}
+	date = { day = 3 month = october year = 1950 }
+	name = "Reorganization of Blackshirt Divisions"
+	desc = "The Blackshirts were fascist paramilitary armed squads in Italy during the period immediately following World War I and until the end of World War II. They were officially known as the Voluntary Militia for National Security. Their founders were nationalist intellectuals, former army officers and young landowners opposing peasants' and country labourers' unions. Their methods became harsher as Mussolini's power grew, and they used violence and intimidation against Mussolini's opponents."
+	style = 2
+	picture = "italian_warposter"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = max_organization which = militia value = 1 }
+		command = { type = max_organization which = garrison value = 1 }
+		command = { type = domestic which = freedom value = -1 }
+	}
+}
+
+##################################
+# 90000664 # ITA # Italian Naval New Construction Program
+##################################
+event = {
+	id = 90000664
+	random = no
+	country = ITA
+	trigger = {
+			headofgovernment = 25002 # Mussolini
+			NOT = {
+				government = democratic
+				 }
+			}
+	date = { day = 7 month = january year = 1950 }
+	name = "Italian Naval New Construction Program"
+	desc = "The Italian government announced the beginning of a huge naval construction program. This plan augmented the Italian rearmament program introduced in 1950."
+	style = 2
+	picture = "agincourt"
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = gain_tech which = 3690 } # Submarine
+		command = { type = gain_tech which = 3850 } # Transports
+		command = { type = gain_tech which = 12160 } # Escort Carrier
+		command = { type = gain_tech which = 3560 } # Carrier
+		command = { type = gain_tech which = 12040 } # Battleship
+	}
+}
+
+#######################################################################
+# Bersaglieri
+#######################################################################
+
+event = {
+	id = 1000471
+	country = ITA
+	random = no
+
+	trigger = { technology = 1860 # Engineer
+		     supplies = 200 }
+
+	name = "EVT_1000471_NAME"
+	desc = "EVT_1000471_DESC"
+	style = 2
+	picture = "bersaglieri"
+
+	date = { day = 9 month = october year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = 100
+		command = { type = mountain_attack which = b_rsv_36 value = 2 }
+		command = { type = mountain_defense which = b_rsv_36 value = 2 }
+		command = { type = desert_attack which = b_rsv_36 value = 1 }
+		command = { type = desert_defense which = b_rsv_36 value = 1 }
+		command = { type = morale which = b_rsv_36 value = 5 }
+		command = { type = supplies value = -200 }
+	}
+}
+
+######################################################
+# Foritfy the southern front even further
+######################################################
+event = {
+	id = 1000484
+	random = no
+	country = ITA
+
+	decision = {
+		   alliance = { country = GER country = ITA }
+		   atwar = yes
+		   event = 2003071
+}
+
+	decision_trigger = { supplies = 1000 }
+
+	name = "Fortify South Italy"
+	desc = "EVT_1000484_DESC"
+	style = 2
+	picture = "southern_front"
+	decision_picture = "dec_southern_front"
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = ACTION_NAME_GREAT
+                ai_chance = 99
+	  	command = { trigger = { control = { province = 408 data = ITA } } type = construct which = land_fort where = 408 value = 2 }
+	  	command = { trigger = { control = { province = 411 data = ITA } } type = construct which = land_fort where = 411 value = 2 }
+	  	command = { trigger = { control = { province = 396 data = ITA } } type = construct which = land_fort where = 396 value = 2 }
+	  	command = { trigger = { control = { province = 310 data = ITA } } type = construct which = land_fort where = 310 value = 2 }
+	  	command = { trigger = { control = { province = 312 data = ITA } } type = construct which = land_fort where = 312 value = 2 }
+	  	command = { trigger = { control = { province = 413 data = ITA } } type = construct which = land_fort where = 413 value = 2 }
+	  	command = { trigger = { control = { province = 414 data = ITA } } type = construct which = land_fort where = 414 value = 2 }
+	  	command = { trigger = { control = { province = 412 data = ITA } } type = construct which = land_fort where = 412 value = 2 }
+		command = { type = supplies value = -1000 }
+	}
+	action_a = {
+		name = ACTION_NAME_NO
+                ai_chance = 1
+		command = { }
+	}
+}
+
+####################################################################
+#  Macchi C.205
+####################################################################
+event = {
+        id = 1000549
+        random = no
+        country = ITA
+
+        trigger = {
+                technology = 4070 # FIG 1940
+                random = 20
+        }
+
+        name = EVT_1000549_NAME
+        desc = EVT_1000549_DESC
+        style = 2
+        picture = "macchi"
+
+        date = { day = 1 month = september year = 1948 }
+        offset = 30
+        deathdate = { day = 29 month = december year = 1999 }
+
+        action = {
+                name = action_name_great
+                command = { type = air_defense which = multi_role value = -2 } # bonus
+                command = { type = build_time which = multi_role when = on_upgrade where = relative value = 5 }
+                command = { trigger = { ai = no } type = supplies value = -500 }
+        }
+}
+####################################################################
+#  Savoia-Marchetti SM.79 Sparviero
+####################################################################
+event = {
+        id = 1000550
+        random = no
+        country = ITA
+
+        trigger = {
+                technology = 4140 # Basic Tactical Bomber
+                random = 20
+        }
+
+        name = EVT_1000550_NAME
+        desc = EVT_1000550_DESC
+        style = 2
+        picture = "sparviero"
+
+        date = { day = 1 month = october year = 1949 }
+        offset = 30
+        deathdate = { day = 29 month = december year = 1999 }
+
+        action = {
+                name = action_name_great
+                command = { type = air_defense which = naval_bomber value = -1 } #bonus
+                command = { type = naval_attack which = naval_bomber value = 0.5 }
+                command = { type = air_defense which = tactical_bomber value = -1 } #bonus
+                command = { type = naval_attack which = tactical_bomber value = 0.5 }
+                command = { type = hard_attack which = tactical_bomber value = 0.5 }
+                command = { trigger = { ai = no } type = supplies value = -500 }
+        }
+}
+####################################################################
+# The Italian tank development
+####################################################################
+event = {
+        id = 1000551
+        random = no
+        country = ITA
+
+        trigger = {
+                technology = 2030 # ARM 1936
+                random = 20
+        }
+
+        name = EVT_1000551_NAME
+        desc = EVT_1000551_DESC
+        style = 2
+        picture = "italian_tanks"
+
+        date = { day = 1 month = july year = 1948 }
+        offset = 30
+        deathdate = { day = 29 month = december year = 1999 }
+
+        action = {
+                name = action_name_ok
+                command = { type = hard_attack which = light_armor value = -1 }
+                command = { trigger = { ai = yes } type = hard_attack which = armor value = -2 }
+                command = { trigger = { ai = no } type = hard_attack which = armor value = -3 }
+                command = { type = build_time which = armor when = on_upgrade where = relative value = -5 }
+                command = { type = build_time which = light_armor when = on_upgrade where = relative value = -5 }
+        }
+}
+
+###############
+# Create the Decima Flottiglia MAS
+event = {
+	id = 9300355
+	random = no
+	country = ITA
+
+	decision = {
+		technology = 1560 # Marines 1922
+	}
+	decision_trigger = {
+		technology = 1570 # Marines 1925
+		money = 50
+		supplies = 100
+	}
+	trigger = {
+		technology = 1570 # Marines 1925
+		random = 20
+	}
+
+   	name = "Upgrade X Flottiglia MAS"
+	desc = 9300355desc
+	style = 2
+	picture = "Frogmen"
+	decision_picture = "decision_Frogmen"
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = ACTION_NAME_GREAT
+		command = { type = river_attack which = infantry value = 2 }
+		command = { type = shore_attack which = infantry value = 2 }
+		command = { type = build_time which = infantry when = on_upgrade where = relative value = 6 }
+		command = { type = river_attack which = marine value = 2 }
+		command = { type = shore_attack which = marine value = 2 }
+		command = { type = build_time which = marine when = on_upgrade where = relative value = 6 }
+		command = { trigger = { ai = no } type = money value = -50 }
+		command = { trigger = { ai = no } type = supplies value = -100 }
+	}
+}
+
+###############
+# Semovente http://en.wikipedia.org/wiki/Semovente_75/18
+event = {
+	id = 9300395
+	random = no
+	country = ITA
+
+	trigger = {
+		technology = 2170 # AT 1940
+		random = 20
+	}
+
+	name = 9300395name
+	desc = 9300395desc
+	style = 2
+	picture = "semovente"
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = action_name_great
+		command = { type = hard_attack which = tank_destroyer value = 1 }
+		command = { trigger = { ai = no } type = supplies value = -500 }
+	}
+}
+###############
+# Bicycles
+event = {
+	id = 9300396
+	random = no
+	country = ITA
+
+	trigger = {
+		technology = 1990 # Supply 1936
+		random = 20
+	}
+
+	name = 9300396name
+	desc = 9300396desc
+	style = 2
+	picture = "bicycles"
+
+	date = { day = 1 month = september year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = action_name_great
+      		command = { type = hill_move which = infantry value = 2 }
+		command = { type = plain_move which = infantry value = 2 }
+		command = { type = urban_move which = infantry value = 2 }
+		command = { trigger = { ai = no } type = supplies value = -200 }
+	}
+}
+
+event = {
+         id = 14200012
+         random = no
+         country = ITA
+
+
+         name = "General strike at Driza oil fields."
+         desc = "The strike began on February 11 in protest against the dismissal of 60 revolutionary workers and their banishment from Driza. Its main cause was the dissatisfaction of the popular masses and the brutal exploitation of the masses by the Italian capitalists. The Driza strike was led by the workers’ society Puna, in which Communists played the leading role."
+         style = 2
+         picture = "strike"
+
+         date = { day = 11 month = February year = 1950 }
+
+           action = {
+                  name = "Send the MSVN"
+                  command = { type = dissent value = 2 }
+                  command = { type = money value = -100 }
+                  command = { type = oilpool value = -1000 }
+           }
+
+}
+
+event = {
+         id = 14200013
+         random = no
+         country = ITA
+
+         name = "Discovery of Driza oil field."
+         desc = "Driza oil field is an Albanian oil field that was discovered in 1949. It is one of the biggest on-shore oil field of Albania. It began production in 1940 and produces oil. Its proven reserves are about 1,420 million barrels."
+         style = 2
+         picture = "oil_mosul"
+
+         date = { day = 11 month = February year = 1949 }
+
+           action_a = {
+                  name = "Start the production"
+                  command = { type = oilpool value = 2 where = 362 }
+                  command = { type = money value = 100 }
+           }
+
+}

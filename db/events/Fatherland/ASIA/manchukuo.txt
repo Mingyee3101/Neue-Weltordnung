@@ -1,0 +1,1532 @@
+###########################################################
+# WW2 Outcome
+###########################################################
+event = {
+	id = 90000400
+	country = MAN
+	random = no
+	
+	style = 2
+	picture = "manchukuo"
+	name = "WW2 Outcome"
+	desc = "MAN_90000400_DESC"
+
+	date = { day = 23 month = january year = 1948 }
+	
+	action = {
+		name = "The Manchurian Empire"
+		command = { type = dissent value = 15 }				
+	}
+}
+
+###########################################################
+# Future of Manchuria
+###########################################################
+event = {
+	id = 90000401
+	country = MAN
+	random = no
+	
+	style = 2
+	picture = "manchukuo"
+	name = "Future of Manchuria"
+	desc = "MAN_90000401_DESC"
+	
+	trigger = { 
+		event = 90000400
+	}
+
+
+	date = { day = 1 month = march year = 1948 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {
+		ai_chance = 90
+		name = "Interventionism"
+		command = { type = setflag which = ManInter }				
+	}
+	
+	action = {
+		ai_chance = 10
+		name = "Isolationism"
+		command = { type = setflag which = ManIso }				
+	}
+	
+}
+
+###########################################################
+# CCW what we do
+###########################################################
+event = {
+	id = 90000402
+	country = MAN
+	random = no
+	
+	style = 2
+	picture = "manchukuo"
+	name = "Chinese Civil War!"
+	desc = "At the end the Cinese Civil War between Commie and Nationalist is started. What will do ?"
+	
+	decision_trigger = { 
+		war = { country = CHC country = CHI }		
+	}
+	
+	decision = {						
+		war = { country = CHC country = CHI }
+	}
+	
+	
+	trigger = { 
+		war = { country = CHC country = CHI }
+		flag = ManInter
+	}
+
+
+	date = { day = 15 month = june year = 1948 }
+	offset = 35
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {
+		ai_chance = 10
+		name = "Stay strictly neutral"
+		command = { type = dissent value = 1 }			
+	}
+	
+	action = {
+		ai_chance = 45
+		name = "War with all Chinas"
+		command = { type = war which = CHC	}			
+		command = { type = war which = CHI	}		
+command = { type =	addcore   which = 1245	 }		
+command = { type =	addcore   which = 1246	 }		
+command = { type =	addcore   which = 1247	 }		
+command = { type =	addcore   which = 1241	 }		
+		
+	}
+
+	action = {
+		ai_chance = 45
+		name = "Fight only commie"
+		command = { type = war which = CHC	}		
+command = { type =	addcore   which = 1245	 }		
+command = { type =	addcore   which = 1246	 }		
+command = { type =	addcore   which = 1247	 }		
+command = { type =	addcore   which = 1241	 }		
+	}
+	
+}
+
+event = {
+	id = 90000403
+	country = MAN
+	random = no
+	
+	style = 2
+	picture = "manchukuo"
+	name = "Alliance with Nationalist"
+	desc = "We need to destroy the commies in China, we're at war with the same enemy. It's time to made an accord with Nationalists"
+	
+	trigger = { 
+		war = { country = CHC country = MAN }		
+		NOT = {
+			war = { country = CHI country = MAN }		
+		}
+	}
+
+
+	date = { day = 15 month = june year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {
+		ai_chance = 10
+		name = "No, it's not necessary"
+		command = { type = dissent value = 1 }			
+	}
+	
+
+	action = {
+		ai_chance = 90
+		name = "Propose alliance"
+		command = { type = trigger which = 90000404	}					
+	}
+	
+}
+
+event = {
+	id = 90000404
+	country = CHI
+	random = no
+	
+	style = 2
+	picture = "manchukuo"
+	name = "Alliance with the Manchurian Empire"
+	desc = "The Manchurian Empire want an alliance, we've the same enemy, the commies. What will we do ?"
+	
+
+	action = {
+		ai_chance = 10
+		name = "No, it's not necessary"
+		command = { type = dissent value = 1 }			
+	}
+	
+
+	action = {
+		ai_chance = 90
+		name = "Ok, sign the pact"
+		command = { type = alliance which = MAN }	
+	}
+	
+}
+
+event = {
+	id = 90000405
+	country = CHI
+	random = no
+	
+	style = 2
+	picture = "manchukuo"
+	name = "National China and Manchurian Empire"
+	desc = "We've won the Civil War, now what we do with the Manchurian Empire ?"
+	
+	trigger = { 		
+		NOT = {
+			exists = CHC
+		}
+	}
+
+	date = { day = 15 month = june year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action = {
+		trigger = { alliance = { country = CHI country = MAN } }
+		ai_chance = 33
+		name = "Release alliance and let them be"
+		command = { type = leave_alliance when = 1 }
+	}
+	
+	action = {
+		trigger = { alliance = { country = CHI country = MAN } }
+		ai_chance = 34
+		name = "The Manchurian Empire is our natural ally"
+		command = { type = relation which = MAN value = 100 }
+	}
+
+	
+	action = {
+		trigger = { alliance = { country = CHI country = MAN } }
+		ai_chance = 33
+		name = "It's time to unify all China also Manchuria"
+		command = { type = leave_alliance when = 1 }
+		command = { type = war which = MAN	}	
+	}
+	
+	action = {
+		trigger = { NOT = { alliance = { country = CHI country = MAN } } }
+		ai_chance = 50
+		name = "Let them be"
+		command = { type = relation which = MAN value = 50 }
+	}
+
+	action = {
+		trigger = { NOT = { alliance = { country = CHI country = MAN } } }
+		ai_chance = 50
+		name = "It's time to unify all China also Manchuria"		
+		command = { type = war which = MAN	}	
+	}
+
+	
+}
+
+####################################################################
+#  Fall of Beijing
+####################################################################
+event = {
+	id = 10005320
+	random = no
+	TAG = { CHC MAN }
+	persistent = yes
+	
+	trigger = { 
+		NOT = {
+         control = { province = 1247 data = -1 } #Beijing
+		 control = { province = 1247 data = CHI } #Beijing
+		 local_flag = BeijingLoss
+		}		
+		OR = {
+			war = { country = CHI country = CHC }
+			war = { country = CHI country = MAN }
+			war = { country = CHC country = MAN }
+		}		
+	}
+		
+	date = { day = 04 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1960 }
+	
+	name = "Fall of Beijing"
+	desc = "TODO"
+	style = 2
+	picture = "manchukuo"
+	action = {
+		name = "Damn"
+		ai_chance = 100	
+		command = { type = dissent value = 5 }       	
+		command = { type = morale which = land value = -5 }
+		command = { type = local_setflag which = BeijingLoss }				
+	}
+}
+
+event = {
+	id = 10005321
+	random = no
+	TAG = { CHC MAN }
+	persistent = yes
+	
+	trigger = { 		
+		control = { province = 1247 data = -1 } #Beijing
+		NOT = {        	
+		 local_flag = BeijingWon
+		}				
+	}
+		
+	date = { day = 04 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1960 }
+	
+	name = "Conquest of Beijing"
+	desc = "TODO"
+	style = 2
+	picture = "manchukuo"
+	action = {
+		name = "Damn"
+		ai_chance = 100	
+		command = { type = dissent value = -5 }       	
+		command = { type = morale which = land value = 5 }
+		command = { type = local_setflag which = BeijingWon }				
+	}
+}
+
+event = {
+	id = 10005322
+	random = no
+	country = CHI
+
+	trigger = { 
+		NOT = {
+         control = { province = 1247 data = -1 } #Beijing
+		}		
+		OR = {
+			war = { country = CHI country = CHC }
+			war = { country = CHI country = MAN }
+			war = { country = CHC country = MAN }
+		}		
+	}
+		
+	date = { day = 04 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1960 }
+	
+	name = "Fall of Beijing"
+	desc = "TODO"
+	style = 2
+	picture = "manchukuo"
+	action = {
+		name = "Damn"
+		ai_chance = 100	
+		command = { type = dissent value = 5 }       	
+		command = { type = morale which = land value = -5 }				
+	}
+}
+
+event = {
+	id = 10005323
+	random = no
+	country = CHI
+	
+	trigger = { 		
+		control = { province = 1247 data = -1 } #Beijing			
+		event = 10005322
+	}
+		
+	date = { day = 04 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1960 }
+	
+	name = "Conquest of Beijing"
+	desc = "TODO"
+	style = 2
+	picture = "manchukuo"
+	action = {
+		name = "Damn"
+		ai_chance = 100	
+		command = { type = dissent value = -5 }       	
+		command = { type = morale which = land value = 5 }				
+	}
+}
+
+####################################################################
+#  Fall of Shangai
+####################################################################
+event = {
+	id = 10005324
+	random = no
+	country = CHC
+	persistent = yes
+	
+	trigger = { 
+		NOT = {
+         control = { province = 1338 data = -1 } #Shangai
+		 control = { province = 1338 data = CHI } #Shangai
+		 local_flag = ShangaiLoss
+		}		
+		OR = {
+			war = { country = CHI country = CHC }
+			war = { country = CHI country = MAN }
+			war = { country = CHC country = MAN }
+		}		
+	}
+		
+	date = { day = 04 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1960 }
+	
+	name = "Fall of Shangai"
+	desc = "TODO"
+	style = 2
+	picture = "manchukuo"
+	action = {
+		name = "Damn"
+		ai_chance = 100	
+		command = { type = dissent value = 5 }       	
+		command = { type = morale which = land value = -5 }
+		command = { type = local_setflag which = ShangaiLoss }				
+	}
+}
+
+event = {
+	id = 10005325
+	random = no
+	country = CHC
+	persistent = yes
+	
+	trigger = { 		
+		control = { province = 1338 data = -1 } #Shangai
+		NOT = {        	
+		 local_flag = ShangaiWon
+		}				
+	}
+		
+	date = { day = 04 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1960 }
+	
+	name = "Conquest of Shangai"
+	desc = "TODO"
+	style = 2
+	picture = "manchukuo"
+	action = {
+		name = "Damn"
+		ai_chance = 100	
+		command = { type = dissent value = -5 }       	
+		command = { type = morale which = land value = 5 }
+		command = { type = local_setflag which = ShangaiWon }				
+	}
+}
+
+event = {
+	id = 10005326
+	random = no
+	country = CHI
+
+	trigger = { 
+		NOT = {
+         control = { province = 1338 data = -1 } #Shangai
+		}		
+		OR = {
+			war = { country = CHI country = CHC }
+			war = { country = CHI country = MAN }
+			war = { country = CHC country = MAN }
+		}		
+	}
+		
+	date = { day = 04 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1960 }
+	
+	name = "Fall of Shangai"
+	desc = "TODO"
+	style = 2
+	picture = "manchukuo"
+	action = {
+		name = "Damn"
+		ai_chance = 100	
+		command = { type = dissent value = 5 }       	
+		command = { type = morale which = land value = -5 }				
+	}
+}
+
+event = {
+	id = 10005327
+	random = no
+	country = CHI
+	
+	trigger = { 		
+		control = { province = 1338 data = -1 } #Shangai			
+		event = 10005326
+	}
+		
+	date = { day = 04 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1960 }
+	
+	name = "Conquest of Shangai"
+	desc = "TODO"
+	style = 2
+	picture = "manchukuo"
+	action = {
+		name = "Damn"
+		ai_chance = 100	
+		command = { type = dissent value = -5 }       	
+		command = { type = morale which = land value = 5 }				
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+######################## TEST
+
+event = {
+id = 150033
+TAG = { MAN CHC CHI }
+style = 2
+picture = "manchukuo"
+
+date = { day = 9 month = february year = 1948 }
+
+name = "New chinese year, Rat"
+desc = "Today, February 9th begins the seven day long celebrations of the manchukuo. This is an especially important New Year because it begins a new sixty year cycle,
+starting with the year of the Rat. Rat people are born under the sign of charm and aggressiveness. They are expressive and can be talkative sometimes.
+They like to go to parties and spend quiet times chatting with their friends. Although the Rat can be quiet sometimes, it is rare to catch a Rat sitting quietly."
+
+action_a = {
+name = "Prepare the celebrations and the stage!"
+command = { type = dissent value = -1 }
+}
+}
+
+
+event = {
+id = 150034
+country = MAN
+style = 2
+picture = "manchukuo"
+
+date = { day = 28 month = january year = 1949 }
+
+name = "New chinese year, Ox"
+desc = "Today, January 28th begins the seven day long celebrations of the manchukuo.
+This year will be the year of the Ox. Ox people are hard-working and persistent, they can stick at a task longer and go at it harder than anybody.
+They believe in themselves and tend to classify almost everything into two basic categories, bad and good. They hold up their high standards as a model
+and severely judge those who don't aspire to maintain these same ideals."
+
+action_a = {
+name = "Prepare the celebrations and the stage!"
+command = { type = dissent value = -1 }
+}
+}
+
+
+event = {
+id = 150035
+country = MAN
+style = 2
+picture = "manchukuo"
+
+date = { day = 16 month = february year = 1950 }
+
+name = "New chinese year, Tiger"
+desc = "Today, February 16th begins the seven day long celebrations of the manchukuo.
+This year will be the year of the Tiger. Born leader is the key word for the Tigers. They are always in the lead and are most
+likely the ones to cry out Let's Go! Noble and Fearless, Tigers are respected for their courage, even from those working against them."
+
+action_a = {
+name = "Prepare the celebrations and the stage!"
+command = { type = dissent value = -1 }
+}
+}
+
+
+event = {
+id = 150036
+country = MAN
+style = 2
+picture = "manchukuo"
+
+date = { day = 5 month = february year = 1951 }
+
+name = "New chinese year, Rabbit"
+desc = "Today, February 5th begins the seven day long celebrations of the manchukuo.
+This year will be the year of the Rabbit. The rabbit is one of the most delicate animals among all 12 animals.
+Rabbits are usually kind and sweet and of course, popular people. Nobody ignores them,
+for they are good company and know how to make the best of themselves."
+
+action_a = {
+name = "Prepare the celebrations and the stage!"
+command = { type = dissent value = -1 }
+}
+}
+
+
+event = {
+id = 150037
+country = MAN
+style = 2
+picture = "manchukuo"
+
+date = { day = 26 month = january year = 1952 }
+
+name = "New chinese year, Dragon"
+desc = "Today, January 26th begins the seven day long celebrations of the manchukuo.
+This year will be the year of the Dragon. As the noble animal symbol that represents the Chinese emperors,
+Dragons are born leaders and masters of ceremonies. And because of this, every Chinese parent is hoping to have a Dragon child.
+Dragon people get things started and keep them moving. They are feisty and gifted with power and luck. Most people look up to the Dragon."
+
+action_a = {
+name = "Prepare the celebrations and the stage!"
+command = { type = dissent value = -1 }
+}
+}
+
+
+event = {
+id = 150038
+country = MAN
+style = 2
+picture = "manchukuo"
+
+date = { day = 13 month = february year = 1953 }
+
+name = "New chinese year, Snake"
+desc = "EVT_91858_DESC"
+
+action_a = {
+name = "Prepare the celebrations and the stage!"
+command = { type = dissent value = -1 }
+}
+}
+
+event = {
+id = 1500010
+country = MAN
+style = 2
+picture = "manchukuo"
+
+date = { day = 10 month = february year = 1948 }
+
+name = "Pu Yi speaks!"
+desc = "Today is the final day of the manchukuo. Today marks the common man's birthday, a day where everyone grows older. Pu Yi has decided to use this occasion to make his speech to
+the Chinese people."
+
+action_a = {
+ai_chance = 85
+name = "The Empire is entering The New Reformation"
+command = { type = dissent value = -1 }
+}
+
+action_b = {
+ai_chance = 15
+name = "The Empire is doing very well and we shall continue as such"
+command = { type = dissent value = 5 }
+command = { type = setflag which = MAN_noreform }
+command = { type = sleepevent which = 150006 }
+}
+}
+
+
+event = {
+id = 1500020
+country = MAN
+style = 2
+picture = "manchukuo"
+
+date = { day = 26 month = january year = 1949 }
+
+name = "The New Reformation - Political"
+desc = "Today celebrations for the year of the Ox have ended, and again Pu Yi is planning to take the stage tonight for a speech concerning the next year. What is the focus of Pu Yi's
+speech going to be tonight? We should look to the Ox as it may give us direction. Ox speaks little but eloquently and is inspirational but also quick to anger!"
+
+action_a = {
+ai_chance = 80
+name = "The New Reformation!"
+command = { type = dissent value = -1 }
+}
+
+action_b = {
+ai_chance = 20
+name = "The Empire is doing very well and we shall continue as such"
+command = { type = dissent value = 5 }
+command = { type = setflag which = MAN_noreform2 }
+command = { type = sleepevent which = 150010 }
+}
+}
+
+
+event = {
+id = 1500030
+country = MAN
+style = 2
+picture = "manchukuo"
+
+date = { day = 26 month = january year = 1950 }
+
+name = "The New Reformation - International"
+desc = "Today celebrations for the year of The Tiger have ended, and again Pu Yi is planning to take the stage tonight for a speech concerning the next year. What is the focus of Pu Yi's
+speech going to be tonight? The Tiger is sensative, thoughtful, and sympathetic but short tempered and loves to stir up trouble with authority..."
+
+action_a = {
+ai_chance = 30
+name = "Pu Yi is short tempered and ready to stir up trouble"
+command = { type = dissent value = -3 }
+}
+
+action_b = {
+ai_chance = 50
+name = "Emperor seeks to expand by using sympathy and thought"
+command = { type = dissent value = -3 }
+command = { type = sleepevent which = 627005 }
+}
+
+action_c = {
+ai_chance = 20
+name = "The Empire is doing very well and we shall continue as such"
+command = { type = dissent value = 5 }
+command = { type = setflag which = MAN_noreform3 }
+}
+}
+
+
+event = {
+id = 1500040
+country = MAN
+style = 2
+picture = "manchukuo"
+
+date = { day = 18 month = march year = 1951 }
+
+name = "One Hundred Years Since the Opium War"
+desc = "One hundred years ago the imperialist British attacked our then-great Chinese nation! We will not be beaten like that again!"
+
+
+action_a = {
+name = "Stupid Imperialists"
+command = { type = dissent value = 1 }
+command = { type = relation which = CAN value = -20 }
+}
+}
+
+####################
+### Wedding by Dermaglen
+####################
+
+event = {
+id = 150005
+country = MAN
+style = 2
+picture = "manchukuo"
+
+trigger = {
+OR = {
+headofstate = 503001
+headofstate = 978138
+}
+}
+
+date = { day = 6 month = april year = 1952 }
+
+name = "Imperial Wedding"
+desc = "On this day, Puyi, Emperor of the Qing Empire, decided to make Tan Yuling, a member of the Tatala clan, his second concubine or third wife. For this great day big celebrations and festivals were organized to celebrate the wedding."
+
+action_a = {
+name = "Long live the Emperor!"
+command = { type = money value = -25 }
+command = { type = supplies value = -100 }
+command = { type = dissent value = -1 }
+}
+}
+
+
+####################
+### Qing domestic events by thegreatplant
+####################
+
+
+event = {
+id = 150006
+country = MAN
+style = 2
+picture = "manchukuo"
+
+date = { day = 27 month = May year = 1948 }
+offset =  10
+deathdate = { day = 29 month = december year = 1949 }
+
+name = "The New Reformation"
+desc = "With the New Year's speech of Emperor Pu Yi the Qing Empire has entered into the New Reformation - This at first seemed simple but the choices of where to go are adding up - how shall the Empire start this new phase?"
+
+action_a = {
+name = "Begin expanding the Military, we must regain our lost territories!"
+ai_chance = 30
+command = { type = belligerence which = MAN value = 5 }
+command = { type = relation which = JAP value = -50 }
+command = { type = relation which = CHC value = -50 }
+command = { type = relation which = CHI value = -25 }
+command = { type = relation which = KOR value = -25 }
+command = { type = domestic which = defense_lobby value = 3 }
+command = { type = domestic which = interventionism value = 3 }
+command = { type = dissent value = 3 }
+command = { type = supplies value = -1000 }
+command = { type = money value = -100 }
+command = { type = manpowerpool value = -50 }
+command = { type = event which = 150007 where = MAN when = 10  }
+}
+
+action_b = {
+name = "Industrialization, we need an industrial base if we are to become a World Power"
+ai_chance = 30
+command = { type = dissent value = -3 }
+command = { type = supplies value = -2000 }
+command = { type = money value = -100 }
+command = { type = event which = 150009 where = MAN when = 10  }
+}
+
+action_c = {
+name = "Farming and mining, the demand in the World for rice and minerals is great"
+ai_chance = 30
+command = { type = manpowerpool value = 50 }
+command = { type = dissent value = -3 }
+command = { type = supplies value = -1000 }
+command = { type = money value = -100 }
+command = { type = event which = 150008 where = MAN when = 10  }
+}
+
+action_d = {
+name = "Reform? What? That was just a joke"
+ai_chance = 10
+command = { type = dissent value = 15 } # people don't think it is funny
+command = { type = event which = 150014 where = MAN when = 10  }
+command = { type = sleepevent which = 1500020 }
+command = { type = sleepevent which = 1500030 }
+}
+}
+
+
+event = {
+id = 150007
+random = no
+country = MAN
+style = 2
+picture = "manchukuo"
+
+name = "The Military Reformation"
+desc = "The state of our military is not good at all, surrounded by enemies as we are Pu Yi choose to reform it first, as without safety nothing else matters."
+
+action_a = {
+name = "Infantry, battles are won on the ground through numbers"
+ai_chance = 65
+command = { type = max_organization which = land value = 1 }
+command = { type = morale which = land value = 1 }
+command = { type = add_corps which = "Qing First corp" value = land where = 1247 }
+command = { type = add_division which = "1st Qing Infantry" value = infantry when = 7 where = artillery }
+command = { type = add_division which = "2nd Qing Infantry" value = infantry when = 7 }
+command = { type = add_corps which = "Qing Second Corp" value = land where = 1247 }
+command = { type = add_division which = "3rd Qing Infantry" value = infantry when = 7 where = artillery }
+command = { type = add_division which = "4th Qing Infantry" value = infantry when = 7 }
+command = { type = manpowerpool value = -25 }
+command = { type = domestic which = professional_army value = 1 }
+}
+
+action_b = {
+name = "Cavalry, speed and manoeuvrability are essential to victory"
+ai_chance = 35
+command = { type = max_organization which = land value = 1 }
+command = { type = morale which = land value = 1 }
+command = { type = add_corps which = "Qing First Corp" value = land where = 1247 }
+command = { type = add_division which = "1st Qing Cavalry" value = cavalry when = 7 where = artillery }
+command = { type = add_division which = "2nd Qing Cavalry" value = cavalry when = 7 }
+command = { type = add_corps which = "Qing Second Corp" value = land where = 1247 }
+command = { type = add_division which = "3rd Qing Cavalry" value = cavalry when = 7 where = artillery }
+command = { type = add_division which = "4th Qing Cavalry" value = cavalry when = 7 }
+command = { type = manpowerpool value = -25 }
+command = { type = domestic which = professional_army value = 2 }
+}
+}
+
+
+event = {
+id = 150008
+random = no
+country = MAN
+style = 2
+picture = "manchukuo"
+
+name = "The Agrarian Reform"
+desc = "Pu Yi has announced the top priority will be boosting agriculture, and mining. How should we go about fulfilling this goal?"
+
+
+action_a = {
+name = "Grow crops and mine minerals so we can export them to the rest of the world"
+ai_chance = 50
+command = { type = domestic which = free_market value = 2 }
+command = { type = relative_manpower value = 3 }
+command = { type = money value = 75 }
+command = { type = manpowerpool value = 10 }
+command = { type = gain_tech which = 5700 }
+command = { type = gain_tech which = 5710 }
+command = { type = add_prov_resource which = 1247 value = 7 where = metal }
+command = { type = add_prov_resource which = 1247 value = 4 where = rare_materials }
+command = { type = add_prov_resource which = 1247 value = 14 where = energy }
+}
+
+action_b = {
+name = "Grow crops and mine so we can feed and maintain our own growing population and industry"
+ai_chance = 30
+command = { type = domestic which = free_market value = -1 }
+command = { type = relative_manpower value = 5 }
+command = { type = manpowerpool value = 25 }
+command = { type = gain_tech which = 5700 }
+command = { type = gain_tech which = 5710 }
+command = { type = gain_tech which = 5010 }
+command = { type = gain_tech which = 5020 }
+command = { type = add_prov_resource which = 1247 value = 7 where = metal }
+command = { type = add_prov_resource which = 1247 value = 4 where = rare_materials }
+command = { type = add_prov_resource which = 1247 value = 14 where = energy }
+command = { type = dissent value = -1 }
+}
+
+action_c = {
+ai_chance = 20
+name = "Screw the crops we need minerals!"
+command = { type = domestic which = free_market value = -2 }
+command = { type = relative_manpower value = -2 } #costs of dangerous mining operations
+command = { type = manpowerpool value = -25 }
+command = { type = add_prov_resource which = 1247 value = 7 where = metal }
+command = { type = add_prov_resource which = 1247 value = 4 where = rare_materials }
+command = { type = add_prov_resource which = 1247 value = 14 where = energy }
+command = { type = construct which = ic where = 1247 value = 1 }
+command = { type = add_prov_resource which = 1249 value = 7 where = metal }
+command = { type = add_prov_resource which = 1249 value = 4 where = rare_materials }
+command = { type = add_prov_resource which = 1249 value = 14 where = energy }
+command = { type = construct which = ic where = 1249 value = 1 }
+command = { type = dissent value = 3 }
+}
+}
+
+
+event = {
+id = 150009
+random = no
+country = MAN
+style = 2
+picture = "manchukuo"
+
+name = "Reforming our industry"
+desc = "Pu Yi decided to press building industry in our reforms. Who should run these factories, the state or foreigners?"
+
+action_a = {
+ai_chance = 60
+name = "State industries, we must control our destiny"
+command = { type = dissent value = -2 }
+command = { type = supplies value = -200 }
+command = { type = money value = -50 }
+command = { type = construct which = ic where = 1247 value = 2 }
+command = { type = construct which = ic where = 1337 value = 2 }
+command = { type = construct which = ic where = 1334 value = 2 }
+command = { type = construct which = ic where = 1249 value = 1 }
+command = { type = gain_tech which = 5820 }
+command = { type = gain_tech which = 5050 }
+command = { type = gain_tech which = 5830 }
+command = { type = gain_tech which = 5060 } #Improved Machine Tools
+command = { type = gain_tech which = 54010 }
+command = { type = gain_tech which = 54020 }
+command = { type = gain_tech which = 54030 } #Accounting machine
+command = { type = domestic which = free_market value = -2 }
+}
+
+action_b = {
+ai_chance = 40
+name = "Open markets and foreign companies should move in"
+command = { type = dissent value = 2 }
+command = { type = money value = 75 }
+command = { type = construct which = ic where = 1247 value = 2 }
+command = { type = construct which = ic where = 1337 value = 2 }
+command = { type = construct which = ic where = 1334 value = 2 }
+command = { type = construct which = ic where = 1249 value = 1 }
+command = { type = domestic which = free_market value = 2 }
+command = { type = domestic which = freedom value = 1 }
+command = { type = relation which = JAP value = 25 }
+command = { type = relation which = GER value = 25 }
+command = { type = relation which = USA value = 25 }
+command = { type = relation which = CAN value = 25 }
+command = { type = relation which = SOV value = 25 }
+command = { type = relation which = ENG value = 25 }
+command = { type = relation which = CHC value = -25 }
+command = { type = relation which = CHI value = -25 }
+}
+}
+
+
+event  = {
+id = 150010
+random = no
+country = MAN
+style = 2
+
+trigger = {
+NOT = { 
+government = communist  
+}
+}
+
+date = { day = 27 month = july year = 1949 }
+offset =  10
+deathdate = { day = 29 month = december year = 1949 }
+
+name = "Politicians and manchukuo Reform"
+desc = "If we are to move the Empire towards the future we must continue our reforms. H.H.Kung, the rich banker, has offered to help - or should we choose the German Stennes, to bring the people in line?
+Wang Kemin is a good worker and organizer and is liked by the people, however."
+picture = "manchukuo"
+
+action_a = {
+name = "H.H. Kung is the man for the job"
+ai_chance = 30
+command = { type = set_domestic which = democratic value = 4 }
+command = { type = set_domestic which = political_left value = 3 }
+command = { type = set_domestic which = free_market value = 5 }
+command = { type = domestic which = freedom value = 1 }
+command = { type = extra_tc value = 10 }
+command = { type = sleepminister which = 503002 }
+command = { type = headofgovernment which = 503015 }
+command = { type = foreignminister which = 978117 }
+command = { type = armamentminister which = 978129 }
+command = { type = ministerofsecurity which = 978120 }
+command = { type = ministerofintelligence which = 503017 }
+command = { type = dissent value = 2 } #reform of markets
+command = { type = money value = 100 }
+}
+
+action_b = {
+trigger = {
+NOT = { 
+puppet = { country = MAN country = JAP  
+}  
+}
+}
+name = "The German, Walther Stennes"
+ai_chance = 20
+command = { type = set_domestic which = democratic value = 3 }
+command = { type = set_domestic which = political_left value = 3 }
+command = { type = domestic which = freedom value = -2 }
+command = { type = domestic which = defense_lobby value = 3 }
+command = { type = domestic which = interventionism value = 3 }
+command = { type = domestic which = professional_army value = 2 }
+command = { type = sleepminister which = 503002 }
+command = { type = headofgovernment which = 503018 }
+command = { type = foreignminister which = 978117 }
+command = { type = armamentminister which = 978119 }
+command = { type = chiefofarmy which = 503019 }
+command = { type = ministerofsecurity which = 503013 }
+command = { type = ministerofintelligence which = 503017 }
+command = { type = dissent value = 5 } #a german HoG pisses people off
+command = { type = relation which = CHC value = -75 }
+command = { type = relation which = CGX value = 25 }
+command = { type = relation which = GER value = 25 }
+}
+
+action_c = {
+name = "Wang Kemin, A solid industrial banker"
+ai_chance = 40
+command = { type = set_domestic which = democratic value = 2 }
+command = { type = set_domestic which = political_left value = 2 }
+command = { type = domestic which = freedom value = -1 }
+command = { type = domestic which = defense_lobby value = 1 }
+command = { type = domestic which = interventionism value = 1 }
+command = { type = domestic which = professional_army value = 1 }
+command = { type = domestic which = free_market value = -2 }
+command = { type = dissent value = -3 }
+command = { type = sleepminister which = 503002 }
+command = { type = headofgovernment which = 503020 }
+command = { type = foreignminister which = 978123 }
+command = { type = ministerofsecurity which = 978127 }
+command = { type = armamentminister which = 978126 }
+command = { type = chiefofarmy which = 503008 }
+}
+
+action_d = {
+name = "Reform? What? We are done with that!"
+ai_chance = 10
+command = { type = dissent value = 15 }
+command = { type = domestic which = democratic value = -2 }
+command = { type = event which = 150015 where = MAN when = 10  }
+}
+}
+
+
+event  = {
+id = 150011
+random = no
+country = MAN
+style = 2
+
+trigger = {
+headofgovernment = 503015
+}
+
+date = { day = 0 month = september year = 1949 }
+offset =  10
+deathdate = { day = 29 month = december year = 1949 }
+
+
+name = "H.H. Kung's proposal on trade"
+desc = "The first step on the path to reform is to reorganize our trade relationship. He has studied in America and is full of new ideas about free trade, but should our Empire pursue international money at the expense of our local markets and our preferred trade partner Germany?"
+
+picture = "manchukuo"
+
+action_a = {
+name = "Open the Chinese Market to the world"
+ai_chance = 50
+command = { type = domestic which = free_market value = 10 } #should be full freemarket by now
+command = { type = dissent value = 5 }
+command = { type = relation which = CAN value = 50 }
+command = { type = relation which = AUS value = 50 }
+command = { type = relation which = USA value = 50 }
+command = { type = relation which = SOV value = 50 }
+command = { type = relation which = ENG value = 50 }
+command = { type = relation which = JAP value = 20 }
+command = { type = relation which = CHC value = -10 }
+command = { type = relation which = CHI value = -10 }
+command = { type = sleepevent which = 150012 }
+command = { type = sleepevent which = 150013 }
+}
+
+action_b = {
+name = "Let us focus on the Chinese Market"
+ai_chance = 45
+command = { type = domestic which = free_market value = 2 }
+command = { type = construct which = ic where = 1249 value = 1 } #local industry growth
+command = { type = dissent value = -3 }
+command = { type = relation which = CHC value = 20 }
+command = { type = relation which = CHI value = 20 }
+command = { type = sleepevent which = 150012 }
+command = { type = sleepevent which = 150013 }
+}
+
+action_c = {
+name = "Germany is still our prefferred partner"
+ai_chance = 5
+command = { type = dissent value = 5 }#Kung has failed to reform anything
+command = { type = sleepevent which = 150012 }
+command = { type = sleepevent which = 150013 }
+}
+}
+
+
+event  = {
+id = 150012
+random = no
+country = MAN
+style = 2
+
+trigger = {
+headofgovernment = 503018
+}
+
+date = { day = 0 month = september year = 1949 }
+offset =  10
+deathdate = { day = 29 month = december year = 1949 }
+
+name = "Walther Stennes Modernization Program"
+desc = "EVT_9985_DESC"
+picture = "manchukuo"
+
+action = {
+name = "Walther Stennes will show the Chinese how to work!"
+ai_chance = 60
+command = { type = domestic which = free_market value = -3 }
+command = { type = domestic which = freedom value = -1 }
+command = { type = domestic which = democratic value = -1 }
+command = { type = construct which = ic where = -4 value = 2 }
+command = { type = construct which = ic where = -4 value = 2 }
+command = { type = dissent value = 10 }
+command = { type = sleepevent which = 150011 }
+command = { type = sleepevent which = 150013 }
+}
+
+action = {
+name = "Perhaps we should move slower, and copy the AOG."
+ai_chance = 40
+command = { type = relation which = CGX value = 100 }
+command = { type = construct which = ic where = -4 value = 2 }
+command = { type = dissent value = 2 }
+command = { type = sleepevent which = 150011 }
+command = { type = sleepevent which = 150013 }
+}
+}
+
+
+event  = {
+id = 150013
+random = no
+country = MAN
+style = 2
+
+trigger = {
+headofgovernment = 503020
+}
+
+date = { day = 0 month = september year = 1949 }
+offset =  10
+deathdate = { day = 29 month = december year = 1949 }
+
+
+name = "Wang Kemin will develop China through righteous industrialization!"
+desc = "Wang Kemin had been working his way through the Qing bureacracy for some time. As head of the Central Bank he has earned a reputation of brilliant administrative skill, he is also well liked by Chinese workers. Since being chosen by Pu Yi to lead the New Reoformation he has increased his Populist rhetoric. China he argues can and must industrialize by its own strength, and not give an inch of sovereignity. We now have a choice in how to go about this great process."
+picture = "manchukuo"
+
+action = {
+name = "The Chinese will become an industrial power in 5 years!"
+ai_chance = 75
+command = { type = domestic which = free_market value = -10 }
+command = { type = construct which = ic where = -4 value = 2 }
+command = { type = construct which = ic where = -4 value = 2 }
+command = { type = dissent value = 5 }
+command = { type = relation which = GER value = -75 }
+command = { type = relation which = JAP value = -25 }
+command = { type = relation which = CHC value = 25 }
+command = { type = sleepevent which = 150011 }
+command = { type = sleepevent which = 150012 }
+}
+
+action = {
+name = "We will form a Cooperative Chinese Market"
+ai_chance = 25
+command = { type = domestic which = free_market value = 2 }
+command = { type = construct which = ic where = 1249 value = 1 } #local industry growth
+command = { type = dissent value = -3 }
+command = { type = relation which = CHC value = 20 }
+command = { type = relation which = CYN value = 20 }
+command = { type = relation which = CGX value = 10 }
+command = { type = relation which = CXB value = 20 } #east china
+command = { type = relation which = MAN value = 20 } #Fengtien
+command = { type = relation which = U30 value = 20 } #formosa if they exist
+command = { type = sleepevent which = 150011 }
+command = { type = sleepevent which = 150012 }
+}
+}
+
+
+event = {
+id = 150014
+country = MAN
+style = 2
+picture = "manchukuo"
+
+name = "Peasant troubles"
+desc = "As Pu Yi decided not to offer any reforms, the Shangqing collaborators spread around the countryside whispering of the end of the Dynasty."
+
+action_a = {
+name = "Find them and execute them!"
+command = { type = dissent value = 5 }
+command = { type = setflag which = MAN_peasants }
+}
+}
+
+
+event = {
+id = 150015
+country = MAN
+style = 2
+picture = "manchukuo"
+
+name = "Peasant troubles"
+desc = "As Pu Yi decided not to offer any reforms, the Shangqing collaborators spread around the countryside whispering of the end of the Dynasty."
+
+action_a = {
+name = "Find them and execute them!"
+command = { type = dissent value = 5 }
+command = { type = setflag which = MAN_peasants2 }
+}
+}
+
+
+event = {
+id = 150016
+country = MAN
+style = 2
+picture = "manchukuo"
+
+trigger = { 
+flag = MAN_noreform3 
+}
+
+date = { day = 0 month = January year = 1948 }
+offset =  40
+deathdate = { day = 29 month = december year = 1963 }
+
+name = "Peasant troubles"
+desc = "As Pu Yi decided not to offer any reforms, the Shangqing collaborators spread around the countryside whispering of the end of the Dynasty."
+
+action_a = {
+name = "Find them and execute them!"
+command = { type = dissent value = 5 }
+command = { type = setflag which = MAN_peasants3 }
+}
+}
+
+
+event = {
+id = 150017
+tag = { MAN MEN CHI }
+style = 2
+picture = "manchukuo"
+
+trigger = {
+control = { province = 1255 data = -1 }
+control = { province = 1259 data = -1 }
+NOT = { 
+exists = CHC 
+}
+}
+
+date = { day = 0 month = January year = 1948 }
+offset =  10
+deathdate = { day = 29 month = december year = 1963 }
+
+name = "Destroying the Shangqing Forts"
+desc = "The Shangqing were destroyed by our invincible army, but in some parts of their state the forts remained everywhere. These are useless for us but some rebels will use them - against us."
+
+action_a = {
+name = "Destroy them!"
+command = { type = construct which = land_fort where = 1259 value = -5 }
+command = { type = construct which = land_fort where = 1255 value = -4 }
+command = { type = construct which = land_fort where = 1260 value = -2 }
+command = { type = construct which = land_fort where = 1269 value = -3 }
+command = { type = construct which = land_fort where = 1271 value = -2 }
+command = { type = construct which = land_fort where = 1256 value = -3 }
+command = { type = construct which = land_fort where = 1263 value = -3 }
+command = { type = construct which = land_fort where = 1257 value = -3 }
+command = { type = construct which = land_fort where = 1258 value = -2 }
+command = { trigger = { control = { province = 1264 data = -1 } } type = construct which = land_fort where = 1264 value = -2 }
+}
+}
+
+
+event = {
+id = 150018
+random = no
+country = MAN
+style = 2
+picture = "manchukuo"
+
+trigger = {
+control = { province = 1247 data = MAN }
+headofstate = 503001 # Aisin-Gioro Puyi
+government = fascist
+}
+
+date = { day = 0 month = january year = 1950 }
+offset = 50
+deathdate = { day = 29 month = december year = 1963 }
+
+name = "Intelectualls demand constitutional monarchy!"
+desc = "Various intellectual circles in Beijing and other major cities have issued a petition to the Emperor to install constitutional monarchy. This move is dangerous as it can weaken our stability. Nearly everyone in the court is opposed to this move, from various reasons, mostly from fears about internal stability. We have no other choice..."
+
+action_a = {
+ai_chance = 90
+name = "Arrest them!"
+command = { type = dissent value = 5 }
+command = { type = setflag which = MAN_INT_REB }
+}
+
+action_b = {
+ai_chance = 10
+name = "Make little concession"
+command = { type = headofstate which = 978138 }
+command = { type = domestic which = democratic value = 2 }
+command = { type = domestic which = freedom value = 1 }
+}
+}
+
+
+event = {
+id = 150019
+random = no
+country = MAN
+persistent = yes
+style = 2
+picture = "manchukuo"
+
+trigger = {
+flag = MAN_INT_REB
+government = fascist
+NOT = {
+exists = CHI
+}
+}
+
+date = { day = 0 month = january year = 1950 }
+offset = 90
+deathdate = { day = 29 month = december year = 1963 }
+
+name = "Intellectuals give support to Kuomitang"
+desc = "Poets, painters, compositors, and professors are against our regime. They view it as a backward, oppresive dictatorship which doesn't solve any of the problems of modern China. Not suprising as they voiced support for the Kuomintang and a united China."
+
+action_a = {
+name = "Arrest them!"
+ai_chance = 50
+command = { type = dissent value = 3 }
+}
+
+action_b = {
+ai_chance = 50
+name = "Make little concession"
+command = { type = headofstate which = 978138 }
+command = { type = domestic which = democratic value = 2 }
+command = { type = domestic which = freedom value = 1 }
+command = { type = clrflag which = MAN_INT_REB }
+}
+}
+
+
+event = {
+id = 150020
+random = no
+country = MAN
+persistent = yes
+style = 2
+picture = "manchukuo"
+
+trigger = {
+flag = MAN_INT_REB
+exists = CHI
+government = fascist
+}
+
+date = { day = 0 month = january year = 1950 }
+offset = 90
+deathdate = { day = 29 month = december year = 1963 }
+
+name = "Intellectuals give support to Kuomitang"
+desc = "Poets, painters, compositors, and professors are against our regime. They view it as a backward, oppresive dictatorship which doesn't solve any of the problems of modern China. Not suprising that they voiced support for the Kuomintang and a united China."
+
+action_a = {
+ai_chance = 30
+name = "Arrest them!"
+command = { type = dissent value = 6 }
+}
+
+action_b = {
+ai_chance = 70
+name = "Make little concession"
+command = { type = headofstate which = 978138 }
+command = { type = domestic which = democratic value = 2 }
+command = { type = domestic which = freedom value = 1 }
+command = { type = clrflag which = MAN_INT_REB }
+}
+}
+
+
+event = {
+id = 150021
+random = no
+country = MAN
+style = 2
+picture = "manchukuo"
+
+trigger = {
+flag = MAN_INT_REB
+random = 80
+government = fascist
+NOT = {
+war = { country = CHI country = MAN }
+
+}
+dissent = 10
+}
+
+date = { day = 0 month = january year = 1951 }
+offset = 30
+deathdate = { day = 29 month = december year = 1963 }
+
+name = "Students uprising"
+desc = "Students demand democracy, they blocked the main roads into the major cities and they are occupying them. We must use the army to quell the rebellious pupils."
+
+action_a = {
+name = "Goddamnit"
+command = { type = dissent value = 5 }
+command = { type = clrflag which = MAN_INT_REB }
+}
+}
+
+
+event = {
+id = 150022
+random = no
+country = MAN
+style = 2
+picture = "manchukuo"
+
+trigger = {
+headofgovernment = 503002
+}
+
+date = { day = 5 month = june year = 1951 }
+
+name = "Death of Xu Shichang"
+desc = "The Prime Minister, Xu Shichang, hero of the restoration of the empire died today at the age of 85 years. Marquis Li Kuo-chieh, The grandson of Li Hongzhang will succeed in his position."
+
+action_a = {
+name = "A state funeral is least we can do...."
+command = { type = sleepminister which = 503002 }
+command = { type = headofgovernment which = 978257 }
+command = { type = sleepevent which = 1500230 }
+}
+}
+
+
+event = {
+id = 1500230
+random = no
+country = MAN
+style = 2
+picture = "manchukuo"
+
+trigger = {
+NOT = {
+headofgovernment = 503002
+}
+}
+
+date = { day = 6 month = june year = 1951 }
+
+name = "Death of Xu Shichang"
+desc = "The former Prime Minister, Xu Shichang, hero of the restoration of Qing empire died today at the age of 85 years. The grand state funeral has been organized to remeber his great deeds for Chinese nation."
+
+action_a = {
+name = "A state funeral is least we can do...."
+command = { type = sleepminister which = 503002 }
+command = { type = sleepevent which = 150022 }
+}
+}

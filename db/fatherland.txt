@@ -1,0 +1,225 @@
+#####################################
+## Fatherland X - AMERIKA events
+#####################################
+
+#CREDITS
+event = "db\events\credits.txt"
+
+#CHEATS
+event = "db\events\cheats.txt"
+
+#SECRET WEAPONS
+event = "db\events\secret_weapon_events.txt"
+
+#SPACE RACE
+event = "db\events\space_race.txt"
+
+#JUKEBOX
+event = "db\events\jukebox.txt"
+
+#MOBILIZATION EVENTS
+event = "db\events\mobilization.txt"
+event = "db\events\mobilization_events.txt"
+
+#GENERIC DECISONS
+event = "db\events\generic_decisions.txt"
+
+#FLAVOUR
+event = "db\events\flavour.txt"
+
+#CAPITALS
+event = "db\events\capitals.txt"
+
+#BUILDINGS
+event = "db\events\buildings.txt"
+
+#WORLD ECONOMY
+#event = "db\events\oil.txt" #disabled
+#event = "db\events\economy.txt" #disabled
+
+#AFRICA
+event = "db\events\fatherland\africa\egypt.txt"
+event = "db\events\fatherland\africa\end_uk_colonialism.txt"
+event = "db\events\fatherland\africa\ethiopia.txt"
+event = "db\events\fatherland\africa\madagascar.txt"
+event = "db\events\fatherland\africa\south_africa.txt"
+
+#NORTH AMERIKA
+event = "db\events\fatherland\north_amerika\canada.txt"
+event = "db\events\fatherland\north_amerika\usa.txt"
+event = "db\events\fatherland\north_amerika\usa_cw_isolation.txt"
+event = "db\events\fatherland\north_amerika\usa_cw_intervention.txt"
+event = "db\events\fatherland\north_amerika\usa_elections.txt"
+event = "db\events\fatherland\north_amerika\usa_generic.txt"
+event = "db\events\fatherland\north_amerika\usa_wars.txt"
+
+#CENTRAL AMERIKA
+event = "db\events\fatherland\central_amerika\centroamerica.txt"
+event = "db\events\fatherland\central_amerika\costa_rica.txt"
+event = "db\events\fatherland\central_amerika\cuba.txt"
+event = "db\events\fatherland\central_amerika\dominican_republic.txt"
+event = "db\events\fatherland\central_amerika\el_salvador.txt"
+event = "db\events\fatherland\central_amerika\guatemala.txt"
+event = "db\events\fatherland\central_amerika\haiti.txt"
+event = "db\events\fatherland\central_amerika\honduras.txt"
+event = "db\events\fatherland\central_amerika\mexico.txt"
+event = "db\events\fatherland\central_amerika\nicaragua.txt"
+event = "db\events\fatherland\central_amerika\panama.txt"
+
+#SOUTH AMERIKA
+#event = "db\events\fatherland\south_amerika\argentina.txt"
+#event = "db\events\fatherland\south_amerika\brazil.txt"
+#event = "db\events\fatherland\south_amerika\bolivia.txt"
+event = "db\events\fatherland\south_amerika\chile.txt"
+event = "db\events\fatherland\south_amerika\colombia.txt"
+event = "db\events\fatherland\south_amerika\colombia_communist.txt"
+event = "db\events\fatherland\south_amerika\colombia_democratic.txt"
+event = "db\events\fatherland\south_amerika\colombia_fascist.txt"
+event = "db\events\fatherland\south_amerika\ecuador.txt"
+event = "db\events\fatherland\south_amerika\paraguay.txt"
+event = "db\events\fatherland\south_amerika\peru.txt"
+event = "db\events\fatherland\south_amerika\uruguay.txt"
+event = "db\events\fatherland\south_amerika\venezuela.txt"
+
+#UN
+event = "db\events\fatherland\un\intervention.txt"
+event = "db\events\fatherland\un\marshallplan.txt"
+event = "db\events\fatherland\un\un.txt"
+
+#CENTRAL ASIA
+event = "db\events\fatherland\central_asia\afghanistan.txt"
+event = "db\events\fatherland\central_asia\sinkiang.txt"
+event = "db\events\fatherland\central_asia\turkestan.txt"
+event = "db\events\fatherland\central_asia\tibet.txt"
+
+#OCEANIA
+event = "db\events\fatherland\oceania\australia.txt"
+event = "db\events\fatherland\oceania\new_zealand.txt"
+
+#ASIA
+event = "db\events\fatherland\asia\brunei.txt"
+event = "db\events\fatherland\asia\burma.txt"
+event = "db\events\fatherland\asia\ceylon.txt"
+event = "db\events\fatherland\asia\india.txt"
+event = "db\events\fatherland\asia\indochina.txt"
+event = "db\events\fatherland\asia\indonesia.txt"
+event = "db\events\fatherland\asia\japan.txt"
+event = "db\events\fatherland\asia\koreas.txt"
+event = "db\events\fatherland\asia\manchukuo.txt"
+event = "db\events\fatherland\asia\mongolia.txt"
+event = "db\events\fatherland\asia\nepal.txt"
+event = "db\events\fatherland\asia\pakistan.txt"
+event = "db\events\fatherland\asia\philippines.txt"
+event = "db\events\fatherland\asia\thailand.txt"
+
+#CHINA
+event = "db\events\fatherland\china\china.txt"
+#event = "db\events\fatherland\china\Imperial Russian-Chinese Alliance.txt"
+event = "db\events\fatherland\china\Post-CCW.txt"
+event = "db\events\fatherland\china\Sino-Russian Wars.txt"
+
+#AXIS
+event = "db\events\fatherland\axis\Axis Military Events.txt"
+event = "db\events\fatherland\axis\Intervention.txt"
+
+#AXIS AMERICAS
+event = "db\events\fatherland\axis_americas\Argentina.txt"
+event = "db\events\fatherland\axis_americas\Bolivia.txt"
+event = "db\events\fatherland\axis_americas\Brazil.txt"
+event = "db\events\fatherland\axis_americas\German Assistance.txt" #Move into German Foreign
+event = "db\events\fatherland\axis_americas\UN.txt" #Move into German UN
+event = "db\events\fatherland\axis_americas\post_platinean_war.txt"
+
+#COMINTERN
+event = "db\events\fatherland\comintern\beria.txt"
+event = "db\events\fatherland\comintern\comintern_conference.txt"
+event = "db\events\fatherland\comintern\empire_of_russia.txt"
+event = "db\events\fatherland\comintern\fareastern.txt"
+event = "db\events\fatherland\comintern\leadership.txt"
+event = "db\events\fatherland\comintern\molotov.txt"
+event = "db\events\fatherland\comintern\russian_wars.txt"
+event = "db\events\fatherland\comintern\siberia.txt"
+event = "db\events\fatherland\comintern\soviet_union.txt"
+event = "db\events\fatherland\comintern\zhukov.txt"
+event = "db\events\fatherland\comintern\lokot.txt"
+event = "db\events\fatherland\comintern\flavour.txt"
+event = "db\events\fatherland\comintern\central_asia_war.txt"
+
+#CRISIS
+event = "db\events\fatherland\crisis\transylvania.txt"
+event = "db\events\fatherland\crisis\nuclear.txt"
+event = "db\events\fatherland\crisis\switzerland.txt"
+event = "db\events\fatherland\crisis\colonials.txt"
+event = "db\events\fatherland\crisis\sino_indian_war.txt"
+event = "db\events\fatherland\crisis\Far_Eastern_War.txt"
+event = "db\events\fatherland\crisis\kerch_docks.txt"
+event = "db\events\fatherland\crisis\kurds_mahabad.txt"
+event = "db\events\fatherland\crisis\korean_war.txt"
+#WW3 flashpoints
+event = "db\events\fatherland\crisis\abadan.txt"
+event = "db\events\fatherland\crisis\suez.txt"
+event = "db\events\fatherland\crisis\kuwait.txt"
+event = "db\events\fatherland\crisis\ira.txt"
+event = "db\events\fatherland\crisis\morocco.txt"
+# WW3
+event = "db\events\fatherland\crisis\WWIII.txt"
+
+#EUROPE
+event = "db\events\fatherland\europe\belgium.txt"
+event = "db\events\fatherland\europe\bulgaria.txt"
+event = "db\events\fatherland\europe\cyprus.txt"
+event = "db\events\fatherland\europe\denmark.txt"
+event = "db\events\fatherland\europe\finland.txt"
+event = "db\events\fatherland\europe\freefrance.txt"
+event = "db\events\fatherland\europe\greece.txt"
+event = "db\events\fatherland\europe\hungary.txt"
+event = "db\events\fatherland\europe\italy.txt"
+event = "db\events\fatherland\europe\italy_foreign.txt"
+event = "db\events\fatherland\europe\italy_reforms.txt"
+event = "db\events\fatherland\europe\nationalist spain.txt"
+event = "db\events\fatherland\europe\portugal.txt"
+event = "db\events\fatherland\europe\serbia.txt"
+event = "db\events\fatherland\europe\sweden.txt"
+event = "db\events\fatherland\europe\turkey.txt"
+event = "db\events\fatherland\europe\unitedkingdom.txt"
+event = "db\events\fatherland\europe\vichyfrance.txt"
+
+#GERMANY
+event = "db\events\fatherland\ger\belarus.txt"
+event = "db\events\fatherland\ger\bohemia.txt"
+event = "db\events\fatherland\ger\cossacks.txt"
+event = "db\events\fatherland\ger\domestic.txt"
+event = "db\events\fatherland\ger\generalgovernment.txt"
+event = "db\events\fatherland\ger\ger_influence.txt"
+event = "db\events\fatherland\ger\hitlerdied.txt"
+event = "db\events\fatherland\ger\kaukasus.txt"
+event = "db\events\fatherland\ger\ost.txt"
+event = "db\events\fatherland\ger\RKs.txt"
+event = "db\events\fatherland\ger\SS.txt"
+event = "db\events\fatherland\ger\ss-germany.txt"
+event = "db\events\fatherland\ger\ukraine.txt"
+event = "db\events\fatherland\ger\volksgrenadier.txt"
+event = "db\events\fatherland\ger\wehrmacht-germany.txt"
+event = "db\events\fatherland\ger\west.txt"
+
+#MIDDLE EAST
+event = "db\events\fatherland\middle_east\iran.txt"
+event = "db\events\fatherland\middle_east\iraq.txt"
+#event = "db\events\fatherland\middle_east\israel.txt"
+event = "db\events\fatherland\middle_east\jordan.txt"
+event = "db\events\fatherland\middle_east\kuwait.txt"
+event = "db\events\fatherland\middle_east\lebanon.txt"
+event = "db\events\fatherland\middle_east\oman.txt"
+event = "db\events\fatherland\middle_east\saudi_arabia.txt"
+event = "db\events\fatherland\middle_east\syria.txt"
+event = "db\events\fatherland\middle_east\united_arab_republic.txt"
+event = "db\events\fatherland\middle_east\yemen.txt"
+
+
+#POST WW3 VICTORY
+event = "db\events\fatherland\post_ww3\WWIII_Axis_victory_America.txt"
+event = "db\events\fatherland\post_ww3\WWIII_Axis_victory_Asia.txt"
+event = "db\events\fatherland\post_ww3\WWIII_Axis_victory_Britain.txt"
+event = "db\events\fatherland\post_ww3\WWIII_UN_victory_Asia.txt"
+event = "db\events\fatherland\post_ww3\WWIII_UN_victory_Europe.txt"
+event = "db\events\fatherland\post_ww3\WWIII_Generic_Surrender.txt"

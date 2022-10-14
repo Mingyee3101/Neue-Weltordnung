@@ -1,0 +1,2254 @@
+#####################################
+# Spain events
+# Review Pako
+# 
+#####################################
+# Nationalist Spain
+# 
+# 189032 - ESPANA, UNA GRANDE Y LIBRE
+# 189033 - Political situation
+# 189034 - The Second World War
+# 189035 - North Africa
+# 189036 - The Economic situation
+# 189057 - Economic reforms first round
+# 189058 - Economic reforms second round
+# 189059 - New occupation law
+# 189220 - Internal politically problems
+# 189222 - Close Radio Sevilla
+# 189223 - State censorship
+# 189224 - Return of the Jesuits
+# 189239 - Social law
+# 189013 - Propose a new Pacto Ibérico ?
+# 189026 - The Pacto Ibérico - POR
+# 189027 - 56th birthday of Generalísimo
+# 189028 - 57th birthday of Generalísimo
+# 189029 - 58th birthday of Generalísimo
+# 189030 - 59th birthday of Generalísimo
+# 189031 - 60th birthday of Generalísimo
+# 189039 - The Republican Government in exile
+# 189123 - Suppression Act
+# 189128 - National shipbuilding company - Bazán
+# 189129 - Security of the State Act
+# 189130 - National Health insurance
+# 189133 - Starvation
+# 189134 - Cinema and Football
+# 189135 - Navy academy
+# 189147 - National foreign agency
+# 189149 - National Tobacco Company
+# 189150 - Change of greet
+# 189158 - Help from Argentina
+# 189159 - The new Real Madrid Stadium
+# 189160 - Purchase of Panzers
+# 189161 - Sale of Panzers - GER
+# 189246 - National railway company - RENFE
+# 189271 - Madrid bombing
+
+event = {
+	id = 189032
+	random = no
+	country = SPA
+	style = 2
+	picture = "spanish_warposter"
+	
+	date = { day = 3 month = february year = 1948 }
+	name = "Espana, una grande y libre"
+	desc = "Franco's victory was followed by a national consolidation and the vengeance of the season. The Repubicans side fought were forced into concentration camps or lost their civil rights. Killings by anarchists kostet the executions. Separatist parties was banned nationalist who supported the Independence Party of Navarre with the exception of. The mayor was appointed by General Franco, loyal military officers. Catalonia and the Basque Country, the use of local languages was banned."
+
+	action = {
+		name = "Hurrah!"
+		ai_chance = 100	
+		command = { type = dissent value = -1 }
+		}
+}
+	
+event = {
+	id = 189033
+	random = no
+	country = SPA
+	style = 2
+	picture = "spanish_warposter"
+	
+	date = { day = 5 month = march year = 1948 }
+	name = "Political Situation" 
+	desc = "Politically, Franco managed to unite ideologically completely incompatible Falangist and Karlistit one and under one umbrella organization. This Falange Espanola Tradicional y de las Juntas de Ofensiv Nacional Sindical had since 1939 the country's only legal political party. Advanced Fascism and the Catholic-conservatism cohabitation does not always go smoothly: August 16, 1942 in Bilbao, the Falangist and karlistien squabbles grenade attack Begona Church"
+
+	action = {
+		name = "Falange Espanola Tradicional y de las Juntas de Ofensiv Nacional Sindical"
+		ai_chance = 100	
+		command = { type = domestic which = freedom value = -1 }
+	}
+}
+
+event = {
+	id = 189034
+	random = no
+	country = SPA
+	style = 2
+	picture = "spanish_warposter"
+	
+	date = { day = 7 month = april year = 1948 }
+	
+	name = "International position" 
+	desc = "During the WW2 Franco signed an agreement with the Vichy Government's favorable trade agreement and entered into negotiations with Germany's accession to battle the Axis side. Adolf Hitler met Franco in south-eastern France in Hendaye on 23 October 1940. Franco demanded the war in exchange for the accession of money and raw materials, as well as Gibraltar, French North Africa. Hitler could not agree to terms, without the friendly relations with the French government romuttuisivat. "
+
+	action = {
+		name = "We did not ride the storm"
+		ai_chance = 50	
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = sleepevent which = 900038 }
+	}
+	
+	action = {
+		name = "Take opportunities"
+		ai_chance = 50	
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	
+}
+
+event = {
+	id = 189035
+	random = no
+	country = SPA
+	style = 2
+	picture = "spanish_warposter"
+	
+	date = { day = 10 month = june year = 1948 }
+	
+	name = "The Spanish Sahara" 
+	desc = "The Western Allies landed in French North Africa in November 1942 and began to prepare for the invasion of Fortress Europe against. The United Kingdom and the United States put pressure on Spain to break with anyone and everyone. Franco began to worry about the Allied infringing the territorial integrity of Spain. American troops were clustered positions in northern Morocco to the border."
+
+	action = {
+		name = "Damn!"
+		ai_chance = 100	
+		command = { type = dissent value = 1 }
+		
+		command = { type = relation which = USA value = -20 }
+		command = { type = relation which = ENG value = -20 }
+		command = { type = relation which = U01 value = -20 }
+	}
+}
+
+event = {
+	id = 189036
+	random = no
+	country = SPA
+	style = 2
+	picture = "spanish_warposter"
+	
+	date = { day = 13 month = july year = 1948 }	
+	
+	name = "The Economic situation" 
+	desc = "Spain's economy is not so good"
+
+	action = {
+		name = "We need reforms"
+		ai_chance = 100	
+		command = { type = domestic which = free_market value = -1 }
+	}
+}
+
+event = {
+	id = 189057
+	random = no
+	country = SPA
+	trigger = {
+		random = 30
+	}
+	name = "Economic reforms - First Round"
+	desc = "The S.N.T. was an organization which established lachat and national sales of key products such as wheat for checking the prices. The producers were forced to sell wheat at a price fixed by this institution and the latter were to be sold at a price higher and taxed. This caused a reduction in production and especially creating market dun black."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 1 month = august year = 1948 }
+	offset = 7
+	deathdate = { day = 1 month = september year = 1950 }
+	action = {
+		name = "Yes, start planning a complete revision of our economic system"
+		ai_chance = 60
+		command = { type = money value = -250 }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		ai_chance = 40
+		name = "No, it's not necessary"
+		command = { type = dissent value = 3 }
+		command = { type = sleepevent which = 189058 }
+		command = { type = domestic which = free_market value = 1 }		
+	}
+}
+
+event = {
+	id = 189058
+	random = no
+	country = SPA
+	trigger = {
+		event = 189057
+	}
+	name = "Economic reforms - Second Round"
+	desc = "In these days of reconstruction of the country by the fascist regime was created lI.N.I (National Institute of industry) who was a State holding that will allow the birth of large companies like SEAT, ENDESA, PEGASSO, etc..."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 10 month = january year = 1949 }
+	offset = 40
+	deathdate = { day = 10 month = december year = 1951 }
+	action = {
+		name = "A full autarchy is the way"
+		ai_chance = 50
+		command = { type = money value = -500 }
+		
+		command = { type = construct which = infrastructure where = -4 value = 5 }
+		command = { type = construct which = infrastructure where = -4 value = 5 }
+		command = { type = construct which = infrastructure where = -4 value = 5 }
+		command = { type = construct which = infrastructure where = -4 value = 5 }
+		
+		command = { type = industrial_modifier which = total value = 4 }
+		
+		command = { type = construct which = IC where = -4 value = 2 }
+		command = { type = construct which = IC where = -4 value = 2 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		
+		command = { type = domestic which = free_market value = 1 }				
+	}
+	action = {
+		name = "We need a more open market"
+		ai_chance = 50		
+		command = { type = money value = 500 }
+		
+		command = { type = convoy which = 20 value = 474 when = 0 }
+		command = { type = convoy which = 20 value = 474 when = 2 }
+		command = { type = convoy which = 602 value = 474 when = 4 }
+		command = { type = convoy which = 602 value = 474 when = 16 }
+
+		command = { type = domestic which = free_market value = -1 }				
+	}
+}
+
+event = {
+	id = 189059
+	random = no
+	country = SPA
+	trigger = {
+		exists = SPA
+	}
+	name = "New occupational law"
+	desc = "We need a new occupational law. With this law, are regulated the working conditions of the area national. Was guaranteed a minimum wage, social security, ugly families and paid leave. It decreed an increase in salary for laborers and fragmentation of land in accordance with the needs of peasant families. However, almost none of these advantages do sappliquerent."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 7 month = march year = 1949 }
+	action = {
+		name = "Aggressive law. Large state control."
+		ai_chance = 40	
+		command = { type = money value = -250 }
+		command = { type = dissent value = -2 }
+		command = { type = peacetime_ic_mod value = 2 }
+	}
+	action = {
+		name = "Moderate law. Blended control."
+		ai_chance = 40	
+		command = { type = money value = -125 }
+		command = { type = dissent value = -1 }
+		command = { type = peacetime_ic_mod value = 1 }
+	}
+	action = {
+		ai_chance = 20	
+		name = "We don't need a new law"
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 189220
+	random = no
+	country = SPA
+	date = { day = 19 month = april year = 1950 }
+	name = "Internal politically problems"
+	desc = "The Falange is more divided between the Falangists de Manuel Hedilla, the Carlists and affiliate army to Franco. Indeed, Hedilla sinquiete more in addition to see movement to militarize and radicalized. Seeing that army begins to take all posts of the party, see apply many ultra-clericale reactionary ideas are that the Falangists feel betrayed and dispossessed of the WIELS movement had themselves launched. Ambience is tense."
+	style = 2
+	picture = "spanish_warposter"
+	action = {
+		name = "Damn!"
+		command = { type = dissent value = 2 }
+		}
+	}
+	
+event = {
+	id = 189222
+	random = no
+	country = SPA
+	date = { day = 1 month = march year = 1949 }
+	name = "Close Radio Sevilla"
+	desc = "Radio-Seville was Moon of the nationalist radio which broadcast information and the point of view of the nationalists throughout the country to Radio-Salamanca as its predecessor. But Radio-Seville was very popular even among Republicans because Queipo de Llano had a freedom of your bitter towards the quenvers heads nationalists groups Republicans both. This impertinence annoyed both the Conservatives both lon comes to close the premises permanently."
+	style = 2
+	picture = "spanish_warposter"
+	action = {
+		name = "Close the damper to these impudent"
+		ai_chance = 50	
+		command = { type = domestic which = freedom value = -1}
+		command = { type = dissent value = -1 }
+		}
+	action = {
+		name = "Let freedom of tone to the regime"
+		ai_chance = 50	
+		command = { type = domestic which = freedom value = 1} 
+		command = { type = dissent value = 1 }
+		}
+	}
+
+event = {
+	id = 189223
+	random = no
+	country = SPA
+	date = { day = 22 month = april year = 1949 }
+	name = "State censorship"
+	desc = "The law on the press which has just promulgated Desmond gives to the State total control of information in Spain: journalism activity is highly regulated, a card is required in order to write or publish an article, only logs official dobedience to the regime are allowed. In Exchange for this end of the freedom of the press, journalists are purchased because their wages will be increased tenfold and will get benefits nationally."
+	style = 2
+	picture = "spanish_warposter"
+	action = {
+		name = "Silence,please!"
+			ai_chance = 50							
+		    command = { type = dissent value = -1 }			
+			command = { type = domestic which = freedom value = -1 }
+		}
+	action = {
+		name = "No, it's not necessary"
+			ai_chance = 50	
+			command = { type = money value = 50 }
+			command = { type = dissent value = 1 }
+			command = { type = domestic which = freedom value = 1 }
+		}
+	}
+
+event = {
+	id = 189224
+	random = no
+	country = SPA
+	date = { day = 3 month = may year = 1949 }
+	name = "Return of the Jesuits"
+	desc = "The Jesuit religious Congregation who had been expelled from the Republic in 1931 is again allowed to return in Spain and to resume his religious education and teaching in all schools in the country. Order acquires even new benefits quil had not at the time of the monarchy since Franco called two Jesuits as close advisers: the priest Lezirika and Menendez Reigada."
+	style = 2
+	picture = "spanish_warposter"
+	action = {
+		name = "Amen!"
+		command = { type = dissent value = -1 }
+		}
+	}
+	
+event = {
+	id = 189239
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }		
+	}
+	date = { day = 17 month = march year = 1949 }
+	offset = 60
+	deathdate = { day = 17 month = march year = 1955 }
+	name = "Agricoltural Reforms"
+	desc = "In the light of the extreme distress of the Spanish population, the Government answer would be too institute price control and tarrifs on grains and other cereals."
+	style = 2
+	picture = "spanish_warposter"
+action = {
+		name = "Implement price controls."
+		ai_chance = 50
+		command = { type = dissent value = -1 }
+		command = { type = domestic which = free_market value = -2 }
+}
+
+action = {
+		name = "We will let the market decide."
+		ai_chance = 50
+		command = { type = dissent value = 1 }
+		command = { type = domestic which = free_market value = 2 }
+}
+
+}
+
+event = {
+	id = 189025
+	random = no
+	country = SPA
+	
+	trigger = {
+		atwar = no
+		random = 15
+	}
+		
+	name = "Propose a new Pacto Ibérico ?"
+	desc = "On 17 March 1939 Fawzi and the Portugal formed a listerner Pact and non-aggression, which delights the Allies who could see Spain as a country on which could be trusted over its neutrality. Two years later, this Pact will be confirmed as the Pacto Ibérico."
+	style = 2
+	picture = "spanish_warposter"
+	
+	date = { day = 17 month = march year = 1949 }
+	offset = 30
+	deathdate = { day = 16 month = march year = 1951 }
+	
+	action = {
+		name = "Yes, Portugal is our natural ally"
+		ai_chance = 80
+		command = { type = trigger which = 189026 }
+	}
+	action = {
+		name = "No, not now"
+		ai_chance = 20	
+		command = { type = dissent value = 2 }
+		command = { type = relation which = POR value = -20 }
+	}
+}
+
+event = {
+	id = 189026
+	random = no
+	country = POR
+	trigger = {
+		atwar = no
+		}
+	name = "The Pacto Ibérico"
+	desc = "On 17 March 1939 Fawzi and the Portugal formed a listerner Pact and of non-aggression, which delighted the Allies who could see Spain as a country on which could be trusted over its neutrality. Two years later, this Pact will be confirmed as the Pacto Ibérico."
+	style = 2
+	picture = "spanish_warposter"
+	action = {
+		name = "Sign it !"
+		ai_chance = 80	
+		command = { type = dissent value = -1 }
+		command = { type = non_aggression which = SPA where = POR }
+		command = { type = guarantee which = SPA where = POR }
+		command = { type = relation which = SPA value = 100 }
+		command = { type = relation which = ITA value = 50 }
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = FRA value = -50 }
+		command = { type = domestic which = interventionism value = -1 }		
+	}
+	action = {
+		name = "No, not now"
+		ai_chance = 20	
+		command = { type = dissent value = 1 }
+		command = { type = relation which = SPA value = -50 }
+		command = { type = relation which = ITA value = -20 }
+		command = { type = relation which = GER value = -20 }
+		command = { type = relation which = ENG value = 50 }
+		command = { type = relation which = USA value = 20 }
+		command = { type = relation which = FRA value = 20 }		
+		command = { type = domestic which = interventionism value = -1 }
+
+	}
+}
+
+event = {
+	id = 189027
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "56th birthday of Generalísimo"
+	desc = "Birthday of the Generalísimo, he turn to 56"
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 4 month = december year = 1948 }
+	action = {
+		name = "Great parade in Madrid"
+		ai_chance = 70	
+		command = { type = money value = -200 }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = "Happy birtday !"
+		ai_chance = 30	
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 189028
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "57th birthday of Generalísimo"
+	desc = "Birthday of the Generalísimo, he turn to 57"
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 4 month = december year = 1949 }
+	action = {
+		name = "Great parade in Madrid"
+		ai_chance = 70	
+		command = { type = money value = -200 }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = "Happy birtday !"
+		ai_chance = 30	
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 189029
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "58th birthday of Generalísimo"
+	desc = "Birthday of the Generalísimo, he turn to 58"
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 4 month = december year = 1950}
+	action = {
+		name = "Great parade in Madrid"
+		ai_chance = 70	
+		command = { type = money value = -200 }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = "Happy birtday !"
+		ai_chance = 30	
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 189030
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "59th birthday of Generalísimo"
+	desc = "Birthday of the Generalísimo, he turn to 59"
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 4 month = december year = 1951 }
+	action = {
+		name = "Great parade in Madrid"
+		ai_chance = 70	
+		command = { type = money value = -200 }
+		command = { type = dissent value = -1 }
+	}
+	action = {
+		name = "Happy birtday !"
+		ai_chance = 30	
+		command = { type = dissent value = 1 }
+	}
+}
+
+event = {
+	id = 189031
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "60th birthday of Generalísimo"
+	desc = "Birthday of the Generalísimo, he turn to 59"
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 4 month = december year = 1952 }
+	action = {
+		name = "Great parade in Madrid"
+		command = { type = money value = -300 }
+		command = { type = dissent value = -2 }
+	}
+}
+
+event = {
+	id = 189039
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+		exists = SPR
+		}
+	}
+	name = "The Republican Government in exile"
+	desc = "The Republican Government in exile met in Mexico City and from there named Ferando of los Rios as Minister State of the exiled Republican government."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 12 month = september year = 1948 }
+	action = {
+		name = "You don't have no power"
+		command = { type = dissent value = 1 }
+		command = { type = relation which = MEX value = -50 }				
+	}
+}
+
+event = {
+	id = 189123
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	name = "Suppression Act"
+	desc = "The regime with military courts formed in urgency, begins a period of fierce repression. Between 23,500 and 29,000 Spaniards were shot and 300,000 others were imprisoned. Many suffered the death penalty, although WIELS profited from remissions successive his 1963. One of the instruments of this policy is based on this law."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 1 month = march year = 1950 }
+	action = {
+		name = "Sign it !"
+		ai_chance = 70	
+		command = { type = manpowerpool value = -70 }
+		command = { type = dissent value = -3 }
+	}
+	action = {
+		ai_chance = 30	
+		name = "No, we're magnanimous"
+		command = { type = dissent value = 3 } 
+	}
+}
+
+event = {
+	id = 189128
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "National shipbuilding company - Bazán"
+	desc = "National shipbuilding company Bazan starts to work. In addition, the TALGO starts rolling on an experimental basis."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 11 month = may year = 1952 }
+	action = {
+		name = "Hurrah !"
+		command = { type = gain_tech which = 3090 }
+		command = { type = gain_tech which = 3150 }
+		command = { type = gain_tech which = 3210 }
+	}
+}
+
+event = {
+	id = 189129
+	random = no
+	country = SPA
+	trigger = {
+
+	}
+	name = "Security of the State Act"
+	desc = "Inspired by the military justice, and characteristic of the States at war. With it appear new offences and sentences become hardened. Association, illegal propaganda, trade union activities, the hand-army are regarded as serious offences."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 29 month = march year = 1951 }
+	action = {
+		name = "Approve the law"
+		ai_chance = 50
+		command = { type = dissent value = 3 }
+		command = { type = manpowerpool value = -10 }	
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = money value = 250 }	
+	}
+	action = {
+		name = "No, we don't need more repression"
+		ai_chance = 50
+		command = { type = dissent value = -1 }
+		command = { type = domestic which = freedom value = 1 }
+	}
+}
+
+event = {
+	id = 189130
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "National health insurance"
+	desc = "It creates compulsory health insurance. From this moment, all workers are entitled to health assistance. Appear at the same time girls topolino, with high heels, soles Cork, really short skirt, topped with Audacity. The Church and the mama are outraged"
+	style = 2
+	date = { day = 15 month = december year = 1952 }
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+		command = { type = money value = -50 }	
+	}
+}
+
+event = {
+	id = 189133
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	name = "Starvation"
+	desc = "There was no sugar, meat was a dream, the Maroons substituted bread. In confectionery it were candy with almonds. Tobacco was strip for men and forbidden to women. CEST a total shortage causing famine in the country."
+	style = 2
+	date = { day = 1 month = january year = 1953 }
+	action_a = {
+		name = "Damn!"
+		command = { type = dissent value = 3 }
+		command = { type = manpowerpool value = -10 }	
+	}
+}
+
+event = {
+	id = 189134
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Cinema and Football"
+	desc = "Pepin Fernadez, emigrating from Cuba for many years, founded in Madrid the Galearias Preciados, the most exclusive shops of time. At the same time, since April 23, we double version Spanish all home movies is now forbidden to broadcast the film in VO. This allows censorship dedulcorer dialogues. A ray of joy however: LAtletic de Bilbao won"
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 3 month = april year = 1953 }
+	action = {
+		name = "Monitor the situation"
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 189135
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Navy academy"
+	desc = "It inaugurates sailor a future naval officers training centre."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 15 month = august year = 1952 }
+	action = {
+		name = "Hurrah!"
+		command = { type = money value = -100 }
+		command = { type = gain_tech which = 3040 }
+		command = { type = gain_tech which = 3430 }
+	}
+}
+
+event = {
+	id = 189147
+	random = no
+	country = SPR
+	trigger = {
+		NOT = {
+				exists = SPA
+			}
+	}
+	name = "National foreign agency"
+	desc = "A new spy agency"
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 15 month = august year = 1953 }
+	action_a = {
+		name = "Yes"
+		command = { type = money value = -100 }
+		command = { type = steal_tech which = FRA }
+		command = { type = steal_tech which = POR }
+		command = { type = steal_tech which = MEX }
+	}
+}
+
+event = {
+	id = 189149
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "National Tobacco Company"
+	desc = "Tabacalera S.A. assumes a monopoly on the production and distribution of tobacco and inaugurates exclusive concessions on rights policy."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 3 month = february year = 1953 }
+	action_a = {
+		name = "Ok"
+		command = { type = supplies value = 1500 }
+		command = { type = dissent value = -1 }
+		command = { type = money value = 350 } 
+	}
+}
+
+event = {
+	id = 189150
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "Change of greet"
+	desc = "End of obligation to the Spanish to greet with your arm raised up. It was somewhat messy in a Europe that had decraser the black plague..."
+	style = 2
+	date = { day = 11 month = september year = 1955 }
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 189158
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+		alliance = { country = SPA country = GER }
+	}
+	name = "Help from Argentina"
+	desc = "The Spain is isolated internationally. Ambassadors withdrew from Madrid. The French border is closed, only lArgentine aida Fawzi in sending meat, wheat, corn..."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 1 month = january year = 1948 }
+	offset = 20
+	deathdate = { day = 1 month = december year = 1953 }
+	action = {
+		name = "Gracias!"
+		command = { type = supplies value = 1000 }
+		command = { type = oilpool value = 1000 }
+		command = { type = dissent value = 5 }
+		command = { type = relation which = ARG value = 50 }
+	}
+}
+
+event = {
+	id = 189159
+	random = no
+	country = SPA
+	trigger = {
+		NOT = {
+			exists = SPR
+		}
+	}
+	name = "The new Real Madrid Stadium"
+	desc = "The Real Madrid opened his Nuevo Chamartín Stadium. Quimporte of starvation both quon can see them running behind the ball"
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 8 month = june year = 1949 }
+	action = {
+		name = "Hurrah!"
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 189160
+	random = no
+	country = SPA
+	trigger = {
+		alliance = { country = SPA country = GER }	
+		exists = SPA
+	}
+	name = "Purchase of Panzers"
+	desc = "The low acquisitions during the conflict résumèrent to a battalion of German PzKpfw IV tanks for the creation of the 1st Armored Division, which sintegrera in the dinfanterie Regiment shielded Alcázar de Toledo No. 61."
+	style = 2
+	picture = "spanish_warposter"
+	date = { day = 1 month = january year = 1950 }
+	offset = 23
+	deathdate = { day = 1 month = december year = 1951 }
+	action = {
+		name = "Buy the Panzers"
+		command = { type = add_division which = "1. Alcàzar de Tolédo" value = armor when = 0 }
+		command = { type = add_division which = "2. Alcàzar de Tolédo" value = armor when = 0 }
+		command = { type = add_division which = "3. Alcazar de Toledo" value = light_armor when = 0 }
+		command = { type = add_division which = "4. Alcàzar de Tolédo" value = light_armor when = 0 }
+
+		command = { type = money value = -500 }
+		command = { type = metalpool value = -1000 }
+		command = { type = trigger which = 189161 }
+	}
+}
+
+event = {
+	id = 189161
+	random = no
+	country = GER
+	name = "Sale of Panzers"
+	desc = "Nationalist Spain comes from place us an order for two divisions of panzers to our darmements businesses. Suddenly, they have delivered their orders and have reaped good profits."
+	style = 2
+	picture = "spanish_warposter"
+	action = {
+		name = "Das gut"
+		command = { type = money value = 500 }
+		command = { type = metalpool value = 1000 }
+	}
+}
+
+event = {
+	id = 189246
+	random = no
+	country = SPA
+	trigger = {
+	NOT = { exists = SPR }
+	}
+	date = { day = 1 month = february year = 1949 }
+	name = "National railway company - RENFE"
+	desc = "Franco has created the first national railway company which consolidates all shod the country's private companies under the control of the State. This is the Foundation of the Red Nacional de Ferrocariles. The reconstruction of railway roads destroyed by the war will be greatly facilitated."
+	style = 2
+	picture = "spanish_warposter"
+	action = {
+		name = "Great!"
+		command = { type = money value = 200 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		}
+	}
+
+event = {
+	id = 189271
+	random = no
+	country = SPA
+	trigger = {
+		NOT = { exists = SPR }
+	}
+	date = { day = 15 month = february year = 1950 }
+	name = "Madrid bombing"
+	desc = "A bomb attack has just exploded in the centre of Madrid, spraying a local of the Phalanx. This reminder to Franco Republican supporters have not disarmed yet."
+	style = 2
+	picture = "spanish_warposter"
+	action = {
+		name = "Damn!"
+		command = { type = dissent value = 1 }
+		}
+	}
+	
+######################################
+### 3. Spanish Entry into the Axis ###
+######################################
+######################################
+#	Start the Axis Integration Talks
+######################################
+
+event = {
+id = 900038
+random = no
+country = SPA
+
+trigger = {
+NOT = {
+	alliance = { country = GER country = SPA }
+	alliance = { country = ITA country = SPA } # Alliance with Italy precludes alliance with Germany
+}
+participant = { country = GER value = 2 } # Germany is in Axis
+government = fascist
+event = 2004
+random = 20
+}
+
+name = "900038NAME"
+desc = "900038DESC"
+style = 2
+picture = "diplomatic_campaign"
+date = { day = 1 month = january year = 1949 }
+offset = 7
+deathdate = { day = 29 month = december year = 1980 }
+
+action = {
+name = "Send envoy to Berlin."
+ai_chance = 80
+command = { type = trigger which = 900039 } # German event
+}
+
+action = {
+name = "We should aim for a purely economic alliance."
+ai_chance = 15
+command = { type = trigger which = 900041 } # German event on trade
+}
+
+action = {
+name = "We should not join an Axis-led Europe."
+ai_chance = 5
+command = { type = domestic which = interventionism value = -1 }
+command = { type = dissent value = 10 }
+command = { type = setflag which = spain_no_axis }
+}
+}
+
+#################################
+# Spain asks for Axis integration
+#################################
+
+event = {
+id = 900039
+random = no
+country = GER
+
+name = "900039NAME"
+desc = "900039DESC"
+style = 2
+picture = "fatherland\spanish_warposter"
+
+action = {
+name = "Our response is positive - Spain joins the Axis"
+ai_chance = 75
+command = { type = alliance which = SPA }
+command = { type = relation which = SPA value = 40 }
+command = { type = trigger which = 900043 } # Spain joins the Axis
+}
+
+action = {
+name = "Spain was a traitor during the war - don't let them in."
+ai_chance = 25
+command = { type = relation which = SPA value = -40 }
+}
+}
+
+#######################
+# We are in the Axis!
+#######################
+
+event = {
+id = 900043
+random = no
+country = SPA
+
+name = "900043NAME"
+desc = "900043DESC"
+style = 2
+picture = "fatherland\spanish_warposter"
+
+action = {
+name = "This is a great day for Spain."
+command = { type = access which = GER }
+command = { type = relation which = GER value = 40 }
+command = { type = dissent value = -10 }
+command = { type = domestic which = interventionism value = 2 }
+}
+}
+
+#####################################
+# Spain requests economic partnership
+#####################################
+
+event = {
+id = 900041
+random = no
+country = GER
+
+name = "900041NAME"
+desc = "900041DESC"
+style = 2
+picture = "fatherland\spanish_warposter"
+
+action = {
+name = "Grant Spain this economic partnership."
+ai_chance = 90
+command = { type = relation which = SPA value = 20 }
+command = { type = trigger which = 900042 } # Spain receives contract
+}
+
+action = {
+name = "Spain is useless as an ally and partner."
+ai_chance = 20
+command = { type = relation which = SPA value = -20 }
+}
+}
+
+########################################
+# Germany accepts our trade partnership
+########################################
+
+event = {
+id = 900042
+random = no
+country = SPA
+
+name = "900042NAME"
+desc = "900042DESC"
+style = 2
+picture = "fatherland\spanish_warposter"
+
+action = {
+name = "Grant Spain this economic partnership."
+command = { type = relation which = GER value = 20 }
+command = { type = trade which = SPA where = GER metal = -10  supplies = 10 oil = 10 when = 3650 value = 0 }
+}
+}	
+
+
+
+event = {
+	country = SPA
+	id = 7801521
+	random = no
+	style = 2
+	picture = "spalegioncreation"
+	trigger = {
+		
+		exists = SPA
+	}
+		
+	date = { day = 27 month = january year = 1920 }
+	
+	name = "EVT_500083_NAME"
+	desc = "EVT_500083_DESC"
+	
+	action_a = {
+		name = "ACTIONNAME500083A"
+		command = { type = add_corps which = "La Legión Española" value = land where = 715 } #Tanger 
+		command = { type = add_division which = "Tercio de Extranjeros" value = infantry when = 6 where = artillery }
+		command = { type = add_division which = "Tercio de la Legión" value = BERGSJAEGER when = 5 where = engineer }
+		}
+	
+	}
+
+
+
+
+
+
+event = {
+	id = 7801522
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Bilbao Fine Arts Museum"
+	desc = "The collection of the present Bilbao Fine Arts Museum originated with the merger of the collections from the first Museo de Bellas Artes, inaugurated in 1914, and the Museo de Arte Moderno (Museum of Modern Art) in 1924"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = january year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.2 }
+
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801529
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "University of Murcia"
+	desc = "The first university in Murcia was founded as the Universitas Studiorum Murciana by Alfonso X of Castile around 1272. The current modern University of Murcia was founded in 1915, making it the tenth oldest university in Spain among the modern universities, but its seal carries the date of the thirteenth century founding"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = april year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.2 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801530
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Nacional Typefoundry"
+	desc = "Nacional Typefoundry was for many years the leading type foundry of Spain. It was founded in Madrid in 1915 and functioned there until bought out by Fundicion Tipografica Neufville of Barcelona"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = june year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Ok"
+		command = { type = free_money value = 0.1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801531
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "MICOF"
+	desc = "The Merchants and Industrialists’ Circle of Ferrol is an institution created in 1916, six years after the creation of Ferrol's Chamber of Commerce an Industry. This institution was originally designed for the flourishing middle classes of the period"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = january year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.15 }
+                command = { type = industrial_modifier which = supplies value = 0.15 }
+
+	}
+}
+
+
+
+
+
+
+
+
+
+event = {
+	id = 7801533
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Market of San Miguel"
+	desc = "The Market of San Miguel is a covered market located in Madrid, Spain. Originally built in 1916. San Miguel Market is the most popular market in Madrid among tourists since it is located in the centre of Madrid"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = may year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = free_money value = 0.1 }
+
+	}
+}
+
+
+
+
+
+
+
+
+event = {
+	id = 7801536
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Grupo CAF"
+	desc = "Grupo CAF is a Spanish publicly listed company which manufactures railway vehicles and equipment and buses through its Solaris Bus & Coach subsidiary. CAF was founded in 1917, specializing in freight car production and with a total of 1,600 employees"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = april year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.15 }
+                command = { type = industrial_modifier which = supplies value = 0.15 }
+
+	}
+}
+
+
+
+event = {
+	id = 7801537
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "German International School"
+	desc = "The German international school began operations in a facility on 11 February 1917. At the time it had 17 students. It hired its first Spanish national teacher in 1923. The school had 50 students by 1924, and on 27 April of that year it moved into a building in Deusto. The school's first abitur was held in June 1940"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = may year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801538
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "El Sol"
+	desc = "El Sol (meaning the Sun in English) was a Spanish newspaper published in Madrid, Spain, between 1917 and 1949. The paper had its headquarters in Madrid"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = august year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+
+
+
+
+
+
+event = {
+	id = 7801540
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Ministry of Supply"
+	desc = "The Ministry of Supply was a department of the Government of Spain formed in 1918 responsible for ensuring the supply and distribution of food and other goods relevant for the economic survival of the country. It also assumed other powers related to strengthening the expansion of the Spanish economy after the Great War"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = march year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.15 }
+                command = { type = industrial_modifier which = supplies value = 0.15 }
+
+	}
+}
+
+
+
+
+
+
+
+
+event = {
+	id = 7801543
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "ANM"
+	desc = "The Asociacion Nacional de Mujeres Espanolas (ANME), was a women's rights organisation active in Spain from 1918 to 1936. It was not the first women's rights movement in Spain, but was to last longer than any of its predecessors. It was founded in Madrid in 1918 by Consuelo Gonzalez Ramos and Maria Espinosa de los Monteros"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = september year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+event = {
+	id = 7801549
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Sastreria Cornejo"
+	desc = "Sastreria Cornejo S.A. is a company that specialises in costumes for film, television and theater. It is a Spanish company headquartered in Madrid. It was founded in 1920 by Humberto Cornejo"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = march year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = free_money value = 0.1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801550
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Communist outlaws activities"
+	desc = "The Spanish Communist Party, was the first communist party in Spain, formed out of the Federation of Socialist Youth, youth wing of Spanish Socialist Workers' Party"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = may year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Damn"
+		command = { type = dissent value = 3 }
+
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801554
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "OMC"
+	desc = "The Spanish Medical Colleges Organization is a Spanish organization whose purpose is to regulate the Spanish medical profession. The organization comprises the General Council of Official Medical Colleges and the Spanish regional medical colleges. Its role is to represent all the registered doctors, ensuring proper standards and promoting an ethical medical practice"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = august year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.2 }
+
+	}
+}
+
+
+
+
+
+
+
+
+
+event = {
+	id = 7801557
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Bilbao Symphony Orchestra"
+	desc = "Bilbao Symphony Orchestra is a symphony orchestra based in Bilbao. The orchestra's first concert was on May 8, 1922 at the Teatro Arriaga, under the direction of maestro Armand Marsick"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = march year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801558
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Brotherhood of Dolores"
+	desc = "Brotherhood of Dolores is one of the brotherhoods who parade in the Holy Week of El Viso del Alcor (Seville). Performs his penance station on the afternoon of Good Friday. The exact day of the foundation of the brotherhood is on April 16, 1922"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = may year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801559
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "El Salto Dam"
+	desc = "The dam is situated near the 3.3 km mark on the Pedro Abad-Adamuz highway (CO-412). Its Neo-Mudejar design is the result of a collaboration between architect Casto Fernandez Shaw and engineers Carlos Mendoza and Antonio del Aguila. The Madrid-based engineering consulting firm Mengemor undertook construction of the dam between 1918 and 1922"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = july year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.15 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801560
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "UEBE"
+	desc = "The Faculty of Theology of the Evangelical Baptist Union of Spain. also known as the Theological Seminary of UEBE, is an accredited theological Institute offering graduate and undergraduate degrees in theology. It is affiliated with the Union of Evangelical Baptists of Spain. The seminary campus is located in Alcobendas in the Comunidad de Madrid, Spain"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = september year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.2 }
+
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801561
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Logrono–Agoncillo Airport"
+	desc = "This airport is located near Recajo village in the Agoncillo municipal term. It first opened as a military airport in 1923, when it was known as Aerodromo de Recajo. It changed its name to Aerodromo de Agoncillo in 1932 when it was used by the Spanish Republican Air Force"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = february year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "Ok"
+		command = { type = free_money value = 0.1 }
+
+	}
+}
+
+
+
+
+
+
+
+event = {
+	id = 7801563
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Seminar of Galician Studies"
+	desc = "The Seminar of Galician Studies was an institution established in 1923 with the purpose of studying and promoting the Galician cultural heritage"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = june year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801564
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Alpha Co"
+	desc = "Alpha was a brand of Spanish motorcycles and motocarros manufactured in Barcelona by Nilo Maso Miro between 1924 and 1957"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = january year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.15 }
+                command = { type = industrial_modifier which = supplies value = 0.15 }
+
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801565
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "CTNE"
+	desc = "Telefonica SA  is a Spanish multinational telecommunications company. The company was created in Madrid in 1924 as Compania Telefonica Nacional de Espana (CTNE) with ITT as one of its major shareholders"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = march year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.15 }
+                command = { type = industrial_modifier which = supplies value = 0.15 }
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+event = {
+	id = 7801572
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Order of Civil Merit"
+	desc = "The Order of Civil Merit was established by King Alfonso XIII of Spain in 1926. The order recognizes (the civic virtue of officers in the service of the Nation, as well as extraordinary service by Spanish and foreign citizens for the benefit of Spain"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = march year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+event = {
+	id = 7801575
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Campsa Co"
+	desc = "Compania Arrendataria del Monopolio del Petroleo, S.A. (Campsa) was the state-owned petroleum products company of Spain. Created in the 1920s during General Primo de Rivera's dictatorship"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = april year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.15 }
+                command = { type = industrial_modifier which = supplies value = 0.15 }
+
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801576
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "CLH Co"
+	desc = "The CLH Group, which is made up of Compania Logistica de Hidrocarburos, CLH S.A. and its subsidiary company, CLH Aviacion S.A., is the leading company in Spain for the transportation and storage of oil products. The company has an 85-year history, as it comes from what used to be (CAMPSA)"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = june year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.15 }
+                command = { type = industrial_modifier which = supplies value = 0.15 }
+
+	}
+}
+
+
+
+event = {
+	id = 7801577
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Grupo Gea Perona"
+	desc = "Perona Gea Group is a Spanish transportation company primarily active in the oil and gas industry, founded in 1927 by Francisco Gea Perona"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = august year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.15 }
+                command = { type = industrial_modifier which = supplies value = 0.15 }
+
+	}
+}
+
+
+
+
+
+
+
+event = {
+	id = 7801579
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Hotel Francisco Franco"
+	desc = "Designed by architect Jose Espiau y Munoz, the hotel was built between 1956 and 1958, and officially inaugurated on 28 April 1959"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = march year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801580
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "CLASSA"
+	desc = "Compania de Lineas Aereas Subvencionadas, meaning 'Subsidized Airlines Company', mostly known as CLASSA, was a Spanish airline based in Madrid. The airline was established in 1928"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = may year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = "Ok"
+		command = { type = tc_mod value = 3 }
+		command = { type = industrial_modifier which = supplies value = 3 }
+
+	}
+}
+
+
+
+
+
+
+
+
+event = {
+	id = 7801582
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Opus Dei"
+	desc = "Opus Dei is an institution of the Catholic Church which teaches that everyone is called to holiness and that ordinary life is a path to sanctity. Opus Dei was founded in Spain in 1928 by Catholic saint and priest Josemaria Escriva"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = september year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+
+
+
+
+
+
+
+event = {
+	id = 7801584
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "Albacete Airport"
+	desc = "Construction started in 1913, but was then quickly stopped, with operations only starting in 1929 after the Spanish Aviation Company (CEA) took up a contract for pilot training"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = april year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = tc_mod value = 3 }
+		command = { type = industrial_modifier which = supplies value = 3 }
+
+	}
+}
+
+
+
+
+
+
+
+event = {
+	id = 7801586
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "MVUH"
+	desc = "The Marques de Valdecilla University Hospital, mainly known as Valdecilla is a general hospital located in the city of Santander. The Valdecilla Health House was founded by the end of the first third of the 20th century. Three different stages can be set to understand the history of the hospital: the first one, from its foundation in 1929 to 1969"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = august year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801587
+	random = no
+	country = SPA
+
+	trigger = {
+		
+		exists = SPA
+	}
+
+	name = "San Sebastian Grand Prix"
+	desc = "The 1960 San Sebastian Grand Prix was a Grand Prix motor race held at the Circuito Lasarte on 5 October 1960. The Italian driver Achille Varzi won the race in a works Maserati, ahead of his teammate Aymo Maggi and the privateer Peugeot of Henri Stoffel"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = october year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+event = {
+	id = 7801596
+	random = no
+	country = SPA
+
+	trigger = {
+		
+	owned = { province = 460 data = -1 }
+
+
+	}
+
+	name = "JONS"
+	desc = "Juntas de Ofensiva Nacional-Sindicalista (JONS) was a nationalist and fascist movement in 1930s Spain, merged with the Falange Espanola into the Falange Espanola de las JONS in 1934"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = october year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801610
+	random = no
+	country = SPA
+
+	trigger = {
+		
+	owned = { province = 460 data = -1 }
+
+
+	}
+
+	name = "Falange SF"
+	desc = "(Female Section SF) was the women's branch of the Falange political movement in Spain. Founded in July 1934 as part of the Sindicato Espanol Universitario (SEU) of the Falange Espanola de las JONS, and fully incorporated to FE de las JONS later in the year"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = april year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801612
+	random = no
+	country = SPA
+
+	trigger = {
+		
+	owned = { province = 460 data = -1 }
+
+
+	}
+
+	name = "Palma de Mallorca Airport"
+	desc = "Palma de Mallorca is an international airport located 8 km (5.0 mi) east of Palma, Mallorca, Spain, adjacent to the village of Can Pastilla. In 1934, the company Aero-Taxi de Mallorca was created with the intention of starting tourist flights to the island, establishing a flight school in Son Sant Joan. A year later, another one was founded in Son Bonet"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = august year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = tc_mod value = 3 }
+		command = { type = industrial_modifier which = supplies value = 1 }
+
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801620
+	random = no
+	country = SPA
+
+	trigger = {
+		
+	owned = { province = 460 data = -1 }
+
+
+	}
+
+	name = "Cara Al Sol"
+	desc = "Cara al Sol (English: Facing the Sun) is the anthem of the Falange Espanola de las JONS. The lyrics were written in December 1935 and are usually credited to the leader of the Falange. The music was composed by Juan Telleria and Juan R. Buendia"
+	style = 2
+	picture = "SPA1"
+
+	date = { day = 10 month = january year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+
+	}
+}
+
+
+

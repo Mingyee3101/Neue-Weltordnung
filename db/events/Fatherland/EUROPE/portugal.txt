@@ -1,0 +1,143 @@
+#####
+##### German Occupation
+#####
+
+event = {
+id = 990440
+country = GER
+style = 2
+picture = "German_mobilization2"
+
+trigger = {
+control = { province = 481 data = GER } #Lisbon
+NOT = {
+war = { country = GER country = EUS }
+war = { country = GER country = SPA }
+war = { country = GER country = SPR }
+exists = POR
+}
+}
+
+date = { day = 1 month = january year = 1950 }
+offset = 30
+deathdate = { day = 29 month = december year = 1966 }
+
+name = "Portugal"
+desc = "We have annexed Portugal, and while hardliners are calling for an occupation, the majority of our governmental officials wish to reestablish the nation, under our watch."
+
+action_a = {
+ai_chance = 90
+name = "Liberate Portugal"
+command = { type = independence which = POR value = 1 when = 0 }
+command = { type = trigger which = 990444 }
+}
+action_b = {
+ai_chance = 10
+name = "We will occupy them for now at least"
+command = { type = dissent value = 3 }
+}
+}
+
+
+
+event = {
+id = 990444
+random = no
+country = POR
+style = 2
+picture = "crownofpor"
+
+name = "A restored republic"
+desc = "The German Reich decided to let us choose our new government. The only one who can represent us now is SidÛnio Pais, while Aquilino Ribeiro will lead the new government."
+
+action_a = {
+name = "Great !"
+command = { trigger = { government = democratic }  type = headofstate which = 9089 } #SidÛnio Pais
+command = { trigger = { government = fascist }  type = headofstate which = 9088 } #SidÛnio Pais
+command = { trigger = { government = democratic } type = headofgovernment which = 9085 } #Aquilino Ribeiro
+command = { trigger = { government = fascist } type = headofgovernment which = 9084 } #Aquilino Ribeiro
+command = { type = dissent value = 1 }
+command = { type = add_division value = infantry when = 9 }
+command = { type = add_division value = infantry when = 9 }
+}
+}
+
+
+#####
+##### PIDE
+#####
+
+event = {
+id = 3970040
+random = no
+country = POR
+
+trigger = {
+NOT = { ispuppet = POR }
+}
+
+name = "PIDE"
+desc = "There has been talk of creating the 'PolÌcia Internacional e de Defesa do Estado', which would become our secret police whose main goal would to defend the Republic. The department would have two sections, the Political and the International Sections. The S & P Section would prevent crimes of a political nature and the International Section would monitor immigrants, expel any undesirables and defend the Republic from espionage. Shall we create it?"
+style = 2
+picture = "news_paper"
+
+date = { day = 1 month = july year = 1950 }
+offset = 300
+deathdate = { day = 29 month = december year = 1966 }
+
+action_a = {
+ai_chance = 80
+name = "This will bring security to our state!"
+command = { type = manpowerpool value = 5 }
+command = { type = dissent value = -1 }
+command = { type = domestic which = democratic value = -1 }
+command = { type = domestic which = freedom value = -2 }
+command = { type = supplies value = -100 }
+command = { type = relation which = SPR value = -30 }
+}
+action_b = {
+ai_chance = 20
+name = "We do not need this repression!"
+command = { type = dissent value = -1 }
+command = { type = domestic which = freedom value = -1 }
+}
+}
+
+#####
+#####
+
+#####
+#Portugal National Day
+#####
+event = {
+id = 3970091
+random = no
+country = POR
+persistent = yes
+style = 2
+picture = "Lisboa"
+
+trigger = {
+day = 9
+month = 6
+NOT = {
+day = 10
+}
+NOT = {
+month = 7
+}
+}
+
+date = { day = 0 month = june year = 1948 }
+offset = 1
+deathdate = { day = 29 month = december year = 1963 }
+
+name = "Portugal Day"
+desc = "Today is the anniversary of the death of LuÌs de Camoes in 1580. One of the most important Portuguese poets. His poems remind us of Portuguese glory in the 15th century, when we ruled over a great empire. Today all Portuguese celebrate and revel in the glory of being citizens of the best country on the Iberian peninsular!"
+
+action_a = {
+name = "Three hoorays for Portugal!" #this should be replaced with something better :P
+command = { type = dissent value = -1 }
+}
+
+}

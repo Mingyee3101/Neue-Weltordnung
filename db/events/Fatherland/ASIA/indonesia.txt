@@ -1,0 +1,1146 @@
+event = {
+	id = 8007305
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270014 } # Muhammad Hatta
+	}
+}
+
+event = {
+	id = 8007306
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270056 } # Abdul Halim
+		command = { type = foreignminister which = 270061 } # Muhammad Hatta
+		command = { type = ministerofsecurity which = 270062 } # Abdul Halim
+		command = { type = chiefofstaff which = 270063 } # Wakil Pakmehasan
+	}
+}
+
+event = {
+	id = 8007307
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1951 }
+	offset = 180
+	deathdate = { day = 29 month = june year = 1951 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270057 } # Mohammed Natsir
+	}
+}
+
+event = {
+	id = 8007308
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = july year = 1951 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270058 } # Sukoman Wirjosandjojo
+	}
+}
+
+event = {
+	id = 8007309
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270059 } # Siswanto Wilopo
+	}
+}
+
+event = {
+	id = 8007310
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270060 } # Ali Sastromidjojo
+	}
+}
+
+event = {
+	id = 8007311
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1955 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270104 } # Burhanuddin Harahap
+	}
+}
+
+event = {
+	id = 8007312
+	country = INO
+
+	name = EVT_ELECTIONS_NAME
+	desc = EVT_ELECTIONS_DESC
+	picture = "nwo\elections"
+	style = 2
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1956 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = EVT_ELECTIONS_RIGHT
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270060 } # Ali Sastromidjojo
+	}
+	action = {
+		name = EVT_ELECTIONS_LEFT
+		ai_chance = 15
+		command = { type = dissent value = -1 }
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270104 } # Burhanuddin Harahap
+	}
+	action = {
+		name = EVT_ELECTIONS_NOCHANGE
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8007313
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270105 } # Raden Djuanda Kartawidjaja
+	}
+}
+
+# Guided Democracy
+event = {
+	id = 8007314
+	country = INO
+
+	name = EVT_8007314_NAME
+	desc = EVT_8007314_DESC
+	picture = "nwo\guided_democracy"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1966 }
+
+	action = {
+		name = EVT_8007314_A
+		ai_chance = 100
+		command = { type = dissent value = 15 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 270011 } # Sukarno
+		command = { type = headofgovernment which = 270106 } # Sukarno
+	}
+}
+
+event = {
+	id = 8007315
+	country = INO
+
+	name = EVT_8007315_NAME
+	desc = EVT_8007315_DESC
+	picture = nwo\suharto
+	style = 2
+
+	date = { day = 0 month = january year = 1967 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1972 }
+
+	action = {
+		name = EVT_8007315_A
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 270113 } # Suharto
+		command = { type = headofgovernment which = 270114 } # Suharto
+	}
+}
+
+event = {
+	id = 8007316
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1973 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1977 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 270109 } # Hamengkubuwono IX
+	}
+}
+
+event = {
+	id = 8007317
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1978 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1982 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 270110 } # Adam Malik
+	}
+}
+
+event = {
+	id = 8007318
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1983 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1987 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 270111 } # Umar Wirahadikusumah
+	}
+}
+
+event = {
+	id = 8007319
+	country = INO
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = nwo\govt_change
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1988 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 270112 } # Sudharmono
+	}
+}
+
+# Introduction of the New Order
+
+event = {
+	id = 8007320
+	country = INO
+
+	name = EVT_8007320_NAME
+	desc = EVT_8007320_DESC
+	picture = nwo\indonesian_new_order
+	decision_picture = nwo\d_indonesian_new_order
+	style = 2
+
+	decision = {
+		atwar = no
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+	
+	trigger = {
+		atwar = no
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1965 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action = {
+		name = EVT_8007320_A
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = domestic which = freedom value = -2 }
+	}
+}
+
+### Annexation of East Timor
+
+event = {
+	id = 8007321
+	country = INO
+
+	name = EVT_8007321_NAME
+	desc = EVT_8007321_DESC
+	picture = nwo\east_timor
+	decision_picture = nwo\d_east_timor
+	style = 2
+
+	decision = {
+		control = { province = 1617 data = POR }
+		# TODO: Carnation Revolution in Portugal
+	}
+	
+	trigger = {
+		control = { province = 1617 data = POR }
+		# TODO: Carnation Revolution in Portugal
+	}
+
+	date = { day = 0 month = january year = 1975 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action = {
+		name = EVT_8007321_A
+		ai_chance = 97
+		command = { type = dissent value = -5 }
+		command = { type = belligerence value = 10 }
+		command = { type = secedeprovince which = INO value = 1617 when = 2 }
+	}
+	
+	action = {
+		name = EVT_8007321_B
+		trigger = { ai = yes }
+		ai_chance = 3
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+
+
+################# INDEPENDENCE WAR
+
+### 1948
+
+# Second police action
+event = {
+	id = 8206016
+	country = U05
+
+	name = EVT_8206036_NAME
+	desc = EVT_8206036_DESC
+	picture = "nwo\indonesian_police_actions"
+	style = 2
+
+	trigger = {
+		war = { country = INO country = U05 }
+	}
+	
+	date = { day = 0 month = december year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1948 }
+	
+	# Carry out police action!!!
+	action = {
+		name = EVT_8206036_A
+		ai_chance = 98
+		command = { type = trigger which = 8206017 }
+	}
+	
+	# Refrain
+	action = {
+		name = EVT_8206036_B
+		ai_chance = 2
+		command = { type = belligerence value = -2 }
+		command = { type = relation which = INO value = 20 }
+	}
+}
+
+# Police action
+event = {
+	id = 8206017
+	country = U05
+
+	name = EVT_8206037_NAME
+	desc = EVT_8206037_DESC
+	picture = "nwo\indonesian_police_actions"
+	style = 2
+	
+	action = {
+		name = EVT_8206037_A
+		command = { type = dissent value = -10 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_corps where = 1596 }
+		command = { type = add_division value = marine when = 6 }
+		command = { type = add_division value = marine when = 6 }
+		command = { type = add_division value = marine when = 6 }
+		command = { type = manpowerpool value = 30 }
+	}
+}
+
+# 1948/49
+
+event = {
+	id = 8206022
+	tag = { HOL U05 }
+	persistent = yes
+
+	name = EVT_8206062_NAME
+	desc = EVT_8206062_DESC
+	picture = "nwo\indonesia_prolonged_fight"
+	style = 2
+	
+	trigger = {
+		war = { country = INO country = U05 }
+	}
+	
+	date = { day = 0 month = march year = 1948 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1949 }
+	
+	action = {
+		name = EVT_8206060_A
+		command = { trigger = { country = U05 } type = dissent value = 2 }
+		command = { trigger = { country = HOL } type = dissent value = 1 }
+		command = { trigger = { country = HOL } type = belligerence value = 3 }
+	}
+}
+
+# 1950+
+
+event = {
+	id = 8206023
+	tag = { HOL U05 }
+	persistent = yes
+
+	name = EVT_8206063_NAME
+	desc = EVT_8206063_DESC
+	picture = "nwo\indonesia_prolonged_fight"
+	style = 2
+	
+	trigger = {
+		war = { country = INO country = U05 }
+	}
+	
+	date = { day = 0 month = january year = 1950 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = EVT_8206060_A
+		command = { trigger = { country = U05 OR = { event = 8510607 event = 8510606 } } type = dissent value = 3 }
+		command = { trigger = { country = U05 OR = { event = 8510607 event = 8510606 } } type = dissent value = 2 }
+		command = { trigger = { country = HOL } type = dissent value = 1 }
+		command = { trigger = { country = HOL } type = belligerence value = 4 }
+		command = { trigger = { country = HOL OR = { event = 8510607 event = 8510606 } } type = belligerence value = 8 }
+	}
+}
+
+# 1948
+
+event = {
+	id = 8206026
+	tag = { HOL U05 }
+	persistent = yes
+
+	name = EVT_8206066_NAME
+	desc = EVT_8206066_DESC
+	picture = "nwo\end_of_indonesian_national_revolution"
+	decision_picture = "nwo\d_end_of_indonesian_national_revolution"
+	style = 2
+	
+	decision = {
+		war = { country = INO country = U05 }
+		OR = {
+			ai = no
+			AND = {
+				ai = HOL
+				ai = U05
+				country = HOL
+			}
+		}
+	}
+	
+	trigger = {
+		war = { country = INO country = U05 }
+		OR = {
+			ai = no
+			AND = {
+				ai = HOL
+				ai = U05
+				country = HOL
+			}
+		}
+	}
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1948 }
+	
+	# End the War
+	action = {
+		name = EVT_8206066_A
+		ai_chance = 1
+		command = { type = trigger which = 8206030 }
+		command = { type = dissent value = -3 }
+	}
+	
+	# Continue the War
+	action = {
+		name = EVT_8206066_B
+		ai_chance = 99
+		trigger = { ai = yes }
+		command = { type = belligerence value = 1 }
+	}
+}
+
+# 1949+ (UN does not condemn Netherlands)
+
+event = {
+	id = 8206027
+	tag = { HOL U05 }
+	persistent = yes
+
+	name = EVT_8206067_NAME
+	desc = EVT_8206067_DESC
+	picture = "nwo\end_of_indonesian_national_revolution"
+	decision_picture = "nwo\d_end_of_indonesian_national_revolution"
+	style = 2
+	
+	decision = {
+		war = { country = INO country = U05 }
+		OR = {
+			ai = no
+			AND = {
+				ai = HOL
+				ai = U05
+				country = HOL
+			}
+		}
+		NOT = { event = 8510607 } # UN condemnation 
+		NOT = { event = 8510606 } # UN condemnation and military action
+	}
+	
+	trigger = {
+		war = { country = INO country = U05 }
+		OR = {
+			ai = no
+			AND = {
+				ai = HOL
+				ai = U05
+				country = HOL
+			}
+		}
+		NOT = { event = 8510607 } # UN condemnation 
+		NOT = { event = 8510606 } # UN condemnation and military action
+	}
+	
+	date = { day = 0 month = january year = 1949 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	# End the War
+	action = {
+		name = EVT_8206067_A
+		ai_chance = 10
+		command = { type = trigger which = 8206030 }
+		command = { type = dissent value = -5 }
+	}
+	
+	# Continue the War
+	action = {
+		name = EVT_8206067_B
+		ai_chance = 90
+		trigger = { ai = yes }
+		command = { type = belligerence value = 1 }
+	}
+}
+
+# 1949+ (UN condemns Netherlands)
+
+event = {
+	id = 8206028
+	tag = { HOL U05 }
+	persistent = yes
+
+	name = EVT_8206068_NAME
+	desc = EVT_8206068_DESC
+	picture = "nwo\end_of_indonesian_national_revolution"
+	decision_picture = "nwo\d_end_of_indonesian_national_revolution"
+	style = 2
+	
+	decision = {
+		war = { country = INO country = U05 }
+		OR = {
+			ai = no
+			AND = {
+				ai = HOL
+				ai = U05
+				country = HOL
+			}
+		}
+		OR = { 
+			event = 8510607 # UN condemnation 
+			event = 8510606 # UN condemnation and military action
+		} 
+	}
+	
+	trigger = {
+		war = { country = INO country = U05 }
+		OR = {
+			ai = no
+			AND = {
+				ai = HOL
+				ai = U05
+				country = HOL
+			}
+		}
+		OR = { 
+			event = 8510607 # UN condemnation 
+			event = 8510606 # UN condemnation and military action
+		} 
+	}
+	
+	date = { day = 0 month = january year = 1949 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	# End the War
+	action = {
+		name = EVT_8206068_A
+		ai_chance = 30
+		command = { type = trigger which = 8206030 }
+		command = { type = dissent value = -5 }
+	}
+	
+	# Continue the War
+	action = {
+		name = EVT_8206068_B
+		ai_chance = 70
+		trigger = { ai = yes }
+		command = { type = belligerence value = 1 }
+	}
+}
+
+# 1949+ (U05's dissent is high)
+
+event = {
+	id = 8206029
+	country = U05
+	persistent = yes
+
+	name = EVT_8206069_NAME
+	desc = EVT_8206069_DESC
+	picture = "nwo\end_of_indonesian_national_revolution"
+	style = 2
+	
+	decision = {
+		war = { country = INO country = U05 }
+		dissent = 20
+	}
+	
+	trigger = {
+		war = { country = INO country = U05 }
+		dissent = 20
+	}
+	
+	date = { day = 0 month = january year = 1949 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	# End the War
+	action = {
+		name = EVT_8206069_A
+		ai_chance = 100
+		command = { type = trigger which = 8206030 }
+		command = { type = dissent value = -10 }
+	}
+}
+
+### End of the Indonesian National Revolution
+
+event = {
+	id = 8206030
+	country = U05
+
+	name = EVT_8206070_NAME
+	desc = EVT_8206070_DESC
+	picture = "nwo\end_of_indonesian_national_revolution"
+	style = 2
+	
+	action = {
+		name = EVT_8206070_A
+		command = { type = secederegion which = -2 value = "Indonesia" when = 2 }
+		command = { type = secederegion which = INO value = "Indonesia" when = 1 }
+	    command = { type = peace which = INO value = 0 }
+		command = { type = name where = U05 which = "U0549" }
+		command = { type = capital which = 1596 } # Hollandia
+		command = { type = strength which = all when = 0 where = 1 value = 0 }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = dissent value = -10 }
+		
+		command = { type = removecore which = 1615 }
+		command = { type = removecore which = 1616 }
+		command = { type = removecore which = 1618 }
+		command = { type = removecore which = 1619 }
+		command = { type = removecore which = 1620 }
+		command = { type = removecore which = 1621 }
+		command = { type = removecore which = 1622 }
+		command = { type = removecore which = 1623 }
+		command = { type = removecore which = 1627 }
+		command = { type = removecore which = 1628 }
+		command = { type = removecore which = 1629 }
+		command = { type = removecore which = 1630 }
+		command = { type = removecore which = 1631 }
+		command = { type = removecore which = 1632 }
+		command = { type = removecore which = 1633 }
+		command = { type = removecore which = 1634 }
+		command = { type = removecore which = 1635 }
+		command = { type = removecore which = 1636 }
+		command = { type = removecore which = 1637 }
+		command = { type = removecore which = 1638 }
+		command = { type = removecore which = 1639 }
+		command = { type = removecore which = 1640 }
+		command = { type = removecore which = 1641 }
+		command = { type = removecore which = 1642 }
+		command = { type = removecore which = 1643 }
+		command = { type = removecore which = 1644 }
+		command = { type = removecore which = 1645 }
+		command = { type = removecore which = 1646 }
+		command = { type = removecore which = 1647 }
+		command = { type = removecore which = 1648 }
+		command = { type = removecore which = 1649 }
+		command = { type = removecore which = 1650 }
+		command = { type = removecore which = 1651 }
+		command = { type = removecore which = 1652 }
+		command = { type = removecore which = 1653 }
+		command = { type = removecore which = 1654 }
+		command = { type = removecore which = 1655 }
+		command = { type = removecore which = 1656 }
+		command = { type = removecore which = 1657 }
+		command = { type = removecore which = 1658 }
+		command = { type = removecore which = 1659 }
+		command = { type = removecore which = 1660 }
+	}
+}
+
+event = {
+	id = 8206031
+	country = INO
+
+	name = EVT_8206071_NAME
+	desc = EVT_8206071_DESC
+	picture = "nwo\end_of_indonesian_national_revolution"
+	style = 2
+	
+	trigger = {
+		NOT = { war = { country = INO country = U05 } }
+		event = 8206030
+	}
+	
+	date = { day = 0 month = january year = 1945 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action = {
+		name = EVT_8206071_A
+		command = { type = dissent value = -5 }
+		
+	}
+}
+
+# Federates States of Indonesia
+event = {
+	id = 8206032
+	country = U05
+
+	name = EVT_8206072_NAME
+	desc = EVT_8206072_DESC
+	picture = "nwo\federated_indonesia"
+	style = 2
+	
+	trigger = {
+		event = 8206031
+		flag = federated_indonesia
+	}
+	
+	action = {
+		name = EVT_8206072_A
+		command = { type = make_puppet which = INO }
+		command = { type = secedearea which = INO value = "Sumatra" when = 2 }
+		command = { type = secedearea which = INO value = "West Java" when = 2 }
+		command = { type = secedearea which = INO value = "East Java" when = 2 }		
+	}
+}
+
+### Acquisition of Dutch New Guinea
+
+# The Dutch are asked
+
+event = {
+	id = 8206040
+	country = HOL
+
+	name = EVT_8206080_NAME
+	desc = EVT_8206080_DESC
+	picture = nwo\dutch_west_guinea
+	style = 2
+	
+	trigger = {
+		event = 8206030
+		NOT = { flag = federated_indonesia } # Indonesia won the revolution
+		ai = U05
+	}
+	
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	# OK
+	action = {
+		name = EVT_8206080_A
+		command = { type = trigger which = 8206042 }	
+	}
+	
+	# Dont' agree (this means war!)
+	action = {
+		name = EVT_8206080_B
+		command = { type = trigger which = 8206041 }
+		command = { type = dissent value = 15 }
+		command = { type = belligerence value = 25 }
+	}
+}
+
+# The Dutch do not comply
+
+event = {
+	id = 8206041
+	country = INO
+
+	name = EVT_8206081_NAME
+	desc = EVT_8206081_DESC
+	picture = nwo\dutch_west_guinea
+	style = 2
+
+	# Then it is war!
+	action = {
+		name = EVT_8206081_A
+		ai_chance = 90
+		trigger = {
+			OR = {
+				ai = no
+				NOT = { alliance = { country = U05 country = USA } }
+				NOT = { alliance = { country = U05 country = ENG } }
+			}
+		}
+		command = { type = war which = U05 }	
+	}
+	
+	# Back off
+	action = {
+		name = EVT_8206081_B
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = interventionism value = -3 }
+	}
+}
+
+# The Dutch agree
+
+event = {
+	id = 8206042
+	country = INO
+
+	name = EVT_8206082_NAME
+	desc = EVT_8206082_DESC
+	picture = nwo\dutch_west_guinea
+	style = 2
+	
+	# OK
+	action = {
+		name = EVT_8206082_A
+		command = { type = inherit which = U05 }	
+	}
+}
+
+### Dutch East India temporarily ceases to be a Dutch puppet
+
+event = {
+	id = 8206050
+	country = U05
+
+	name = EVT_8206050_NAME
+	desc = EVT_8206050_DESC
+	picture = "nwo\dutch_east_india"
+	style = 2
+
+	trigger = {
+		puppet = { country = U05 country = HOL }
+		exists = INO
+		#flag = cold_war_pacific
+		NOT = { event = 8206030 } # War ends
+	}
+
+	date = { day = 0 month = september year = 1948 }
+	offset = 7
+	deathdate = { day = 29 month = september year = 1955 }
+
+	action = {
+		name = EVT_8206050_A
+		command = { type = end_puppet }
+	}
+
+}
+
+event = {
+	id = 8206051
+	country = HOL
+
+	name = EVT_8206051_NAME
+	desc = EVT_8206051_DESC
+	picture = "nwo\dutch_east_india"
+	style = 2
+
+	trigger = {
+		NOT = { puppet = { country = U05 country = HOL } }
+		#flag = cold_war_pacific
+		event = 8206030 # War ends
+	}
+
+	date = { day = 0 month = september year = 1945 }
+	offset = 7
+	deathdate = { day = 29 month = september year = 1955 }
+
+	action = {
+		name = EVT_8206051_A
+		command = { type = make_puppet which = U05 }
+	}
+
+}
+
+event = {
+	id = 8206052
+	country = U05
+
+	name = EVT_8206052_NAME
+	desc = EVT_8206052_DESC
+	picture = "nwo\dutch_west_guinea"
+	style = 2
+
+	trigger = {
+		puppet = { country = U05 country = HOL }
+		exists = INO
+		#flag = cold_war_pacific
+		NOT = { flag = federated_indonesia } # Indonesia won the revolution
+	}
+
+	date = { day = 0 month = september year = 1961 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action = {
+		name = EVT_8206052_A
+		command = { type = end_puppet }
+	}
+
+}

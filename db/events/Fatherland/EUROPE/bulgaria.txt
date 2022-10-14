@@ -1,0 +1,492 @@
+event = {
+	id = 2008301 
+	country = BUL 
+        trigger = { 
+		exists = BUL 
+                  }
+	name = "FIAT plant in Bulgaria"
+	desc = "In 1954, the first automobile industry enterprise was created, producing small-scale car assemblies on the chassis of the Italian Fiat." 
+	style = 2
+	picture = "BUL1"
+	
+	date = { day = 10 month = january year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Great"
+                command = { type = construct which = ic where = -4 value = 1 }
+                command = { type = build_time which = armored_car when = on_upgrade where = relative value = -7 }
+	}
+}
+
+event = {
+	id = 2008302
+	country = BUL 
+        trigger = { 
+		exists = BUL 
+                  }
+	name = "Bulgarian economy reform"
+	desc = "Despite the difficult situation in the country, in 1950, the Bulgarian government began a process of reform in economy. With limited resources, was restored pre-war economic level" 
+	style = 2
+	picture = "BUL1"
+
+        date = { day = 10 month = may year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+	name = "Great"
+          command = { type = industrial_modifier which = money value = 1 }
+          command = { type = industrial_modifier which = total value = 5 }
+          command = { type = industrial_modifier which = supplies value = 5 }
+          command = { type = research_mod value = 1 }
+	}
+}
+
+event = {
+	id = 2008303
+	country = BUL
+	random = no
+	
+	trigger = {
+		exists = BUL
+			}
+	name = "Bulgarian land reform"
+	desc = "In 1920s Bulgarian government allocated significant funds to recover agriculturan sector. In 1951, the restoration of agriculture in Bulgaria was basically completed"
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = november year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+        action = {
+		name = "Great"
+		command = { type = industrial_modifier which = supplies value = 5 }
+                command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = relative_manpower value = 2 }	
+	}
+	
+}  
+
+
+
+event = {
+	id = 2008307
+	random = no
+	country = BUL
+	trigger = {
+		exists = BUL
+	}
+	date = { day = 10 month = march year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	name = "Compulsory vocational training"
+	desc = "In 1954, a law on vocational training was passed, according to which workers and employees aged 14 to 21 who did not receive a secondary education, were to study free of charge in special schools and during working hours."
+	style = 2
+	picture = "BUL1"
+	action = {
+		name = "Good idea" 
+		command = { type = research_mod value = 2 }
+                command = { type = industrial_modifier which = total value = -1 }
+		}
+	}
+
+
+
+event = {
+	id = 2008310
+	random = no
+	country = BUL
+	trigger = {
+		exists = BUL
+                event = 2008328
+                
+	}
+
+        date = { day = 10 month = august year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+
+	name = "Persecution against the communists"
+	desc = "In response to the peasant uprisings against authoritarianism, mass arrests began, including members of the Soviet Red Cross mission and even the USSR Embassy"
+	style = 2
+	picture = "BUL1"
+	action = {
+		name = "Red plague will removed" 
+		command = { type = dissent value = 1 }
+                command = { type = relation which = SOV value = -80 }
+		}
+	}
+
+event = {
+	id = 2008311
+	random = no
+	country = BUL
+	trigger = {
+		exists = BUL
+                event = 2008328
+	}
+	date = { day = 10 month = july year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	name = "Peasant revolts"
+	desc = "The first peasant uprisings against authoritarianism began in June 1953."
+	style = 2
+	picture = "BUL1"
+	action = {
+		name = "Damn!" 
+		command = { type = dissent value = 4 }
+                command = { type = industrial_modifier which = supplies value = -5 }
+		}
+	}
+
+    event = {
+	id = 2008321
+	random = no
+	country = BUL
+
+	trigger = {
+		
+		exists = BUL
+	}
+
+	name = "Macedonian Federative Organization terrorist association"
+	desc = "The Macedonian Federative Organization (MFO) was established in Sofia in 1951 by former Internal Macedonian Revolutionary Organization (IMRO) left wing's activists"
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = September year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "Communist terrorist"
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 2008334
+	random = no
+	country = BUL
+
+	trigger = {
+		
+		exists = BUL
+	}
+
+	name = "Bulgarian Scientific Institute"
+	desc = "The Bulgarian Scientific Institute is a Bulgarian scientific organization, which studies the region of Macedonia and mostly the Macedonian Bulgarians. It was founded in 1953 by Macedonian Bulgarian professors and scholars at Sofia University."
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = november year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "Ok"
+		command = { type = money value = -10 }
+                command = { type = research_mod value = 1 }
+	}
+}
+
+event = {
+	id = 2008343
+	random = no
+	country = BUL
+
+	trigger = {
+		
+		exists = BUL
+	}
+
+	name = "Sofia Philharmonic Orchestra"
+	desc = "The Sofia Philharmonic was founded in 1928. Sofia Philharmonic includes the National Philharmonic Orchestra, National Philharmonic Choir Svetoslav Obretenov, Sofia quartet, Quarto quartet, vocal ensembles Bella Voce and Impresia."
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = may year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                command = { type = money value = -20 }
+	}
+}
+
+event = {
+	id = 2008349
+	random = no
+	country = BUL
+
+	trigger = {
+		
+		exists = BUL
+	}
+
+	name = "New aircraft plants"
+	desc = "In 1955, Two aircraft plants were established in Bozhurishte and Kazanlak"
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = september year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = supplies value = 1 }
+                command = { type = industrial_modifier which = total value = 1 }
+                command = { type = construct which = ic where = -4 value = 1 }
+	}
+}
+
+event = {
+	id = 2008350
+	random = no
+	country = BUL
+
+	trigger = {
+		
+		exists = BUL
+	}
+
+	name = "Stabilization of the economy."
+	desc = "In the mid-50s. Bulgaria stabilized its economy. The government encouraged exports and imposed protectionist customs tariffs. Tobacco production has become the basis of Bulgarian exports. Machinery and equipment dominated the import structure."
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = april year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -3 }
+                command = { type = industrial_modifier which = total value = 3 }
+                command = { type = industrial_modifier which = supplies value = 1 }
+	}
+}
+
+event = {
+	id = 2008361
+	random = no
+	country = BUL
+
+	trigger = {
+		
+		exists = BUL
+	}
+
+	name = "Ruse oil refinery"
+	desc = "Between 1952 and 1953 the construction of new oil refinery was completed in Ruse."
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = january year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.3 }
+                command = { type = industrial_modifier which = supplies value = 0.3 }
+                
+	}
+}
+
+
+
+event = {
+	id = 2008362
+	random = no
+	country = BUL
+
+	trigger = {
+		
+		exists = BUL
+	}
+
+	name = "Electrification of the central region"
+	desc = "In 1960, the successful electrification of the central region of Bulgaria was carried out."
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = september year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.3 }
+                command = { type = industrial_modifier which = supplies value = 0.3 }
+                command = { type = add_prov_resource which = -4 value = 5 where = energy }
+                command = { type = add_prov_resource which = -4 value = 5 where = energy }
+                
+	}
+}
+
+
+
+event = {
+	id = 2008363
+	random = no
+	country = BUL
+
+	trigger = {
+		
+		exists = BUL
+	}
+
+	name = "Bulgarian aluminum in 1929"
+	desc = "In 1959, thanks to the efforts of geologists and state investments, aluminum production was increased. Despite the severe crisis, new mines were opened."
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = february year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = industrial_modifier which = supplies value = 0.5 }
+                command = { type = add_prov_resource which = -4 value = 3 where = metal }
+                
+	}
+}
+
+
+
+event = {
+	id = 2008364
+	random = no
+	country = BUL
+
+	trigger = {
+		
+		exists = BUL
+	}
+
+	name = "Southern Metallurgical Industry"
+	desc = "Shipbuilding at Varna and foundries at Sofia, Plovdiv, Ruse, and Pernik were the most important metallurgical industries. Those developed include iron and steel works at Pernik, utilizing local brown coal and iron ore from the Sofia district"
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = june year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = industrial_modifier which = supplies value = 0.5 }
+                command = { type = add_prov_resource which = -4 value = 3 where = metal }
+	}
+}
+
+
+
+
+event = {
+	id = 2008365
+	random = no
+	country = BUL
+
+	trigger = {
+		
+		exists = BUL
+	}
+
+	name = "Textile industries in 1959"
+	desc = "Bulgarian textile industries were mainly found where the demand for textiles was constant (Sofia, Plovdiv, and Varna) or where raw materials were available (Sliven and Vratsa). However, in 1929 this industry began to grow very slowly due to the crisis."
+	style = 2
+	picture = "BUL1"
+
+	date = { day = 10 month = november year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.2 }
+                command = { type = industrial_modifier which = supplies value = 0.2 }
+                
+	}
+}
+
+#########################################################################
+#  Anglo-French Loan to Bulgaria
+#########################################################################
+
+	event = {
+	id = 7776035 
+	random = no
+	country = BUL
+	trigger = {
+			exists = BUL
+			}
+		
+	date = { day = 02 month = august year = 1938 }
+	
+	name = "German-Italian Loan to Bulgaria"
+	desc = "With the signing of the German-Italia-Bulgarian agreement, german and italian governments provided a $10 million loan to the Bulgarian government to pay for the kingdom's rearmament program. "
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Great!"
+		ai_chance = 100
+		
+		command = { type = relation which = GER value = 20 }
+		command = { type = relation which = ITA value = 20 }
+		command = { type = dissent value = -1 }		
+		command = { type = money value = 1000 }
+		command = { type = trigger which = 7776036 }		
+		}
+}
+
+event = {
+	id = 7776036 
+	random = no
+	country = GER
+	
+	name = "German-Italian Loan to Bulgaria"
+	desc = "With the signing of the German-Italia-Bulgarian agreement, german and italian governments provided a $10 million loan to the Bulgarian government to pay for the kingdom's rearmament program. "
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Let's give them a loan!"
+		ai_chance = 100
+		
+		command = { type = relation which = BUL value = 20 }
+		command = { type = money value = -50 }
+		command = { type = trigger which = 7776037 }		
+		}
+}
+
+
+event = {
+	id = 7776037 
+	random = no
+	country = ITA
+	
+	name = "German-Italian Loan to Bulgaria"
+	desc = "With the signing of the German-Italia-Bulgarian agreement, german and italian governments provided a $10 million loan to the Bulgarian government to pay for the kingdom's rearmament program. "
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "Let's give them a loan."
+		ai_chance = 100
+		
+		command = { type = relation which = BUL value = 20 }
+		command = { type = money value = -50 }		
+		}
+}

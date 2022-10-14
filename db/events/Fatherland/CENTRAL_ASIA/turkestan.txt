@@ -1,0 +1,1356 @@
+##########################
+#TURKESTAN EVENTS
+#MADE BY PAKO
+##########################
+
+####################################
+# Turkestan Islamic Federation, 1948
+####################################
+event = {
+	id = 8014295
+	random = no
+	country = UPE
+
+	name = "WW2 Outcome - Turkestan Islamic Federation"
+	desc = "The Turkestan Islamic Federation was born after the defeat of Soviet Union in the WW2. Several regions declare the independence and made a federation of islamic states in Bukhara with capital Tashkent. The German support indirectly the initiative."
+	picture = "0turkestan0"
+	style = 2
+
+	date = { day = 15 month = january year = 1948 }
+
+	action = {
+		name = "Turkestan rise"
+		command = { type = relation which = GER value = 100 }
+		command = { type = morale which = land value = 3 }
+		command = { type = name where = UPE which = "Turkestan Islamic Federation" }
+	}
+}
+
+# NUOVI EVENTI se turkestan vince la guerra o se la guerra non c'è (nel 50 una guerra tra urss e turk non può esserci in tutti i casi)
+
+event = {
+	id = 13304500
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Islamic Police"
+	desc = "Our people suffer greatly during this time of disunity, and their young men wander aimlessly for a purpose. Firstly, we must form a national islamic police who will be a safeguard against anti islamic agitation, even if it is never strong enough to be used."
+	style = 2
+	picture = "militia"
+
+	date = { day = 10 month = january year = 1950 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = add_Division  value = militia when = -1 }
+		command = { type = manpowerpool value = 10 }
+	}
+}
+
+event = {
+	id = 13304501
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Islamic Cultural Societies"
+	desc = "The people of Turkestan suffer from the Communist mindset. Instead of working towards cooperation, it is evident to government that the Turks people will need to be supported. This can be achieved through Islamic Promotion Societies."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1951 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304502
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Turkestan Nationalism"
+	desc = "Many in Turkestan currently believe that perhaps it is time for democracy. The problem is that they do not realise how wrong they are, and must be disciplined to stop democracy from infesting the whole of the nation."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1952 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+		command = { type = morale which = land value = 0.5 }
+	}
+}
+
+event = {
+	id = 13304503
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Islamic Schools"
+	desc = "Where the Russian education failed the Islamic school will succeed. Turkestan government has assembled several university-trained educators in his office to hammer out a modern, islamic education curriculum."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1953 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.3 }
+		command = { type = money value = -30 }
+
+	}
+}
+
+event = {
+	id = 13304504
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Turkestan Industrialisation"
+	desc = "Much of the population lives a nomadic lifestyle, not in the cities or towns. Due to this, the low population, and the harsh conditions, Turkestan's industry is very lacking. We should give businessmen and investors the ability to invest in Kazakhstan even if they break our already weak laws about workers rights. In fact, it should even be encouraged!"
+	style = 2
+	picture = "RANF1"
+
+	date = { day = 10 month = january year = 1952 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = construct which = ic where = -4 value = 1 }
+		command = { type = construct which = ic where = -4 value = 1 }
+		command = { type = industrial_modifier which = total value = 0.20 }
+		command = { type = industrial_modifier which = supplies value = 0.20 }
+
+	}
+}
+
+event = {
+	id = 13304505
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Turkestan peoples around the world"
+	desc = "We should try to attract them to immigrate here, so that they can serve us."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1953 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = relative_manpower value = 5 }
+		command = { type = manpowerpool value = 20 }
+
+	}
+}
+
+
+event = {
+	id = 13304506
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Nationalist Propaganda"
+	desc = "With the cities being the only main population groups in the nation, a massive propaganda campaign should be started in them, to entrench the idea that conformity to the state is required to survive."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1954 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304507
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Anti-bolshevik purges"
+	desc = "Though the socialist were unable to take power years ago during the the war, they still control some small cells, primarily in the hard to reach north of the nation. These cells must be completely destroyed if we are to be safe from the communist threat."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1950 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -2 }
+		command = { type = money value = -20 }
+		command = { type = relation which = SOV value = -30 }
+
+	}
+}
+
+
+event = {
+	id = 13304508
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "New Anti-bolshevik purges"
+	desc = "Though the socialist were unable to take power years ago during the the war, they still control some small cells, primarily in the hard to reach north of the nation. These cells must be completely destroyed if we are to be safe from the communist threat."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1956 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -2 }
+		command = { type = money value = -20 }
+		command = { type = relation which = SOV value = -30 }
+
+	}
+}
+
+event = {
+	id = 13304509
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Turkestan Traditional Values"
+	desc = "Though democracy is a rather revolutionary idea in Turkestan, traditionalism should not be abandoned. It is the cornerstone of society, and should be protected and encouraged."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1927 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1934 }
+
+	action = {
+		name = "Ok"
+		command = { type = morale which = land value = 0.3 }
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304510
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Opportunity Law"
+	desc = "Every Kazakh should have equal opportunity in life, and this should be enshrined into law."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1958 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -2 }
+		command = { type = money value = -20 }
+
+	}
+}
+
+event = {
+	id = 13304511
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Turkestan Islamic Guard"
+	desc = "Many of the peasants do support Turkestan government, as they know they are unable to make the right decision themselves and trust us to handle it. We should form the National Citizen Guard, a group of peasant militia"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1954 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = add_Division  value = militia when = -1 }
+		command = { type = manpowerpool value = 10 }
+
+	}
+}
+
+event = {
+	id = 13304512
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+
+	name = "State Press"
+	desc = "A state press is necessary to teach the people what their government is doing, while being honest about the facts that the state does not do wrong"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1950 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304513
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Support for Urban Peasants"
+	desc = "The Kazakh peasants in the cities are the easiest to reach and are the most visibly in trouble. They should be focused on when giving out this welfare"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1951 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+
+	}
+}
+
+event = {
+	id = 13304514
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Islamic Education Act"
+	desc = "Our nation will never develop without proper schooling and education. This is necessary if we are to advance as a society and resist falling back into traditionalist ways."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1952 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1964 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.3 }
+		command = { type = money value = -30 }
+
+	}
+}
+
+event = {
+	id = 13304515
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "German investments"
+	desc = "Kazakh government should encourage foreign investments if we are to survive and thrive in the modern world."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1953 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		command = { type = relation which = GER value = 50 }
+
+	}
+}
+
+event = {
+	id = 13304516
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = " Traditionalism"
+	desc = "Our society is inherently traditionalist. This must be encouraged, to stop the calls for revolution."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1954 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = morale which = land value = 0.3 }
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304517
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Islamic Identity"
+	desc = "In the past, we was a great khanate covering the land. "
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1955 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = morale which = land value = 0.3 }
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304518
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Government Support for Mosques"
+	desc = "The Mosques are the cornerstone of our society. They should be protected and empowered."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1956 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304519
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Islamic Law"
+	desc = "We can now act to implement laws surrounding Islam, enshrining it permanently in our society and punishing those who go against the religion"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1957 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = morale which = land value = 0.3 }
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304520
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Islamic Education"
+	desc = "Mosques are the perfect place to teach our new Islamic education. This should be encouraged."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1958 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.3 }
+		command = { type = money value = -30 }
+
+	}
+}
+
+event = {
+	id = 13304521
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Rural villages"
+	desc = "Rural villages, small communities in the steppes of Kazakhstan, are struggling massively. These groups must be developed so that they can become self-sustainable."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1959 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+
+	}
+}
+
+event = {
+	id = 13304522
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Turkic brotherhood"
+	desc = "Turkestan nation and Turkey have a lot in common, and should grow to become friends, as both Turkic countries"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = january year = 1950 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = morale which = land value = 0.3 }
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+		command = { type = relation which = TUR value = 50 }
+
+	}
+}
+
+event = {
+	id = 13304523
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Kazakh Military"
+	desc = "The Kazakh military is dominated by mounted troops, due to the vast flat steppes of the nation. Our military must be expanded"
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1958 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = add_Division  value = militia when = -1 }
+		command = { type = manpowerpool value = 10 }
+
+	}
+}
+
+event = {
+	id = 13304524
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "territory and economy"
+	desc = "We must understand that the territory of our nation is very difficult for rapid economic development, either flat steppes or steep hills and mountains."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1959 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+
+	}
+}
+
+event = {
+	id = 13304525
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Recruitment Effort"
+	desc = "We need to start a new recruitment plan to fill up our army numbers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1950 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = manpowerpool value = 5 }
+
+	}
+}
+
+event = {
+	id = 13304526
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Recruitment Policy"
+	desc = "Some of the far away Kazakh tribes must also be recruited, to fill our army numbers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1951 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = manpowerpool value = 10 }
+
+	}
+}
+
+event = {
+	id = 13304527
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Astana Officer School"
+	desc = "An officer school in Astana itself will help increase the standard of our officers."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1952 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = max_organization which = land value = 1 }
+		command = { type = morale which = land value = 1 }
+
+	}
+}
+
+event = {
+	id = 13304528
+	random = no
+	country = UPE
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "National Radio"
+	desc = "Radio and electronic technology has great potential to help solve the divide in Kazakhstan, and so must be researched."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1953 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304529
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Vast Lands development"
+	desc = "To encourage development in the vast lands, we should clear natural features which prevent access to several unexploited known resource deposits and reduce the prohibitive cost of exploitation."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1954 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+
+	}
+}
+
+event = {
+	id = 13304530
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Going Forward"
+	desc = "For too long or nation has sought to be but one cog in the great Russian machine. While we are Kazakhs, we must not forget our glory and traditions."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1955 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304531
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Islamic Identity"
+	desc = "While we must take care not to antagonize the Russians or the other loyal peoples, it is to the west, to Mecca and the house of Islam that the Kazakh people look to distinguish themselves. We should use this connection to the advantage of all and forge renewed connections with like-minded Islamic nations."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1956 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+		command = { type = money value = -10 }
+
+	}
+}
+
+event = {
+	id = 13304532
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Education Reform"
+	desc = "The order emphasizes modern education that is separated from the old Kazakh system. Eastern teachers can be hired to teach in our cities."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1957 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.3 }
+		command = { type = money value = -30 }
+
+	}
+}
+
+event = {
+	id = 13304533
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Water Mills"
+	desc = "The water mills in Kazakhstan is the focal point of complaints against our administration. As we have been taxing the landowners for several years, and their inability to complete is blamed on us. Ordering soldiers to complete the mill should be to everyone's benefit."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1958 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+
+	}
+}
+
+event = {
+	id = 13304534
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Industrialization Plan"
+	desc = "To sustain our growing armed forces, we will need guns and the ability to produce them en masse. While the arsenals will retain responsibility for finish armaments, new state facilities for the production of intermediaries should be established with state-of-the-art equipment shipped in from abroad no matter the cost."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1959 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+
+	}
+}
+
+event = {
+	id = 13304535
+	random = no
+	country = UPE
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Farming"
+	desc = "The Kazakh provinces are home to rich, fertile soil, but very little running water. This has put a hard cap on what the people can produce in peacetime, and what we can tax from them. Building aqueducts to farming communities will assist in expanding the farmlands and employ refugees from the east."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1950 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+
+	}
+}
+
+event = {
+	id = 13304536
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "National Railway"
+	desc = "National railway has been a dream of a number of ambitious engineers in our lands, but as of yet no money has been dedicated to it. This administration is ready to make that dream a reality, and bring a modern necessity to communities in need."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1951 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+
+	}
+}
+
+event = {
+	id = 13304537
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "The Reconstruction of Astana"
+	desc = "As the region's economy and political institutions have recovered at a mere snail's pace, state intervention is needed to get Astana back on its feet."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1952 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+
+	}
+}
+
+event = {
+	id = 13304538
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Axis investors"
+	desc = "Good space and access to running water can be sold to fleeing Investors as an opportunity to restart their businesses."
+	style = 2
+	picture = "RanF7"
+
+	date = { day = 10 month = june year = 1953 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+
+	}
+}
+
+event = {
+	id = 13304539
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+
+	name = "Prices control"
+	desc = "The importation of many consumer goods has been sporadic and prices have risen drastically. We should produce as many of these luxury items as is possible right here at home."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1954 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = money value = 300 }
+
+	}
+}
+
+event = {
+	id = 13304540
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Administrative Purge"
+	desc = "The administration of the Kazakh provinces is plagued with inefficiencies and conmen. We can collect this latent trust by consolidating our administration and ordering the arrest of phony administrators."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1955 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = 3 }
+
+	}
+}
+
+event = {
+	id = 13304541
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "New Developments"
+	desc = "The economic reconstruction of Kazakhstan is not yet complete. With power consolidated, the entire state apparatus can be directed to its betterment, especially the redevelopment of still-heavily damaged urban areas."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1956 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+		command = { type = construct which = IC where = -4 value = 1 }
+		command = { type = construct which = infrastructure where = -4 value = 10 }
+
+	}
+}
+
+event = {
+	id = 13304542
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Astana Arsenal"
+	desc = "The Astana Arsenals' equipment is outdated and in need of modernization. By expanding the facilities and bringing in equipment from abroad, we'll be able to keep pace with our rivals in the region."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1957 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.25 }
+		command = { type = industrial_modifier which = supplies value = 0.25 }
+		command = { type = construct which = IC where = -4 value = 1 }
+
+	}
+}
+
+event = {
+	id = 13304543
+	random = no
+	country = UPE
+
+	trigger = {
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Turkestan Artillery"
+	desc = "With the arsenals expanded, we should begin the development of more advanced artillery. Our potential enemies' lines shall be reduced to rubble."
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1958 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = speed which = super_heavy_artillery value = 1 }
+		command = { type = money value = -40 }
+		command = { type = muddy_move which = land value = 1 }
+		command = { type = mountain_move which = land value = 1 }
+		command = { type = forest_move which = land value = 1 }
+		command = { type = urban_move which = land value = 1 }
+
+	}
+}
+
+event = {
+	id = 13304545
+	random = no
+	country = UPE
+
+	trigger = {
+		NOT = {
+			flag = TRKSSR
+		}
+		Random = 60
+		exists = UPE
+	}
+
+	name = "Tax Reform"
+	desc = "The Governors' budgets are turning up short each year. The solution presented to the administration is to consolidate the treasuries and accounting offices of the provinces and allocate remaining budgets in the best interest of the Kazakh people. "
+	style = 2
+	picture = "news_paper"
+
+	date = { day = 10 month = june year = 1960 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1962 }
+
+	action = {
+		name = "Ok"
+		command = { type = money value = 300 }
+
+	}
+}

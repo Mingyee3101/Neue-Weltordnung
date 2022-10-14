@@ -1,0 +1,801 @@
+##########################################################################################
+#COL_COMMUNIST events
+##########################################################################################
+
+#id = 278070 - country = COL - UNIR Victory
+#id = 278071 - country = COL - Fight Foreign Influence
+#id = 278072 - country = COL - Homeland Defence Program
+#id = 278073 - country = COL - Extensive Education Program
+#id = 278074 - country = COL - Union Alliances
+#id = 278075 - country = COL - Confiscate Imperialist Companies
+#id = 278076 - country = COL - Formalise Worker's Rights
+#id = 278077 - country = COL - Biased Land Reform
+#id = 278078 - country = COL - Fulfil Campaign Promises
+#id = 278079 - country = COL - Factories are complete!
+#id = 278080 - country = COL - Compromise With Liberals
+#id = 278081 - country = COL - Coalition Government
+#id = 278082 - country = COL - Syndicalism in the Andes
+#id = 278083 - country = COL - Preparations for the first congress of the trade unions
+#id = 278084 - country = COL - The first Congress of Trade Unions
+#id = 278085 - country = VEN - Five Year Plan
+#id = 278086 - country = COL - Rapid Industrialisation
+#id = 278087 - country = COL - Army of the People
+#id = 278088 - country = COL - Collectivisation of the Fields
+#id = 278089 - country = COL - Repress The Counter Revolutionaries
+
+
+event = {
+    id = 278070
+    random = no
+    country = COL
+    style = 2
+
+    name = "The opposition contesting the election results"
+    desc = "The people spoke, and now we rules Colombia! However our political enemies are contesting the results of the election and are trying to forment riots to topple us! How shall we respond to the first crisis of our government?"
+    picture = "riot1"
+
+	date = { day = 9 month = may year = 1948 }
+
+    trigger = {
+        flag = COL_SOC
+    }
+
+    action_a = {
+        ai_chance = 40
+        name = "Crack down on the rioters and bring down the heavy hand of justice on those who are causing these problems!"
+        command = { type = domestic which = freedom value = -1 }
+        command = { type = manpowerpool value = -5 }
+        command = { type = dissent value = 2 }
+        command = { type = setflag which = COL_SOC }
+    }
+
+    action_b = {
+        ai_chance = 60
+        name = "Take the moral high ground and ride out the storm! We will prove we have Colombia's best insterests in mind!"
+        command = { type = domestic which = freedom value = 1 }
+        command = { type = dissent value = 4 }
+        command = { type = setflag which = COL_SOC }
+    }
+}
+
+event = {
+    id = 278071
+    random = no
+    country = COL
+    style = 2
+
+    trigger = {
+        flag = COL_SOC
+    }
+
+    name = "Fight Foreign Influence"
+    desc = "We must unite and free Colombia from those who steal our lands and our wealth. The rich and the imperialists in the north hold too much of Colombia's wealth."
+    picture = "Colombia"
+
+    date = { day = 1 month = june year = 1948 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action_a = {
+        ai_chance = 60
+        name = "Let us begin the process and crush imperialism in Colombia!"
+        command = { type = dissent value = 1 }
+        command = { type = domestic which = free_market value = -1 }
+        command = { type = relation which = USA value = -20 }
+        command = { type = relation which = CAN value = -20 }
+    }
+
+    action_b = {
+        ai_chance = 40
+        name = "Let us take a milder approach, so as to not make too many enemies"
+        command = { type = domestic which = free_market value = 1 }
+        command = { type = dissent value = 6 }
+        command = { type = sleepevent which = 278075 }
+    }
+}
+
+event = {
+    id = 278072
+    random = no
+    country = COL
+    style = 2
+
+    trigger = {
+        flag = COL_SOC
+        NOT = {
+            flag = COL_LIB
+            flag = COL_ARM
+            flag = COL_CON
+        }
+    }
+
+    name = "Homeland Defence Program"
+    desc = "Our land will soon be under siege by both radicals and reactionaries, and our people must be safe! The debate has been brought between focusing on fortifications or on raising a few militia divisions."
+    picture = "militia"
+
+    date = { day = 1 month = august year = 1948 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action_a = {
+        ai_chance = 50
+        name = "Let us fortify our key cities and beaches!"
+        command = { type = construct which = land_fort where = 1991 value = 1 }
+        command = { type = construct which = coastal_fort where = 1990 value = 1 }
+        command = { type = construct which = land_fort where = 1985 value = 1 }
+    }
+
+    action_b = {
+        ai_chance = 50
+        name = "Let us arm the people so that they may help the military defend Colombia!"
+        command = { type = add_division which = "Primera milicia" value = militia when = 4 }
+        command = { type = add_division which = "2da milicia" value = militia when = 4 }
+    }
+}
+
+event = {
+    id = 278073
+    random = no
+    country = COL
+    style = 2
+
+    trigger = {
+        flag = COL_SOC
+        NOT = {
+            flag = COL_LIB
+            flag = COL_ARM
+            flag = COL_CON
+        }
+    }
+
+    name = "Extensive Education Program"
+    desc = "Education will be the key to forge the future of Colombia. We must spare no expense in enlightening the minds of our young! Our universities should also be given grants to develop technologies that will be of use to our government!"
+    picture = "economic"
+
+    date = { day = 15 month = september year = 1948 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action_a = {
+        ai_chance = 40
+        name = "Fund research into industrial development!"
+        command = { type = dissent value = -1 }
+        command = { type = money value = -80 }
+        command = { type = research_mod value = 2 }
+        command = { type = gain_tech which = 5130 }
+        command = { type = gain_tech which = 5100 }
+    }
+
+    action_b = {
+        ai_chance = 40
+        name = "Fund research into medicine!"
+        command = { type = research_mod value = -2 }
+        command = { type = gain_tech which = 5640 }
+        command = { type = gain_tech which = 5630 }
+        command = { type = money value = -200 }
+    }
+
+    action_c = {
+        ai_chance = 20
+        name = "Fund research into computers!"
+        command = { type = research_mod value = 2 }
+        command = { type = gain_tech which = 5330 }
+        command = { type = gain_tech which = 5340 }
+        command = { type = money value = -200 }
+    }
+}
+
+event = {
+    id = 278074
+    random = no
+    country = COL
+    style = 2
+
+    trigger = {
+        flag = COL_SOC
+        NOT = {
+            flag = COL_LIB
+            flag = COL_ARM
+            flag = COL_CON
+        }
+    }
+
+    name = "Union Alliances"
+    desc = "The Trade Unions have natural syndicalist leanings, but we can convince them to work within the system to improve the conditions for the workers of Colombia. If they do they can be convinced to improve our industrial output. Hopefully they listen to our auguements."
+    picture = "new_deal"
+
+    date = { day = 1 month = february year = 1949 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action_a = {
+        ai_chance = 50
+        name = "The trade unions are swayed to our side."
+        command = { type = domestic which = free_market value = -1 }
+        command = { type = peacetime_ic_mod value = 2 }
+    }
+
+    action_b = {
+        ai_chance = 50
+        name = "The Trade Unions remain against us."
+        command = { type = dissent value = 2 }
+        command = { type = domestic which = free_market value = 1 }
+    }
+}
+
+event = {
+    id = 278075
+    random = no
+    country = COL
+    style = 2
+
+    trigger = {
+        flag = COL_SOC
+        NOT = {
+            flag = COL_LIB
+            flag = COL_ARM
+            flag = COL_CON
+        }
+    }
+
+    name = "Confiscate Imperialist Companies"
+    desc = "The United States and Canada have for too long held many of our plantation owners hostage. We made many promises to free Colombia and her people from their oppression. The time has come to do it..."
+    picture = "ColombiaPesoOro"
+
+    date = { day = 1 month = march year = 1949 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action_a = {
+        ai_chance = 80
+        name = "Destroy the oppressors! Colombia shall be free!"
+        command = { type = dissent value = -8 }
+        command = { type = domestic which = free_market value = -1 }
+        command = { type = construct which = ic where = -4 value = 1 }
+        command = { type = construct which = ic where = -4 value = 1 }
+        command = { type = relation which = GER when = -80 }
+        command = { type = relation which = USA when = -80 }
+    }
+
+    action_b = {
+        ai_chance = 20
+        name = "We back out, it would be a bad idea to injure trade partners..."
+        command = { type = dissent value = 7 }
+        command = { type = domestic which = free_market value = 2 }
+        command = { type = relation which = CAN when = 30 }
+        command = { type = relation which = USA when = 30 }
+    }
+}
+
+event = {
+    id = 278076
+    random = no
+    country = COL
+    style = 2
+
+    trigger = {
+        flag = COL_SOC
+        NOT = {
+            flag = COL_LIB
+            flag = COL_ARM
+            flag = COL_CON
+        }
+    }
+
+    name = "Formalise Worker's Rights"
+    desc = "Our worker's have been fed so many promises for so long, and such pent up hate and straight up poverty naturally decreases productivity. They need guarantees and laws to protect them from predatory capitalism."
+    picture = "Syndicalists"
+
+    date = { day = 12 month = june year = 1949 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action_a = {
+        ai_chance = 90
+        name = "let us formalize their rights!"
+        command = { type = dissent value = -5 }
+        command = { type = domestic which = political_left value = 1 }
+    }
+
+    action_b = {
+        ai_chance = 10
+        name = "Now why would we do that? There are some money bags that magically appeared on our desks..."
+        command = { type = dissent value = 7 }
+        command = { type = money value = 400 }
+        command = { type = domestic which = free_market value = 3 }
+    }
+}
+
+event = {
+    id = 278077
+    random = no
+    country = COL
+    style = 2
+
+    trigger = {
+        flag = COL_SOC
+        NOT = {
+            flag = COL_LIB
+            flag = COL_ARM
+            flag = COL_CON
+        }
+    }
+
+    name = "Biased Land Reform"
+    desc = "We shall now start a program of limited land reform that will ensure the peasants will have lands to work, confiscated from the rich and sold to foreign powers. The Conservadores landowners will take the brunt of it, naturally."
+    picture = "Syndicalists"
+
+    date = { day = 20 month = september year = 1949 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action_a = {
+        ai_chance = 70
+        name = "Begin the redistibution! For the people!"
+        command = { type = dissent value = 3 }
+        command = { type = peacetime_ic_mod value = 3 }
+    }
+
+    action_b = {
+        ai_chance = 30
+        name = "We should not go this far. We are all Colombians."
+        command = { type = dissent value = 5 }
+        command = { type = domestic which = free_market value = 2 }
+        command = { type = money value = 200 }
+    }
+}
+
+event = {
+    id = 278078
+    random = no
+    country = COL
+    save_date = yes
+    style = 2
+
+    trigger = {
+        flag = COL_ARM
+        NOT = {
+            atwar = COL
+            flag = COL_LIB
+            flag = COL_SOC
+            flag = COL_CON
+        }
+    }
+    decision_trigger = {
+        supplies = 100
+        money = 60
+        metal = 100
+        rare_materials = 25
+    }
+
+    name = "Fulfil Campaign Promises"
+    desc = "We promised a great deal to our people, and it with great effort, we will keep our word and make Colombia a better place. Part of these promises is road and rail improvements that the people need to move and trade goods. Let us make this investment for the good of the people!"
+    picture = "industry2"
+    decision_picture = "decision_industry"
+
+    date = { day = 12 month = october year = 1949 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action_a = {
+        name = "Let us begin the process!"
+        ai_chance = 80
+        command = { type = money value = -60 }
+        command = { type = metalpool value = -100 }
+        command = { type = dissent value = -1 }
+        command = { type = trigger which = 278079 when = 200 }
+    }
+
+    action_b = {
+        name = "This is too expensive, let us save the money for other projects"
+        ai_chance = 20
+        command = { type = dissent value = 2 }
+        command = { type = money value = 50 }
+        command = { type = sleepevent which = 278079 }
+    }
+}
+
+event = {
+    id = 278079
+    random = no
+    country = COL
+    style = 2
+
+
+    name = "Factories are complete!"
+    desc = "We made many campaign promises and now we have seen the infrastructure we promised them completed!"
+    picture = "industry2"
+
+    action = {
+        name = "We made a campaign promise and we have fulfilled it!!"
+        command = { type = dissent value = -1 }
+        command = { type = construct which = infrastructure where = -1 value = 1 }
+        command = { type = construct which = infrastructure where = -1 value = 1 }
+        command = { type = construct which = infrastructure where = -1 value = 1 }
+    }
+}
+
+event = {
+    id = 278080
+    random = no
+    country = COL
+    style = 2
+
+    trigger = {
+        flag = COL_SOC
+        NOT = {
+            flag = COL_LIB
+            flag = COL_ARM
+            flag = COL_CON
+        }
+    }
+
+    name = "Compromise With Liberals"
+    desc = "The Partido Socialista is a cornerstone of Colombian left. Either way, the people demand we make a stand on where we believe the Socialist should be, with us or against us?"
+    picture = "Syndicalists"
+
+    date = { day = 20 month = august year = 1950 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    action_a = {
+        ai_chance = 60
+        name = "They are with us."
+        command = { type = domestic which = freedom value = 1 }
+        command = { type = dissent value = -2 }
+        command = { type = trigger which = 278081 when = 10 }
+    }
+
+    action_b = {
+        ai_chance = 40
+        name = "They are against us."
+        command = { type = dissent value = 3 }
+        command = { type = money value = 200 }
+        command = { type = sleepevent which = 278081 }
+    }
+}
+
+event = {
+    id = 278081
+    random = no
+    country = COL
+    style = 2
+
+    name = "Coalition Government"
+    desc = "Now, we know who is with PCC and who isn't. Let us form a coalition that is for sure to win the next elections, to the point they shall become little more than a formality. Since the Socialist are now with us, we should formalize the alliance."
+    picture = "Syndicalists"
+
+    action_a = {
+        ai_chance = 95
+        name = "All are welcome in this government for all Colombians!"
+        command = { type = domestic which = freedom value = 2 }
+        command = { type = domestic which = democratic value = 1 }
+        command = { type = dissent value = -5 }
+    }
+
+    action_b = {
+        ai_chance = 5
+        name = "The people love us, not the Socialist. They can enjoy the sidelines!"
+        command = { type = dissent value = 10 } #why?
+    }
+}
+
+event = {
+    id = 278082
+    country = COL
+    random = no
+    style = 2
+
+    name = "Communism in the Andes"
+    desc = "Finally, the workers of Colombia are free. Let us make sure this dream lasts for ages to come! Colombia is now free under the red flag !!"
+    picture = "Syndicalists"
+
+    date = { day = 1 month = january year = 1951 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    trigger = {
+        OR = {
+            ideology = leninist
+            ideology = stalinist }
+    }
+
+    action = {
+        name = "We are free at last!!"
+        command = { type = setflag which = COL_SYN }
+        command = { type = clrflag which = COL_SOC }
+        command = { type = clrflag which = COL_LIB }
+        command = { type = clrflag which = COL_ARM }
+        command = { type = clrflag which = COL_CON }
+		command = { type = setflag which = COL_COMMUNIST2 }
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 10 }        
+		command = { type = flag_ext where = -1 which = "_COMMIE"}
+		command = { type = name where = -1 which = "Republica Popular de Colombia" }        
+    }
+}
+
+event = {
+    id = 278083
+    country = COL
+    random = no
+    style = 2
+
+    name = "Preparations for the first congress of PCCU (Partido Comunista de Colombia Unido)"
+    desc = "The state must not be a tool for kleptocrats, but a place where trade unions are represented! We must prepare for the first Congress of the trade unions!"
+    picture = "Syndicalists"
+
+    date = { day = 1 month = january year = 1951 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    trigger = {
+        OR = {
+            ideology = leninist
+            ideology = stalinist
+        }
+        flag = COL_SYN
+        NOT = {
+            flag = COL_LIB
+            flag = COL_ARM
+            flag = COL_CON
+            flag = COL_SOC
+        }
+    }    
+
+    action = {
+        name = "A truly free election, for all the workers!"
+        command = { type = trigger which = 278084 when = 15 }
+    }
+}
+
+event = {
+    id = 278084
+    country = COL
+    random = no
+    style = 2
+
+    trigger = {
+        flag = COL_SYN
+        NOT = {
+            ispuppet = COL
+            flag = COL_LIB
+            flag = COL_SOC
+            flag = COL_CON
+            flag = COL_ARM
+        }
+    }
+
+    name = "The first Congress of Trade Unions"
+    desc = "The 1st Colombian Congress of trade unions will decide a great deal of our plans for the forseeable future."
+    picture = "election"
+
+    action_a = {
+        ai_chance = 30
+        name = "The Stalinist faction wins!"
+        command = { type = headofstate which = 37174 } #Gilberto Vieira
+        command = { type = headofgovernment which = 37239 } #Luis Bernardo Andrade
+        command = { type = foreignminister which = 37187 } #Pedro Aquilino Lopez Medina
+        command = { type = armamentminister which = 37189 } #Colonel Clemente Escalona Labarces
+        command = { type = ministerofsecurity which = 37201 } #Santiago Martinez Delgado
+        command = { type = ministerofintelligence which = 37123 } #Querista Sellor
+        command = { type = set_domestic which = democratic value = 1 }
+        command = { type = set_domestic which = political_left value = 2 }
+    }
+    action_b = {
+        ai_chance = 70
+        name = "The Leninist faction wins handily."
+        command = { type = headofstate which = 37175 } #Pedro Nel Gomez Agudelo
+        command = { type = headofgovernment which = 37176 } #Diego Mendoz Perez
+        command = { type = foreignminister which = 37187 } #Pedro Aquilino Lopez Medina
+        command = { type = armamentminister which = 37091 } #Gabriel Quintanilla Morales
+        command = { type = ministerofsecurity which = 37201 } #Santiago Martinez Delgado
+        command = { type = ministerofintelligence which = 37209 } #Juan Roa Sierra
+        command = { type = set_domestic which = democratic value = 4 }
+        command = { type = set_domestic which = political_left value = 2 }
+    }
+}
+
+event = {
+    id = 278085
+    random = no
+    country = VEN
+    style = 2
+
+    decision_trigger = {
+        supplies = 200
+        money = 80
+        metal = 300
+        flag = COL_SYN
+    }
+
+    trigger = {
+        flag = COL_SYN
+        NOT = {
+            flag = COL_ARM
+            flag = COL_LIB
+            flag = COL_SOC
+            flag = COL_CON
+        }
+    }
+
+    date = { day = 1 month = january year = 1951 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    name = "Five Year Plan"
+    desc = "The first year of completely syndicalist economic plans will begin, but the Congress must decide how we will proceed!"
+    picture = "industry2"
+
+
+    action_a = {
+        name = "Let us build the future!"
+        command = { type = dissent value = 1 }
+        command = { type = building_prod_mod which = ic value = 2 }
+        command = { type = building_prod_mod which = infrastructure value = 2 }
+        command = { type = domestic which = free_market value = -1 }
+        command = { type = industrial_modifier which = total value = 2 }
+        command = { type = trigger which = 278086 when = 1800 }
+    }
+}
+
+event = {
+    id = 278086
+    random = no
+    country = COL
+    style = 2
+
+
+    name = "Rapid Industrialisation"
+    desc = "Our first five year plan has comepleted! Let us see the results!"
+    picture = "industry2"
+
+
+    action_a = {
+        name = "The Workers have done it!"
+        command = { type = dissent value = -1 }
+        command = { type = building_prod_mod which = ic value = 3 }
+        command = { type = building_prod_mod which = infrastructure value = 3 }
+        command = { type = industrial_modifier which = total value = 6 }
+        command = { type = construct which = ic where = -4 value = 1 }
+        command = { type = construct which = ic where = -4 value = 1 }
+        command = { type = construct which = ic where = -4 value = 1 }
+    }
+
+}
+
+event = {
+    id = 278087
+    country = COL
+    random = no
+    style = 2
+
+    name = "Army of the People"
+    desc = "The army is no longer a tool of imperialism, it's the will of the people to defend their homes from reactionaries and counter revolutionaries!!"
+    picture = "Syndicalists"
+
+date = { day = 1 month = january year = 1951 }
+    offset = 100
+    deathdate = { day = 29 month = december year = 1963 }
+
+    trigger = {
+        flag = COL_SYN
+        NOT = {
+            flag = COL_ARM
+            flag = COL_LIB
+            flag = COL_SOC
+            flag = COL_CON
+        }
+    }
+
+    action = {
+        name = "The people are ready and willing to fight!"
+        command = { type = morale which = militia value = 2 }
+        command = { type = max_organization which = militia value = 2 }
+        command = { type = no_supplies_combat_mod which = militia value = 2 }
+    }
+}
+
+event = {
+    id = 278088
+    country = COL
+    random = no
+    style = 2
+
+    name = "Collectivisation of the Fields"
+    desc = "The fields of the former caudillos belong to the people who work with them! Now we must work with the peasantry to ensure Colombia keeps her agricultural wealth."
+    picture = "Syndicalists"
+
+  date = { day = 1 month = january year = 1951 }
+    offset = 100
+    deathdate = { day = 29 month = december year = 1963 }
+
+    trigger = {
+        flag = COL_SYN
+        NOT = {
+            flag = COL_ARM
+            flag = COL_LIB
+            flag = COL_SOC
+            flag = COL_CON
+        }
+    }
+
+    action = {
+        name = "Land and bread for all!"
+        command = { type = domestic which = free_market value = -2 }
+    }
+}
+
+event = {
+    id = 278089
+    country = COL
+    random = no
+    style = 2
+
+    name = "Repress The Counter Revolutionaries"
+    desc = "We must end all counter revolutionaries who threaten our young and dear Syndical republic!"
+    picture = "Syndicalists"
+
+date = { day = 1 month = january year = 1951 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    trigger = {
+        flag = COL_SYN
+        NOT = {
+            flag = COL_ARM
+            flag = COL_LIB
+            flag = COL_SOC
+            flag = COL_CON
+        }
+    }
+
+    action = {
+        name = "Death to our enemies!"
+        command = { type = dissent value = 2 }
+        command = { type = relation which = GER value = -50 }
+        command = { type = relation which = USA value = -50 }
+        command = { type = relation which = CAN value = -50 }
+        command = { type = relation which = TEX value = -50 }
+        command = { type = relation which = JAP value = -50 }
+        command = { type = relation which = VIC value = -50 }
+        command = { type = relation which = ENG value = 50 }
+        command = { type = relation which = FRA value = 50 }
+        command = { type = relation which = GUA value = 50 }
+        command = { type = relation which = MEX value = 50 }
+        command = { type = relation which = U50 value = 50 }
+        command = { type = relation which = CHL value = 50 }
+    }
+}
+
+event = {
+    id = 278090
+    country = COL
+    random = no
+    style = 2
+
+    name = "Andinean pact"
+    desc = "It's time to made an alliace of our countries!"
+    picture = "Syndicalists"
+
+    date = { day = 1 month = january year = 1951 }
+    offset = 30
+    deathdate = { day = 29 month = december year = 1963 }
+
+    trigger = {
+        flag = COL_SYN
+        NOT = {
+            flag = COL_ARM
+            flag = COL_LIB
+            flag = COL_SOC
+            flag = COL_CON
+        }
+        atwar = no
+    }
+
+    action = {
+        name = "Death to our enemies!"
+        command = { type = alliance which = VEN }
+		command = { type = setflag which = ANDINEAN_PACT }	
+    }
+}

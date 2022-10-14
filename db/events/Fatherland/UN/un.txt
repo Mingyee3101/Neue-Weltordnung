@@ -1,0 +1,1532 @@
+###################################
+### List of Events for ALS
+### Made by Pako
+###################################
+
+#############################################
+### 1949: United Nations Command Council ####
+#############################################
+#id = 999511 - country = ALS - 1949: United Nations Command Council;
+#id = 999512 - country = ALS - UN Command Council: Internal Policy;
+#id = 999513 - country = ALS - UN Adopts the Common Front Resolution;
+#id = 999514 - country = ALS - The UN will be led by America;
+#id = 999515 - country = ALS - UN Command Council: Armament and Tactics;
+#id = 999516 - country = ALS - UN Army adopts armor-mechanized focus;
+#id = 999517 - country = ALS - UN Army adopts special forces-guerrilla focus;
+#id = 999518 - country = ALS - UN Army adopts aerial superiority focus;
+
+###########################
+### UN Sanctions events ###
+###########################
+#id = 999524 - country = ALS - UN Sanctions: Pacification of Moscow;
+#id = 999525 - country = GER - UN Sanctions for Pacification of Moscow;
+#id = 999526 - country = ALS - UN Sanctions: China joins the Axis;
+#id = 999527 - country = GER - UN sanctions in response to Axis China;
+#id = 999528 - country = CHI - UN sanctions in response to Axis China;
+#id = 999529 - country = ALS - UN Sanctions: Spain joins the Axis;
+#id = 999530 - country = GER - UN Sanctions: Spain joins the Axis;
+#id = 999531 - country = SPA - UN Sanctions: Spain joins the Axis;
+#id = 999532 - country = ALS - UN Sanctions: Portugal joins the Axis;
+#id = 999533 - country = GER - UN Sanctions: Portugal joins the Axis;
+#id = 999534 - country = POR - UN Sanctions: Portugal joins the Axis;
+
+###############################################
+### Washington Strategic Convention of 1951 ###
+###############################################
+
+#id = 999541 - country = USA - Washington Strategic Convention of 1951;
+#id = 999542 - country = USA - Strategic Options for Combatting the Axis;
+#id = 999543 - country = USA - UN Liberty Shield: Turkey;
+#id = 999544 - country = TUR - The USA proposes alliance;
+#id = 999545 - country = ALS - UN Liberty Shield: East Asia;
+#id = 999546 - country = CHI - People's Republic of China joining the United Nations;
+#id = 999547 - country = CHC - People's Republic of China joining the United Nations;
+#id = 999549 - country = USA - UN Liberty Shield: Siberia and West Asia;
+#id = 999550 - country = SOV - Joining the United Nations;
+#id = 999551 - country = SIB - Joining the United Nations;
+#id = 999552 - country = U59 - USA recognizes the Empire of Russia;
+#id = 999553 - country = USA - UN Liberty Shield deployed;
+#id = 999554 - country = USA - Mobilizing the Mediterranean;
+#id = 999555 - country = ENG - Leasing Tobruk to the USA;
+#id = 999556 - country = LBY - Leasing Tobruk to the USA;
+#id = 999557 - country = U01 - US control of the Free French Army proposed;
+#id = 999558 - country = USA - Mobilizing the Middle East;
+#id = 999559 - country = SYR - The USA requests military access;
+#id = 999560 - country = IRQ - The USA requests military access;
+#id = 999561 - country = USA - Efforts in the Middle East fail;
+
+
+#############################################
+### 1949: United Nations Command Council ####
+#############################################
+
+event = {
+	id = 999511
+	random = no
+	country = ALS
+
+	decision = {
+		exists = AXI # Axis exists.
+		exists = ALS # United Nations exists on-map
+		government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+		atwar = no
+	}
+
+	decision_trigger = {
+		event = 999510 # in un.txt
+		exists = AXI # Axis exists.
+		exists = ALS # United Nations exists on-map
+		government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+		NOT = { war = { country = USA country = ENG } }
+		alliance = { country = USA country = ENG }
+		NOT = { war = { country = -1 country = GER } }
+		atwar = no
+	}
+
+	trigger = {
+		event = 999510 # in un.txt
+		exists = AXI # Axis exists.
+		exists = ALS # United Nations exists on-map
+		government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+		NOT = { war = { country = USA country = ENG } }
+		alliance = { country = USA country = ENG }
+		NOT = { war = { country = -1 country = GER } }
+		atwar = no
+	}
+
+	name = "EVT_999511_NAME"
+	desc = "EVT_999511_DESC"
+	style = 2
+	picture = "fatherland\un_poster1"
+	decision_picture = "fatherland\decision_un"
+	date = { day = 25 month = may year = 1948 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 90
+		name = "The world is in ruins - hold the Council."
+		command = { type = setflag which = un_council_1948 }
+	}
+
+	action = {
+		ai_chance = 10
+		name = "We do not need the Council at this time."
+		command = { type = domestic which = interventionism value = -1 }
+	}
+
+}
+
+### UN Command Council: Internal Policy
+
+event = {
+	id = 999512
+	random = no
+	country = ALS
+
+	trigger = {
+		event = 999511
+		flag = un_council_1948
+		atwar = no
+	}
+
+	name = "EVT_999512_NAME"
+	desc = "EVT_999512_DESC"
+	style = 2
+	picture = "nwo\geneva_conference"
+	date = { day = 25 month = january year = 1949 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		trigger = { flag = usa_cw_isolation }
+		ai_chance = 100
+		name = "Common Front Resolution - democratic military representation."
+		command = { type = setflag which = un_democratic }
+		command = { type = trigger which = 999513 }
+	}
+
+	action = {
+		trigger = { flag = usa_cw_intervention }
+		ai_chance = 30
+		name = "The UN must yield to American power."
+		command = { type = trigger which = 999514 }
+		command = { type = relation which = USA value = 200 }
+	}
+
+	action = {
+		trigger = { flag = usa_cw_intervention }
+		ai_chance = 70
+		name = "The UN must yield to American power."
+		command = { type = trigger which = 999514 }
+		command = { type = relation which = USA value = 200 }
+	}
+
+}
+
+### UN Adopts the Common Front Resolution
+
+event = {
+	id = 999513
+	random = no
+	country = ALS
+
+	name = "EVT_999513_NAME"
+	desc = "EVT_999513_DESC"
+	style = 2
+	picture = "nwo\geneva_conference"
+
+	action = {
+		name = "Adopt it."
+		command = { type = manpowerpool value = 25 }
+		command = { type = add_corps which = "2. UN Task Force" value = land where = 1795 } # New York
+		command = { type = add_division which = "10. UN Infantry Brigade" value = motorized when = 3 where = -70 }
+		command = { type = add_division which = "11. UN Infantry Brigade" value = motorized when = 3 where = -70 }
+		command = { type = add_division which = "12. UN Infantry Brigade" value = motorized when = 3 where = -70 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = freedom value = 1 }
+	}
+}
+
+### UN Will Be Led by America
+
+event = {
+	id = 999514
+	random = no
+	country = ALS
+
+	name = "EVT_999514_NAME"
+	desc = "EVT_999514_DESC"
+	style = 2
+	picture = "nwo\geneva_conference"
+
+	action = {
+		name = "Ok."
+		command = { type = add_corps which = "UN Shock Force" value = land where = 1795 } # New York
+		command = { type = add_division which = "1. UN Shock Armor Brigade" value = armor when = 5 where = sp_artillery }
+		command = { type = add_division which = "2. UN Shock Brigade" value = mechanized when = 2 where = sp_artillery }
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+	}
+}
+
+### UN Command Council: Armament and Tactics
+
+event = {
+	id = 999515
+	random = no
+	country = ALS
+
+	trigger = {
+		event = 999512
+		flag = un_council_1948
+		atwar = no
+	}
+
+	name = "EVT_999515_NAME"
+	desc = "EVT_999515_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+	date = { day = 25 month = january year = 1948 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 30
+		name = "Armored and mechanized focus."
+		command = { type = trigger which = 999516 }
+	}
+
+	action = {
+		ai_chance = 50
+		name = "Guerrilla and Special Forces focus."
+		command = { type = trigger which = 999517 }
+	}
+
+	action = {
+		ai_chance = 20
+		name = "Air support and strategic bombing focus."
+		command = { type = trigger which = 999518 }
+	}
+}
+
+### UN Army adopts armor-mechanized focus
+
+event = {
+	id = 999516
+	random = no
+	country = ALS
+
+	name = "EVT_999516_NAME"
+	desc = "EVT_999516_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+
+	action = {
+		name = "Ok."
+		command = { type = build_division which = armor value = sp_artillery when = 1 }
+		command = { type = encirclement value = 3 }
+		command = { type = breakthrough value = 3 }
+		command = { type = hard_attack which = infantry value = 5 }
+		command = { type = hard_attack which = armor value = 3 }
+		command = { type = hard_attack which = mechanized value = 3 }
+	}
+}
+
+### UN Army adopts special forces-guerrilla focus
+
+event = {
+	id = 999517
+	random = no
+	country = ALS
+
+	name = "EVT_999517_NAME"
+	desc = "EVT_999517_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+
+	action = {
+		name = "Ok."
+		command = { type = add_division which = "1. UN Special Ops Command" value = paratrooper when = 3 where = -50 }
+		command = { type = assault value = 7 }
+		command = { type = ambush value = 7 }
+		command = { type = no_supplies_combat_mod which = paratrooper value = 3 }
+		command = { type = no_supplies_combat_mod which = marine value = 3 }
+		command = { type = no_supplies_combat_mod which = motorized value = 3 }
+		command = { type = no_supplies_combat_mod which = mechanized value = 3 }
+		command = { type = soft_attack which = paratrooper value = 5 }
+		command = { type = soft_attack which = marine value = 5 }
+		command = { type = soft_attack which = motorized value = 5 }
+		command = { type = soft_attack which = mechanized value = 5 }
+		command = { type = toughness which = paratrooper value = 5 }
+		command = { type = toughness which = marine value = 5 }
+		command = { type = toughness which = motorized value = 5 }
+		command = { type = toughness which = mechanized value = 5 }
+		command = { type = morale which = paratrooper value = 7 }
+		command = { type = morale which = marine value = 7 }
+		command = { type = morale which = motorized value = 7 }
+		command = { type = morale which = mechanized value = 7 }
+	}
+}
+
+### UN Army adopts aerial superiority focus
+
+event = {
+	id = 999518
+	random = no
+	country = ALS
+
+	name = "EVT_999518_NAME"
+	desc = "EVT_999518_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+
+	action = {
+		name = "Ok."
+		command = { type = add_division which = "UN Bombing Group" value = strategic_bomber when = 6 where = -40 }
+	}
+}
+
+### UN Command Council: Volunteers
+
+event = {
+	id = 999519
+	random = no
+	country = ALS
+
+	trigger = {
+		event = 999515
+		flag = un_council_1948
+		atwar = no
+	}
+
+	name = "EVT_999519_NAME"
+	desc = "EVT_999519_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+	date = { day = 25 month = january year = 1948 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action = {
+		ai_chance = 70
+		name = "Anglo-American-French forces will be the backbone."
+		command = { type = relative_manpower value = -0.2 }
+		command = { type = industrial_modifier which = supplies value = -2 }
+		#command = { type = trigger which = 999520 }
+	}
+
+	action = {
+		ai_chance = 30
+		name = "Accept also volunteer across the free world."
+		command = { type = relative_manpower value = -0.1 }
+		command = { type = industrial_modifier which = supplies value = -3 }
+	}
+}
+
+###########################
+### UN Sanctions events ###
+###########################
+
+### UN Sanctions: Swisse-Axis war
+
+event = {
+	id = 999524
+	random = no
+	country = ALS
+
+	trigger = {
+		war = { country = SCH country = GER }
+	}
+
+	name = "EVT_999524_NAME"
+	desc = "EVT_999524_DESC"
+	style = 2
+	picture = "swissdecision"
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		ai_chance = 80
+		name = "Close any relations with Germany."
+		command = { type = dissent value = 1 }
+
+		command = { type = relation which = GER value = -50 }
+		command = { type = end_trades which = ALS where = GER }
+		command = { type = end_trades which = USA where = GER }
+		command = { type = end_trades which = CAN where = GER }
+		command = { type = end_trades which = ENG where = GER }
+		command = { type = end_trades which = U01 where = GER }
+		command = { type = end_trades which = SOV where = GER }
+		command = { type = end_trades which = AUS where = GER }
+		command = { type = end_trades which = NZL where = GER }
+
+		command = { type = manpowerpool value = 20 }
+		command = { type = trigger which = 999525 }
+	}
+
+	action = {
+		ai_chance = 20
+		name = "This is none of our concern."
+		command = { type = dissent value = 4 }
+	}
+}
+
+### UN Sanctions: Swisse-Axis war - GER
+
+event = {
+	id = 999525
+	random = no
+	country = GER
+
+	name = "EVT_999525_NAME"
+	desc = "EVT_999525_DESC"
+	style = 2
+	picture = "swissdecision"
+
+	action = {
+		name = "Der Kalte Krieg gets warmer."
+		command = { type = relation which = ALS value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = U01 value = -50 }
+		command = { type = relation which = AUS value = -50 }
+		command = { type = relation which = NZL value = -50 }
+		command = { type = relation which = SOV value = -50 }
+	}
+}
+
+### UN Sanctions: China joins the Axis
+
+event = {
+	id = 999526
+	random = no
+	country = ALS
+
+	trigger = {
+		exists = AXI # Axis exists.
+		alliance = { country = GER country = CHI }
+		NOT = { war = { country = -1 country = GER } }
+	}
+
+	name = "EVT_999526_NAME"
+	desc = "EVT_999526_DESC"
+	style = 2
+	picture = "fatherland\chinese_dragon"
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		ai_chance = 90
+		name = "Close economic relations with Germany and China."
+		command = { type = dissent value = 3 }
+
+		command = { type = relation which = GER value = -50 }
+		command = { type = end_trades which = ALS where = GER }
+		command = { type = end_trades which = USA where = GER }
+		command = { type = end_trades which = CAN where = GER }
+		command = { type = end_trades which = ENG where = GER }
+		command = { type = end_trades which = U01 where = GER }
+		command = { type = end_trades which = SOV where = GER }
+		command = { type = end_trades which = AUS where = GER }
+		command = { type = end_trades which = NZL where = GER }
+
+		command = { type = relation which = CHI value = -50 }
+		command = { type = end_trades which = ALS where = CHI }
+		command = { type = end_trades which = USA where = CHI }
+		command = { type = end_trades which = CAN where = CHI }
+		command = { type = end_trades which = ENG where = CHI }
+		command = { type = end_trades which = U01 where = CHI }
+		command = { type = end_trades which = SOV where = CHI }
+		command = { type = end_trades which = AUS where = CHI }
+		command = { type = end_trades which = NZL where = CHI }
+
+		command = { type = manpowerpool value = 20 }
+		command = { type = trigger which = 999527 }
+		command = { type = trigger which = 999528 }
+	}
+
+	action = {
+		ai_chance = 10
+		name = "This is none of our concern."
+		command = { type = dissent value = 5 }
+	}
+}
+
+### UN Sanctions: China joins the axis - GER reaction
+
+event = {
+	id = 999527
+	random = no
+	country = GER
+
+	name = "EVT_999527_NAME"
+	desc = "EVT_999527_DESC"
+	style = 2
+	picture = "fatherland\chinese_dragon"
+
+	action = {
+		name = "Der Kalte Krieg gets warmer."
+		command = { type = relation which = ALS value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = U01 value = -50 }
+		command = { type = relation which = AUS value = -50 }
+		command = { type = relation which = NZL value = -50 }
+		command = { type = relation which = SOV value = -50 }
+	}
+}
+
+### UN Sanctions: China joins the axis - CHI
+
+event = {
+	id = 999528
+	random = no
+	country = CHI
+
+	name = "EVT_999528_NAME"
+	desc = "EVT_999528_DESC"
+	style = 2
+	picture = "fatherland\chinese_dragon"
+
+	action = {
+		name = "Der Kalte Krieg gets warmer."
+		command = { type = relation which = ALS value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = U01 value = -50 }
+		command = { type = relation which = AUS value = -50 }
+		command = { type = relation which = NZL value = -50 }
+		command = { type = relation which = SOV value = -50 }
+	}
+}
+
+### UN Sanctions: Spain joins the Axis
+
+event = {
+	id = 999529
+	random = no
+	country = ALS
+
+	trigger = {
+		exists = AXI # Axis exists.
+		alliance = { country = GER country = SPA }
+		NOT = { war = { country = -1 country = GER } }
+	}
+
+	name = "EVT_999529_NAME"
+	desc = "EVT_999529_DESC"
+	style = 2
+	picture = "nwo\geneva_conference"
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		ai_chance = 90
+		name = "Close economic relations with Germany and Spain."
+		command = { type = dissent value = 1 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = end_trades which = ALS where = GER }
+		command = { type = end_trades which = USA where = GER }
+		command = { type = end_trades which = CAN where = GER }
+		command = { type = end_trades which = ENG where = GER }
+		command = { type = end_trades which = U01 where = GER }
+		command = { type = end_trades which = SOV where = GER }
+		command = { type = end_trades which = AUS where = GER }
+		command = { type = end_trades which = NZL where = GER }
+
+		command = { type = relation which = SPA value = -50 }
+		command = { type = end_trades which = ALS where = SPA }
+		command = { type = end_trades which = USA where = SPA }
+		command = { type = end_trades which = CAN where = SPA }
+		command = { type = end_trades which = ENG where = SPA }
+		command = { type = end_trades which = U01 where = SPA }
+		command = { type = end_trades which = SOV where = SPA }
+		command = { type = end_trades which = AUS where = SPA }
+		command = { type = end_trades which = NZL where = SPA }
+
+		command = { type = manpowerpool value = 20 }
+		command = { type = trigger which = 999530 }
+		command = { type = trigger which = 999531 }
+	}
+
+	action = {
+		ai_chance = 10
+		name = "This is none of our concern."
+		command = { type = dissent value = 4 }
+	}
+}
+
+### UN Sanctions: Spain joins the axis - GER
+
+event = {
+	id = 999530
+	random = no
+	country = GER
+
+	name = "EVT_999530_NAME"
+	desc = "EVT_999530_DESC"
+	style = 2
+	picture = "nwo\geneva_conference"
+
+	action = {
+		name = "Der Kalte Krieg gets warmer."
+		command = { type = relation which = ALS value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = U01 value = -50 }
+		command = { type = relation which = AUS value = -50 }
+		command = { type = relation which = NZL value = -50 }
+		command = { type = relation which = SOV value = -50 }
+	}
+}
+
+### UN Sanctions: Spain joins the axis - SPA
+
+event = {
+	id = 999531
+	random = no
+	country = SPA
+
+	name = "EVT_999531_NAME"
+	desc = "EVT_999531_DESC"
+	style = 2
+	picture = "nwo\geneva_conference"
+
+	action = {
+		name = "Der Kalte Krieg gets warmer."
+		command = { type = relation which = ALS value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = U01 value = -50 }
+		command = { type = relation which = AUS value = -50 }
+		command = { type = relation which = NZL value = -50 }
+		command = { type = relation which = SOV value = -50 }
+	}
+}
+
+### UN Sanctions: Portugal joins the Axis
+
+event = {
+	id = 999532
+	random = no
+	country = ALS
+
+	trigger = {
+		exists = AXI # Axis exists.
+		alliance = { country = GER country = POR }
+		NOT = { war = { country = -1 country = GER } }
+	}
+
+	name = "EVT_999532_NAME"
+	desc = "EVT_999532_DESC"
+	style = 2
+	picture = "nwo\geneva_conference"
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		ai_chance = 90
+		name = "Close economic relations with Germany and Portugal."
+		command = { type = dissent value = 1 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = end_trades which = ALS where = GER }
+		command = { type = end_trades which = USA where = GER }
+		command = { type = end_trades which = CAN where = GER }
+		command = { type = end_trades which = ENG where = GER }
+		command = { type = end_trades which = U01 where = GER }
+		command = { type = end_trades which = SOV where = GER }
+		command = { type = end_trades which = AUS where = GER }
+		command = { type = end_trades which = NZL where = GER }
+
+		command = { type = relation which = POR value = -50 }
+		command = { type = end_trades which = ALS where = POR }
+		command = { type = end_trades which = USA where = POR }
+		command = { type = end_trades which = CAN where = POR }
+		command = { type = end_trades which = ENG where = POR }
+		command = { type = end_trades which = U01 where = POR }
+		command = { type = end_trades which = SOV where = POR }
+		command = { type = end_trades which = AUS where = POR }
+		command = { type = end_trades which = NZL where = POR }
+		command = { type = manpowerpool value = 20 }
+		command = { type = trigger which = 999533 }
+		command = { type = trigger which = 999534 }
+	}
+
+	action = {
+		ai_chance = 10
+		name = "This is none of our concern."
+		command = { type = dissent value = 4 }
+	}
+}
+
+### UN Sanctions: Portugal joins the axis - GER
+
+event = {
+	id = 999533
+	random = no
+	country = GER
+
+	name = "EVT_999533_NAME"
+	desc = "EVT_999533_DESC"
+	style = 2
+	picture = "nwo\geneva_conference"
+
+	action = {
+		name = "Der Kalte Krieg gets warmer."
+		command = { type = relation which = ALS value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = U01 value = -50 }
+		command = { type = relation which = AUS value = -50 }
+		command = { type = relation which = NZL value = -50 }
+		command = { type = relation which = SOV value = -50 }
+	}
+}
+
+### UN Sanctions: Portugal joins the axis - POR
+
+event = {
+	id = 999534
+	random = no
+	country = POR
+
+	name = "EVT_999534_NAME"
+	desc = "EVT_999534_DESC"
+	style = 2
+	picture = "nwo\geneva_conference"
+
+	action = {
+		name = "Der Kalte Krieg gets warmer."
+		command = { type = relation which = ALS value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = U01 value = -50 }
+		command = { type = relation which = AUS value = -50 }
+		command = { type = relation which = NZL value = -50 }
+		command = { type = relation which = SOV value = -50 }
+	}
+}
+
+###############################################
+### Washington Strategic Convention of 1951 ###
+###############################################
+
+event = {
+	id = 999541
+	random = no
+	country = ALS
+
+	decision = {
+		exists = AXI # Axis exists.
+		exists = ALS # United Nations exists on-map
+		government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+		atwar = no
+	}
+
+	decision_trigger = {
+		exists = AXI # Axis exists.
+		exists = ALS # United Nations exists on-map
+		government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+		atwar = no
+	}
+
+	trigger = {
+		NOT = { ispuppet = USA }
+		exists = AXI # Axis exists.
+		government = { type = fascist country = GER } # Germany is fascist in the Axis bloc.
+		NOT = { war = { country = USA country = ENG } }
+		NOT = { war = { country = -1 country = GER } }
+		NOT = { war = { country = CHI country = CHC } }
+	}
+
+	name = "EVT_999541_NAME"
+	desc = "EVT_999541_DESC"
+	style = 2
+	picture = "fatherland\strategic_convention"
+	date = { day = 15 month = july year = 1951 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		ai_chance = 100
+		name = "Show the plans."
+		command = { type = trigger which = 999542 } # Strategic Options
+	}
+
+	action = {
+		ai_chance = 0
+		name = "I am not interested."
+		command = { }
+	}
+}
+
+### Strategic Options for combatting the Axis
+
+event = {
+	id = 999542
+	random = no
+	country = ALS
+
+	name = "EVT_999542_NAME"
+	desc = "EVT_999542_DESC"
+	style = 2
+	picture = "fatherland\strategic_convention"
+
+	action = {
+		ai_chance = 60
+		name = "Ridgway's UN Liberty Shield Strategy"
+		command = { type = trigger which = 999543 } # Ridgway's UN Liberty Shield Strategy
+		command = { type = setflag which = un_liberty_shield }
+	}
+
+	action = {
+		ai_chance = 40
+		name = "Spaatz's Mediterranean-Middle East Strategy"
+		command = { } # Spaatz's Central Front (Mediterranean-Middle East) Strategy
+		command = { type = trigger which = 999554 }
+		command = { type = setflag which = us_central_front }
+	}
+}
+
+#########################
+### UN Liberty Shield ###
+#########################
+
+### UN Liberty Shield Strategy: Turkey
+
+event = {
+	id = 999543
+	random = no
+	country = ALS
+
+	name = "EVT_999543_NAME"
+	desc = "EVT_999543_DESC"
+	style = 2
+	picture = "nwo\turkish_gains_in_ussr"
+
+	action = {
+		ai_chance = 90
+		name = "Attempt to ally Turkey."
+		command = { type = trigger which = 999544 }
+	}
+
+	action = {
+		ai_chance = 10
+		name = "Ignore Turkey."
+		command = { }
+	}
+}
+
+### The USA proposes alliance - TUR
+
+event = {
+	id = 999544
+	random = no
+	country = TUR
+
+	name = "The United Nations propose an alliance"
+	desc = "EVT_999544_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+
+	action = {
+		ai_chance = 40
+		name = "Join the United Nations."
+		trigger = { flag = usa_cw_isolation } command = { type = alliance which = ALS }
+		trigger = { flag = usa_cw_intervention } command = { type = alliance which = USA }
+		command = { type = relation which = ALS value = 30 }
+		command = { type = relation which = USA value = 30 }
+		command = { type = relation which = ENG value = 30 }
+		command = { type = relation which = U01 value = 30 }
+		command = { type = relation which = AUS value = 30 }
+		command = { type = relation which = NZL value = 30 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = ITA value = -50 }
+		command = { type = dissent value = 5 }
+	}
+
+	action = {
+		ai_chance = 60
+		name = "Refuse."
+		command = { type = dissent value = 2 }
+		command = { type = relation which = ALS value = -30 }
+		command = { type = relation which = USA value = -30 }
+		command = { type = relation which = ENG value = -30 }
+		command = { type = relation which = U01 value = -30 }
+		command = { type = relation which = AUS value = -30 }
+		command = { type = relation which = NZL value = -30 }
+		command = { type = relation which = SOV value = -10 }
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = ITA value = 50 }
+	}
+}
+
+
+### UN Liberty Shield Strategy: East Asia
+
+event = {
+	id = 999545
+	random = no
+	country = ALS
+
+	trigger = {
+		event = 999543 # UN Liberty Shield: Turkey
+	}
+
+	name = "EVT_999545_NAME"
+	desc = "EVT_999545_DESC"
+	style = 2
+	picture = "nwo\map_of_asia"
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		trigger = { exists = KOR
+			NOT = { alliance = { country = KOR country = USA } }
+		}
+		ai_chance = 60
+		name = "Attempt to ally Korea"
+		command = { type = trigger which = 999546 }
+	}
+
+	action = {
+		trigger = {
+			exists = CHI
+			NOT = {
+				exists = CHC
+				atwar = CHI
+				war = { country = CHI country = SOV }
+				war = { country = CHI country = AXI }
+			}
+		}
+		ai_chance = 30
+		name = "Attempt to ally Nationalist China."
+		command = { type = trigger which = 999547 }
+	}
+
+	action = {
+		ai_chance = 10
+		name = "Ignore East Asia."
+		command = { }
+	}
+}
+
+### The USA offers UN alliance - KOR
+
+event = {
+	id = 999546
+	random = no
+	country = KOR
+
+	name = "EVT_999546_NAME"
+	desc = "EVT_999546_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+
+	action = {
+		ai_chance = 70
+		name = "Join the United Nations."
+		trigger = { flag = usa_cw_isolation } command = { type = alliance which = ALS }
+		trigger = { flag = usa_cw_intervention } command = { type = alliance which = USA }
+		command = { type = relation which = ALS value = 30 }
+		command = { type = relation which = USA value = 30 }
+		command = { type = relation which = ENG value = 30 }
+		command = { type = relation which = U01 value = 30 }
+		command = { type = relation which = AUS value = 30 }
+		command = { type = relation which = NZL value = 30 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = dissent value = 3 }
+	}
+
+	action = {
+		ai_chance = 30
+		name = "Refuse."
+		command = { type = dissent value = -1 }
+		command = { type = relation which = ALS value = -30 }
+		command = { type = relation which = USA value = -30 }
+		command = { type = relation which = ENG value = -30 }
+		command = { type = relation which = U01 value = -30 }
+		command = { type = relation which = AUS value = -30 }
+		command = { type = relation which = NZL value = -30 }
+		command = { type = relation which = SOV value = -10 }
+	}
+}
+
+### The USA offers UN alliance - CHI
+
+event = {
+	id = 999547
+	random = no
+	country = CHI
+
+	name = "EVT_999547_NAME"
+	desc = "EVT_999547_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+
+	action = {
+		ai_chance = 30
+		name = "Guarantee a military collaboration but not an alliance."
+		command = { type = access which = USA }
+		command = { type = access which = ALS }
+		command = { type = relation which = ALS value = 30 }
+		command = { type = relation which = USA value = 30 }
+		command = { type = relation which = ENG value = 30 }
+		command = { type = relation which = U01 value = 30 }
+		command = { type = relation which = AUS value = 30 }
+		command = { type = relation which = NZL value = 30 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = ITA value = -50 }
+		command = { type = dissent value = 7 }
+	}
+
+	action = {
+		ai_chance = 70
+		name = "Refuse."
+		command = { type = dissent value = -1 }
+		command = { type = relation which = ALS value = -30 }
+		command = { type = relation which = USA value = -30 }
+		command = { type = relation which = ENG value = -30 }
+		command = { type = relation which = U01 value = -30 }
+		command = { type = relation which = AUS value = -30 }
+		command = { type = relation which = NZL value = -30 }
+		command = { type = relation which = SOV value = -10 }
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = ITA value = 50 }
+	}
+}
+
+### UN Liberty Shield: Siberia and West Asia
+
+event = {
+	id = 999549
+	random = no
+	country = ALS
+
+	trigger = {
+		event = 999545 # UN Liberty Shield: East Asia
+	}
+
+	name = "EVT_999549_NAME"
+	desc = "EVT_999549_DESC"
+	style = 2
+	picture = "fatherland\soviet_soldier"
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		trigger = {
+			exists = SOV
+			NOT = {
+				atwar = SOV
+				alliance = { country = SOV country = USA }
+			}
+		}
+		ai_chance = 70
+		name = "Attempt to made a collaboration with Soviet Union."
+		command = { type = trigger which = 999550 }
+	}
+
+	action = {
+		trigger = { exists = SIB
+			NOT = {
+				atwar = SIB
+				alliance = { country = SIB country = USA }
+			}
+		}
+		ai_chance = 20
+		name = "Attempt to ally the Siberian Democratic Republic."
+		command = { type = trigger which = 999551 }
+	}
+
+	action = {
+		trigger = {
+			exists = U59
+			NOT = {
+				atwar = U59
+				alliance = { country = U59 country = USA }
+			}
+		}
+		ai_chance = 10
+		name = "Attempt to ally the Empire of Russia."
+		command = { type = trigger which = 999552 }
+	}
+
+	action = {
+		ai_chance = 0
+		name = "Ignore Area."
+		command = { }
+	}
+}
+
+### Joining the United Nations - SOV
+
+event = {
+	id = 999550
+	random = no
+	country = SOV
+
+	name = "EVT_999550_NAME"
+	desc = "EVT_999550_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+
+	action = {
+		ai_chance = 90
+		name = "Collaboration with United Nations."
+		command = { type = access which = USA }
+		command = { type = access which = ALS }
+		command = { type = relation which = ALS value = 30 }
+		command = { type = relation which = USA value = 30 }
+		command = { type = relation which = ENG value = 30 }
+		command = { type = relation which = U01 value = 30 }
+		command = { type = relation which = AUS value = 30 }
+		command = { type = relation which = NZL value = 30 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = ITA value = -50 }
+		command = { type = guarantee which = ALS where = SOV }
+	}
+
+	action = {
+		ai_chance = 10
+		name = "Refuse."
+		command = { type = relation which = ALS value = -30 }
+		command = { type = relation which = USA value = -30 }
+		command = { type = relation which = ENG value = -30 }
+		command = { type = relation which = U01 value = -30 }
+		command = { type = relation which = AUS value = -30 }
+		command = { type = relation which = NZL value = -30 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = ITA value = -50 }
+	}
+}
+
+### Joining the United Nations - SIB
+
+event = {
+	id = 999551
+	random = no
+	country = SIB
+
+	name = "EVT_999550_NAME"
+	desc = "EVT_999551_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+
+	action = {
+		ai_chance = 70
+		name = "Join the United Nations."
+		trigger = { flag = usa_cw_isolation } command = { type = alliance which = ALS }
+		trigger = { flag = usa_cw_intervention } command = { type = alliance which = USA }
+		command = { type = relation which = ALS value = 30 }
+		command = { type = relation which = USA value = 30 }
+		command = { type = relation which = ENG value = 30 }
+		command = { type = relation which = U01 value = 30 }
+		command = { type = relation which = AUS value = 30 }
+		command = { type = relation which = NZL value = 30 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = ITA value = -50 }
+	}
+
+	action = {
+		ai_chance = 30
+		name = "Refuse."
+		command = { type = relation which = ALS value = -30 }
+		command = { type = relation which = USA value = -30 }
+		command = { type = relation which = ENG value = -30 }
+		command = { type = relation which = U01 value = -30 }
+		command = { type = relation which = AUS value = -30 }
+		command = { type = relation which = NZL value = -30 }
+		command = { type = relation which = SOV value = -10 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = ITA value = -50 }
+	}
+}
+
+### USA recognizes the Empire of Russia - U59
+
+event = {
+	id = 999552
+	random = no
+	country = U59
+
+	name = "EVT_999552_NAME"
+	desc = "EVT_999552_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+
+	action = {
+		ai_chance = 95
+		name = "Join the United Nations."
+		trigger = { flag = usa_cw_isolation } command = { type = alliance which = ALS }
+		trigger = { flag = usa_cw_intervention } command = { type = alliance which = USA }
+		command = { type = relation which = ALS value = 30 }
+		command = { type = relation which = USA value = 30 }
+		command = { type = relation which = ENG value = 30 }
+		command = { type = relation which = U01 value = 30 }
+		command = { type = relation which = AUS value = 30 }
+		command = { type = relation which = NZL value = 30 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = relation which = GER value = 50 }
+		command = { type = relation which = ITA value = 50 }
+	}
+
+	action = {
+		ai_chance = 5
+		name = "Refuse."
+		command = { type = relation which = ALS value = -30 }
+		command = { type = relation which = USA value = -30 }
+		command = { type = relation which = ENG value = -30 }
+		command = { type = relation which = U01 value = -30 }
+		command = { type = relation which = AUS value = -30 }
+		command = { type = relation which = NZL value = -30 }
+		command = { type = relation which = SOV value = -10 }
+		command = { type = relation which = GER value = -50 }
+		command = { type = relation which = ITA value = -50 }
+	}
+}
+
+### Results of the UN Liberty Shield initiative
+
+event = {
+	id = 999553
+	random = no
+	country = ALS
+
+	trigger = {
+		event = 999549 # UN Liberty Shield: Siberia and West Asia
+		OR = {
+			alliance = { country = USA country = SOV }
+			alliance = { country = USA country = U59 }
+			alliance = { country = USA country = SIB }
+			alliance = { country = USA country = CHI }
+			alliance = { country = USA country = CHC }
+			alliance = { country = USA country = TUR }
+		}
+	}
+
+	name = "EVT_999553_NAME"
+	desc = "EVT_999553_DESC"
+	style = 2
+	picture = "fatherland\un_troops"
+	date = { day = 1 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		name = "We have strengthened the free world and won valuable allies."
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = dissent value = -5 }
+	}
+}
+
+############################################################################
+### Carl Spaatz's Central Front Strategy (Mediterranean and Middle East) ###
+############################################################################
+
+### Mobilzing the Mediterranean
+
+event = {
+	id = 999554
+	random = no
+	country = ALS
+
+	name = "EVT_999554_NAME"
+	desc = "EVT_999554_DESC"
+	style = 2
+	picture = "mittelmeerdivision2"
+
+	action = {
+		ai_chance = 90
+		name = "Acquire Tobruk in the Mediterranean."
+		command = { trigger = { owned = { province = 765 data = ENG } } type = trigger which = 999555 } # Acquire from UK
+		command = { trigger = { owned = { province = 765 data = LBY } } type = trigger which = 999556 } # Acquire from Libya
+		command = { type = money value = -100 }
+		command = { trigger = { ai = no } type = trigger which = 999557 } # Control the Free French Army
+	}
+
+	action = {
+		ai_chance = 10
+		name = "Ignore the Mediterranean."
+		command = { }
+	}
+}
+
+### Leasing Tobruk to the ALS - ENG
+
+event = {
+	id = 999555
+	random = no
+	country = ENG
+
+	name = "EVT_999555_NAME"
+	desc = "EVT_999555_DESC"
+	style = 2
+	picture = "mittelmeerdivision2"
+
+	action = {
+		ai_chance = 80
+		name = "Grant them Tobruk."
+		command = { type = secedeprovince which = ALS value = 765 }
+		command = { type = relation which = ALS value = 10 }
+		command = { type = money value = 100 }
+	}
+
+	action = {
+		ai_chance = 20
+		name = "Refuse."
+		command = { type = relation which = ALS value = -10 }
+	}
+}
+
+### Leasing Tobruk to the ALS - LBY
+
+event = {
+	id = 999556
+	random = no
+	country = LBY
+
+	name = "EVT_999555_NAME"
+	desc = "EVT_999555_DESC"
+	style = 2
+	picture = "mittelmeerdivision2"
+
+	action = {
+		ai_chance = 80
+		name = "Grant them Tobruk."
+		command = { type = secedeprovince which = ALS value = 765 }
+		command = { type = relation which = ALS value = 10 }
+		command = { type = money value = 100 }
+	}
+
+	action = {
+		ai_chance = 20
+		name = "Refuse."
+		command = { type = relation which = ALS value = -10 }
+	}
+}
+
+### ALS control of the Free French Army proposed
+
+event = {
+	id = 999557
+	random = no
+	country = U01
+
+	name = "EVT_999557_NAME"
+	desc = "EVT_999557_DESC"
+	style = 2
+	picture = "mittelmeerdivision2"
+
+	action = {
+		ai_chance = 50
+		name = "Grant them military control."
+		command = { type = military_control which = ALS where = U01 value = 1 }
+		command = { type = relation which = ALS value = 10 }
+	}
+
+	action = {
+		ai_chance = 50
+		name = "Refuse."
+		command = { type = relation which = ALS value = -10 }
+	}
+}
+
+### Mobilizing the Middle East
+
+event = {
+	id = 999558
+	random = no
+	country = ALS
+
+	trigger = {
+		event = 999554 # Mobilizing the Mediterranean
+	}
+
+	name = "EVT_999558_NAME"
+	desc = "EVT_999558_DESC"
+	style = 2
+	picture = "nwo/iraq"
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		ai_chance = 90
+		name = "Request military access in Syria and Iraq."
+		command = { trigger = { exists = SYR } type = trigger which = 999559 } # Acquire from UK
+		command = { trigger = { exists = IRQ } type = trigger which = 999560 }
+	}
+
+	action = {
+		ai_chance = 10
+		name = "Ignore the Middle East."
+		command = { type = relation which = ALS value = -10 }
+	}
+}
+
+### ALS requests military access - SYR
+
+event = {
+	id = 999559
+	random = no
+	country = SYR
+
+	name = "EVT_999559_NAME"
+	desc = "EVT_999559_DESC"
+	style = 2
+	picture = "nwo/iraq"
+
+	action = {
+		ai_chance = 80
+		name = "Grant them military access and sign an alliance."
+		trigger = { flag = usa_cw_isolation } command = { type = alliance which = ALS }
+		trigger = { flag = usa_cw_intervention } command = { type = alliance which = USA }
+		command = { type = relation which = ALS value = 10 }
+	}
+
+	action = {
+		ai_chance = 20
+		name = "Refuse."
+		command = { type = relation which = ALS value = -10 }
+	}
+}
+
+### ALS requests military access - IRQ
+
+event = {
+	id = 999560
+	random = no
+	country = IRQ
+
+	name = "EVT_999559_NAME"
+	desc = "EVT_999559_DESC"
+	style = 2
+	picture = "nwo/iraq"
+
+	action = {
+		ai_chance = 60
+		name = "Grant them military access and sign an alliance."
+		trigger = { flag = usa_cw_isolation } command = { type = alliance which = ALS }
+		trigger = { flag = usa_cw_intervention } command = { type = alliance which = USA }
+		command = { type = relation which = ALS value = 10 }
+	}
+
+	action = {
+		ai_chance = 40
+		name = "Refuse."
+		command = { type = relation which = ALS value = -10 }
+	}
+}
+
+### Middle Eastern nations refuse UN alliance
+
+event = {
+	id = 999561
+	random = no
+	country = USA
+
+	trigger = {
+		event = 999558 # Mobilzing the Middle East
+		OR = {
+			NOT = {
+				OR = {
+					AND = {
+						alliance = { country = USA country = SYR }
+						alliance = { country = USA country = IRQ }
+					}
+					AND = {
+						alliance = { country = ALS country = SYR }
+						alliance = { country = ALS country = IRQ }
+					}
+
+				}
+			}
+		}
+	}
+
+	name = "EVT_999561_NAME"
+	desc = "EVT_999561_DESC"
+	style = 2
+	picture = "nwo/iraq"
+	date = { day = 1 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 2020 }
+
+	action = {
+		trigger = {
+			NOT = { alliance = { country = USA country = SYR } }
+		}
+		ai_chance = 80
+
+		name = "Force them in - declare war."
+		command = { type = war which = SYR }
+		command = { type = dissent value = 5 }
+	}
+
+	action = {
+		trigger = {
+			NOT = { alliance = { country = USA country = IRQ } }
+		}
+		ai_chance = 80
+		name = "Force them in - declare war."
+		command = { type = war which = IRQ }
+		command = { type = dissent value = 5 }
+	}
+
+	action = {
+		ai_chance = 20
+		name = "Ignore the Middle East."
+		command = { }
+	}
+}

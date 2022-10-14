@@ -1,0 +1,777 @@
+#####################################
+# Axis Inter-operational Forces events
+# Pako
+#####################################
+
+#####################################################################################################################
+# Axis Forces
+#####################################################################################################################
+
+event = {
+	id = 779996
+	random = no
+	country = AXI
+
+	name = "Axis Intervention Corps"
+	desc = AXI_1948_DESC
+	style = 2
+	picture = "das_reich1"
+	
+   date = { day = 10 month = january year = 1948 }
+
+	action = {
+		name = "The First European Army"        					
+		command = { type = morale which = land value = 1 }		
+	}
+}
+
+event = {
+	id = 779997
+	country = GER
+	random = no
+	
+	name = "Military control over Axis forces"
+	desc = "Axis forces are under German OKW control"
+	style = 2	
+	picture = "das_reich1"
+	decision_picture = "das_reich1_dec"
+	
+	persistent = yes
+
+	decision = {
+		OR = {
+			NOT = {
+				military_control = { country = AXI }
+			}
+			war = { country = GER country = AXI } 		
+		}	
+	}
+
+	decision_trigger = {
+		OR = {
+			NOT = {
+				military_control = { country = AXI }
+			}
+			war = { country = GER country = AXI } 		
+		}			
+	}
+	
+	trigger = {
+		OR = {
+			NOT = {
+				military_control = { country = AXI }
+			}
+			war = { country = GER country = AXI } 		
+		}	
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1999 }
+
+	action = {
+		name = "Axis forces under German command"
+		command = { type = peace which = AXI }
+		command = { type = military_control which = GER where = AXI value = 1 }
+	}
+}
+
+
+#####################################################################################################################
+# Turkestan 
+#####################################################################################################################
+
+event = {
+	id = 779998
+	random = no
+	country = GER
+		
+	name = "Soviet-Turkestan war"
+	desc = "Mein Fuhrer, war has erupted in Central Asia where the Soviet troops have attacked to eliminate the Turkestan, a state sympathetic to the Axis cause. If the Soviet troops succeed in overtaking Turkestan, they will have gained a forward command post to supply and agitate pro-Soviet partisans in Asia. Considering the importance of the Turkestan to the Axis, the OKW has already put together a 5-division intervention corps of European Axis troops to support it against the Soviets. The OKW awaits your orders."
+	style = 2
+	picture = "0turkestan0"
+	decision_picture = "decision_asienkorps"
+
+	date = { day = 10 month = march year = 1948 } 
+	offset = 5
+	deathdate = { day = 29 month = december year = 2020 }
+
+	decision = {
+		war = { country = SOV country = UPE }		
+	}
+		
+	decision_trigger = {
+		war = { country = SOV country = UPE }		
+		NOT = {
+			atwar = AXI
+		}		
+	}
+	
+	trigger = {
+		war = { country = SOV country = UPE }		
+		NOT = {
+			atwar = AXI
+		}		
+	}
+
+	action = {
+		trigger = { ai = no }
+
+		name = "Deploy Axis troops to Turkestan and control their army."
+
+		command = { type = military_control which = GER where = UPE value = 1 }	
+		
+		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -500 }
+		command = { type = setflag which = AxiTurTotal }
+		
+		command = { type = trigger which = 779999 } # Activate Axis troops
+	}
+
+	action = {
+		ai_chance = 70
+		name = "Send supplies and deploy Axis troops to Far East."
+
+		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -500 }
+		command = { type = setflag which = AxiTurTotal }
+		
+		command = { type = trigger which = 779999 } # Activate Axis troops
+	}
+
+	action = {
+		ai_chance = 20
+		name = "Send supplies only."
+
+		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -500 }
+		
+		command = { type = setflag which = AxiTurLimited }
+	}
+
+	action = {
+		ai_chance = 10
+		name = "This is none of our concern."
+
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = sleepevent which = 780000}
+		command = { type = setflag which = AxiTurNo }
+	}
+}
+
+event = {
+	id = 779999
+	random = no
+	country = AXI
+
+	name = "Activate Turkestan Intervention Corps"
+	desc = "Activate Turkestan Intervention Corps to defend the Turkestan against the Soviets"
+	style = 2
+	picture = "0turkestan"
+
+	action = {
+		name = "Activate troops"
+		
+		command = { type = alliance which = UPE }
+		
+		command = { type = add_corps which = "Axis Panzer Divisions Turkestan" value = land where = 1103 } 		
+		command = { type = activate_division which = 17345 value = 30 where = 1103 when = 0 } 
+		
+		command = { type = add_corps which = "Axis PanzerGrenadier Divisions Turkestan" value = land where = 1103 } 				
+		command = { type = activate_division which = 17345 value = 31 where = 1103 when = 0 } 		
+		command = { type = activate_division which = 17345 value = 32 where = 1103 when = 0 } 		
+		
+		command = { type = add_corps which = "Axis Command Turkestan" value = land where = 1103 } 	
+		command = { type = activate_division which = 17345 value = 33 where = 1103 when = 0 } 				
+		command = { type = activate_division which = 17345 value = 34 where = 1103 when = 0 } 		
+	}
+}
+
+event = {
+	id = 780000
+	country = UPE
+
+	name = "German aid arrive"
+	desc = "German aid arrive"
+	picture = "0turkestan0"	
+	style = 2	
+	
+	trigger = {
+		OR = {
+			flag = AxiTurTotal
+			flag = AxiTurLimited
+		}
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "German Aid Arrive"
+		command = { type = domestic which = interventionism value = 1 }
+						
+		command = { type = supplies value = 500 }
+		command = { type = oilpool value = 500 }
+	}
+}
+
+event = {
+	id = 780001
+	country = GER
+
+	name = "Pull back from Turkestan"
+	desc = "Ever since the defeat of the Soviet Union in World War II, we have been covertly supporting Turkestani elements in the Soviet Union. However, Turkestani nationalism is bound to fail against the Soviet armies. Perhaps it'd be wise to pull back, before it's too late."
+	picture = "0turkestan0"
+	decision_picture = "decision_asienkorps"
+	style = 2	
+	
+	decision = {
+		OR = {
+			AND = {
+				war = { country = AXI country = SOV }
+				war = { country = UPE country = SOV }
+			}
+			NOT = {
+				exists = UPE
+			}						
+			AND = {
+				event = 90000439
+			}
+		}
+	}
+		
+	decision_trigger = {
+		OR = {
+			AND = {
+				war = { country = AXI country = SOV }
+				war = { country = UPE country = SOV }
+			}
+			NOT = {
+				exists = UPE
+			}
+			AND = {
+				event = 90000439
+			}
+		}
+	}
+	
+	trigger = {
+		OR = {
+			AND = {
+				control = { province = 1112 data = SOV } #Novokazalinsk
+				control = { province = 1108 data = SOV } #Chimkent
+				control = { province = 1109 data = SOV } #Dzambul
+			}
+			NOT = {
+				exists = UPE
+			}
+			AND = {
+				event = 90000439
+			}
+		}
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "Retreat!"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 780002 } 
+		
+		command = { type = manpowerpool value = 50 }
+		
+		command = { type = supplies value = 250 }
+		command = { type = oilpool value = 250 }
+		
+		command = { type = military_control which = GER where = UPE value = 0 } #if there are military_control
+	}
+}
+
+event = {
+	id = 780002
+	random = no
+	country = AXI
+
+    name = "Pull back from Turkestan"
+	desc = "Ever since the defeat of the Soviet Union in World War II, we have been covertly supporting Turkestani elements in the Soviet Union. However, Turkestani nationalism is bound to fail against the still formidable Soviets. Perhaps it'd be wise to pull back, before it's too late."
+	style = 2
+	picture = "0turkestan0"
+	
+	action = {
+		name = "Retreat!"
+		command = { type = peace which = SOV value = 1 }
+        command = { type = leave_alliance when = 1 }
+		
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+		command = { type = remove_division which = -1 }
+	}
+}
+
+#####################################################################################################################
+# Far Eastern Republic 
+#####################################################################################################################
+
+event = {
+	id = 780003
+	random = no
+	country = GER
+	
+	name = "EVT_600009_NAME"
+	desc = "EVT_600009_DESC"
+	style = 2
+	picture = "fatherland\rodzaevsky"
+	date = { day = 1 month = january year = 1949 } 
+	offset = 2
+	deathdate = { day = 29 month = december year = 2020 }
+
+	decision = {
+		war = { country = USA country = U57 }			
+		war = { country = USA country = AXI }
+		#NOT = {
+		#	atwar = AXI
+		#}	
+	}
+		
+	decision_trigger = {
+		war = { country = USA country = U57 }			
+		war = { country = USA country = AXI }
+		#NOT = {
+		#	atwar = AXI
+		#}
+	}
+	
+	trigger = {
+		war = { country = USA country = U57 }			
+		war = { country = USA country = AXI }
+		#NOT = {
+		#	atwar = AXI
+		#}
+	}
+
+	
+	action = {
+		trigger = { ai = no }
+
+		name = "Deploy Axis troops to Far East and control their army."
+
+		command = { type = military_control which = GER where = U57 value = 1 }	
+		
+		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -500 }
+		command = { type = setflag which = AxiFerTotal }
+		
+		command = { type = trigger which = 780004 } # Activate Axis troops
+	}
+
+	action = {
+		ai_chance = 70
+		name = "Send supplies and deploy Axis troops to Far East."
+
+		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -500 }
+		command = { type = setflag which = AxiFerTotal }
+		
+		command = { type = trigger which = 780004 } # Activate Axis troops
+	}
+
+	action = {
+		ai_chance = 20
+		name = "Send supplies only."
+
+		command = { type = supplies value = -500 }
+		command = { type = oilpool value = -500 }
+		
+		command = { type = setflag which = AxiFerLimited }
+	}
+
+	action = {
+		ai_chance = 10
+		name = "This is none of our concern."
+
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = sleepevent which = 780005}
+		command = { type = setflag which = AxiFerNo }
+	}
+}
+
+event = {
+	id = 780004
+	random = no
+	country = AXI
+
+	name = "EVT_600010_NAME"
+	desc = "EVT_600010_DESC"
+	style = 2
+	picture = "fatherland\rodzaevsky"
+
+	action = {
+		name = "Activate Far East Intervention Corps"
+		
+		command = { type = alliance which = U57 }
+		
+		command = { type = add_corps which = "1. Axis Garrison Divisions Far East" value = land where = 1189 } 		
+		command = { type = activate_division which = 17345 value = 66 where = 1189 when = 0 } 
+		command = { type = add_corps which = "2. Axis Garrison Divisions Far East" value = land where = 1185 } 		
+		command = { type = activate_division which = 17345 value = 67 where = 1185 when = 0 } 
+		command = { type = add_corps which = "Axis Panzer Divisions Far East" value = land where = 1191 } 				
+		command = { type = activate_division which = 17345 value = 68 where = 1191 when = 0 } #Vladivostok
+	}
+}
+
+event = {
+	id = 780005
+	country = U57
+
+	name = "German aid arrive"
+	desc = "German aid arrive"
+	picture = "0turkestan0"	
+	style = 2	
+	
+	trigger = {
+		OR = {
+			flag = AxiFerTotal
+			flag = AxiFerLimited
+		}
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "German Aid Arrive"
+		command = { type = domestic which = interventionism value = 1 }
+						
+		command = { type = supplies value = 500 }
+		command = { type = oilpool value = 500 }
+	}
+}
+
+
+event = {
+	id = 780006
+	country = GER
+
+	name = "Pull back from Far Eastern Republic"
+	desc = "Ever since the defeat of the Soviet Union in World War II, we have been covertly supporting Far Eastern elements in the Soviet Union. However, Far Eastern nationalism is bound to fail against the still formidable Soviets. Perhaps it'd be wise to pull back, before it's too late."
+	picture = "0turkestan0"
+	decision_picture = "decision_asienkorps"
+	style = 2	
+	
+	decision = {
+		war = { country = AXI country = USA }
+	}
+		
+	decision_trigger = {
+		war = { country = AXI country = USA }
+	}
+	
+	trigger = {
+		OR = {
+			AND = {
+				control = { province = 1192 data = SOV } #Semyonovka
+				control = { province = 1196 data = SOV } #Nikolsk
+			}
+			AND = {
+				control = { province = 1192 data = USA } #Semyonovka
+				control = { province = 1196 data = USA } #Nikolsk
+			}
+			AND = {
+				control = { province = 1192 data = ENG } #Semyonovka
+				control = { province = 1196 data = ENG } #Nikolsk
+			}			
+			NOT = {
+				exists = U57
+			}
+		}
+	}
+		
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "Retreat!"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 780007 } 
+		command = { type = manpowerpool value = 50 }
+		command = { type = supplies value = 5000 }
+		command = { type = oilpool value = 2500 }
+	}
+}
+
+event = {
+	id = 780007
+	random = no
+	country = AXI
+
+    name = "Pull back from Far Eastern"
+	desc = "Ever since the defeat of the Soviet Union in World War II, we have been covertly supporting Far Eastern elements in the Soviet Union. However, Far Eastern nationalism is bound to fail against the still formidable Soviets. Perhaps it'd be wise to pull back, before it's too late."
+	style = 2
+	picture = "0turkestan0"
+	
+	    action = {
+		name = "Retreat!"
+		command = { type = peace which = SOV value = 1 }
+		command = { type = peace which = USA value = 1 }		
+        command = { type = leave_alliance when = 1 }
+		
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+	}
+}
+
+
+########
+# Iraq #
+########
+
+event = {
+	id = 8218048
+	country = GER
+
+	name = "Iraq request assistance"
+	desc = "Prepare a contingence fou our new friend in Baghdad"
+	picture = "nwo\dome_of_the_rock"
+	style = 2
+
+	decision = {
+			event = 8218047 #uar file
+			NOT = {
+				exists = JOR
+				ispuppet = IRQ
+			}
+	}
+		
+	decision_trigger = {
+			event = 8218047 #uar file
+			NOT = {
+				exists = JOR
+				ispuppet = IRQ
+			}
+	}
+	
+			trigger = { #fa scattare l'evento
+			event = 8218047 #uar file
+			NOT = {
+				exists = JOR
+				ispuppet = IRQ
+			}
+			}
+	
+date = { day = 1 month = january year = 1954 } 
+offset = 2
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+trigger = { ai = no }
+name = "Deploy Axis troops to the Irak and control their army."
+command = { type = military_control which = GER where = IRQ value = 1 }
+command = { type = trigger which = 8218050 } # Activate Axis troops
+command = { type = supplies value = -400 }
+command = { type = oilpool value = -600 }
+}
+
+action = {
+ai_chance = 90
+name = "Deploy supplies and Axis troops to the Irak."
+command = { type = trigger which = 8218050 } # Activate Axis troops
+command = { type = supplies value = -400 }
+command = { type = oilpool value = -600 }
+}
+
+action = {
+ai_chance = 10
+name = "This is none of our concern."
+command = { type = domestic which = interventionism value = -1 }
+}
+
+}
+
+event = {
+id = 8218050
+random = no
+country = AXI
+
+name = "Send troops in Irak"
+desc = "Activate the Deutsche Iraki Corps"
+style = 2
+	picture = "nwo\dome_of_the_rock"
+
+action = {
+	name = "Activate troops."
+	command = { type = alliance which = IRQ }
+	command = { type = add_corps which = "1. Deutsche Irak Defense Unit" value = land where = 1034 }
+		command = { type = add_division which = "1. Uberwachungsdivision" value = infantry when = 15 where = artillery }
+		command = { type = add_division which = "2. Uberwachungsdivision" value = infantry when = 15 where = artillery }
+		command = { type = add_division which = "3. Uberwachungsdivision" value = infantry when = 15 where = artillery }
+	command = { type = add_corps which = "2. Deutsche Irak Defense Unit" value = infantry where = 1034 }
+	command = { type = add_division which = "3. Uberwachungsdivision" value = garrison when = 8 where = artillery }
+}
+}
+
+event = {
+	id = 8218051
+	country = GER
+
+	name = "Pull back from Irak"
+	desc = "Ever since the defeat of the Soviet Union in World War II, we have been covertly supporting Far Eastern elements in the Soviet Union. However, Far Eastern nationalism is bound to fail against the still formidable Soviets. Perhaps it'd be wise to pull back, before it's too late."
+	picture = "0turkestan0"
+	decision_picture = "decision_asienkorps"
+	style = 2	
+	
+	decision = {
+		OR = {	
+			war = { country = AXI country = SAU }
+			war = { country = AXI country = EGY }
+			war = { country = AXI country = PER }
+		}
+	}
+		
+	decision_trigger = {
+		OR = {	
+			war = { country = AXI country = SAU }
+			war = { country = AXI country = EGY }
+			war = { country = AXI country = PER }
+		}
+	}
+	
+	trigger = {
+		OR = {
+			OR = {
+					NOT = {
+						control = { province = 1032 data = IRQ } #Baghdad
+						control = { province = 1034 data = IRQ } #Basra
+					}
+			}	
+			NOT = {
+				exists = IRQ
+			}
+		}
+	}
+		
+	date = { day = 1 month = january year = 1948 }
+	offset = 5
+	deathdate = { day = 1 month = january year = 1964 }
+
+	action = {
+		name = "Retreat!"
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = trigger which = 8218052 } 
+		command = { type = manpowerpool value = 50 }
+		command = { type = supplies value = 5000 }
+		command = { type = oilpool value = 2500 }
+	}
+}
+
+event = {
+	id = 8218052
+	random = no
+	country = AXI
+
+    name = "Pull back from Irak"
+	desc = "Ever since the defeat of the Soviet Union in World War II, we have been covertly supporting Far Eastern elements in the Soviet Union. However, Far Eastern nationalism is bound to fail against the still formidable Soviets. Perhaps it'd be wise to pull back, before it's too late."
+	style = 2
+	picture = "0turkestan0"
+	
+	action = {
+		name = "Retreat!"		
+        command = { type = leave_alliance when = 1 }
+		
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+        command = { type = remove_division which = -1 }
+	}
+}
+
+########
+# Italy #
+########
+
+event = {
+	id = 8218053
+	country = GER
+
+	name = "RSI request assistance"
+	desc = "Prepare a contingence fou our new friend in Milan"
+	picture = "news_paper"
+	style = 2
+
+	decision = {
+			event = 90000718 #italy file
+	}
+		
+	decision_trigger = {
+			event = 90000718 #italy fi
+	}
+	
+			trigger = { #fa scattare l'evento
+				event = 90000718 #italy file
+				NOT = { 
+					atwar = AXI
+				}
+				
+			}
+	
+date = { day = 1 month = january year = 1949 } 
+offset = 2
+deathdate = { day = 29 month = december year = 2020 }
+
+action = {
+trigger = { ai = no }
+name = "Deploy Axis troops to Milan and control their army."
+command = { type = military_control which = GER where = RSI value = 1 }
+command = { type = trigger which = 8218054 } # Activate Axis troops
+command = { type = supplies value = -400 }
+command = { type = oilpool value = -600 }
+}
+
+action = {
+ai_chance = 90
+name = "Deploy supplies and Axis troops to the RSI."
+command = { type = trigger which = 8218054 } # Activate Axis troops
+command = { type = supplies value = -400 }
+command = { type = oilpool value = -600 }
+}
+
+action = {
+ai_chance = 10
+name = "This is none of our concern."
+command = { type = domestic which = interventionism value = -1 }
+}
+
+}
+
+event = {
+id = 8218054
+random = no
+country = AXI
+
+name = "Send troops in RSI"
+desc = "Activate the Deutsche Italien Corps"
+style = 2
+	picture = "nwo\dome_of_the_rock"
+
+action = {
+name = "Activate troops."
+command = { type = alliance which = RSI }
+command = { type = add_corps which = "1. Deutsche Italien Defense Unit" value = land where = 407 }
+	command = { type = add_division which = "1. Uberwachungsdivision" value = infantry when = 13 where = artillery }
+	command = { type = add_division which = "2. Uberwachungsdivision" value = infantry when = 13  }
+command = { type = add_corps which = "2. Deutsche Italien Defense Unit" value = infantry where = 407 }
+	command = { type = add_division which = "3. Uberwachungsdivision" value = garrison when = 6 where = artillery }
+command = { type = add_corps which = "3. Deutsche Italien Defense Unit" value = infantry where = 400 }
+	command = { type = add_division which = "4. Uberwachungsdivision" value = garrison when = 6 where = artillery }
+command = { type = add_corps which = "5. Deutsche Italien Defense Unit" value = land where = 402 }
+	command = { type = add_division which = "5. Uberwachungsdivision" value = infantry when = 12 where = artillery }
+	command = { type = add_division which = "6. Uberwachungsdivision" value = infantry when = 12  }
+}
+}

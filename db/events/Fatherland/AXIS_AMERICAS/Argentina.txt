@@ -1,0 +1,317 @@
+###################################
+#Argentina Axis Americas by RedZeppelin#
+###################################
+#8000819 - A Fascist Coup! (ARG)  
+#8000820 - Cesar's Speech (ARG)  
+#8000821 - Request German assistance (ARG)  
+#8000822 - The Germans Agreed! (ARG)  
+#8000823 - German Assistance (ARG)  
+#8000824 - German Assistance (ARG)  
+#8000825 - German Assistance (ARG)  
+#8000826 - The Platinean War (ARG) 
+###################################
+
+event = { 
+id = 8000819
+          random = no
+          country = ARG
+          
+          date = { day = 18 month = 2 year = 1952 }
+          offset = 5
+          deathdate = { day = 29 month = 9 year = 1953 }
+
+          trigger = { 
+         # NOT = { government = fascist }
+         exists = GER 
+          }
+          
+          name = "The Liberating Revolution!"
+          Desc = "The Argentine government has been overthrown today in a bloody coup which has seen the deaths of at least 10 government ministers and the toppling of the current government. The coup was head by one Carlos Alberto Pueyrredon and Cesar Armeghino as well as many other right-wing ministers upset with the former government whom wished to see a much stronger government in the wake of the German victory in Europe. The new leaders emerged on the balcony of the Casa Rosada." 
+          Picture = "fatherland\argentinecoup"
+          style = 2
+
+          action = { name = "What will this mean for Argentina?"
+		     command = { type = relation which = GER value = 50 }
+		     command = { type = relation which = USA value = -20 }
+                     command = { type = set_domestic which = democratic value = 1 }
+	             command = { type = set_domestic which = political_left value = 1 }
+		     command = { type = set_domestic which = free_market value = 1 }
+		     command = { type = set_domestic which = freedom value = 1 }	
+		     command = { type = headofstate which = 165023 } # Carlos Alberto Pueyrredon
+		     command = { type = headofgovernment which = 165036 } # Cesar Armeghino
+		     command = { type = foreignminister which = 165056 } # Hector Vernengo Lima
+		     command = { type = armamentminister which = 165080 } # Edelmiro Farrell
+		     command = { type = ministerofsecurity which = 165099 } # Tomas Alberto Le Breton
+		     command = { type = ministerofintelligence which = 165120 } # Felipe Urdapilleta
+		     command = { type = chiefofarmy which = 165151 } # Enrique Mosconi
+		     command = { type = chiefofnavy which = 165080 } # Pedro Pablo Ramirez
+		     command = { type = chiefofair which = 165173 } # Carlos Maurino
+	             command = { type = setflag which = argentine_coup }
+                   }
+}
+event = { 
+id = 8000820
+          random = no
+          country = ARG
+          
+          date = { day = 19 month = 2 year = 1952 }
+          offset = 10
+          deathdate = { day = 29 month = 2 year = 1953 }
+
+          trigger = { 
+					#government = fascist
+                      event = 8000819
+                    }
+          
+          name = "Cesar's Speech"
+          Desc = "The head of goverment Cesar, has just made a radio broadcast to the whole nation. In it he details about the struggles argentina has faced over the years of weak goverment and lax morals that have brought the country low, but now with the Liberating Revolution and the wise leadership of President Carlos Alberto Pueyrredon, a new age has come for Argentina, one that'll see us reclaim our lost glory!" 
+          Picture = "fatherland\cesarsspeech"
+          style = 2
+
+          action = { name = "A great speech" 
+		     command = { type = relation which = USA value = -40 }
+                     command = { type = set_domestic which = interventionism value = 9 }
+                     command = { type = set_domestic which = defense_lobby value = 10 }
+                     command = { type = addcore which = 2047 }
+                     command = { type = addcore which = 2051 }
+                     command = { type = addcore which = 2052 }
+                     command = { type = addcore which = 2058 }
+                     command = { type = addclaim which = 2022 }
+                     command = { type = addclaim which = 2023 }
+                     command = { type = addclaim which = 2032 }
+                     command = { type = addclaim which = 2031 }
+                     command = { type = addclaim which = 2030 }
+                     command = { type = addclaim which = 2043 }
+                     command = { type = addclaim which = 2057 }
+                   }
+}
+event = { 
+id = 8000821
+          random = no
+          country = ARG
+          
+          date = { day = 25 month = 2 year = 1952 }
+          offset = 5
+          deathdate = { day = 29 month = 0 year = 1953 }
+
+	  decision = { atwar = no }
+	  decision_trigger = { AND = {
+                               headofstate = 165023 # Carlos Alberto Pueyrredon
+                               government = fascist 
+                               flag = argentine_coup
+                             }
+                             }
+
+          trigger = { 
+          AND = { ai = yes
+                  government = fascist
+                  headofstate = 165023 # Carlos Alberto Pueyrredon
+          }
+          }
+
+          name = "Request German assistance"
+          Desc = "If Argentina is to become a great power, it must learn from those who have already succeded where others have failed, Germany. The new goverment requests that in order to spread the fascist message across the continent, it will military asistance." 
+          picture = "negotiaton"
+          decision_picture = "decision_negotiaton"
+          style = 2
+
+          action_a = { name = "We will request asistance"
+                     ai_chance = 95
+		     command = { type = relation which = GER value = 5 }
+		     command = { type = relation which = USA value = -80 }
+
+		     command = { type = trigger which = 8001822 }
+
+                   }
+          action_b = { name = "We have no desire to expand"
+                     ai_chance = 5
+		     command = { type = relation which = USA value = 50 }
+                   }
+}
+event = { 
+id = 8000822
+          random = no
+          country = ARG
+
+          date = { day = 25 month = 2 year = 1952 }
+          offset = 5
+          deathdate = { day = 29 month = 0 year = 1953 }
+
+          trigger = { event = 8000819 }
+          
+          name = "The Germans Agreed!"
+          Desc = "Our Fascist brothers in europe have agreed to asist us in our military build up that will allow us to recailm our rightfull lands!" 
+          Picture = "news_paper"
+          style = 2
+
+          action = { name = "The begining of a beautiful relationship" 
+		     command = { type = relation which = GER value = 10 }
+		     command = { type = trigger which = 8002019 }
+			 command = { type = setflag which = german_asistance }
+                   }
+}
+event = { 
+id = 8000823
+          random = no
+          country = ARG
+          
+          date = { day = 1 month = 6 year = 1952 }
+          offset = 10
+          deathdate = { day = 29 month = 6 year = 1952 }
+
+          trigger = { flag = german_asistance }
+          
+          name = "German Assistance"
+          Desc = "Part of our deal with the Germans is a periodic exchange of raw goods for military equipment. The most recent shipment has just arrived, and now is the time to pay up on our side of the bargin." 
+          Picture = "lend_lease"
+          style = 2
+
+          action = { name = "We'll put this to good use" 
+		     command = { type = relation which = GER value = 5 }
+                     command = { type = add_corps which = "Primer ejército ayuda alemana" value = land where = 2050 }
+		     command = { type = add_division which = "VI División de Montaña 'Villegas'" value = bergsjaeger when = 14 }
+		     command = { type = add_division which = "VIII División de Montaña 'Luzuriaga'" value = bergsjaeger when = 14 }
+		     command = { type = add_division which = "XII División de Montaña" value = bergsjaeger when = 14 }
+                     command = { trigger = { ai = yes } type = add_division which = "XII División de Montaña" value = bergsjaeger when = 14 }
+                   }
+}
+event = { 
+id = 8000824
+          random = no
+          country = ARG
+          
+          date = { day = 1 month = 6 year = 1953 }
+          offset = 10
+          deathdate = { day = 29 month = 6 year = 1954 }
+
+          trigger = { flag = german_asistance }
+          
+          name = "German Assistance"
+          Desc = "Part of our deal with the Germans is a periodic exchange of raw goods for military equipment. The most recent shipment has just arrived, and now is the time to pay up on our side of the bargin." 
+          Picture = "lend_lease"
+          style = 2
+
+          action = { name = "We'll put this to good use" 
+		     command = { type = relation which = GER value = 5 }
+                     command = { type = add_corps which = "Segundo ejército ayuda alemana" value = land where = 2050 }
+		     command = { type = add_division which = "I División Blindada 'Rodríguez'" value = armor when = 4 }
+		     command = { type = add_division which = "IV División de Infantería" value = infantry when = 14 }
+		     command = { type = add_division which = "V División de Infantería" value = infantry when = 14 }
+                     command = { trigger = { ai = yes } type = add_division which = "V División de Infantería" value = infantry when = 14 }
+                   }
+}
+event = { 
+id = 8000825
+          random = no
+          country = ARG
+          
+          date = { day = 1 month = 6 year = 1954 }
+          offset = 10
+          deathdate = { day = 29 month = 6 year = 1955 }
+
+          trigger = { flag = german_asistance }
+          
+          name = "German Assistance"
+          Desc = "Part of our deal with the Germans is a periodic exchange of raw goods for military equipment. The most recent shipment has just arrived, and now is the time to pay up on our side of the bargin." 
+          Picture = "lend_lease"
+          style = 2
+
+          action = { name = "We'll put this to good use" 
+		     command = { type = relation which = GER value = 5 }
+                     command = { type = add_corps which = "Tercer ejército ayuda alemana" value = land where = 2050 }
+		     command = { type = add_division which = "Infantería de Marina Nro. 1" value = marine when = 7 }
+		     command = { type = add_division which = "Infantería de Marina Nro. 2" value = marine when = 7 }
+		     command = { type = add_division which = "Infantería de Marina Nro. 3" value = marine when = 7 }
+                     command = { trigger = { ai = yes } type = add_division which = "V División de Infantería" value = marine when = 7 }
+                   }
+}
+event = { 
+id = 8000826
+          random = no
+          country = ARG
+        
+		save_date = yes
+		
+          date = { day = 29 month = 6 year = 1955 }
+          offset = 10
+          deathdate = { day = 5 month = 6 year = 1957 }
+
+	  decision = { atwar = no }
+	  decision_trigger = { AND = {
+                               headofstate = 165023 # Carlos Alberto Pueyrredon
+                               government = fascist 
+                               #flag = decision_negotiaton
+                             }
+                             }
+
+          trigger = { flag = german_asistance
+                      government = fascist
+	              exists = BRA
+                    }
+          
+          name = "The Platinean War"
+          Desc = "After over four years of military buildup the time has come for our goverment to finally acomplish what we set out to start from the very beginning, reclaiming our rightful territories. With the help of our allies the Germans, we've made huge strides in the expantion of our army and now that the UN is distracted by the Soviet invasion of China, we now have the perfect opportunity to attack." 
+          Picture = "lend_lease"
+          style = 2
+
+          action = { name = "It is time!" 
+		     command = { type = relation which = USA value = -40 }
+		     command = { type = war which = BRA }
+		     command = { type = war which = CHL }
+		     command = { type = war which = PAR }
+		     command = { type = war which = URU }
+                   }
+}
+
+####################################################################
+#  Establishment of Fascist Front in Argentina
+####################################################################
+
+event = {
+	id = 1000145
+	random = no
+	country = ARG
+	
+	date = { day = 01 month = october year = 1951 }
+	offset = 1
+	deathdate = { day = 03 month = october year = 1951 }
+	
+	name = "EVT_1000145_NAME"
+	desc = "EVT_1000145_DESC"
+	style = 2
+	picture = "argentinia"
+	action = {
+		name = "1000145a"
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+		command = { type = relation which = GER value = 20 }
+		command = { type = relation which = ITA value = 20 }
+	}
+}
+
+#########################################################################
+# Communist Party Outlawed in Argentina
+#########################################################################
+
+event = {
+	id = 1000449
+	random = no
+	country = ARG
+	trigger = { NOT = { war = { country = ARG } } }
+
+	date = { day = 09 month = november year = 1951 }
+	offset = 1
+	deathdate = { day = 11 month = november year = 1951 }
+	
+	name = "EVT_1000449_NAME"
+	desc = "EVT_1000449_DESC"
+	style = 2
+	picture = "argentinia_flag"
+	action = {
+		name = "1000449a"
+		ai_chance = 100
+		command = { type = relation which = SOV value = -20 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = domestic which = political_left value = -1 }
+	}
+}

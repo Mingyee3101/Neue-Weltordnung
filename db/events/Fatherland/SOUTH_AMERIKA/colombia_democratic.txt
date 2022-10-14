@@ -1,0 +1,340 @@
+##########################################################################################
+#COL_DEMOCRATICS events
+##########################################################################################
+
+#id = 278040 - country = COL - Economic Re-structuring
+#id = 278041 - country = COL - Economic Plans
+#id = 278042 - country = COL - Industrial Investmemts Pay Off
+#id = 278043 - country = COL - Defensive Countermeasures
+#id = 278044 - country = COL - Plantation Grants
+#id = 278045 - country = COL - Building Grants
+#id = 278046 - country = COL - The building grants have led to a new factory!
+#id = 278047 - country = COL - Coffee Boom
+#id = 278048 - country = COL - Coffee Exports
+
+
+event = {
+	id = 278040
+	random = no
+	country = COL
+	save_date = yes
+	style = 2
+
+	decision = {
+		flag = COL_DEMOCRATICS
+		money = 100
+		NOT = {
+			atwar = COL
+		}
+	}
+
+	decision_trigger = {
+		flag = COL_DEMOCRATICS
+		money = 100
+		NOT = {
+			atwar = COL
+		}
+	}
+
+	trigger = {
+		flag = COL_DEMOCRATICS
+		money = 100
+		NOT = {
+			atwar = COL
+		}
+	}
+
+	name = "Economic Re-structuring"
+	desc = "Much of our economy is weak and prone to foreign capital fluctuations, and it doesn't take an expert on international relations to know that we are going to have some major market issues in the next few years. It's high time we prepare for the worst, and to ensure we can take over the demand for good the warring states wont be able to supply"
+	picture = "ColombiaPesoOro"
+	decision_picture = "decision_invest_infrastructures"
+
+	date = { day = 0 month = june year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Let us begin the process."
+		ai_chance = 100
+		command = { type = money value = -100 }
+		command = { type = dissent value = -1 }
+		command = { type = setflag which = COL_ECO }
+		command = { type = setflag which = COL_LIB }
+	}
+}
+
+
+event = {
+id = 278041
+random = no
+country = COL
+save_date = yes
+style = 2
+
+trigger = {
+flag = COL_LIB
+OR = {
+flag = COL_CON
+}
+NOT = { 
+atwar = COL
+flag = COL_ARM
+flag = COL_SOC
+}
+}
+decision_trigger = {
+supplies = 100
+money = 60
+metal = 600
+rare_materials = 25
+}
+
+name = "Economic Plans"
+desc = "Our industrial renewal plan must continue if Colombia is to go forward. We can gather foreign and local capital for this most important endeavour. Ideally we will be able to have a new factory built quickly!"
+picture = "industry2"
+decision_picture = "decision_industry"
+
+date = { day = 0 month = august year = 1939 }
+offset = 30
+deathdate = { day = 29 month = december year = 1963 }
+
+action_a = {
+name = "Let us begin the process!"
+ai_chance = 70
+command = { type = money value = -300 }
+command = { type = metalpool value = -600 }
+command = { type = dissent value = -2 }
+command = { type = trigger which = 278042 when = 100 }
+}
+
+action_b = {
+name = "This is too expensive, let us save the money for other projects"
+ai_chance = 30
+command = { type = dissent value = 2 }
+command = { type = money value = 300 }
+command = { type = sleepevent which = 278042 }
+}
+}
+
+event = {
+id = 278042
+random = no
+country = COL
+style = 2
+
+
+name = "Industrial Investmemts Pay Off"
+desc = "The new factory has been built!"
+picture = "industry2"
+
+action = {
+name = "Más dificíl, mejor, más rápido, más fuerte"
+command = { type = dissent value = -1 }
+command = { type = construct which = ic where = 1756 value = 1 }
+}
+}
+
+event = {
+id = 278043
+random = no
+country = COL
+save_date = yes
+style = 2
+
+trigger = {
+flag = COL_LIB
+OR = {
+flag = COL_CON
+}
+NOT = { 
+atwar = COL
+flag = COL_ARM
+flag = COL_SOC
+}
+}
+
+name = "Defensive Countermeasures"
+desc = "We all hope our capital never falls under siege, but we can't be relying on hopes. Defensive Countermeasures must be in place in order to protect us from our enemies."
+picture = "fortification"
+
+date = { day = 10 month = january year = 1940 }
+offset = 30
+deathdate = { day = 29 month = december year = 1963 }
+
+action_a = {
+name = "Let us begin the process!"
+ai_chance = 70
+command = { type = money value = -100 }
+command = { type = metalpool value = -70 }
+command = { type = dissent value = -2 }
+command = { type = construct which = land_fort where = 1991 value = 2 }
+}
+
+action_b = {
+name = "This is too expensive, let us save the money for other projects"
+ai_chance = 30
+command = { type = dissent value = 2 }
+command = { type = money value = 100 }
+}
+}
+
+event = {
+id = 278044
+random = no
+country = COL
+save_date = yes
+style = 2
+
+trigger = {
+flag = COL_LIB
+OR = {
+flag = COL_CON
+}
+NOT = { 
+atwar = COL
+flag = COL_ARM
+flag = COL_SOC
+}
+}
+
+name = "Plantation Grants"
+desc = "We all hope our capital never falls under siege, but we can't be relying on hopes. Defensive Countermeasures must be in place in order to protect us from our enemies."
+picture = "fortification"
+
+date = { day = 0 month = august year = 1939 }
+offset = 30
+deathdate = { day = 29 month = december year = 1963 }
+
+action_a = {
+name = "The capital must never fall!"
+ai_chance = 70
+command = { type = money value = 200 }
+command = { type = dissent value = -2 }
+command = { type = gain_tech which = 5040 }
+}
+}
+
+event = {
+id = 278045
+random = no
+country = COL
+save_date = yes
+style = 2
+
+trigger = {
+flag = COL_LIB
+OR = {
+flag = COL_CON
+}
+NOT = { 
+atwar = COL
+flag = COL_ARM
+flag = COL_SOC
+}
+}
+decision_trigger = {
+supplies = 100
+money = 60
+metal = 600
+rare_materials = 25
+}
+
+name = "Building Grants"
+desc = "We will grant permission for interested parties to build industries for Colombia in state owned land, as so to ensure we have a competitive industrial capacity."
+picture = "industry2"
+decision_picture = "decision_industry"
+
+date = { day = 24 month = may year = 1940 }
+offset = 30
+deathdate = { day = 29 month = december year = 1963 }
+
+action_a = {
+name = "Let us begin the process!"
+ai_chance = 70
+command = { type = money value = -200 }
+command = { type = metalpool value = -300 }
+command = { type = dissent value = -1 }
+command = { type = trigger which = 278046 when = 100 }
+}
+
+action_b = {
+name = "This is too expensive, let us save the money for other projects"
+ai_chance = 30
+command = { type = dissent value = 2 }
+command = { type = money value = 50 }
+command = { type = sleepevent which = 278046 }
+}
+}
+
+event = {
+id = 278046
+random = no
+country = COL
+style = 2
+
+
+name = "The building grants have led to a new factory!"
+desc = "The new factory has been built!"
+picture = "industry2"
+
+action = {
+name = "Más dificíl, mejor, más rápido, más fuerte"
+command = { type = dissent value = -1 }
+command = { type = construct which = ic where = 2009 value = 1 }
+}
+}
+
+event = {
+	id = 278047
+	random = no
+	country = COL
+	style = 2
+
+	trigger = {
+		flag = COL_ECO
+	}
+
+	date = { day = 11 month = april year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "Coffee Boom"
+	desc = "With the current chaos in Brazil, one nation rules the coffee market alone and supreme: Colombia. No other nations in Latin America can beat us in quality or quantity, nor can they ever hope to! Let us take steps to ensure such wealth reaches state coffers..."
+	picture = "Coffee"
+
+	action_a = {
+		name = "The beans must flow..."
+		command = { type = domestic which = free_market value = 2 }
+		command = { type = dissent value = -2 } #coffee is love, coffee is life.
+		command = { type = money value = 500 }
+	}
+}
+
+event = {
+	id = 278048
+	random = no
+	country = COL
+	style = 2
+
+	trigger = {
+		flag = COL_ECO
+		event = 278047
+	}
+
+	date = { day = 11 month = may year = 1949 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "Coffee Exports"
+	desc = "The demand for coffee is as high as it ever us, in such nervous times, everyone should should drink some coffee, correct? Anyways, our exports are expanding at rapid pace, and our economy is benefiting from it. So are our buyers, who get to wake up, have lunch and dinner with, and go to bed with a nice cup of Colombian coffee."
+	picture = "Coffee"
+
+
+	action_a = {
+		name = "The beans must flow..."
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = dissent value = -2 } #coffee is love, coffee is life.
+		command = { type = money value = 700 }
+		command = { type = industrial_modifier which = total value = 1 }
+	}
+}

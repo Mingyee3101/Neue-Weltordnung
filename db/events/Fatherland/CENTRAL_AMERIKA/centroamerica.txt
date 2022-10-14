@@ -1,0 +1,338 @@
+#Tegucigalpa agreement chain
+
+# 170700 -
+# Mexican Revo echos (GUA,HON,NIC,COS,PAN,CUB,SAL)
+# Tegucigalpa agreement (NIC,HON,COS)
+# Socialist Coup SAL
+# Centroamerica - Fascist Nation
+# War Centroamerica - El Salvador
+# War Centroamerica - Guatemala ?
+# War Centroamerica - Panama ?
+# Revolts in Belize City
+
+#############################################
+###### Revolution in Mexico  
+#############################################
+
+event = {
+        id = 170700
+        random = no
+		tag = { GUA HON NIC COS PAN CUB SAL }
+		persistent = yes
+		save_date = yes
+		
+        trigger = {
+        	#event = 170004
+			event = { id = 170004 days = 2 } #Mexican Civil War
+			NOT = { local_flag = echomex }	
+        }
+ 
+        name = "Revolution in Mexico"
+        desc = "In Mexico Communist lead a revolt versus the Central Ggovernment. It's really dangerous for us."
+        style = 2
+        picture = "news_paper"
+ 
+        date = { day = 10 month = september year = 1956 }
+        offset = 10
+        deathdate = { day = 1 month = january year = 1999 }
+ 
+        action = {
+                name = "Damn"
+                command = { type = dissent value = 3 }
+				command = { type = local_setflag which = echomex }
+                command = { type = domestic which = freedom value = 1 }				
+        }
+
+}
+
+#############################################
+######  Tegucigalpa conference
+#############################################
+
+event = {
+        id = 170701
+        random = no
+		tag = { NIC COS HON }        
+		persistent = yes
+		
+		trigger = {
+			#event = 170004
+			event = { id = 170004 days = 10 }
+			NOT = { local_flag = tegagr }			
+        }
+ 
+        name = "Tegucigalpa conference"
+        desc = "After the events in Mexico, Nicaragua, Honduras and Costarica government take an emergency council in Tegucigalpa."
+        style = 2
+        picture = "news_paper"
+ 
+        date = { day = 1 month = november year = 1956 }
+        offset = 1
+        deathdate = { day = 1 month = january year = 1999 }
+ 
+        action = {
+                name = "Reach an agreement"
+                command = { type = alliance which = HON }
+                command = { type = relation which = U07 value = -200 }
+				command = { type = local_setflag which = tegagr }
+        }
+
+}
+
+#############################################
+######  # Socialist coup in SanSalvador
+#############################################
+
+event = {
+        id = 170702
+        random = no
+        country = SAL
+		
+        trigger = {
+			event = { id = 170004 days = 15 }
+        }
+ 
+        name = "Communist coup"
+        desc = "After the revolution in Mexico, also in SanSalvador a left wing radicals coup take over"
+        style = 2
+        picture = "news_paper"
+ 
+        date = { day = 1 month = december year = 1956 }
+        offset = 1
+        deathdate = { day = 1 month = january year = 1999 }
+ 
+        action = {
+			name = "W la Revolucion!"
+			command = { type = set_domestic which = democratic value = 1 }
+			command = { type = set_domestic which = political_left value = 10 }        
+			command = { type = set_domestic which = free_market value = 1 }        		
+			command = { type = set_domestic which = professional_army value = 10 }        		
+			command = { type = set_domestic which = defense_lobby value = 10 }        		
+			command = { type = set_domestic which = interventionism value = 10 }        	
+
+			command = { type = relation which = U07 value = 200 } #Revolutionary Mexico
+			command = { type = relation which = HON value = -100 }
+			command = { type = relation which = GUA value = -100 }
+			command = { type = relation which = COS value = -100 }
+			command = { type = relation which = NIC value = -100 }
+			command = { type = relation which = PAN value = -100 }
+			command = { type = relation which = CUB value = -100 }
+		}
+
+}
+
+#########################################################################
+#  Tegucigalpa conference
+#########################################################################
+
+event = {
+	id = 170703
+	random = no
+	country = HON
+
+	trigger = {
+			event = { id = 170004 days = 20 }
+    }
+
+        date = { day = 1 month = december year = 1956 }
+        offset = 1
+        deathdate = { day = 1 month = january year = 1999 }
+		
+	name = "Tegucigalpa conference : Central America Union is proposed"
+	desc = "An union between our countries is necessary to fight the Communism Threat"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		ai_chance = 80
+		name = "Create the Union"
+		command = { type = independence which = U78 value = 1 when = 1 }
+		command = { type = name where = U78 which = "Central American Union" } 
+	}
+	action = {
+		ai_chance = 20
+		name = "Maintain a militar alliance"
+		command = { type = sleepevent which = 170704 }
+	}
+
+}
+
+#########################################################################
+#  Tegucigalpa conference
+#########################################################################
+
+event = {
+	id = 170704
+	random = no
+	country = U78
+	save_date = yes
+
+	trigger = {
+			event = 170703
+    }
+	
+	name = "Tegucigalpa conference : Birth of Confederate States of Central America (CSCA)"
+	desc = "After the agreement of Tegucigalpa, we decide our alliance will be a Union"
+	style = 2
+	picture = "news_paper"
+
+        date = { day = 1 month = december year = 1956 }
+        offset = 10
+        deathdate = { day = 1 month = january year = 1999 }
+
+
+	action_a = {
+		name = "The Confederation is proclaimed!"
+		command = { type = independence which = U78 value = 1 when = 1 }
+		command = { type = name where = U78 which = "Confederate States of Central America (CSCA)" } 
+		
+		command = { type = inherit which = HON value = 1 }
+		command = { type = inherit which = COS value = 1 }
+		command = { type = inherit which = NIC value = 1 }
+		
+		command = { type = capital which = 2080 } #Managua
+		
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = set_domestic which = free_market value = 5 }
+		command = { type = set_domestic which = professional_army value = 7 }
+		command = { type = set_domestic which = defense_lobby value = 2 }
+		command = { type = set_domestic which = interventionism value = 2 }
+		
+		command = { type = set_relation which = SOV value = -50 }
+		command = { type = set_relation which = ENG value = -30 }
+		command = { type = set_relation which = ALS value = -50 }
+		command = { type = set_relation which = CAN value = -10 }
+		command = { type = set_relation which = USA value = 100 }
+		command = { type = set_relation which = FRA value = -20 }
+		command = { type = set_relation which = COL value = -20 }
+		command = { type = set_relation which = ITA value = 50 }
+		
+	}
+}
+
+
+#########################################################################
+#  Intervention in SanSalvador
+#########################################################################
+
+event = {
+	id = 170705
+	random = no
+	country = U78
+
+	trigger = {
+		event = { id = 170704 days = 30 }
+    }
+
+	date = { day = 1 month = december year = 1956 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+		
+	name = "Intervention in SanSalvador"
+	desc = "It's necessary destroy the Red Threat in ElSalvador, invade the country"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		ai_chance = 100
+		name = "Declare war"
+		command = { type = war which = SAL }		
+	}
+
+}
+
+#########################################################################
+#  Guatemala enter in the Confederation
+#########################################################################
+
+event = {
+	id = 170706
+	random = no
+	country = GUA
+
+	trigger = {
+		exists = U78
+		event = 170705
+		#NOT = {
+		#	exists = SAL
+		#}		
+    }
+
+	date = { day = 1 month = december year = 1956 }
+	offset = 10
+	deathdate = { day = 1 month = january year = 1999 }
+		
+	name = "Guatemala and CSCA"
+	desc = "What will do ?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		ai_chance = 30
+		name = "The Guatemala agreement - Alliance"
+		command = { type = alliance which = U78 }		
+	}
+
+	action = {
+		ai_chance = 40
+		name = "The Guatemala agreement - Enter in the CSCA"		
+		command = { type = trigger which = 170707 }		
+	}
+
+	action = {
+		ai_chance = 30
+		name = "Stay out"
+		command = { type = dissent value = 10 }		
+	}
+
+}
+
+event = {
+	id = 170707
+	random = no
+	country = U78
+		
+	name = "Guatemala and CSCA"
+	desc = "What will do ?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		ai_chance = 30
+		name = "Welcome Guatemal to Confederation !"
+		command = { type = inherit which = GUA }		
+	}
+}
+
+
+#########################################################################
+#  Confederation enter in APTO
+#########################################################################
+
+event = {
+	id = 170708
+	random = no
+	country = U78
+
+	trigger = {
+		event = 170706
+    }
+
+	date = { day = 1 month = december year = 1956 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1999 }
+		
+	name = "Stay in the APTO"
+	desc = "What will do ?"
+	style = 2
+	picture = "news_paper"
+
+	action = {
+		ai_chance = 100
+		name = "The APTO Alliance"
+		command = { type = alliance which = USA }		
+	}
+
+}

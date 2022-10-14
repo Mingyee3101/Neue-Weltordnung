@@ -24,7 +24,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1939 }
+	date = { day = 1 month = january year = 1939 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1941 }
 
@@ -73,7 +73,7 @@ event = {
 	name = "EVT_110_NAME"
 	desc = "EVT_110_DESC"
 	
-	date = { day = 0 month = january year = 1942 }
+	date = { day = 1 month = january year = 1942 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1943 }
 
@@ -116,7 +116,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -136,7 +135,7 @@ event = {
 	name = "EVT_120_NAME"
 	desc = "EVT_120_DESC"
 	
-	date = { day = 0 month = january year = 1938 }
+	date = { day = 1 month = january year = 1938 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1941 }
 
@@ -177,7 +176,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -198,7 +196,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1942 }
+	date = { day = 1 month = january year = 1942 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1943 }
 
@@ -239,7 +237,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -260,7 +257,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1944 }
 
@@ -301,7 +298,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -322,7 +318,7 @@ event = {
 	desc = "EVT_119_DESC"
 	
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 1 month = january year = 1945 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -368,7 +364,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -389,7 +384,7 @@ event = {
 	desc = "EVT_112_DESC"
 	
 
-	date = { day = 0 month = january year = 1936 }
+	date = { day = 1 month = january year = 1936 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1936 }
 
@@ -430,7 +425,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -451,7 +445,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1937 }
+	date = { day = 1 month = january year = 1937 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1938 }
 
@@ -492,7 +486,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -513,7 +506,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1939 }
+	date = { day = 1 month = january year = 1939 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1939 }
 
@@ -557,7 +550,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -578,7 +570,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1940 }
+	date = { day = 1 month = january year = 1940 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1943 }
 
@@ -622,7 +614,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -643,7 +634,7 @@ event = {
 	desc = "EVT_109_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1946 }
 
@@ -684,7 +675,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -705,7 +695,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1947 }
+	date = { day = 1 month = january year = 1947 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -757,11 +747,11 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 1 month = january year = 1945 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
-	action = {
+	action_a = {
 		ai_chance = 75
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 5 }
@@ -778,7 +768,7 @@ event = {
 		command = { type = chiefofair which = 160120 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 25
 		name = "EVT_1_ACTA"
 		command = { }
@@ -797,7 +787,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		atwar = no
 		OR = {
 			dissent = 6
@@ -819,7 +808,7 @@ event = {
 	desc = "EVT_119_DESC"
 	
 
-	date = { day = 0 month = january year = 1947 }
+	date = { day = 1 month = january year = 1947 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -862,7 +851,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		headofstate = 85001
 		OR = {
 			dissent = 8
@@ -884,7 +872,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1936 }
+	date = { day = 1 month = january year = 1936 }
 	offset = 20
 	deathdate = { day = 29 month = november year = 1936 }
 
@@ -925,7 +913,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -945,7 +932,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = december year = 1936 }
+	date = { day = 1 month = december year = 1936 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1937 }
 
@@ -997,7 +984,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1939 }
+	date = { day = 1 month = january year = 1939 }
 	offset = 80
 	deathdate = { day = 29 month = december year = 1943 }
 
@@ -1041,7 +1028,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -1062,7 +1048,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1937 }
+	date = { day = 1 month = january year = 1937 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1939 }
 
@@ -1103,7 +1089,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -1124,7 +1109,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1940 }
+	date = { day = 1 month = january year = 1940 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1943 }
 
@@ -1165,7 +1150,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -1186,7 +1170,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1944 }
 
@@ -1227,7 +1211,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -1248,7 +1231,7 @@ event = {
 	desc = "EVT_119_DESC"
 	
 
-	date = { day = 0 month = january year = 1947 }
+	date = { day = 1 month = january year = 1947 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -1300,11 +1283,11 @@ event = {
 	desc = "EVT_109_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
-	action = {
+	action_a = {
 		ai_chance = 90
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 1 }
@@ -1321,7 +1304,7 @@ event = {
 		command = { type = chiefofair which = 130071 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 10
 		name = "EVT_1_ACTA"
 		command = { }
@@ -1341,7 +1324,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -1362,7 +1344,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1936 }
+	date = { day = 1 month = january year = 1936 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1940 }
 
@@ -1411,11 +1393,11 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1941 }
+	date = { day = 1 month = january year = 1941 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1943 }
 
-	action = {
+	action_a = {
 		ai_chance = 90
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 7 }
@@ -1432,7 +1414,7 @@ event = {
 		command = { type = chiefofair which = 90150 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 10
 		name = "EVT_1_ACTA"
 		command = { }
@@ -1457,11 +1439,11 @@ event = {
 	desc = "EVT_112_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1944 }
 
-	action = {
+	action_a = {
 		ai_chance = 90
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 7 }
@@ -1478,7 +1460,7 @@ event = {
 		command = { type = chiefofair which = 90148 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 10
 		name = "EVT_1_ACTA"
 		command = { }
@@ -1503,11 +1485,11 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 1 month = january year = 1945 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
-	action = {
+	action_a = {
 		ai_chance = 90
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 5 }
@@ -1524,7 +1506,7 @@ event = {
 		command = { type = chiefofair which = 90151 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 10 
 		name = "EVT_1_ACTA"
 		command = { }
@@ -1543,7 +1525,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -1564,7 +1545,7 @@ event = {
 	desc = "EVT_119_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -1607,7 +1588,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -1628,7 +1608,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1946 }
+	date = { day = 1 month = january year = 1946 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -1681,7 +1661,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = august year = 1944 }
+	date = { day = 1 month = august year = 1944 }
 	offset = 10
 	deathdate = { day = 29 month = october year = 1944 }
 
@@ -1733,7 +1713,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = october year = 1944 }
+	date = { day = 1 month = november year = 1944 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1946 }
 
@@ -1746,7 +1726,7 @@ event = {
 		command = { type = headofgovernment which = 105021 }
 		command = { type = foreignminister which = 105036 }
 		command = { type = armamentminister which = 105050 }
-		command = { type = ministerofsecurity which = 105064 } #Gábor Vajna
+		command = { type = ministerofsecurity which = 105063 }
 		command = { type = ministerofintelligence which = 105081 }
 		command = { type = chiefofstaff which = 105094 }
 		command = { type = chiefofarmy which = 105102 }
@@ -1786,7 +1766,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1943 }
+	date = { day = 1 month = january year = 1943 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1943 }
 
@@ -1829,7 +1809,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		headofgovernment = 50002
 		OR = {
 			dissent = 8
@@ -1851,7 +1830,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = march year = 1936 }
+	date = { day = 1 month = march year = 1936 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1936 }
 
@@ -1862,9 +1841,9 @@ event = {
 		command = { type = set_domestic which = political_left value = 1 }
 		command = { type = headofstate which = 50001 }
 		command = { type = headofgovernment which = 50020 }
-		command = { type = foreignminister which = 50003 } # Hirota Koki
-		command = { type = armamentminister which = 50332 } # Baba Eiichi
-		command = { type = ministerofsecurity which = 50086 } # Ushio Shigenosuke
+		command = { type = foreignminister which = 50042 }
+		command = { type = armamentminister which = 50072 }
+		command = { type = ministerofsecurity which = 50095 }
 		command = { type = ministerofintelligence which = 50006 }
 		command = { type = chiefofstaff which = 50133 }
 		command = { type = chiefofarmy which = 50142 }
@@ -1892,7 +1871,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		headofgovernment = 50020
 		OR = {
 			dissent = 8
@@ -1914,7 +1892,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1937 }
+	date = { day = 1 month = january year = 1937 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1938 }
 
@@ -1926,8 +1904,8 @@ event = {
 		command = { type = headofstate which = 50001 }
 		command = { type = headofgovernment which = 50013 }
 		command = { type = foreignminister which = 50039 }
-		command = { type = armamentminister which = 50333 } # Toyotaro Yuki
-		command = { type = ministerofsecurity which = 50081 } # Kawarada Kakichi
+		command = { type = armamentminister which = 50062 }
+		command = { type = ministerofsecurity which = 50087 }
 		command = { type = ministerofintelligence which = 50115 }
 		command = { type = chiefofstaff which = 50007 }
 		command = { type = chiefofarmy which = 50008 }
@@ -1955,7 +1933,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		incabinet = 50013
 		OR = {
 			dissent = 8
@@ -1977,7 +1954,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1939 }
+	date = { day = 1 month = january year = 1939 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1940 }
 
@@ -1989,8 +1966,8 @@ event = {
 		command = { type = headofstate which = 50001 }
 		command = { type = headofgovernment which = 50021 }
 		command = { type = foreignminister which = 50042 }
-		command = { type = armamentminister which = 50334 } # Ishiwata Shotaro
-		command = { type = ministerofsecurity which = 50089 } # Kido Koichi
+		command = { type = armamentminister which = 50072 }
+		command = { type = ministerofsecurity which = 50098 }
 		command = { type = ministerofintelligence which = 50122 }
 		command = { type = chiefofstaff which = 50133 }
 		command = { type = chiefofarmy which = 50142 }
@@ -2017,7 +1994,6 @@ event = {
 	picture = "news_paper"
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		random = 5
 		war = { country = GER country = ENG }
 		}
@@ -2026,11 +2002,11 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1941 }
+	date = { day = 1 month = january year = 1941 }
 	offset = 20
 	deathdate = { day = 29 month = october year = 1941 }
 
-	action = {
+	action_a = {
 		name = ACTION_NAME_OK
 		ai_chance = 90
 		command = { type = set_domestic which = democratic value = 1 }
@@ -2038,8 +2014,8 @@ event = {
 		command = { type = headofstate which = 50001 }
 		command = { type = headofgovernment which = 50022 }
 		command = { type = foreignminister which = 50048 }
-		command = { type = armamentminister which = 50074 } # Tojo Hideki
-		command = { type = ministerofsecurity which = 50103 }
+		command = { type = armamentminister which = 50073 }
+		command = { type = ministerofsecurity which = 50102 }
 		command = { type = ministerofintelligence which = 50123 }
 		command = { type = chiefofstaff which = 50134 }
 		command = { type = chiefofarmy which = 50143 }
@@ -2048,7 +2024,7 @@ event = {
 		command = { type = dissent value = -1 }
 		}
 
-	action = {
+	action_b = {
 		name = "EVT_1_ACTA"
 		ai_chance = 10
 		command = { type = dissent value = 5 }
@@ -2074,11 +2050,11 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1944 }
 
-	action = {
+	action_a = {
 		ai_chance = 90
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 2 }
@@ -2086,7 +2062,7 @@ event = {
 		command = { type = headofstate which = 50001 }
 		command = { type = headofgovernment which = 50023 }
 		command = { type = foreignminister which = 50050 }
-		command = { type = armamentminister which = 50066 } #Fujiwara Ginjiro
+		command = { type = armamentminister which = 50073 }
 		command = { type = ministerofsecurity which = 50105 }
 		command = { type = ministerofintelligence which = 50124 }
 		command = { type = chiefofstaff which = 50135 }
@@ -2095,7 +2071,7 @@ event = {
 		command = { type = chiefofair which = 50164 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 10
 		name = "EVT_1_ACTA"
 		command = { }
@@ -2124,11 +2100,11 @@ event = {
 	desc = "EVT_109_DESC"
 	
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 1 month = january year = 1945 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
-	action = {
+	action_a = {
 		ai_chance = 75
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 1 }
@@ -2145,7 +2121,7 @@ event = {
 		command = { type = chiefofair which = 135098 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 25
 		name = "EVT_1_ACTA"
 		command = { }
@@ -2174,11 +2150,11 @@ event = {
 	desc = "EVT_109_DESC"
 	
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 1 month = january year = 1945 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
-	action = {
+	action_a = {
 		ai_chance = 75
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 1 }
@@ -2195,7 +2171,7 @@ event = {
 		command = { type = chiefofair which = 140118 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 25
 		name = "EVT_1_ACTA"
 		command = { }
@@ -2224,7 +2200,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1941 }
+	date = { day = 1 month = january year = 1941 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1944 }
 
@@ -2276,7 +2252,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1937 }
+	date = { day = 1 month = january year = 1937 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1939 }
 
@@ -2327,7 +2303,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1940 }
+	date = { day = 1 month = january year = 1940 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -2370,7 +2346,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -2391,7 +2366,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1936 }
+	date = { day = 1 month = january year = 1936 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1936 }
 
@@ -2432,7 +2407,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -2453,7 +2427,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1937 }
+	date = { day = 1 month = january year = 1937 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1946 }
 
@@ -2494,7 +2468,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -2515,7 +2488,7 @@ event = {
 	desc = "EVT_112_DESC"
 	
 
-	date = { day = 0 month = january year = 1947 }
+	date = { day = 1 month = january year = 1947 }
 	offset = 20
 	deathdate = { day = 29 month = july year = 1947 }
 
@@ -2556,7 +2529,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -2577,7 +2549,7 @@ event = {
 	desc = "EVT_112_DESC"
 	
 
-	date = { day = 0 month = august year = 1947 }
+	date = { day = 1 month = august year = 1947 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -2620,7 +2592,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -2641,7 +2612,7 @@ event = {
 	desc = "EVT_119_DESC"
 	
 
-	date = { day = 0 month = august year = 1936 }
+	date = { day = 1 month = august year = 1936 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1939 }
 
@@ -2682,7 +2653,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -2703,7 +2673,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = august year = 1940 }
+	date = { day = 1 month = august year = 1940 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1940 }
 
@@ -2744,7 +2714,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -2765,7 +2734,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = august year = 1941 }
+	date = { day = 1 month = august year = 1941 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1944 }
 
@@ -2804,7 +2773,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -2825,7 +2793,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = august year = 1945 }
+	date = { day = 1 month = august year = 1945 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1945 }
 
@@ -2866,7 +2834,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -2887,7 +2854,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = august year = 1946 }
+	date = { day = 1 month = august year = 1946 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -2930,7 +2897,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -2951,7 +2917,7 @@ event = {
 	desc = "EVT_119_DESC"
 	
 
-	date = { day = 0 month = january year = 1936 }
+	date = { day = 1 month = january year = 1936 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1936 }
 
@@ -2991,7 +2957,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -3012,7 +2977,7 @@ event = {
 	desc = "EVT_112_DESC"
 	
 
-	date = { day = 0 month = january year = 1937 }
+	date = { day = 1 month = january year = 1937 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1938 }
 
@@ -3052,7 +3017,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -3073,7 +3037,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1939 }
+	date = { day = 1 month = january year = 1939 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1939 }
 
@@ -3113,7 +3077,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -3134,7 +3097,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1940 }
+	date = { day = 1 month = january year = 1940 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -3178,7 +3141,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -3199,7 +3161,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1936 }
+	date = { day = 1 month = january year = 1936 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1938 }
 
@@ -3240,7 +3202,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -3261,7 +3222,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1939 }
+	date = { day = 1 month = january year = 1939 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1944 }
 
@@ -3302,7 +3263,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -3323,7 +3283,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 1 month = january year = 1945 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -3365,7 +3325,6 @@ event = {
 	picture = "news_paper"
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		random = 5
 		}
 
@@ -3373,11 +3332,11 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1936 }
+	date = { day = 1 month = january year = 1936 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1938 }
 
-	action = {
+	action_a = {
 		ai_chance = 85
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 6 }
@@ -3394,7 +3353,7 @@ event = {
 		command = { type = chiefofair which = 60110 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 15
 		name = "ACTION_NAME_NO"
 		command = { }
@@ -3419,11 +3378,11 @@ event = {
 	desc = "EVT_112_DESC"
 	
 
-	date = { day = 0 month = january year = 1939 }
+	date = { day = 1 month = january year = 1939 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1944 }
 
-	action = {
+	action_a = {
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 7 }
 		command = { type = set_domestic which = political_left value = 3 }
@@ -3453,7 +3412,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -3474,7 +3432,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1938 }
+	date = { day = 1 month = january year = 1938 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1938 }
 
@@ -3486,8 +3444,8 @@ event = {
 		command = { type = headofstate which = 110012 }		# Carol II 36 PA
 		command = { type = headofgovernment which = 110020 }	# Miron Cristea 38 PA
 		command = { type = foreignminister which = 110035 }	# Gheorghe Tatarescu 38 PA 
-		command = { type = armamentminister which = 110209 }	# Mircea Cancicov 36 SC
-		command = { type = ministerofsecurity which = 110064 }	# Armand Calinescu 37 SL
+		command = { type = armamentminister which = 110053 }	# Caius Brediceanu 38 PA
+		command = { type = ministerofsecurity which = 110065 }	# Cesare Vaida-Voievod 38 PA
 		command = { type = ministerofintelligence which = 110079 } # Nicolae Stoenescu 38 PA
 		command = { type = chiefofstaff which = 110088 }		# Florea Tenescu 38 PA
 		command = { type = chiefofarmy which = 110100 }		# Gheorghe Mihail 38 PA
@@ -3517,7 +3475,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -3538,20 +3495,20 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1939 }
+	date = { day = 1 month = january year = 1939 }
 	offset = 20
 	deathdate = { day = 29 month = july year = 1939 }
 
 	action = {
 		name = ACTION_NAME_OK
 		ai_chance = 99
-		command = { type = set_domestic which = democratic value = 5 }      # Sets government to
-		command = { type = set_domestic which = political_left value = 3 }  # Paternal Autocrat
+		command = { type = set_domestic which = democratic value = 7 } 		# Sets government to
+		command = { type = set_domestic which = political_left value = 6 }	# Social Liberal
 		command = { type = headofstate which = 110011 }		# Carol II 36 SL
 		command = { type = headofgovernment which = 110021 }	# Armand Calinescu 39 SL
 		command = { type = foreignminister which = 110037 }	# Grigore Gafencu 39 SL
-		command = { type = armamentminister which = 110211 }	# Milita Constantinescu 39 SC
-		command = { type = ministerofsecurity which = 110064 }	# Armand Calinescu 37 SL
+		command = { type = armamentminister which = 110054 }	# Constantin Bratianu 39 SL
+		command = { type = ministerofsecurity which = 110066 }	# Ion Mihalache 39 SL
 		command = { type = ministerofintelligence which = 110080 } # Nicolas Titulesco 39 SL
 		command = { type = chiefofstaff which = 110089 }		# Ioan Ilcusu 39 SL
 		command = { type = chiefofarmy which = 110099 }		# Costin Ionascu 39 SL
@@ -3580,7 +3537,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -3601,20 +3557,20 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = november year = 1939 }
+	date = { day = 1 month = august year = 1939 }
 	offset = 20
-	deathdate = { day = 29 month = january year = 1940 }
+	deathdate = { day = 29 month = december year = 1939 }
 
 	action = {
 		name = ACTION_NAME_OK
 		ai_chance = 99
-		command = { type = set_domestic which = democratic value = 5 }		# Sets government to 
-		command = { type = set_domestic which = political_left value = 3 }	# Paternal Autocrat
-		command = { type = headofstate which = 110012 }		# Carol II 36 PA
+		command = { type = set_domestic which = democratic value = 6 }		# Sets government to 
+		command = { type = set_domestic which = political_left value = 3 }	# Social Conservative
+		command = { type = headofstate which = 110013 }		# Mihai I 39 SC
 		command = { type = headofgovernment which = 110002 }	# Gheorghe Tatarescu 36 SC
-		command = { type = foreignminister which = 110037 }	# Grigore Gafencu 39 SL	   
-		command = { type = armamentminister which = 110211 }	# Milita Constantinescu 39 SC
-		command = { type = ministerofsecurity which = 110212 }	# Mihail Ghelmegeanu 39 SC
+		command = { type = foreignminister which = 110039 }	# Constantin Argetoianu	39 SC		   
+		command = { type = armamentminister which = 110055 }	# Iuliu Maniu 39 SC Administrative Genius
+		command = { type = ministerofsecurity which = 110005 }	# Istrate Micescu 36 SC
 		command = { type = ministerofintelligence which = 110081 } # Gheorghe Savoia 39 SC
 		command = { type = chiefofstaff which = 110090 }		# Constantin Pantazi 39 SC
 		command = { type = chiefofarmy which = 110101 }		# Gheorghe Tatarescu 39 SC
@@ -3662,7 +3618,7 @@ event = {
 	offset = 1
 	deathdate = { day = 29 month = december year = 1944 }
 
-	action = {
+	action_a = {
 		name = ACTION_NAME_OK
 		ai_chance = 90
 		command = { type = set_domestic which = democratic value = 3 }		# Sets government to 
@@ -3671,7 +3627,7 @@ event = {
 		command = { type = headofgovernment which = 110025 }	# Ion Antonescu 40 FA
 		command = { type = foreignminister which = 110041 }	# Mihail Sturdza 40 FA
 		command = { type = armamentminister which = 110057 }	# Gheorghe Potopeanu 40 FA
-		command = { type = ministerofsecurity which = 110214 }	# Constantin Petrovicescu 40 PA
+		command = { type = ministerofsecurity which = 110069 }	# Istrate Micescu 40 FA
 		command = { type = ministerofintelligence which = 110082 } # Iosif Iacobici 40 FA
 		command = { type = chiefofstaff which = 110091 }		# Ion Antonescu 40 FA
 		command = { type = chiefofarmy which = 110102 }		# Ilie Steflea 40 FA
@@ -3686,7 +3642,7 @@ event = {
 		command = { type = sleepminister which = 110019 }	# HOG Octavian Goga 38 SL
 		command = { type = sleepminister which = 110063 }	# HOG Corneliu Codreanu 36 NS	
 		}
-	action = {
+	action_b = {
 		name = "EVT_1_ACTA"
 		ai_chance = 10
 		command = { }
@@ -3713,20 +3669,20 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 20
-	deathdate = { day = 29 month = december year = 1944 }
+	deathdate = { day = 29 month = july year = 1944 }
 
-	action = {
+	action_a = {
 		ai_chance = 75
 		name = ACTION_NAME_OK	
 		command = { type = set_domestic which = democratic value = 3 }		# Sets government to	
-		command = { type = set_domestic which = political_left value = 4 }	# Paternal Autocrat
+		command = { type = set_domestic which = political_left value = 2 }	# Paternal Autocrat
 		command = { type = headofstate which = 110014 }		# Mihai I 39 PA
 		command = { type = headofgovernment which = 110026 }	# Constantin Sanatescu	44 PA
 		command = { type = foreignminister which = 110044 }	# Grigore Niculesco-Buzesti 44 PA
-		command = { type = armamentminister which = 110057 }	# Gheorghe Potopeanu 40 PA
-		command = { type = ministerofsecurity which = 110073 }	# Aurel Aldea 44 SC
+		command = { type = armamentminister which = 110059 }	# Nicolae Stoenescu 44 PA
+		command = { type = ministerofsecurity which = 110071 }	# Ion Boiteanu 44 PA
 		command = { type = ministerofintelligence which = 110079 } # Nicolae Stoenescu 38 PA
 		command = { type = chiefofstaff which = 110093 }		# Constantin Sanatescu 44 PA
 		command = { type = chiefofarmy which = 110103 }		# Constantin Sanatescu 44 PA
@@ -3737,7 +3693,7 @@ event = {
 		command = { type = sleepminister which = 110025 }	# HOG Ion Antonescu 40 FA
 
 		}
-	action = {
+	action_b = {
 		ai_chance = 25
 		name = "EVT_1_ACTA"
 		command = { }
@@ -3756,7 +3712,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -3777,7 +3732,7 @@ event = {
 	desc = "EVT_119_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 20
 	deathdate = { day = 29 month = july year = 1944 }
 
@@ -3818,7 +3773,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -3839,7 +3793,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = august year = 1944 }
+	date = { day = 1 month = august year = 1944 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1944 }
 
@@ -3880,7 +3834,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 8
 			AND = {
@@ -3901,7 +3854,7 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 1 month = january year = 1945 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -3943,7 +3896,6 @@ event = {
 	picture = "news_paper"
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		random = 5
 		}
 
@@ -3951,11 +3903,11 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1939 }
+	date = { day = 1 month = january year = 1939 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1943 }
 
-	action = {
+	action_a = {
 		name = ACTION_NAME_OK
 		ai_chance = 90
 		command = { type = set_domestic which = democratic value = 2 }
@@ -3972,7 +3924,7 @@ event = {
 		command = { type = chiefofair which = 290082 }
 		command = { type = dissent value = -1 }
 		}
-	action = { 
+	action_b = { 
 		name = "EVT_1_ACTA"
 		ai_chance = 10
 		command = { }
@@ -3996,7 +3948,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1944 }
 
@@ -4045,7 +3997,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 1 month = january year = 1945 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1945 }
 
@@ -4088,7 +4040,6 @@ event = {
 	picture = "news_paper"
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		atwar = no
 		}
 
@@ -4096,11 +4047,11 @@ event = {
 	desc = "EVT_119_DESC"
 	
 
-	date = { day = 0 month = january year = 1946 }
+	date = { day = 1 month = january year = 1946 }
 	offset = 5
 	deathdate = { day = 29 month = february year = 1946 }
 
-	action = {
+	action_a = {
 		ai_chance = 90
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 5 }
@@ -4117,7 +4068,7 @@ event = {
 		command = { type = chiefofair which = 290084 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 10
 		name = "EVT_1_ACTA"
 		command = { }
@@ -4132,7 +4083,6 @@ event = {
 	picture = "news_paper"
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		atwar = no
 		}
 
@@ -4140,11 +4090,11 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = march year = 1946 }
+	date = { day = 1 month = march year = 1946 }
 	offset = 10
 	deathdate = { day = 29 month = july year = 1946 }
 
-	action = {
+	action_a = {
 		ai_chance = 90
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 4 }
@@ -4166,7 +4116,7 @@ event = {
 		command = { type = sleepminister which = 290016 }
 		command = { type = sleepminister which = 290019 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 10
 		name = "EVT_1_ACTA"
 		command = { }
@@ -4181,7 +4131,6 @@ event = {
 	picture = "news_paper"
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		random = 5
 		atwar = no
 		}
@@ -4190,11 +4139,11 @@ event = {
 	desc = "EVT_111_DESC"
 	
 
-	date = { day = 0 month = august year = 1946 }
+	date = { day = 1 month = august year = 1946 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1947 }
 
-	action = {
+	action_a = {
 		ai_chance = 90
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 4 }
@@ -4211,7 +4160,7 @@ event = {
 		command = { type = chiefofair which = 290086 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 10
 		name = "EVT_1_ACTA"
 		command = { }
@@ -4240,7 +4189,7 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = august year = 1944 }
+	date = { day = 1 month = august year = 1944 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1945 }
 
@@ -4287,7 +4236,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -4308,7 +4256,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1938 }
+	date = { day = 1 month = january year = 1938 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1942 }
 
@@ -4348,7 +4296,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -4369,7 +4316,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1943 }
+	date = { day = 1 month = january year = 1943 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1946 }
 
@@ -4409,7 +4356,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -4430,7 +4376,7 @@ event = {
 	desc = "EVT_120_DESC"
 	
 
-	date = { day = 0 month = january year = 1947 }
+	date = { day = 1 month = january year = 1947 }
 	offset = 10
 	deathdate = { day = 29 month = june year = 1947 }
 
@@ -4470,7 +4416,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -4491,7 +4436,7 @@ event = {
 	desc = "EVT_119_DESC"
 	
 
-	date = { day = 0 month = july year = 1947 }
+	date = { day = 1 month = july year = 1947 }
 	offset = 10
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -4534,7 +4479,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -4555,7 +4499,7 @@ event = {
 	desc = "EVT_119_DESC"
 	
 
-	date = { day = 0 month = january year = 1941 }
+	date = { day = 1 month = january year = 1941 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1944 }
 
@@ -4595,7 +4539,6 @@ event = {
 	one_action = yes
 
 	trigger = {
-		NOT = { ispuppet = yes }
 		OR = {
 			dissent = 6
 			AND = {
@@ -4616,7 +4559,7 @@ event = {
 	desc = "EVT_109_DESC"
 	
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 1 month = january year = 1945 }
 	offset = 39
 	deathdate = { day = 29 month = december year = 1947 }
 
@@ -4669,11 +4612,11 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1942 }
+	date = { day = 1 month = january year = 1942 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1942 }
 
-	action = {
+	action_a = {
 		ai_chance = 80
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 2 }
@@ -4690,7 +4633,7 @@ event = {
 		command = { type = chiefofair which = 100065 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 20
 		name = "EVT_1_ACTA"
 		command = { }
@@ -4715,11 +4658,11 @@ event = {
 	desc = "EVT_110_DESC"
 	
 
-	date = { day = 0 month = january year = 1943 }
+	date = { day = 1 month = january year = 1943 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1943 }
 
-	action = {
+	action_a = {
 		ai_chance = 80
 		name = ACTION_NAME_OK
 		command = { type = set_domestic which = democratic value = 2 }
@@ -4736,7 +4679,7 @@ event = {
 		command = { type = chiefofair which = 100066 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		ai_chance = 10
 		name = "EVT_1_ACTA"
 		command = { }
@@ -4764,7 +4707,7 @@ event = {
 	desc = "EVT_112_DESC"
 	
 
-	date = { day = 0 month = january year = 1944 }
+	date = { day = 1 month = january year = 1944 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1944 }
 
@@ -4815,11 +4758,11 @@ event = {
 	desc = "EVT_109_DESC"
 	
 
-	date = { day = 0 month = january year = 1945 }
+	date = { day = 1 month = january year = 1945 }
 	offset = 20
 	deathdate = { day = 29 month = december year = 1947 }
 
-	action = {
+	action_a = {
 		name = ACTION_NAME_OK
 		ai_chance = 90
 		command = { type = set_domestic which = democratic value = 2 }
@@ -4836,12 +4779,2187 @@ event = {
 		command = { type = chiefofair which = 100068 }
 		command = { type = dissent value = -1 }
 		}
-	action = {
+	action_b = {
 		name = "EVT_1_ACTA"
 		ai_chance = 10
 		command = { }
 		}
 	}
+##### BOLIVIA
+
+event = {
+	id = 2500098
+	random = no
+	country = BOL
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = may year = 1951 }
+	offset = 20
+	deathdate = { day = 29 month = june year = 1951 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 205189 }
+		command = { type = headofgovernment which = 205192 }
+		command = { type = foreignminister which = 205052 }
+		command = { type = armamentminister which = 205078 }
+		command = { type = ministerofsecurity which = 205102 }
+		command = { type = ministerofintelligence which = 205124 }
+		command = { type = chiefofstaff which = 205142 }
+		command = { type = chiefofarmy which = 205159 }
+		command = { type = chiefofnavy which = 205165 }
+		command = { type = chiefofair which = 205176 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### COLOMBIA
+
+event = {
+	id = 2500099
+	random = no
+	country = COL
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = may year = 1951 }
+	offset = 20
+	deathdate = { day = 29 month = june year = 1951 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 175132 }
+		command = { type = headofgovernment which = 175034 }
+		command = { type = foreignminister which = 175038 }
+		command = { type = armamentminister which = 175069 }
+		command = { type = ministerofsecurity which = 175086 }
+		command = { type = ministerofintelligence which = 175099 }
+		command = { type = chiefofstaff which = 175134 }
+		command = { type = chiefofarmy which = 175110 }
+		command = { type = chiefofnavy which = 175117 }
+		command = { type = chiefofair which = 175130 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### EGYPT
+
+event = {
+	id = 2500100
+	random = no
+	country = EGY
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	#trigger = {
+	#	OR = {
+	#		dissent = 8
+	#		AND = {
+	#			random = 5
+	#			ai = yes	
+	#			}
+	#		AND = {
+	#			NOT = {
+	#				dissent = 8
+	#				}
+	#			dissent = 4
+	#			random = 5
+	#			}
+	#		}
+	#	}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	#date = { day = 1 month = july year = 1952 }
+	#offset = 20
+	#deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 340099 }
+		command = { type = headofgovernment which = 340101 }
+		command = { type = foreignminister which = 340043 }
+		command = { type = armamentminister which = 340102 }
+		command = { type = ministerofsecurity which = 340103 }
+		command = { type = ministerofintelligence which = 340077 }
+		command = { type = chiefofstaff which = 340104 }
+		command = { type = chiefofarmy which = 340105 }
+		command = { type = chiefofnavy which = 340091 }
+		command = { type = chiefofair which = 340106 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### HAITI
+
+event = {
+	id = 2500101
+	random = no
+	country = HAI
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = may year = 1950 }
+	offset = 20
+	deathdate = { day = 29 month = september year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 350014 }
+		command = { type = headofgovernment which = 350021 }
+		command = { type = foreignminister which = 350027 }
+		command = { type = armamentminister which = 350039 }
+		command = { type = ministerofsecurity which = 350053 }
+		command = { type = ministerofintelligence which = 350014 }
+		command = { type = chiefofstaff which = 350069 }
+		command = { type = chiefofarmy which = 350074 }
+		command = { type = chiefofnavy which = 350079 }
+		command = { type = chiefofair which = 350084 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500102
+	random = no
+	country = HAI
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = december year = 1950 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 350088 }
+		command = { type = headofgovernment which = 350021 }
+		command = { type = foreignminister which = 350027 }
+		command = { type = armamentminister which = 350038 }
+		command = { type = ministerofsecurity which = 350049 }
+		command = { type = ministerofintelligence which = 350059 }
+		command = { type = chiefofstaff which = 350069 }
+		command = { type = chiefofarmy which = 350074 }
+		command = { type = chiefofnavy which = 350079 }
+		command = { type = chiefofair which = 350084 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### HONDURAS
+
+event = {
+	id = 2500103
+	random = no
+	country = HON
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 355085 }
+		command = { type = headofgovernment which = 355086 }
+		command = { type = foreignminister which = 355029 }
+		command = { type = armamentminister which = 355041 }
+		command = { type = ministerofsecurity which = 355005 }
+		command = { type = ministerofintelligence which = 355006 }
+		command = { type = chiefofstaff which = 355082 }
+		command = { type = chiefofarmy which = 355071 }
+		command = { type = chiefofnavy which = 355083 }
+		command = { type = chiefofair which = 355078 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### IRAQ
+
+event = {
+	id = 2500104
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = march year = 1947 }
+	offset = 20
+	deathdate = { day = 29 month = january year = 1948 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 365019 }
+		command = { type = headofgovernment which = 365028 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365102 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500105
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = february year = 1948 }
+	offset = 20
+	deathdate = { day = 29 month = may year = 1948 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 365019 }
+		command = { type = headofgovernment which = 365147 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365102 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500106
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = june year = 1948 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 365019 }
+		command = { type = headofgovernment which = 365148 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365102 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500107
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 20
+	deathdate = { day = 29 month = november year = 1949 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 365019 }
+		command = { type = headofgovernment which = 365141 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365154 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500108
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = december year = 1949 }
+	offset = 20
+	deathdate = { day = 29 month = january year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 365019 }
+		command = { type = headofgovernment which = 365149 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365154 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500109
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = february year = 1950 }
+	offset = 20
+	deathdate = { day = 29 month = august year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 365019 }
+		command = { type = headofgovernment which = 365150 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365154 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500110
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = september year = 1950 }
+	offset = 20
+	deathdate = { day = 29 month = june year = 1952 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 365019 }
+		command = { type = headofgovernment which = 365142 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365154 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500111
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_112_NAME"
+	desc = "EVT_112_DESC"
+	
+
+	date = { day = 1 month = july year = 1952 }
+	offset = 20
+	deathdate = { day = 29 month = october year = 1952 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 365155 }
+		command = { type = headofgovernment which = 365152 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365154 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500112
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = november year = 1952 }
+	offset = 20
+	deathdate = { day = 29 month = january year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 365019 }
+		command = { type = headofgovernment which = 365151 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365154 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500113
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = february year = 1953 }
+	offset = 20
+	deathdate = { day = 29 month = august year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 365019 }
+		command = { type = headofgovernment which = 365025 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365154 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500114
+	random = no
+	country = IRQ
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = september year = 1953 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 365019 }
+		command = { type = headofgovernment which = 365153 }
+		command = { type = foreignminister which = 365051 }
+		command = { type = armamentminister which = 365072 }
+		command = { type = ministerofsecurity which = 365086 }
+		command = { type = ministerofintelligence which = 365154 }
+		command = { type = chiefofstaff which = 365113 }
+		command = { type = chiefofarmy which = 365121 }
+		command = { type = chiefofnavy which = 365126 }
+		command = { type = chiefofair which = 365133 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### NEPAL
+
+event = {
+	id = 2500115
+	random = no
+	country = NEP
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_112_NAME"
+	desc = "EVT_112_DESC"
+	
+
+	date = { day = 1 month = november year = 1951 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 395001 }
+		command = { type = headofgovernment which = 395056 }
+		command = { type = foreignminister which = 395019 }
+		command = { type = armamentminister which = 395029 }
+		command = { type = ministerofsecurity which = 395035 }
+		command = { type = ministerofintelligence which = 395041 }
+		command = { type = chiefofstaff which = 395046 }
+		command = { type = chiefofarmy which = 395049 }
+		command = { type = chiefofnavy which = 395052 }
+		command = { type = chiefofair which = 395053 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### NICARAGUA
+
+event = {
+	id = 2500116
+	random = no
+	country = NIC
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = may year = 1950 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 315013 }
+		command = { type = headofgovernment which = 315017 }
+		command = { type = foreignminister which = 315028 }
+		command = { type = armamentminister which = 315037 }
+		command = { type = ministerofsecurity which = 315042 }
+		command = { type = ministerofintelligence which = 315048 }
+		command = { type = chiefofstaff which = 315050 }
+		command = { type = chiefofarmy which = 315054 }
+		command = { type = chiefofnavy which = 315055 }
+		command = { type = chiefofair which = 315056 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### PANAMA
+
+event = {
+	id = 2500117
+	random = no
+	country = PAN
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_110_NAME"
+	desc = "EVT_110_DESC"
+	
+
+	date = { day = 1 month = july year = 1948 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 6 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 405073 }
+		command = { type = headofgovernment which = 405074 }
+		command = { type = foreignminister which = 405031 }
+		command = { type = armamentminister which = 405035 }
+		command = { type = ministerofsecurity which = 405075 }
+		command = { type = ministerofintelligence which = 405045 }
+		command = { type = chiefofstaff which = 405049 }
+		command = { type = chiefofarmy which = 405052 }
+		command = { type = chiefofnavy which = 405053 }
+		command = { type = chiefofair which = 405057 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500118
+	random = no
+	country = PAN
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = may year = 1951 }
+	offset = 20
+	deathdate = { day = 29 month = september year = 1952 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 405078 }
+		command = { type = headofgovernment which = 405079 }
+		command = { type = foreignminister which = 405080 }
+		command = { type = armamentminister which = 405035 }
+		command = { type = ministerofsecurity which = 405075 }
+		command = { type = ministerofintelligence which = 405045 }
+		command = { type = chiefofstaff which = 405049 }
+		command = { type = chiefofarmy which = 405052 }
+		command = { type = chiefofnavy which = 405053 }
+		command = { type = chiefofair which = 405057 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+
+##### PARAGUAY
+
+event = {
+	id = 2500119
+	random = no
+	country = PAR
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = june year = 1948 }
+	offset = 20
+	deathdate = { day = 29 month = july year = 1948 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 200069 }
+		command = { type = headofgovernment which = 200019 }
+		command = { type = foreignminister which = 200030 }
+		command = { type = armamentminister which = 200038 }
+		command = { type = ministerofsecurity which = 200044 }
+		command = { type = ministerofintelligence which = 200076 }
+		command = { type = chiefofstaff which = 200075 }
+		command = { type = chiefofarmy which = 200059 }
+		command = { type = chiefofnavy which = 200062 }
+		command = { type = chiefofair which = 200064 }
+		command = { type = dissent value = 3 }
+
+		command = { type = sleepminister which = 200014 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500120
+	random = no
+	country = PAR
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 200070 }
+		command = { type = headofgovernment which = 200019 }
+		command = { type = foreignminister which = 200030 }
+		command = { type = armamentminister which = 200077 }
+		command = { type = ministerofsecurity which = 200044 }
+		command = { type = ministerofintelligence which = 200076 }
+		command = { type = chiefofstaff which = 200075 }
+		command = { type = chiefofarmy which = 200059 }
+		command = { type = chiefofnavy which = 200062 }
+		command = { type = chiefofair which = 200064 }
+		command = { type = dissent value = 3 }
+
+		command = { type = sleepminister which = 200006 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500121
+	random = no
+	country = PAR
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 20
+	deathdate = { day = 29 month = february year = 1949 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 200071 }
+		command = { type = headofgovernment which = 200019 }
+		command = { type = foreignminister which = 200030 }
+		command = { type = armamentminister which = 200077 }
+		command = { type = ministerofsecurity which = 200044 }
+		command = { type = ministerofintelligence which = 200076 }
+		command = { type = chiefofstaff which = 200075 }
+		command = { type = chiefofarmy which = 200059 }
+		command = { type = chiefofnavy which = 200062 }
+		command = { type = chiefofair which = 200064 }
+		command = { type = dissent value = 3 }
+
+		command = { type = sleepminister which = 200037 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500122
+	random = no
+	country = PAR
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = march year = 1949 }
+	offset = 20
+	deathdate = { day = 29 month = august year = 1949 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 200072 }
+		command = { type = headofgovernment which = 200019 }
+		command = { type = foreignminister which = 200030 }
+		command = { type = armamentminister which = 200077 }
+		command = { type = ministerofsecurity which = 200044 }
+		command = { type = ministerofintelligence which = 200076 }
+		command = { type = chiefofstaff which = 200075 }
+		command = { type = chiefofarmy which = 200059 }
+		command = { type = chiefofnavy which = 200062 }
+		command = { type = chiefofair which = 200064 }
+		command = { type = dissent value = 3 }
+
+		command = { type = sleepminister which = 200019 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500123
+	random = no
+	country = PAR
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = september year = 1949 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 200073 }
+		command = { type = headofgovernment which = 200074 }
+		command = { type = foreignminister which = 200030 }
+		command = { type = armamentminister which = 200077 }
+		command = { type = ministerofsecurity which = 200044 }
+		command = { type = ministerofintelligence which = 200076 }
+		command = { type = chiefofstaff which = 200075 }
+		command = { type = chiefofarmy which = 200059 }
+		command = { type = chiefofnavy which = 200062 }
+		command = { type = chiefofair which = 200064 }
+		command = { type = dissent value = 3 }
+
+		command = { type = sleepminister which = 200072 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### PERSIA
+
+event = {
+	id = 2500124
+	random = no
+	country = PER
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_112_NAME"
+	desc = "EVT_112_DESC"
+	
+
+	date = { day = 1 month = september year = 1951 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 150011 }
+		command = { type = headofgovernment which = 150100 }
+		command = { type = foreignminister which = 150102 }
+		command = { type = armamentminister which = 150048 }
+		command = { type = ministerofsecurity which = 150058 }
+		command = { type = ministerofintelligence which = 150068 }
+		command = { type = chiefofstaff which = 150074 }
+		command = { type = chiefofarmy which = 150105 }
+		command = { type = chiefofnavy which = 150084 }
+		command = { type = chiefofair which = 150104 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500125
+	random = no
+	country = PER
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = july year = 1953 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 150012 }
+		command = { type = headofgovernment which = 150101 }
+		command = { type = foreignminister which = 150031 }
+		command = { type = armamentminister which = 150047 }
+		command = { type = ministerofsecurity which = 150052 }
+		command = { type = ministerofintelligence which = 150065 }
+		command = { type = chiefofstaff which = 150103 }
+		command = { type = chiefofarmy which = 150105 }
+		command = { type = chiefofnavy which = 150083 }
+		command = { type = chiefofair which = 150104 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### PERU
+
+event = {
+	id = 2500126
+	random = no
+	country = PRU
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = october year = 1948 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 185114 }
+		command = { type = headofgovernment which = 185117 }
+		command = { type = foreignminister which = 185032 }
+		command = { type = armamentminister which = 185046 }
+		command = { type = ministerofsecurity which = 185060 }
+		command = { type = ministerofintelligence which = 185071 }
+		command = { type = chiefofstaff which = 185118 }
+		command = { type = chiefofarmy which = 185120 }
+		command = { type = chiefofnavy which = 185095 }
+		command = { type = chiefofair which = 185102 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### EL SALVADOR
+
+event = {
+	id = 2500127
+	random = no
+	country = SAL
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = november year = 1948 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 345048 }
+		command = { type = headofgovernment which = 345049 }
+		command = { type = foreignminister which = 345050 }
+		command = { type = armamentminister which = 345051 }
+		command = { type = ministerofsecurity which = 345052 }
+		command = { type = ministerofintelligence which = 345053 }
+		command = { type = chiefofstaff which = 345054 }
+		command = { type = chiefofarmy which = 345055 }
+		command = { type = chiefofnavy which = 345056 }
+		command = { type = chiefofair which = 345057 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### SYRIA
+
+event = {
+	id = 2500128
+	random = no
+	country = SYR
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_119_NAME"
+	desc = "EVT_119_DESC"
+	
+
+	date = { day = 1 month = august year = 1949 }
+	offset = 20
+	deathdate = { day = 29 month = november year = 1951 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 430012 }
+		command = { type = headofgovernment which = 430066 }
+		command = { type = foreignminister which = 430073 }
+		command = { type = armamentminister which = 430075 }
+		command = { type = ministerofsecurity which = 430074 }
+		command = { type = ministerofintelligence which = 430076 }
+		command = { type = chiefofstaff which = 430071 }
+		command = { type = chiefofarmy which = 430051 }
+		command = { type = chiefofnavy which = 430054 }
+		command = { type = chiefofair which = 430077 }
+		command = { type = dissent value = 3 }
+
+		command = { type = sleepminister which = 430047 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500129
+	random = no
+	country = SYR
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = december year = 1951 }
+	offset = 20
+	deathdate = { day = 29 month = july year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 430061 }
+		command = { type = headofgovernment which = 430069 }
+		command = { type = foreignminister which = 430073 }
+		command = { type = armamentminister which = 430075 }
+		command = { type = ministerofsecurity which = 430074 }
+		command = { type = ministerofintelligence which = 430076 }
+		command = { type = chiefofstaff which = 430071 }
+		command = { type = chiefofarmy which = 430051 }
+		command = { type = chiefofnavy which = 430054 }
+		command = { type = chiefofair which = 430077 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500130
+	random = no
+	country = SYR
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_119_NAME"
+	desc = "EVT_119_DESC"
+	
+
+	date = { day = 1 month = august year = 1953 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 430062 }
+		command = { type = headofgovernment which = 430070 }
+		command = { type = foreignminister which = 430073 }
+		command = { type = armamentminister which = 430075 }
+		command = { type = ministerofsecurity which = 430074 }
+		command = { type = ministerofintelligence which = 430076 }
+		command = { type = chiefofstaff which = 430071 }
+		command = { type = chiefofarmy which = 430051 }
+		command = { type = chiefofnavy which = 430054 }
+		command = { type = chiefofair which = 430077 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+##### VENEZUELA
+
+event = {
+	id = 2500131
+	random = no
+	country = VEN
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 20
+	deathdate = { day = 29 month = february year = 1950 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 180079 }
+		command = { type = headofgovernment which = 180082 }
+		command = { type = foreignminister which = 180084 }
+		command = { type = armamentminister which = 180024 }
+		command = { type = ministerofsecurity which = 180035 }
+		command = { type = ministerofintelligence which = 180041 }
+		command = { type = chiefofstaff which = 180045 }
+		command = { type = chiefofarmy which = 180086 }
+		command = { type = chiefofnavy which = 180054 }
+		command = { type = chiefofair which = 180058 }
+		command = { type = dissent value = 3 }
+		}
+
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+		}
+	}
+
+
+event = {
+	id = 2500132
+	random = no
+	country = VEN
+	style = 2
+	picture = "news_paper"
+	one_action = yes
+
+	trigger = {
+		OR = {
+			dissent = 8
+			AND = {
+				random = 5
+				ai = yes	
+				}
+			AND = {
+				NOT = {
+					dissent = 8
+					}
+				dissent = 4
+				random = 5
+				}
+			}
+		}
+
+	name = "EVT_111_NAME"
+	desc = "EVT_111_DESC"
+	
+
+	date = { day = 1 month = february year = 1952 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = ACTION_NAME_OK
+		ai_chance = 98
+		command = { type = set_domestic which = democratic value = 5 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 180081 }
+		command = { type = headofgovernment which = 180083 }
+		command = { type = foreignminister which = 180085 }
+		command = { type = armamentminister which = 180024 }
+		command = { type = ministerofsecurity which = 180035 }
+		command = { type = ministerofintelligence which = 180041 }
+		command = { type = chiefofstaff which = 180045 }
+		command = { type = chiefofarmy which = 180087 }
+		command = { type = chiefofnavy which = 180054 }
+		command = { type = chiefofair which = 180058 }
+		command = { type = dissent value = 3 }
+		}
+	action = {
+		name = ACTION_NAME_THE_COUP_HAS_FAILED
+		ai_chance = 2
+		command = { type = domestic which = freedom value = -1 }
+		command = { trigger = { ai = yes } type = dissent value = 5 }
+		command = { trigger = { ai = no } type = dissent value = 10 }
+	}
+}
 	
 event = {
 	id = 2500133
@@ -4855,11 +6973,11 @@ event = {
 
 	name = "AI_EVENT"
 
-	date = { day = 0 month = february year = 1936 }
+	date = { day = 1 month = february year = 1936 }
 	offset = 60
 	deathdate = { day = 29 month = december year = 1970 }
 
-	action = {
+	action_a = {
 
 		command = { type = headofstate which = 270011 }
 		command = { type = headofgovernment which = 270014 }
@@ -4893,7 +7011,7 @@ event = {
 
 	date = { day = 0 month = december year = 1934 }
 
-	action = {
+	action_a = {
 		ai_chance = 98
 		name = ACTION_NAME_OK
 		command = { type = dissent value = -3 }
@@ -4930,7 +7048,7 @@ event = {
 
 	date = { day = 9 month = september year = 1933 }
 
-	action = {
+	action_a = {
 		ai_chance = 98
 		name = ACTION_NAME_OK
 		command = { type = dissent value = -3 }
@@ -4966,7 +7084,7 @@ event = {
 
 	date = { day = 18 month = january year = 1934 }
 
-	action = {
+	action_a = {
 		ai_chance = 98
 		name = ACTION_NAME_OK
 		command = { type = dissent value = -3 }
@@ -5007,7 +7125,7 @@ event = {
 
 	date = { day = 20 month = august year = 1935 }
 
-	action = {
+	action_a = {
 		ai_chance = 98
 		name = ACTION_NAME_OK
 		command = { type = dissent value = -3 }
@@ -5048,7 +7166,7 @@ event = {
 
 	date = { day = 24 month = september year = 1935 }
 
-	action = {
+	action_a = {
 		ai_chance = 98
 		name = ACTION_NAME_OK
 		command = { type = dissent value = -3 }
@@ -5089,7 +7207,7 @@ event = {
 
 	date = { day = 24 month = november year = 1935 }
 
-	action = {
+	action_a = {
 		ai_chance = 99
 		name = ACTION_NAME_OK
 		command = { type = dissent value = -3 }

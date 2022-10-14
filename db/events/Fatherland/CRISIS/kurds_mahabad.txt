@@ -1,0 +1,336 @@
+##########################################
+# Iran Crisis events edited and modified by Pako
+# NOTE: This event chain is an adapted event chain from the NWO Mod. 
+# All credits go to this mod for the original idea. 
+##########################################
+
+##########################################
+# Found the Republic of Mahabad
+##########################################
+event = {
+	id = 8500901
+	country = PER
+
+	name = "The Kurdish minority"
+	desc = "The Kurdish minority want more independence"#EVT_8500901_DESC
+	picture = "nwo\republic_of_mahabad"
+	style = 2
+
+	trigger = {
+		flag = cold_war
+		#control = { province = 1083 data = -1 }
+	}
+
+	date = { day = 1 month = december year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = march year = 1949 }
+
+	action = {
+		name = EVT_8500901_A # Allow secessionist elements
+		ai_chance = 30
+		command = { type = removecore which = 1084 }
+		command = { type = independence which = KUR value = 1 }
+		command = { type = relation which = TUR value = -100 }	
+		command = { type = relation which = IRQ value = -100 }	
+		command = { type = relation which = ENG value = -50 }	
+		command = { type = relation which = USA value = -10 }
+		command = { type = relation which = SOV value = 50 }
+	}
+	
+	action = {
+		name = EVT_8500901_B # Contain Kurdish movements
+		ai_chance = 70
+		command = { type = dissent value = 5 }
+		command = { type = province_revoltrisk which = 1084 value = 80 }
+		command = { type = relation which = TUR value = 50 }	
+		command = { type = relation which = IRQ value = 50 }	
+		command = { type = relation which = SOV value = -25 }
+	}
+}
+
+##########################################
+# Mahabad Republic
+##########################################
+event = {
+	id = 8500902
+	country = KUR
+
+	name = EVT_8500902_NAME
+	desc = EVT_8500902_DESC
+	picture = "nwo\republic_of_mahabad"
+	style = 2
+
+	trigger = {
+		event = 8500901
+	}
+
+	date = { day = 1 month = december year = 1948 }
+	offset = 3
+	deathdate = { day = 29 month = april year = 1949 }
+
+	action = {
+		name = EVT_8500902_A
+		#command = { type = access which = SOV }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = belligerence value = 5 }
+		
+	}
+}
+
+##########################################
+## Soviets back Mahabad Republic or not
+##########################################
+event = {
+	id = 8500903
+	country = SOV
+
+	name = "Approach the Mahabad Republic" #EVT_8500903_NAME
+	desc = "We should try an approach with the new Republic and tighten relations with Kurds in the area"#EVT_8500903_DESC
+	picture = "nwo\republic_of_mahabad"
+	style = 2
+
+	trigger = {
+		event = 8500902
+		exists = KUR
+		exists = PER
+	}
+
+	date = { day = 0 month = march year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = june year = 1949 }
+
+	action = {
+		name = EVT_8500903_A # Don't give support
+		ai_chance = 50
+		command = { type = relation which = KUR value = -200 }
+		command = { type = relation which = PER value = 10 }
+		command = { type = trigger which = 8500911 } # Soviets withdraw support for the Kurds
+		command = { type = sleepevent which = 8500921 }
+	}
+	
+	action = {
+		name = EVT_8500903_B # Give support
+		ai_chance = 50
+		command = { type = relation which = PER value = -100 }
+		command = { type = relation which = KUR value = 200 }
+		command = { type = make_puppet which = KUR }
+		command = { type = trigger which = 8500904 } # German ultimatum
+	}
+}
+
+##########################################
+# Germans set ultimatum
+##########################################
+event = {
+	id = 8500904
+	country = GER
+
+	name = EVT_8500904_NAME
+	desc = EVT_8500904_DESC
+	picture = "nwo\iran_crisis_1946"
+	style = 2
+
+	action = {
+		name = EVT_8500904_A # Send ultimatum
+		ai_chance = 80
+		command = { type = trigger which = 8500905 }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = dissent value = 3 }
+	}
+	
+	action = {
+		name = EVT_8500904_B # Let Soviets have it
+		ai_chance = 20
+		command = { type = relation which = PER value = -100 }
+		command = { type = relation which = KUR value = 100 }
+		command = { type = trigger which = 8500910 } # Soviet support for Kurdistan
+		command = { type = trigger which = 8500909 } # Soviet support for Kurdistan
+		command = { type = sleepevent which = 8500908 } # Iran reasserts control over Kurdistan
+		command = { type = dissent value = 5 }
+	}
+}
+
+##########################################
+# Soviets respond to ultimatum
+##########################################
+event = {
+	id = 8500905
+	country = SOV
+
+	name = EVT_8500905_NAME
+	desc = EVT_8500905_DESC
+	picture = "nwo\iran_crisis_1946"
+	style = 2
+
+	action = {
+		name = EVT_8500905_A # Withdraw
+		ai_chance = 80
+		command = { type = dissent value = 3 }
+		command = { type = trigger which = 8500911 } # Soviets withdraw support for the Kurds
+	}
+	
+	action = {
+		name = EVT_8500905_B # Risk war!
+		ai_chance = 20
+		command = { type = relation which = PER value = -100 }
+		command = { type = relation which = KUR value = 200 }
+		command = { type = trigger which = 8500910 } # Soviet support for Kurdistan
+		command = { type = trigger which = 8500909 } # Soviet support for Kurdistan
+		command = { type = sleepevent which = 8500908 } # Iran reasserts control over Kurdistan
+		command = { type = trigger which = 8500906 } # Ultimatum
+		command = { type = dissent value = 5 }
+	}
+}
+
+##########################################
+# Germans carry out ultimatum
+##########################################
+event = {
+	id = 8500906
+	country = GER
+
+	name = EVT_8500906_NAME
+	desc = EVT_8500906_DESC
+	picture = "nwo\iran_crisis_1946"
+	style = 2
+
+	action = {
+		name = EVT_8500906_A # Back down
+		ai_chance = 60
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 10 }
+	}
+	
+	action = {
+		name = EVT_8500906_B # WW3
+		ai_chance = 40
+		command = { type = alliance which = PER }
+		command = { type = war which = KUR }
+		command = { type = war which = SOV }
+		command = { type = dissent value = 5 }
+	}
+}
+##########################################
+## Iran reasserts control over Mahabad
+##########################################
+event = {
+	id = 8500908
+	country = PER
+
+	name = EVT_8500908_NAME
+	desc = EVT_8500908_DESC
+	picture = "nwo\republic_of_mahabad"
+	style = 2
+
+	trigger = {
+		event = 8500903
+		exists = KUR
+	}
+
+	date = { day = 0 month = march year = 1949 }
+	offset = 60
+	deathdate = { day = 29 month = september year = 1949 }
+
+	action = {
+		name = EVT_8500908_A
+		ai_chance = 99
+		command = { type = war which = KUR }
+		command = { type = add_division value = infantry when = 12 }
+		command = { type = add_division value = infantry when = 12 }
+	}
+	
+	action = {
+		name = EVT_8500908_B
+		ai_chance = 1
+		command = { type = dissent value = 20 }
+	}
+}
+##########################################
+### Iran is betrayed - USA allows for independent Kurdistan
+##########################################
+event = {
+	id = 8500909
+	country = PER
+
+	name = EVT_8500909_NAME
+	desc = EVT_8500909_DESC
+	picture = "nwo\iran_crisis_1946"
+	style = 2
+
+	action = {
+		name = EVT_8500909_A
+		command = { type = end_puppet }
+		command = { type = leave_alliance when = 1 }
+		command = { type = end_access which = ENG }
+	}
+	
+}
+##########################################
+### Soviet support for Kurdistan continues
+##########################################
+event = {
+	id = 8500910
+	country = SOV
+
+	name = EVT_8500910_NAME
+	desc = EVT_8500910_DESC
+	picture = "nwo\iran_crisis_1946"
+	style = 2
+
+	action = {
+		name = EVT_8500910_A
+		command = { type = alliance which = KUR }
+	}
+	
+}
+##########################################
+### Soviet support for Kurdistan is ended
+##########################################
+event = {
+	id = 8500911
+	country = KUR
+
+	name = EVT_8500911_NAME
+	desc = EVT_8500911_DESC
+	picture = "nwo\iran_crisis_1946"
+	style = 2
+
+	action = {
+		name = EVT_8500911_A
+		command = { type = end_puppet }
+		command = { type = leave_alliance when = 1 } #leave eventaully old alliance wars }
+		command = { type = end_access which = SOV }
+		command = { type = remove_division which = -1 }
+	}
+	
+}
+##########################################
+### Iran ceases to be a puppet
+##########################################
+#event = {
+    #id = 8500922
+	#country = PER
+
+	#name = EVT_8500922_NAME
+	#desc = EVT_8500922_DESC
+	#picture = "nwo\mohammed_reza_pahlavi"
+	#style = 2
+
+	#trigger = {
+	#	flag = cold_war
+	#	ispuppet = yes
+	#}
+
+	#date = { day = 0 month = january year = 1949 }
+	#offset = 360
+	#deathdate = { day = 29 month = december year = 1963 }
+
+	#action = {
+	#	name = EVT_8500922_A
+	#	command = { type = end_puppet }
+	#	command = { type = add_division value = infantry when = 12 }
+	#	command = { type = end_access which = ENG }
+	#}
+    #}

@@ -1,0 +1,57 @@
+###################################
+#Brazil Axis Americas by RedZeppelin
+###################################
+#8002018 - Argentina has turned Fascist (BRA)  
+###################################
+
+event = { id = 8002018
+          random = no
+          country = BRA
+
+          date = { day = 18 month = 2 year = 1952 }
+          offset = 25
+          deathdate = { day = 29 month = 9 year = 1953 }
+
+          trigger = { flag = argentine_coup }
+          
+          name = "Argentina has turned Fascist"
+          Desc = "The Agentine goverment has been overthrown today in a bloody coup and now the fate of Bolivia seems uncertain. The new goverment has already made clear that it intends to reclaim it's lost glory, (whatever that means) by any means necessary." 
+          Picture = "fatherland\argentinecoup"
+          style = 2
+
+          action = { 
+                     name = "I have a bad feeling about this"
+		     command = { type = relation which = ARG value = -60 }	
+                     command = { type = dissent value = 5 }
+                     }
+}
+event = { id = 8002019
+          random = no
+          country = BRA
+          
+          name = "Argentine build up"
+          Desc = "The new fascist Agentine goverment has begun rapidly building up it's military with the help of Germany. If we wish to survive we must prepare for the worst, shall we petition the UN and our local allies for help?" 
+          Picture = "news_paper"
+          style = 2
+
+          action_a = { 
+                     name = "Absolutely!"
+                     ai_chance = 70
+		     command = { type = relation which = ARG value = -10 }
+		     command = { type = relation which = USA value = 20 }
+		     command = { type =	alliance which = CHL }	
+		     command = { type =	alliance which = PAR }
+		     command = { type = trigger which = 8056738 }
+                   }
+
+          action_b = { name = "We should only contact our allies"
+                     ai_chance = 25
+		     command = { type =	alliance which = CHL }	
+		     command = { type =	alliance which = PAR }
+                   }
+
+          action_c = { name = "Maybe Argentina won't attack us"
+                     ai_chance = 5
+		     command = { type = dissent value = 10 }
+                   }
+}

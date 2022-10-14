@@ -1,0 +1,287 @@
+event = {
+	id = 13302001
+	country = GRE
+	style = 2
+	picture = "GRE1"
+
+	trigger = {
+
+        exists = GRE
+		
+	}
+
+	date = { day = 10 month = September year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	name = "First International Exhibition"
+	desc = "The first International Exhibition in Thessaloniki was held in 1955 and is held annually in September."
+
+	action = {
+		name = "Great"
+		command = { type = research_mod value = 1 }
+		command = { type = industrial_modifier which = total value = 1 }
+		command = { type = industrial_modifier which = supplies value = 1 }
+		command = { type = dissent value = -1 }
+		command = { type = money value = -30 }
+		}
+	}
+
+event = {
+	id = 13302006
+	random = no
+	country = GRE
+
+	trigger = {
+		
+		exists = GRE
+	}
+
+	name = "Greek agriculture in 1950"
+	desc = " In 1950 only 4% of land holdings were of sizes more than 24 acres (97,000 m2), and only .3% of these were in large estates of more than 123 acres (0.50 km2). This pattern of small scale farm ownership has continued to the present day, with the small number of larger farms declining slightly" 
+	style = 2
+	picture = "GRE1"
+
+	date = { day = 10 month = May year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Interesting"
+		command = { type = industrial_modifier which = total value = 1 }
+                command = { type = industrial_modifier which = supplies value = 2 }
+	}
+}
+
+event = {
+	id = 13302007
+	random = no
+	country = GRE
+
+	trigger = {
+		
+		exists = GRE
+	}
+
+	name = "Greek Cities Police"
+	desc = "The Cities Police was a Greek police force extant from 1921 to 1984, responsible for policing urban areas. It complemented the Hellenic Gendarmerie, which was responsible for rural and suburban areas" 
+	style = 2
+	picture = "GRE2"
+
+	date = { day = 10 month = August year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Peace and order"
+		command = { type = dissent value = -2 }
+                command = { type = money value = -10 }
+	}
+}
+
+event = {
+	id = 13302024
+	random = no
+	country = GRE
+
+	trigger = {
+		
+		exists = GRE
+	}
+
+	name = "Halyvourgiki Hellenic Steel Industry"
+	desc = "Halyvourgiki Hellenic Steel Industry S.A. effectively started business in 1955, as a trading company. It moved into wire production in 1932, and steel production in 1938"
+	style = 2
+	picture = "GRE1"
+
+	date = { day = 10 month = August year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Great!"
+		command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = industrial_modifier which = supplies value = 0.5 }
+	}
+}
+
+event = {
+	id = 13302027
+	random = no
+	country = GRE
+
+	trigger = {
+		
+		exists = GRE
+	}
+
+	name = "The Academy of Athens"
+	desc = "The Academy of Athens is Greece's national academy, and the highest research establishment in the country. It was established in 1956, and operates under the supervision of the Ministry of Education. The Academy's main building is one of the major landmarks of Athens"
+	style = 2
+	picture = "GRE8"
+
+	date = { day = 10 month = March year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 1 }
+	}
+}
+
+event = {
+	id = 13302032
+	random = no
+	country = GRE
+
+	trigger = {
+		
+		exists = GRE
+	}
+
+	name = "Apostolic Vicariate of Thessaloniki"
+	desc = "The Vicariate was established in 1956 as Apostolic Vicariate of Thessalonica on canonical territory split off from the Roman Catholic Apostolic Vicariate of Constantinople, comprising the Greek prefectures of Thessaloniki, Kavala, Xanthi, Volos, Larisa and Giannitsa. Since then, the Vicariate covers the entire territory of northern Greece, including regions of Greek Macedonia, Greek Thrace and Thessaly"
+	style = 2
+	picture = "GRE1"
+
+	date = { day = 10 month = March year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+	}
+}
+
+event = {
+	id = 13302034
+	random = no
+	country = GRE
+
+	trigger = {
+		
+		exists = GRE
+	}
+
+	name = "Central bank of Greece"
+	desc = "The Bank of Greece is the central bank of Greece. Its headquarters is located in Athens on Panepistimiou Street, but it also has several branches across the country. It was founded in 1927 and its operations started officially in 1928. The building that currently houses its headquarters was completed ten years later in 1938"
+	style = 2
+	picture = "GRE9"
+
+	date = { day = 10 month = July year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Great!"
+		command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = free_money value = 0.5 }
+                command = { type = money value = 40 } 
+	}
+}
+
+event = {
+	id = 13302036
+	random = no
+	country = GRE
+
+	trigger = {
+		
+		exists = GRE
+	}
+
+	name = "National union of Greece"
+	desc = "The National Union of Greece was an nationalist party established in Thessaloniki, Greece, in 1927. According to the organisation's constitution, only Christians could join. It was led by Georgios Kosmidis" 
+	style = 2
+	picture = "GRE16"
+
+	date = { day = 10 month = October year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+	}
+}
+
+event = {
+	id = 13302040
+	random = no
+	country = GRE
+
+	trigger = {
+		
+		exists = GRE
+	}
+
+	name = "German-Hellenic Railway Co"
+	desc = "The German-Hellenic Railway Co was a railway company in Greece and Turkey which operated the former Chemins de fer Orientaux railway line from Alexandroupolis to Pythio, Ormenio and Svilengrad between 1929 and 1954" 
+	style = 2
+	picture = "GRE10"
+
+	date = { day = 10 month = February year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = industrial_modifier which = supplies value = 0.5 }
+	}
+}
+
+event = {
+	id = 13302041
+	random = no
+	country = GRE
+
+	trigger = {
+		
+		exists = GRE
+	}
+
+	name = "Agricultural Bank of Greece"
+	desc = "The Agricultural Bank of Greece was a commercial bank based in Athens, Greece. The bank was founded in 1929. The bank proclaimed that it would focus on the Balkan bank market, with the business activities of supporting of the agricultural sector. Agricultural Bank of Greece is founded as a non-profit organisation, provider of credit to the agricultural sector" 
+	style = 2
+	picture = "GRE1"
+
+	date = { day = 10 month = June year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.5 }
+                command = { type = industrial_modifier which = supplies value = 0.5 }
+                command = { type = free_money value = 0.5 } 
+	}
+}
+
+event = {
+	id = 13302052
+	random = no
+	country = GRE
+
+	trigger = {
+		
+		exists = GRE
+	}
+
+	name = "Greek National Socialist Party"
+	desc = "The Greek National Socialist Party was a National Socialist party founded in Greece in 1932 by George S. Mercouris, a former Cabinet minister."
+	style = 2
+	picture = "GRE6"
+
+	date = { day = 10 month = January year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+	}
+}
+

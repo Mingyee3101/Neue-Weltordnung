@@ -1,0 +1,316 @@
+#######################
+# Axis Military Events
+# Event Range: 900000 +
+#######################
+
+##############################
+# 2. Operation Barbarossa II #
+##############################
+
+event = {
+
+	id = 900033
+	random = no
+	country = GER
+
+	name = "900033NAME"
+	desc = "900033DESC"
+	style = 2
+	picture = "fatherland\barbarossa2"
+	decision_picture = "fatherland\decision_wehrmacht_color"
+
+	date = { day = 1 month = march year = 1952 }
+	offset = 50
+	deathdate = { day = 29 month = december year = 1980 }
+
+	decision = {
+		OR = {
+			AND = {
+				# Soviets own Ural territories
+				owned = { province = 688 data = SIB } # Ukhta
+				owned = { province = 671 data = SIB } # Izhevsk
+				owned = { province = 689 data = SIB } # Solikamsk
+			}
+			AND = {
+				# Siberian own Ural territories
+				owned = { province = 688 data = SOV } # Ukhta
+				owned = { province = 671 data = SOV } # Izhevsk
+				owned = { province = 689 data = SOV } # Solikamsk
+			}
+			AND = {
+				# Russian Empire own Ural territories
+				owned = { province = 688 data = U59 } # Ukhta
+				owned = { province = 671 data = U59 } # Izhevsk
+				owned = { province = 689 data = U59 } # Solikamsk
+			}
+			AND = {
+				# Far Eastern own Ural territories
+				owned = { province = 688 data = U57 } # Ukhta
+				owned = { province = 671 data = U57 } # Izhevsk
+				owned = { province = 689 data = U57 } # Solikamsk
+			}
+		}
+	}
+
+	decision_trigger = {
+		AND = {
+			NOT = {
+				war = { country = GER country = SOV }
+				alliance = { country = GER country = SOV }
+				exists = UTC #Russian National State
+			}
+			OR = {
+				NOT = {
+					owned = { province = 572 data = SOV } # Soviets don't own Moscow
+					owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+					owned = { province = 713 data = SOV } # Soviets don't own Baku
+				}
+				NOT = {
+					owned = { province = 572 data = SIB } # Siberia don't own Moscow
+					owned = { province = 663 data = SIB } # Siberia don't own Stalingrad
+					owned = { province = 713 data = SIB } # Siberia don't own Baku
+				}
+				NOT = {
+					owned = { province = 572 data = U59 } # Russian Empire don't own Moscow
+					owned = { province = 663 data = U59 } # Russian Empire don't own Stalingrad
+					owned = { province = 713 data = U59 } # Russian Empire don't own Baku
+				}
+				NOT = {
+					owned = { province = 572 data = U57 } # Far Eastern don't own Moscow
+					owned = { province = 663 data = U57 } # Far Eastern don't own Stalingrad
+					owned = { province = 713 data = U57 } # Far Eastern don't own Baku
+				}
+			}
+			### Germans garrison frontier ###
+			garrison = { country = GER province = 572 type = land size = 10 } # Moscow
+			garrison = { country = -3 province = 553 size = 5 } #Leningrad
+		}
+	}
+
+	#Just for AI
+	trigger = {
+		OR = {
+			AND = {			
+				OR = {				
+					NOT = {
+						owned = { province = 572 data = SOV } # Soviets don't own Moscow
+						owned = { province = 663 data = SOV } # Soviets don't own Stalingrad
+						owned = { province = 713 data = SOV } # Soviets don't own Baku
+					}
+					NOT = {
+						owned = { province = 572 data = SIB } # Siberia don't own Moscow
+						owned = { province = 663 data = SIB } # Siberia don't own Stalingrad
+						owned = { province = 713 data = SIB } # Siberia don't own Baku
+					}
+					NOT = {
+						owned = { province = 572 data = U59 } # Russian Empire don't own Moscow
+						owned = { province = 663 data = U59 } # Russian Empire don't own Stalingrad
+						owned = { province = 713 data = U59 } # Russian Empire don't own Baku
+					}
+					NOT = {
+						owned = { province = 572 data = U57 } # Far Eastern don't own Moscow
+						owned = { province = 663 data = U57 } # Far Eastern don't own Stalingrad
+						owned = { province = 713 data = U57 } # Far Eastern don't own Baku
+					}					
+				}					
+				NOT = {
+					war = { country = GER country = SOV }
+					alliance = { country = GER country = SOV }
+					exists = UTC #Russian National State
+				}			
+			}
+			OR = { 
+				war = { country = USA country = SOV }			
+				war = { country = USA country = SIB }			
+				war = { country = USA country = U59 }							
+			}			
+		}		
+		random = 30
+	}
+
+	#Hitler Germany 30%, if Hitler still alive
+	action = {
+		name = "The Urals must be our natural frontier."
+		ai_chance = 30
+		trigger = { NOT = { event = 90000500 flag = MilGermany flag = LegGermany flag = NaziGermany flag = SSGermany } }
+
+			command = { type = end_non_aggression which = GER where = SOV }
+			command = { type = end_non_aggression which = GER where = SIB }
+			command = { type = end_non_aggression which = GER where = U57 }
+			command = { type = end_non_aggression which = GER where = U59 }
+
+			command = { trigger = { ai = yes } type = ai_prepare_war which = SOV } 
+			command = { trigger = { ai = no } type = war which = SOV } 
+			command = { trigger = { ai = yes }  type = ai_prepare_war which = SIB } 
+			command = { trigger = { ai = no }  type = war which = SIB } 
+			command = { trigger = { ai = yes } type = ai_prepare_war which = U57 } 
+			command = { trigger = { ai = no }  type = war which = U57 } 
+			command = { trigger = { ai = yes } type = ai_prepare_war which = U59 } 
+			command = { trigger = { ai = no }  type = war which = U59 } 
+
+			command = { type = belligerence value = 5 }
+			command = { type = dissent value = 3 }
+
+			command = { type = trigger which = 900034 } # War erupts in Russia again
+	}
+
+	action = {
+		name = "We don't need this right now."
+		ai_chance = 70
+		trigger = { NOT = { flag = MilGermany flag = LegGermany  flag = NaziGermany flag = SSGermany } }
+		command = { type = dissent value = 1 }
+	}
+
+	#SS Germany 80%
+	action = {
+		name = "The Urals must be our natural frontier."
+		ai_chance = 80
+		
+		trigger = { flag = SSGermany }
+		
+			command = { type = end_non_aggression which = GER where = SOV }
+			command = { type = end_non_aggression which = GER where = SIB }
+			command = { type = end_non_aggression which = GER where = U57 }
+			command = { type = end_non_aggression which = GER where = U59 }
+
+			command = { trigger = { ai = yes }  type = ai_prepare_war which = SOV }
+			command = { trigger = { ai = no }  type = war which = SOV } 
+			command = { trigger = { ai = yes }  type = ai_prepare_war which = SIB } 
+			command = { trigger = { ai = no }  type = war which = SIB } 
+			command = { trigger = { ai = yes }  type = ai_prepare_war which = U57 } 
+			command = { trigger = { ai = no }  type = war which = U57 } 
+			command = { trigger = { ai = yes } type = ai_prepare_war which = U59 } 
+			command = { trigger = { ai = no }  type = war which = U59 } 
+
+			command = { type = belligerence value = 5 }
+			command = { type = dissent value = 3 }
+
+			command = { type = trigger which = 900034 } # War erupts in Russia again
+	}
+
+	action = {
+		name = "We don't need this right now."
+		ai_chance = 20
+		trigger = { flag = SSGermany }
+			command = { type = dissent value = 1 }
+	}
+
+	# LegGermany and Nazi Germany 30%
+	action = {
+		name = "The Urals must be our natural frontier."
+		ai_chance = 30
+		trigger = { OR = { flag = LegGermany  flag = NaziGermany }}
+
+			command = { type = end_non_aggression which = GER where = SOV }
+			command = { type = end_non_aggression which = GER where = SIB }
+			command = { type = end_non_aggression which = GER where = U57 }
+			command = { type = end_non_aggression which = GER where = U59 }
+
+			command = { trigger = { ai = yes } type = ai_prepare_war which = SOV } 
+			command = { trigger = { ai = no } type = war which = SOV } 
+			command = { trigger = { ai = yes } type = ai_prepare_war which = SIB } 
+			command = { trigger = { ai = no } type = war which = SIB } 
+			command = { trigger = { ai = yes } type = ai_prepare_war which = U57 } 
+			command = { trigger = { ai = no } type = war which = U57 } 
+			command = { trigger = { ai = yes } type = ai_prepare_war which = U59 } 
+			command = { trigger = { ai = no } type = war which = U59 } 
+
+			command = { type = belligerence value = 5 }
+			command = { type = dissent value = 5 }
+
+			command = { type = trigger which = 900034 } # War erupts in Russia again	
+	}
+
+	action = {
+		name = "We don't need this right now."		
+		ai_chance = 70
+		command = { trigger = { OR = { flag = LegGermany  flag = NaziGermany } } type = dissent value = 1 }
+	}
+
+	# MilGermany 10%
+	action = {
+		name = "The Urals must be our natural frontier."
+		ai_chance = 10
+		trigger = { flag = MilGermany }
+
+			command = { type = end_non_aggression which = GER where = SOV }
+			command = { type = end_non_aggression which = GER where = SIB }
+			command = { type = end_non_aggression which = GER where = U57 }
+			command = { type = end_non_aggression which = GER where = U59 }
+
+			command = { trigger = { ai = yes } type = ai_prepare_war which = SOV } 
+			command = { trigger = { ai = no } type = war which = SOV } 
+			command = { trigger = { ai = yes }  type = ai_prepare_war which = SIB } 
+			command = { trigger = { ai = no }  type = war which = SIB } 
+			command = { trigger = { ai = yes }  type = ai_prepare_war which = U57 } 
+			command = { trigger = { ai = no }  type = war which = U57 } 
+			command = { trigger = { ai = yes }  type = ai_prepare_war which = U59 } 
+			command = { trigger = { ai = no }  type = war which = U59 } 
+
+			command = { type = belligerence value = 5 }
+			command = { type = dissent value = 5 }
+
+			command = { type = trigger which = 900034 } # War erupts in Russia again
+	}
+
+	action = {
+		name = "We don't need this right now."
+		ai_chance = 90
+		trigger = { flag = MilGermany }
+			command = { type = dissent value = 1 }
+	}
+}
+
+############################
+# War erupts in Russia again
+############################
+
+event = {
+	id = 900034
+	random = no
+	TAG = { ITA FIN ROM BUL CRO HUN TRA SPA NOR DEN U40 U41 U42 U44 U52 UKR BLR RUS }
+	all = yes
+
+	name = "900034NAME"
+	desc = "900034DESC"
+	style = 2
+	picture = "fatherland\barbarossa2"
+
+	action = {
+		name = "Onwards to Siberia!"
+		ai_chance = 20
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 9200001
+	TAG = { ITA FIN ROM BUL CRO HUN TRA SPA NOR DEN U40 U41 U42 U44 U52 UKR BLR RUS GRE AZB GEO ARM WLL FLA SWE POR TUR }
+
+	random = no
+	persistent = yes
+	all = yes
+
+	date = { day = 01 month = may year = 1948 }
+	offset = 30
+	deathdate = { day = 0 month = january year = 1999 }
+
+	trigger = {
+		alliance = { country = -1 country = GER }
+		NOT = {
+			access = { country = -1 country = AXI }
+		}
+	}
+
+	name = "Guarantee Axis forces military access"
+	desc = "As Axis country, We need to guarantee military access to Axis Forces Unified Command"
+	Picture = "news_paper"
+	style = 2
+
+	action = {
+		name = "They are welcome"
+		ai_chance = 100
+		command = { type = access which = AXI }
+	}
+
+}

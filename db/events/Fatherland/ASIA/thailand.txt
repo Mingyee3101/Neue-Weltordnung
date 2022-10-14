@@ -1,0 +1,2539 @@
+event = {
+	id = 8013401
+	country = SIA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1946 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofgovernment which = 290019 } # Pridi Phanomyong
+		command = { type = foreignminister which = 290031 } # Thawon Thamrongnawasawat
+		command = { type = armamentminister which = 290048 } # Phao Peeralert
+		command = { type = ministerofsecurity which = 290059 } # Bung Suphachahlasai
+		command = { type = ministerofintelligence which = 290064 } # Phraya Chitnasongkhla
+		command = { type = chiefofstaff which = 290071 } # Thawon Thamrongnawasawat
+		command = { type = chiefofarmy which = 290076 } # Tianliang Huntrakool
+		command = { type = chiefofnavy which = 290081 } # Thawon Thamrongnawasawat
+		command = { type = chiefofair which = 290086 } # Luang Kajsongkram
+	}
+}
+
+# Death of Rama VIII
+event = {
+	id = 8013402
+	country = SIA
+
+	name = EVT_8013402_NAME
+	desc = EVT_8013402_DESC
+	picture = "nwo\rama_viii"
+	style = 2
+
+	trigger = {
+		OR = {
+			headofstate = 290001 
+			headofstate = 290012
+		}
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1946 }
+
+	action = {
+		name = EVT_8013402_A
+		ai_chance = 100
+		command = { type = sleepminister which = 290001 } # Rama VIII
+		command = { type = sleepminister which = 290012 } # Rama VIII
+		command = { type = sleepminister which = 290087 } # Rama VIII
+		command = { type = headofstate which = 290013 } # Rama IX
+	}
+}
+
+event = {
+	id = 8013403
+	country = SIA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 290013 } # Rama IX
+		command = { type = headofgovernment which = 290020 } # Thawon Thamrongnawasawat
+	}
+}
+
+event = {
+	id = 8013404
+	country = SIA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 290013 } # Rama IX
+		command = { type = headofgovernment which = 290200 } # Plaek Pibulsongkram
+	}
+}
+
+# Sarit's coup
+event = {
+	id = 8013405
+	country = SIA
+
+	name = EVT_8013405_NAME
+	desc = EVT_8013405_DESC
+	picture = "nwo\sarit_thanarat"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1957 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 290013 } # Rama IX
+		command = { type = headofgovernment which = 290201 } # Pote Sarasin
+	}
+}
+
+event = {
+	id = 8013406
+	country = SIA
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	picture = "nwo\govt_change"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 290013 } # Rama IX
+		command = { type = headofgovernment which = 290202 } # Thanom Kittikachorn
+	}
+}
+
+event = {
+	id = 8013407
+	country = SIA
+
+	name = EVT_8013407_NAME
+	desc = EVT_8013407_DESC
+	picture = "nwo\sarit_thanarat"
+	style = 2
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 290013 } # Rama IX
+		command = { type = headofgovernment which = 290203 } # Sarit Thanarat
+	}
+}
+
+
+event = {
+	id = 7801224
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "PSRU"
+	desc = "The Pibulsongkram Rajabhat university was first established in 1926 as a teacher training school under the Royal Thai government's Primary School Act of 1921. King Rama VII bestowed the name Phitsanuwittayayon School and attended the opening on 7 January 1926, accompanied by Queen Ramphaiphanni"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = april year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.2 }
+                command = { type = money value = -10 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801225
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Suea Pa Road"
+	desc = "Suea Pa road was built in the King Vajiravudh (Rama VI)'s reign in 1921 due to the great fire in Tambon Trok Tao Hu on Charoen Krung road. On September 3, 1921, Pom Prap Sattru Phai was severely damaged. Because of the area in the neighbourhood, houses are built to scramble and there's not enough road to prevent danger in a timely manner"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = june year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "Ok"
+		command = { type = tc_mod value = 1 }
+		command = { type = industrial_modifier which = supplies value = 0.2 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801226
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "IEC"
+	desc = "The International Engineering Public Company Limited, is an information, energy and communication company whose headquarters are located in Bangkok, Thailand. The company was established in 1922 to undertake engineering work on the Bangkok-Aranyaprathet Railway, which connected Thailand to the Cambodian border for the first time. IEC participated in building up the infrastructure of the country as it rapidly modernised. IEC became, in 1929, the sole official distributor of Westinghouse products"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = january year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801227
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "S.S.S School"
+	desc = "Satri Si Suriyothai School was established on 1 August 1922. The number of students increased every year. The Ministry of Education purchased the building of the health center, and built a new wooden building"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = march year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.2 }
+                command = { type = money value = -10 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801228
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "UDRU"
+	desc = "Udon Thani Rajabhat University (UDRU) is a university in Udon Thani, northeast Thailand. It confers associate, bachelors, masters, and doctoral degrees"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = february year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.2 }
+                command = { type = money value = -10 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801229
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Palace Law of Succession"
+	desc = "Palace Law of Succession governs succession to the Throne of the Kingdom of Thailand, under the ruling House of Chakri. Succession matters prior to the end of absolute monarchy in 1932 could be contentious, especially during the Ayutthaya period from the 14th to 18th centuries. In 1924, King Vajiravudh (Rama VI) attempted to clarify the succession process by laying down the Palace Law of Succession. It was promulgated and came into effect in November 1924"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = january year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                command = { type = money value = -30 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801230
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Ban Mo Wan"
+	desc = "Ban Mo Wan is a traditional Thai medicine store and historic building. It was created by Mo Wan under the traditional Thai medicine who lived in the reign of Rama V to Rama VIII."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = march year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = relative_manpower value = 0.5 }
+                command = { type = research_mod value = 0.2 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801231
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "King Rama VI Passed Away"
+	desc = "In 1925, King Vajiravudh himself died at the age of 44. Rama VII became absolute monarch at only thirty-two. He was crowned King of Siam on 25 February 1926"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = november year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "King is dead"
+		command = { type = headofstate which = 290102 }
+                
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801232
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Amnuay Silpa School"
+	desc = "Amnuay Silpa School is a coeducational private school in Bangkok, Thailand. It teaches kindergarten, primary and secondary levels. The school was founded in 1926, formerly as an all-boy school in the early years. Chitra Dansuputra was the co-founder and the owner of the school. He later set up a non-profit educational trust Amnuay Silpa Foundation and donated the school to the foundation in 1564"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = february year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.2 }
+                command = { type = money value = -10 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801233
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Royal Society of Thailand"
+	desc = "On 19 April 1926, the Royal Society of Siam was established by King Prajadhipok. The society was later dissolved on 31 March 1933 and its divisions were incorporated into two new agencies. The academic divisions became the Royal Institute of Thailand. The archaeological divisions became the Fine Arts Department of Thailand"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = april year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801234
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Bobae"
+	desc = "Bobae, is a well-known cheap clothing market, both retail and wholesale. The market area has two huge wholesale shopping areas, Bobae Market and Bobae Tower. Bobae was founded in 1927"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = january year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.05 }
+                command = { type = industrial_modifier which = supplies value = 0.05 }
+	}
+}
+
+
+
+event = {
+	id = 7801235
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Central Department Store"
+	desc = "Central Department Store is a Thai department store chain. Store was founded in 1927"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = march year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.05 }
+                command = { type = industrial_modifier which = supplies value = 0.05 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801236
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "People's Party"
+	desc = "People's Party was a Siamese group of military and civil officers, and later a political party, which staged a bloodless coup against King Prajadhipok and transformed the country's absolute monarchy to constitutional monarchy in 1932"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = february year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.2 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801237
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "LTAT"
+	desc = "Lawn Tennis Association of Thailand is the national governing body of tennis in Thailand, it is one of the oldest organised sports governing body in Thailand. The main aims of the organisation is to develop international level tennis players, improve the infrastructure for tennis and to popularise it in Thailand"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = april year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801238
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Nightingale"
+	desc = "Nightingale is a department store in Thailand. It is the oldest shopping mall that still operating in Bangkok and all of Thailand"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = january year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.05 }
+                command = { type = industrial_modifier which = supplies value = 0.05 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801239
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Diocese of Ratchaburi"
+	desc = "The diocese dates back to 30 June 1930, when the Mission sui iuris of Rajaburi was created, originally responsible for the south and west of Thailand, on territory split off from the then Apostolic Vicariate of Bangkok. It was run by the Salesian order, who came there in 1927 and supplied the missionary Ordinaries"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = march year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.2 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801240
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "ACOS"
+	desc = "The Agreement for the Control of Opium Smoking in the Far East, also known as the Agreement concerning the Suppression of Opium Smoking, was a treaty concluded in Bangkok on 27 November 1931 and at Lake Success, New York on 11 December 1946. The treaty was signed and ratified by the State of Vietnam, France, British India, Japan, Laos, Netherlands, Thailand, and United Kingdom"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = february year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                command = { type = relation which = U02 value = 10 }
+                command = { type = relation which = ENG value = 10 }
+                command = { type = relation which = FRA value = 10 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = relation which = JAP value = 10 }
+                
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801241
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Siamese revolution"
+	desc = "The Siamese revolution of 1932 was a transition on 24 June 1932, which changed the system of government in Siam from an absolute monarchy to a constitutional one. The revolution was brought about by a group of military and civilians, who formed Siam's first political party, Khana Ratsadon. It ended 150 years of absolutism under the Chakri, almost 800 years of absolute rule of kings and resulted in Siam being granted its first constitution"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = june year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Thai Absolutism is dead?"
+		command = { type = dissent value = 4 }
+                command = { type = domestic which = democratic value = 1 }
+		command = { type = domestic which = political_left value = -1 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801242
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+                Event = 7801241
+	}
+
+	name = "House of Representatives"
+	desc = "The House of Representatives was established after the Revolution of 1932, when the Khana Ratsadon, overthrew the absolute monarchy and replaced it with a system of constitutional monarchy. When King Prajadhipok signed the temporary constitution of 1932, he established the first legislative assembly in Thailand, It was an entirely royally-appointed chamber"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -2 }
+                command = { type = domestic which = democratic value = 1 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801243
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Pathumwan Institute"
+	desc = "Pathumwan Institute was established in 1932 as a technical school by a group of Thai naval officers, the institute was upgraded to technical college in 1975"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = january year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.2 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801244
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Itsaraphap Road"
+	desc = "Itsaraphap Road is an one main road in Bangkok's Thonburi side. It was built in the year 1931 during the King Rama VII reign after the construction of a Memorial Bridge linked between Phra Nakhon and Thonburi sides was completed"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = march year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = tc_mod value = 1 }
+		command = { type = industrial_modifier which = supplies value = 0.2 }
+                
+	}
+}
+                
+	
+
+
+
+
+
+event = {
+	id = 7801245
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Boon Rawd Brewery"
+	desc = "Boon Rawd Brewery is a well-known Thai brewery founded in 1933 by Phraya Bhirom Bhakdi. It also produces soft drinks and bottled drinking water. Their best-known product is the pale lager Singha"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = february year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "Ok"
+		command = { type = tc_mod value = 1 }
+		command = { type = industrial_modifier which = supplies value = 0.2 }
+                
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801246
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Royal Thai Police"
+	desc = "Primary responsibility for the maintenance of public order through enforcement of the kingdom's laws was exercised by the Thailand National Police Department (TNPD), a subdivision of the Interior Ministry. Charged with performing police functions throughout the entire country, the TNPD was a unitary agency whose power and influence in Thai national life had at times rivalled that of the armed forces itself"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = april year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -2 }
+                command = { type = morale which = land value = 0.2 }
+                command = { type = max_organization which = land value = 0.2 }
+
+
+	}
+}
+
+
+
+
+event = {
+	id = 7801247
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Sala Chaloem Krung"
+	desc = "Sala Chaloem Krung was originally a movie theatre in Bangkok, Thailand built in Modernist style on Charoengkrung Road. It was opened on 3 July 1933. After serving as a cinema for many years it now hosts performances of classical Thai dance"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = july year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801248
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Church of Christ"
+	desc = "It was founded in 1934 as the Church in Siam with the intent of forming a single ecumenical denomination to include all Protestant churches in Thailand. Other than a small number of American Baptist and British Churches of Christ congregations, most of the original member churches were originally Presbyterian congregations, many of which were started by missionaries from the American Presbyterian Mission Board"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = january year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801249
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Miss Thailand"
+	desc = "Miss Thailand, is a beauty pageant held in Thailand for Thai women, first held on December 10, 1934 in Phra Nakhon district of Bangkok, under the name of Miss Siam"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = march year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801250
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thesaban"
+	desc = "Thesaban are the municipalities of Thailand. There are three levels of municipalities: city, town, and sub-district. Bangkok and Pattaya are special municipal entities not included in the thesaban system"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = june year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801251
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thammasat University"
+	desc = "Thammasat University is an administrative agency of the Thai government, being an academic faculty attached to Thammasat University, Ministry of Education. It is the second oldest university faculty in the country, preceded only by the Faculty of Medicine, Mahidol University"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.2 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801252
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "National Stadium"
+	desc = "The National Stadium of Thailand is a sports complex located in Pathum Wan District, Bangkok. Founded in 1935"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = february year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.1 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801253
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Crown Property Bureau"
+	desc = "The Crown Property Bureau (CPB) is the quasi-government agency responsible for managing the property of the crown of the Kingdom of Thailand. The bureau is legally defined as a juristic person and not a government agency. It has no tax obligations"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = january year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -0.5 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801254
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Narathiwat"
+	desc = "Narathiwat is a town (thesaban mueang) in southern Thailand and capital of Narathiwat Province. The town is in the Mueang Narathiwat District and was established in 1936"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = march year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801255
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "URU"
+	desc = "Uttaradit Rajabhat University (URU) is a Thai public university under the Rajabhat system. The campus is in Uttaradit, a small city north of Bangkok. It was established in 1936 as the Uttaradit Teachers College"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = may year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.1 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801256
+	random = no
+	country = SIA
+      	trigger = { exists = SIA }
+
+
+	date = { day = 10 month = february year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+
+	name = "New Thai aircrafts purchased"
+	desc = "We have purchased several new airplanes from the United States and Japan."
+	style = 2
+	picture = "SIA05"
+
+	action_a = {
+		name = "Good!"
+		command = { type = gain_tech which = 4170 }
+		command = { type = money value = -100 }
+		command = { type = metalpool value = -500 }
+		command = { type = construct which = infrastructure where = 1424 value = 10 }
+		command = { type = construct which = air_base where = 1424 value = 1 }
+		command = { type = construct which = air_base where = 1423 value = 1 }
+		command = { type = add_division value = cas when = -1 }
+		command = { type = add_division value = interceptor when = -1 }
+		command = { type = relation which = JAP value = 25 }
+		command = { type = relation which = USA value = 5 }
+	      }
+	}
+
+
+
+
+
+event = {
+	id = 7801257
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Adventist Hospital"
+	desc = "The hospital was founded in 1937 with funds provided Captain Thomas Hall, a merchant seaman, and was operated by Dr. Ralph Waddell, his wife Ellen, Mr. Pleng Vitiamyalaksna and Pastor Kon Vui-leong"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = april year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -2 }
+                command = { type = relative_manpower value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801258
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Chue Chin Hua"
+	desc = "The Chue Chin Hua Company Ltd. is one of the leading aluminium cookware and metal producing companies in Thailand. The company was founded by Udom Pichitpongchai in 1936 to produce aluminium cookware"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = june year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801259
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Phang Nga Province"
+	desc = "Phang Nga is a town (thesaban mueang) in southern Thailand, capital of Phang Nga Province. The town covers the whole tambon Thai Chang of Mueang Phang Nga district. The municipal administration was created on 11 February 1937"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+
+
+
+event = {
+	id = 7801260
+	random = no
+	country = SIA
+      	trigger = { exists = SIA }
+
+
+	date = { day = 10 month = january year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+
+	name = "Thai Naval Bases"
+	desc = "Due to the modernization process of our navy, we also needed a new naval base closer to Bangkok, which construction has now finished."
+	style = 2
+	picture = "SIA02"
+
+	action_a = {
+		name = "Great"
+		command = { type = money value = -100 }
+		command = { type = metalpool value = -500 }
+		command = { type = construct which = infrastructure where = 1431 value = 10 }
+		command = { type = construct which = naval_base where = 1431 value = 1 }
+		command = { type = manpowerpool value = -1 }
+	      }
+	}
+
+
+
+event = {
+	id = 7801261
+	random = no
+	country = SIA
+      	trigger = { exists = SIA }
+
+
+
+	date = { day = 10 month = march year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+
+	name = "Thai's fleet expansion"
+	desc = "The Thonburi class was a class of coastal defence ships of the Royal Thai Navy. It consisted of two ships built by Kawasaki and delivered in 1938, HTMS Thonburi and HTMS Sri Ayudhya."
+	style = 2
+	picture = "SIA07"
+
+	action_a = {
+		name = "Good"
+		command = { type = money value = -100 }
+		command = { type = manpowerpool value = -1 }
+		command = { type = add_division which = "HTMS Dhonburi" value = heavy_cruiser when = 4 }
+		command = { type = add_division which = "HTMS Sri Ayudhya" value = heavy_cruiser when = 4 }
+		command = { type = relation which = JAP value = 25 }
+	      }
+	}
+
+
+
+
+event = {
+	id = 7801262
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Radio Thailand"
+	desc = "The National Broadcasting Services of Thailand is the public radio station in Thailand, owned by the National Broadcasting Services of Thailand. Thai Radio was founded in 1938"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = may year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801263
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "TUSS"
+	desc = "Triam Udom Suksa School is a state school in central Bangkok, Thailand. It admits upper-secondary students (mathayom 4–6, equivalent to grades 10–12) and has the largest yearly enrolment in the country. Founded in 1938 as a preparatory school for Chulalongkorn University"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = july year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.1 }
+                
+	}
+}
+
+
+
+
+
+
+
+event = {
+	id = 7801264
+	random = no
+	country = SIA
+      	trigger = { exists = SIA }
+
+
+        date = { day = 10 month = june year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+
+
+	name = "Thai Nationalism"
+	desc = "On 23 June 1939, Phibun changed the country's name from Siam to Prathet Thai or Thailand, said to mean 'land of the free'. This was a nationalist gesture, it implied the unity of all the Tai-speaking peoples, including the Lao and the Shan, but excluding the Chinese. The regime's slogan became 'Thailand for the Thai.'"
+	style = 2
+	picture = "SIA06"
+
+	action_a = {
+		name = "Thailand for the Thai!"
+		command = { type = construct which = ic where = 1423 value = 2 }
+		command = { type = construct which = infrastructure where = 1423 value = 10 }
+            	command = { type = dissent value = -3 }
+	      }
+	}
+
+
+
+
+
+event = {
+	id = 7801265
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Songsuradet rebellion"
+	desc = "The Songsuradet rebellion also known as the Rebellion of 18 corpses was an important Thai historical event in 1939. Phraya Songsuradet did not instigate the rebellion or coup, yet it was named after him. The coup was carried out by Plaek Phibunsongkhram on 29 January 1939 to purge the country of his political enemies and former rivals, one of whom happened to be Songsuradet"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = february year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Damn!"
+		command = { type = dissent value = 3 }
+                command = { type = manpowerpool value = -1 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801266
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "5th Infantry Division"
+	desc = "Partner resources as raw materials To expand its military power. The government, led by Plaek Phibunsongkhram and Minister of Defense. Look that the southern area are precarious. And not have military units to protect the sovereign which Field Marshal Phin Choonhavan Chief of the Royal Thai Army at that time. Ask expansion units Infantry Battalion and Artillery Battalion in the Southern Thailand"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = april year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = add_division value = infantry when = -1 }
+                command = { type = manpowerpool value = 20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801267
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thailand Tobacco Monopoly"
+	desc = "The Thailand Tobacco Monopoly was established in 1939, initially in collaboration with British American Tobacco, but since 1949 it has operated solely under the control of the Ministry of Finance. TTM was a top financial contributor to the Thai treasury and has contributed funds to local administrative organisations"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.10 }
+                command = { type = industrial_modifier which = supplies value = 0.10 }
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801268
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Saphan Wan Chat"
+	desc = "Chaloem Wan Chat Bridge is a bridge across Khlong Rop Krung (around the city canal) or popularly known as Khlong Bang Lamphu on Prachathipatai road, considered as the beginning point of Prachathipatai road and the tip of Dinso road. The bridge was built in 1940 in the era of government of Plaek Phibunsongkhram to celebrate the national day of Thailand"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = january year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = tc_mod value = 1 }
+		command = { type = industrial_modifier which = supplies value = 0.2 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801269
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Nakprasith School"
+	desc = "Nakprasith School is a co-educational school located in Khlongmai, Samphran, Nakhon Pathom. It is a well-known school with its excellent school management and qualified teachers and students. School was established on 20 August 1940 by Phrakru Palatphan Saeng-Sopha who was the ex-abbot of Bang Chang Nuea Temple in 1940. He collected money from the people around the area of the temple to build this school"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = march year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.1 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801270
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai-Bharat Cultural Lodge"
+	desc = "The Thai-Bharat Cultural Lodge is one of the most prestigious Indian cultural organisation in Thailand that seeks to promote comparative studies and exchange between Thai and Indian history and culture. It was founded in 1940 in Bangkok by Swami Satyananda Puri with encouragement from the Indian Nobel Laureate Rabindranath Tagore"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = may year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -2 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801271
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Vajiravudh College"
+	desc = "Vajiravudh College is a private all-boys boarding school located at 197 Rajvithi Road, Dusit, Bangkok 10300 Thailand. The school was established by Phra Mongkut Klao Chaoyuhua - King Rama VI who is also known as King Vajiravudh. It was originally named the Royal Pages College"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = january year = 1919 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1919 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.1 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801272
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Vallabhabhorn Order"
+	desc = "The Vallabhabhorn Order was established on 22 March 1919 by King Rama VI of The Kingdom of Siam (now Thailand) to reward personal service to the sovereign"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = march year = 1919 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1919 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801273
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Tiparos"
+	desc = "Tiparos is a Thai condiment brand under the Tang Sang Hah Company, established in Chonburi Province in 1919. The company was named Bowdang, before changing its name in the mid-20th century"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = may year = 1919 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1919 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.05 }
+                command = { type = industrial_modifier which = supplies value = 0.05 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801274
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Chulachomklao Military Academy"
+	desc = "Originally founded in 1887 as the Royal Military Academy, the RMA was recently merged with the Royal Thai Army Polytechniques Institute and is now called the Chulachomklao Royal Military Academy, in honour of King Chulachomklao (Rama V). In 1920 Academy was expanded"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = february year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Ok"
+		command = { type = max_organization which = land value = 1 }
+                command = { type = morale which = land value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801275
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Rice and Export"
+	desc = "The best way to cope with the disastrous economic situation right now is to increase Rice exports."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = april year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Ok"
+		command = { type = money value = 200 }
+                command = { type = free_money value = 0.1 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801276
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Reformed Judiciary"
+	desc = "Our laws are now modernised to better reflect and work with our modern society. Gone are the days of barbaric and draconian Ayutthaya-era laws."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = june year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Ok"
+		command = { type = dissent value = -1 }
+                
+	}
+}
+
+
+
+
+event = {
+	id = 7801277
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Economy Philosophy"
+	desc = "The Sufficiency Economy Philosophy is a philosophy based on the fundamental principles of Thai culture, which are: moderation, prudence, and social immunity. This philosophy uses both knowledge and virtue as guidelines for living."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = january year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801278
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Curriculum Act"
+	desc = "By standardising the education system according to a national ciriculum we can ensure the improvement of literacy rates nationwide."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = march year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = research_mod value = 0.1 }
+                
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801279
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "The Modern Siamese Nation"
+	desc = "The impact of the blood, sweat, and tears we have spent to revitalise Siam can be clearly seen throughout the nation."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = may year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+                command = { type = morale which = land value = 0.5 }
+                command = { type = relative_manpower value = 5 }
+	}
+}
+
+
+
+##################
+# Thai Economy
+##################
+
+
+
+event = {
+	id = 7801280
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Prefabrication Method"
+	desc = "Siamese cement researchers have mastered the prefabrication method, which has allowed us to greatly increase our building speed. This will, in turn, further the Siamese war effort."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1915 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1915 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801281
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Weapon Standardisation Programm"
+	desc = "By legally standardising all military firearms for the same ammunition our struggling armaments factories can churn out weapons at a much faster rate."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1916 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1916 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801282
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Industrial Mobilisation"
+	desc = "Created as an emergency plan to help the state better deal with war, our industrial mobilisation plan allows us to increase our industrial output."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1917 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1917 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801283
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "New Thai Farming"
+	desc = "Instead of allowing the unemployed to remain idle we should send them back into the countryside, which will help reduce our reliance on foreign imports."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1918 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1918 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801284
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Air Industry"
+	desc = "Thai Air Industries is an entity seperate from the Royal Siamese Airforce Workshop, it is hoped that their newer and more innovative outlook will produce authentic Siamese aircraft"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1919 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1919 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801285
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Reorganised Bureaucracy"
+	desc = "Thai bloated and over-large bureaucracy has gone through a series of austerity measures aimed at reducing redundancy in low-level positions, bringing greater efficiency."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801286
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Economic Stabilisation"
+	desc = "Economic crisis's effect on the Thai economy is now receding and our exports have begun to recover."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7801287
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Rice Tradition"
+	desc = "Siam has always had a strong tradition of rice production. We have the fifth-largest amount of land globally diverted to rice cultivation efforts and are now aiming to become the world's largest largest exporter of rice."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801288
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Emergency Tax"
+	desc = "Even though we've enacted many sweeping reforms we still do not have enough money to sufficiently balance this year's budget. An emergency tax should help remedy this situation, but will create more suffering for our loyal subjects."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+event = {
+	id = 7801289
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Jasmine Rice"
+	desc = "One of the largest exporters of rice within Siam, the farmers across the Chao Phraya, have asked for government intervention to deal with the excessive supply of rice due to a general fall in demand and fewer export opportunities"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801290
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Initial Economic Stabilisation"
+	desc = "Following the immediate aftermath of the economic crisis, it has been made clear that there are many weaknesses within our economy and that we must take steps to remedy the situation."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801291
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Local Bussinesses"
+	desc = "Through providing local businesses with government loans, or assisting them with whatever else they may need, we can ensure that economic activity within our country occurs not only on the national scale but on the local scale as well."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801292
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "New Cement Company"
+	desc = "By providing bailouts to Siam Cement, the largest cement and building material company in Siam, we can ensure that the company stays afloat and avoid any further negative impacts on our economy."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1957 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801293
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Chiang Mai Oil Discovery"
+	desc = "Crude oil was first discovered in the Fang district, specifically Chiang Mai, in 1921 but was never properly exploited. The current economic crisis has driven up the price to record levels and any instability in the region might cut us off from our imported sources in Palembang. Becoming more self-reliant may well help improve our struggling industrialisation as well."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1958 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801294
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Oil Corporation"
+	desc = "By investing in the foundation of a central oil company we can ensure that the oil within our nation is better managed and can more effectively prospect and drill wells."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1959 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801295
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Rayong Refineries"
+	desc = "Formerly the 'Department of Fuel Acquisition' in the Ministry of Defence, a newly created state-owned enterprise will ensure that the oil within our nation is better managed and that we can more effectively refine what we drill."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801296
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "New Construction Methods"
+	desc = "By adopting new construction methods we can work towards the gradual industrialisation and economic development of Siam"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801297
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "New Thai Trucks"
+	desc = "Founded as a civilian truck part company, Chaiseri has gained some insights into heavy machinery production and wants us to fund their armoured car project as a testbed for future combat vehicles"
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1952 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+event = {
+	id = 7801298
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Rubber Plantations"
+	desc = "Exploitation of the rubber plantations in the south should be considered a vital national industry in this day and age, and can help us stimulate trade as nations around the world look for sources beyond Singapore."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801299
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Petrochemical Department"
+	desc = "By creating a new authority for the extraction of coal, oil, lignite and tar we can ensure that the process of refining and processing of petroleum is better managed and more efficiently carried out."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = august year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+event = {
+	id = 7801300
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Sahaviriya Steel"
+	desc = "By negotating a deal with Sahaviriya Steel, we can better manage the steel output within our nation and gain more control over what goes where, while also insulating against foreign entryism. This will also assist in job creation efforts."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = april year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801301
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Tungsten Mines"
+	desc = "Tungsten is an incredibly crucial resource that allows for production of modern electronics and the creation of new industrial tools."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = february year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801302
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Kanchanaburi's Iron Reservoir"
+	desc = "Exploiting the 'iron reservoir' in Kanchanaburi will provide a vital source of iron for the nation's strategic interests and help to galvanise the growth of domestic steel."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = april year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1951 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7801303
+	random = no
+	country = SIA
+
+	trigger = {
+		exists = SIA
+	}
+
+	name = "Thai Iron Mines"
+	desc = "Expanding the iron mines in Loei should be a top priority, as productive of iron ore and steel is vital to a modern economy. Additionally this will help to reduce unemployment and keep people working."
+	style = 2
+	picture = "SIA1"
+
+	date = { day = 10 month = april year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action = {
+		name = "Ok"
+		command = { type = industrial_modifier which = total value = 0.20 }
+                command = { type = industrial_modifier which = supplies value = 0.20 }
+	}
+}

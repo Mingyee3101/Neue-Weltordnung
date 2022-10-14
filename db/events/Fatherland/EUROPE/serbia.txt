@@ -1,0 +1,726 @@
+########################################
+# Serbia's Future
+########################################
+# 900 # GER # Decision: Serbia's future
+
+# 901 # GER # Colonial Policy toward Banat
+# 903 # GER # Banat integration
+# 904 # HUN # Hungarian Banat
+# 905 # ROM # Romanian Banat
+# 911 # GER # Economic Exploitation of Banat
+# 912 # GER # The Iron Gate Project is Done!
+# 913 # GER # Economic Exploitation of Banat	
+# 914 # ROM # The Iron Gate Project is Done!
+# 915 # HUN # The Iron Gate Project is Done!
+
+# 902 # SER # The National Government - Autonomy
+# 906 # SER # The National Government - Puppet
+
+# 908 # SER # The Fate of Bor
+# 909 # ROM # Romanian Bor
+
+# 907 # 
+# 910 # 
+
+
+########################################
+
+# 900 # GER # Decision: Serbia's future
+event = {
+	id = 900
+	random = no
+	save_date = yes
+	country = GER
+	
+	decision = {
+		exists = HUN
+		exists = ROM
+		event = 2005
+	}
+	decision_trigger = {
+		exists = SER
+	}		
+	trigger = {
+		exists = SER
+		event = 2005
+	}		
+	
+	name = "900NAME"
+	desc = "900DESC"
+	style = 2
+	picture = "fateoffrancecolor"
+	decision_picture = "decision_ger_intervention"
+
+	date = { day = 15 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 12 month = march year = 1984 }
+
+	action = {
+		name = "Volksdeutsche Banat Government - Serbia puppet"
+		ai_chance = 40
+		
+		command = { type = make_puppet which = SER } 
+		
+		command = { type = independence which = U62 value = 0 when = 0 } #Banat
+		command = { type = make_puppet which = U62 }
+		
+		command = { type = trigger which = 901 } #Colonial Policy toward Banat
+		command = { type = trigger which = 906 } #The National Government - Puppet
+		
+		command = { type = relation which = HUN value = -25 } 
+		command = { type = relation which = ROM value = -25 } 
+		command = { type = relation which = CRO value = 25 } 
+		command = { type = relation which = BUL value = 10 } 
+		command = { type = relation which = SER value = -50 } 
+				
+		command = { type = setflag which = Banat }
+		
+		command = { type = trigger which = 908 } #The Fate of Bor
+	}
+	action = {
+		name = "Incorporate Banat - Serbia with a limited autonomy"
+		ai_chance = 30
+		
+		command = { type = end_mastery which = SER }
+		
+		command = { type = trigger which = 901 } #Colonial Policy toward Banat
+		#command = { type = trigger which = 906 } #The National Government - Puppet
+		
+		command = { type = trigger which = 902 } #The National Government - Autonomy
+		
+		command = { type = relation which = HUN value = -50 } 
+		command = { type = relation which = ROM value = -50 } 
+		command = { type = relation which = CRO value = -25 } 
+		command = { type = relation which = BUL value = -20 } 
+		command = { type = relation which = SER value = 50 } 
+		
+	}
+	action = {
+		name = "Banat to Hungary - Serbia with a limited autonomy"
+		ai_chance = 5
+		
+		command = { type = removecore which = 336 }
+		command = { type = removeclaim which = 336 }
+		command = { type = secedeprovince which = HUN value = 336 }
+		
+		command = { type = relation which = HUN value = 100 } 
+		command = { type = relation which = ROM value = -100 } 
+		command = { type = relation which = CRO value = -25 } 
+		command = { type = relation which = BUL value = -20 } 
+		command = { type = relation which = SER value = -25 } 
+		
+		command = { type = trigger which = 906 } #The National Government - Puppet
+		command = { type = trigger which = 904 } #Hungarian Banat
+		command = { type = trigger which = 908 } #The Fate of Bor
+	}
+	action = {
+		name = "Banat to Romania - Serbia with a limited autonomy" 
+		ai_chance = 5
+		
+		command = { type = removecore which = 336 }
+		command = { type = removeclaim which = 336 } 
+		command = { type = secedeprovince which = ROM value = 336 }
+		
+		command = { type = relation which = HUN value = -100 } 
+		command = { type = relation which = ROM value = 100 } 
+		command = { type = relation which = CRO value = -15 } 
+		command = { type = relation which = BUL value = -30 } 
+		command = { type = relation which = SER value = -25 } 
+
+		command = { type = trigger which = 906 } #The National Government - Puppet
+		command = { type = trigger which = 905 } #Romanian Banat
+		#command = { type = trigger which = 908 } #The Fate of Bor
+	}	
+	action = {
+		name = "Return Banat to Serbia and give them a limited autonomy"
+		ai_chance = 20
+		
+		command = { type = removeclaim which = 336 } 
+		command = { type = secedeprovince which = SER value = 336 }
+		
+		command = { type = relation which = HUN value = -50 } 
+		command = { type = relation which = ROM value = -50 } 
+		command = { type = relation which = CRO value = -30 } 
+		command = { type = relation which = BUL value = -10 } 
+		command = { type = relation which = SER value = 100 } 
+
+		command = { type = trigger which = 902 } #The National Government - Autonomy
+	}
+}
+
+# 901 # GER # Colonial Policy toward Banat
+event = {
+	id = 901
+	random = no
+	save_date = yes
+	country = GER	
+	name = "901NAME"
+	desc = "901DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "RUTHLESS"
+		ai_chance = 50
+		command = { type = setflag which = Banat1 }
+		
+		command = { type = relation which = HUN value = -10 } 
+		command = { type = relation which = ROM value = -10 } 
+		command = { type = relation which = CRO value = -10 } 
+		command = { type = relation which = SER value = -10 } 
+		
+		command = { type = 	dissent value = 2 }
+	}
+	action = {
+		name = "LOCAL"
+		ai_chance = 50
+		command = { type = setflag which = Banat2 }
+		
+		command = { type = relation which = SER value = 5 }
+		
+		command = { type = 	dissent value = -1 }
+	}
+}
+# 903 # GER # Banat integration
+event = { 
+	id = 903
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+		OR = { 
+		flag = Banat1
+		flag = Banat2 
+		}
+		
+		NOT = { war = { country = GER country = SOV } }
+		OR = { 
+				AND = {
+					event = { id = 901 days = 360 } 
+					flag = Banat1 	
+				}
+				AND = {
+					event = { id = 901 days = 450 } 
+					flag = Banat2 	
+				}
+		}
+	}	
+		
+	name = "903NAME"
+	desc = "903DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = addcore which = 336 } 
+	command = { type = dissent value = 1 }
+		}
+	}	
+
+# 902 # SER # The National Government - Autonomy
+event = {
+	id = 902
+	random = no
+	country = SER
+	style = 2
+	save_date = yes
+
+	name = "902NAME" 
+	desc = "902DESC"
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = headofstate which = 415001 }
+		command = { type = flag_ext which = "_fas" where = SER }
+		
+		command = { type = set_relation which = GER value = 200 }
+		command = { type = set_relation which = ITA value = 150 }
+		command = { type = set_relation which = HUN value = -25 }
+		command = { type = set_relation which = ROM value = -25 }
+		command = { type = set_relation which = BUL value = 10 }
+		command = { type = set_relation which = CRO value = -50 }
+		
+		command = { type = addcore which = 336 } 
+		
+		command = { type = add_division value = infantry when = 10 }
+		command = { type = add_division value = infantry when = 10 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+			
+      	command = { type = dissent value = -5 }
+		
+		command = { type = end_puppet }		
+		command = { type = alliance which = GER }
+		}
+	}
+
+# 906 # SER # The National Government - Puppet
+event = {
+	id = 906
+	random = no
+	country = SER
+	style = 2
+	save_date = yes
+
+	name = "902NAME" 
+	desc = "906DESC"
+	picture = "news_paper"
+
+	action = {
+		name = "ACTION_NAME_GREAT"
+		
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = headofstate which = 415001 }
+		#command = { type = flag_ext which = "_fas" where = SER }
+		
+		command = { type = set_relation which = GER value = 150 }
+		command = { type = set_relation which = ITA value = 100 }
+		command = { type = set_relation which = HUN value = 50 }
+		command = { type = set_relation which = ROM value = 50 }
+		command = { type = set_relation which = BUL value = 30 }
+		command = { type = set_relation which = CRO value = 10 }
+		
+		#command = { type = removecore which = 329 } 
+		#command = { type = removecore which = 336 }
+		#command = { type = removecore which = 331 } 
+		#command = { type = removecore which = 341 } 
+		#command = { type = removecore which = 337 } 
+
+		command = { type = add_division value = militia when = 6 }
+				
+      	command = { type = dissent value = 25 }
+		}
+	}
+	
+# 904 # HUN # Hungarian Banat
+event = { 
+	id = 904
+	random = no
+	country = HUN
+	save_date = yes
+		
+	name = "BANAT"
+	desc = "904DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+			name =  "ACTION_NAME_GREAT"
+			command = { type = addcore which = 336 } 
+		}
+		
+	}	
+
+# 905 # ROM # Romanian Banat
+event = { 
+	id = 905
+	random = no
+	country = ROM
+	save_date = yes
+		
+	name = "BANAT"
+	desc = "905DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name =  "ACTION_NAME_GREAT"
+		command = { type = addcore which = 336 } 
+	}
+	
+}	
+
+#To dismiss ....
+event = {
+	id = 907
+	random = no
+	save_date = yes
+	country = GER	
+	name = "907NAME"
+	desc = "907DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action_a = {
+		name = "907A"
+		ai_chance = 65
+		command = { type = trigger which = 901 } 
+		command = { type = relation which = HUN value = -50 } 
+		command = { type = relation which = ROM value = -50 } 
+		command = { type = setflag which = Banat }
+	}
+	action_b = {
+		name = "907B"
+		ai_chance = 15
+		command = { type = relation which = HUN value = 100 } 
+		command = { type = relation which = ROM value = -50} 
+		command = { type = secedeprovince which = HUN value = 336 }
+		command = { type = removeclaim which = 336 } 
+		command = { type = trigger which = 904 } 
+	}
+	action_c = {
+		name = "907C" 
+		ai_chance = 20
+		command = { type = relation which = HUN value = -50 } 
+		command = { type = relation which = ROM value = 100} 
+		command = { type = secedeprovince which = ROM value = 336 }
+		command = { type = removeclaim which = 336 } 
+		command = { type = trigger which = 905 } 
+	}
+}
+
+# 908 # SER # The Fate of Bor
+event = {
+	id = 908
+	random = no
+	save_date = yes
+	country = SER	
+	name = "908NAME"
+	desc = "The Germany want forced us to cede the province of Bor to Romania" #908DESC
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "We cannot oppose, Bor to Romania" #908A
+		ai_chance = 70
+		command = { type = relation which = ROM value = 50} 
+		command = { type = relation which = GER value = -10 } # SER is a puppet and cannot oppose
+		
+		command = { type = removecore which = 339 } 
+		command = { type = addclaim which = 339 } 
+		command = { type = secedeprovince which = ROM value = 339 }
+		
+		command = { type = trigger which = 909 } 
+		
+		command = { type = dissent value = 10 }
+	}
+	action = {
+		name = "Bor is too much important for our country, beseech the Germany and keep the province" #908B
+		ai_chance = 30
+		command = { type = relation which = ROM value = -25 } # Bor is not very important for ROM
+		command = { type = relation which = GER value = -50 }
+		command = { type = dissent value = -10 }
+	}
+}	
+
+# 909 # ROM # Romanian Bor
+event = { 
+	id = 909
+	random = no
+	country = ROM
+	save_date = yes
+		
+	name = "909NAME"
+	desc = "909DESC"
+	style = 2
+	picture = "news_paper"	
+
+
+	action = {
+		name =  "ACTION_NAME_GREAT"
+		command = { type = addcore which = 339 } 
+	}
+	
+}
+#To dismiss ....
+event = {
+	id = 910
+	random = no
+	save_date = yes
+	country = SER	
+	name = "908NAME"
+	desc = "910DESC"
+	style = 2
+	picture = "news_paper"	
+
+	action_a = {
+		name = "908A" 
+		ai_chance = 50
+		command = { type = relation which = ROM value = 50} 
+		command = { type = relation which = GER value = -10 } # SER is a puppet and cannot oppose
+		command = { type = removeclaim which = 339 } 
+		command = { type = secedeprovince which = ROM value = 339 }
+		command = { type = trigger which = 909 } 
+	}
+	action_b = {
+		name = "910B"
+		ai_chance = 50
+		command = { type = relation which = ROM value = -10 } # Bor is not very important
+	}
+}		
+
+# 911 # GER # Economic Exploitation of Banat
+event = { 
+	id = 911
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+		flag = Banat
+		event = { id = 901 days = 90 } 
+		owned = { province = 336 }
+		control = { province = 336 }
+	}	
+		
+	name = "911NAME"
+	desc = "911DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "911A" 
+		ai_chance = 50
+		command = { type = free_ic value = -2 }
+		command = { type = setflag which = BanatEx }
+	}
+	action_b = {
+		name = "911B"
+		ai_chance = 50
+		command = { type = money value = 250 }
+	}
+	}
+	
+# 912 # GER # The Iron Gate Project is Done!
+event = { 
+	id = 912
+	random = no
+	country = GER
+
+	trigger = {
+    random = 10
+		}
+	
+		
+	name = "912NAME"
+	desc = "912DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_ic value = 2 }
+	command = { type = add_prov_resource which = 336 value = 50 where = energy }
+	command = { type = construct which = ic where = 336 value = 1 }
+		}
+	}
+	
+# 913 # GER # Economic Exploitation of Banat	
+event = { 
+	id = 913
+	random = no
+	country = GER
+	save_date = yes
+
+	trigger = {
+			OR = { 
+		event = { id = 904 days = 90 } 
+		event = { id = 905 days = 90 } 
+		}
+		}
+		
+	name = "911NAME"
+	desc = "913DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "911A" 
+		ai_chance = 50
+		command = { type = free_ic value = -2 }
+		command = { type = setflag which = BanatEx2 }
+	}
+	action_b = {
+		name = "911B"
+		ai_chance = 50
+		command = { type = money value = 250 }
+	}
+	}
+	
+# 914 # ROM # The Iron Gate Project is Done!
+event = { 
+	id = 914
+	random = no
+	country = ROM
+	save_date = yes
+
+	trigger = {
+		flag = BanatEX2
+		event = { id = 913 days = 730 }
+		owned = { province = 336 }
+		control = { province = 336 } 
+	}	
+		
+	name = "912NAME"
+	desc = "914DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_ic value = 2 }
+	command = { type = add_prov_resource which = 336 value = 50 where = energy }
+	command = { type = construct which = ic where = 336 value = 1 }
+	command = { type = trade which = GER where = ROM energy = 40 value = 1 } 
+		}
+	}	
+
+# 915 # HUN # The Iron Gate Project is Done!
+event = { 
+	id = 915
+	random = no
+	country = HUN
+	save_date = yes
+
+	trigger = {
+		flag = BanatEX2
+		event = { id = 913 days = 730 } 
+		owned = { province = 336 }
+		control = { province = 336 }
+	}	
+		
+	name = "912NAME"
+	desc = "914DESC"
+	style = 2
+	picture = "news_paper"	
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+	name = "ACTION_NAME_GREAT"
+	command = { type = free_ic value = 2 }
+	command = { type = add_prov_resource which = 336 value = 50 where = energy }
+	command = { type = construct which = ic where = 336 value = 1 }
+	command = { type = trade which = GER where = HUN energy = 40 value = 1 } 
+		}
+	}	
+
+	#############################################
+#  Partisan Events Balkan
+#############################################
+event = {
+	id = 1000429
+	random = no
+	country = SER
+
+	trigger = { ai = yes }
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 50 }
+	}
+}
+event = {
+	id = 1000430
+	random = no
+	country = CRO
+
+	trigger = { ai = yes }
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	name = "AI_EVENT"
+	style = 2
+	picture = "news_paper"
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 50 }
+	}
+}
+
+#############################################
+# Balkan Partisan Events
+#############################################
+event = {
+	id = 1000573
+	random = no
+	country = SER
+	persistent = yes
+	
+	trigger = {
+			NOT = { exists = YUG }
+		}
+	
+	name = "EVT_1000573_NAME"
+	desc = "EVT_1000573_DESC"
+	style = 2
+	picture = "balkan_partisans"
+	
+	date = { day = 1 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action_a = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = 100
+		command = { type = revolt which = -3 when = 0 }
+	}
+}
+#############################################
+# Balkan Partisan Events
+#############################################
+event = {
+	id = 1000574
+	random = no
+	country = CRO
+	persistent = yes
+	
+	trigger = {
+			NOT = { exists = YUG }
+		}
+	
+	name = "EVT_1000573_NAME"
+	desc = "EVT_1000573_DESC"
+	style = 2
+	picture = "balkan_partisans"
+	
+	date = { day = 1 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+	
+	action_a = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = 100
+		command = { type = revolt which = -3 when = 0 }
+	}
+}

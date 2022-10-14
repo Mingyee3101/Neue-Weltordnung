@@ -1,0 +1,234 @@
+event = {
+id = 1800
+	random = no
+	country = U05	
+	style = 2
+	save_date = yes
+	picture = "diplomatic_campaign"
+	
+	name = "1800NAME" 
+    desc = "1800DESC" 
+	
+	date = { day = 29 month = february year = 1949 }
+	
+	action = {
+			name = "1800A" 
+			ai_chance = 90
+		    command = { type = money value = -400 }	
+            command = { type = dissent value = 3 }
+            command = { type = trigger which = 1801 }			
+	}
+	
+	action = {
+			name = "1800B"
+			ai_chance = 10
+			command = { type = domestic which = interventionism value = -1 }
+            command = { type = dissent value = 3 }
+}
+}
+event = {
+id = 1801
+	random = no
+	country = USA	
+	style = 2
+	picture = "diplomatic_campaign"
+	
+	    name = "1801NAME" 
+        desc = "1801DESC" 
+	
+	
+	action = {
+			trigger = { flag = usa_cw_intervention }
+			name = "1801A" 
+			#ai_chance = 80
+            command = { type = dissent value = 3 }	
+			command = { type = manpowerpool value = -10 }
+			command = { type = supplies value = -500 } 
+		    command = { type = resource which = oil value = -500 } 
+            command = { type = trigger which = 1802 }			
+	}
+	
+	action = {
+			trigger = { flag = usa_cw_isolation }
+			name = "According our new isolation policy, is not necessary"
+			#ai_chance = 20
+			command = { type = domestic which = interventionism value = -1 }
+            command = { type = dissent value = 5 }
+}
+}
+event = {
+	id = 1802
+	random = no
+	country = U05
+	save_date = yes
+
+	name = "1802NAME"
+	desc = "1802DESC"
+	style = 2
+	picture = "lend_lease"
+
+	action = {
+		name = ACTION_NAME_OK
+		#command = { type = alliance which = USA }	
+		command = { type = supplies value = 500 } 
+		command = { type = resource which = oil value = 500 } 
+		command = { type = construct which = ic where = 1647 value = 10 }
+		command = { type = add_division value = infantry when = 3 }
+	}
+}
+
+event = {
+	id = 1808
+	random = no
+	country = GER
+	
+	trigger = { 
+	event = 1802
+    random = 20
+	}
+
+	name = "1808NAME"
+	desc = "1808DESC"
+	style = 2
+	picture = "Reichstag"
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = belligerence which = GER value = -5 }
+		command = { type = trigger which = 1809 } 
+		command = { type = trigger which = 1810 } 
+		command = { type = trigger which = 1811 } 
+		command = { type = trigger which = 1812 } 
+	}
+}
+event = {
+	id = 1809
+	random = no
+	country = U05
+
+	name = "1809NAME"
+	desc = "1809DESC"
+	style = 2
+	picture = "resistance"
+	
+
+	action = {
+		name = ACTION_NAME_OK
+        command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 1810
+	random = no
+	country = ENG
+
+	name = "1810NAME"
+	desc = "1810DESC"
+	style = 2
+	picture = "resistance"
+	
+
+	action = {
+		name = ACTION_NAME_OK
+        command = { type = dissent value = 3 }
+	}
+}
+event = {
+	id = 1811
+	random = no
+	country = FRA
+
+	name = "1811NAME"
+	desc = "1811DESC"
+	style = 2
+	picture = "resistance"
+	
+
+	action = {
+		name = ACTION_NAME_OK
+        command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 1812
+	random = no
+	country = BEL
+
+	name = "1812NAME"
+	desc = "1812DESC"
+	style = 2
+	picture = "resistance"
+	
+
+	action = {
+		name = ACTION_NAME_OK
+        command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 1813
+	random = no
+	country = USA
+	
+	decision = { event = 1812 }
+	decision_trigger = { event = 1812 } 
+	trigger = { event = 1812 }
+
+	name = "1813NAME"
+	desc = "1813DESC"
+	style = 2
+	picture = "lend_lease"
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+			name = "1813A" 
+			ai_chance = 95
+            command = { type = dissent value = 3 }	
+			command = { type = manpowerpool value = -10 }
+			command = { type = supplies value = -5000 } 
+		    command = { type = resource which = oil value = -5000 } 
+            command = { type = trigger which = 1814 }			
+	}
+	
+	action = {
+			name = "1813B"
+			ai_chance = 5
+			command = { type = domestic which = interventionism value = -1 }
+}
+}
+event = {
+	id = 1814
+	random = no
+	country = BEL
+
+	name = "1814NAME"
+	desc = "1814DESC"
+	style = 2
+	picture = "lend_lease"
+
+	action = {
+		name = ACTION_NAME_OK
+		command = { type = supplies value = 5000 } 
+		command = { type = construct which = ic where = 899 value = 10 }
+		command = { type = construct which = infrastructure where = 899 value = 30 }
+		command = { type = add_division value = armor when = 3 }
+		command = { type = add_division value = tactical_bomber when = 9 }
+		command = { type = peacetime_ic_mod value = 5 }
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = add_prov_resource which = -1 value = 25 where = energy }
+		command = { type = add_prov_resource which = -1 value = 25 where = energy }
+		command = { type = add_prov_resource which = -1 value = 25 where = metal }
+		command = { type = add_prov_resource which = -1 value = 25 where = rare_materials }
+		command = { type = add_prov_resource which = -1 value = 10 where = oil }
+	}
+}
+
+
+

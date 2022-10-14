@@ -1,0 +1,226 @@
+#########################################################################
+#  Volunteer Defence Corps
+#########################################################################
+event = { 
+	id = 225004
+	random = no
+	country = AST
+
+	trigger = {
+		OR = {
+			war = { country = AST country = GER }
+			war = { country = AST country = SOV }		
+		}		
+	}
+	
+	name = "Volunteer Defence Corps"
+	desc = "The Ministry of Defence has proposed the creation of the Volunteer Defence Corps (VDC), a part time volunteer military force modelled on the British Home Guard. The VDC is to initially be composed of ex-servicemen who had served in World War I. If established, the organisation will have the role of training for guerrilla warfare, collecting local intelligence and providing static defence of each unit's home area."
+	style = 0
+	picture = "vdc"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Create the Volunteer Defence Corps"
+		ai_chance = 100
+		command = { type = add_division value = militia when = 3 }
+		command = { type = add_division value = militia when = 3 }
+		command = { type = add_division value = militia when = 3 }
+		command = { type = add_division value = militia when = 3 }
+		command = { type = dissent value = 5 }
+	}
+	action = {
+		name = "This is not needed"
+		ai_chance = 0
+		command = { }
+	}
+}
+
+#########################################################################
+#  Australian Auxiliary Women's Service
+#########################################################################
+event = { 
+	id = 225005
+	random = no
+	country = AST
+
+	trigger = {
+		OR = {
+			war = { country = AST country = GER }
+			war = { country = AST country = SOV }		
+		}		
+	}
+	
+	name = "Australian Auxiliary Women's Service"
+	desc = "Australia has been at war for some time now, and there is considerable lobbying by women keen to serve and by military commanders who want to release male personnel serving in Australia for service overseas. They want to create the Australian Auxiliary Women's Services for all three branches of Australian armed forces, which should release men from certain military duties for employment in fighting units."
+	style = 0
+	picture = "womenservice"
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 500
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action = {
+		name = "Create the Australian Auxiliary Women's Service"
+		ai_chance = 95
+		command = { type = manpowerpool value = 50 }
+		command = { type = wartime_ic_mod value = -2 }
+	}
+	action = {
+		name = "This is not needed"
+		ai_chance = 5
+		command = { }
+	}
+}
+
+#########################################################################
+#  Torres Strait Islanders strike
+#########################################################################
+event = { 
+	id = 229002
+	random = no
+	country = AST
+
+	trigger = {
+		atwar = no
+		random = 20
+	}
+	
+	name = "Torres Strait Islanders strike"
+	desc = "Torres Strait Islanders, the indigenous people of the Torres Strait Islands, today began a general maritime strike, in an effort to take control their own affairs and gain fairer treatment."
+	style = 2
+	picture = "news_paper"
+	
+	date = { day = 14 month = january year = 1952 }
+	offset = 15
+	deathdate = { day = 29 month = june year = 1960 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = dissent value = 1 }
+	}
+}
+
+#########################################################################
+#  Australia celebrates its sesquicentennial
+#########################################################################
+event = { 
+	id = 229004
+	random = no
+	country = AST
+	
+	name = "200th anniversary of European settlement"
+	desc = "Today Australia officially celebrates its sesquicentennial, the 200th anniversary of European settlement. Unofficially, it is a Day of Mourning for Indigenous Australians."
+	style = 0
+	picture = "independent_croatia"
+	
+	date = { day = 25 month = january year = 1958 }
+
+	action_a = {
+		name = "Hooray!"
+		command = { type = dissent value = -1 }
+	}
+}
+
+#########################################################################
+#  Purchase of HMS Amphion
+#########################################################################
+event = { 
+	id = 229008
+	random = no
+	country = AST
+
+	trigger = {
+		atwar = no
+		NOT = { atwar = ENG }
+		division_exists = { type = 12700 id = 237 }
+	}
+	
+	name = "Purchase of HMS Amphion"
+	desc = "HMS Amphion is a modified Leander-class light cruiser operated by the Royal Navy. She was commissioned in 1936. After several years on the North America and West Indies Station, the Australian government expressed a desire to purchase the ship as part of a plan to bolster Australian naval forces."
+	style = 0
+	picture = "american_ships_in_dock"
+	
+	date = { day = 2 month = january year = 1953 }
+	offset = 27
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action = {
+		name = "Purchase the ship"
+		ai_chance = 100
+		command = { type = trigger which = 229009 }
+	}
+	action = {
+		name = "We don't need it"
+		ai_chance = 0
+		command = { }
+	}
+}
+#########################################################################
+#  Australia wants to purchase HMS Amphion
+#########################################################################
+event = { 
+	id = 229009
+	random = no
+	country = ENG
+	
+	name = "Australia wants to purchase HMS Amphion"
+	desc = "HMS Amphion is a modified Leander-class light cruiser operated by the Royal Navy. She was commissioned in 1936. After several years on the North America and West Indies Station, the Australian government expressed a desire to purchase the ship as part of a plan to bolster Australian naval forces."
+	style = 0
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "Sell the ship"
+		ai_chance = 99
+		command = { type = trigger which = 229010 }
+		command = { type = money value = 10 }
+	}
+	action = {
+		name = "We ned the ship"
+		ai_chance = 1
+		command = { type = relation which = AST value = -5 }
+		command = { type = trigger which = 229011 }
+	}
+}
+#########################################################################
+#  HMAS Perth commissioned
+#########################################################################
+event = { 
+	id = 229010
+	random = no
+	country = AST
+	
+	name = "HMAS Perth commissioned"
+	desc = "The British government agreed to our proposal. HMS Amphion will be transferred to the Royal Australian Navy and recommissioned as HMAS Perth."
+	style = 0
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "Ok"
+		command = { type = trigger which = 229010 }
+		command = { type = money value = -10 }
+		command = { type = supplies value = -10 }
+		command = { type = manpowerpool value = -0.5 }
+		command = { type = add_division which = "HMAS Perth" value = light_cruiser when = 4 }
+	}
+}
+#########################################################################
+#  Great Britain refuses to sell HMS Amphion
+#########################################################################
+event = { 
+	id = 229011
+	random = no
+	country = AST
+	
+	name = "Great Britain refuses to sell HMS Amphion"
+	desc = "The British government rejected our proposal to sell us HMS Amphion."
+	style = 0
+	picture = "american_ships_in_dock"
+
+	action = {
+		name = "Ok"
+		command = { type = relation which = ENG value = -5 }
+	}
+}

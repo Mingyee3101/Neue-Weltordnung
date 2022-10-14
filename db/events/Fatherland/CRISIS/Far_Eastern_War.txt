@@ -1,0 +1,645 @@
+#########################
+## The Far Eastern War
+##
+## PROLOGUE
+## 600000 The Question of the Far Eastern Republic
+## 600001 Japan in the Far Eastern Question
+## 600002 The Far East Republic and Konstantin Rodzaevsky
+## 600003 Assassination attempt on Konstantin Rodzaevsky
+## 600004 Crisis in the Russian Far East
+## 600005 Konstantin Rodzaevsky lives
+## 600006 Ultimatum to the Far East Republic
+## 600007 America sends FER an ultimatum
+## 600008 The Far East Republic responds
+## 600009 War with the Far East Republic (on axis intervention.txt)
+## 600010 The Far Eastern War (on axis intervention.txt)
+## 600011 Activate Far East Intervention Corps - AXIS
+## 600012 Far Eastern Intervention Corps
+##
+## WAR
+## 6000120 FER Victory
+## 6000130 The UN has lost the Far Eastern War
+## 6000140 FER Final Victory
+## 6000150 UN Victory over FER
+## 6000160 UN demands FER surrender
+## 6000170 US annexes FER
+##
+## POSTWAR
+## 6000171 Occupation of the Far East
+## 6000172 Activation of UN peacekeepers in Far East
+#########################
+
+
+### The Question of the Far Eastern Republic
+
+event = {
+    id = 600000
+    random = no
+    country = USA
+
+    trigger = {
+        exists = U57
+        NOT = {
+            alliance = { country = -1 country = U57 }
+            alliance = { country = GER country = U57 }
+            war = { country = -1 country = U57 }
+            war = { country = SOV country = UPE }
+        }
+        atwar = no
+    }
+
+    name = "EVT_999548_NAME"
+    desc = "EVT_999548_DESC"
+    style = 2
+    picture = "nwo\japanese_gains_in_ussr"
+    date = { day = 1 month = january year = 1949 }
+    offset = 10
+    deathdate = { day = 29 month = december year = 2020 }
+
+    action = {
+        ai_chance = 90
+        name = "They are a threat to our Pacific Order. Neutralize them."
+        trigger = { flag = usa_cw_intervention }
+        command = { type = dissent value = 2 }
+        command = { type = 	relation which = U57 value = -30 }
+        command = { type = domestic which = interventionism value = -1 }
+        command = { type = setflag which = us_vs_fareastrep }
+    }
+
+    action = {
+        ai_chance = 10
+        name = "Ignore the problem ... for now"
+        trigger = { flag = usa_cw_intervention }
+        command = { type = dissent value = -1 }
+        command = { type = relation which = U57 value = 30 }
+        command = { type = domestic which = interventionism value = 1 }
+    }
+
+    action = {
+		name = "The public opinion don't want another war (America First Path)" # No support
+		trigger = { flag = usa_cw_isolation }
+		ai_chance = 100
+        command = { type = dissent value = -1 }
+        command = { type = relation which = U57 value = 30 }
+        command = { type = domestic which = interventionism value = 1 }
+    }
+}
+
+### Japan in the Far Eastern Question
+
+event = {
+    id = 600001
+    random = no
+    country = USA
+
+    trigger = {
+        flag = us_vs_fareastrep
+    }
+
+    name = "EVT_600001_NAME"
+    desc = "EVT_600001_DESC"
+    style = 2
+    picture = "fatherland\rodzaevsky"
+    date = { day = 1 month = january year = 1949 }
+    offset = 1
+    deathdate = { day = 29 month = december year = 2020 }
+
+    action = {
+        ai_chance = 90
+        name = "Order the Japanese to assassinate Rodzaevsky."
+        command = { type = trigger which = 600002 }
+    }
+
+    action = {
+        ai_chance = 10
+        name = "Now is not the time."
+        command = { }
+    }
+}
+
+### The Far East Republic and Konstantin Rodzaevsky
+
+event = {
+    id = 600002
+    random = no
+    country = JAP
+
+    name = "EVT_600002_NAME"
+    desc = "EVT_600002_DESC"
+    style = 2
+    picture = "fatherland\rodzaevsky"
+
+    action = {
+        ai_chance = 90
+        name = "Accept the contract."
+        command = { type = trigger which = 600003 }
+        command = { type = dissent value = 4 }
+        command = { type = relation which = U57 value = -30 }
+    }
+
+    action = {
+        ai_chance = 10
+        name = "Refuse."
+        command = { type = 	relation which = USA value = -5 }
+    }
+}
+
+### Assassination attempt on Konstantin Rodzaevsky
+
+event = {
+    id = 600003
+    random = no
+    country = U57
+
+    name = "EVT_600003_NAME"
+    desc = "EVT_600003_DESC"
+    style = 2
+    picture = "fatherland\rodzaevsky"
+
+    action = {
+        name = "This attack will not go unpunished. Enter alliance with Germany."
+        command = { type = trigger which = 600004 }
+        command = { type = alliance which = AXI }
+        command = { type = relation which = USA value = -30 }
+        command = { type = relation which = JAP value = -30 }
+        command = { type = relation which = ENG value = -30 }
+        command = { type = relation which = ALS value = -30 }
+        command = { type = relation which = GER value = 30 }
+        command = { type = relation which = AXI value = 50 }
+    }
+}
+
+### Crisis in the Russian Far East
+
+event = {
+    id = 600004
+    random = no
+    country = GER
+
+    name = "EVT_600004_NAME"
+    desc = "EVT_600004_DESC"
+    style = 2
+    picture = "fatherland\rodzaevsky"
+
+    action = {
+        ai_chance = 85
+        name = "The Axis will guarantee the Republic"
+        #command = { type = guarantee which = AXI where = U57 }
+        command = { type = relation which = U57 value = 50 }
+        command = { type = relation which = USA value = -10 }
+        command = { type = relation which = ENG value = -10 }
+        command = { type = relation which = JAP value = -10 }
+        command = { type = relation which = ALS value = -10 }
+    }
+
+    action = {
+        ai_chance = 15
+        name = "This is none of our concern."
+        command = { type = relation which = U57 value = -10 }
+    }
+}
+
+### Konstantin Rodzaevsky lives
+
+event = {
+    id = 600005
+    random = no
+    country = USA
+
+    trigger = {
+        event = 600003
+    }
+
+    name = "EVT_600005_NAME"
+    desc = "EVT_600005_DESC"
+    style = 2
+    picture = "fatherland\rodzaevsky"
+    date = { day = 1 month = january year = 1949 }
+    offset = 1
+    deathdate = { day = 29 month = december year = 2020 }
+
+    action = {
+        ai_chance = 80
+        name = "We must subdue the FER at all costs."
+        command = { type = dissent value = 1 }
+        command = { type = relation which = GER value = -10 }
+        command = { type = relation which = AXI value = -10 }
+        command = { type = trigger which = 600006 }
+    }
+
+    action = {
+        ai_chance = 20
+        name = "Back down."
+        command = { type = domestic which = interventionism value = -1 }
+        command = { type = trigger which = 6000140 }
+    }
+}
+
+### Ultimatum to the Far East Republic
+
+event = {
+    id = 600006
+    random = no
+    country = USA
+
+    name = "EVT_600006_NAME"
+    desc = "EVT_600006_DESC"
+    style = 2
+    picture = "nwo\japanese_gains_in_ussr"
+
+    action = {
+        ai_chance = 90
+        name = "Ultimatum - demand FER leave alliance with Germany."
+        command = { type = trigger which = 600007 }
+        command = { type = belligerence value = 3 }
+        command = { type = relation which = U57 value = -10 }
+        command = { type = relation which = AXI value = -10 }
+        command = { type = relation which = GER value = -10 }
+    }
+
+    action = {
+        ai_chance = 10
+        name = "Back down."
+        command = { type = relation which = U57 value = -10 }
+        command = { type = trigger which = 6000140 }
+    }
+}
+
+### The Far East Republic responds
+
+event = {
+    id = 600007
+    random = no
+    country = U57
+
+    name = "EVT_600007_NAME"
+    desc = "EVT_600007_DESC"
+    style = 2
+    picture = "nwo\usa_superpower"
+
+    action = {
+        ai_chance = 60
+        name = "Refuse."
+        command = { type = trigger which = 600008 }
+        command = { type = belligerence value = 3 }
+        command = { type = relation which = U57 value = -10 }
+        command = { type = relation which = AXI value = -10 }
+        command = { type = relation which = GER value = -10 }
+    }
+
+    action = {
+        ai_chance = 40
+        name = "Accept and overthrow the Fascist government."
+        command = { type = relation which = USA value = 10 }
+        command = { type = leave_alliance }
+        command = { type = end_guarantee which = AXI where = U57 }
+        command = { type = set_domestic which = democratic value = 5 }
+        command = { type = set_domestic which = political_left value = 7 }
+        command = { type = set_domestic which = freedom value = 5 }
+        command = { type = set_domestic which = interventionism value = 2 }
+        command = { type = dissent value = 8 }
+        command = { type = name where = U57 which = "Republic of Primorsk" }
+        command = { type = flag_ext where = U57 which = "_PRI" }
+        command = { type = trigger which = 6000173 } #Axis leaves FER
+    }
+}
+
+### War with the Far East Republic
+
+event = {
+    id = 600008
+    random = no
+    country = USA
+
+    name = "EVT_600008_NAME"
+    desc = "EVT_600008_DESC"
+    style = 2
+    picture = "nwo\americans_in_vladivostok"
+
+    action = {
+        ai_chance = 90
+        name = "Then it is war."
+        command = { type = dissent value = 2 }
+        command = { type = war which = U57 }
+        command = { type = event which = 6000120 where = U57 when = 90 } # Check if FER won war after 90 days
+    }
+
+    action = {
+        ai_chance = 10
+        name = "Now is not the time for war."
+        command = { type = dissent value = -2 }
+    }
+}
+
+
+
+
+### Far Eastern Intervention Corps
+
+event = {
+    id = 600011
+    random = no
+    country = U57
+
+    name = "EVT_600011_NAME"
+    desc = "EVT_600011_DESC"
+    style = 2
+    picture = "fatherland\german_warposter"
+
+    action = {
+        name = "Raise additional troops."
+        command = { type = relation which = AXI value = 20 }
+        command = { type = coast_fort_eff value = 0.4 }
+        command = { type = land_fort_eff value = 0.4 }
+        command = { type = add_division which = "1. RFP Blackshirt Brigade" value = militia when = 7 }
+        command = { type = add_division which = "2. RFP Blackshirt Brigade" value = militia when = 7 }
+        command = { type = add_corps which = "1. Coastal Defense Corps" value = land where = 1189 }
+        command = { type = add_division which = "1. Coast Defense Division" value = garrison when = 6 where = artillery }
+        command = { type = add_corps which = "2. Coastal Defense Corps" value = land where = 1185 }
+        command = { type = add_division which = "2. Coast Defense Division" value = garrison when = 6 where = artillery }
+        command = { type = add_corps which = "Vladivostok Defense Corps" value = land where = 1191 }
+        command = { type = add_division which = "3. Coast Defense Division" value = garrison when = 6 where = artillery }
+        command = { type = construct which = coastal_fort where = 1189 value = 1 }
+        command = { type = construct which = coastal_fort where = 1185 value = 1 }
+        command = { type = defensiveness which = infantry value = 5 }
+        command = { type = morale which = infantry value = 5 }
+        command = { type = defensiveness which = garrison value = 5 }
+        command = { type = morale which = garrison value = 5 }
+        command = { type = supplies value = 400 }
+        command = { type = oilpool value = 600 }
+    }
+}
+
+### United Nations vs. Far East Republic War ###
+
+### FER Victory ###
+
+event = {
+    id = 6000120
+    random = no
+    country = U57
+
+    # FER will win the war because it still owns Vladivostok after 3 months of war.
+
+    trigger = {
+        event = 600008 # War with FER
+        war = { country = U57 country = USA }
+        owned = { province = 1191 data = -1 } # Vladivostok
+        NOT = {
+            OR = {
+                nuked = { country = USA country = U57 data = 1 where = 1191 } # Not nuked in Vladivostok.
+                nuked = { country = ENG country = U57 data = 1 where = 1191 }
+                nuked = { country = CHI country = U57 data = 1 where = 1191 }
+                nuked = { country = KOR country = U57 data = 1 where = 1191 }
+            }
+        }
+    }
+
+    name = "EVT_600012_NAME"
+    desc = "EVT_600012_DESC"
+    style = 2
+    picture = "fatherland\russian_swastika"
+
+    action = {
+        name = "Demand the UN surrender."
+        command = { type = trigger which = 6000130 }
+    }
+}
+
+### The UN has lost the Far Eastern War
+
+event = {
+    id = 6000130
+    random = no
+    country = USA
+
+    name = "EVT600013_NAME"
+    desc = "EVT600013_DESC"
+    style = 2
+    picture = "fatherland\russian_swastika"
+
+    action = {
+        ai_chance = 80
+        name = "We are defeated. Retreat from the Far East."
+        command = { type = peace which = U57 value = 0 }
+        command = { type = dissent value = 10 }
+        command = { type = 	non_aggression which = USA where = U57 }
+        command = { trigger = { alliance = { country = USA country = KOR } } type = non_aggression which = KOR where = U57 }
+        command = { trigger = { alliance = { country = USA country = ENG } } type = non_aggression which = ENG where = U57 }
+        command = { trigger = { alliance = { country = USA country = JAP } } type = non_aggression which = JAP where = U57 }
+        command = { type = setflag which = fer_victory_1 }
+    }
+
+    action = {
+        ai_chance = 20
+        name = "Never surrender. Victory is close."
+        command = { }
+    }
+}
+
+### FER Final Victory
+
+event = {
+    id = 6000140
+    random = no
+    country = U57
+
+    trigger = {
+        flag = fer_victory_1
+    }
+
+    name = "EVT600014_NAME"
+    desc = "EVT600014_DESC"
+    style = 2
+    picture = "fatherland\german_warposter"
+    date = { day = 1 month = january year = 1948 }
+    offset = 1
+    deathdate = { day = 29 month = december year = 2020 }
+
+    action = {
+        name = "The sun rises for the Far Eastern Republic!"
+        command = { type = dissent value = -15 }
+        command = { type = access which = AXI }
+        command = { type = clrflag which = fer_victory_1 }
+        command = { type = trigger which = 6000173 } #Axis leaves FER        
+    }
+}
+
+### United Nations victory over FER ###
+
+event = {
+    id = 6000150
+    random = no
+    country = USA
+
+    trigger = {
+        war = { country = U57 country = USA }
+        lost_national = { country = U57 value = 40 } # FER lost 40% of territory
+        OR = {
+            nuked = { country = USA country = U57 data = 1 where = 1191 } # Nuked in Vladivostok.
+            nuked = { country = ENG country = U57 data = 1 where = 1191 }
+            nuked = { country = CHI country = U57 data = 1 where = 1191 }
+            nuked = { country = KOR country = U57 data = 1 where = 1191 }
+            control = { province = 1191 data = USA }
+            control = { province = 1191 data = ENG }
+            control = { province = 1191 data = KOR }
+            control = { province = 1191 data = JAP }
+            control = { province = 1191 data = CHI }
+            NOT = { owned = { province = 1191 data = U57 } } # FER lost Vladivostok
+        }
+    }
+
+    name = "EVT600015_NAME"
+    desc = "EVT600015_DESC"
+    style = 2
+    picture = "fatherland\un_troops"
+    date = { day = 1 month = january year = 1949 }
+    offset = 2
+    deathdate = { day = 29 month = december year = 2020 }
+
+    action = {
+        name = "Demand the FER surrender."
+        command = { type = trigger which = 6000160 } # FER surrenders
+    }
+}
+
+### The UN demands FER surrender
+
+event = {
+    id = 6000160
+    random = no
+    country = U57
+
+    name = "EVT600016_NAME"
+    desc = "EVT600016_DESC"
+    style = 2
+    picture = "fatherland\un_troops"
+
+    action = {
+        ai_chance = 80
+        name = "We are defeated."
+        command = { type = peace which = USA value = 0 }
+        command = { type = trigger which = 6000173 } #Axis leaves FER
+        command = { type = trigger which = 6000170 } # USA annexes FER        
+    }
+
+    action = {
+        ai_chance = 20
+        name = "Never surrender."
+        command = { }
+    }
+}
+
+### The USA takes over FER
+
+event = {
+    id = 6000170
+    random = no
+    country = USA
+
+    name = "EVT600017_NAME"
+    desc = "EVT600017_DESC"
+    style = 2
+    picture = "fatherland\un_troops"
+
+    action = {
+        name = "The FER falls to our forces."
+        command = { type =	inherit which = U57 when = 3 value = 0 }
+        command = { type = dissent value = -15 }
+    }
+}
+
+### Occupation of Far Eastern Republic by the UN ###
+
+event = {
+    id = 6000171
+    random = no
+    country = USA
+
+    trigger = {
+        event = 6000170
+        owned = { province = 1191 data = USA } # Vladivostok
+    }
+
+    name = "EVT_6000171_NAME"
+    desc = "EVT_6000171_DESC"
+    style = 2
+    picture = "fatherland\far_east"
+    date = { day = 1 month = january year = 1949 }
+    offset = 2
+    deathdate = { day = 29 month = december year = 2020 }
+
+    action = {
+        ai_chance = 10
+        name = "Keep it under American military occupation."
+        command = { type = dissent value = 2 }
+    }
+
+    action = {
+        ai_chance = 30
+        name = "Transfer it under the United Nations."
+        command = { type = trigger which = 6000172 }
+        command = { type = secedearea which = ALS value = "Primorski" when = 0 }
+        command = { type = secedearea which = ALS value = "Khabarovsk" when = 0 }
+        command = { type = secedearea which = ALS value = "Amur" when = 0 }
+        command = { type = secedearea which = ALS value = "Zabaikalye" when = 0 }
+        command = { type = 	relation which = JAP value = -10 }
+    }
+
+    action = {
+        ai_chance = 10
+        name = "Transfer it to Japan."
+        command = { type = relation which = JAP value = 20 }
+        command = { type = secedearea which = JAP value = "Primorski" when = 0 }
+        command = { type = secedearea which = JAP value = "Khabarovsk" when = 0 }
+        command = { type = secedearea which = JAP value = "Amur" when = 0 }
+        command = { type = secedearea which = JAP value = "Zabaikalye" when = 0 }
+    }
+
+    action = {
+        ai_chance = 50
+        name = "Release liberal-democratic Primorsk state."
+        command = { type = independence which = PRI value = 1 when = 0 }
+        command = { type = make_puppet which = PRI }
+        command = { type = relation which = JAP value = -10 }
+    }
+}
+
+### Activate UN Peacekeepers in Far East
+
+event = {
+    id = 6000172
+    random = no
+    country = ALS
+
+    name = "EVT_6000172_NAME"
+    desc = "EVT_6000172_DESC"
+    style = 2
+    picture = "fatherland\un_troops"
+
+    action = {
+        name = "Activate Far East peacekeepers."
+        command = { type = add_corps which = "1. Far East Peacekeeping Corps" value = land where = 1191 }
+        command = { type = add_division which = "1. Far East Peacekeeper Brigade" value = garrison when = 8 where = police }
+        command = { type = add_corps which = "2. Far East Peacekeeping Corps" value = land where = 1169 }
+        command = { type = add_division which = "2. Far East Peacekeeper Brigade" value = infantry when = 13 where = police }
+        command = { type = add_corps which = "3. Far East Peacekeeping Corps" value = land where = 1176}
+        command = { type = add_division which = "3. Far East Peacekeeper Brigade" value = infantry when = 13 where = tank_destroyer }
+    }
+}
+
+event = {
+    id = 6000173
+    random = no
+    country = AXI
+
+    name = "The Far Eastern Army Group back to home"
+    desc = "The Far Eastern Army Group back to home"
+    style = 2
+    picture = "fatherland\un_troops"
+
+    action = {
+        name = "Return home"
+        command = { type = leave_alliance }
+    }
+}

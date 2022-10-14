@@ -1,0 +1,429 @@
+#########################################################################
+# 							Economic Events
+#########################################################################
+# Treasury is low
+event = {
+	id = 2010000
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR 
+	DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY 
+	LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA 
+	SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 
+	U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE 
+	U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 USA }
+	
+	trigger = {
+		ai = no
+		money = 1
+		OR = {
+			NOT = { money = 10 }
+			AND = {
+				IC = 80
+				NOT = { money = 5000 }
+			}
+			AND = {
+				NOT = { IC = 80 }
+				IC = 50
+				NOT = { money = 1000 }
+			}
+			AND = {
+				NOT = { IC = 50 }
+				IC = 30
+				NOT = { money = 500 }
+			}	
+			AND = {
+				NOT = { IC = 30 }
+				IC = 15
+				NOT = { money = 100 }
+			}	
+			AND = {
+				NOT = { IC = 15 }
+				IC = 5
+				NOT = { money = 50 }
+			}
+		}
+	}
+	
+	name = "low_treasury"
+	desc = "low_treasury_desc"
+	style = 2
+	picture = "deficit"
+
+	date = { day = 1 month = january year = 1985 }
+	offset = 90
+	deathdate = { day = 21 month = december year = 2012 }
+
+	action = {
+		name = "ACTION_NAME_ECONOMY"
+		command = { type = dissent value = 3 }
+	}
+}
+# Treasury is very low
+event = {
+	id = 2010001
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR 
+	DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY 
+	LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA 
+	SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 
+	U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE 
+	U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 USA }
+	
+	trigger = {
+		ai = no
+		money = 1
+		OR = {
+			NOT = { money = 10 }
+			AND = {
+				IC = 80
+				NOT = { money = 2500 }
+			}
+			AND = {
+				NOT = { IC = 80 }
+				IC = 50
+				NOT = { money = 500 }
+			}
+			AND = {
+				NOT = { IC = 50 }
+				IC = 30
+				NOT = { money = 250 }
+			}	
+			AND = {
+				NOT = { IC = 30 }
+				IC = 15
+				NOT = { money = 50 }
+			}	
+			AND = {
+				NOT = { IC = 15 }
+				IC = 5
+				NOT = { money = 25 }
+			}
+		}
+	}
+	
+	name = "low_treasury_1"
+	desc = "low_treasury_1_desc"
+	style = 2
+	picture = "past_due"
+
+	date = { day = 1 month = january year = 1985 }
+	offset = 90
+	deathdate = { day = 21 month = december year = 2012 }
+
+	action = {
+		name = "ACTION_NAME_ECONOMY"
+		command = { type = dissent value = 6 }
+	}
+}
+# We are bankrupt
+event = {
+	id = 2010002
+	random = no
+	persistent = yes
+	one_action = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR 
+	DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY 
+	LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA 
+	SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 U13 
+	U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U67 U69 UTC UER UPE 
+	U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 USA }
+	
+	trigger = {
+		NOT = {
+			money = 0 
+			local_flag = bankrupt
+		}
+	}
+	
+	name = "bankruptcy"
+	desc = "bankruptcy_desc"
+	style = 2
+	picture = "riot"
+
+	date = { day = 1 month = january year = 1985 }
+	offset = 1
+	deathdate = { day = 21 month = december year = 2012 }
+
+	action = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = 99
+		command = { type = dissent value = 50 }
+		command = { type = industrial_modifier which = total value = -50 }
+		command = { type = local_setflag which = bankrupt }
+	}
+}
+# Test
+event = {
+	id = 2010003
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR 
+	DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY 
+	LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA 
+	SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 
+	U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 
+	UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	
+	decision = {
+		local_flag = bankrupt
+	}
+	decision_trigger = {}
+	trigger = {	ai = no	}
+   
+	name = "Sell assets"
+	desc = "Sell government assets" 
+	style = 2
+	picture = "deficit"
+
+	date = { day = 1 month = january year = 1914 }
+	offset = 1
+	deathdate = { day = 21 month = december year = 2012 }
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = construct which = ic where = -1 value = -1 }
+		command = { type = money value = 1000 }
+	}
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = construct which = ic where = -1 value = -5 }
+		command = { type = money value = 5000 }
+	}
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = construct which = ic where = -1 value = -10 }
+		command = { type = money value = 10000 }
+	}
+}
+# Test
+event = {
+	id = 2010004
+	random = no
+	persistent = yes
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR 
+	DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY 
+	LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA 
+	SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 
+	U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 
+	UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	
+	decision = {}
+	decision_trigger = {}
+	trigger = {	ai = no	}
+   
+	name = "Testing Tool"
+	desc = "Decision for testing." 
+	style = 2
+	picture = "deficit"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 21 month = december year = 2012 }
+
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = money value = -10000 }
+	}
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = money value = 10000 }
+	}
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = -10 }
+	}
+	action = {
+		name = "ACTION_NAME_OK"
+		command = { type = dissent value = 10 }
+	}
+}
+# Set inflation
+event = {
+	id = 2010005
+	random = no
+	TAG =  { AFG ALB ALG ANG ARA ARG ARM AST AUS AZB BEL BEN BLR BOL BOS BRA BRU BUL BUR CAL CAM CAN CGX CHC CHI CHL CMB COL CON COS CRO CSA CSX CUB CXB CYN CYP CZE DDR 
+	DEN DFR EAF ECU EGY ENG EQA EST ETH EUS FIN FLA FRA GAB GEO GER GLD GRE GUA GUI GUY HOL HON HUN ICL IDC IND INO IRE IRQ ISR ITA JAP JOR KAZ KOR KUR KYG LAO LAT LBY 
+	LEB LIT LUX MAD MAL MAN MEN MEX MLY MON MOR MOZ MTN NAM NIC NIG NOR NZL OMN OTT PAK PAL PAN PAR PER PHI POL POR PRI PRK PRU QUE RHO ROM RSI RUS SAF SAL SAR SAU SCA 
+	SCH SCO SER SIA SIB SIE SIK SLO SLV SOM SOV SPA SPR SUD SWE SYR TAJ TAN TEX TRA TRK TUN TUR UKR URU USA UZB VEN VIE WLL YEM YUG U01 U02 U03 U04 U08 U09 U10 U11 U12 
+	U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U40 U41 U42 U43 U44 U45 U46 U47 U48 U49 U50 U51 U52 U53 U54 U55 U56 U57 U58 U59 U67 
+	UTC UER UPE U70 U71 U72 U73 U74 U75 U76 U77 U78 U79 U80 U81 U82 U83 U84 U85 U86 U87 U88 U89 U90 U91 U92 U93 U94 U95 U96 U97 U98 U99 }
+	one_action = yes
+	
+	trigger = { ai = no }
+   
+	name = "INFLATION_RATE"
+	desc = "INFLATION_RATE_DESC" 
+	style = 2
+	picture = "unemployment_rate"
+
+	date = { day = 0 month = january year = 1985 }
+	deathdate = { day = 21 month = december year = 2012 }
+	offset = 1
+
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = AUS }
+		command = { type = local_setflag which = inflation when = 0 value = 30 } #Set inflation (3%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = BEL }
+		command = { type = local_setflag which = inflation when = 0 value = 50 } #Set inflation (5%)
+	}
+	action = {
+		name = "ACTION_NAME_HYPERINFLATION"
+		trigger = { country = BRA }
+		command = { type = local_setflag which = inflation when = 0 value = 2250 } #Set inflation (225%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = CAN }
+		command = { type = local_setflag which = inflation when = 0 value = 40 } #Set inflation (4%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_30"
+		trigger = { country = CHL }
+		command = { type = local_setflag which = inflation when = 0 value = 310 } #Set inflation (31%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = DEN }
+		command = { type = local_setflag which = inflation when = 0 value = 50 } #Set inflation (5%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = FIN }
+		command = { type = local_setflag which = inflation when = 0 value = 50 } #Set inflation (5%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_6"
+		trigger = { country = FRA }
+		command = { type = local_setflag which = inflation when = 0 value = 60 } #Set inflation (6%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = DFR }
+		command = { type = local_setflag which = inflation when = 0 value = 20 } #Set inflation (2%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_6"
+		trigger = { country = ENG }
+		command = { type = local_setflag which = inflation when = 0 value = 60 } #Set inflation (6%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_20"
+		trigger = { country = GRE }
+		command = { type = local_setflag which = inflation when = 0 value = 190 } #Set inflation (19%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_6"
+		trigger = { country = HUN }
+		command = { type = local_setflag which = inflation when = 0 value = 70 } #Set inflation (7%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_30"
+		trigger = { country = ICL }
+		command = { type = local_setflag which = inflation when = 0 value = 320 } #Set inflation (32%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_6"
+		trigger = { country = IND }
+		command = { type = local_setflag which = inflation when = 0 value = 60 } #Set inflation (6%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = INO }
+		command = { type = local_setflag which = inflation when = 0 value = 50 } #Set inflation (5%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = IRE }
+		command = { type = local_setflag which = inflation when = 0 value = 50 } #Set inflation (5%)
+	}
+	action = {
+		name = "ACTION_NAME_HYPERINFLATION"
+		trigger = { country = ISR }
+		command = { type = local_setflag which = inflation when = 0 value = 3460 } #Set inflation (346%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_10"
+		trigger = { country = ITA }
+		command = { type = local_setflag which = inflation when = 0 value = 90 } #Set inflation (9%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = JAP }
+		command = { type = local_setflag which = inflation when = 0 value = 20 } #Set inflation (2%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = LUX }
+		command = { type = local_setflag which = inflation when = 0 value = 40 } #Set inflation (4%)
+	}
+	action = {
+		name = "ACTION_NAME_HYPERINFLATION"
+		trigger = { country = MEX }
+		command = { type = local_setflag which = inflation when = 0 value = 580 } #Set inflation (58%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_6"
+		trigger = { country = NOR }
+		command = { type = local_setflag which = inflation when = 0 value = 60 } #Set inflation (6%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_20"
+		trigger = { country = POR }
+		command = { type = local_setflag which = inflation when = 0 value = 200 } #Set inflation (20%)
+	}
+	action = {
+		name = "ACTION_NAME_HYPERINFLATION"
+		trigger = { country = YUG } #Actually Slovenia
+		command = { type = local_setflag which = inflation when = 0 value = 790 } #Set inflation (79%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_15"
+		trigger = { country = SAF }
+		command = { type = local_setflag which = inflation when = 0 value = 160 } #Set inflation (16%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = KOR }
+		command = { type = local_setflag which = inflation when = 0 value = 20 } #Set inflation (2%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_10"
+		trigger = { country = SPA }
+		command = { type = local_setflag which = inflation when = 0 value = 90 } #Set inflation (9%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_6"
+		trigger = { country = SWE }
+		command = { type = local_setflag which = inflation when = 0 value = 70 } #Set inflation (7%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = SCH }
+		command = { type = local_setflag which = inflation when = 0 value = 30 } #Set inflation (3%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = HOL }
+		command = { type = local_setflag which = inflation when = 0 value = 20 } #Set inflation (2%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_45"
+		trigger = { country = TUR }
+		command = { type = local_setflag which = inflation when = 0 value = 460 } #Set inflation (46%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_BELOW_6"
+		trigger = { country = USA }
+		command = { type = local_setflag which = inflation when = 0 value = 40 } #Set inflation (4%)
+	}
+	action = {
+		name = "ACTION_NAME_INFLATION_6"
+		command = { type = local_setflag which = inflation when = 0 value = 60 } #Set inflation (6%)
+	}
+}

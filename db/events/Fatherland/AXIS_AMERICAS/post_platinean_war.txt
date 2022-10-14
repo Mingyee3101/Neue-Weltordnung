@@ -1,0 +1,373 @@
+#####################################
+### Post Platinean War
+#####################################
+
+# DA COMPLETARE !!!
+
+# 800300
+
+# ARGENTINA VICTORIOUS
+	# MONTEVIDEO FALL
+	# ASUNCION FALL
+	# PORTO ALEGRE FALL
+	# SANTIAGO FALL
+	# WHAT WE DO URUGUAY
+	# WHAT WE DO PARAGUAY
+	# WHAT WE DO CHILE
+	# UNION DE LA PLATA
+	
+# BRAZIL VICTORIOUS
+	# BUENOS AIRES FALL
+	# LA PAZ FALL
+	# WHAT WE DO BOLIVIA
+	# WHAT WE DO ARGENTINA
+	
+# CEASE FIRE
+
+####################################################################
+#  ARGENTINA
+####################################################################
+event = {
+	id = 800300
+	random = no
+	country = ARG
+	trigger = { 
+         control = { province = 2052 data = -1 } #Montevideo
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1965 }
+	
+	name = "Fall of Montevideo"
+	desc = "The Argentinian forces enter in the uruguayan capital"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "Hurrah!"
+		ai_chance = 100	
+		command = { type = dissent value = -1 }
+        command = { type = supplies value = 500 }
+	}
+}
+event = {
+	id = 800301
+	random = no
+	country = ARG
+	trigger = { 
+         control = { province = 2047 data = -1 } #Asuncion
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1965 }
+	
+	name = "Fall of Asuncion"
+	desc = "The Argentinian forces enter in the paraguayan capital"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "Hurrah!"
+		ai_chance = 100	
+		command = { type = dissent value = -1 }
+        command = { type = supplies value = 500 }
+	}
+}	
+event = {
+	id = 800302
+	random = no
+	country = ARG
+	trigger = { 
+         control = { province = 2058 data = -1 } #Porto Alegre
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1965 }
+	
+	name = "Fall of Porto Alegre"
+	desc = "The Argentinian forces enter in the brazilian city"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "Hurrah!"
+		ai_chance = 100	
+		command = { type = dissent value = -1 }
+        command = { type = supplies value = 500 }
+	}
+}	
+event = {
+	id = 800303
+	random = no
+	country = ARG
+	trigger = { 
+         control = { province = 2023 data = -1 } #Santiago
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1965 }
+	
+	name = "Fall of Santiago"
+	desc = "The Argentinian forces enter in the cilean capital"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "Hurrah!"
+		ai_chance = 100	
+		command = { type = dissent value = -1 }
+        command = { type = supplies value = 500 }
+	}
+}	
+event = {
+	id = 800304
+	random = no
+	country = ARG
+	trigger = { 
+        control = { province = 2052 data = -1 } #Montevideo
+		NOT = {
+			exists = URU
+		}
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1965 }
+	
+	name = "What we do with Uruguay"
+	desc = "What we do with Uruguay ?"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "Integrate the uruguayn provinces"
+		ai_chance = 80	
+		command = { type = dissent value = 1 }
+        command = { type = supplies value = -500 }
+		command = { type =	addcore which = 2051 }
+		command = { type =	addcore which = 2052 }
+	}
+	
+	action = {
+		name = "Liberate Uruguay as a puppet"
+		ai_chance = 20	
+		command = { type = dissent value = -1 }
+		command = { type = independence which = URU value = 1}
+		command = { type = make_puppet which = URU }
+	}	
+}	
+event = {
+	id = 800305
+	random = no
+	country = ARG
+	trigger = { 
+        control = { province = 2047 data = -1 } #Asuncion
+		NOT = {
+			exists = PAR
+		}
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1965 }
+	
+	name = "What we do with Paraguay"
+	desc = "What we do with Paraguay ?"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "Integrate the paraguayn provinces"
+		ai_chance = 20	
+		command = { type = dissent value = 1 }
+        command = { type = supplies value = -500 }
+		command = { type =	addcore which = 2046 }
+		command = { type =	addcore which = 2047 }
+		command = { type = relation which = BOL value = -50 }
+	}
+
+	action = {
+		name = "Integrate only Asuncion province and Villa Hayes to our bolivian friends"
+		ai_chance = 60	
+		command = { type = dissent value = 1 }
+        command = { type = supplies value = -500 }
+		command = { type = addcore which = 2047 }
+		command = { type = relation which = BOL value = -50 }
+	}
+	
+	action = {
+		name = "Liberate Paraguay as a puppet"
+		ai_chance = 20	
+		command = { type = dissent value = -1 }
+		command = { type = independence which = PAR value = 1}
+		command = { type = make_puppet which = PAR }
+		command = { type = relation which = BOL value = -30 }
+	}	
+}	
+event = {
+	id = 800306
+	random = no
+	country = ARG
+	trigger = { 
+        control = { province = 2023 data = -1 } #Asuncion
+		NOT = {
+			exists = CHI
+		}
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1965 }
+	
+	name = "What we do with Chile"
+	desc = "What we do with Chile ?"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "Integrate the chilean provinces"
+		ai_chance = 80	
+		command = { type = dissent value = 1 }
+        command = { type = supplies value = -500 }
+	}
+	
+	action = {
+		name = "Liberate Chile as a puppet"
+		ai_chance = 20	
+		command = { type = dissent value = -1 }
+		command = { type = independence which = CHI value = 1}
+		command = { type = make_puppet which = CHI }
+		command = { type = relation which = BOL value = -30 }
+	}	
+}	
+event = {
+	id = 800307
+	random = no
+	country = ARG
+	
+	trigger = { 
+		control = { province = 2052 data = -3 } #Montevideo
+		control = { province = 2047 data = -3 } #Asuncion
+		control = { province = 2058 data = -3 } #Porto Alegre
+		control = { province = 2023 data = -3 } #Santiago		
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1965 }
+	
+	name = "Total victory"
+	desc = "We've made a Total Victory in the Platinean War"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "We've made a Total Victory"
+		ai_chance = 100	
+		command = { type = dissent value = -1 }
+        command = { type = supplies value = -500 }
+        command = { type = peace which = BRA value = 0 }
+	}
+	
+}	
+event = {
+	id = 800308
+	random = no
+	country = ARG
+	
+	trigger = { 
+		control = { province = 2023 data = -3 } #Santiago		
+		OR = {
+				control = { province = 2052 data = -3 } #Montevideo
+				control = { province = 2047 data = -3 } #Asuncion
+				control = { province = 2058 data = -3 } #Porto Alegre
+		}
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1965 }
+	
+	name = "Victory"
+	desc = "We've made a Victory in the Platinean War"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "Continue the war"
+		ai_chance = 20	
+		command = { type = dissent value = 1 }
+        command = { type = supplies value = -500 }
+	}
+	
+	action = {
+		name = "Peace"
+		ai_chance = 80	
+		command = { type = dissent value = -1 }
+		command = { type = setflag which = ARGVICTORY }
+        command = { type = peace which = BRA value = 0 }
+	}	
+}	
+event = {
+	id = 800310
+	random = no
+	country = ARG
+	
+	trigger = { 
+		event = { id = 8000826 days = 360 }
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1965 }
+	
+	name = "Stalemate"
+	desc = "We are in stalemate in the Platinean War"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "Continue the war"
+		ai_chance = 20	
+		command = { type = dissent value = 1 }
+        command = { type = supplies value = -500 }
+	}
+	
+	action = {
+		name = "Peace"
+		ai_chance = 80	
+		command = { type = dissent value = -1 }
+		command = { type = setflag which = ARGVICTORY }	
+        command = { type = peace which = BRA value = 0 }			
+	}	
+}	
+event = {
+	id = 800311
+	random = no
+	country = ARG
+	
+	trigger = { 
+		flag = ARGVICTORY
+	}
+		
+	date = { day = 01 month = july year = 1955 }
+	offset = 1
+	deathdate = { day = 06 month = december year = 1999 }
+	
+	name = "Birth of Union de la plata"
+	desc = "A fascist nation"
+	style = 2
+	picture = "fall_vladivostok"
+	
+	action = {
+		name = "Hurrah"		
+		command = { type = flag_ext where = ARG which = _PLATA }		
+		command = { type = name where = ARG which = "Union de la Plata" } 
+	}
+	
+}	
+

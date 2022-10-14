@@ -1,0 +1,284 @@
+################################################
+### Belgium EVENTS made by Pako thanks to NWO
+################################################
+#### 8212061 - BEL - Dissent and Riots spread in Belgian Congo
+#### 8212062 - BEL - King's radio appeal from Congo
+#### 8212063 - FLA - King's radio appeal - Flanders
+#### 8212064 - WLL - King's radio appeal - Wallonia
+#### 8212065 - U47 - King's radio appeal - RK
+#### 8212066 - BEL - Congo setup
+
+################################################
+#### 8212061 - BEL - Internal Dissent and Riots
+################################################
+event = {
+	id = 8212061
+	random = no
+	country = BEL	
+	persistent = yes
+	
+	date = { day = 0 month = august year = 1948 }
+	offset = 100
+	deathdate = { day = 29 month = december year = 1960 }
+	
+	trigger = {
+		random = 50
+		NOT = {
+			local_flag = CON_INDEP
+		}
+	}
+	
+	name = "Dissent and riots spread in the Belgian Congo !"
+	desc = "In the Belgian Congo the dissent has reached very high levels. All the minorities are organizing to fight the Belgian occupation."
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Damn!"	
+		ai_chance = 100
+		
+		command = { type = revolt which = 904 }
+		command = { type = revolt which = 903 }
+		command = { type = revolt which = 905 }
+		
+		command = { type = dissent value = 3 }			
+	}
+}
+
+################################################
+#### 8212062 - BEL - Appeal to Dissent and Riots
+################################################
+event = {
+	id = 8212062
+	random = no
+	country = BEL	
+	persistent = no
+	
+	date = { day = 0 month = october year = 1948 }
+	offset = 100
+	deathdate = { day = 29 month = december year = 1960 }
+	
+	trigger = {
+		random = 50
+	}
+	
+	name = "King's radio appeal"
+	desc = "Rise up against the nazi!"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Rise up!"	
+		ai_chance = 100
+		command = { type = dissent value = -1 }		
+		command = { type = trigger which = 8212063 }
+		command = { type = trigger which = 8212064 }
+		command = { type = trigger which = 8212065 }
+	}
+}
+
+################################################
+#### 8212063 - FLA - Dissent and Riots
+################################################
+event = {
+	id = 8212063
+	random = no
+	country = FLA	
+	persistent = no
+	
+	name = "King's radio appeal from Congo"
+	desc = "Rise up against the nazi!"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Damn!"	
+		ai_chance = 100
+		command = { type = dissent value = 10 }			
+		command = { type = money value = -25 }
+		command = { type = supplies value = -50 }		
+		command = { type = oilpool value = -100 }			
+	}
+}
+
+################################################
+#### 8212064 - WLL - Dissent and Riots
+################################################
+event = {
+	id = 8212064
+	random = no
+	country = WLL	
+	persistent = no
+	
+	name = "King's radio appeal from Congo"
+	desc = "Rise up against the nazi!"
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Damn!"	
+		ai_chance = 100
+		command = { type = dissent value = 25 }			
+		command = { type = money value = -50 }
+		command = { type = supplies value = -100 }		
+		command = { type = oilpool value = -120 }			
+	}
+}
+
+################################################
+#### 8212065 - FLA - Dissent and Riots
+################################################
+event = {
+	id = 8212065
+	random = no
+	country = U47	
+	persistent = no
+	
+	name = "King's radio appeal from Congo"
+	desc = "Rise up against the nazi!"
+	
+	style = 2
+	picture = "news_paper"	
+
+	action = {
+		name = "Ribellatevi!"	
+		ai_chance = 100
+		command = { type = dissent value = 15 }			
+	}
+}
+
+################################################
+#### 8212066 - BEL - Congo situation
+################################################
+event = {
+	id = 8212066
+	country = BEL
+
+	name = EVT_INDEPENDENCE_CON_NAME
+	desc = EVT_INDEPENDENCE_DESC
+	picture = "nwo\colonialism"
+	style = 2
+
+	trigger = {
+		NOT = { exists = CON }
+		control = { province = 899 data = -1 }
+		flag = cold_war
+		NOT = { government = fascist }
+		random = 75
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "An indipendent Congo and a Belgian Leopoldville"
+		ai_chance = 15
+		
+		command = { type = addclaim which = 894 }
+		command = { type = addclaim which = 899 }		
+		
+		command = { type = removeclaim which = 904 } 
+		command = { type = removeclaim which = 903 } 
+		command = { type = removeclaim which = 905 } 
+		command = { type = removeclaim which = 906 } 
+		command = { type = removeclaim which = 901 } 
+		command = { type = removeclaim which = 902 } 
+		command = { type = removeclaim which = 898 } 
+		command = { type = removeclaim which = 897 } 
+		command = { type = removeclaim which = 890 } 
+		
+		command = { type = independence which = CON value = 1 }
+		
+		command = { type = local_setflag which = CON_INDEP }
+	}
+	action = {
+		name = "A puppet Congo with a Belgian Leopoldville"
+		ai_chance = 50
+		
+		command = { type = addclaim which = 894 }
+		command = { type = addclaim which = 899 }
+		
+		command = { type = removeclaim which = 904 } 
+		command = { type = removeclaim which = 903 } 
+		command = { type = removeclaim which = 905 } 
+		command = { type = removeclaim which = 906 } 
+		command = { type = removeclaim which = 901 } 
+		command = { type = removeclaim which = 902 } 
+		command = { type = removeclaim which = 898 } 
+		command = { type = removeclaim which = 897 } 
+		command = { type = removeclaim which = 890 }
+		
+		command = { type = independence which = CON value = 1 }
+		command = { type = make_puppet which = CON }
+		command = { type = local_setflag which = CON_INDEP }
+	}
+	action = {
+		name = "Civil War"
+		ai_chance = 30
+
+		command = { type = addclaim which = 894 }
+		command = { type = addclaim which = 899 }
+		
+		command = { type = removeclaim which = 904 } 
+		command = { type = removeclaim which = 903 } 
+		command = { type = removeclaim which = 905 } 
+		command = { type = removeclaim which = 906 } 
+		command = { type = removeclaim which = 901 } 
+		command = { type = removeclaim which = 902 } 
+		command = { type = removeclaim which = 898 } 
+		command = { type = removeclaim which = 897 } 
+		command = { type = removeclaim which = 890 }
+		
+		command = { type = leave_alliance when = 1 }
+		command = { type = add_division value = infantry when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		
+		command = { type = independence which = CON value = 1 }
+		command = { type = war which = CON }
+		command = { type = local_setflag which = CON_WAR }
+	}
+	action = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}
+
+################################################
+#### 8212067 - CON - Congo setup
+################################################
+event = {
+	id = 8212067
+	country = CON
+
+	name = "The Congo National Free Army"
+	desc = "The Congo National Free Army"
+	picture = "nwo\colonialism"
+	style = 2
+
+	trigger = {
+		event = 8212066
+		#flag = CON_WAR
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action = {
+		name = "Create the Army"
+		command = { type = add_corps which = "1st North Army" value = land where = 906 }
+		command = { type = add_division which = "1st Rifle Division" value = infantry when = 4 }
+		command = { type = add_division which = "2nd Rifle Division" value = infantry when = 4 }
+		command = { type = add_corps which = "1st Central Army" value = land where = 901 }
+		command = { type = add_division which = "1st Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "2nd Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "3rd Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "4th Militia Division" value = militia when = 6 }
+		command = { type = add_division which = "5th Militia Division" value = militia when = 5 }
+		command = { type = add_division which = "6th Militia Division" value = militia when = 4 }
+		command = { type = add_division which = "7th Militia Division" value = militia when = 3 }
+	}
+
+}

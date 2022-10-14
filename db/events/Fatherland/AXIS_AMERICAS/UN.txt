@@ -1,0 +1,183 @@
+###################################
+#UN Axis Americas by RedZeppelin
+###################################
+#8056738 - Brazil asks for help (ALS) 
+#999562 - The UN vote for Brazil (USA) 
+#8005911 - The UN vote for Brazil (ENG) 
+#999449 - The UN vote for Brazil (U01) 
+#8056739 - The UN votes yes (ALS) 
+#8056740 - The UN votes no (ALS) 
+###################################
+
+event = { id = 8056738
+          random = no
+          country = ALS
+
+          date = { day = 25 month = 2 year = 1952 }
+          offset = 5
+          deathdate = { day = 29 month = 0 year = 1953 }
+          
+          name = "Brazil asks for help"
+          Desc = "After the fall of the Agentine goverment to a Facist coup, it seems that they've been petitioning the German goverment for weapons and expertise. While this has alarmed many in the UN the Brazilians could not be more vocal about it, they have demanded that an embargo be imposed and that a peacekeeping force be sent to help defend the country and train its military." 
+          Picture = "0"
+          style = 2
+
+          action = { 
+                     name = "Let's put it to a vote"
+	             command = { type = setflag which = brazil_vote }
+		     command = { type = relation which = BRA value = 10 }
+		     command = { type = relation which = USA value = 10 }
+                   }
+}
+event = { id = 999562
+          random = no
+          country = USA
+
+          date = { day = 25 month = 2 year = 1952 }
+          offset = 6
+          deathdate = { day = 29 month = 0 year = 1953 }
+
+          trigger = { flag = brazil_vote }
+          
+          name = "The UN vote for Brazil"
+          Desc = "After the fall of the Agentine goverment to a Facist coup, it seems that they've been petitioning the German goverment for weapons and expertise. While this has alarmed many in the UN the Brazilians could not be more vocal about it, they have demanded that an embargo be imposed and that a peacekeeping force be sent to help defend the country. In light of this the UN has setup a vote for the 'Big Three' permanent members of the security council to decide on whether or not we should help." 
+          Picture = "0"
+          style = 2
+
+          action = { 
+                     name = "Yes! we must help our American brothers"
+                     ai_chance = 90
+	             command = { type = setflag which = usa_yes }
+		     command = { type = relation which = BRA value = 40 }
+                   }
+          action = { 
+                     name = "There are more pressing issue"
+                     ai_chance = 10
+	             command = { type = setflag which = usa_no }
+		          command = { type = relation which = BRA value = -50 }
+                   }
+          action = { 
+                     name = "According our isolationist policy, our vote is NO"                     
+                     ai_chance = 100
+                     trigger = { flag = usa_cw_isolation }
+	             command = { type = setflag which = usa_no }
+		          command = { type = relation which = BRA value = -50 }
+                   }            
+
+}
+event = { id = 8005911
+          random = no
+          country = ENG
+
+          date = { day = 25 month = 2 year = 1952 }
+          offset = 7
+          deathdate = { day = 29 month = 0 year = 1953 }
+
+          trigger = { flag = brazil_vote }
+          
+          name = "The UN vote for Brazil"
+          Desc = "After the fall of the Agentine goverment to a Facist coup, it seems that they've been petitioning the German goverment for weapons and expertise. While this has alarmed many in the UN the Brazilians could not be more vocal about it, they have demanded that an embargo be imposed and that a peacekeeping force be sent to help defend the country. In light of this the UN has setup a vote for the 'Big Three' permanent members of the security council to decide on whether or not we should help." 
+          Picture = "0"
+          style = 2
+
+          action_a = { 
+                     name = "We must help democracy everywhere"
+                     ai_chance = 60
+	             command = { type = setflag which = eng_yes }
+		     command = { type = relation which = BRA value = 40 }
+                   }
+          action_b = { 
+                     name = "The Germans are a greater threat"
+                     ai_chance = 40
+	             command = { type = setflag which = eng_no }
+		     command = { type = relation which = BRA value = -50 }
+                   }
+}
+event = { id = 999449
+          random = no
+          country = U01
+
+          date = { day = 25 month = 2 year = 1952 }
+          offset = 8
+          deathdate = { day = 29 month = 0 year = 1953 }
+
+          trigger = { flag = brazil_vote }
+          
+          name = "The UN vote for Brazil"
+          Desc = "After the fall of the Agentine goverment to a Facist coup, it seems that they've been petitioning the German goverment for weapons and expertise. While this has alarmed many in the UN the Brazilians could not be more vocal about it, they have demanded that an embargo be imposed and that a peacekeeping force be sent to help defend the country. In light of this the UN has setup a vote for the 'Big Three' permanent members of the security council to decide on whether or not we should help." 
+          Picture = "0"
+          style = 2
+
+          action_a = { 
+                     name = "Anything to hurt the Germans"
+                     ai_chance = 40
+	             command = { type = setflag which = u01_yes }
+		     command = { type = relation which = BRA value = 40 }
+                   }
+          action_b = { 
+                     name = "Reclaiming Europe is the priority"
+                     ai_chance = 60
+	             command = { type = setflag which = u01_no }
+		     command = { type = relation which = BRA value = -50 }
+                   }
+}
+event = { id = 8056739
+          random = no
+          country = ALS
+
+          date = { day = 29 month = 2 year = 1952 }
+          offset = 11
+          deathdate = { day = 29 month = 0 year = 1953 }
+
+          trigger = { and = 
+							{ flag = usa_yes
+                              flag = eng_yes
+                              flag = u01_yes
+                            }
+          }
+          name = "The UN votes yes"
+          Desc = "After all the 'Big Three' voted they unanimously voted to help Brazil and put an embargo on Argentina." 
+          Picture = "0"
+          style = 2
+
+          action = { 
+                     name = "Democracy at its best"
+		     command = { type = relation which = BRA value = 50 }
+		     command = { type = access which = BRA  }
+		     command = { type = embargo which = USA where = ARG value = 3 }
+		     command = { type = embargo which = ENG where = ARG value = 3 }
+		     command = { type = embargo which = U01 where = ARG value = 3 }
+		     command = { type = sleepevent which = 8056740 }
+				command = { type = add_corps which = "UN Command for South America" value = land where = 2075 } # Rio De Janeiro
+				command = { type = activate_division which = 17346 value = 62 where = 2075 when = 0 }
+				command = { type = activate_division which = 17346 value = 63 where = 2075 when = 0 }
+		     command = { type = alliance which = BRA }
+                   }
+}
+
+event = { id = 8056740
+          random = no
+          country = ALS
+
+          date = { day = 29 month = 2 year = 1952 }
+          offset = 11
+          deathdate = { day = 29 month = 0 year = 1953 }
+
+          trigger = { or = { flag = usa_no
+                             flag = eng_no
+                             flag = u01_no
+                            }
+							}
+          
+          name = "The UN votes no"
+          Desc = "After all the 'Big Three' voted one or more of them voted against helping Brazil, thus the bill will not come into effect." 
+          Picture = "0"
+          style = 2
+
+          action = { 
+                     name = "Democracy at its worst"
+		     command = { type = relation which = BRA value = -50 }
+		     command = { type = relation which = ARG value = 10 }
+		     command = { type = sleepevent which = 8056739 }
+                   }
+}
