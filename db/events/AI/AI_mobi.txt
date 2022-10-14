@@ -404,7 +404,7 @@ event = { #high threat mobilisation, general mobilisation usually only kicks in 
 
 event = { #uk ai - mobilisation selective conscription
 
-	id = 130010
+	id = 1300101
 	random = no
 	country = ENG
 
@@ -441,7 +441,7 @@ event = { #uk ai - mobilisation selective conscription
 
 event = { #uk ai - mobilisation partial
 
-	id = 130011
+	id = 1300111
 	random = no
 	country = ENG
 	persistent = yes
@@ -486,7 +486,7 @@ event = { #uk ai - mobilisation partial
 
 event = { #ai uk - general mobilisation
 
-	id = 130012
+	id = 1300121
 	random = no
 	country = ENG
 	persistent = yes
