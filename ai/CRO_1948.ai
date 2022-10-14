@@ -1,0 +1,619 @@
+# PAKO AI Template
+
+###################################
+# Diplomacy
+###################################
+
+switch = no # Default is "yes". If turned off, the AI will not automatically try to switch to a more appropriate AI file every year.
+
+# Modifier to chance that country will accept a demand for territory.
+claim_acceptance = 0 
+
+# The countries we will demand territory from if we have claims on them.
+demand_claims = {
+}
+
+# The countries we will set free if we control their territory.
+liberate = {
+	SER
+	MTN
+	SLO
+}
+
+# Special resistance against "influence" by the listed nations. Value range = [0 - 10]
+resistance = { 
+	ALS = 10
+	USA = 10
+	ENG = 10
+	U01 = 10
+	SOV = 10
+}
+
+# Country tags listed with a value specifying how much we want to destroy them.
+combat = {
+	ALS = 100
+	USA = 100
+	ENG = 100
+	U01 = 100
+	SOV = 100
+	SER = 50
+}
+
+# Countries listed here are considered withing our 'sphere of influence'. We will strive to guarantee their independence.
+protect = {
+}
+
+# Countries listed here are considered our natural allies. We will try to influence them and ally with them.
+befriend = {
+	GER = 100
+	ITA = 100
+}
+
+# Provinces with an assigned priority. These are strategic goals for the AI (it will try to take them in wars and demand them in peace treaties.)
+target = { # 1 - 100
+	352 = 100 #ZAGABRIA
+	349 = 10 #LUBIANA
+	338 = 50 #BELGRADO
+}
+
+upgrading = 0.25		#max % of ic used on this slider.
+reinforcement = 0.20	#max % of ic used on this slider.
+
+desperation = 0.30	#If more than this % of ic is occupied by enemy, panic and build militia hordes.
+
+# The ETA at which the AI uses strat. redeploy.
+strat_redeploy_threshold = 25
+
+# Proportion of divisions that may be strategically redeploying at the same time. Default: 0.25
+max_redeploying = 0.10
+
+# if the ai should use offensive supply
+use_offensive_supply = yes
+
+# only use offensive supply if the fuel needed for it is less than this divided by unit strength. Default: 100
+max_fuel_offensive = 100
+
+#if ai should evacuate troops from island with low value
+evac_islands = yes
+
+# The "war monger" value affects the propensity of a country for declaring wars:
+war = -200
+
+# The tendency of a nation to create and accept alliances, and accept military access. The higher the value, the more "neutral" the nation. NOTE: this does not affect the tendency of a nation to start wars.
+neutrality = 0 # Total neutrality at about 100 to 150
+
+max_front_ratio			= 1.0		# The max wanted friendly-to-enemy division ratio along the front. Default is 4.0.
+max_front_ratios = { 			# Override the default against specific countries. Ignored against humans.
+	SER = 2.0 
+	SOV = 2.0 
+}
+
+max_garrison_prop		= 0.30 	# The war-time desired proportion of troops allocated to garrison duty
+min_garrison_prop		= 0.10 	# The war-time minimum proportion of troops allocated to garrison duty
+# NOTE: In areas without fronts, _all_ land units are controlled by the Garrison AI (except forces preparing for an invasion.)
+
+#prevents ai from accepting peace deals
+ferocity = yes
+
+# Proportion of our land divisions that we are prepared to relinquish control over.
+# NOTE: Do not set too low - the AI must be allowed to give over control of its forces in "allied war zones". Default: 0.75.
+exp_force_ratio			= 0.90
+
+# Will never send exp. forces _overseas_ to these countries:
+# NOTE: May still give some to neighboring allies though.
+no_exp_forces_to = { SLO MTN U44 UTC U46 U45 U41 U40 U42 WLL FLA HUN ROM BLR U58 U47 GRE DEN UCS } 
+
+#controls how much forces ai can send to different countries (not implemented internally)
+exp_force_ratios = {
+	GER = 0.75
+	ITA = 0.25
+} 
+
+###################################
+# Construction and Tech Research
+###################################
+
+construction = {
+	max_factor			= 0.00		# Proportion of Production IC that should be used for province buildings.
+
+	AA_batteries	 	= no	# yes = all the time, no = none, atwar = build during wars, not_atwar = build during peace
+	max_AA_level		= 1				# Don't improve beyond this level.
+	AA_provs			= { # List of prioritized provinces
+		352 # ZAGABRIA
+	}		
+
+	coastal_fort 		= yes
+	max_coastal_level	= 3				# Don't improve beyond this level.
+	coastal_fort_provs	= {  # List of prioritized provinces
+		343
+	}		
+
+	radar_station 		= no
+	max_radar			= 0				# Don't improve beyond this level.
+	radar_provs			= {  }		# List of prioritized provinces
+
+	air_base 			= yes
+	max_air_base		= 3				# Don't improve beyond this level.
+	air_base_provs		= { 352 }		# List of prioritized provinces
+
+	naval_base 			= no
+	max_naval_base		= 0				# Don't improve beyond this level.
+	naval_base_provs	= {  }	# List of prioritized provinces
+
+	land_fort			= yes
+	max_land_level		= 1				# Don't improve land forts beyond this level.
+	fort_borders = {					# Build land forts along these borders
+		SER
+		HUN		
+	}
+	fort_provs		= { 352 }	# List of prioritized provinces
+
+	ic_at_war			= no 		# Normally, we always build IC if there is a large resource surplus. The exception could be during wars.
+	#force_ic_until		= 1900				# Ignore presence of a resource surplus and build IC anyway, until year X. (Useful for countries anticipating expansion.)
+	#ic_end_year			= 1900				# Stop building IC at the end of year X.
+	IC_provs			= {  }		# List of prioritized provinces
+
+	#nuclear_reactor = [yes/no/atwar/not_atwar]	
+	#nuclear_reactor_prov = province				#province ai will try to build nuclear reactors in
+	#max_nuclear = 10					#max nuclear reactor size ai will try to get
+	#rocket_test = [yes/no/atwar/not_atwar]						
+	#rocket_test_prov = province				#province to build rocket test site in
+	#max_rocket = 10 					#max rocket test site size
+}
+
+garrison = {
+
+	# OVERSEAS GARRISONING:
+	defend_overseas_beaches = no # "no" is default
+
+	# Basic need is X divisions per area where X is: number of provinces - attrition provinces
+	home_multiplier = 1.0 # In home area, multiply basic need by X. Default: 0.5
+	overseas_multiplier = 0.10 # In other area, multiply basic need by X. Default: 0.3333
+	home_peace_cap = 2.0 # If at peace, we need at most X divisions in our capital area.
+	war_zone_odds = 2.0  # Default: 2.0 (strive to transport in 2x enemy nr of divisions)
+	area_multiplier = { # If an area contains a specific province, multiply the basic need by value (overrides overseas_multiplier, but if it is the home area it is ignored.)
+	}
+
+	# PRIORITIES:
+
+	beach = 100					# Beach prio
+	capital = 10				# Our capital
+	human_border = 100			# Ignored for allied human players
+	war_target = 100			# The next country targeted for attack by this AI
+
+	reserves = 10	# bonus for provinces just behind a frontline.
+
+	opposing_alliance = 100		# For neutrals, all alliances are "opposing"
+	claim_threat = 10			# If we are neutral, countries with claims on us get this
+	unstable_border	= 50		# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		SER = 10
+		ITA = -1	 # Override "opposing_alliance", "claim_threat" and "unstable_border" values and set to 0.
+		GER = -1
+		HUN = 10
+	}
+
+	# Specific provinces
+	province_priorities = {
+		352 = 10 	# Province 527 has prio 50
+		355 = 10
+		347 = 30
+		351 = 30
+		356 = 30
+	}
+	
+	ignore = {
+	}
+
+}
+
+front = {
+	river = 		0.5   	#(What to multiply attacking power with if crossing a river. < 1.0 is an advantage..)
+
+	# the following modifies the odds-strength for defender.   (1.0 = no difference.)
+	#largefort 	= x #for forts above level 6.
+	#smallfort	= x #for forts 6 and below
+	#occupied	= x #for surrounded pocket at enemy territory
+	#owned		= x #for surrounded pocket at own territory
+
+	#Odds modifiying variables
+	# the following is to reduce odds-strength for attacker.
+	frozen_attack 	= 0.50
+	snow_attack 	= 0.50
+	blizzard_attack = 0.25
+	storm_attack 	= 0.60
+	muddy_attack 	= 0.75
+
+	#reduces the size of odds in total.. (1.0 = no difference, 0.5 = halved.)
+	jungle_attack 	= 0.85
+	mountain_attack	= 0.60
+	swamp_attack 	= 0.60
+	forest_attack 	= 0.85
+	hill_attack 	= 0.75
+	urban_attack 	= 0.40
+	
+	# Proportion of divisions in a front province that may be used to support the defense of neighboring provinces. Default 0.33
+	#support_defense_prop = X
+
+	recklessness 		= 	0.50
+	
+	# Even - Distribute forces evenly along the whole front.
+	# Reactive - Try to match enemy troop concentrations.
+	# Defensive - More troops in strategically important provinces (IC, Victory Points, Oil, etc)
+	# Offensive - Concentrate more troops where the enemy us weak
+	# Operational Defensive - The fewer avenues of escape, the less troops (to avoid encirclement.)
+	distrib_vs_ai 		= 	defensive
+	distrib_vs_human 	= 	defensive
+
+	# Countries we do not counter-attack for a certain number of days
+	enemy_handicap = {
+		# NOTE: These values are ignored for human-controlled enemies.
+		# CAUTION: Values apply for _every_new_ war with a set nation.
+	}
+
+	passivity = { # Against specified enemies.
+		# Valid values: 0-100 (%)
+	}
+	
+	province_priorities = {
+		#527 = 0.2	#Only assign 20% of desired forces to cover the province 527		
+	}
+
+	reserve_prop			= 	0.05	# Maximum proportion of total divisions in a front allowed to remain behind the front line ( HQs and divisions needing to recover.)
+
+	panic_ratio_vs_ai		=	2.5	# Front requests more troops if outnumbered by this factor. NOTE: this results in troops being drawn from garrison duties, etc, so set HIGH.
+	panic_ratio_vs_human	=	2.5	# Front requests more troops if outnumbered by this factor. NOTE: this results in troops being drawn from garrison duties, etc, so set HIGH.
+
+	enemy_reinf_days 		= 	5	# Count enemy units less than X days from a target province in odds calculations
+	
+	# DH 1.03 - Introduced 2 new AI front settings used to determine the front leader for fronts in areas controlled by multiple AI countries.
+	# Notes on front leader calculation: 
+	# Only AI countries that have at least one province in the allied area and are not military controlled by another country can become front leaders.
+	# Only one country can be front leader in the allied area.
+	# A simple scoring system is used and the country with highest score is elected for front leader.
+	# Score = Number of controlled provinces in the current area() + 5 (for alliance leaders) + 5 (if GER, JAP, ITA, SOV, USA, ENG, FRA) + 7 (if any of the province borders enemy province) + (front_leader_home or front_leader_overseas)
+	# The above calculation is performed for the controller of each of the country areas (an allied area can contain one or more country areas or even more then one country areas for a country).
+	#front_leader_home 		=	X	# Default is 5. Used when calculated for areas direct land connection through allied or own controlled provinces to the capital. 
+	#front_leader_overseas 	=	X	# Default is 0. Used when calculated for areas with no direct land connection through allied or own controlled provinces to the capital. 
+	
+	#base_attack_odds		=	X	# Will attack at X odds or better
+	#min_attack_odds			=	X	# If stalemated for a long period, may go as low as these attack odds
+	#max_attack_odds			=	X	# Don't use more force than necessary to reach these odds
+	#reinforce_odds			=	X 	# Send in more troops if the attacking force is at these odds
+	#withdraw_odds			= 	X	# Break off attacks and withdraw at these odds
+	# NOTE: the calculations for retreating from _defensive_ positions are too complex to condense to a few variables
+	# NOTE: will _also_ retreat if the average organization is too low
+}
+
+military = {
+	relative_build_scheme 	= yes	# Should the AI strive to maintain a relative balance between unit types [yes] or simply allocate percentages (see below) of the total production [no]. Default: yes
+
+	#max_batch_peace = 800					# Max production run length in DAYS while at peace
+	#max_batch_war = 500			 			# Max production run length in DAYS while at war with no home front
+	#max_batch_home_front = 190				# Max production run length in DAYS while at war with home fronts
+	# NOTE: AI production run size is also limited by other factors, such as Total IC capacity, days until end of scenario, and desperation.
+
+# Example Build scheme:
+	infantry = 		55
+	cavalry = 		10
+	motorized = 	5
+	mechanized = 	0
+	light_armor = 	0
+	armor = 		0
+	paratrooper = 	0
+	marine = 		0
+	bergsjaeger = 	5
+	garrison = 		5
+	hq = 			5
+	militia = 		5
+					# 90 %
+
+	multi_role = 	0
+	interceptor = 	5
+	strategic_bomber = 0
+	tactical_bomber = 0
+	naval_bomber = 	0
+	cas = 			0
+	transport_plane = 0
+	flying_bomb = 	0
+	flying_rocket = 0
+					# 5%
+
+	battleship = 	0
+	light_cruiser = 0
+	heavy_cruiser = 0
+	battlecruiser = 0
+	destroyer = 	5
+	carrier = 		0
+	escort_carrier = 0
+	submarine = 	0
+	nuclear_submarine = 0
+	transport = 	0
+					# 5%
+# NOTE: The sum _must_ be exactly 100%!
+
+
+# Brigade preferences:
+# (% of eligible division types that should be built with a certain brigade type)
+# Land types:
+	artillery			=	15
+	sp_artillery		=	5
+	rocket_artillery	=	5	
+	anti_tank			=	5
+	tank_destroyer		=	5
+	light_armor_brigade	=	0
+	heavy_armor			=	0
+	super_heavy_armor	=	0
+	armored_car			=	0
+	anti_air			=	5
+	police				=	5
+	engineer			= 	5
+# Sum of these should be <= 100
+
+# Naval types:
+	cag				=	0
+# Sum of these should be <= 100
+
+#The AI will always build escort fighters when it builds tactical bombers and strategic bombers.
+
+
+
+}
+
+
+# bomber is now obsolete and NOT USED AT ALL replace and use Air Marshal instead
+
+air_marshal = {
+	icxdayscostfactor = 10.0		# How to value true industrial cost when calculating expect causalties
+	manpowercostfactor = 100.0		# How to value manpower cost when calculating expect causalties
+	destructionriskthreashold = 0.2		# when to fear a divisiopn might be destroyed
+
+	airsuperioritydesirability = 10.0	# desirability is a multiplier used when calcualting the mission desirability
+	airsuperioritylosstolerance = 1.0	# tolerance is the required kill:loss ration expected to do mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
+	groundattacklosstolerance = 1.0
+	groundattackdesirability = 1.0
+	interdictionlosstolerance = 1.5
+	inderdictiondesirability = 1.0
+	logisticalstrikelosstolerance = 4.5
+	logisticalstrikeefficency = 0.01	# efficency is a tweakable param to adjust according to how much actual damage comes from doing this mission (not to be confused with desirability)
+	logisticalstrikedesirability = 100000.0
+	runwaycrateringlosstolerance = 1.5
+	runwaycrateringefficency = 0.01
+	runwaycrateringdesirability = 20000.0
+	strategicstriketolerance = 4.5
+	strategicstrikeefficency = 0.01
+	strategicstrikedesirability = 1000000.0
+	installationstriketolerance = 1.5
+	installationstrikeefficency = 0.01
+	installationstrikedesirability = 10.0
+	navalstriketolerance = 1.0
+	navalstrikedesirability = 10.0
+	portstriketolerance = 1.0
+	portstrikedesirability = 9.0
+
+
+	# You can have any number of task forces, but if you add one you must add ALL the kinds you want
+	# as then the defaults aren't set.
+	
+	# The defaults currently are:
+	taskforcetype = { 
+		name = "Air Superiority" # Name can be anything and is only used to ease debugging
+		
+		desiredratio = 0.400 # What ratio taskforces of this type should a nation try to form?		
+		
+		rangeweight = 10.000 # How important the range for an air divisions in this taskforce-type?
+		airkillpowerweight = 2000.000 # How important is an air divisions ability to kill air in this taskforce-type?
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 # A huge negative number here keeps transports out of this taskforce-type
+		
+		airvulnurabilityweight = -1.000  # How bad is being vulnurable to enemy air (vulnurable is a mix of cost and defence value)
+		surfacevulnurabilityweight = 0.000 
+		
+		# What AI missions should this task force consider?
+		# Idle is the "mission" the AI is on when doing nothing,
+		# Reorganize is the "mission" the AI is on when trying to reform its
+		# air OOB to be more optimal. The other missions listed here correspond
+		# to the standard tactical missions AND a rebase to the best airbase.
+		
+		# Possible missions are:			 
+		idle = yes 
+		reorganize = yes 
+		air_superiority = yes 
+		#Others not supported by the "Air Superiority" default taskforce type
+		#interdiction
+		#ground_attack
+		#logistical_strike
+		#runway_cratering
+		#strategic_bombardment
+		#installation_strike
+		#naval_strike
+		#port_strike
+		#convoy_air_raiding
+		#airborne_assault
+		#air_supply	
+	} 
+	
+	# the other defaults
+	taskforcetype = { name = "Soft Bombing" desiredratio = 0.200 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 2000.000 navalkillpowerweight = 0.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Hard Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 2000.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Strategic Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 2000.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = -0.500 surfacevulnurabilityweight = -0.500 idle = yes reorganize = yes logistical_strike = yes runway_cratering = yes strategic_bombardment = yes installation_strike = yes } 
+	taskforcetype = { name = "Naval Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 2000.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes naval_strike = yes port_strike = yes convoy_air_raiding = yes } 
+	taskforcetype = { name = "Airlift" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = -2000.000 softkillpowerweight = -2000.000 navalkillpowerweight = 0.000 strategickillpowerweight = -2000.000 transportcapacityweight = 1000000.000 airvulnurabilityweight = -1.000 surfacevulnurabilityweight = 0.000 idle = yes reorganize = yes airborne_assault = yes air_supply = yes } 
+
+}
+
+
+
+#The number of leaders of a given type is equal to the number of units multiplied with the leader_rartio.
+#For example if you have 101 land units and land_field_marsal = 0.02 you will have two field marshals.
+#For example if you have 101 sea units and sea_admiral = 0.06 you will have six admirals.
+leader_ratio = {
+	land_field_marshal =0.02
+	land_general =0.031
+	land_lt_general =0.41
+
+	sea_grand_admiral =0.02
+	sea_admiral =0.061
+	sea_vice_admiral =0.401
+
+	air_marshal =0.02
+	air_general =0.091
+	air_lt_General =0.11
+
+
+
+}
+
+###################################
+#Invasions and Naval
+###################################
+invasion = {
+ 	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random		= 8.0	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.1	#increase to avoid coastal forts more.
+	beach		= 0.1	#higher, avoid worst beaches.
+	distance	= 10.0	#higher = avoid long distance.
+	pocket		= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 0.1	#prioritise taking pure islands.
+	enemy		= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 2.0	#higher = much more vary of troops nearby
+	air_base	= 1.5 
+      	naval_base 	= 0.1 
+      	air_support 	= 3.0 
+      	redirect 	= priority
+	ignore		= no
+      
+	target = { } 
+} 
+admiral = { 
+	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+	target = { } 
+	core = { } 
+}
+
+
+###################################
+# Technology
+###################################
+
+# Factors to modify for technological development.
+technology = {
+	endgoal = { }			#list of endgoals to achieve.
+	preference = { }		# list of techs to give bonus too.
+	ignore = { } 			# Techs we will never research
+
+	#preference to weight importance of research in these field.s
+	armor 		= 1
+	infantry 	= 6
+	industry 	= 3
+	aircraft 	= 0
+	naval 		= 0
+	land_doctrines 	= 8
+	secret_weapons 	= 0
+	air_doctrines 	= 0
+	naval_doctrines = 0
+
+}
+
+# Factors to modify Tech Sharing
+tech_sharing = {
+	favored = {
+		GER = 100  	# Preferred Countries to trade techs with. Higher value also means better techs.
+		ITA = 100
+	}
+	embargo = {
+		SOV  		# Will not trade techs with these countries.
+		USA
+		ENG
+		U01
+		ALS
+	}
+	not = {
+		  		# List of techs never to trade.
+	}
+	prioritized = {
+		 	# Priority to accepting trades with these techs.
+	}
+}
+
+###################################
+# Trade
+###################################
+
+# Factors to modify Trade Agreements.
+trade = {
+	favored = {
+		GER = 100  	# Preferred Countries to trade resources with.
+		ITA = 100
+		HUN = 50
+	}
+	embargo = {
+		SOV  		# Will not trade resources with these countries.
+		USA
+		ENG
+		U01
+		ALS
+	}
+	
+	# A threshold for when the AI should cancel trade agreements. Default is 4.0. A lower value means the AI will be more eager to cancel bad deals.
+	cancel_deal_threshold = 4		
+
+	# These override the resource values in "db\resource_values.csv" for this AI unless set to -1 (default.)
+	energy = 			-1
+	rare_materials = 	-1
+	metal =				-1
+	oil = 				-1
+	supplies = 			-1
+	money = 			-1
+}
+
+###################################
+# Spying
+###################################
+
+spyprefs =
+{
+	percentage_on_spies 		= 0.2
+	percentage_foreign_mission 	= 0.6
+
+	# Used for Intell efficiency and for setting minimum chance to succeed for the AI to do that particular type of mission
+	spyprefsdata = 
+	{
+		NumberOfSpies = 10
+		min_number_of_spies = 3
+		steal_blueprint = 10
+		minister_assassination = 5
+		smear_campaign 	= 10
+		coup = 3
+		sabotage_industry = 10
+		nuclear_sabotage = 5
+		found_partisans	= 10
+		massmedia = 10
+		disrupt_techteam = 10
+		country = CRO
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
