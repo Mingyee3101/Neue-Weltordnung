@@ -52,13 +52,13 @@ country = {
   headofstate            = { type = 9 id = 190136 } # Galo Plaza Lasso
   headofgovernment       = { type = 9 id = 190137 } # Galo Plaza Lasso
   foreignminister        = { type = 9 id = 190058 } # Juan de Diaz Mera
-  armamentminister       = { type = 9 id = 190074 } # Carlos Arroyo del Río
+  armamentminister       = { type = 9 id = 190074 } # Carlos Arroyo del R?
   ministerofsecurity     = { type = 9 id = 190086 } # Juan de Diaz Mera
-  ministerofintelligence = { type = 9 id = 190099 } # Francisco Guarderas Pérez
+  ministerofintelligence = { type = 9 id = 190099 } # Francisco Guarderas P?ez
   chiefofstaff           = { type = 9 id = 190110 } # Guillermo Freire Posso
   chiefofarmy            = { type = 9 id = 190116 } # Luis Cabrera Sevilla
   chiefofnavy            = { type = 9 id = 190123 } # Jorge Escobedo Duarte
-  chiefofair             = { type = 9 id = 190125 } # Julio Salém Gallegos
+  chiefofair             = { type = 9 id = 190125 } # Julio Sal? Gallegos
   dormant_ministers      = { 190001 190023 190024 190002 190041 190042 190003 190130 190059 190004 190065 190005 190087 190006 190007 190105 190008 190010 190015 190128 190016 190025 190011 190019 190033 190129 190034 190043 190029 190037 190052 190131 190009 190020 190026 190038 190044 190132 190055 190056 190057 }
 
   landunit = {
@@ -67,7 +67,7 @@ country = {
     location = 2042
     division = {
       id             = { type = 29000 id = 5000 }
-      name           = "1a Brigada de Infantería"
+      name           = "1a Brigada de Infanter?"
       type           = infantry
       model          = 11
       extra          = anti_air

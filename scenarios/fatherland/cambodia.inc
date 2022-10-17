@@ -46,7 +46,7 @@ country = {
     defense_lobby     = 4
     interventionism   = 2
   }
-  headofstate            = { type = 9 id = 590013 } # H.M. Sisowath Monipong
+  headofstate            = { type = 9 id = 590013 } # Sisowath Monipong
   headofgovernment       = { type = 9 id = 590021 } # Sisowath Sirik Matak
   foreignminister        = { type = 9 id = 590025 } # Phan Sina
   armamentminister       = { type = 9 id = 590032 } # Norodom Phanouvong
@@ -54,12 +54,12 @@ country = {
   ministerofintelligence = { type = 9 id = 590042 } # Sisowath Youtevong
   chiefofstaff           = { type = 9 id = 590046 } # Sisowath Monireth
   chiefofarmy            = { type = 9 id = 590050 } # Lon Nol
-  chiefofnavy            = { type = 9 id = 590053 } # André Patou
+  chiefofnavy            = { type = 9 id = 590053 } # Andr?Patou
   chiefofair             = { type = 9 id = 590057 } # Jacques Soufflet
 
   landunit = {
     id       = { type = 9031 id = 1 }
-    name     = "Armée du Cambodge"
+    name     = "Arm? du Cambodge"
     location = 1400
     division = {
       id             = { type = 9031 id = 2 }

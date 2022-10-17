@@ -51,15 +51,15 @@ country = {
     interventionism   = 2
   }
   headofstate            = { type = 9 id = 200073 } # Federico Chaves
-  headofgovernment       = { type = 9 id = 200202 }
+  headofgovernment       = { type = 9 id = 200202 } # Federico Chaves
   foreignminister        = { type = 9 id = 200030 } # Cesar Augusto Vasconcellos
-  armamentminister       = { type = 9 id = 200077 } # Remigio Bastia Martín
+  armamentminister       = { type = 9 id = 200077 } # Remigio Bastia Mart?
   ministerofsecurity     = { type = 9 id = 200044 } # Luis de Gasperi
   ministerofintelligence = { type = 9 id = 200076 } # Felipe Molas Lopez
-  chiefofstaff           = { type = 9 id = 200054 } # José Lezcano
+  chiefofstaff           = { type = 9 id = 200054 } # Jos?Lezcano
   chiefofarmy            = { type = 9 id = 200058 } # Amancio Pampliega
   chiefofnavy            = { type = 9 id = 200062 } # Jesus G. Arraza
-  chiefofair             = { type = 9 id = 200064 } # Héctor Velasquez
+  chiefofair             = { type = 9 id = 200064 } # H?tor Velasquez
   dormant_ministers      = { 200001 200011 200012 200002 200015 200016 200003 200004 200005 200039 200006 200007 200051 200008 200009 200010 200013 200017 200032 200024 }
 
   landunit = {

@@ -51,15 +51,15 @@ country = {
     interventionism   = 2
   }
   headofstate            = { type = 9 id = 180079 } # Carlos Delgado Chalbaud
-  headofgovernment       = { type = 9 id = 180203 }
+  headofgovernment       = { type = 9 id = 180203 } # Carlos Delgado Chalbaud
   foreignminister        = { type = 9 id = 180084 } # German Suarez Flamerich
   armamentminister       = { type = 9 id = 180024 } # Julio Garcia Jarpa
   ministerofsecurity     = { type = 9 id = 180035 } # Isidoro Ruiz Tuerro
   ministerofintelligence = { type = 9 id = 180041 } # Robert Letts Sanchez
   chiefofstaff           = { type = 9 id = 180045 } # Gustavo Gonzalez Lopez
   chiefofarmy            = { type = 9 id = 180086 } # Marcos Perez Jimenez
-  chiefofnavy            = { type = 9 id = 180054 } # Carlos Ramos Díaz
-  chiefofair             = { type = 9 id = 180058 } # Miguel Díaz Fraile
+  chiefofnavy            = { type = 9 id = 180054 } # Carlos Ramos D?z
+  chiefofair             = { type = 9 id = 180058 } # Miguel D?z Fraile
   dormant_ministers      = { 180061 180001 180002 180003 180004 180005 180019 180026 180027 180028 180006 180036 180043 180009 180056 180010 }
 
   landunit = {
@@ -68,14 +68,14 @@ country = {
     location = 1993
     division = {
       id             = { type = 10277 id = 2 }
-      name           = "1a División de Infantería"
+      name           = "1a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 100
     }
     division = {
       id             = { type = 10277 id = 3 }
-      name           = "2a División de Infantería"
+      name           = "2a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 100

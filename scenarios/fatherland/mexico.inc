@@ -68,14 +68,14 @@ country = {
     }
     division = {
       id             = { type = 10244 id = 3 }
-      name           = "1a División de Infantería"
+      name           = "1a Divisi? de Infanter?"
       type           = motorized
       model          = 2
       strength       = 100
     }
     division = {
       id             = { type = 10244 id = 4 }
-      name           = "2a División de Infantería"
+      name           = "2a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 100
@@ -87,14 +87,14 @@ country = {
     location = 1967
     division = {
       id             = { type = 10244 id = 7 }
-      name           = "4a División de Infantería"
+      name           = "4a Divisi? de Infanter?"
       type           = motorized
       model          = 2
       strength       = 100
     }
     division = {
       id             = { type = 10244 id = 8 }
-      name           = "5a División de Infantería"
+      name           = "5a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 100
@@ -106,7 +106,7 @@ country = {
     location = 1978
     division = {
       id             = { type = 10244 id = 11 }
-      name           = "1a División de Caballería"
+      name           = "1a Divisi? de Caballer?"
       type           = motorized
       model          = 2
       strength       = 100
@@ -120,19 +120,19 @@ country = {
     base     = 1967
     division = {
       id             = { type = 10244 id = 18 }
-      name           = "1a Flotilla Naval é Ejercito"
+      name           = "1a Flotilla Naval ?Ejercito"
       type           = transport
       model          = 2
     }
     division = {
       id             = { type = 10244 id = 19 }
-      name           = "2a Flotilla Naval é Ejercito"
+      name           = "2a Flotilla Naval ?Ejercito"
       type           = transport
       model          = 2
     }
     division = {
       id             = { type = 10244 id = 20 }
-      name           = "3a Flotilla Naval é Ejercito"
+      name           = "3a Flotilla Naval ?Ejercito"
       type           = transport
       model          = 2
     }

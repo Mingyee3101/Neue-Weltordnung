@@ -54,7 +54,7 @@ country = {
   headofstate            = { type = 9 id = 150001 } # Reza Pahlavi
   headofgovernment       = { type = 9 id = 150002 } # Mahmud Jam
   foreignminister        = { type = 9 id = 150003 } # Inoyatullah Khan Sami
-  armamentminister       = { type = 9 id = 150004 } # Ahmad Khan Nakhjaavan
+  armamentminister       = { type = 9 id = 150004 } # Ahmad Khan Nakhjavan
   ministerofsecurity     = { type = 9 id = 150005 } # Ali Akbar Deiva
   ministerofintelligence = { type = 9 id = 150006 } # Reza Mizani
   chiefofstaff           = { type = 9 id = 150007 } # Reza Pahlavi

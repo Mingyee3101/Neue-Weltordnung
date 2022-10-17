@@ -51,7 +51,7 @@ country = {
   ministerofintelligence = { type = 9 id = 350059 } # Dr. Georges Rigaud
   chiefofstaff           = { type = 9 id = 350069 } # Antoine Levelt
   chiefofarmy            = { type = 9 id = 350074 } # Antoine Levelt
-  chiefofnavy            = { type = 9 id = 350079 } # Georges Léger
+  chiefofnavy            = { type = 9 id = 350079 } # Georges L?er
   chiefofair             = { type = 9 id = 350084 } # Antoine Levelt
   dormant_ministers      = { 350003 350024 350004 350005 350006 350001 350002 350087 350046 350007 350008 350010 350025 }
 

@@ -48,7 +48,7 @@ country = {
   foreignminister        = { type = 9 id = 85036 } # Gustavo Cuervo Rubio
   armamentminister       = { type = 9 id = 85048 } # Manuel Ferrara
   ministerofsecurity     = { type = 9 id = 85061 } # Fulgencio Batista
-  ministerofintelligence = { type = 9 id = 85071 } # Federico Laredo Brú
+  ministerofintelligence = { type = 9 id = 85071 } # Federico Laredo Br?1944
   chiefofstaff           = { type = 9 id = 85075 } # Fulgencio Batista
   chiefofarmy            = { type = 9 id = 85078 } # Fulgencio Batista
   chiefofnavy            = { type = 9 id = 85081 } # Angel Gonzalez

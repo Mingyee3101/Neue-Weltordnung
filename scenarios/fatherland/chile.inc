@@ -57,7 +57,7 @@ country = {
   ministerofsecurity     = { type = 9 id = 210072 } # Antonio J. Rios
   ministerofintelligence = { type = 9 id = 210088 } # Dario Mujica Gamboa
   chiefofstaff           = { type = 9 id = 210098 } # Arturo Espinoza Mujica
-  chiefofarmy            = { type = 9 id = 210107 } # Salvador Arron Galvéz
+  chiefofarmy            = { type = 9 id = 210107 } # Salvador Arron Galv?
   chiefofnavy            = { type = 9 id = 210115 } # Julio Gerken Mahn
   chiefofair             = { type = 9 id = 210120 } # Diego Aracena
   dormant_ministers      = { 210001 210022 210003 210004 210005 210006 210007 210008 210009 210010 210016 210002 210044 210030 210011 210128 210131 210015 210019 210023 210132 210025 210031 210050 210048 210079 210085 }
@@ -68,7 +68,7 @@ country = {
     location = 2023
     division = {
       id             = { type = 10372 id = 2 }
-      name           = "1. División de Infantería"
+      name           = "1. Divisi? de Infanter?"
       type           = infantry
       model          = 12
       extra          = artillery
@@ -77,14 +77,14 @@ country = {
     }
     division = {
       id             = { type = 10372 id = 3 }
-      name           = "2. División de Infantería"
+      name           = "2. Divisi? de Infanter?"
       type           = infantry
       model          = 12
       strength       = 100
     }
     division = {
       id             = { type = 10372 id = 4 }
-      name           = "3. División de Infantería"
+      name           = "3. Divisi? de Infanter?"
       type           = infantry
       model          = 12
       strength       = 100
@@ -98,7 +98,7 @@ country = {
     base     = 2023
     division = {
       id             = { type = 10372 id = 7 }
-      name           = "1a Destructor División"
+      name           = "1a Destructor Divisi?"
       type           = destroyer
       model          = 6
       extra1         = naval_anti_air_s
@@ -106,7 +106,7 @@ country = {
     }
     division = {
       id             = { type = 10372 id = 8 }
-      name           = "2a Destructor División"
+      name           = "2a Destructor Divisi?"
       type           = destroyer
       model          = 6
       extra1         = naval_anti_air_s

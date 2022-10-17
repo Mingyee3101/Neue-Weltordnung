@@ -52,11 +52,11 @@ country = {
   }
   headofstate            = { type = 9 id = 205021 } # Gualberto Villarroel Lopez
   headofgovernment       = { type = 9 id = 205038 } # Gualberto Villarroel Lopez
-  foreignminister        = { type = 9 id = 205065 } # José Franz Tamayo
+  foreignminister        = { type = 9 id = 205065 } # Jos?Franz Tamayo
   armamentminister       = { type = 9 id = 205092 } # Enrique Baldivieso Aparicio
   ministerofsecurity     = { type = 9 id = 205117 } # Alberto Diez de Medina
   ministerofintelligence = { type = 9 id = 205133 } # Alberto Diez de Medina
-  chiefofstaff           = { type = 9 id = 205146 } # José Pastor Baldiviseo
+  chiefofstaff           = { type = 9 id = 205146 } # Jos?Pastor Baldiviseo
   chiefofarmy            = { type = 9 id = 205157 } # Gualberto Villarroel Lopez
   chiefofnavy            = { type = 9 id = 205168 } # Julian Montellano Carrasco
   chiefofair             = { type = 9 id = 205182 } # Enrique Baldivieso Aparicio
@@ -69,7 +69,7 @@ country = {
     location = 2020
     division = {
       id             = { type = 17000 id = 4000 }
-      name           = "1. Brigada de Infantería 'Bolivar'"
+      name           = "1. Brigada de Infanter? 'Bolivar'"
       type           = infantry
       model          = 11
       extra          = artillery
@@ -78,14 +78,14 @@ country = {
     }
     division = {
       id             = { type = 17000 id = 4001 }
-      name           = "2. Brigada de Infantería"
+      name           = "2. Brigada de Infanter?"
       type           = infantry
       model          = 11
       strength       = 30
     }
     division = {
       id             = { type = 17000 id = 4002 }
-      name           = "3. Brigada de Infantería"
+      name           = "3. Brigada de Infanter?"
       type           = infantry
       model          = 11
       strength       = 30
@@ -94,12 +94,12 @@ country = {
 
   airunit = { 
     id       = { type = 12000 id = 4005 }
-    name     = "Aviación del Ejército"
+    name     = "Aviaci? del Ej?cito"
     location = 2020
     base     = 2020
     division = {
       id             = { type = 12000 id = 4006 }
-      name           = "Grupo Aérea Nro. 1"
+      name           = "Grupo A?ea Nro. 1"
       type           = interceptor
       model          = 7
       strength       = 20

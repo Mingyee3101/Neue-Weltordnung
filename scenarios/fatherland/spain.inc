@@ -112,41 +112,41 @@ country = {
   }
   headofstate            = { type = 9 id = 35011 } # Francisco Franco Bahamonde
   headofgovernment       = { type = 9 id = 35016 } # Francisco Franco Bahamonde
-  foreignminister        = { type = 9 id = 35024 } # Ramón Serrano Súñer
-  armamentminister       = { type = 9 id = 35056 } # José María Lammamié
-  ministerofsecurity     = { type = 9 id = 35090 } # Raimundo Fernández Cuesta
-  ministerofintelligence = { type = 9 id = 35109 } # Onésimo Redondo Ortega
+  foreignminister        = { type = 9 id = 35024 } # Ram? Serrano Súñer
+  armamentminister       = { type = 9 id = 35056 } # Jos?Mar? Lammami?1945
+  ministerofsecurity     = { type = 9 id = 35090 } # Raimundo Fern?dez Cuesta
+  ministerofintelligence = { type = 9 id = 35109 } # On?imo Redondo Ortega
   chiefofstaff           = { type = 9 id = 35120 } # Carlos Asensio Cabanillas
   chiefofarmy            = { type = 9 id = 35143 } # Antonio Aranda Mata
-  chiefofnavy            = { type = 9 id = 35152 } # Tomás Domínguez Arévalo
-  chiefofair             = { type = 9 id = 35169 } # Francisco Reglado Rodríguez
+  chiefofnavy            = { type = 9 id = 35152 } # Tom? Dom?guez Ar?alo
+  chiefofair             = { type = 9 id = 35169 } # Francisco Reglado Rodr?uez
   dormant_leaders        = { 35014 35015 35017 35028 35056 35067 35076 35093 35094 35095 }
   dormant_ministers      = { 35001 35002 35003 35005 35006 35007 35008 35009 35010 35014 35015 35020 35048 35058 35064 35096 35121 35122 35131 35137 35144 35146 35159 35180 35017 }
 
   landunit = {
     id       = { type = 25000 id = 1 }
-    name     = "Región de Guadarrama"
+    name     = "Regi? de Guadarrama"
     location = 460
     division = {
       id             = { type = 25001 id = 1 }
-      name           = "11a División de Infantería"
+      name           = "11a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
   }
   landunit = {
     id       = { type = 25000 id = 902 }
-    name     = "Región de Andalucía"
+    name     = "Regi? de Andaluc?"
     location = 474
     division = {
       id             = { type = 25000 id = 4 }
-      name           = "21a División de Infantería"
+      name           = "21a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
     division = {
       id             = { type = 25000 id = 6 }
-      name           = "23a División de Infantería"
+      name           = "23a Divisi? de Infanter?"
       type           = infantry
       model          = 12
       extra          = artillery
@@ -155,17 +155,17 @@ country = {
   }
   landunit = {
     id       = { type = 25000 id = 903 }
-    name     = "Región del Túria"
+    name     = "Regi? del T?ia"
     location = 464
     division = {
       id             = { type = 25000 id = 7 }
-      name           = "31a División de Infantería"
+      name           = "31a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
     division = {
       id             = { type = 25000 id = 8 }
-      name           = "32a División de Infantería"
+      name           = "32a Divisi? de Infanter?"
       type           = infantry
       model          = 12
       extra          = artillery
@@ -174,96 +174,96 @@ country = {
   }
   landunit = {
     id       = { type = 25000 id = 904 }
-    name     = "Región de Urgel"
+    name     = "Regi? de Urgel"
     location = 436
     division = {
       id             = { type = 25000 id = 9 }
-      name           = "41a División de Infantería"
+      name           = "41a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
     division = {
       id             = { type = 25000 id = 10 }
-      name           = "42a División de Infantería"
+      name           = "42a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
   }
   landunit = {
     id       = { type = 25000 id = 905 }
-    name     = "Región de Aragón"
+    name     = "Regi? de Arag?"
     location = 438
     division = {
       id             = { type = 25000 id = 12 }
-      name           = "51a División de Infantería"
+      name           = "51a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
     division = {
       id             = { type = 25000 id = 13 }
-      name           = "52a División de Infantería"
+      name           = "52a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
   }
   landunit = {
     id       = { type = 25000 id = 906 }
-    name     = "Región de Navarra"
+    name     = "Regi? de Navarra"
     location = 443
     division = {
       id             = { type = 25000 id = 14 }
-      name           = "61a División de Infantería"
+      name           = "61a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
     division = {
       id             = { type = 25000 id = 15 }
-      name           = "62a División de Infantería"
+      name           = "62a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
   }
   landunit = {
     id       = { type = 25000 id = 907 }
-    name     = "Región de Castilla"
+    name     = "Regi? de Castilla"
     location = 448
     division = {
       id             = { type = 25000 id = 16 }
-      name           = "71a División de Infantería"
+      name           = "71a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
     division = {
       id             = { type = 25000 id = 17 }
-      name           = "72a División de Infantería"
+      name           = "72a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
   }
   landunit = {
     id       = { type = 25000 id = 908 }
-    name     = "Región de Galicia"
+    name     = "Regi? de Galicia"
     location = 441
     division = {
       id             = { type = 25000 id = 18 }
-      name           = "81a División de Infantería"
+      name           = "81a Divisi? de Infanter?"
       type           = infantry
       model          = 12
     }
   }
   landunit = {
     id       = { type = 25000 id = 909 }
-    name     = "Región de Marruecos"
+    name     = "Regi? de Marruecos"
     location = 715
     division = {
       id             = { type = 25000 id = 20 }
-      name           = "91a División de Infantería"
+      name           = "91a Divisi? de Infanter?"
       type           = motorized
       model          = 3
     }
     division = {
       id             = { type = 25000 id = 23 }
-      name           = "Tercios de la Legión"
+      name           = "Tercios de la Legi?"
       type           = motorized
       model          = 3
       extra          = sp_artillery
@@ -272,11 +272,11 @@ country = {
   }
   landunit = {
     id       = { type = 25000 id = 910 }
-    name     = "Región del Maestrazgo"
+    name     = "Regi? del Maestrazgo"
     location = 452
     division = {
       id             = { type = 25000 id = 25 }
-      name           = "10a División de Infantería"
+      name           = "10a Divisi? de Infanter?"
       type           = motorized
       model          = 3
     }
@@ -287,13 +287,13 @@ country = {
     location = 460
     division = {
       id             = { type = 25000 id = 28 }
-      name           = "1a División Acorazada"
+      name           = "1a Divisi? Acorazada"
       type           = armor
       model          = 3
     }
     division = {
       id             = { type = 25000 id = 29 }
-      name           = "2a División Acorazada"
+      name           = "2a Divisi? Acorazada"
       type           = armor
       model          = 3
     }
@@ -301,7 +301,7 @@ country = {
 
   navalunit = {
     id       = { type = 25000 id = 500 }
-    name     = "Escuadrón de Batalla"
+    name     = "Escuadr? de Batalla"
     location = 441
     base     = 441
     division = {
@@ -364,7 +364,7 @@ country = {
     base     = 440
     division = {
       id             = { type = 25000 id = 508 }
-      name           = "Méndez Núñez"
+      name           = "M?dez Núñez"
       type           = light_cruiser
       model          = 6
       extra1         = naval_fire_controll_s
@@ -434,7 +434,7 @@ country = {
 
   airunit = { 
     id       = { type = 25000 id = 201 }
-    name     = "Región Pirineos"
+    name     = "Regi? Pirineos"
     location = 436
     base     = 436
     division = {
@@ -454,7 +454,7 @@ country = {
   }
   airunit = { 
     id       = { type = 25000 id = 204 }
-    name     = "Región Estrecho"
+    name     = "Regi? Estrecho"
     location = 474
     base     = 474
     division = {
@@ -474,7 +474,7 @@ country = {
   }
   airunit = { 
     id       = { type = 25000 id = 207 }
-    name     = "Región Este"
+    name     = "Regi? Este"
     location = 474
     base     = 474
     division = {
@@ -494,12 +494,12 @@ country = {
   }
   airunit = { 
     id       = { type = 25000 id = 210 }
-    name     = "Fuerzas Aéreas Africanas"
+    name     = "Fuerzas A?eas Africanas"
     location = 474
     base     = 474
     division = {
       id             = { type = 25000 id = 211 }
-      name           = "FAN 1-G-10 de Cooperación"
+      name           = "FAN 1-G-10 de Cooperaci?"
       type           = cas
       model          = 4
       strength       = 30
@@ -514,12 +514,12 @@ country = {
   }
   airunit = { 
     id       = { type = 25000 id = 213 }
-    name     = "Región Central"
+    name     = "Regi? Central"
     location = 460
     base     = 460
     division = {
       id             = { type = 25000 id = 214 }
-      name           = "FAN 1-G-40 Estratégico"
+      name           = "FAN 1-G-40 Estrat?ico"
       type           = strategic_bomber
       model          = 6
       strength       = 50
@@ -547,12 +547,12 @@ country = {
   }
   airunit = { 
     id       = { type = 25000 id = 218 }
-    name     = "Región Atlántica"
+    name     = "Regi? Atl?tica"
     location = 441
     base     = 441
     division = {
       id             = { type = 25000 id = 219 }
-      name           = "FAN 2-G-40 Estratégico"
+      name           = "FAN 2-G-40 Estrat?ico"
       type           = strategic_bomber
       model          = 6
       strength       = 30

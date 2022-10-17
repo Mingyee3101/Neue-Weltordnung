@@ -62,7 +62,7 @@ country = {
     location = 2085
     division = {
       id             = { type = 10254 id = 2 }
-      name           = "1a División de Infantería"
+      name           = "1a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 60

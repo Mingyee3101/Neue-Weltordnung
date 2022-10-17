@@ -55,10 +55,10 @@ country = {
   headofstate            = { type = 9 id = 280011 } # Jozef Tiso
   headofgovernment       = { type = 9 id = 280014 } # Vojtech Tuka
   foreignminister        = { type = 9 id = 280018 } # Stefan Tiso
-  armamentminister       = { type = 9 id = 280021 } # Mikulás Pruzinsky
+  armamentminister       = { type = 9 id = 280021 } # Mikul? Pruzinsky
   ministerofsecurity     = { type = 9 id = 280028 } # Alexander Mach
   ministerofintelligence = { type = 9 id = 280033 } # Hans Bernard
-  chiefofstaff           = { type = 9 id = 280038 } # Gustav Malar
+  chiefofstaff           = { type = 9 id = 280038 } # August? Mal?
   chiefofarmy            = { type = 9 id = 280040 } # Ferdinand Catlos
   chiefofnavy            = { type = 9 id = 280043 } # Jozef Turanec
   chiefofair             = { type = 9 id = 280045 } # Anton Pulanich
@@ -72,7 +72,7 @@ country = {
     leader   = 280011
     division = {
       id             = { type = 26000 id = 2 }
-      name           = "Slovensky Generálny Stáb"
+      name           = "Slovensky Gener?ny St?"
       type           = hq
       model          = 2
       strength       = 100
@@ -93,12 +93,12 @@ country = {
   }
   landunit = {
     id       = { type = 26000 id = 5 }
-    name     = "I. Armáda"
+    name     = "I. Arm?a"
     location = 211
     leader   = 280003
     division = {
       id             = { type = 26000 id = 6 }
-      name           = "1. Pesia divízia 'Jánosík'"
+      name           = "1. Pesia div?ia 'J?os?'"
       type           = infantry
       model          = 10
       extra          = artillery
@@ -107,14 +107,14 @@ country = {
     }
     division = {
       id             = { type = 26000 id = 7 }
-      name           = "2. Pesia divízia 'Skultéty'"
+      name           = "2. Pesia div?ia 'Skult?y'"
       type           = infantry
       model          = 10
       strength       = 100
     }
     division = {
       id             = { type = 26000 id = 8 }
-      name           = "3. Pesia divízia 'Rázus'"
+      name           = "3. Pesia div?ia 'R?us'"
       type           = infantry
       model          = 10
       extra          = engineer
@@ -124,26 +124,26 @@ country = {
   }
   landunit = {
     id       = { type = 26000 id = 9 }
-    name     = "II. Armáda"
+    name     = "II. Arm?a"
     location = 214
     leader   = 280017
     division = {
       id             = { type = 26000 id = 10 }
-      name           = "4. Pesia divízia 'Sládkovic'"
+      name           = "4. Pesia div?ia 'Sl?kovic'"
       type           = infantry
       model          = 10
       strength       = 100
     }
     division = {
       id             = { type = 26000 id = 11 }
-      name           = "5. Pesia divízia 'Tajovsky'"
+      name           = "5. Pesia div?ia 'Tajovsky'"
       type           = infantry
       model          = 10
       strength       = 100
     }
     division = {
       id             = { type = 26000 id = 12 }
-      name           = "6. Pesia divízia 'Stúr'"
+      name           = "6. Pesia div?ia 'St?'"
       type           = infantry
       model          = 10
       extra          = light_armor_brigade

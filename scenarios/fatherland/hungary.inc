@@ -61,16 +61,16 @@ country = {
     defense_lobby     = 7
     interventionism   = 8
   }
-  headofstate            = { type = 9 id = 105001 } # Miklós Horthy de Nagybánya
-  headofgovernment       = { type = 9 id = 105026 } # M. Kállay de Nagy-Kalló
-  foreignminister        = { type = 9 id = 105137 } # Jenö Ghyczy
-  armamentminister       = { type = 9 id = 105052 } # Lajos Reményi-Schneller
+  headofstate            = { type = 9 id = 105001 } # Mikl? Horthy de Nagyb?ya
+  headofgovernment       = { type = 9 id = 105026 } # M. K?lay de Nagy-Kall?1942
+  foreignminister        = { type = 9 id = 105137 } # Jen?Ghyczy
+  armamentminister       = { type = 9 id = 105052 } # Lajos Rem?yi-Schneller
   ministerofsecurity     = { type = 9 id = 105067 } # Ferenc Keresztes-Fischer
-  ministerofintelligence = { type = 9 id = 105085 } # Kádár Gyula
+  ministerofintelligence = { type = 9 id = 105085 } # K?? Gyula
   chiefofstaff           = { type = 9 id = 105096 } # Vilmos Nagy
   chiefofarmy            = { type = 9 id = 105104 } # Edgar Keksz
-  chiefofnavy            = { type = 9 id = 105009 } # Miklós Horthy de Nagybánya
-  chiefofair             = { type = 9 id = 105121 } # Györghyi De Brody
+  chiefofnavy            = { type = 9 id = 105009 } # Mikl? Horthy de Nagyb?ya
+  chiefofair             = { type = 9 id = 105121 } # Gy?ghyi De Brody
   dormant_ministers      = { 105017 105002 105022 105023 105003 105037 105005 105006 105007 105008 105010 105024 105066 105038 105120 105134 105004 105025 105133 105039 105135 }
 
   landunit = {

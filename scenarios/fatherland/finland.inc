@@ -69,7 +69,7 @@ country = {
   headofgovernment       = { type = 9 id = 145031 } # Juho K. Paasikivi
   foreignminister        = { type = 9 id = 145046 } # Carl Ramsay
   armamentminister       = { type = 9 id = 145065 } # Edwin J. H. Linkomies
-  ministerofsecurity     = { type = 9 id = 145084 } # Kyösti N. Järvinen
+  ministerofsecurity     = { type = 9 id = 145084 } # Ky?ti N. J?vinen
   ministerofintelligence = { type = 9 id = 145096 } # Georg A. de Gripenberg
   chiefofstaff           = { type = 9 id = 145102 } # C. Gustaf E. Mannerheim
   chiefofarmy            = { type = 9 id = 145107 } # C. Gustaf E. Mannerheim
@@ -90,7 +90,7 @@ country = {
     }
     division = {
       id             = { type = 32000 id = 3 }
-      name           = "Ratsuväenprikatii"
+      name           = "Ratsuv?nprikatii"
       type           = cavalry
       model          = 9
       strength       = 50
@@ -109,7 +109,7 @@ country = {
     location = 523
     division = {
       id             = { type = 32000 id = 1001 }
-      name           = "Ryhmä Oinonen"
+      name           = "Ryhm?Oinonen"
       type           = bergsjaeger
       model          = 7
       strength       = 65
@@ -233,7 +233,7 @@ country = {
   }
   landunit = {
     id       = { type = 32000 id = 1005 }
-    name     = "Aunuksen ryhmä"
+    name     = "Aunuksen ryhm?"
     location = 533
     division = {
       id             = { type = 32000 id = 14 }
@@ -266,7 +266,7 @@ country = {
   }
   landunit = {
     id       = { type = 32000 id = 1007 }
-    name     = "Maaselän ryhmä"
+    name     = "Maasel? ryhm?"
     location = 518
     division = {
       id             = { type = 32000 id = 9 }
@@ -314,7 +314,7 @@ country = {
   }
   landunit = {
     id       = { type = 32000 id = 27 }
-    name     = "Kenttätäydennysprikaati"
+    name     = "Kentt??dennysprikaati"
     location = 525
     division = {
       id             = { type = 32000 id = 28 }
@@ -358,7 +358,7 @@ country = {
     }
     division = {
       id             = { type = 32000 id = 32 }
-      name           = "Väinämöinen"
+      name           = "V?n??nen"
       type           = heavy_cruiser
       model          = 4
     }

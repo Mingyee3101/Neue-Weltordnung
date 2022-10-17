@@ -59,7 +59,7 @@ country = {
     defense_lobby     = 4
     interventionism   = 2
   }
-  headofstate            = { type = 9 id = 20001 } # António de Fragosa Carmona
+  headofstate            = { type = 9 id = 20001 } # Ant?io de Fragosa Carmona
   headofgovernment       = { type = 9 id = 20002 } # A. Oliveira Salazar
   foreignminister        = { type = 9 id = 20017 } # Alfredo Pimenta
   armamentminister       = { type = 9 id = 20028 } # Armindo Monteiro
@@ -77,28 +77,28 @@ country = {
     location = 476
     division = {
       id             = { type = 10975 id = 1001 }
-      name           = "1a Divisão de Infantaria"
+      name           = "1a Divis? de Infantaria"
       type           = infantry
       model          = 12
       strength       = 100
     }
     division = {
       id             = { type = 10975 id = 1002 }
-      name           = "2a Divisão de Infantaria"
+      name           = "2a Divis? de Infantaria"
       type           = infantry
       model          = 12
       strength       = 100
     }
     division = {
       id             = { type = 10975 id = 1003 }
-      name           = "3a Divisão de Infantaria"
+      name           = "3a Divis? de Infantaria"
       type           = infantry
       model          = 12
       strength       = 100
     }
     division = {
       id             = { type = 10975 id = 1011 }
-      name           = "4a Divisão de Infantaria"
+      name           = "4a Divis? de Infantaria"
       type           = infantry
       model          = 12
       strength       = 100

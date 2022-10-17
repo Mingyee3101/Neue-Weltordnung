@@ -10,7 +10,7 @@ country = {
   tag                = BUR
   name               = "Union of Burma"
   ai_settings        = { flags = { MOB1 = yes } }
-  capital            = 1459 # Delhi
+  capital            = 1415 # Rangoon
   dissent            = 9
   manpower           = 508
   relative_manpower  = 0.6

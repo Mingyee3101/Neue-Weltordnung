@@ -46,7 +46,7 @@ country = {
     interventionism   = 1
   }
   headofstate            = { type = 9 id = 325001 } # Manuel Quezon
-  headofgovernment       = { type = 9 id = 325002 } # Sergio Osmeña
+  headofgovernment       = { type = 9 id = 325002 } # Sergio Osme?
   foreignminister        = { type = 9 id = 325003 } # Quintin Paredes
   armamentminister       = { type = 9 id = 325004 } # Elpidio Quirino
   ministerofsecurity     = { type = 9 id = 325005 } # Jose Yulo

@@ -41,15 +41,15 @@ country = {
     defense_lobby     = 1
     interventionism   = 1
   }
-  headofstate            = { type = 9 id = 310200 }
+  headofstate            = { type = 9 id = 310200 } # Jose Figueres Ferrer
   headofgovernment       = { type = 9 id = 310022 } # Jose Figueres Ferrer
-  foreignminister        = { type = 9 id = 310033 } # Luís Fernandéz Rodríguez
+  foreignminister        = { type = 9 id = 310033 } # Lu? Fernand? Rodr?uez
   armamentminister       = { type = 9 id = 310049 } # Calufa Fallas Sinaja
   ministerofsecurity     = { type = 9 id = 310060 } # Jose Figueres Ferrer
   ministerofintelligence = { type = 9 id = 310069 } # Jose Figueres Ferrer
   chiefofstaff           = { type = 9 id = 310080 } # Jose Figueres Ferrer
   chiefofarmy            = { type = 9 id = 310085 } # Jose Figueres Ferrer
   chiefofnavy            = { type = 9 id = 310092 } # Felipe Abreu Castro
-  chiefofair             = { type = 9 id = 310095 } # Guillermo Macho Nuñez
+  chiefofair             = { type = 9 id = 310095 } # Guillermo Macho Nu?z
   dormant_ministers      = { 310001 310002 310003 310070 310006 310013 310016 310023 310025 310034 310040 310054 310014 310017 310026 310038 310041 310053 }
 }

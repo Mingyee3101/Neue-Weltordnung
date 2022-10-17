@@ -62,7 +62,7 @@ country = {
   chiefofstaff           = { type = 9 id = 295007 } # Saud al Saud
   chiefofarmy            = { type = 9 id = 295008 } # Faisal al Saud
   chiefofnavy            = { type = 9 id = 295009 } # Faisal al Saud
-  chiefofair             = { type = 9 id = 295010 } # Faisal Saud
+  chiefofair             = { type = 9 id = 295010 } # Faisal al Saud
 
   landunit = {
     id       = { type = 22600 id = 1 }

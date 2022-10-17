@@ -8,8 +8,6 @@
 
 country = {
   tag                = GRE
-  #puppet             = ITA
-  #control            = ITA
   name               = "Hellenic State"
   ai_settings        = { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes } }
   belligerence       = 2
@@ -61,14 +59,14 @@ country = {
     location = 377
     division = {
       id             = { type = 20601 id = 2 }
-      name           = "Vasilikos tmíma omada"
+      name           = "Vasilikos tm?a omada"
       type           = hq
       model          = 4
       strength       = 50
     }
     division = {
       id             = { type = 20601 id = 3 }
-      name           = "1.Vasilikos tmíma diairesi"
+      name           = "1.Vasilikos tm?a diairesi"
       type           = bergsjaeger
       model          = 11
       extra          = artillery
@@ -81,7 +79,7 @@ country = {
     location = 366
     division = {
       id             = { type = 20601 id = 5 }
-      name           = "2. Vasilikos tmíma diairesi"
+      name           = "2. Vasilikos tm?a diairesi"
       type           = infantry
       model          = 11
       extra          = artillery
@@ -89,7 +87,7 @@ country = {
     }
     division = {
       id             = { type = 20601 id = 6 }
-      name           = "3. Vasilikos tmíma diairesi"
+      name           = "3. Vasilikos tm?a diairesi"
       type           = infantry
       model          = 11
       strength       = 50

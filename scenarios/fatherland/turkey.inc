@@ -70,16 +70,16 @@ country = {
     defense_lobby     = 6
     interventionism   = 3
   }
-  headofstate            = { type = 9 id = 45011 } # Mustafa Ismet Inönü
+  headofstate            = { type = 9 id = 45011 } # Mustafa Ismet In??1938
   headofgovernment       = { type = 9 id = 45013 } # Refik Saydam
-  foreignminister        = { type = 9 id = 45015 } # Sükrü Saracoglu
+  foreignminister        = { type = 9 id = 45015 } # S?r?Saracoglu
   armamentminister       = { type = 9 id = 45004 } # Zekai Apaydin
-  ministerofsecurity     = { type = 9 id = 45005 } # Sükrü Kaya
+  ministerofsecurity     = { type = 9 id = 45005 } # S?r?Kaya
   ministerofintelligence = { type = 9 id = 45043 } # Mustafa Renda
   chiefofstaff           = { type = 9 id = 45048 } # Abdul Naci Tinaz
   chiefofarmy            = { type = 9 id = 45008 } # Mehmet Nuri Yamut
   chiefofnavy            = { type = 9 id = 45053 } # Ali Fuat Cebesoy
-  chiefofair             = { type = 9 id = 45010 } # Ali Örlungat
+  chiefofair             = { type = 9 id = 45010 } # Ali ?lungat
   dormant_ministers      = { 45001 }
 
   landunit = {
@@ -313,11 +313,11 @@ country = {
   }
   landunit = {
     id       = { type = 11700 id = 29 }
-    name     = "Türkce Süvari Topluluk"
+    name     = "T?kce S?ari Topluluk"
     location = 1074
     division = {
       id             = { type = 11700 id = 30 }
-      name           = "1. Süvari Dagitim"
+      name           = "1. S?ari Dagitim"
       type           = cavalry
       model          = 10
       extra          = artillery
@@ -328,7 +328,7 @@ country = {
     }
     division = {
       id             = { type = 11700 id = 31 }
-      name           = "3. Süvari Dagitim"
+      name           = "3. S?ari Dagitim"
       type           = cavalry
       model          = 10
       strength       = 100
@@ -337,7 +337,7 @@ country = {
     }
     division = {
       id             = { type = 11700 id = 32 }
-      name           = "5. Yedek Süvari Dagitim"
+      name           = "5. Yedek S?ari Dagitim"
       type           = cavalry
       model          = 10
       strength       = 50
@@ -422,12 +422,12 @@ country = {
 
   navalunit = {
     id       = { type = 11700 id = 1 }
-    name     = "Türkce Deniz Filosu"
+    name     = "T?kce Deniz Filosu"
     location = 1076
     base     = 1076
     division = {
       id             = { type = 11700 id = 100 }
-      name           = "Reschid Pasha Kücük Filotilla"
+      name           = "Reschid Pasha K?? Filotilla"
       type           = transport
     }
     division = {
@@ -439,7 +439,7 @@ country = {
   }
   navalunit = {
     id       = { type = 11700 id = 2205 }
-    name     = "1. Türk Dz. Kuvvetleri Filosu"
+    name     = "1. T?k Dz. Kuvvetleri Filosu"
     location = 1076
     base     = 1076
     division = {
@@ -463,12 +463,12 @@ country = {
   }
   navalunit = {
     id       = { type = 11700 id = 2434 }
-    name     = "2. Türk Dz. Kuvvetleri Filosu"
+    name     = "2. T?k Dz. Kuvvetleri Filosu"
     location = 1076
     base     = 1076
     division = {
       id             = { type = 11700 id = 6 }
-      name           = "1. Filotilla Denizalti Kücük"
+      name           = "1. Filotilla Denizalti K??"
       type           = submarine
       model          = 2
     }
@@ -476,7 +476,7 @@ country = {
 
   airunit = { 
     id       = { type = 11700 id = 33 }
-    name     = "I. Türkce Hava Topluluk"
+    name     = "I. T?kce Hava Topluluk"
     location = 1075
     base     = 1075
     division = {

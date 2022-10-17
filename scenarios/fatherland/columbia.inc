@@ -49,13 +49,13 @@ country = {
     defense_lobby     = 4
     interventionism   = 2
   }
-  headofstate            = { type = 9 id = 175133 } # Laureano Gómez Castro
+  headofstate            = { type = 9 id = 175133 } # Laureano G?ez Castro
   headofgovernment       = { type = 9 id = 175032 } # Ruben Piedrahita Arango
   foreignminister        = { type = 9 id = 175046 } # Francisco Umana Bernal
   armamentminister       = { type = 9 id = 175066 } # Julio Valdez
-  ministerofsecurity     = { type = 9 id = 175080 } # Francesco José Urrutia
-  ministerofintelligence = { type = 9 id = 175097 } # Enrico Díaz Carias
-  chiefofstaff           = { type = 9 id = 175101 } # José Guisa y Escalar
+  ministerofsecurity     = { type = 9 id = 175080 } # Francesco Jos?Urrutia
+  ministerofintelligence = { type = 9 id = 175097 } # Enrico D?z Carias
+  chiefofstaff           = { type = 9 id = 175101 } # Jos?Guisa y Escalar
   chiefofarmy            = { type = 9 id = 175110 } # Gustavo Rojas Pinilla
   chiefofnavy            = { type = 9 id = 175116 } # Mario Espinoza Gacitua
   chiefofair             = { type = 9 id = 175121 } # Salvador Tiaga Gonzalez
@@ -67,21 +67,21 @@ country = {
     location = 1987
     division = {
       id             = { type = 10284 id = 2 }
-      name           = "1a División de Infantería"
+      name           = "1a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 80
     }
     division = {
       id             = { type = 10284 id = 3 }
-      name           = "2a División de Infantería"
+      name           = "2a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 80
     }
     division = {
       id             = { type = 10284 id = 4 }
-      name           = "3a División de Infantería"
+      name           = "3a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 80

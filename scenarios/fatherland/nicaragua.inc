@@ -45,12 +45,12 @@ country = {
   headofstate            = { type = 9 id = 315013 } # Anastacio G. Somoza
   headofgovernment       = { type = 9 id = 315017 } # Anastacio G. Somoza
   foreignminister        = { type = 9 id = 315028 } # Anastacio G. Somoza
-  armamentminister       = { type = 9 id = 315037 } # José Clemón Sacasa
-  ministerofsecurity     = { type = 9 id = 315042 } # Nicolas Eden Jímenez
-  ministerofintelligence = { type = 9 id = 315048 } # José Clemón Sacasa
+  armamentminister       = { type = 9 id = 315037 } # Jos?Clem? Sacasa
+  ministerofsecurity     = { type = 9 id = 315042 } # Nicolas Eden J?enez
+  ministerofintelligence = { type = 9 id = 315048 } # Jos?Clem? Sacasa
   chiefofstaff           = { type = 9 id = 315050 } # Manuel Roque Garcia
   chiefofarmy            = { type = 9 id = 315054 } # Manuel Roque Garcia
-  chiefofnavy            = { type = 9 id = 315055 } # Noel Esto Niño Miranda
+  chiefofnavy            = { type = 9 id = 315055 } # Noel Esto Ni? Miranda
   chiefofair             = { type = 9 id = 315056 } # Joel Garcia Zaldana
   dormant_ministers      = { 315001 315011 315002 315016 315018 315003 315023 315024 315025 315029 315005 315006 315049 315030 315043 315019 315031 315044 }
 
@@ -60,7 +60,7 @@ country = {
     location = 2080
     division = {
       id             = { type = 10255 id = 2 }
-      name           = "1a División de Infantería"
+      name           = "1a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 60

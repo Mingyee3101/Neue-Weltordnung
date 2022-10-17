@@ -1,5 +1,5 @@
 ##############################
-# Country definition for HOL #
+# Country definition for U05 #
 ##############################
 
 #####################
@@ -137,7 +137,7 @@ country = {
     base     = 1511
     division = {
       id             = { type = 18500 id = 2002 }
-      name           = "HrMs De Zeven Provinciën"
+      name           = "HrMs De Zeven Provinci?"
       type           = light_cruiser
       model          = 5
     }

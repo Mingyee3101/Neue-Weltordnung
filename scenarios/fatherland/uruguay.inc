@@ -52,14 +52,14 @@ country = {
     interventionism   = 2
   }
   headofstate            = { type = 9 id = 195016 } # Luis Conrado Batlle Beres
-  headofgovernment       = { type = 9 id = 195200 }
+  headofgovernment       = { type = 9 id = 195200 } # Alfeo Brum
   foreignminister        = { type = 9 id = 195025 } # Hector Alberto Gerona
   armamentminister       = { type = 9 id = 195037 } # Ernesto Sanchez Elizondo
   ministerofsecurity     = { type = 9 id = 195045 } # Alberto Dominguez Campora
   ministerofintelligence = { type = 9 id = 195052 } # Julio Escalona Vasquez
   chiefofstaff           = { type = 9 id = 195057 } # Juan Franki Franque
   chiefofarmy            = { type = 9 id = 195061 } # Hector Lopez Camara
-  chiefofnavy            = { type = 9 id = 195064 } # Francisco Suaréz Villablanco
+  chiefofnavy            = { type = 9 id = 195064 } # Francisco Suar? Villablanco
   chiefofair             = { type = 9 id = 195070 } # Olindo Ojeto Varela
   dormant_ministers      = { 195001 195002 195003 195004 195030 195005 195040 195006 195048 195007 195008 195009 195010 195011 195012 195017 195018 195023 195024 195031 195032 195041 195042 195049 195050 195051 195056 195059 195060 195063 195068 195069 }
 
@@ -69,7 +69,7 @@ country = {
     location = 2052
     division = {
       id             = { type = 10368 id = 2 }
-      name           = "1a División de Infantería"
+      name           = "1a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       extra          = artillery

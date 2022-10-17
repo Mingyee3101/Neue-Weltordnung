@@ -62,7 +62,7 @@ country = {
   }
   headofstate            = { type = 9 id = 95011 } # Kiril Preslavski
   headofgovernment       = { type = 9 id = 95023 } # Ivan Bagryanov
-  foreignminister        = { type = 9 id = 95034 } # Ivan Bagrianov
+  foreignminister        = { type = 9 id = 95034 } # Ivan Bagryanov
   armamentminister       = { type = 9 id = 95049 } # Stanko Nikoladorov
   ministerofsecurity     = { type = 9 id = 95064 } # Aleksandar Stanishev
   ministerofintelligence = { type = 9 id = 95076 } # Sava Kirov

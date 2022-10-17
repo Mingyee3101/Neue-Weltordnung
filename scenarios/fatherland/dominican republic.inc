@@ -42,15 +42,15 @@ country = {
     defense_lobby     = 3
     interventionism   = 2
   }
-  headofstate            = { type = 9 id = 320001 } # Rafél Trujillo
-  headofgovernment       = { type = 9 id = 320018 } # Rafél Trujillo
+  headofstate            = { type = 9 id = 320001 } # Raf? Trujillo
+  headofgovernment       = { type = 9 id = 320018 } # Raf? Trujillo
   foreignminister        = { type = 9 id = 320027 } # Arturo Despradel
   armamentminister       = { type = 9 id = 320035 } # Luis Amiamo Tio
   ministerofsecurity     = { type = 9 id = 320042 } # Donald Reid Cabral
   ministerofintelligence = { type = 9 id = 320049 } # Hector Trujillo
-  chiefofstaff           = { type = 9 id = 320007 } # Rafél Trujillo
-  chiefofarmy            = { type = 9 id = 320008 } # Rafél Trujillo
-  chiefofnavy            = { type = 9 id = 320059 } # Rafél Trujillo
+  chiefofstaff           = { type = 9 id = 320007 } # Raf? Trujillo
+  chiefofarmy            = { type = 9 id = 320008 } # Raf? Trujillo
+  chiefofnavy            = { type = 9 id = 320059 } # Raf? Trujillo
   chiefofair             = { type = 9 id = 320061 } # Julio Ortega Frier
   dormant_ministers      = { 320002 320003 320026 320011 320017 320004 320041 320012 320015 320019 320025 320033 320047 320006 320063 }
 
@@ -60,7 +60,7 @@ country = {
     location = 1780
     division = {
       id             = { type = 10262 id = 2 }
-      name           = "1a División de Infantería"
+      name           = "1a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 50

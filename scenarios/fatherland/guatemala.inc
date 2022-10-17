@@ -43,7 +43,7 @@ country = {
     interventionism   = 2
   }
   headofstate            = { type = 9 id = 305012 } # Juan Arevalo Bermejo
-  headofgovernment       = { type = 9 id = 305101 }
+  headofgovernment       = { type = 9 id = 305101 } # Juan Arevalo Bermejo
   foreignminister        = { type = 9 id = 305024 } # Jorge Torriello Garrido
   armamentminister       = { type = 9 id = 305029 } # Jacopo Arbenz Guzman
   ministerofsecurity     = { type = 9 id = 305037 } # Manuel Valladares
@@ -60,7 +60,7 @@ country = {
     location = 2088
     division = {
       id             = { type = 10252 id = 2 }
-      name           = "1a División de Infantería"
+      name           = "1a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 60

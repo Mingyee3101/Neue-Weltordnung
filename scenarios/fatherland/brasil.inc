@@ -56,15 +56,15 @@ country = {
     interventionism   = 3
   }
   headofstate            = { type = 9 id = 160015 } # Eurico Gaspar Dutra
-  headofgovernment       = { type = 9 id = 160300 }
-  foreignminister        = { type = 9 id = 160033 } # S. de Sousa Leão Gracíe
+  headofgovernment       = { type = 9 id = 160300 } # Nereu de Oliveira Ramos
+  foreignminister        = { type = 9 id = 160033 } # S. de Sousa Le? Grac?
   armamentminister       = { type = 9 id = 160049 } # Elyseu F. de Montarroyos
   ministerofsecurity     = { type = 9 id = 160070 } # Teotonio da Fonseca
   ministerofintelligence = { type = 9 id = 160081 } # Rodrigo Octavio
   chiefofstaff           = { type = 9 id = 160093 } # Joao Neves da Fontoura
   chiefofarmy            = { type = 9 id = 160106 } # Eurico Gaspar Dutra
   chiefofnavy            = { type = 9 id = 160113 } # Floriano Peixoto
-  chiefofair             = { type = 9 id = 160120 } # Eduardo Gomés
+  chiefofair             = { type = 9 id = 160120 } # Eduardo Gomes
   dormant_ministers      = { 160030 160025 160051 160043 }
 
   landunit = {
@@ -73,7 +73,7 @@ country = {
     location = 2075
     division = {
       id             = { type = 10356 id = 2 }
-      name           = "1a Divisão de Infantaria"
+      name           = "1a Divis? de Infantaria"
       type           = infantry
       model          = 12
       extra          = artillery
@@ -82,7 +82,7 @@ country = {
     }
     division = {
       id             = { type = 10356 id = 35 }
-      name           = "11a Divisão de Infantaria"
+      name           = "11a Divis? de Infantaria"
       type           = infantry
       model          = 12
       extra          = artillery
@@ -91,7 +91,7 @@ country = {
     }
     division = {
       id             = { type = 10356 id = 36 }
-      name           = "12a Divisão de Infantaria"
+      name           = "12a Divis? de Infantaria"
       type           = infantry
       model          = 12
       extra          = artillery
@@ -101,25 +101,25 @@ country = {
   }
   landunit = {
     id       = { type = 30052 id = 1 }
-    name     = "1o Exército"
+    name     = "1o Ex?cito"
     location = 2075
     division = {
       id             = { type = 10356 id = 3 }
-      name           = "2a Divisão de Infantaria"
+      name           = "2a Divis? de Infantaria"
       type           = infantry
       model          = 12
       strength       = 100
     }
     division = {
       id             = { type = 10356 id = 4 }
-      name           = "3a Divisão de Infantaria"
+      name           = "3a Divis? de Infantaria"
       type           = motorized
       model          = 3
       strength       = 100
     }
     division = {
       id             = { type = 10356 id = 5 }
-      name           = "4a Divisão de Infantaria"
+      name           = "4a Divis? de Infantaria"
       type           = motorized
       model          = 3
       strength       = 100
@@ -127,46 +127,46 @@ country = {
   }
   landunit = {
     id       = { type = 10356 id = 6 }
-    name     = "2o Exército"
+    name     = "2o Ex?cito"
     location = 2057
     division = {
       id             = { type = 10356 id = 7 }
-      name           = "5a Divisão de Infantaria"
+      name           = "5a Divis? de Infantaria"
       type           = motorized
       model          = 3
       strength       = 100
     }
     division = {
       id             = { type = 10356 id = 8 }
-      name           = "6a Divisão de Infantaria"
+      name           = "6a Divis? de Infantaria"
       type           = motorized
       model          = 3
       strength       = 100
     }
     division = {
       id             = { type = 10356 id = 9 }
-      name           = "7a Divisão de Infantaria"
+      name           = "7a Divis? de Infantaria"
       type           = motorized
       model          = 3
       strength       = 100
     }
     division = {
       id             = { type = 10356 id = 10 }
-      name           = "8a Divisão"
+      name           = "8a Divis?"
       type           = armor
       model          = 2
       strength       = 100
     }
     division = {
       id             = { type = 10356 id = 33 }
-      name           = "9a Divisão"
+      name           = "9a Divis?"
       type           = armor
       model          = 2
       strength       = 100
     }
     division = {
       id             = { type = 10356 id = 34 }
-      name           = "10a Divisão"
+      name           = "10a Divis?"
       type           = armor
       model          = 2
       strength       = 100
@@ -180,7 +180,7 @@ country = {
     base     = 2075
     division = {
       id             = { type = 10356 id = 16 }
-      name           = "NRB São Paulo"
+      name           = "NRB S? Paulo"
       type           = battleship
       model          = 7
       extra1         = none
@@ -318,33 +318,33 @@ country = {
 
   airunit = { 
     id       = { type = 10356 id = 11 }
-    name     = "Aereo do Brésil"
+    name     = "Aereo do Br?il"
     location = 2075
     base     = 2075
     division = {
       id             = { type = 10356 id = 12 }
-      name           = "1a Divisão de Caças"
+      name           = "1a Divis? de Ca?s"
       type           = interceptor
       model          = 12
       strength       = 100
     }
     division = {
       id             = { type = 10356 id = 13 }
-      name           = "2a Divisão de Caças"
+      name           = "2a Divis? de Ca?s"
       type           = interceptor
       model          = 12
       strength       = 100
     }
     division = {
       id             = { type = 10356 id = 37 }
-      name           = "3a Divisão de Caças"
+      name           = "3a Divis? de Ca?s"
       type           = interceptor
       model          = 12
       strength       = 100
     }
     division = {
       id             = { type = 10356 id = 38 }
-      name           = "4a Divisão de Caças"
+      name           = "4a Divis? de Ca?s"
       type           = interceptor
       model          = 12
       strength       = 100

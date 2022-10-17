@@ -42,15 +42,15 @@ country = {
     defense_lobby     = 4
     interventionism   = 1
   }
-  headofstate            = { type = 9 id = 125133 } # Seán T. O'Ceallaigh
+  headofstate            = { type = 9 id = 125133 } # Se? T. O'Ceallaigh
   headofgovernment       = { type = 9 id = 125026 } # John A. Costello
   foreignminister        = { type = 9 id = 125038 } # Sean MacBride
   armamentminister       = { type = 9 id = 125136 } # Kevin O'Higgins
-  ministerofsecurity     = { type = 9 id = 125076 } # Sean MacEoin
-  ministerofintelligence = { type = 9 id = 125091 } # Sean MacEoin
+  ministerofsecurity     = { type = 9 id = 125076 } # Se? MacEoin
+  ministerofintelligence = { type = 9 id = 125091 } # Se? MacEoin
   chiefofstaff           = { type = 9 id = 125100 } # Dan McKenna
   chiefofarmy            = { type = 9 id = 125111 } # M.J. Costello
-  chiefofnavy            = { type = 9 id = 125119 } # Seán T. O'Ceallaigh
+  chiefofnavy            = { type = 9 id = 125119 } # Se? T. O'Ceallaigh
   chiefofair             = { type = 9 id = 125128 } # W. Delamere
   dormant_ministers      = { 125001 125013 125016 125021 }
 

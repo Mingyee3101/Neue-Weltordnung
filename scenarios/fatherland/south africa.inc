@@ -49,7 +49,7 @@ country = {
   headofgovernment       = { type = 9 id = 425018 } # D. F. Malan
   foreignminister        = { type = 9 id = 425028 } # D. F. Malan
   armamentminister       = { type = 9 id = 425080 } # F.C. Erasmus
-  ministerofsecurity     = { type = 9 id = 425046 } # T.E. Dönges
+  ministerofsecurity     = { type = 9 id = 425046 } # T.E. D?ges
   ministerofintelligence = { type = 9 id = 425057 } # Nicolaas Havenga
   chiefofstaff           = { type = 9 id = 425007 } # Pierre van Ryneveld
   chiefofarmy            = { type = 9 id = 425067 } # Pierre van Ryneveld
@@ -67,7 +67,7 @@ country = {
       type           = motorized
       model          = 2
     }
-	division = {
+    division = {
       id             = { type = 30554 id = 4 }
       name           = "1st SA Inf. Div."
       type           = infantry

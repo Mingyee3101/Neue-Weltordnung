@@ -53,13 +53,13 @@ country = {
     interventionism   = 3
   }
   headofstate            = { type = 9 id = 220100 } # Harold Viscount of Tunis
-  headofgovernment       = { type = 9 id = 220101 } # Louis St-Laurent
+  headofgovernment       = { type = 9 id = 220101 } # Louis St. Laurent
   foreignminister        = { type = 9 id = 220104 } # Lester B. Pearson
   armamentminister       = { type = 9 id = 220106 } # Brooke Claxton
   ministerofsecurity     = { type = 9 id = 220108 } # Stuart Sinclair Garson
   ministerofintelligence = { type = 9 id = 220110 } # Walter Edward Harris
   chiefofstaff           = { type = 9 id = 220071 } # Henry Crerar
-  chiefofarmy            = { type = 9 id = 220079 } # 
+  chiefofarmy            = { type = 9 id = 220079 } # Henry Crerar
   chiefofnavy            = { type = 9 id = 220009 } # Percy Nelles
   chiefofair             = { type = 9 id = 220010 } # George Croil
   dormant_ministers      = { 220094 220001 220095 220096 220013 220019 220014 220021 220025 220004 220005 }

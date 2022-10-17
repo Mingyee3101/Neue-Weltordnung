@@ -54,7 +54,7 @@ country = {
   }
   headofstate            = { type = 9 id = 40001 } # Gustav V
   headofgovernment       = { type = 9 id = 40012 } # Per Albin Hansson
-  foreignminister        = { type = 9 id = 40017 } # Richard Sandler
+  foreignminister        = { type = 9 id = 40017 } # Richard J. Sandler
   armamentminister       = { type = 9 id = 40026 } # Ernst Wigforss
   ministerofsecurity     = { type = 9 id = 40037 } # Karl Schlyter
   ministerofintelligence = { type = 9 id = 40006 } # Carlos Adlercreutz
@@ -65,11 +65,11 @@ country = {
 
   landunit = {
     id       = { type = 29600 id = 1 }
-    name     = "I. Militär Område"
+    name     = "I. Milit? Omr?e"
     location = 2152
     division = {
       id             = { type = 29600 id = 2 }
-      name           = "I. Militär Område"
+      name           = "I. Milit? Omr?e"
       type           = infantry
       model          = 10
       strength       = 60
@@ -77,11 +77,11 @@ country = {
   }
   landunit = {
     id       = { type = 29600 id = 3 }
-    name     = "III. Militär Område"
+    name     = "III. Milit? Omr?e"
     location = 2153
     division = {
       id             = { type = 29600 id = 4 }
-      name           = "III. Militär Område"
+      name           = "III. Milit? Omr?e"
       type           = infantry
       model          = 10
       extra          = artillery
@@ -91,11 +91,11 @@ country = {
   }
   landunit = {
     id       = { type = 29600 id = 5 }
-    name     = "IV. Militär Område"
+    name     = "IV. Milit? Omr?e"
     location = 2159
     division = {
       id             = { type = 29600 id = 6 }
-      name           = "IV. Militär Område"
+      name           = "IV. Milit? Omr?e"
       type           = infantry
       model          = 10
       extra          = engineer
@@ -105,11 +105,11 @@ country = {
   }
   landunit = {
     id       = { type = 29600 id = 7 }
-    name     = "II. Militär Område"
+    name     = "II. Milit? Omr?e"
     location = 2164
     division = {
       id             = { type = 29600 id = 8 }
-      name           = "II. Militär Område"
+      name           = "II. Milit? Omr?e"
       type           = infantry
       model          = 10
       strength       = 50
@@ -117,11 +117,11 @@ country = {
   }
   landunit = {
     id       = { type = 29600 id = 11 }
-    name     = "VI. Militär Område"
+    name     = "VI. Milit? Omr?e"
     location = 2166
     division = {
       id             = { type = 29600 id = 12 }
-      name           = "VI. Militär Område"
+      name           = "VI. Milit? Omr?e"
       type           = infantry
       model          = 10
       strength       = 45
@@ -129,11 +129,11 @@ country = {
   }
   landunit = {
     id       = { type = 29600 id = 13 }
-    name     = "VII. Militär Område"
+    name     = "VII. Milit? Omr?e"
     location = 2156
     division = {
       id             = { type = 29600 id = 14 }
-      name           = "VII. Militär Område"
+      name           = "VII. Milit? Omr?e"
       type           = infantry
       model          = 10
       strength       = 40
@@ -141,11 +141,11 @@ country = {
   }
   landunit = {
     id       = { type = 29600 id = 39 }
-    name     = "V. Militär Område"
+    name     = "V. Milit? Omr?e"
     location = 2161
     division = {
       id             = { type = 29600 id = 40 }
-      name           = "V. Militär Område"
+      name           = "V. Milit? Omr?e"
       type           = infantry
       model          = 10
       strength       = 60
@@ -237,7 +237,7 @@ country = {
     base     = 2159
     division = {
       id             = { type = 29600 id = 29 }
-      name           = "1. Trängflottiljen"
+      name           = "1. Tr?gflottiljen"
       type           = transport
       model          = 1
     }
@@ -250,7 +250,7 @@ country = {
   }
   navalunit = {
     id       = { type = 29600 id = 31 }
-    name     = "Göteborgseskadern"
+    name     = "G?eborgseskadern"
     location = 2153
     base     = 2153
     division = {
@@ -273,7 +273,7 @@ country = {
     base     = 2153
     division = {
       id             = { type = 29600 id = 35 }
-      name           = "2. Ubåtsflottiljen"
+      name           = "2. Ub?sflottiljen"
       type           = submarine
       model          = 3
     }
@@ -281,7 +281,7 @@ country = {
 
   airunit = { 
     id       = { type = 29600 id = 36 }
-    name     = "1a Flygkåren"
+    name     = "1a Flygk?en"
     location = 2159
     base     = 2159
     division = {

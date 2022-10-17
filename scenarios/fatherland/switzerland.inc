@@ -55,7 +55,7 @@ country = {
   armamentminister       = { type = 9 id = 80055 } # Rudolf Minger
   ministerofsecurity     = { type = 9 id = 80069 } # Max Waibel
   ministerofintelligence = { type = 9 id = 80075 } # Max Waibel
-  chiefofstaff           = { type = 9 id = 80078 } # Paul Gürtler
+  chiefofstaff           = { type = 9 id = 80078 } # Paul G?tler
   chiefofarmy            = { type = 9 id = 80080 } # Henri Guisan
   chiefofnavy            = { type = 9 id = 80082 } # Hans Peter Bichsel-Sohn
   chiefofair             = { type = 9 id = 80086 } # Etienne Primault
@@ -77,11 +77,11 @@ country = {
   }
   landunit = {
     id       = { type = 30600 id = 3 }
-    name     = "IIème Corps d'Armée Suisse"
+    name     = "II?e Corps d'Arm? Suisse"
     location = 389
     division = {
       id             = { type = 30600 id = 4 }
-      name           = "2ème Division d'Infanterie"
+      name           = "2?e Division d'Infanterie"
       type           = infantry
       model          = 8
       extra          = anti_air
@@ -90,7 +90,7 @@ country = {
     }
     division = {
       id             = { type = 30600 id = 5 }
-      name           = "1. Alpenjägerdivision"
+      name           = "1. Alpenj?erdivision"
       type           = bergsjaeger
       model          = 7
       strength       = 5
@@ -125,7 +125,7 @@ country = {
     }
     division = {
       id             = { type = 30600 id = 9 }
-      name           = "2ème Div. d'Infanterie de Montagne"
+      name           = "2?e Div. d'Infanterie de Montagne"
       type           = bergsjaeger
       model          = 7
       extra          = artillery
@@ -145,7 +145,7 @@ country = {
     location = 390
     division = {
       id             = { type = 30600 id = 11 }
-      name           = "5ème Division d'Infanterie"
+      name           = "5?e Division d'Infanterie"
       type           = infantry
       model          = 8
       extra          = engineer

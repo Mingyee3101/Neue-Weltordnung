@@ -59,7 +59,7 @@ country = {
   headofgovernment       = { type = 9 id = 110025 } # Ion Antonescu
   foreignminister        = { type = 9 id = 110043 } # Mihai Antonescu
   armamentminister       = { type = 9 id = 110058 } # Gheorghe Dobre
-  ministerofsecurity     = { type = 9 id = 110197 } # Dumitru Popescu
+  ministerofsecurity     = { type = 9 id = 110197 } # Alexandru Vaida-Voevod
   ministerofintelligence = { type = 9 id = 110082 } # Iosif Iacobici
   chiefofstaff           = { type = 9 id = 110090 } # Constantin Pantazi
   chiefofarmy            = { type = 9 id = 110102 } # Ilie Steflea

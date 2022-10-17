@@ -47,16 +47,16 @@ country = {
     defense_lobby     = 1
     interventionism   = 1
   }
-  headofstate            = { type = 9 id = 50001 } # H.I.M. Hirohito
+  headofstate            = { type = 9 id = 50001 } # Hirohito
   headofgovernment       = { type = 9 id = 50029 } # Yoshida Shigeru
   foreignminister        = { type = 9 id = 50038 } # Yoshida Shigeru
   armamentminister       = { type = 9 id = 50061 } # Ogasawara Sankuro
   ministerofsecurity     = { type = 9 id = 50085 } # Yamazaki Iwao
   ministerofintelligence = { type = 9 id = 50113 } # Horikiri Zenjiro
-  chiefofstaff           = { type = 9 id = 50411 } # N/A
-  chiefofarmy            = { type = 9 id = 50412 } # N/A
-  chiefofnavy            = { type = 9 id = 50413 } # N/A
-  chiefofair             = { type = 9 id = 50414 } # N/A
+  chiefofstaff           = { type = 9 id = 50411 } # Masayoshi Ohira
+  chiefofarmy            = { type = 9 id = 50412 } # Zenko Suzuki
+  chiefofnavy            = { type = 9 id = 50413 } # Masashi Ishibashi
+  chiefofair             = { type = 9 id = 50414 } # Noboru Takeshita
   dormant_ministers      = { 50002 50020 50013 50014 50021 50003 50042 50047 50039 50040 50041 50004 50005 50086 50087 50088 50095 50006 50114 50007 50008 50158 50015 50016 50044 50062 50072 50089 50096 50097 50098 50099 50100 50116 50121 50133 50142 50148 50156 }
   dormant_teams          = { 50070 50071 50072 50073 50074 }
 

@@ -8,7 +8,7 @@
 
 country = {
   tag                = GER
-  name               = "Großdeutsches Reich"
+  name               = "Gro?eutsches Reich"
   ai                 = "GER_1948.ai"
   ai_settings        = { flags = { MOB1 = yes MOB2 = yes MOB3 = yes MOB4 = yes MOB5 = yes MOB6 = yes MOB7 = yes RES = yes NEIN = yes } }
   belligerence       = 10
@@ -137,10 +137,10 @@ country = {
   SpyInfo                = { country = "SWE" NumberOfSpies = 10 }
   SpyInfo                = { country = "ITA" NumberOfSpies = 6 }
 
-  nationalprovinces      = { 126 145 127 131 142 147 141 137 174 171 176 146 148 154 151 152 153 156 169 157 163 162 158 183 159 172 170 173 177 138 134 132 178 175 179 167 164 184 182 155 161 185 165 166 168 133 144 160 180 136 139 135 129 128 130 181 225 224 221 149 150 140 261 207 199 198 196 201 143 189 190 191 192 195 194 186 187 193 188 200 206 205 197 202 204 203 110 109 226 230 222 231 232 227 223 104 107 }
-  ownedprovinces         = { 126 145 127 131 142 147 141 137 174 171 176 146 148 154 151 152 153 156 169 163 162 158 183 159 172 170 173 177 138 134 132 178 175 179 167 164 184 133 182 155 161 185 165 166 168 150 144 160 180 136 139 135 129 128 130 149 140 181 221 224 225 261 143 189 190 191 192 195 194 186 187 193 188 200 206 205 197 204 203 207 199 202 198 196 201 110 109 226 230 222 104 105 107 382 553 106 96 101 102 103 69 68 37 39 336 346 227 231 252 223 229 250 253 254 255 50 53 45 43 44 46 554 555 556 557 558 559 562 563 567 568 569 570 571 572 574 576 577 578 579 584 668 656 677 678 679 682 669 665 650 651 658 652 654 657 580 674 675 670 683 }
-  controlledprovinces    = { 126 145 127 131 142 147 141 137 174 171 176 146 148 154 151 152 153 156 169 163 162 158 183 159 172 170 173 177 138 134 132 178 175 179 167 164 184 133 182 155 161 185 165 166 168 150 144 160 180 136 139 135 129 128 130 149 140 181 221 224 225 261 207 199 202 198 196 201 143 189 190 191 192 195 194 186 187 193 188 200 206 205 197 204 203 110 109 226 230 222 104 105 107 382 553 101 102 103 106 96 69 68 37 39 336 346 227 231 252 223 229 250 253 254 255 50 53 45 43 44 46 554 555 556 557 558 559 562 563 567 568 569 570 571 572 574 576 577 578 579 584 668 656 677 678 679 682 669 665 650 651 658 652 654 657 580 674 675 670 683 }
-  claimedprovinces       = { 346 252 229 250 253 254 255 336 553 377 382 107 104 }
+  nationalprovinces      = { 126 145 127 131 142 147 141 137 174 171 176 146 148 154 151 152 153 156 169 157 163 162 158 183 159 172 170 173 177 138 134 132 178 175 179 167 164 184 182 155 161 185 165 166 168 133 144 160 180 136 139 135 129 128 130 181 225 224 221 149 150 140 261 207 199 198 196 201 143 189 190 191 192 195 194 186 187 193 188 200 206 205 197 202 204 203 110 109 226 230 222 231 227 223 104 107 105 346 216 229 250 253 254 255 252 }
+  ownedprovinces         = { 126 145 127 131 142 147 141 137 174 171 176 146 148 154 151 152 153 156 169 163 162 158 183 159 172 170 173 177 138 134 132 178 175 179 167 164 184 133 182 155 161 185 165 166 168 150 144 160 180 136 139 135 129 128 130 149 140 181 221 224 225 261 143 189 190 191 192 195 194 186 187 193 188 200 206 205 197 204 203 207 199 202 198 196 201 110 109 226 230 222 104 105 107 382 553 106 96 101 102 103 69 68 37 39 336 346 227 231 252 223 229 250 253 254 255 50 53 45 43 44 46 554 555 556 557 558 559 562 563 567 568 569 570 571 572 574 576 577 578 579 584 668 656 677 678 679 682 669 665 650 658 652 657 580 674 675 670 683 157 216 542 545 546 547 543 548 676 666 660 585 581 582 583 }
+  controlledprovinces    = { 126 145 127 131 142 147 141 137 174 171 176 146 148 154 151 152 153 156 169 163 162 158 183 159 172 170 173 177 138 134 132 178 175 179 167 164 184 133 182 155 161 185 165 166 168 150 144 160 180 136 139 135 129 128 130 149 140 181 221 224 225 261 207 199 202 198 196 201 143 189 190 191 192 195 194 186 187 193 188 200 206 205 197 204 203 110 109 226 230 222 104 105 107 382 553 101 102 103 106 96 69 68 37 39 336 346 227 231 252 223 229 250 253 254 255 50 53 45 43 44 46 554 555 556 557 558 559 562 563 567 568 569 570 571 572 574 576 577 578 579 584 668 656 677 678 679 682 669 665 650 658 652 657 580 674 675 670 683 157 216 542 545 543 548 676 547 546 666 660 585 581 582 583 }
+  claimedprovinces       = { 336 553 377 382 }
 
   techapps               = { 5700 5710 5010 5020 5030 5040 5810 5820 5050 5830 5060 5070 5130 5140 5150 5160 5180 5170 5110 5800 5080 5090 5100 5316 5326 5327 5310 54010 54020 54030 5320 5350 5360 5330 5370 5380 5340 5390 5400 7140 7150 53060 16000 5600 5610 5620 5630 5640 5650 5660 5190 5200 5210 5220 5230 5240 53020 53040 5560 7550 7560 7570 7580 7590 7100 15500 7110 7120 5410 5416 5417 5420 5426 5430 5440 5466 5450 5920 5930 5960 5970 5980 5990 2800 2450 21180 21190 21200 2460 2470 2480 2490 2500 1010 1020 1030 1040 1050 1060 1070 1080 1090 1100 1110 1120 1130 1140 1160 1170 1180 1190 1200 1210 1220 1230 1240 1250 1260 1270 1280 1290 1560 1570 1580 1590 1600 1670 1680 1690 1700 13060 13070 13080 1310 1320 1330 1340 1350 1360 1370 1380 1390 1530 1540 1396 1400 1410 1420 1430 1470 1480 1490 7600 7610 2620 2010 2630 2640 2646 2650 2030 2040 2050 2070 2080 2090 2060 2140 6900 2290 2300 2310 2900 2910 2920 2930 2940 2320 2330 2340 2360 2810 2820 2510 2520 2530 2400 2410 2420 2970 2370 2380 2860 2870 2880 2020 2150 2160 2170 2180 2850 2190 2100 2110 2120 2130 2220 2230 2240 2250 22910 22920 22930 2980 2260 2270 1830 1840 1850 1860 1870 1880 1910 1920 1930 1940 1950 1960 1970 1980 1990 199130 199100 199140 199110 199150 3610 3620 3630 3640 3650 3660 3670 3680 3710 3010 3020 3030 3040 3050 3060 3070 12000 3110 3120 3130 3140 3150 3160 12010 12150 3210 3220 3230 3240 3250 3260 12020 3310 3320 3330 3340 3350 3410 3420 3430 3440 3450 3456 3460 3470 12040 12100 12110 12120 12130 3510 3520 3530 3540 3550 3810 3820 3830 3840 3720 3730 3736 3740 3750 3760 3770 3780 3900 3910 3920 3930 4500 4510 4520 4530 4540 4550 4010 4020 4030 4060 4090 15000 15010 4300 4310 4320 4330 4340 4040 4280 4100 4350 4400 4170 4450 4180 15120 4600 4610 4620 4630 4120 4130 4140 4150 4160 4800 4810 4820 4230 4240 4700 4710 4190 4200 4210 15140 4290 4250 4260 4270 15180 4740 4750 4760 4770 4780 4790 4850 4860 4050 4080 4110 4900 4910 4920 4930 4940 4950 14000 14010 14020 14030 14040 6500 6510 6530 6580 6600 6610 6620 6630 6640 6650 6660 6670 6680 6540 6910 6210 6220 6260 6240 6270 6290 14100 8010 8020 8030 8040 8050 8060 8070 8080 82300 82500 8500 8510 8520 8550 8600 8610 8900 8910 8920 8930 8940 8950 8960 8970 8100 8110 8120 8150 8160 8170 8200 8210 81650 27480 27490 27500 27510 27520 27530 27540 27550 27570 27580 27590 27600 9030 9020 27560 27460 27470 9010 9040 9050 9060 9070 9090 9100 9110 9120 9130 9140 9190 9200 9210 9220 9240 5470 5480 5490 5500 5510 5520 6230 6250 6280 12140 4220 4070 6710 9320 9340 2126 11000 2890 2430 15100 4116 8560 8620 82310 82510 9310 9150 9350 9080 }
   inventions             = { 3000027 3000028 3000031 3000017 3000018 3000019 }
@@ -163,8 +163,8 @@ country = {
   ministerofintelligence = { type = 9 id = 274 } # Reinhard Heydrich
   chiefofstaff           = { type = 9 id = 132 } # Alfred Jodl
   chiefofarmy            = { type = 9 id = 146 } # Walther von Brauchitsch
-  chiefofnavy            = { type = 9 id = 161 } # Karl Dönitz
-  chiefofair             = { type = 9 id = 10 } # Hermann Göring
+  chiefofnavy            = { type = 9 id = 161 } # Karl D?itz
+  chiefofair             = { type = 9 id = 10 } # Hermann G?ing
 
   landunit = {
     id       = { type = 14500 id = 1 }
@@ -438,7 +438,7 @@ country = {
   }
   landunit = {
     id       = { type = 14500 id = 308 }
-    name     = "Wehrm. Befehlshaber Dänemark"
+    name     = "Wehrm. Befehlshaber D?emark"
     location = 217
     division = {
       id             = { type = 14500 id = 309 }
@@ -510,7 +510,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 274 }
-      name           = "5. Gebirgsjäger-Division"
+      name           = "5. Gebirgsj?er-Division"
       type           = bergsjaeger
       model          = 12
       strength       = 80
@@ -518,7 +518,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 8 }
-      name           = "7. Gebirgsjäger-Division"
+      name           = "7. Gebirgsj?er-Division"
       type           = bergsjaeger
       model          = 12
       strength       = 80
@@ -531,7 +531,7 @@ country = {
     location = 382
     division = {
       id             = { type = 14500 id = 193 }
-      name           = "3. Gebirgsjäger-Division"
+      name           = "3. Gebirgsj?er-Division"
       type           = bergsjaeger
       model          = 12
       strength       = 80
@@ -544,7 +544,7 @@ country = {
     location = 382
     division = {
       id             = { type = 14500 id = 357 }
-      name           = "3. Fallschirmjäger-Division"
+      name           = "3. Fallschirmj?er-Division"
       type           = paratrooper
       model          = 3
       strength       = 80
@@ -587,7 +587,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 13333 }
-      name           = "117. Jäger-Division"
+      name           = "117. J?er-Division"
       type           = bergsjaeger
       model          = 12
       extra          = engineer
@@ -638,7 +638,7 @@ country = {
     location = 346
     division = {
       id             = { type = 14500 id = 255 }
-      name           = "104. Jäger-Division"
+      name           = "104. J?er-Division"
       type           = bergsjaeger
       model          = 12
       extra          = engineer
@@ -720,7 +720,7 @@ country = {
     location = 707
     division = {
       id             = { type = 14500 id = 315 }
-      name           = "2. Gebirgsjäger-Division"
+      name           = "2. Gebirgsj?er-Division"
       type           = bergsjaeger
       model          = 12
       strength       = 80
@@ -728,7 +728,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 237 }
-      name           = "1. Gebirgsjäger-Division"
+      name           = "1. Gebirgsj?er-Division"
       type           = bergsjaeger
       model          = 12
       strength       = 80
@@ -736,7 +736,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 302 }
-      name           = "114. Jäger-Division"
+      name           = "114. J?er-Division"
       type           = bergsjaeger
       model          = 12
       extra          = engineer
@@ -751,7 +751,7 @@ country = {
     location = 713
     division = {
       id             = { type = 14500 id = 183 }
-      name           = "1. Skijäger-Division"
+      name           = "1. Skij?er-Division"
       type           = bergsjaeger
       model          = 12
       extra          = engineer
@@ -766,7 +766,7 @@ country = {
     location = 695
     division = {
       id             = { type = 14500 id = 194 }
-      name           = "4. Gebirgsjäger-Division"
+      name           = "4. Gebirgsj?er-Division"
       type           = bergsjaeger
       model          = 12
       strength       = 80
@@ -779,7 +779,7 @@ country = {
     location = 189
     division = {
       id             = { type = 14500 id = 305 }
-      name           = "188. Reserve-Gebirgsjäger-Division"
+      name           = "188. Reserve-Gebirgsj?er-Division"
       type           = bergsjaeger
       model          = 12
       strength       = 10
@@ -791,7 +791,7 @@ country = {
     location = 669
     division = {
       id             = { type = 14500 id = 7 }
-      name           = "6. Gebirgsjäger-Division"
+      name           = "6. Gebirgsj?er-Division"
       type           = bergsjaeger
       model          = 12
       strength       = 100
@@ -799,7 +799,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 111 }
-      name           = "28. Jäger-Division"
+      name           = "28. J?er-Division"
       type           = infantry
       model          = 12
       extra          = engineer
@@ -809,7 +809,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 185 }
-      name           = "101. Jäger-Division"
+      name           = "101. J?er-Division"
       type           = infantry
       model          = 12
       extra          = engineer
@@ -824,7 +824,7 @@ country = {
     location = 665
     division = {
       id             = { type = 14500 id = 203 }
-      name           = "118. Jäger-Division"
+      name           = "118. J?er-Division"
       type           = infantry
       model          = 12
       extra          = engineer
@@ -834,7 +834,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 124 }
-      name           = "5. Jäger-Division"
+      name           = "5. J?er-Division"
       type           = infantry
       model          = 12
       extra          = engineer
@@ -844,7 +844,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 285 }
-      name           = "157. Gebirgsjäger-Division"
+      name           = "157. Gebirgsj?er-Division"
       type           = bergsjaeger
       model          = 12
       strength       = 100
@@ -857,7 +857,7 @@ country = {
     location = 683
     division = {
       id             = { type = 14500 id = 291 }
-      name           = "42. Jäger-Division"
+      name           = "42. J?er-Division"
       type           = infantry
       model          = 12
       extra          = engineer
@@ -877,7 +877,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 189 }
-      name           = "100. Jäger-Division"
+      name           = "100. J?er-Division"
       type           = infantry
       model          = 12
       extra          = engineer
@@ -1259,7 +1259,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 330 }
-      name           = "7. Fallschirmjäger-Division"
+      name           = "7. Fallschirmj?er-Division"
       type           = paratrooper
       model          = 3
       strength       = 50
@@ -1306,7 +1306,7 @@ country = {
     location = 185
     division = {
       id             = { type = 14500 id = 395 }
-      name           = "Führer-Grenadier-Division"
+      name           = "F?rer-Grenadier-Division"
       type           = mechanized
       model          = 1
       strength       = 25
@@ -1314,7 +1314,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 393 }
-      name           = "5. Fallschirmjäger-Division"
+      name           = "5. Fallschirmj?er-Division"
       type           = paratrooper
       model          = 3
       strength       = 50
@@ -1446,7 +1446,7 @@ country = {
     leader   = 612
     division = {
       id             = { type = 14500 id = 336 }
-      name           = "2. Fallschirmjäger-Division"
+      name           = "2. Fallschirmj?er-Division"
       type           = paratrooper
       model          = 3
       strength       = 50
@@ -1454,7 +1454,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 339 }
-      name           = "6. Fallschirmjäger-Division"
+      name           = "6. Fallschirmj?er-Division"
       type           = paratrooper
       model          = 3
       strength       = 50
@@ -1631,7 +1631,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 99 }
-      name           = "Pz-Div. 'Hermann Göring'"
+      name           = "Pz-Div. 'Hermann G?ing'"
       type           = armor
       model          = 3
       extra          = heavy_armor
@@ -1740,7 +1740,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 381 }
-      name           = "Panzer-Führerbegleitdivision"
+      name           = "Panzer-F?rerbegleitdivision"
       type           = armor
       model          = 3
       extra          = sp_artillery
@@ -1846,11 +1846,11 @@ country = {
   }
   landunit = {
     id       = { type = 14500 id = 289 }
-    name     = "I. Fallschirmjägerkorps"
+    name     = "I. Fallschirmj?erkorps"
     location = 134
     division = {
       id             = { type = 14500 id = 290 }
-      name           = "1. Fallschirmjäger-Division"
+      name           = "1. Fallschirmj?er-Division"
       type           = paratrooper
       model          = 3
       strength       = 65
@@ -1858,7 +1858,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 287 }
-      name           = "4. Fallschirmjäger-Division"
+      name           = "4. Fallschirmj?er-Division"
       type           = paratrooper
       model          = 3
       strength       = 65
@@ -1888,11 +1888,11 @@ country = {
   }
   landunit = {
     id       = { type = 14500 id = 115 }
-    name     = "Panzerkorps 'Hermann Göring'"
+    name     = "Panzerkorps 'Hermann G?ing'"
     location = 185
     division = {
       id             = { type = 14500 id = 116 }
-      name           = "Panzergrenadier-Div. 'Hermann Göring'"
+      name           = "Panzergrenadier-Div. 'Hermann G?ing'"
       type           = mechanized
       model          = 1
       strength       = 30
@@ -2264,7 +2264,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 806 }
-      name           = "Lützow"
+      name           = "L?zow"
       type           = heavy_cruiser
       model          = 4
       extra1         = floatplane
@@ -2304,7 +2304,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 810 }
-      name           = "Nürnberg"
+      name           = "N?nberg"
       type           = light_cruiser
       model          = 4
     }
@@ -2316,13 +2316,13 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 812 }
-      name           = "Köln"
+      name           = "K?n"
       type           = light_cruiser
       model          = 3
     }
     division = {
       id             = { type = 14500 id = 813 }
-      name           = "1. Zerstörergeschwader"
+      name           = "1. Zerst?ergeschwader"
       type           = destroyer
       model          = 6
       extra1         = naval_torpedoes_s
@@ -2330,7 +2330,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 814 }
-      name           = "2. Zerstörergeschwader"
+      name           = "2. Zerst?ergeschwader"
       type           = destroyer
       model          = 5
       extra1         = naval_torpedoes_s
@@ -2339,7 +2339,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 815 }
-      name           = "3. Zerstörergeschwader"
+      name           = "3. Zerst?ergeschwader"
       type           = destroyer
       model          = 6
       extra1         = naval_torpedoes_s
@@ -2348,7 +2348,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 816 }
-      name           = "4. Zerstörergeschwader"
+      name           = "4. Zerst?ergeschwader"
       type           = destroyer
       model          = 7
       extra1         = naval_torpedoes_s
@@ -2356,7 +2356,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 817 }
-      name           = "5. Zerstörergeschwader"
+      name           = "5. Zerst?ergeschwader"
       type           = destroyer
       model          = 7
       extra1         = naval_anti_air_s
@@ -2364,7 +2364,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 818 }
-      name           = "6. Zerstörergeschwader"
+      name           = "6. Zerst?ergeschwader"
       type           = destroyer
       model          = 7
       extra1         = naval_anti_air_s
@@ -2373,7 +2373,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 819 }
-      name           = "7. Zerstörergeschwader"
+      name           = "7. Zerst?ergeschwader"
       type           = destroyer
       model          = 7
       extra1         = naval_anti_air_s
@@ -2382,7 +2382,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 820 }
-      name           = "8. Zerstörergeschwader"
+      name           = "8. Zerst?ergeschwader"
       type           = destroyer
       model          = 7
       extra1         = naval_asw
@@ -2391,7 +2391,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 821 }
-      name           = "9. Zerstörergeschwader"
+      name           = "9. Zerst?ergeschwader"
       type           = destroyer
       model          = 8
       extra1         = naval_asw
@@ -2400,7 +2400,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 822 }
-      name           = "10. Zerstörergeschwader"
+      name           = "10. Zerst?ergeschwader"
       type           = destroyer
       model          = 7
       extra1         = naval_asw
@@ -2998,25 +2998,25 @@ country = {
     }
     division = {
       id             = { type = 10848 id = 5207 }
-      name           = "1. Umgewandelt Zerstörergeschwader"
+      name           = "1. Umgewandelt Zerst?ergeschwader"
       type           = destroyer
       model          = 4
     }
     division = {
       id             = { type = 10848 id = 5502 }
-      name           = "2. Umgewandelt Zerstörergeschwader"
+      name           = "2. Umgewandelt Zerst?ergeschwader"
       type           = destroyer
       model          = 4
     }
     division = {
       id             = { type = 10848 id = 5503 }
-      name           = "3. Umgewandelt Zerstörergeschwader"
+      name           = "3. Umgewandelt Zerst?ergeschwader"
       type           = destroyer
       model          = 4
     }
     division = {
       id             = { type = 10848 id = 5504 }
-      name           = "4. Umgewandelt Zerstörergeschwader"
+      name           = "4. Umgewandelt Zerst?ergeschwader"
       type           = destroyer
       model          = 4
     }
@@ -3220,7 +3220,7 @@ country = {
     base     = 269
     division = {
       id             = { type = 14500 id = 615 }
-      name           = "JG 54 'Grünherz'"
+      name           = "JG 54 'Gr?herz'"
       type           = interceptor
       model          = 12
       strength       = 80
@@ -3255,7 +3255,7 @@ country = {
     base     = 122
     division = {
       id             = { type = 14500 id = 620 }
-      name           = "KG 51 'Edelweiß'"
+      name           = "KG 51 'Edelwei?"
       type           = multi_role
       model          = 9
       strength       = 40
@@ -3469,7 +3469,7 @@ country = {
     }
     division = {
       id             = { type = 14500 id = 649 }
-      name           = "KG 26 'Löwen'"
+      name           = "KG 26 'L?en'"
       type           = strategic_bomber
       model          = 9
       extra          = escort
@@ -3484,7 +3484,7 @@ country = {
     base     = 184
     division = {
       id             = { type = 14500 id = 651 }
-      name           = "JG 51 'Mölders'"
+      name           = "JG 51 'M?ders'"
       type           = interceptor
       model          = 12
       strength       = 80

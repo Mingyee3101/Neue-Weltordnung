@@ -51,16 +51,16 @@ country = {
     defense_lobby     = 10
     interventionism   = 10
   }
-  headofstate            = { type = 9 id = 1105001 } # Heinrich Himmler
-  headofgovernment       = { type = 9 id = 1105002 } # Reinhard Heydrich
-  foreignminister        = { type = 9 id = 1105003 } # Werner Lorenz
-  armamentminister       = { type = 9 id = 1105004 } # Oswald Pohl
-  ministerofsecurity     = { type = 9 id = 1105005 } # Reinhard Heydrich
-  ministerofintelligence = { type = 9 id = 1105006 } # Walther Darré
-  chiefofstaff           = { type = 9 id = 1105007 } # Heinrich Himmler
-  chiefofarmy            = { type = 9 id = 1105008 } # Heinrich Himmler
-  chiefofnavy            = { type = 9 id = 1105009 } # Heinrich Himmler
-  chiefofair             = { type = 9 id = 1105010 } # Heinrich Himmler
+  headofstate            = { type = 9 id = 1105001 } # Francisco 'Pancho' Villa
+  headofgovernment       = { type = 9 id = 1105002 } # Francisco 'Pancho' Villa
+  foreignminister        = { type = 9 id = 1105003 } # Jos?Ortiz Rodr?uez
+  armamentminister       = { type = 9 id = 1105004 } # Rafael Buelna
+  ministerofsecurity     = { type = 9 id = 1105005 } # Jos?Ruiz
+  ministerofintelligence = { type = 9 id = 1105006 } # Maximiano M?quez Orozco
+  chiefofstaff           = { type = 9 id = 1105007 } # Ra? Madero
+  chiefofarmy            = { type = 9 id = 1105008 } # Carlos C. Echeverr?
+  chiefofnavy            = { type = 9 id = 1105009 } # Rodolfo Fierro
+  chiefofair             = { type = 9 id = 1105010 } # Fernando Mart? del Campo
 
   landunit = {
     id       = { type = 14500 id = 11001 }

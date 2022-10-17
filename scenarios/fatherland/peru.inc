@@ -50,15 +50,15 @@ country = {
     interventionism   = 4
   }
   headofstate            = { type = 9 id = 185114 } # Manuel Odria Amoretti
-  headofgovernment       = { type = 9 id = 185117 } # Alberto Zenon Agüero
+  headofgovernment       = { type = 9 id = 185117 } # Zen? Noriega Ag?ro
   foreignminister        = { type = 9 id = 185032 } # Manuel Gallagher
-  armamentminister       = { type = 9 id = 185046 } # Oscar Trelles Montés
+  armamentminister       = { type = 9 id = 185046 } # Oscar Trelles Mont?
   ministerofsecurity     = { type = 9 id = 185060 } # Carlos Berninzon
-  ministerofintelligence = { type = 9 id = 185071 } # Alfredo Alvarez Calderón
+  ministerofintelligence = { type = 9 id = 185071 } # Alfredo Alvarez Calder?
   chiefofstaff           = { type = 9 id = 185119 } # Nicolas Lindley Lopez
   chiefofarmy            = { type = 9 id = 185121 } # Riccardo Perez Godoy
-  chiefofnavy            = { type = 9 id = 185095 } # Luis Navarreté
-  chiefofair             = { type = 9 id = 185102 } # Luis Navarreté
+  chiefofnavy            = { type = 9 id = 185095 } # Luis Navarret?1945
+  chiefofair             = { type = 9 id = 185102 } # Luis Navarret?1945
   dormant_ministers      = { 185001 185002 185017 185003 185027 185004 185005 185055 185006 185007 185008 185009 185010 185011 185105 185029 185038 185039 185040 185041 185042 185056 185057 185067 185068 185069 185085 }
 
   landunit = {

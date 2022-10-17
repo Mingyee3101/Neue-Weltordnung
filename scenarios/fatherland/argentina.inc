@@ -56,21 +56,21 @@ country = {
     interventionism   = 7
   }
   headofstate            = { type = 9 id = 165024 } # Juan Domingo Peron
-  headofgovernment       = { type = 9 id = 165300 }
-  foreignminister        = { type = 9 id = 165184 } # Hipolíto Jesús Paz
-  armamentminister       = { type = 9 id = 165084 } # Francisco López Martín
+  headofgovernment       = { type = 9 id = 165300 } # Juan Hortensio Quijano
+  foreignminister        = { type = 9 id = 165184 } # Hipol?o Jes? Paz
+  armamentminister       = { type = 9 id = 165084 } # Francisco L?ez Mart?
   ministerofsecurity     = { type = 9 id = 165107 } # Eva Peron
   ministerofintelligence = { type = 9 id = 165186 } # Jeronimo Remorino
-  chiefofstaff           = { type = 9 id = 165139 } # Pablo San Martín
+  chiefofstaff           = { type = 9 id = 165139 } # Pablo San Mart?
   chiefofarmy            = { type = 9 id = 165152 } # Juan Domingo Peron
-  chiefofnavy            = { type = 9 id = 165156 } # Heriberto La Galíne
+  chiefofnavy            = { type = 9 id = 165156 } # Heriberto La Gal?e
   chiefofair             = { type = 9 id = 165167 } # Hector del Riva
   dormant_leaders        = { 165014 }
   dormant_ministers      = { 165001 165002 165003 165004 165005 165006 165007 165008 165009 165010 165011 165025 165141 165017 165033 165031 165052 165103 165121 165116 165134 165020 165019 165013 165175 165183 165015 165027 165176 165035 165029 165045 165080 165100 165110 165122 165108 165130 165181 165150 165161 }
 
   landunit = {
     id       = { type = 10384 id = 1 }
-    name     = "I Cuerpo de Ejército"
+    name     = "I Cuerpo de Ej?cito"
     location = 2050
     division = {
       id             = { type = 10384 id = 41 }
@@ -83,14 +83,14 @@ country = {
     }
     division = {
       id             = { type = 10384 id = 2 }
-      name           = "II Brigada 'San Martín'"
+      name           = "II Brigada 'San Mart?'"
       type           = infantry
       model          = 12
       strength       = 75
     }
     division = {
       id             = { type = 10384 id = 38 }
-      name           = "XIII División de Infantería"
+      name           = "XIII Divisi? de Infanter?"
       type           = infantry
       model          = 12
       strength       = 75
@@ -98,7 +98,7 @@ country = {
   }
   landunit = {
     id       = { type = 10384 id = 39 }
-    name     = "II Cuerpo de Ejército"
+    name     = "II Cuerpo de Ej?cito"
     location = 2050
     division = {
       id             = { type = 10384 id = 3 }
@@ -109,14 +109,14 @@ country = {
     }
     division = {
       id             = { type = 10384 id = 4 }
-      name           = "Agrupación IV GN 'Misiones'"
+      name           = "Agrupaci? IV GN 'Misiones'"
       type           = motorized
       model          = 3
       strength       = 100
     }
     division = {
       id             = { type = 10384 id = 5 }
-      name           = "Agrupación VI GN 'Formosa'"
+      name           = "Agrupaci? VI GN 'Formosa'"
       type           = motorized
       model          = 3
       strength       = 75
@@ -124,7 +124,7 @@ country = {
   }
   landunit = {
     id       = { type = 10384 id = 40 }
-    name     = "III Cuerpo de Ejército"
+    name     = "III Cuerpo de Ej?cito"
     location = 2050
     division = {
       id             = { type = 10384 id = 44 }
@@ -135,14 +135,14 @@ country = {
     }
     division = {
       id             = { type = 10384 id = 42 }
-      name           = "Agrupación IV GN 'Misiones'"
+      name           = "Agrupaci? IV GN 'Misiones'"
       type           = motorized
       model          = 3
       strength       = 75
     }
     division = {
       id             = { type = 10384 id = 43 }
-      name           = "Agrupación VI GN 'Formosa'"
+      name           = "Agrupaci? VI GN 'Formosa'"
       type           = motorized
       model          = 3
       strength       = 75
@@ -150,11 +150,11 @@ country = {
   }
   landunit = {
     id       = { type = 10384 id = 7 }
-    name     = "II Cuerpo de Ejírcito"
+    name     = "II Cuerpo de Ej?cito"
     location = 2050
     division = {
       id             = { type = 30051 id = 8 }
-      name           = "VI Brigada de Montaía 'Villegas'"
+      name           = "VI Brigada de Monta? 'Villegas'"
       type           = bergsjaeger
       model          = 12
       strength       = 75
@@ -270,7 +270,7 @@ country = {
     }
     division = {
       id             = { type = 10384 id = 25 }
-      name           = "ARA San Martín"
+      name           = "ARA San Mart?"
       type           = light_cruiser
       model          = 5
       extra1         = naval_fire_controll_s
@@ -288,7 +288,7 @@ country = {
     }
     division = {
       id             = { type = 10384 id = 27 }
-      name           = "Mendoza/Rioja/Tucumán"
+      name           = "Mendoza/Rioja/Tucum?"
       type           = destroyer
       model          = 6
       extra1         = naval_anti_air_s
@@ -334,7 +334,7 @@ country = {
     }
     division = {
       id             = { type = 10384 id = 34 }
-      name           = "ARA Cabo San Sebastián"
+      name           = "ARA Cabo San Sebasti?"
       type           = transport
       model          = 2
     }
@@ -348,19 +348,19 @@ country = {
 
   airunit = { 
     id       = { type = 10384 id = 9 }
-    name     = "Aviación del Ejército"
+    name     = "Aviaci? del Ej?cito"
     location = 2050
     base     = 2050
     division = {
       id             = { type = 10384 id = 10 }
-      name           = "Grupo Aérea Nro. 1"
+      name           = "Grupo A?ea Nro. 1"
       type           = interceptor
       model          = 12
       strength       = 50
     }
     division = {
       id             = { type = 10384 id = 36 }
-      name           = "Grupo Aérea Nro. 2"
+      name           = "Grupo A?ea Nro. 2"
       type           = interceptor
       model          = 12
       strength       = 50

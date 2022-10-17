@@ -65,7 +65,7 @@ country = {
   ministerofsecurity     = { type = 9 id = 70053 } # Henri Comte Carton de Wiart
   ministerofintelligence = { type = 9 id = 70066 } # Jules Pire
   chiefofstaff           = { type = 9 id = 70076 } # Oscar Michiels
-  chiefofarmy            = { type = 9 id = 70080 } # Yvan Gérard
+  chiefofarmy            = { type = 9 id = 70080 } # Yvan G?ard
   chiefofnavy            = { type = 9 id = 70009 } # Georges Timmermans
   chiefofair             = { type = 9 id = 70085 } # Jules Iserentant
   dormant_leaders        = { 70002 70003 70004 70005 70006 70011 70012 70023 70025 70028 }
@@ -77,7 +77,7 @@ country = {
     location = 899
     division = {
       id             = { type = 11500 id = 2 }
-      name           = "1ère Garde Coloniale"
+      name           = "1?e Garde Coloniale"
       type           = infantry
       model          = 9
       strength       = 50
@@ -91,7 +91,7 @@ country = {
     base     = 894
     division = {
       id             = { type = 11500 id = 34 }
-      name           = "1ère Transporte Naval"
+      name           = "1?e Transporte Naval"
       type           = transport
       model          = 1
     }
@@ -103,7 +103,7 @@ country = {
     }
     division = {
       id             = { type = 11500 id = 2322 }
-      name           = "1ère Flottille de Contre-Torpilleur"
+      name           = "1?e Flottille de Contre-Torpilleur"
       type           = destroyer
     }
     division = {

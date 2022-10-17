@@ -41,15 +41,15 @@ country = {
     defense_lobby     = 4
     interventionism   = 2
   }
-  headofstate            = { type = 9 id = 405012 } # Arnulfo Arías de la Madrid
+  headofstate            = { type = 9 id = 405012 } # Arnulfo Ar?s de la Madrid
   headofgovernment       = { type = 9 id = 405077 } # Alciabides Arosemena
-  foreignminister        = { type = 9 id = 405031 } # Hermaño Castillo Ballidó
+  foreignminister        = { type = 9 id = 405031 } # Herma? Castillo Ballid?1947
   armamentminister       = { type = 9 id = 405035 } # Ignacio E. Mendoza
   ministerofsecurity     = { type = 9 id = 405075 } # Henrique de Obarrio
-  ministerofintelligence = { type = 9 id = 405045 } # José Lefebvré de la Ossa
-  chiefofstaff           = { type = 9 id = 405007 } # Juan Remón
+  ministerofintelligence = { type = 9 id = 405045 } # Jos?Lefebvr?de la Ossa
+  chiefofstaff           = { type = 9 id = 405007 } # Juan Rem?
   chiefofarmy            = { type = 9 id = 405052 } # Omar Torrijos
-  chiefofnavy            = { type = 9 id = 405053 } # Arturo Osborne Irragá
+  chiefofnavy            = { type = 9 id = 405053 } # Arturo Osborne Irrag?1941
   chiefofair             = { type = 9 id = 405057 } # Nestor Urribe Suarez
   dormant_ministers      = { 405001 405002 405021 405011 405058 405061 405016 405059 405060 405024 405012 405017 405036 }
 
@@ -59,7 +59,7 @@ country = {
     location = 2078
     division = {
       id             = { type = 10287 id = 2 }
-      name           = "1a División de Infantería"
+      name           = "1a Divisi? de Infanter?"
       type           = infantry
       model          = 11
       strength       = 60
