@@ -119,7 +119,6 @@ country = {
     relation = { tag = BLR value = 200 access = yes }
     relation = { tag = SLO value = 200 access = yes }
     relation = { tag = SER value = 200 access = yes }
-    relation = { tag = UTC value = 150 access = yes }
     relation = { tag = U58 value = 200 access = yes }
     relation = {
       tag        = DEN
